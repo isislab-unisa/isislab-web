@@ -1,0 +1,18 @@
+---
+layout: page
+---
+{{ content }}
+<section class="media-archive" aria-label="{% if page.lang == 'en' %}Press archive{% else %}Rassegna stampa{% endif %}">
+  <div class="archive-head"><h2>{% if page.lang == 'en' %}Press coverage{% else %}Rassegna stampa{% endif %}</h2><span class="archive-count">{{ site.data.press.size }} {% if page.lang == 'en' %}items{% else %}articoli{% endif %}</span></div>
+  <div class="media-cards">
+  {% for item in site.data.press offset:page.archive_offset limit:page.archive_per_page %}
+    {% assign local_img = site.data.media_thumbs[item.image] | default: site.data.media_local[item.image] | default: '/assets/img/press-placeholder.svg' %}
+    {% capture press_path %}{% if page.lang == 'en' %}/en{% endif %}/rassegna-stampa/{{ item.slug }}/{% endcapture %}
+    <article class="media-card">
+      <a class="media-card-image" href="{{ press_path | strip | relative_url }}"><img loading="lazy" decoding="async" src="{{ local_img | relative_url }}" alt="{{ item.publication | escape }}"></a>
+      <div class="media-card-body"><time class="media-date" datetime="{{ item.date }}">{{ item.date }}</time><h3><a href="{{ press_path | strip | relative_url }}">{{ item.publication }}</a></h3><p>{{ item.title }}</p><a class="archive-read" href="{{ press_path | strip | relative_url }}">{% if page.lang == 'en' %}Open clipping{% else %}Apri ritaglio{% endif %} <span aria-hidden="true">→</span></a></div>
+    </article>
+  {% endfor %}
+  </div>
+  {% include archive-pagination.html %}
+</section>

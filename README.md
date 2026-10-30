@@ -1,3 +1,5 @@
+> GitHub Pages fix (v10.2): `/isislab-web/` base URL is configured in `_config.yml`. See [GITHUB_PAGES.md](GITHUB_PAGES.md). For local serving use `bundle exec jekyll serve --baseurl ""`.
+
 # ISISLab — Jekyll migration (v9)
 
 A responsive Jekyll website based on the provided WordPress homepage. The original submitted ISISLab logo and three-color interactive sphere animation are bundled. Italian/English menus and browser-language selection remain in place.
