@@ -122,3 +122,9 @@ CSS files. Both `index.html` and `en/index.html` now have:
 To regenerate the standalone HTML previews, run:
 `python3 scripts/make_preview.py` (requires `PyYAML`).
 These style updates do not alter existing pages, editorial data or migration scripts.
+
+## GitHub Pages deployment (v10.1)
+
+**Use the bundled GitHub Actions workflow** at `.github/workflows/pages.yml` and select **Settings → Pages → Source: GitHub Actions**. It determines the correct `/REPOSITORY` prefix automatically for project sites, checks required files, prevents stale imported image mappings from producing broken image links, builds the site, and validates the generated CSS/JS/image paths before publishing. Read [GITHUB_PAGES.md](GITHUB_PAGES.md) for step-by-step deployment.
+
+If updating an existing repository, copy the **contents** of the `isislab-jekyll` directory to the repository root and commit the hidden `.github` directory. If you continue to publish from a branch, you must configure `baseurl` manually to match your Pages URL.
