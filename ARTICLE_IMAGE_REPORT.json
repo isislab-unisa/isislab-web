@@ -1,0 +1,1337 @@
+{
+  "news_pages": 409,
+  "news_unique_pictures": 95,
+  "news_pages_with_images": 143,
+  "missing": [
+    {
+      "article": "articles/it-user-test.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-user-lucric.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-sebvar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-salruo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-darcas.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-andamo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rafdef.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-muhtan.html",
+      "source": "/assets/media/1d15733dfea8ec-download-1-169x300.jpg",
+      "error": "Invalid URL '/assets/media/1d15733dfea8ec-download-1-169x300.jpg': No scheme supplied. Perhaps you meant https:///assets/media/1d15733dfea8ec-download-1-169x300.jpg?"
+    },
+    {
+      "article": "articles/it-francesco-vicidomini.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fabfug.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luibif.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gerbot.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marfal.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fradra.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marpel.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simrom.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-data-journalism.html",
+      "source": "/assets/media/e564bcf1dae741-datajournalism-seminar.jpg",
+      "error": "Invalid URL '/assets/media/e564bcf1dae741-datajournalism-seminar.jpg': No scheme supplied. Perhaps you meant https:///assets/media/e564bcf1dae741-datajournalism-seminar.jpg?"
+    },
+    {
+      "article": "articles/it-user-pirozzi.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-valann.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-dancas.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-mardon.html",
+      "source": "/assets/media/2f1c1e83994285-imageedit-2-8203693449.jpg",
+      "error": "Invalid URL '/assets/media/2f1c1e83994285-imageedit-2-8203693449.jpg': No scheme supplied. Perhaps you meant https:///assets/media/2f1c1e83994285-imageedit-2-8203693449.jpg?"
+    },
+    {
+      "article": "articles/it-user-ivadig.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucpep.html",
+      "source": "http://lucapepe88.netsons.org/Lukics_files/426250_2985684954552_537510451_n.jpg",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angset.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-open-campania-training-courses.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antadd.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giacut.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-laucam.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fabnap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-darsca.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-alfgua.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-aleant.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-kenzo47.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-hhe.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gaeroc.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-maregi.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-palban.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-micdes.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-germeg.html",
+      "source": "/assets/media/a35678b75e48f4-330px-voronoi-growth-euclidean.gif",
+      "error": "Invalid URL '/assets/media/a35678b75e48f4-330px-voronoi-growth-euclidean.gif': No scheme supplied. Perhaps you meant https:///assets/media/a35678b75e48f4-330px-voronoi-growth-eucli"
+    },
+    {
+      "article": "articles/it-user-gerlom.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-lucio-grimaldi.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giasan.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angcaf.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-framdau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-checloud-wins-best-demo-audience-choice-award.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-armfag.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giuian.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-danvit.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antdon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fradan.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-cirsan.html",
+      "source": "/assets/media/61f7c4967df52f-swt.jpg",
+      "error": "Invalid URL '/assets/media/61f7c4967df52f-swt.jpg': No scheme supplied. Perhaps you meant https:///assets/media/61f7c4967df52f-swt.jpg?"
+    },
+    {
+      "article": "articles/it-user-adaman.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-edtech-in-isislab-innovazione-tecnologica-incontra-il-mondo-della-scuola.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marof.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fragag.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vinsan.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-mauvil.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-european-researchers-night-2026-in-salerno.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-attmon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-pieaur.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-paovis.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-cromo-at-the-sannio-museum.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-danfor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marfio.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucpos.html",
+      "source": "/assets/media/bcd582eec17904-foto.jpg",
+      "error": "Invalid URL '/assets/media/bcd582eec17904-foto.jpg': No scheme supplied. Perhaps you meant https:///assets/media/bcd582eec17904-foto.jpg?"
+    },
+    {
+      "article": "articles/it-user-framon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rended.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marcap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-antonio-junior-citarella.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-danmon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-pascar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lukgaj.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-domenico-esposito.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-nicdec.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucvis.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-frafor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-nicfra.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antgia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-pasvit.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-robgua.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giuang.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giudam.html",
+      "source": "/assets/media/028cd1826992b8-immagine-seminario.jpg",
+      "error": "Invalid URL '/assets/media/028cd1826992b8-immagine-seminario.jpg': No scheme supplied. Perhaps you meant https:///assets/media/028cd1826992b8-immagine-seminario.jpg?"
+    },
+    {
+      "article": "articles/en-xrtourguide-futural-author-day.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-dandev.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-frafog.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-isislab.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giomag.html",
+      "source": "/assets/media/82b354ad433f8b-topo-picc.jpg",
+      "error": "Invalid URL '/assets/media/82b354ad433f8b-topo-picc.jpg': No scheme supplied. Perhaps you meant https:///assets/media/82b354ad433f8b-topo-picc.jpg?"
+    },
+    {
+      "article": "articles/it-user-ugoerr.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-riccardo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gabtor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-frola.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-passet.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-gerardo-barone.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fabesp.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-clapip.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-armarl.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucgri.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-data-journalisminterpretazione-dei-dati-per-la-loro-valorizzazione.html",
+      "source": "/assets/media/e564bcf1dae741-datajournalism-seminar.jpg",
+      "error": "Invalid URL '/assets/media/e564bcf1dae741-datajournalism-seminar.jpg': No scheme supplied. Perhaps you meant https:///assets/media/e564bcf1dae741-datajournalism-seminar.jpg?"
+    },
+    {
+      "article": "articles/it-user-fracar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-krys.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-paodir.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vindem.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-cirmaio.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fedcoz.html",
+      "source": "/assets/media/4f3254762a1b77-img-2043-300x168.jpg",
+      "error": "Invalid URL '/assets/media/4f3254762a1b77-img-2043-300x168.jpg': No scheme supplied. Perhaps you meant https:///assets/media/4f3254762a1b77-img-2043-300x168.jpg?"
+    },
+    {
+      "article": "articles/it-user-dilriz.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-cricap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gabnap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fraise.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-davric.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giugrie.html",
+      "source": "/assets/media/012298235051bc-seminario-1024x576.jpeg",
+      "error": "Invalid URL '/assets/media/012298235051bc-seminario-1024x576.jpeg': No scheme supplied. Perhaps you meant https:///assets/media/012298235051bc-seminario-1024x576.jpeg?"
+    },
+    {
+      "article": "articles/it-user-angruf.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-emispa.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-nicamo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antcai.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antaut.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-m3rc986.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rafara.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-carmar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-eugcuo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rosdec.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-maubor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-mirran.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-anttin.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-cartra.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-diedic.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-checloud-wins-best-demo-audience-choice-award.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rafarm.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antlau.html",
+      "source": "https://antoniolodato.it/assets/img/profile.jpg",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antgiu.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vitsca.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-enrpar.html",
+      "source": "/assets/media/6f1e7c149b3945-1477829-325219840949412-1716710417-n-300x264.jpg",
+      "error": "Invalid URL '/assets/media/6f1e7c149b3945-1477829-325219840949412-1716710417-n-300x264.jpg': No scheme supplied. Perhaps you meant https:///assets/media/6f1e7c149b3945-1477829-3252"
+    },
+    {
+      "article": "articles/it-user-gilrec.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antcir.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luigal.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-cromo-at-the-sannio-museum.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vinnun.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simfai.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giuconv.html",
+      "source": "/assets/media/9bbba5d645a77f-akamaischeme.jpg",
+      "error": "Invalid URL '/assets/media/9bbba5d645a77f-akamaischeme.jpg': No scheme supplied. Perhaps you meant https:///assets/media/9bbba5d645a77f-akamaischeme.jpg?"
+    },
+    {
+      "article": "articles/it-user-antalt.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-diesor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-danzir.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simeli.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luicri.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-laboratory-activities-in-campania-region.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-ilaman.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angcia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-emibia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-nicdib.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-davaca.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giodeg.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-nicgae.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angpic.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-anddip.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marvit.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-azienda-vmengine-e-lavoro-di-tesi.html",
+      "source": "/assets/media/22ce519bca6b74-vmengine23nov2023.jpg",
+      "error": "Invalid URL '/assets/media/22ce519bca6b74-vmengine23nov2023.jpg': No scheme supplied. Perhaps you meant https:///assets/media/22ce519bca6b74-vmengine23nov2023.jpg?"
+    },
+    {
+      "article": "articles/it-user-micspi.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antmont.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-matdau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-european-researchers-night-2026-in-salerno.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-serval.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-erasmus2023-neolaia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-masgio.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fralau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-frades.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fravic.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antgio.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-knoxly-un-tool-di-privacy-awareness-per-prevenire-la-divulgazione-di-dati-sensibili-e-personal.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-carcap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gabtuo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-gerryb.html",
+      "source": "/assets/media/54709217465a1f-mia.jpg",
+      "error": "Invalid URL '/assets/media/54709217465a1f-mia.jpg': No scheme supplied. Perhaps you meant https:///assets/media/54709217465a1f-mia.jpg?"
+    },
+    {
+      "article": "articles/it-user-fraper.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antsal.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giuimp.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-corsi-di-training-per-il-progetto-campania-crea.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-frafar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-salmon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-xrtourguide-evaluation-day.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-alfsic.html",
+      "source": "/assets/media/989f3b8b6cabef-dsenactiio-image-300x212.jpg",
+      "error": "Invalid URL '/assets/media/989f3b8b6cabef-dsenactiio-image-300x212.jpg': No scheme supplied. Perhaps you meant https:///assets/media/989f3b8b6cabef-dsenactiio-image-300x212.jpg?"
+    },
+    {
+      "article": "articles/it-user-vinoff.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-darsch.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-andval.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gaecas.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-mircen.html",
+      "source": "/assets/media/96e944babc4fc7-architettura-ateneo.jpg",
+      "error": "Invalid URL '/assets/media/96e944babc4fc7-architettura-ateneo.jpg': No scheme supplied. Perhaps you meant https:///assets/media/96e944babc4fc7-architettura-ateneo.jpg?"
+    },
+    {
+      "article": "articles/it-user-rosior.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-martra.html",
+      "source": "http://www.sics.se/~joe/images/apachevsyaws.jpg",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vincon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-spike.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-orldam.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-xrtourguide-futural-author-day.md",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-salva3.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vitbal.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-andsol.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-albboc.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gablod.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antcag.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-dombra.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-crirai.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simian.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-gerdon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angsan.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-carcol.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fracol.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-cremaz.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-vinsel.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fabdiz.html",
+      "source": "/assets/media/2b4c237f0fec65-unisaguideqr.png",
+      "error": "Invalid URL '/assets/media/2b4c237f0fec65-unisaguideqr.png': No scheme supplied. Perhaps you meant https:///assets/media/2b4c237f0fec65-unisaguideqr.png?"
+    },
+    {
+      "article": "articles/it-user-pierus.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-m3i.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-biacos.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-robdir.html",
+      "source": "/assets/media/ffd73526cf3129-handshake.gif",
+      "error": "Invalid URL '/assets/media/ffd73526cf3129-handshake.gif': No scheme supplied. Perhaps you meant https:///assets/media/ffd73526cf3129-handshake.gif?"
+    },
+    {
+      "article": "articles/it-user-lorfas.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-tizcit.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fravie.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-maramo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fedsia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-collaborazione-con-il-progetto-open-data-campania-della-regione-campania.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-andgua.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-ameesp.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-collaboration-with-the-open-data-campania-project-of-the-campania-region.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giucar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-arleo.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fracav.html",
+      "source": "/assets/media/d95033ec70b2a2-under-constuction.gif",
+      "error": "Invalid URL '/assets/media/d95033ec70b2a2-under-constuction.gif': No scheme supplied. Perhaps you meant https:///assets/media/d95033ec70b2a2-under-constuction.gif?"
+    },
+    {
+      "article": "articles/en-laboratory-activities-in-campania-region-2.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/en-edtech-in-isislab-technological-innovation-and-school.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simfin.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-marcon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-matpas.html",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/10/Generalizzazione_di_Quasi_Identifiers_lavorando_sui_singleton_in-Ok-1.pptx",
+      "error": "404 Client Error: Not Found for url: https://www.isislab.it/wp-content/uploads/2019/10/Generalizzazione_di_Quasi_Identifiers_lavorando_sui_singleton_in-Ok-1.pptx"
+    },
+    {
+      "article": "articles/it-user-greame.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-chrgam.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-dontia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-ivafer.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-framil.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antdec.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-davrai.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-angurs.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-felfer.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-pristella.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-pastre.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-margar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-robgam.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-dandef.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luccap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luidam.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-sabfon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-mar-san.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-niclet.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-albacc.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fedgil.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-domnap.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giocia.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-antmau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucvic.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-luibar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-alecer.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-salcas.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-enrlor.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-stevit.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-lucpeppe.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-rete-licei-artistici.html",
+      "source": "/assets/media/0e28784c325ce1-img-20191202-wa0000-1024x768.jpg",
+      "error": "Invalid URL '/assets/media/0e28784c325ce1-img-20191202-wa0000-1024x768.jpg': No scheme supplied. Perhaps you meant https:///assets/media/0e28784c325ce1-img-20191202-wa0000-1024x768"
+    },
+    {
+      "article": "articles/it-user-ferpic.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giugon.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-fradau.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-rafmar.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-annfie.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-simpet.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    },
+    {
+      "article": "articles/it-user-giocim.html",
+      "source": "",
+      "error": "No matching original image URL in WP export"
+    }
+  ]
+}

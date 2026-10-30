@@ -1,0 +1,49 @@
+---
+layout: article
+lang: it
+title: User:Serval
+description: Progetto Sviluppare una applicazione da usare su di un CarPC (come è facile intuire si tratta
+  di un computer installato in auto). L’idea del CarPC non è nuova ed esiste […]
+permalink: /news/user-serval/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-serval/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Progetto">Progetto</span></h2>
+<p>Sviluppare una applicazione da usare su di un CarPC (come è facile intuire si tratta di un computer installato in auto).<br/> L'idea del CarPC non è nuova ed esiste una folta schiera di appassionati (per maggiori informazioni potete fare riferimento ai principali forum di discussione indicati nei Riferimenti).</p>
+<p> Uno dei principali applicativi in ambito carpc è RoadRunner (in breve: RR), un frontend grafico opensource che consente di accedere in maniera <i>touch screen friendly</i> a tutte le funzionalità offerte dal nostro pc. Inoltre è possibile estendere le funzionalità mediante lo sviluppo di plugin utilizzando l'sdk messe a disposizione da RR.</p>
+<p> Il mio lavoro prevede lo sviluppo di un plugin per il frontend grafico RoadRunner.<br/> L'idea è di creare una rete AdHoc tra autoveicoli nelle vicinanze e consentirne l'interazione implementando una chat vocale <i>serverless</i>.</p>
+<p><b><i>Stay tuned......</i></b></p>
+<h2><span class="mw-headline" id="Stato_del_progetto">Stato del progetto</span></h2>
+<p> -Sviluppo applicazione c++ mfc per testing delle librerie contenute nel package "Intel Laptop Gaming TDK"</p>
+<p> -C++/Cli wrapper delle librerie c++ native AdHocAPI.dll e IntelLaptopGaming.dll per esporne i metodi alle applicazioni managed</p>
+<p> -Sviluppo in C# di una applicazione per testing connessione rete AdHoc</p>
+<p> -Implementazione scambio messaggi (chat) tra i peer della rete adHoc</p>
+<p> -Memorizzazione dei peers raggiungibili in tabelle hash e scambio delle stesse ogni "heartbeat" secondi</p>
+<p> -Aggiunta possibilità di chat vocale tra 2 o più peers direttamente connessi tra loro (distanti 1 hop)</p>
+<p> -risolti alcuni fastidiosi bug nella gestione dell'ht</p>
+<p> -Integrazione in RoadRunner - Sviluppo interfaccia grafica</p>
+<p> -Scoperto grave bug nella gestione dell'ht: particolari sequenze di connessioni/disconnessioni e ritardi nella ricezione msg portavano a memorizzare informazioni inconsistenzi nell'ht</p>
+<p> -Completamente riscritta classe per la gestione dell'ht per risolvere il bug sopra descritto</p>
+<p> -Sviluppata GUI per usare il mio RoadRunner plugin come applicazione standalone</p>
+<hr/>
+<p> Attualmente: Testing e perfezionamento grafica</p>
+<h2><span class="mw-headline" id="Tecnologie_utilizzate">Tecnologie utilizzate</span></h2>
+<p>Intel Laptop Gaming TDK<br/> VC++<br/> C#<br/> .Net 3.5<br/> Visual Studio 2005/2008</p>
+<h2><span class="mw-headline" id="Requisiti">Requisiti</span></h2>
+<p>Windows XP SP2 + <a class="externallink" href="http://www.microsoft.com/Downloads/details.aspx?FamilyID=52a43bab-dc4e-413f-ac71-158efd1ada50&amp;displaylang=en&amp;Hash=ATQkz9Un5%2f2%2fDo6dF6s%2bSshNudkq3gueWrkJPRrVdDuSiiPh%2bcmbSyn" rel="nofollow" title="http://www.microsoft.com/Downloads/details.aspx?FamilyID=52a43bab-dc4e-413f-ac71-158efd1ada50&amp;displaylang=en&amp;Hash=ATQkz9Un5%2f2%2fDo6dF6s%2bSshNudkq3gueWrkJPRrVdDuSiiPh%2bcmbSyn">wlanapi</a>, Windows XP SP3<br/> Directx 9.0<br/> AdhocAPI.dll (<a class="externallink" href="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/" rel="nofollow" title="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/">Intel Laptop Gaming TDK</a>)<br/> IntelLaptopGaming.dll (<a class="externallink" href="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/" rel="nofollow" title="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/">Intel Laptop Gaming TDK</a>)</p>
+<h2><span class="mw-headline" id="Seminari">Seminari</span></h2>
+<p><a class="externallink" href="http://isis.dia.unisa.it/wiki/index.php/CarPC:_uno_sguardo_introduttivo_(Sergio_Vassallo)" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/CarPC:_uno_sguardo_introduttivo_(Sergio_Vassallo)">CarPC: uno sguardo introduttivo(14/07/2008)</a></p>
+<h2><span class="mw-headline" id="Articoli_interessanti">Articoli interessanti</span></h2>
+<p><a class="externallink" href="http://software.intel.com/en-us/articles/gaming-over-ad-hoc-peer-to-peer-networks/" rel="nofollow" title="http://software.intel.com/en-us/articles/gaming-over-ad-hoc-peer-to-peer-networks/">Gaming over adhoc peer to peer networks</a><br/> <a class="externallink" href="http://di.ionio.gr/medhocnet07/wp-content/uploads/papers/160.pdf" rel="nofollow" title="http://di.ionio.gr/medhocnet07/wp-content/uploads/papers/160.pdf">Multimedia over Wireless Mesh Networks: Results from a Real Testbed Evaluation(pdf)</a></p>
+<h2><span class="mw-headline" id="Riferimenti">Riferimenti</span></h2>
+<p><a class="externallink" href="http://www.mp3car.com/" rel="nofollow" title="http://www.mp3car.com/">Mp3car</a><br/> <a class="externallink" href="http://www.carputer.it" rel="nofollow" title="http://www.carputer.it">Carputer</a><br/> <a class="externallink" href="http://www.digital-car.co.uk/" rel="nofollow" title="http://www.digital-car.co.uk/">Digital-car</a><br/> <a class="externallink" href="http://guino.home.insightbb.com/roadrunner.html" rel="nofollow" title="http://guino.home.insightbb.com/roadrunner.html">RoadRunner</a><br/> <a class="externallink" href="http://msdn.microsoft.com/it-it/default.aspx" rel="nofollow" title="http://msdn.microsoft.com/it-it/default.aspx">Msdn</a><br/> <a class="externallink" href="http://msdn.microsoft.com/en-us/library/bb219818(VS.85).aspx" rel="nofollow" title="http://msdn.microsoft.com/en-us/library/bb219818(VS.85).aspx">Msdn: DirectSound</a><br/> <a class="externallink" href="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/" rel="nofollow" title="http://software.intel.com/en-us/articles/intel-laptop-gaming-technology-development-kit/">Intel Laptop Gaming TDK</a><br/> <a class="externallink" href="http://www.en.voipforo.com/codec/codecs-g711-alaw.php" rel="nofollow" title="http://www.en.voipforo.com/codec/codecs-g711-alaw.php">Codec G.711</a></p>
+<p> <br/>
+</p>
+

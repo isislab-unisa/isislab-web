@@ -1,0 +1,74 @@
+- title: Il laboratorio
+  url: /chi-siamo/
+  children:
+  - title: Chi siamo
+    url: /chi-siamo/
+  - title: Persone e gruppo
+    url: /chi-siamo/#persone
+  - title: Dicono di noi
+    url: /dicono-di-noi/
+  - title: Rassegna stampa
+    url: /rassegna-stampa/
+  - title: Premi e riconoscimenti
+    url: /premi-e-riconoscimenti/
+  - title: Come raggiungerci
+    url: /come-raggiungerci/
+- title: Ricerca
+  url: /tematiche/
+  children:
+  - title: Linee di ricerca
+    url: /tematiche/
+  - title: Pubblicazioni
+    url: /pubblicazioni-scientifiche/
+  - title: Risorse e SLR
+    url: /risorse-utili/
+  - title: Systematic Literature Reviews
+    url: /systematic-literature-reviews/
+- title: Progetti
+  url: /progetti/
+  children:
+  - title: Tutti i progetti
+    url: /progetti/
+  - title: Progetti con le scuole
+    url: /progetti-con-le-scuole/
+  - title: Public engagement
+    url: /public-engagement/
+- title: Didattica
+  url: /lauree-triennale-e-magistrale/
+  children:
+  - title: Corsi
+    url: /lauree-triennale-e-magistrale/
+  - title: Indirizzo Cloud Computing
+    url: /indirizzo-cloud-computing/
+  - title: Tesi
+    url: /informazioni-utili/
+  - title: Tirocini e tesi
+    url: /cosa-si-fa-in-isislab-stage-o-tesi/
+  - title: Risorse studenti
+    url: /risorse-per-gli-studenti/
+  - title: FAQ seminari
+    url: /faq-seminari/
+- title: Enti esterni
+  url: /convenzioni-e-contratti-di-ricerca/
+  children:
+  - title: Impatto sociale
+    url: /public-engagement/
+  - title: Scuole e territorio
+    url: /progetti-con-le-scuole/
+  - title: Convenzioni e contratti
+    url: /convenzioni-e-contratti-di-ricerca/
+  - title: Dottorato industriale
+    url: /dottorato-di-ricerca-industriale/
+  - title: Collaborazioni estere
+    url: /collaborazioni-con-enti-stranieri/
+- title: News
+  url: /news/
+  children:
+  - title: News
+    url: /news/
+  - title: Seminari
+    url: /events/list/
+  - title: Blog
+    url: /blog/
+  - title: Galleria
+    url: /galleria/

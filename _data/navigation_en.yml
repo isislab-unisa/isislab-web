@@ -1,0 +1,74 @@
+- title: The Lab
+  url: /en/chi-siamo/
+  children:
+  - title: About us
+    url: /en/chi-siamo/
+  - title: People & team
+    url: /en/chi-siamo/#persone
+  - title: Recognition
+    url: /en/dicono-di-noi/
+  - title: Press coverage
+    url: /en/rassegna-stampa/
+  - title: Awards & recognition
+    url: /en/premi-e-riconoscimenti/
+  - title: Directions
+    url: /en/come-raggiungerci/
+- title: Research
+  url: /en/tematiche/
+  children:
+  - title: Research areas
+    url: /en/tematiche/
+  - title: Publications
+    url: /en/pubblicazioni-scientifiche/
+  - title: Resources & SLR
+    url: /en/risorse-utili/
+  - title: Systematic Literature Reviews
+    url: /en/systematic-literature-reviews/
+- title: Projects
+  url: /en/progetti/
+  children:
+  - title: All projects
+    url: /en/progetti/
+  - title: School projects
+    url: /en/progetti-con-le-scuole/
+  - title: Public engagement
+    url: /en/public-engagement/
+- title: Teaching
+  url: /en/lauree-triennale-e-magistrale/
+  children:
+  - title: Degree programmes
+    url: /en/lauree-triennale-e-magistrale/
+  - title: Cloud Computing programme
+    url: /en/indirizzo-cloud-computing/
+  - title: Theses
+    url: /en/informazioni-utili/
+  - title: Internships & theses
+    url: /en/cosa-si-fa-in-isislab-stage-o-tesi/
+  - title: Student resources
+    url: /en/risorse-per-gli-studenti/
+  - title: Seminar FAQ
+    url: /en/faq-seminari/
+- title: External partners
+  url: /en/convenzioni-e-contratti-di-ricerca/
+  children:
+  - title: Social impact
+    url: /en/public-engagement/
+  - title: Schools & community
+    url: /en/progetti-con-le-scuole/
+  - title: Agreements & contracts
+    url: /en/convenzioni-e-contratti-di-ricerca/
+  - title: Industrial PhD
+    url: /en/dottorato-di-ricerca-industriale/
+  - title: International collaborations
+    url: /en/collaborazioni-con-enti-stranieri/
+- title: News
+  url: /en/news/
+  children:
+  - title: News
+    url: /en/news/
+  - title: Seminars
+    url: /en/events/list/
+  - title: Blog
+    url: /en/blog/
+  - title: Gallery
+    url: /en/galleria/

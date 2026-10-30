@@ -1,0 +1,94 @@
+---
+layout: article
+lang: it
+title: User:Marvit
+description: 'Mario Fiore Vitale Contatti: mvitale86 [at] gmail [dot] com La mia pagina Facebook Il mio Album
+  Flickr News Laurea Triennale 27-Luglio-09: Finalmente in ISISLab 🙂 22-Settembre-09: Studio di Pastry e […]'
+permalink: /news/user-marvit/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-marvit/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Mario_Fiore_Vitale"><b>Mario Fiore Vitale</b></span></h2>
+<p><b>Contatti:</b> </p>
+<ul>
+<li>mvitale86 [at] gmail [dot] com</li>
+<li><a class="externallink" href="http://www.facebook.com/qwerty86?ref=profile" rel="nofollow" title="http://www.facebook.com/qwerty86?ref=profile">La mia pagina Facebook</a></li>
+<li><a class="externallink" href="http://www.flickr.com/photos/qwerty86/" rel="nofollow" title="http://www.flickr.com/photos/qwerty86/">Il mio Album Flickr</a></li>
+</ul>
+<h2><span class="mw-headline" id="News"><b>News</b></span></h2>
+<ul>
+<li><b>Laurea Triennale</b>
+<ul>
+<li>27-Luglio-09: Finalmente in ISISLab 🙂</li>
+<li>22-Settembre-09: Studio di Pastry e Scribe</li>
+<li>30-Settembre-09: Sviluppo Cellular ANTomata Distribuito mediante Pastry e Scribe</li>
+<li>16-Novembre-09: Lavoro di debugging per risolvere un problema di sottoscrizione.</li>
+<li>1-Dicembre-09: Risolto il problema si sottoscrizione!!! 😀 </li>
+<li>2-Dicembre-09: Prima versione funzionante di Cellular ANTomata distribuito</li>
+<li>2-Dicembre-09: Inizio attività di miglioramento della prima implementazione.</li>
+<li>15-Dicembre-09: Implementazione Join a runtime di un nodo</li>
+</ul>
+</li>
+<li><b>Laurea Magistrale</b>
+<ul>
+<li>7-Maggio-2012: Ritornato in ISISLab, lavorerò su DMASON</li>
+<li>23-Maggio-2012: mi occuperò del System management su DMASON</li>
+<li>06-Settembre-2012: implementata la riconessione automatica dei worker, reset della simulazione, deploy di jar.</li>
+</ul>
+</li>
+</ul>
+<h1><span class="mw-headline" id="Tesi_Magistrale"><b>Tesi Magistrale</b></span></h1>
+<p> -----&gt;Working on DMASON</p>
+<hr/>
+<h1><span class="mw-headline" id="Tesi_Triennale"><b>Tesi Triennale</b></span></h1>
+<h3><span class="mw-headline" id="Il_mio_Lavoro"><b>Il mio Lavoro</b></span></h3>
+<p>Il mio lavoro di tesi è quello di studiare un'infrastruttura p2p per la simulazione. L'idea è quella di effettuare simulazioni di un certo livello di complessità andando a sfruttare non un unico punto di calcolo ma un'intera rete p2p. In questo modo si ha il vantaggio di poter effetturare simulazioni anche molto complesse senza dotarsi di un sistema con grosse capacità hardware, semplicemente andando ad aggiungere nodi alla rete.Quindi un sistema di questo tipo ha tutte le caratteristiche di un Sistema Distribuito : </p>
+<ul>
+<li> Resistenza ai malfunzionamenti parziali </li>
+<li> Autonomia </li>
+<li> Scalabilità </li>
+</ul>
+<p>Per l'implementazione di questa infrastruttura ho usato Pastry e Scribe.</p>
+<p><b>Pastry</b> è un protocollo DHT(Distibuted Hash Table) che permette di realizzare una overlay network, una rete costruita al di sopra di un'altra rete(es. TCP/IP), offrendo un meccanismo di routing molto efficiente, scalabilità e resistenza ai malfunzionamenti.Esistono molti altri DHT ma l'uso di Pastry è dovuto alla possibilità di poter utilizzare Scribe.</p>
+<p><b>Scribe</b> è un sistema decentralizzato per la comunicazione di tipo Publish/Subscribe che fa uso di Pastry per il routing dei messaggi e il lookup dei nodi.Un utente può creare un Topic al quale altri possono sottoscriversi e ricevere gli aggiornamenti quando vengono pubblicati. </p>
+<p>Il passo successivo è stato quello di implementare una semplice simulazione rendendola distribuita con l'uso di Pastry e Scribe. Si è scelto di usare come simulazione di test Cellular ANTomata basato su Cellular automata.Quest'ultimo è un modello per simulare l'evolversi di un automa cellulare. In particolare Cellular ANTomata si focalizza sull'interazione e la cooperazione che esiste in natura tra le formiche. La simulazione si svolge in un ambiente chiamato griglia,suddiviso in celle, le quali possono ospitare o meno una formica. </p>
+<p>L'idea è quella di assegnare ad ogni nodo un certo numero di celle utilizzando il meccanismo di distribuzione di Pastry. Ogni nodo e ogni cella hanno un id quindi usando il meccanismo di routing di Pastry è possibile assegnare in modo dinamico le celle ai nodi. Una cella verrà assegnata al nodo che ha l'id numericamente più vicino a quello della cella stessa. Le informazioni che i vari nodi dovranno scambiarsi per la simulazione verranno gestite tramite Scribe.</p>
+<p>Dopo una prima implementazione l'obiettivo è quello di migliorare l'efficienza di quest'ultima. Sono stati attuati due miglioramenti : </p>
+<ul>
+<li>Distribuzione di blocchi di celle</li>
+<li>Implementazione di una barriera locale</li>
+</ul>
+<p>Nella prima implementazione venivano distribuite le celle singolarmente, questo portava ad avere un gran numero di messaggi scambiati e di sottoscrizioni, con la distribuzione di blocchi di celle il numero di messaggi e di sottoscrizioni si riduce. </p>
+<p>Inoltre nella implementazione iniziale il sistema non era del tutto distribuito dato che la fase di eleborazione era resa centralizzata da una barriera, con l'eliminazione di questa barriera e l'intoduzione di una barriera locale , ogni blocco passa allo step successivo (n+1) di elaborazione quando tutti i blocchi vicini hanno effettuato lo step precedente (n).</p>
+<hr/>
+<h3><span class="mw-headline" id="Seminari"><b>Seminari</b></span></h3>
+<ul>
+<li> Venerdì 23 Ottobre 2009
+<p>Titolo: Infrastruttura p2p per la simulazione di Cellular ANTomata <br/> Abstract: <i>Sarà presentata un'infrastruttura p2p per la simulazione di Cellular ANTomata fornendo motivazioni e obiettivi da raggiungere. Inoltre saranno introdotti i due protocolli utilizzati: Pastry e Scribe. Infine si presenterà una prima implementazione.</i> </p>
+</li>
+</ul>
+<hr/>
+<h3><span class="mw-headline" id="Software_Utilizzati"><b>Software Utilizzati</b></span></h3>
+<ul>
+<li>FreePastry</li>
+<li>Eclipse</li>
+<li>jre 6</li>
+</ul>
+<hr/>
+<h3><span class="mw-headline" id="Riferimenti_:"><b>Riferimenti :</b></span></h3>
+<ul>
+<li><a class="externallink" href="http://www.freepastry.org/" rel="nofollow" title="http://www.freepastry.org/">Implementazione free di Pastry</a></li>
+<li><a class="externallink" href="http://research.microsoft.com/en-us/um/people/antr/past/pastry.pdf" rel="nofollow" title="http://research.microsoft.com/en-us/um/people/antr/past/pastry.pdf">Pastry:Scalable,decentralized object location and routing for large-scale peer-to-peer systems</a></li>
+<li><a class="externallink" href="http://research.microsoft.com/en-us/um/people/antr/past/jsac.pdf" rel="nofollow" title="http://research.microsoft.com/en-us/um/people/antr/past/jsac.pdf">SCRIBE: A large-scale and decentralized application-level multicast infrastructure</a></li>
+<li><a class="externallink" href="http://www.cs.umass.edu/~rsnbrg/47420078.pdf" rel="nofollow" title="http://www.cs.umass.edu/~rsnbrg/47420078.pdf">Cellular ANTomata</a></li>
+</ul>
+<p> <br/>
+</p>
+

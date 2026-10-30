@@ -1,0 +1,64 @@
+---
+layout: article
+lang: it
+title: User:Framil
+description: Laurea Magistrale Obiettivi Distribuire il campo Network presente in MASON rendendo così possibile
+  implementare simulazioni massive basate su Grafi in D-MASON. Metodologie Layout Linearization La prima metodologia
+  applicata durante il […]
+permalink: /news/user-framil/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-framil/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Laurea_Magistrale">Laurea Magistrale</span></h2>
+<h3><span class="mw-headline" id="Obiettivi">Obiettivi</span></h3>
+<p>Distribuire il campo Network presente in <a class="externallink" href="http://cs.gmu.edu/~eclab/projects/mason/" rel="nofollow" title="http://cs.gmu.edu/~eclab/projects/mason/">MASON</a> rendendo così possibile implementare simulazioni massive basate su Grafi in <a class="externallink" href="http://www.dmason.org/" rel="nofollow" title="http://www.dmason.org/">D-MASON</a>.</p>
+<h3><span class="mw-headline" id="Metodologie">Metodologie</span></h3>
+<h4><span class="mw-headline" id="Layout_Linearization">Layout Linearization</span></h4>
+<p>La prima metodologia applicata durante il mio percorso di tesi è stata quella del Layout Linearization mirata a ripartire un Grafo su distribuzione Horizontal in <a class="externallink" href="http://www.dmason.org/" rel="nofollow" title="http://www.dmason.org/">D-MASON</a>. Questa metodologia nasce dalla fusione di due concetti già presenti nella teoria dei Grafi: <a class="externallink" href="http://en.wikipedia.org/wiki/Graph_drawing" rel="nofollow" title="http://en.wikipedia.org/wiki/Graph_drawing">Graph Drawing</a> e <a class="externallink" href="http://dl.acm.org/citation.cfm?id=568523" rel="nofollow" title="http://dl.acm.org/citation.cfm?id=568523">Graph Layout</a>. Dato un Grafo si applica un algoritmo di Drawing per evidenziare cluster di nodi altamente connessi ed isolarli dalla restante parte del Grafo. L'algoritmo di Drawing posiziona i vertici in uno spazio 2D o 3D che viene successivamente discretizzato e riportato su di una superficie piana. Una volta discretizzati i vertici su di un piano bisogna procedere alla linearizzazione dei vertici, ovvero passare da una superficie piana 2D ad una retta monodimensionale. Il passaggio da superficie 2D a retta monodimensionale può essere effettuato seguendo diverse strategie elencate nei paragrafi qui di seguito. I metodi di Graph Drawing esaminati sono i seguenti: </p>
+<ul>
+<li><a class="externallink" href="http://www.researchgate.net/publication/253087985_OpenOrd_an_open-source_toolbox_for_large_graph_layout/file/3deec5205279e8c66a.pdf" rel="nofollow" title="http://www.researchgate.net/publication/253087985_OpenOrd_an_open-source_toolbox_for_large_graph_layout/file/3deec5205279e8c66a.pdf">OpenOrd</a></li>
+<li><a class="externallink" href="http://www.medialab.sciences-po.fr/publications/Jacomy_Heymann_Venturini-Force_Atlas2.pdf" rel="nofollow" title="http://www.medialab.sciences-po.fr/publications/Jacomy_Heymann_Venturini-Force_Atlas2.pdf">ForceAtlas2</a></li>
+<li><a class="externallink" href="http://onlinelibrary.wiley.com/doi/10.1002/spe.4380211102/abstract" rel="nofollow" title="http://onlinelibrary.wiley.com/doi/10.1002/spe.4380211102/abstract">Fruchterman-Reingold</a></li>
+<li><a class="externallink" href="http://www2.research.att.com/~yifanhu/PUB/graph_draw_small.pdf" rel="nofollow" title="http://www2.research.att.com/~yifanhu/PUB/graph_draw_small.pdf">Yifan Hu</a></li>
+</ul>
+<p>L'obiettivo principale del <i>Layout Linearization</i> è di ottenere linerizzazioni del grafo in cui due nodi connessi siano disposti quanto più vicino possibile. Supponiamo di avere un anello composto da 3 nodi con archi (1,2) (2,3) (3,1) e la seguente linearizzazione {1,2,3}. Lo <i>stretch</i> della linearizzazione {1,2,3} è pari a 1 perchè l'arco teso tra i nodi 3 e 1 passa attraverso un nodo nella linearizzazione (il nodo 2). Una linearizzazione con <i>stretch</i> alto rende difficile la distribuzione del Network in <a class="externallink" href="http://www.dmason.org/" rel="nofollow" title="http://www.dmason.org/">D-MASON</a> dato che un Worker per comunicare dovrà attraversare più Worker per recapitare il messaggio e non solo i suoi diretti vicini. </p>
+<h5><span class="mw-headline" id="Snake_Walk">Snake Walk</span></h5>
+<p>Permette il passaggio da superficie 2D a retta monodimensionale. Lo spazio 2D viene mappato all'interno di una matrice A <i>n x m</i> ed ogni vertice viene inserito nella cella A[i,j] se le sue coordinate nello spazio 2D hanno come parte intera della coordinata <i>x</i>, <i>i</i> e come parte intera della coordinata <i>y</i>, <i>j</i>. La matrice A viene successivamente linearizzata concatenando la riga i alla riga i+1 letta da destra verso sinistra, simulando lo stesso movimento del "serpente" nel gioco <a class="externallink" href="http://en.wikipedia.org/wiki/Snake_(video_game)" rel="nofollow" title="http://en.wikipedia.org/wiki/Snake_(video_game)">Snake</a>, da qui il nome <i>Snake Walk</i>. </p>
+<h5><span class="mw-headline" id="Hilbert_Curve">Hilbert Curve</span></h5>
+<p>Permette il passaggio da superficie 2D a retta monodimensionale. I vertici vengono linearizzati eseguendo una visita dello spazio 2D secondo la <a class="externallink" href="http://en.wikipedia.org/wiki/Hilbert_curve" rel="nofollow" title="http://en.wikipedia.org/wiki/Hilbert_curve">Curva di Hilbert</a> che "riempie" completamente lo spazio. </p>
+<h5><span class="mw-headline" id="Conclusioni">Conclusioni</span></h5>
+<p>I risultati ottenuti da questa metodologia sono risultati scadenti sia in termini di performance che di <i>stretch</i>. Per questi motivi la metodologia <i>Layout Linearization</i> è stata abbandonata per procedere allo sviluppo di un nuovo approccio basato su <a class="externallink" href="http://en.wikipedia.org/wiki/Community_structure" rel="nofollow" title="http://en.wikipedia.org/wiki/Community_structure">Community Detection</a>. </p>
+<h4><span class="mw-headline" id="Community_Detection">Community Detection</span></h4>
+<p>Al momento sono impegnano nello sviluppo di una metodologia basata su <a class="externallink" href="http://sites.google.com/site/findcommunities/" rel="nofollow" title="http://sites.google.com/site/findcommunities/">Louvain Method</a>. Futuri sviluppi ed ulteriori dettagli saranno aggiunti in seguito.</p>
+<h2><span class="mw-headline" id="Software">Software</span></h2>
+<ul>
+<li><a class="externallink" href="http://www.eclipse.org/" rel="nofollow" title="http://www.eclipse.org/">Eclipse</a>, what else!</li>
+<li><a class="externallink" href="http://gephi.org/" rel="nofollow" title="http://gephi.org/">Gephi</a>, software per gestione e visualizzazione di Grafi, Grafi Gerarchici e Dinamici.</li>
+<li><a class="externallink" href="http://jgrapht.org/" rel="nofollow" title="http://jgrapht.org/">JGraphT</a>, libreria gratuita Java che fornisce svariate implementazioni dell'oggetto Grafo (Directed, Undirected, Weighted, Unweighted, ecc...) ed una moltitudine di algoritmi (Floyd-Warshall Shortest Paths, Prim MST, Kruskal MST, Hamiltonian Cycle TSP, ecc...)</li>
+<li><a class="externallink" href="http://www.graphviz.org/" rel="nofollow" title="http://www.graphviz.org/">Graphviz</a>, software per la visualizzazione di Grafi.</li>
+</ul>
+<h2><span class="mw-headline" id="Bibliografia">Bibliografia</span></h2>
+<ol>
+<li><a class="externallink" href="http://arxiv.org/abs/0803.0476" rel="nofollow" title="http://arxiv.org/abs/0803.0476">Fast unfolding of communities in large networks</a>, Vincent D. Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre, J. Stat. Mech., October 2008.</li>
+<li><a class="externallink" href="http://arxiv.org/abs/1308.6604," rel="nofollow" title="http://arxiv.org/abs/1308.6604,">A smart local moving algorithm for large-scale modularity-based community detection</a>, Ludo Waltman, Nees Jan van Eck, The European Physical Journal B, November 2013.</li>
+<li><a class="externallink" href="http://arxiv.org/pdf/condmat/0308217," rel="nofollow" title="http://arxiv.org/pdf/condmat/0308217,">Finding and evaluating community structure in networks</a>, MEJ Newman, M Girvan, Physical Review E, February 2004.</li>
+<li><a class="externallink" href="http://arxiv.org/pdf/cond-mat/0309508" rel="nofollow" title="http://arxiv.org/pdf/cond-mat/0309508">Fast algorithm for detecting community structure in networks</a>, MEJ Newman, Physical Review E, June 2004.</li>
+<li><a class="externallink" href="http://arxiv.org/pdf/1104.3083" rel="nofollow" title="http://arxiv.org/pdf/1104.3083">Narrow scope for resolution-limit-free community detection</a>, VA Traag, P Van Dooren, Y Nesterov, Physical Review E, August 2011.</li>
+<li><a class="externallink" href="http://dl.acm.org/citation.cfm?id=568523" rel="nofollow" title="http://dl.acm.org/citation.cfm?id=568523">A survey of graph layout problems</a>, J Díaz, J Petit, M Serna, ACM Computing Surveys (CSUR), September 2002.</li>
+<li><a class="externallink" href="http://eprints.cs.vt.edu/archive/00000182/01/TR-89-45.pdf" rel="nofollow" title="http://eprints.cs.vt.edu/archive/00000182/01/TR-89-45.pdf">Graph layout using queues</a>, LS Heath, 1989.</li>
+<li><a class="externallink" href="http://epubs.siam.org/doi/abs/10.1137/0405031" rel="nofollow" title="http://epubs.siam.org/doi/abs/10.1137/0405031">Comparing Queues and Stacks As Machines for Laying Out Graphs</a>, LS Heath, FT Leighton, AL Rosenberg, SIAM Journal on Discrete Math, 1992.</li>
+<li><a class="externallink" href="http://www.researchgate.net/publication/253087985_OpenOrd_an_open-source_toolbox_for_large_graph_layout/file/3deec5205279e8c66a.pdf" rel="nofollow" title="http://www.researchgate.net/publication/253087985_OpenOrd_an_open-source_toolbox_for_large_graph_layout/file/3deec5205279e8c66a.pdf">OpenOrd: an open-source toolbox for large graph layout</a>, Shawn Martin, W. Michael Brown, Richard Klavans, Kevin W. Boyack, Visualization and Data Analysis 2011, January 2011.</li>
+<li><a class="externallink" href="http://www2.research.att.com/~yifanhu/PUB/graph_draw_small.pdf" rel="nofollow" title="http://www2.research.att.com/~yifanhu/PUB/graph_draw_small.pdf">Efficient, high-quality force-directed graph drawing</a>, Yifan Hu, Mathematica Journal, 2005.</li>
+<li><a class="externallink" href="http://www.medialab.sciences-po.fr/publications/Jacomy_Heymann_Venturini-Force_Atlas2.pdf" rel="nofollow" title="http://www.medialab.sciences-po.fr/publications/Jacomy_Heymann_Venturini-Force_Atlas2.pdf">ForceAtlas2, A Continuous Graph Layout</a> Mathieu Jacomy, Sebastien Heymann, Tommaso Venturini, Mathieu Bastian, August 2012.</li>
+<li><a class="externallink" href="http://onlinelibrary.wiley.com/doi/10.1002/spe.4380211102/abstract" rel="nofollow" title="http://onlinelibrary.wiley.com/doi/10.1002/spe.4380211102/abstract">Graph drawing by forcefidirected placement</a>, Thomas MJ Fruchterman, Edward M Reingold, Software: Practice and experience, 1991.</li>
+</ol>
+<p> <br/>
+</p>
+

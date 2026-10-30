@@ -1,0 +1,144 @@
+---
+layout: article
+lang: it
+title: User:Cricap
+description: Distributed Massive Battle Introduzione Il mio lavoro ha lo scopo di distribuire su più macchine
+  una applicazione per la simulazione di agenti autonomi in ambito bellico. L’applicazione di partenza è […]
+permalink: /news/user-cricap/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-cricap/
+section: News
+---
+<h1>Distributed Massive Battle</h1>
+<h2><span class="mw-headline" id="Introduzione">Introduzione</span></h2>
+<p>Il mio lavoro ha lo scopo di distribuire su più macchine una applicazione per la simulazione di agenti autonomi in ambito bellico.<br/>
+L'applicazione di partenza è un software di simulazione, in attiva fase di sviluppo in ISISLab, al quale ha lavorato Alberto Boccardo (User:Albboc) e sta lavorando Daniele Monaco (User:Danmon). Per quanto riguarda la distribuzione della simulazione, si è pensato di utilizzare una infrastruttura p2p che permettesse di alleggerire il carico di lavoro, non essendo quest'ultimo gestibile da un'unica macchina.<br/>
+Sono state prese in rassegna diverse possibili infrastrutture per la realizzazione dell'applicazione. Essendo il software di simulazione sviluppato in C++ si è cercato di utilizzare un framework sviluppato in questo stesso linguaggio. La prima valutazione è caduta sulla versione in C# di FreePastry. FreePastry è una implementazione open-source di Pastry scritta in Java e pensata per il rilascio su Internet. Come prima accennato esiste anche una versione scritta in C# realizzata da Microsft e denominata MSPastry; se quest'ultima era inizialmente free successivamente è stata venduta dalla azienda produttrice e non è stato possibile avvalerci di tali API.<br/>
+A questo punto sono state vagliate altre soluzioni come: SIENA e il servizio WSPEventRouter. Per vari motivi legati allo stato dell'arte nel caso di SIENA e della poca trasperenza del servizio nel secondo si è scelto di utilizzare FreePastry. L'utilizzo di un framework Java per distribuire una applicazione scritta in C++ ci ha imposto l'utilizzo di JNI (Java Native Interface).</p>
+<h2><span class="mw-headline" id="Seminari">Seminari</span></h2>
+<h3><span class="mw-headline" id="Secondo_Seminario">Secondo Seminario</span></h3>
+<p><b>Titolo del seminario :</b><br/>
+Distributed Massive Battle<br/>
+<b>Abstract :</b><br/>
+Distributed Massive Battle è la versione distribuita di un Massive Simulation Environment, un particolare MMVE, che si propone di riprodurre fedelmente battaglie storiche.<br/>
+L'approccio adottato per realizzare la distribuzione della simulazione sfrutta il paradigma peer-to-peer. Ogni nodo dell'overlay network condivide memoria, banda e parte della propria potenza di calcolo con gli altri peer della rete. Nel seminario saranno presentate le scelte progettuali e le soluzioni adottate per la realizzazione del sistema.<br/>
+A conclusione, saranno mostrate le prestazioni del sistema distribuito confrontandole con la versione originale del SE.<br/>
+<b>Materiale Seminario:</b><br/>
+Seminario_2</p>
+<h2><span class="mw-headline" id="Presentazione_Finale">Presentazione Finale</span></h2>
+<p><b>Materiale Seminario:</b><br/>
+Presentazione_Finale</p>
+<h2><span class="mw-headline" id="Software_e_librerie">Software e librerie</span></h2>
+<ul>
+<li>Visual C++ 2008 Express Edition</li>
+<li>OGRE SDK 1.4.7</li>
+<li>PagedGeometry 1.04</li>
+<li>Caelum 0.3.0</li>
+<li>Editable Terrain Manager 2.2</li>
+<li>Hydrax 0.4</li>
+<li>OpenSteer 0.8.2</li>
+<li>Eclipse 3.5.1</li>
+<li>FreePastry 2.1</li>
+<li>jdk 6.19</li>
+</ul>
+<h1><span class="mw-headline" id="Altro">Altro</span></h1>
+<h2><span class="mw-headline" id="Abstract">Abstract</span></h2>
+<p>I Massive Multiuser Virtual Environments (MMVEs) stanno rapidamente divenendo sempre più complessi sia per il numero di utenti che per la varietà delle interazioni. Nel seminario verrà presentato "Distributed Massive Battle" la versione distribuita di un Massive Simulation Environment, un particolare MMVE, che si propone di riprodurre fedelmente battaglie storiche come quella di Waterloo. Nella prima parte si accennerà a Pastry e Scribe necessari per implementare l'architettura P2P alla base della distribuzione ed a JNI (Java Native Interface) che viene utilizzato per la comunicazione tra il software di simulazione scritto in C++ e l'architettura P2P scritta in Java. Nella seconda parte viene illustrato come le tecnologie descritte in precedenza vengono utilizzate all'interno di Distributed Massive Battle.</p>
+<h2><span class="mw-headline" id="News">News</span></h2>
+<ul>
+<li>22/10 : E' il mio compleanno e entro a far parte dell' ISISLab</li>
+<li>15/11 : Ricerche su scribe, pastry, massive battle e articoli correlati</li>
+<li>09/12 : Ritorno in ISIS dopo aver completato gli esami 😀</li>
+<li>14/12 : Possibilità MSPastry scartata</li>
+<li>18/12 : Ho avuto molte difficoltà nella compilazione della versione C del Siena software che sembra incompleto</li>
+<li>21/12 :
+<ul>
+<li>Purtroppo anche il software SIENA è da scartare... Sono riuscito a compilare il progetto... ho contattato il prof. responsabile del progetto... la versione C del software sembra non aggiornata la loro attenzione si è spostata sulla implementazione Java.</li>
+<li>Scelgo di utilizzare FreePastry</li>
+</ul>
+</li>
+<li>08/01 : Primi esempi di utiilizzo di JNI funzionanti</li>
+<li>15/01 :
+<ul>
+<li>Separazione dell'interfaccia grafica dalla logica di massive battle</li>
+<li>Generazione della dll</li>
+</ul>
+</li>
+<li>22/01 :
+<ul>
+<li>Utilizzo di FreePastry</li>
+<li>Realizzazione dell'architettura distribuita di FreePastry</li>
+</ul>
+</li>
+<li>29/01 :
+<ul>
+<li>Timide interazioni con DistributedMassiveBattle</li>
+<li>Evoluzione della distribuzione</li>
+</ul>
+</li>
+<li>05/02 :
+<ul>
+<li>Utilizzo di Scribe</li>
+<li>Creazione di metodi nativi più complessi</li>
+<li>Simulazione funzionante ma con molte limitazioni</li>
+</ul>
+</li>
+<li>08/02 : Realizzazione di una struttura dati efficienti per la gestione di blocchi e vehicles</li>
+<li>12/02 : Coordinazione tra i vari nodi di simulazione in maniera che siano rispettati i vincoli di aggiornamento</li>
+<li>16/02: Viene gestito l'evento di passaggio di un vehicle da un blocco ad un altro.</li>
+<li>10/02: Sto cercando di capire qual'è il set minimio di informazioni da inviare sulla rete per minimizzare il traffico dei dati.</li>
+</ul>
+<h2><span class="mw-headline" id="Link_Interessanti">Link Interessanti</span></h2>
+<ul>
+<li><a class="externallink" href="http://research.microsoft.com/en-us/um/people/antr/MS/" rel="nofollow" title="http://research.microsoft.com/en-us/um/people/antr/MS/">http://research.microsoft.com/en-us/um/people/antr/MS/</a>
+<ul>
+<li>FreePastry in C# by Microsoft</li>
+</ul>
+</li>
+<li><a class="externallink" href="http://www.inf.usi.ch/carzaniga/siena/software/" rel="nofollow" title="http://www.inf.usi.ch/carzaniga/siena/software/">Siena Software</a></li>
+</ul>
+<h2><span class="mw-headline" id="Bibliografia">Bibliografia</span></h2>
+<ul>
+<li><a class="externallink" href="http://www.cl.cam.ac.uk/research/srg/opera/publications/papers/peter-debs07.pdf" rel="nofollow" title="http://www.cl.cam.ac.uk/research/srg/opera/publications/papers/peter-debs07.pdf">Towards a Common API for Publish/Subscribe</a>
+<ul>
+<li>Interessante e recente pubblicazione comparativa tra diversi middleware publish/subscribe system</li>
+</ul>
+</li>
+<li><a class="externallink" href="http://www.topicr.com/download_doc?id=1223" rel="nofollow" title="http://www.topicr.com/download_doc?id=1223">Survey of Publish Subscribe Event Systems</a>
+<ul>
+<li>Altro documento che valuta le caratteristiche di middleware tra cui Gryphon, Scribe, Bayeux, Siena, NaradaBrokering, XMessages, Echo, JMS.</li>
+</ul>
+</li>
+<li><a class="externallink" href="http://www.inf.usi.ch/carzaniga/papers/crw_tocs01.pdf" rel="nofollow" title="http://www.inf.usi.ch/carzaniga/papers/crw_tocs01.pdf">Design and Evaluation of a Wide-Area Event Notification Service</a>
+<ul>
+<li>Paper realizzato dagli autori di Siena</li>
+</ul>
+</li>
+<li><a class="externallink" href="http://serl.cs.colorado.edu/~dennis/publications/pdf/tr/CU-CS-946-03.pdf" rel="nofollow" title="http://serl.cs.colorado.edu/~dennis/publications/pdf/tr/CU-CS-946-03.pdf">Extending The Siena Publish/Subscribe System</a>
+<ul>
+<li>Documento in cui viene spiegato come può essere esteso Siena in maniera che supporti la gestione di tipi complessi</li>
+</ul>
+</li>
+<li>P. Morillo, J.M. Orduña, M. Fernández and J. Duato. Impoving the Performance of Distributed Virtual Environment System. IEEE, 2004</li>
+<li>K. L. Morse. Interest management in large-scale distributed simulations. Technical Report CS-TR-96-27, University of California, Irvine, 1996.</li>
+<li>S. Ratnasamy, P. Francis, M. Handley, R. Karp, and S. Schenker. A scalable content-addressable network. In Proceedings of the 2001 conference on Applications, technologies, architectures, and protocols for computer communications, pages 161-172. ACM Press, 2001.</li>
+<li>I. Stoica, R. Morris, D. Karger, F. Kaashoek, and H. Balakrishnan. Chord: A scalable Peer-To-Peer lookup service for internet applications. In Roch Guerin, editor, Proceedings of SIGCOMM-01, volume 31, 4 of Computer Communication Review, pages 149-160, New York, August 27-31 2001. ACM Press.</li>
+<li>B. Y. Zhao, J. D. Kubiatowicz, and A. D. Joseph. Tapestry: An infrastructure for fault-tolerant wide-area location and routing. Technical Report UCB/CSD-01-1141, UC Berkeley, April 2001.</li>
+<li>A. Rowstron and P. Druschel. Pastry: scalable, decentraized object location and routing for large-scale peer-to-peer systems. In Proceedings of the 18th IFIP/ACM International Conference on Distributed Systems Platforms (Middleware), November 2001.</li>
+<li>M. Castro, M. B. Jones, A. Kermarrec, A. Rowstron, M. Theimer, H. Wang, and A. Wolman. An evaluation of scalable application-level multicast built using peer-to-peer overlays. In Infocom'03, April 2003.</li>
+<li>Y. K. Dalal and R. Metcalfe. Reverse path forwarding of broadcast packets. Communications of the ACM, 21(12) 1040-1048, 1978.</li>
+<li>C. Reynolds. Flocks, herds and schools: a distributed behavioral model. In SIGGRAPH'87: Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques, ACM, New York, NY, USA, 1987.</li>
+<li>C. Reynolds. Steering behaviors for autonomous characters. In Game Developers Conference, Miller Freeman Game Group, San Francisco, CA, USA, 1999.</li>
+<li>G. Cordasco, R. De Chiara, U. Erra and V. Scarano. Some Considerations on the Design of a P2P Infrastructure for Massive Simulations. In: International Conference on Ultra Modern Telecommunication (ICUMT 2009). October 2009, St.-Petersburg, Russia.</li>
+<li>A. Boccardo, R. De Chiara, and V. Scarano. Massive Battle: Coordinated Movement of Autonomous Agents in Proc. of the Workshop on 3D Advanced Media In Gaming And Simulation (3AMIGAS), 2009.</li>
+<li>B. Knutsson, H. Lu, W. Xu, and B. Hopkins. Peer-to-Peer Support for Massively Multiplayer Games, in Twentythird AnnualJoint Conference of the IEEE Computer and Communications Societies (INFOCOM 2004), 2004, p. 107.</li>
+<li>G. Cordasco, B. Cosenza, R. De Chiara, U. Erra, and V. Scarano, Experiences with Mesh-like computations using Prediction Binary Trees, Scalable Computing: Practice and Experience, Scientific international journal for parallel and distributed computing (SCPE), vol. 10, no. 2, pp. 173-187, June 2009.</li>
+<li>P. Pietzuch, D. Eyers, S. Kounev, and B. Shand. Towards a common api for publish/subscribe. In DEBS '07: Proceedings of the 2007 inaugural international conference on Distributed event-based systems, pages 152-157, New York, NY, USA, 2007.</li>
+<li>M. Buckland, Programming Game AI by Example 2005.</li>
+<li>D. Monaco. SteerUnit: un framework per lo Unit Testing di modelli comportamentali per simulazioni basate su agenti. Università degli Studi di Salerno, 2010.</li>
+<li>A. Boccardo. Massive Battle: Simulazione di Combattimento e Movimento Coordinato di Agenti Autonomi. Università degli Studi di Salerno, 2008.</li>
+</ul>
+<p> </p>
+

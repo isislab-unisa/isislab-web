@@ -1,0 +1,87 @@
+/* ISISLab v4 — restrained visual system; research cyan / violet / teal only. */
+:root {
+  --research-distributed: #269bc3;
+  --research-collaborative: #8172b9;
+  --research-visualization: #329c90;
+  --border: rgba(29,53,78,.115);
+  --shadow: 0 10px 32px rgba(24,44,66,.035);
+}
+body { color:#182638;background:#fafbfc;-webkit-font-smoothing:antialiased; }
+.lab-grid-bg { background-color:#fafbfc;background-image:linear-gradient(rgba(41,69,92,.025) 1px, transparent 1px),linear-gradient(90deg,rgba(41,69,92,.025) 1px,transparent 1px);background-size:56px 56px; }
+.lab-header { background:rgba(255,255,255,.94);border-color:rgba(36,61,82,.095);box-shadow:none; }
+.lab-primary-nav .nav-item-head>a { font-weight:630; }
+.lab-hero { min-height:755px; }
+.lab-hero h1 { color:#162a3d;background:none;-webkit-text-fill-color:currentColor;letter-spacing:-.056em;font-weight:650; }
+.lab-hero-copy-card { max-width:755px;width:min(755px,64%);padding-right:18px;background:linear-gradient(90deg,rgba(250,251,252,.95) 0%,rgba(250,251,252,.78) 65%,transparent); }
+.lab-hero-copy-card>p {color:#627487;line-height:1.72;font-weight:420;max-width:615px;}
+.lab-hero>.lab-pill,.lab-pill {color:#566b7e;background:rgba(255,255,255,.66);border:1px solid rgba(56,77,102,.14);box-shadow:none;font-weight:650;letter-spacing:.11em;}
+.lab-physics-hero::before {background:none;}
+.lab-physics-hero__grain {opacity:.04;}
+.lab-physics-hero__canvas {opacity:1;}
+.lab-signal-strip {background:rgba(255,255,255,.66);border-color:rgba(30,58,84,.1);border-radius:0;}
+.lab-signal-strip__track span:before { color:#8ea2b5; }
+.lab-card,.lab-flow-card,.lab-news-card,.page-content,.sidebar-card,.source-card { border:1px solid rgba(32,57,81,.12);box-shadow:0 9px 34px rgba(30,49,68,.035); }
+.lab-metric,.lab-flow-card,.lab-hub-card,.lab-news-card { border-radius:17px; }
+.lab-metric:hover,.lab-flow-card:hover,.lab-hub-card:hover {transform:translateY(-2px);box-shadow:0 12px 34px rgba(23,45,65,.075);}
+.lab-flow-card {min-height:305px;padding:31px;}
+.lab-flow-card:before {display:none;}
+.lab-flow-card h3 {font-size:23px;font-weight:630;}
+.lab-flow-card__orb,.lab-flow-card:nth-child(2) .lab-flow-card__orb,.lab-flow-card:nth-child(3) .lab-flow-card__orb {
+  width:48px;height:48px;border-radius:50%;transform:none;
+  box-shadow:inset 0 1px 3px rgba(255,255,255,.78),0 3px 12px rgba(20,64,93,.045);
+  border:1px solid currentColor;
+}
+.lab-flow-card__orb { color:rgba(38,155,195,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(38,155,195,.16) 62%,rgba(38,155,195,.20)); }
+.lab-flow-card:nth-child(2) .lab-flow-card__orb {color:rgba(129,114,185,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(129,114,185,.16) 62%,rgba(129,114,185,.20));}
+.lab-flow-card:nth-child(3) .lab-flow-card__orb {color:rgba(50,156,144,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(50,156,144,.16) 62%,rgba(50,156,144,.20));}
+.lab-site-hub {background:#ffffff;color:#213447;border:1px solid rgba(32,57,81,.12);box-shadow:none;border-radius:24px;}
+.lab-site-hub .lab-section-head h2 {color:#182c3d;}
+.lab-site-hub .lab-section-head>p:not(.lab-pill) {color:#66798b;}
+.lab-site-hub .lab-pill {background:#f6f8fa;color:#586d83;border-color:#e2e8ed;}
+.lab-site-hub__composition {opacity:.055;filter:grayscale(1);}
+.lab-hub-card {background:#fafbfc;border:1px solid rgba(32,57,81,.1);color:#253b4e;box-shadow:none;}
+.lab-hub-card strong {color:#1c3143;}
+.lab-hub-card em,.lab-hub-card small {color:#697e8f;}
+.lab-hub-card__mark {opacity:.4;}
+.lab-metric-combo {background:#24374a;}
+.lab-footer {background:#17293b;}
+.page-hero-art {opacity:.28;filter:saturate(.45);}
+.page-hero {min-height:285px;}
+.page-hero h1 {font-weight:650;letter-spacing:-.05em;}
+.language-selector {border-color:rgba(32,57,81,.13);}
+.research-legend {position:absolute!important;z-index:6!important;bottom:42px;right:0;display:flex;gap:16px;align-items:center;max-width:550px;}
+.research-legend a {display:inline-flex;align-items:center;gap:7px;white-space:nowrap;color:#506b7f;font-weight:600;font-size:11px;letter-spacing:.015em;padding:7px 0;border-bottom:1px solid transparent;transition:color .2s,border .2s;}
+.research-legend a:hover,.research-legend a:focus-visible {color:#233c51;border-color:currentColor;}
+.research-legend i {display:inline-block;width:10px;height:10px;border-radius:100%;border:1px solid currentColor;background:color-mix(in srgb,currentColor 12%,transparent);}
+.research-legend a:nth-child(1) i{color:var(--research-distributed)}
+.research-legend a:nth-child(2) i{color:var(--research-collaborative)}
+.research-legend a:nth-child(3) i{color:var(--research-visualization)}
+/* People — refined portrait index sourced from the original laboratory website. */
+.people-intro {color:#68798a;font-size:14px;line-height:1.7;margin:.5rem 0 2.2rem;}
+.people-section {margin-top:2.6rem;}
+.prose .people-section h2 {margin:0 0 1.25rem;font-size:clamp(22px,2.3vw,29px);font-weight:650;}
+.people-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;}
+.person-card {margin:0!important;display:block;min-width:0;border:1px solid rgba(32,57,81,.115);background:white;border-radius:14px;overflow:hidden;box-shadow:none;transition:border-color .2s,transform .2s;}
+.person-card:hover {transform:translateY(-2px);border-color:rgba(43,112,145,.24);}
+.person-photo {display:grid;place-items:center;position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#f0f4f6;}
+.person-photo img {width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;filter:saturate(.76);transition:filter .25s,transform .35s;}
+.person-card:hover .person-photo img {filter:saturate(.92);transform:scale(1.02);}
+.person-photo--empty {background:linear-gradient(145deg,#f1f5f7,#e6edef);}
+.person-photo--empty:after {content:"";position:absolute;inset:13%;border:1px solid rgba(51,77,100,.075);border-radius:50%;}
+.person-initials {font-size:clamp(26px,3vw,39px);font-family:'Space Grotesk',Inter,sans-serif;font-weight:500;letter-spacing:-.06em;color:#a2b4be;}
+.person-meta {padding:15px 16px 17px;}
+.person-meta h3,.prose .person-meta h3 {margin:0!important;font-family:Inter,system-ui,sans-serif;font-size:14px;font-weight:650;line-height:1.35;letter-spacing:-.02em;}
+.person-meta p {font-size:11px;color:#82909d;margin:6px 0 0!important;font-weight:500;}
+.people-source {margin-top:2.5rem;font-size:12px;color:#708295;}
+@media (max-width:1100px){.lab-hero-copy-card{width:min(680px,70%)}.research-legend{bottom:32px}}
+@media (max-width:760px){.people-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.person-meta{padding:13px}}
+@media (max-width:640px){.lab-hero{min-height:790px;padding-top:54px!important}.lab-hero-copy-card{width:100%;padding-right:0;background:linear-gradient(to bottom,rgba(250,251,252,.96),rgba(250,251,252,.60));}.lab-hero h1{font-size:clamp(38px,10vw,55px)}.lab-hero-copy-card>p{font-size:14px}.research-legend{position:absolute!important;right:auto;left:0;bottom:19px;flex-wrap:wrap;gap:5px 13px;max-width:100%}.research-legend a{font-size:10px}.lab-physics-hero__grain{opacity:0}.lab-physics-hero__canvas{opacity:1}}
+@media(max-width:390px){.people-grid{grid-template-columns:1fr 1fr}.person-meta h3,.prose .person-meta h3{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.person-card,.person-photo img{transform:none!important}}
+
+/* Editorial media pages */
+.media-card,.news-list-item,.home-press-item {background:#fff;border:1px solid rgba(32,57,81,.11);border-radius:14px;box-shadow:none;}
+.media-card-image {background:#f6f8fa;border-bottom:1px solid rgba(32,57,81,.09);}
+.media-date {background:#edf4f7;color:#40768d;letter-spacing:.035em;font-weight:650;}
+.news-list-item {padding:25px 27px;}
+.home-press-item>img {background:#f4f6f7;}

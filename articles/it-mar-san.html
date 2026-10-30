@@ -1,0 +1,102 @@
+---
+layout: article
+lang: it
+title: Mario Santoro
+description: 'Introduzione Obiettivo tesi: ci siamo chiesti come semplificare l’accesso a KB note, come Wikidata
+  o DBpedia, attraverso interfacce facilmente usabili e/o che non richiedano competenze tecniche. Tra le diverse
+  interfacce/tra […]'
+permalink: /news/mar-san/
+article_kind: news
+date: '2019-09-12'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/09/12/mar-san/
+section: News
+---
+
+<h2 class="wp-block-heading">Introduzione</h2>
+<p><strong>Obiettivo tesi</strong>: ci siamo chiesti come semplificare l’accesso a KB note, come Wikidata o DBpedia, attraverso interfacce facilmente usabili e/o che non richiedano competenze tecniche.<br/> <br/>Tra le diverse interfacce/tra i diversi approcci che semplificano l’interazione utente ci sono gli assistenti vocali che richiedono un’interazione in linguaggio naturale per l’erogazione di servizi. Abbiamo optato per una skill di Alexa come strumento di interazione con l’utente.<br/><br/>Abbiamo riformulato l’obiettivo prima espresso ad alto livello come:<br/>creazione di una skill di Alexa per permettere l’interrogazione (in linguaggio naturale) di KB.</p>
+<h2 class="wp-block-heading">Software e librerie</h2>
+<p>API Wikidata per Node.js: <a href="https://github.com/maxlath/wikibase-sdk">https://github.com/maxlath/wikibase-sdk</a></p>
+<p>librerie per wikidata: <a href="https://www.npmjs.com/package/wikidata-sdk">https://www.npmjs.com/package/wikidata-sdk</a></p>
+<p>librerie per alexa: <a href="https://www.npmjs.com/package/ask-sdk-core">https://www.npmjs.com/package/ask-sdk-core</a></p>
+<p>librerie per le request sincrone: <a href="https://www.npmjs.com/package/sync-request">https://www.npmjs.com/package/sync-request</a></p>
+<h2 class="wp-block-heading">Bibliografia</h2>
+<p>registrarsi: <a href="https://developer.amazon.com/it/alexa">https://developer.amazon.com/it/alexa</a></p>
+<p> registrarsi: <a href="https://aws.amazon.com/it/">https://aws.amazon.com/it/</a></p>
+<p><a href="https://developer.amazon.com/it/docs/custom-skills/steps-to-build-a-custom-skill.html">https://developer.amazon.com/it/docs/custom-skills/steps-to-build-a-custom-skill.html</a></p>
+<p><a href="https://developer.amazon.com/it/alexa-skills-kit/tutorials/fact-skill-1">https://developer.amazon.com/it/alexa-skills-kit/tutorials/fact-skill-1</a></p>
+<p><a href="https://developer.amazon.com/it/docs/custom-skills/understanding-custom-skills.html">https://developer.amazon.com/it/docs/custom-skills/understanding-custom-skills.html</a></p>
+<p><a href="https://developer.amazon.com/it/docs/custom-skills/create-skills-for-alexa-enabled-devices-with-a-screen.html">https://developer.amazon.com/it/docs/custom-skills/create-skills-for-alexa-enabled-devices-with-a-screen.html</a></p>
+<p><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">https://www.wikidata.org/wiki/Wikidata:Main_Page</a></p>
+<p>tutorial per l'interrogazione di Wikidata tramite SPARQL: <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial">https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</a></p>
+<p>per testare le query in SPARQL: <a href="https://query.wikidata.org/">https://query.wikidata.org/</a></p>
+<p>per testare codice Node.js direttamente nel browser: <a href="https://npm.runkit.com/">https://npm.runkit.com/</a></p>
+<h2 class="wp-block-heading">Seminari</h2>
+<p><strong>Titolo</strong>: Skill di Alexa per l'interrogazione di Knowledge Base</p>
+<p> <strong>Data</strong>:  Lunedì 18 Novembre 2019 alle ore 12:00 </p>
+<p><a href="https://www.facebook.com/events/1246818752155181/">https://www.facebook.com/events/1246818752155181/</a> </p>
+<div class="wp-block-file">Slide 1° seminarioDownload</div>
+<p> <strong>Titolo</strong>: Personal assistant per l'interrogazione di Wikidata</p>
+<p> <strong>Data</strong>:  Giovedì 6 Febbraio 2020 alle ore 12:00   </p>
+<div class="wp-block-file">Slide 2° seminarioDownload</div>
+<p><a href="https://www.facebook.com/events/114327230015945/">https://www.facebook.com/events/114327230015945/</a></p>
+<h2 class="wp-block-heading">Github e Amazon</h2>
+<p><a href="https://github.com/mario-santoro/wikidata-skill-alexa">https://github.com/mario-santoro/wikidata-skill-alexa</a></p>
+<p>Skill online nello store inglese: <a href="https://www.amazon.co.uk/Mario-wikidata/dp/B082M5ZH4T/ref=sr_1_1">https://www.amazon.co.uk/Mario-wikidata/dp/B082M5ZH4T/ref=sr_1_1</a></p>
+<h2 class="wp-block-heading">Lavoro tesi</h2>
+<h4 class="wp-block-heading">Abstract</h4>
+<p>L’avvento dell’era digitale ha portato ad un’esplosione di informazioni sottoforma di notizie, articoli, social media e così via. Ogni individuo dotato di un dispositivo elettronico produce inconsapevolmente, ogni giorno, migliaia di dati. <br/>E' necessario modellare i dati in modo che possano essere interrogati facilmente. Un approccio possibile è modellarli attraverso un Knowledge Graph (con l'acronimo KG). Sebbene non vi sia una definizione chiara di KG, un'interpretazione comune è che esso rappresenta una raccolta di descrizioni interconnesse di entità: oggetti del mondo reale, eventi, situazioni o concetti astratti. Spesso contengono grandi volumi di informazioni fattuali con semantica meno formale. In alcuni contesti, il termine Knowledge Graph viene utilizzato per riferirsi a qualsiasi Knowledge base rappresentata come grafo. Esso costituisce dunque un ambiente volto a facilitare la raccolta, l'organizzazione e la distribuzione della conoscenza. Un'ulteriore classificazione distingue KG proprietari e quelli gestiti da community, possono essere specializzate o general purpose.<br/> Ma per interrogare i KG sono necessari linguaggi come SPARQL che si rivelano essere non alla portata di tutti. SPARQL si è affermato tra i principali strumenti di interrogazione nonostante la sua complessità. Nasce così la necessità di rendere accessibili questi dati anche per persone senza competenze tecniche in query language, in generale, e SPARQL, in particolare.<br/> Quindi come fare per creare un servizio per l’interrogazione di Knowledge Graph attraverso interfacce facilmente usabili e che non richiedano competenze tecniche?<br/> Tra i diversi approcci che semplificano l’interazione utente ci sono gli assistenti vocali, molto popolari negli ultimi anni, che rappresentano un modo facile e intuitivo per l’interazione in linguaggio naturale e per l’erogazione di servizi di un’applicazione.<br/> Secondo una previsione degli analisti britannici di Juniper Research, l'uso degli assistenti vocali è destinato a triplicare nei prossimi anni. L'azienda stima che ci saranno 8 miliardi di assistenti vocali digitali in uso entro il 2023, rispetto ai 2,5 miliardi del 2018.<br/> E' quindi evidente che l’utilizzo della tecnologia di riconoscimento vocale è la prossima grande frontiera. Amazon Alexa è la tecnologia oggi in testa alle classifiche con una quota di mercato del 73%.<br/> Per questi motivi l'assistente vocale scelto è Alexa, mentre la Knowledge Graph scelta per l’interrogazione è Wikidata, definita come una knowledge base online collaborativa, sostenuta e ospitata dalla Wikimedia Foundation, scelta per l'efficacia delle API fornite.<br/> Quindi un utente effettua delle domande ad un assistente vocale in linguaggio naturale, la skill riconosce le parole chiave, viene generata la query SPARQL sul Knowledge Graph e vengono recuperate le informazioni richieste.<br/> Che tipo di domande può effettuare l'utente? Le domande sono modellate basandoci sulla cosiddetta regola delle 5 W, cioè la regola principale dello stile giornalistico anglosassone e delle regole di buona formazione del discorso, Who, What, When, Where, Why.<br/> Al fine di una valutazione corretta della skill si è scelto di effettuare testing su un dataset ufficiale di domande risposte su Wikidata.<br/> L’obiettivo di tesi è dunque: semplificare l'utilizzo di KG senza richiedere nessuna competenza tecnica, mediante la creazione di una skill Alexa per permettere l’interrogazione (in linguaggio naturale) di un Knowledge Graph, cioè Wikidata. </p>
+<h4 class="wp-block-heading">Indice</h4>
+<p class="has-text-align-left"> 1   Introduzione </p>
+<p class="has-text-align-left">2   Background</p>
+<p class="has-text-align-left">2.1    Alexa Skill        </p>
+<p class="has-text-align-left">2.1.1 Modello di interazione    </p>
+<p class="has-text-align-left">2.1.2 Back-end                                </p>
+<p class="has-text-align-left"> 2.2    Knowledge Graph</p>
+<p class="has-text-align-left"> 2.3    SPARQL  </p>
+<p class="has-text-align-left">  2.4    Wikibase SDK         </p>
+<p class="has-text-align-left"> 3   Personal assistant based on Wikidata         </p>
+<p class="has-text-align-left">     3.1    Pattern    </p>
+<p class="has-text-align-left">     3.2    Workflow                 </p>
+<p class="has-text-align-left">  3.3    Use Case      </p>
+<p class="has-text-align-left">   3.3.1 getResult</p>
+<p class="has-text-align-left">             3.3.2 getDescription             </p>
+<p class="has-text-align-left">                 3.3.3 getLocation        </p>
+<p class="has-text-align-left">      3.3.4 getSuperlative  </p>
+<p class="has-text-align-left">          3.3.5 getSuperlativeFilter                </p>
+<p class="has-text-align-left">    3.3.6 getQuantitive           </p>
+<p class="has-text-align-left">             3.3.7 getResultReverse                             </p>
+<p class="has-text-align-left">    3.3.8 getNumericFilter     </p>
+<p class="has-text-align-left">        3.4    Problemi e Risoluzioni                             </p>
+<p class="has-text-align-left">      3.4.1 Gestione di più risultati   </p>
+<p class="has-text-align-left">      3.4.2 Mancanza di Wikidata property       </p>
+<p class="has-text-align-left">    3.4.3 Gestione dei sinonimi              </p>
+<p class="has-text-align-left">      3.4.4 Gestione ambiguità </p>
+<p class="has-text-align-left"> 3.4.5 Problema del timeout                          </p>
+<p class="has-text-align-left">  3.4.6 Caratteri speciali            </p>
+<p class="has-text-align-left">     3.5    Echo Show e Firestick                       </p>
+<p class="has-text-align-left">     3.5.1 getImg         </p>
+<p class="has-text-align-left">       3.6    Modello di interazione            </p>
+<p class="has-text-align-left">  3.7    Back-end   </p>
+<p class="has-text-align-left">3.8    Pubblicazione     </p>
+<p class="has-text-align-left">      3.8.1 Problema slot   </p>
+<p class="has-text-align-left">                   4   Testing </p>
+<p class="has-text-align-left">                                                                                                                                               4.1    Valutazione </p>
+<p class="has-text-align-left">                                                                                                                                                        4.2    Risultati       </p>
+<p class="has-text-align-left">                                                                                                                                           5   Conclusioni e sviluppi futuri </p>
+<p class="has-text-align-left"> 5.1    Sviluppi Futuri</p>
+<p class="has-text-align-left">   5.1.1 DBpedia </p>
+<h4 class="wp-block-heading">Bibliografia</h4>
+<p>[1]  Amazon.  Interaction model, 2020.  <a href="https://developer.amazon.com/it-IT/docs/alexa/custom-skills/create-the-interaction-model-for-your-skill.html">Disponibile online.</a></p>
+<p>[2]  Amazon.  Lambda function, 2020.  <a href="https://developer.amazon.com/it-IT/alexa/alexa-skills-kit/resources/training-resources/fact-skill-2">Disponibile online.</a></p>
+<p>[3]  C. Bizer M. Schmachtenberg and H. Paulheim.  Adoption of the linked data bestpractices  in  different  topical  domains.   Spinger:  in  International  Semantic  WebConference, (ISWC), pages 245–260, 2014.</p>
+<p>[4]  maxlath.  Wikibase-sdk, 2020.  <a href="https://github.com/maxlath/wikibase-sdk">Disponibile online.</a></p>
+<p>[5]  A.  Polleres  P.  A.  Bonatti,  S.  Decker  and  V.  Presutti.   Knowledge  graphs:  Newdirections for knowledge representation on the semantic web.  Dagstuhl Reports, 2018.</p>
+<p>[6]  Wikidata.  Sparql, 2020.  <a href="https://www.w3.org/TR/rdf-sparql-query/">Disponibile online.</a></p>
+<p>[7]  Wikipedia.  Knowledge base, 2020.  <a href="https://en.wikipedia.org/wiki/Knowledge_base">Disponibile online.</a></p>
+<p>[8]  Wikipedia.  le 5 w, 2020.  <a href="https://it.wikipedia.org/wiki/Regola_delle_5_W">Disponibile online.</a></p>
+<p>[9]  Wikipedia.  Sparql, 2020.  <a href="https://it.wikipedia.org/wiki/SPARQL">Disponibile online.</a></p>
+<p>[10]  Wikipedia.  Wikidata, 2020.  <a href="https://it.wikipedia.org/wiki/Wikidata">Disponibile online.</a></p>
+<h4 class="wp-block-heading">Tesi</h4>
+<div class="wp-block-file"><a href="/assets/media/3cd0106fd10679-tesiskillalexakg.pdf"><strong>Tesi</strong>: Skill Alexa per l'interrogazione di Knowledge Graph</a><a class="wp-block-file__button" download="" href="/assets/media/3cd0106fd10679-tesiskillalexakg.pdf">Download</a></div>
+

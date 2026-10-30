@@ -1,0 +1,166 @@
+/* ISISLab v10 — typographic refinement, matching glass research orbs and hub icons.
+   Loaded after the reference styles so the three requested changes are isolated. */
+
+/* More generous but restrained type scale. */
+body {font-size:16.5px; line-height:1.68;}
+.lab-primary-nav .nav-item-head>a {font-size:13.5px;line-height:1.35;}
+.lab-pill, .lab-hero>.lab-pill {font-size:12px;}
+.lab-hero-copy-card>p {font-size:clamp(17px,1.45vw,22px)!important;line-height:1.7!important;}
+.research-legend a {font-size:12px;}
+.lab-section-head h2 {font-size:clamp(36px,3.7vw,55px);line-height:1.12;letter-spacing:-.051em;}
+.lab-section-head>p:not(.lab-pill) {font-size:17px;line-height:1.75;}
+.lab-metric>span {font-size:14px;}
+.lab-metric-combo__grid em {font-size:11px;line-height:1.55;}
+.lab-flow-card {min-height:340px;padding:32px;overflow:hidden;}
+.lab-flow-card>p {font-size:11px;line-height:1.55;letter-spacing:.075em;}
+.lab-flow-card h3 {font-size:clamp(23px,2.05vw,27px);line-height:1.22;font-weight:675;letter-spacing:-.044em;}
+.lab-flow-card small {font-size:15px;line-height:1.73;margin-top:15px;margin-bottom:23px;}
+.lab-pillar-link {font-size:14px;}
+.lab-hub-card {min-height:232px;padding:25px;}
+.lab-hub-card strong {font-size:23px;line-height:1.22;letter-spacing:-.038em;}
+.lab-hub-card em {font-size:14px;line-height:1.63;margin-top:11px;}
+.lab-hub-card small {font-size:11.5px;line-height:1.55;padding-top:17px;font-weight:600;}
+.lab-news-card .wp-block-post-title {font-size:23px;line-height:1.29;}
+.wp-block-post-excerpt__excerpt {font-size:14px;line-height:1.75;}
+.lab-news-more,.lab-arrow-link a {font-size:14px;}
+.home-press-item .press-thumb-info strong {font-size:15px;}
+.home-press-item .press-thumb-info small {font-size:12px;}
+/* Interior page readability, archive entries, and team grid. */
+.page-lead {font-size:18px;line-height:1.78;}
+.prose {font-size:16px;line-height:1.82;}
+.prose h2 {line-height:1.18;}
+.person-meta h3,.prose .person-meta h3 {font-size:15.5px;}
+.person-meta p {font-size:12px;}
+.media-archive .archive-item-copy p {font-size:14px;}
+.media-archive .archive-item-copy h3 {font-size:20px;}
+.footer-about p,.footer-links a {font-size:13px;}
+
+/* The three research symbols are the same translucent glass spheres and
+   the same cyan / violet / green colors as the large animated hero balls. */
+.lab-pillars-grid .lab-flow-card:nth-child(1) {--orb-rgb:4,200,239;}
+.lab-pillars-grid .lab-flow-card:nth-child(2) {--orb-rgb:147,103,249;}
+.lab-pillars-grid .lab-flow-card:nth-child(3) {--orb-rgb:13,192,141;}
+.research-orb-wrap {
+  width:118px;height:108px;flex:none;position:relative;
+  display:flex;align-items:center;justify-content:center;margin:-8px 0 14px -7px;
+  isolation:isolate;pointer-events:none;
+}
+.research-orb-wrap::before {
+  content:"";position:absolute;inset:-7px;
+  background:radial-gradient(circle,rgba(var(--orb-rgb),.22) 0%,rgba(var(--orb-rgb),.12) 34%,rgba(var(--orb-rgb),0) 76%);
+  filter:blur(5px);z-index:-1;
+}
+.lab-pillars-grid .lab-flow-card .lab-flow-card__orb {
+  display:block;position:relative;isolation:isolate;
+  width:74px;height:74px;flex:none;border-radius:50%;transform:none;
+  /* Bright core + tinted translucent shell reproduces the hero canvas rendering. */
+  background:
+    radial-gradient(circle at 28% 29%,rgba(255,255,255,.99) 0%,rgba(255,255,255,.81) 7%,rgba(255,255,255,.15) 19%,transparent 28%),
+    radial-gradient(circle at 33% 28%,rgba(255,255,255,.88) 0%,rgba(var(--orb-rgb),.71) 14%,rgba(var(--orb-rgb),.56) 37%,rgba(var(--orb-rgb),.31) 70%,rgba(var(--orb-rgb),.12) 91%,rgba(255,255,255,.14) 100%);
+  border:1px solid rgba(255,255,255,.84);
+  box-shadow:
+    0 0 0 1px rgba(var(--orb-rgb),.13),
+    0 7px 28px rgba(var(--orb-rgb),.20),
+    0 0 24px rgba(var(--orb-rgb),.20),
+    inset 0 1px 3px rgba(255,255,255,.84),
+    inset -4px -6px 10px rgba(var(--orb-rgb),.06);
+  animation:research-orb-float 7s ease-in-out infinite alternate;
+  margin:0;
+}
+.lab-pillars-grid .lab-flow-card:nth-child(2) .lab-flow-card__orb {animation-delay:-2.4s;}
+.lab-pillars-grid .lab-flow-card:nth-child(3) .lab-flow-card__orb {animation-delay:-4.7s;}
+.lab-pillars-grid .lab-flow-card .lab-flow-card__orb::after {
+  content:"";position:absolute;left:15%;top:14%;width:32%;height:30%;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.98),rgba(255,255,255,.58) 40%,rgba(255,255,255,0) 77%);
+  filter:blur(1px);pointer-events:none;
+}
+@keyframes research-orb-float {from{translate:0 3px;}to{translate:0 -4px;}}
+
+/* Explore ISISLab has icons rather than spheres: distinct shapes + a separate,
+   understated editorial palette (rust, amber, navy, rose and slate). */
+.lab-hub-card__icon {
+  --icon-ink:#a47c44; --icon-bg:#f9f2e9;
+  display:grid;place-items:center;width:48px;height:48px;flex:none;
+  border-radius:14px;background:var(--icon-bg);color:var(--icon-ink);
+  border:1px solid color-mix(in srgb,var(--icon-ink) 14%,transparent);
+  margin-bottom:19px;opacity:1;transform:none;
+  transition:transform .25s ease,background .25s ease;
+}
+.lab-hub-card__icon svg {width:25px;height:25px;display:block;stroke:currentColor;fill:none;}
+.lab-hub-card:hover .lab-hub-card__icon {transform:translateY(-2px);}
+.lab-hub-card__icon--lab {--icon-ink:#a87b3f;--icon-bg:#f8f0e3;}
+.lab-hub-card__icon--research {--icon-ink:#b45e52;--icon-bg:#fcf0ec;}
+.lab-hub-card__icon--projects {--icon-ink:#596f9d;--icon-bg:#edf1f9;}
+.lab-hub-card__icon--teaching {--icon-ink:#9c803d;--icon-bg:#f8f4e6;}
+.lab-hub-card__icon--thesis {--icon-ink:#ae6b53;--icon-bg:#faf0eb;}
+.lab-hub-card__icon--impact {--icon-ink:#ab5e79;--icon-bg:#f9edf2;}
+.lab-hub-card__icon--partners {--icon-ink:#597889;--icon-bg:#ecf2f5;}
+.lab-hub-card__icon--news {--icon-ink:#a5565e;--icon-bg:#faeff0;}
+.lab-hub-card--accent {background:#fafbfc;border:1px solid rgba(32,57,81,.1);}
+.lab-hub-card--accent:hover {background:#fff;}
+
+@media(max-width:1100px) {
+  .lab-primary-nav .nav-item-head>a {font-size:12.5px;}
+  .lab-flow-card {padding:27px;}
+  .lab-hub-card {padding:21px;}
+  .lab-hub-card strong {font-size:21px;}
+  .lab-hub-card em {font-size:13.5px;}
+}
+@media(max-width:920px) {
+  .lab-primary-nav .nav-item-head>a {font-size:15px;}
+  .lab-flow-card {min-height:320px;}
+}
+@media(max-width:640px) {
+  body {font-size:16px;}
+  .lab-hero-copy-card>p {font-size:15.5px!important;line-height:1.69!important;}
+  .lab-hero>.lab-pill {font-size:10px;}
+  .research-legend a {font-size:11px;}
+  .lab-section-head h2 {font-size:clamp(34px,8vw,44px);}
+  .lab-section-head>p:not(.lab-pill) {font-size:15.5px;line-height:1.73;}
+  .lab-metric>span {font-size:12px;}
+  .lab-flow-card {min-height:0;padding:28px;}
+  .lab-flow-card h3 {font-size:25px;}
+  .lab-flow-card small {font-size:14.5px;}
+  .research-orb-wrap {margin-bottom:10px;}
+  .lab-hub-card,.lab-hub-card--wide {padding:19px;min-height:224px;}
+  .lab-hub-card--wide {min-height:190px;}
+  .lab-hub-card__icon {width:43px;height:43px;border-radius:12px;margin-bottom:16px;}
+  .lab-hub-card__icon svg {width:23px;height:23px;}
+  .lab-hub-card strong {font-size:19px;line-height:1.25;}
+  .lab-hub-card em {font-size:12.5px;line-height:1.55;}
+  .lab-hub-card small {font-size:10.5px;line-height:1.48;}
+  .lab-news-card .wp-block-post-title {font-size:22px;}
+  .page-lead {font-size:16px;}
+  .prose {font-size:15px;}
+  .media-archive .archive-item-copy h3 {font-size:16px;}
+  .media-archive .archive-item-copy p {font-size:12px;}
+}
+@media(max-width:380px) {
+  .lab-hub-card,.lab-hub-card--wide {padding:15px;}
+  .lab-hub-card strong {font-size:18px;}
+  .lab-hub-card em {font-size:12px;}
+  .lab-hub-card small {font-size:10px;}
+}
+@media(prefers-reduced-motion:reduce){
+  .lab-pillars-grid .lab-flow-card .lab-flow-card__orb {animation:none;}
+  .lab-hub-card__icon {transition:none;}
+}
+
+/* Balanced four-by-two navigation grid; avoid the solitary final card. */
+.lab-hub-card--wide {grid-column:auto;background:#fafbfc;}
+@media(max-width:1100px) {
+  .lab-hub-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:640px) {
+  /* Single-column editorial cards make body text comfortably legible on phones. */
+  .lab-hub-grid {grid-template-columns:1fr;gap:11px;}
+  .lab-hub-card,.lab-hub-card--wide {
+    grid-column:auto;min-height:0;padding:19px;
+    display:grid;grid-template-columns:43px minmax(0,1fr);column-gap:15px;row-gap:3px;
+    align-items:start;
+  }
+  .lab-hub-card__icon {grid-column:1;grid-row:1 / span 3;margin:0;}
+  .lab-hub-card strong {grid-column:2;font-size:20px;}
+  .lab-hub-card em {grid-column:2;font-size:14px;margin-top:3px;}
+  .lab-hub-card small {grid-column:2;font-size:11.5px;margin-top:7px;padding:0;}
+}

@@ -1,0 +1,69 @@
+---
+layout: article
+lang: it
+title: User:aleant
+description: Balanced Graph Partitioning per simulazioni agent-based distribuite Il Problema k-way partitioning 
+  D-MASON permette di parallelizzare simulazioni basate su agenti adottando un approccio di space partitioning, che
+  consente di bilanciare il […]
+permalink: /news/user-aleant/
+article_kind: news
+date: '2015-03-16'
+import_origin: wordpress
+source_url: https://www.isislab.it/2015/03/16/user-aleant/
+section: News
+---
+<address> </address>
+<h2><span><strong>Balanced Graph Partitioning per simulazioni agent-based distribuite</strong></span></h2>
+<h3><strong><span>Il Problema</span></strong></h3>
+<p><strong><span><span>k-way partitioning</span> </span></strong></p>
+<p>D-MASON permette di parallelizzare simulazioni basate su agenti adottando un approccio di <em>space partitioning, </em>che consente di bilanciare il carico di lavoro tra le risorse coinvolte nella computazione, limitando i costi della comunicazione. Ogni macchina eseguirà, quindi, la simulazione degli agenti che si trovano nello spazio assegnato ad essa. Comprensibilmente, questi possono migrare da una risorsa all'altra e quando ciò avviene le macchine hanno bisogno di comunicare informazioni circa gli agenti migrati o gli agenti che potrebbero migrare nel prossimo passo di simulazione.</p>
+<p>Il problema, dunque, riguarda come partizionare in modo dinamico il campo Network di D-MASON, in modo tale che:</p>
+<p>1. le componenti abbiano approssimativamente la stessa dimensione</p>
+<p>2. il numero di connessioni e il volume di comunicazione tra vertici appartenenti a componenti differenti sia minimizzato.</p>
+<p>Ciò è ben noto in letteratura come <em>graph partitioning problem</em>.</p>
+<p>Il problema di computare una partizione ottimale di un supergrafo è NP-hard; ciò significa che soluzioni esatte sono ricavate in tempo ragionevole solo per grafi di piccole dimensioni. Tuttavia, le applicazioni di questo problema richiedono di partizionare grafi di dimensioni molto  maggiori e per questo motivo sono state sviluppate diverse soluzioni euristiche, basate su differenti approcci.</p>
+<h3><strong><span>Gli algoritmi</span></strong></h3>
+<p><span><b>Approccio multi-livello</b></span></p>
+<p><span><strong>METIS</strong></span></p>
+<p>Questo algoritmo computa le partizioni in tre fasi. Nella prima i vertici vengono collassati in modo da far diminuire la taglia del grafo di partenza; questa azione viene eseguita fino ad arrivare ad un grafo semplificato sul quale viene eseguito il partizionamento. Nell'ultima fase, il grafo viene riportato alla forma originaria, rifinendo ad ogni passo la qualità delle partizioni computate.</p>
+<p><span><strong>KaFFPa</strong></span></p>
+<p>KaFFPa, come METIS, usa un approccio multi-livello per il partizionamento; questi due algoritmi si differenziano, però, nell'ultima fase dove usano diverse tecniche di rifinizione delle partizioni generate.</p>
+<p><span><b>Approccio distribuito</b></span></p>
+<p><span><strong>Ja-Be-Ja</strong></span></p>
+<p>A differenza degli algoritmi precedenti, Ja-be-ja nasce come algoritmo distribuito, senza richiedere nessuna conoscenza globale della topologia del grafo. Ogni nodo del grafo è un'unità di elaborazione e conserva informazioni riguardanti i suoi vicini e alcuni nodi selezionati a caso. Inizialmente, ad ogni nodo viene assegnata una partizione, facendo in modo che queste siano bilanciate. Ad ogni iterazione, i nodi scambiano le loro partizioni di appartenenza al fine di aumentare il numero di vicini che si trovano nella stessa partizione.</p>
+<p><span> <strong>Baseline</strong></span></p>
+<p><span><strong>Random</strong></span></p>
+<p>Questo algoritmo assegna ogni vertice ad un componente casuale, fornendo sempre un ottimo bilanciamento. E' usato come <em>baseline</em> nelle comparazioni effettuate.</p>
+<h3><strong><span>Obiettivo</span></strong></h3>
+<p>Studio e benchmark di algoritmi per il partizionamento bilanciato di grafi per simulazioni agent-based distribuite.</p>
+<h3><strong><span>I test</span></strong></h3>
+<p><span><b>Criteri di analisi</b></span></p>
+<p>In modo da valutare quali siano l'euristiche che producano il partizionamento migliore per la risoluzione del problema sopra citato, sono state considerate le seguenti metriche:</p>
+<p>- <em>dimensione del taglio: </em>numero totale di archi incidenti su vertici appartenenti a diversi componenti;</p>
+<p>- <em>numero di canali di comunicazione: </em>indica il numero di archi nel supergrafo ottenuto considerando i nodi in ogni componente come un singolo vertice.</p>
+<p>- <em>sbilanciamento</em>:  coefficiente di sbilanciamento della dimensione dei componenti della partizione.</p>
+<p><span><b>Risultati</b></span></p>
+<p>Analizzando i risultati ottenuti dall'esecuzione dei diversi algoritmi, si evince che le performance delle soluzioni multi-livello sono comparabili sia in termini di dimensione del taglio, sia per numero di canali di comunicazione generati. Tuttavia, le prestazioni di Ja-Be-Ja sono peggiori di quelle dei suoi avversari; ciò può essere dovuto al basso numero di iterazioni effettuate.</p>
+<p>In generale, tutti gli algoritmi producono partizioni abbastanza bilanciate. Su questo campo, quindi, nessuna strategia prevale sulle altre.</p>
+<p>I risultati ottenuti nell'ambiente reale di simulazione sono consistenti con quelli analitici, sia in termini di dimensione del taglio sia nel numero di canali di comunicazione. In particolare, le performance delle simulazioni distribuite sono influenzate dalle metriche analitiche. Esiste, quindi, una correlazioni tra il tempo totale di simulazione e le prestazioni degli algoritmi (misurate in termini di dimensione del taglio, numero di canali di comunicazione e sbilanciamento), soprattutto per quanto riguarda la dimensione del taglio.</p>
+<p>Dall'analisi è, inoltre, emerso che la qualità dello sbilanciamento tra le componenti non è legata direttamente alle performance reali: questo valore potrà, quindi, essere alterato in modo da comportare le diminuzione di altri parametri, quali dimensione del taglio e numero di canali di comunicazione, aventi diretto influsso sulle prestazioni.</p>
+<h3><strong><span>Riferimenti</span></strong></h3>
+<ol>
+<li>Fatemeh Rahimian, Amir H. Payberah, Sarunas Girdzijauskas, Mark Jelasity, Seif Haridi, <strong><a href="http://soda.swedish-ict.se/5473/1/T2013_03.pdf">Ja-be-Ja: A Distributed Algorithm for Balanced Graph Partitioning</a>, </strong>Ottobre 2012.</li>
+<li>George Karypis and Vipin Kumar, <strong><a href="http://glaros.dtc.umn.edu/gkhome/node/110">Multilevel k-way Hypergraph Partitioning</a>, </strong>1999.</li>
+<li>David Easley and Jon Kleinberg, Networks, <strong><a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch01.pdf">Crowds, and Markets: Reasoning About a Highly Connected World - Overview</a> , </strong>cap. 1, 2010.</li>
+<li>David Easley and Jon Kleinberg, Networks, <strong><a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch02.pdf">Crowds, and Markets: Reasoning About a Highly Connected World - Graphs</a> , </strong>cap. 2, 2010.</li>
+<li>Jim Demmel, <a href="http://www.cs.berkeley.edu/~demmel/cs267/lecture18/lecture18.html"><strong>Lectures 20 and 21, Graph Partitioning, Part 1</strong></a>, 1996.</li>
+<li>Jim Demmel, <a href="http://www.cs.berkeley.edu/~demmel/cs267/lecture20/lecture20.html"><strong>Lectures 23, Graph Partitioning, Part 2</strong></a>, 1996.</li>
+<li>B. Cosenza, G. Cordasco, R. De Chiara, V. Scarano. <strong>Distributed Load Balancing for Parallel Agent-based Simulations, </strong>2011.</li>
+<li>Peter Sanders and Christian Schulz, <strong><a href="http://algo2.iti.kit.edu/documents/kahip/index.html">Engineering Multilevel Graph Partitioning Algorithms</a></strong>, 2011.</li>
+<li>Implementazione dell'algoritmo <a href="http://github.com/fatemehr/jabeja"><strong>Ja-be-ja</strong>.</a></li>
+<li><strong><a href="http://staffweb.cms.gre.ac.uk/~wc06/partition/">Graph Partitioning Archive</a></strong>.</li>
+<li>D. A. Bader, H. Meyerhenke, P. Sanders, and D. Wagner, editors. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.352.7856&amp;rep=rep1&amp;type=pdf"><strong>Graph Partitioning and Graph Clustering</strong></a>.</li>
+<li>B. W. Kernighan and S. Lin, <a href="http://www.cs.princeton.edu/~bwk/btl.mirror/new/partitioning.pdf"><strong>An efficient heuristic procedure for partitioning graphs</strong></a>.</li>
+<li>C. M. Fiduccia and R. M. Mattheyses. <a href="http://web.eecs.umich.edu/~mazum/fmcut1.pdf"><strong>A Linear-Time Heuristic for Im</strong></a><a href="http://web.eecs.umich.edu/~mazum/fmcut1.pdf"><strong>proving Network Partitions</strong></a>.</li>
+</ol>
+<blockquote><p> <br/>
+<strong>                                                                                                                               «Per aspera sic itur ad astra.» - Seneca, Hercules Furens. </strong><br/>
+<strong>                                                                                                                               email</strong>: aless.antelmi@gmail.com</p></blockquote>
+

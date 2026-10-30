@@ -1,0 +1,18 @@
+---
+layout: page
+---
+{{ content }}
+{% assign entries = site.pages | where: 'article_kind', 'news' | where: 'lang', page.lang | where_exp: 'item', 'item.archive_hidden != true' | sort: 'date' | reverse %}
+<section class="media-archive" aria-label="{% if page.lang == 'en' %}News archive{% else %}Archivio notizie{% endif %}">
+  <div class="archive-head"><h2>{% if page.lang == 'en' %}From the laboratory{% else %}Dal laboratorio{% endif %}</h2><span class="archive-count">{{ entries.size }} {% if page.lang == 'en' %}articles{% else %}articoli{% endif %}</span></div>
+  <div class="news-list">
+  {% for item in entries offset:page.archive_offset limit:page.archive_per_page %}
+    {% assign local_img = item.local_thumbnail_image | default: site.data.media_thumbs[item.feature_source_image] | default: item.local_hero_image | default: site.data.media_local[item.feature_source_image] | default: '/assets/img/news-placeholder.svg' %}
+    <article class="news-list-item">
+      <a class="archive-thumb" href="{{ item.url | relative_url }}"><img class="article-small-img" src="{{ local_img | relative_url }}" alt="" loading="lazy" decoding="async"></a>
+      <div class="archive-item-copy"><time datetime="{{ item.date }}">{{ item.date | date: '%d/%m/%Y' }}</time><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3><p>{{ item.description | strip_html | truncate: 210 }}</p><a class="archive-read" href="{{ item.url | relative_url }}">{% if page.lang == 'en' %}Read article{% else %}Leggi l’articolo{% endif %} <span aria-hidden="true">→</span></a></div>
+    </article>
+  {% endfor %}
+  </div>
+  {% include archive-pagination.html %}
+</section>

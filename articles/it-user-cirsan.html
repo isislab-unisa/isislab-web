@@ -1,0 +1,37 @@
+---
+layout: article
+lang: it
+title: User:Cirsan
+description: Lavoro di tesi Il mio lavoro per la tesi consiste nello sviluppo di un tool per Coffee insieme
+  a Francesco Cavezza. Il tool dovrà permettere la condivisione di documenti […]
+permalink: /news/user-cirsan/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-cirsan/
+section: News
+---
+<p> </p>
+<hr/>
+<h2><span class="mw-headline" id="Lavoro_di_tesi">Lavoro di tesi</span></h2>
+<p>Il mio lavoro per la tesi consiste nello sviluppo di un tool per <a class="externallink" href="http://www.coffee-soft.it" rel="nofollow" title="http://www.coffee-soft.it">Coffee</a> insieme a <a class="externallink" href="/user-fracav/" rel="nofollow" title="/user-fracav">Francesco Cavezza</a>. Il tool dovrà permettere la condivisione di documenti (di qualsiasi tipo) tra gli studenti che partecipano alla sessione di Coffee e l'insegnante, in particolare oltre alla condivisione dovrà esser possibile attraverso il tool fare operazioni di Drag and Drop dei documenti da/verso un server utilizzato come repository. Il tool dovrà avere una interfaccia stile Desktop. Io mi occupo proprio dello sviluppo di questa interfaccia grafica (GUI) per il tool. L'idea è quella di avere una GUI suddivisa in due parti, in una ci dovrà essere il Desktop che rappresenta il File System locale, con dei widget (ad esempio delle barre con dei bottoni) che servono a scorrere il File System (tra i vari livelli), ed una parte relativa al Repository che funziona allo stesso modo. Tra le due parti è possibile il drag and drop dei file, tenendo conto poi di vari aspetti legati ai permessi dei documenti.</p>
+<h2><span class="mw-headline" id="Coffee">Coffee</span></h2>
+<p>Il software COFFEE (Collaborative Face-to-Face Educational Environment) si colloca negli ambiti di ricerca Computer Supported Colalborative Work and Learning. Coffee è un ambiente che permette l'apprendimento in classe utilizzando dei computer piuttosto che i tradizionali strumenti. La sua architettura è basata su Eclipse (architettura a plug-in), di conseguenza eredita l'estendibilità e la facilità di integrare il software con nuovi tool sviluppati ad hoc. Le parti fondamentali di Coffe sono il Controller, ed il Discusser, rispettivamente utilizzate dall'insegnante (lato server) e gli alunni (lato client). Ci sono poi altri moduli che compongono Coffee e sono: il Raplayer, il Session Editor ed il Session planner, per maggiori dettagli leggere il documento relativo al Core di Coffee nella sezione <a class="externallink" href="/user-cirsan/" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/User:Cirsan#Risorse_utilizzate">Risorse Utilizzate</a> in basso.</p>
+<h2><span class="mw-headline" id="GEF">GEF</span></h2>
+<p>(in costruzione) Il Graphical Editing Framework (GEF) è un Framework utilizzato per sviluppare per lo più applicazioni che fanno uso di Editor grafici, ad esempio applicazioni per creare diagrammi UML, diagrammi di schemi elettronici, diagrammi di flusso ect. GEF ha una curva di apprendimento molto ripida, questo è dovuto principalmente alla sua architettura <a class="externallink" href="http://it.wikipedia.org/wiki/Model-View-Controller" rel="nofollow" title="http://it.wikipedia.org/wiki/Model-View-Controller">MVC</a> che semplifica lo sviluppo ai programmatori. Fondamentalmente la parte Model di GEF è mappata nella parte model di MVC, la parte Control è sviluppata attraverso la creazione delle EditParts che collegano la View al Model, ed infine la View è sviluppata utilizzando Draw2d.</p>
+<h2><span class="mw-headline" id="Draw2d">Draw2d</span></h2>
+<h2><span class="mw-headline" id="SWT">SWT</span></h2>
+<p>Lo Standard Widget Toolkit è un toolkit grafico che viene utilizzato per sviluppare interfaccie utente (GUI). SWT è stato sviluppato da IBM per risolvere dei problemi legati ai toolkit grafici già esistenti come AWT e Swing. AWT in particolare utilizza dei widget che sono nativi della piattaforma su cui gira, quindi le applicazioni scritte con AWT devono tener conto delle diverse piattaforme che non hanno tutte gli stessi widgets, invece Swing non utilizza dei widgets nativi, ma propri, questi però occupano più memoria, e di conseguenza applicazioni sviluppate con Swing non sono preferibili per piccoli dispositivi con limitate capacità di memorizzazione. Le unità principali di una applicazione SWT sono Il Display, la Shell ed i widgets. Ecco di seguito lo schema di una applicazione SWT: <a class="image" href="/image-swt-jpg/"><img alt="" decoding="async" src="/assets/media/61f7c4967df52f-swt.jpg" width="220"/> </a></p>
+<h2><span class="mw-headline" id="Risorse_utilizzate">Risorse utilizzate</span></h2>
+<p><i>Risorse Coffee</i><br/>
+<b>Coffee</b> <a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf">Core</a><br/>
+<b>Coffee</b> <a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf">Tools</a><br/>
+<b>Coffee</b> <a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Developer-Guide_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Developer-Guide_1_0_20081015.pdf">Developer Guide</a><br/>
+<i>Risorse GEF</i><br/>
+<a class="externallink" href="http://help.eclipse.org/ganymede/index.jsp" rel="nofollow" title="http://help.eclipse.org/ganymede/index.jsp">Documentazione GEF</a><br/>
+<a class="externallink" href="http://wiki.eclipse.org/GEF_Description" rel="nofollow" title="http://wiki.eclipse.org/GEF_Description">GEF Description1</a><br/>
+<a class="externallink" href="http://wiki.eclipse.org/GEF_Description2" rel="nofollow" title="http://wiki.eclipse.org/GEF_Description2">GEF Description2</a><br/>
+<i>Risorse SWT</i><br/>
+<a class="externallink" href="http://www.eclipse.org/swt/" rel="nofollow" title="http://www.eclipse.org/swt/">Main page SWT</a><br/>
+ </p>
+

@@ -1,0 +1,161 @@
+---
+layout: article
+lang: it
+title: User:Frola
+description: 'Bernardino Frola Contatti Sito personale: http://bernardinofrola.altervista.org/ E-mail: besaro
+  [AT] tin [DOT] it BehaveRT http://isis.dia.unisa.it/projects/behavert Framework C++ per la simulazione di
+  comportamenti di massa in real-time su GPU. Sviluppata durante […]'
+permalink: /news/user-frola/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-frola/
+section: News
+---
+<p> </p>
+<hr/>
+<h1><span class="mw-headline" id="Bernardino_Frola">Bernardino Frola</span></h1>
+<h2><span class="mw-headline" id="Contatti">Contatti</span></h2>
+<ul>
+<li>Sito personale: <a class="externallink" href="http://bernardinofrola.altervista.org/" rel="nofollow" title="http://bernardinofrola.altervista.org/">http://bernardinofrola.altervista.org/</a></li>
+<li>E-mail: besaro [AT] tin [DOT] it</li>
+</ul>
+<ul>
+<li>BehaveRT <a class="externallink" href="http://isis.dia.unisa.it/projects/behavert" rel="nofollow" title="http://isis.dia.unisa.it/projects/behavert">http://isis.dia.unisa.it/projects/behavert</a>
+<ul>
+<li>Framework C++ per la simulazione di comportamenti di massa in real-time su GPU.</li>
+<li>Sviluppata durante il lavoro di tesi in ISISLab.</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Lavoro_di_tesi_In_breve">Lavoro di tesi <i>In breve</i></span></h2>
+<p>Vi parlo brevemente di cosa mi occupo nel mio lavoro di tesi:</p>
+<ul>
+<li>Modelli compotamentali interattivi per grandi quanti quantità di NPC ("non-playable character"), come ad esempio:
+<ul>
+<li>Umani: folle, formazioni;</li>
+<li>Animali: stormi, branchi;</li>
+<li>Altro: veicoli, flotte.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>GPGPU, modelli comportamentali su hardware grafico.
+<ul>
+<li>Esecuzione efficiente (parallela) di interrogazioni spaziali (chi sono i miei vicini?).</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Intelligenza artificiale:
+<ul>
+<li>Pianificazione e ricerca percorsi;</li>
+<li>Comportamento di basso livello (gestione collisioni, seguire percorsi, evitare vicini, ...);</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Ecco un video che riassume parte dei risultati ottenuti fino a novembre 2008:
+<ul>
+<li><a class="externallink" href="http://it.youtube.com/watch?v=g60UrbWxt-8" rel="nofollow" title="http://it.youtube.com/watch?v=g60UrbWxt-8">Towards one million flocking boids using CUDA (real-time)</a></li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Seminari">Seminari</span></h2>
+<ul>
+<li>Modelli comportamentali su GPU con CUDA (17/11/08) - <a class="externallink" href="/assets/media/34f8111deefad8-modelli-comportamentali-cuda.pdf" rel="nofollow" title="Slide">Slide</a></li>
+<li><i>Modelli comportamentali interattivi per la simulazione di folle</i> - Parte1 [<a href="http://bernardinofrola.altervista.org/thesis/frola_statoarte_p1.pdf" title=" 1 "> 1 </a>] - [<a href="http://bernardinofrola.altervista.org/thesis/frola_statoarte_p2.pdf" title=" 2 "> 2 </a>] (06/06/08) - sono discussi gli approcci seguiti fino ad oggi. Riassumendo, questi approcci si possono suddividere nelle seguenti categorie:
+<ul>
+<li>Dinamiche particellari (fisica e fluidi);</li>
+<li>Discretizzazione dell'ambiente.</li>
+<li>Forze sociali;</li>
+<li>Regole (locali e ambientali); (qui termina la prima divisione delle slide)</li>
+<li>Modelli congnitivi;</li>
+<li>Navigazione globale;</li>
+</ul>
+</li>
+<li><i>Modelli comportamentali interattivi per la simulazione di folle</i> - <a class="externallink" href="http://bernardinofrola.altervista.org/thesis/frola_statoarte_p1.pdf" rel="nofollow" title="http://bernardinofrola.altervista.org/thesis/frola_statoarte_p1.pdf">Parte2</a> (13/06/08) - affronta un discorso orientato alle prestazioni.
+<ul>
+<li>Quanti agenti si riesce a simulare in real-time.</li>
+<li>Quali sono le tecniche di ottimizzazione maggiormente adottate.</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Qualche_dettaglio">Qualche dettaglio</span></h2>
+<h3><span class="mw-headline" id="Cosa_si_vorrebbe_fare">Cosa si <i>vorrebbe</i> fare</span></h3>
+<ul>
+<li>L<b>'ambito</b> è la simulazione di modelli comportamentali.</li>
+<li>L<b>'obbiettivo</b> è realizzare un sistema orientato ai <i>grandi numeri</i></li>
+<li>L<b>'idea</b> è partire da un sistema esistente ed ottimizzarlo
+<ul>
+<li>Il sistema esistente è la libreria <a class="externallink" href="http://opensteer.sourceforge.net/" rel="nofollow" title="http://opensteer.sourceforge.net/">OpenSteer</a>, frutto della passione di Craig Reynolds per i modelli comportamentali.</li>
+<li>L'ottimizzazione è l'utilizzo della GPU via nVidia CUDA.</li>
+</ul>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Cosa_si_.C3.A8_fatto">Cosa si è fatto</span></h3>
+<p>Prima fase del lavoro è stata modellare il calcolo del vicinato in CUDA, cercando di "tirare" al massimo le prestazioni.<br/>
+La scelta struttura dati da utilizzare ha svolto un ruolo fondamentantale. Tale scelta è stata ispirata da un modello per per il calcolo delle collisioni su GPU utilizzato dalla nVidia. Al centro dell'attenzione si pone il metodo di immagazzinamento ed ordinamento dei dati in memoria, punto cruciale di qualunque realizzazione in CUDA. Lo studio è proseguito alla ricerda di sistemi di caching delle informazioni più adatte allo scopo.<br/>
+In contemporanea si è proceduto nella strutturazione del sistema per la simulazione di modelli comportamentali. Sono stati <i>tradotti</i> in CUDA le sezioni fondamentali della libreria OpenSteer. Tra queste ritroviamo la gestione dei comportamenti alla base del flocking, ovvero, separazione, coesione ed allineamento.<br/>
+Il risultato di queste fasi è un sistema di simulazione ancora povero di dettagli ma realizzato completamente in CUDA, in grado di raggiungere prestazioni ben oltre i limiti imposti dalla normale computazione su CPU.<br/>
+Allo stato attuale, con una versione del sistema che tinene conto per ogni agente un numero esiguo di vicini (7) e basato su una grafica estremamente semplice è possibile simulare 128K boids a circa 25fps, 250K a 12 e 512K a circa 6 (dettagli sul commento al video <a class="external autonumber" href="http://it.youtube.com/watch?v=g60UrbWxt-8" rel="nofollow">[1]</a>)</p>
+<h3><span class="mw-headline" id="Cosa_si_sta_facendo">Cosa si sta facendo</span></h3>
+<p>Attualmente il lavoro continua nella ottimizzazione delle prestazioni e della memoria in uso. Questo coinvolge nuovi sistemi di hashing dei dati e l'utilizzo della <i>famosa</i> shared memory sulla quale le nuove GPU nVdia possono contare. Allo stesso modo continuano gli sforzi nell'aumentare le features e la <i>generalità</i> del sistema di simulazione.</p>
+<h2><span class="mw-headline" id="Bibliografia">Bibliografia</span></h2>
+<ul>
+<li>AISeek (2005), <i>Intelligence for NewWorlds. A Whitepaper</i>.</li>
+<li>BALLERINI, M.; CABIBBO, M.; CANDELIER, N.; CAVAGNA, A.; CISBANI, E.; GIARDINA, I.; LECOMONTE, V.; ORLANDI, A.; PARISI, G.; PROCACCINI, A.; VIALE, M. &amp; V.ZDRAVKOVIC (2004), <i>Interaction Ruling Animal CollectiveBehaviour Depends on Topological ratherthan Metric Distance: Evidence from a FieldStudy</i>.</li>
+<li>BAYAZIT, O. B.; LIEN, J. M. &amp; AMATO, N. M. (2002), <i>Better groupbehaviors in complex environments with global roadmaps</i>.</li>
+<li>Breitbart, J. (2008), <i>Case studies on GPU usage and data structure design</i>.</li>
+<li>Breitbart, J. (2008), <i>A framework for easy CUDA integration in C++ applications. Diplomarbeit</i>.</li>
+<li>Chenney, S. (2004), <i>Flow tiles</i>, SIGGRAPH 2004.</li>
+<li>COURTY, N. &amp; MUSSE, S. R. (2005), <i>Simulation of large crowds inemergency situations including gaseous phenomena</i>.</li>
+<li>ERRA, U.; CHIARA, R. D.; SCARANO, V. &amp; TATAFIORE, M. (2004), <i>Massive Simulation using GPU of a distributed behavioral modelof a flock with obstacle avoidance</i>.</li>
+<li>FICKETT, M. &amp; ARKO, Z. (2007), <i>GPU Continuum Crowds</i>.</li>
+<li>FUNGE, J.; TU, X. &amp; TERZOPOULOS, D. (1999), <i>Cognitive modeling: Knowledge,reasoning and planning for intelligent characters</i>, SIGGRAPH 1999.</li>
+<li>GOLDENSTEIN, S.; KARAVELAS, M.; METAXAS, D.; GUIBAS, L.; AARON, E. &amp; GOSWAMI, A. (2001), <i>Scalable nonlinear dynamicalsystems for agent steering and crowd simulation.</i>.</li>
+<li>Green, S. (2008), <i>CUDA particles</i>, nVidia research.</li>
+<li>HEIGEAS, L.; LUCIANI, A.; THOLLOT, J. &amp; CASTAGNE, N. (2003), <i>A physicallybased particle model of emergent crowd behaviors.</i>, GraphiCon 03.</li>
+<li>HELBING, D.; FARKAS, I. &amp; VICSEK, T. (2000), <i>Simulatingdynamical features of escape panic</i>, Nature.</li>
+<li>HELBING, D.; MOLNAR, P.; FARKAS, I. J. &amp; BOLAY, K. (2001), <i>Self organizing pedestrian movement</i>.</li>
+<li>JEONG, W. &amp; ROSS, T. (2007), <i>A fast eikonal equation solver for parallel system</i>.</li>
+<li>KAMPHUIS, A. &amp; OVERMARS, M. H. (2004), <i>Finding paths forcoherent groups using clearance</i>, SIGGRAPH 2004.</li>
+<li>KARLSSON, B. F. (2003), <i>Issues andApproaches in ArtificialIntelligence MiddlewareDevelopment for Digital Gamesand Entertainment Products</i>.</li>
+<li>KIPFER, P.; MARK, S. &amp; WESTERMANN, W. (2004), <i>UberFlow: A GPUBasedParticle Engine</i>, ATI research.</li>
+<li>KNAFLA, B. &amp; LEPOLD, C. (2007), <i>Parallelizing a Real Time SteeringSimulation for Computer Games with OpenMP</i>.</li>
+<li>KWON, T.; LEE, K. H.; LEE, J. &amp; TAKAHASHI, S. (2007), <i>Group Motion Editing</i>.</li>
+<li>LAKOBA; KAUP &amp; FINK (2005), <i>Modification of the Helbing Molnar Farkas Vicsek Social Force Model for Pedestrian Evolution</i>.</li>
+<li>LAMARCHE, F. &amp; DONIKIAN, S. (2004), <i>Crowd of virtual humans: anew approach</i>.</li>
+<li>LATTA, L. (2004), <i>Building a Million Particle System</i>, nVidia research.</li>
+<li>LOSCOS, C.; MARCHAL, D. &amp; MEYER, A. (2003), <i>Intuitive crowd behaviour in dense urban environments using local laws.</i>.</li>
+<li>MAIM, J.; HAEGLER, S.; YESING, B.; PASCAL, M.; THALMANN, D. &amp; GOOL, L. V. (2007), <i>Populating Ancient Pompeii with Crowds of Virtual Romans</i>, SIGGRAPH2007.</li>
+<li>MORINI, F.; YERSIN, B.; MAIM, J. &amp; THALMANN, D. (2007), <i>Real-time scalable motion planning for crowds</i>.</li>
+<li>Musse, S. R. &amp; Thalmann, D.Springer, ed. (2007), Crowd Simulation.</li>
+<li>Musse, S. R. &amp; Thalmann, D. (2001), <i>Hierarchical model for real time simulation of virtual human crowds</i>.</li>
+<li>MUSSE, S. R. &amp; THALMANN, D. (1997), <i>A model of human crowd behavior: Group inter-relationship and collision detection analysis</i>.</li>
+<li>Nguyen, H. (2007), <i>GPU Gems 3</i>, Addison Wesley Professional.</li>
+<li>Nvdia (2008), <i>NVIDIA CUDA Compute Unified Device Architecture - Programming guide</i>.</li>
+<li>Nvidia (2008), <i>NVIDIA CUDA Compute Unified Device Architecture - Reference Manual</i>.</li>
+<li>PELECHANO, N.; ALLBECK, J. &amp; BADLER, N. (2007), <i>Controlling Individual Agents inHigh Density Crowd Simulation</i>, SCA-SIGGRAPH 2007.</li>
+<li>PELECHANO, N.; OBRIEN, K.; SILVERMAN, B. &amp; BADLER, N. (2005), <i>Crowd simulation incorporating agent psychological models, rolesand communication.</i>.</li>
+<li>PELECHANO, N.; STOCKER, C.; ALLBECK, J. &amp; BADLER, N. (2008), <i>Being a Part of theCrowd: Towards Validating VR Crowd Using Presence</i>.</li>
+<li>PETTRE, J.; LAUMOND, J. P. &amp; THALMANN, D. (2005), <i>A navigation graph for real-time crowdanimation on multilayered and uneven terrain</i>.</li>
+<li>M. J.; METOYER, R. A. &amp; HUNTER, ZAWORSKI, K. (2003), <i>Parallel Implementation of the Social Forces Model</i>.</li>
+<li>Reynolds, C. (2006), <i>Big Fast Crowd</i>.</li>
+<li>Reynolds, C. (2004), <i>OpenSteer Online Documentation</i>.</li>
+<li>Reynolds, C. (2000), <i>Interaction with Groups of autonomous Characters</i>, GDC 2000.</li>
+<li>Reynolds, C. (1999), <i>Steering Behaviors For Autonomous Characters</i>, GDC 2000.</li>
+<li>Reynolds, C. (1987), <i>Flocks, herds, and schools: A distributed behavioral model.</i>, SIGGRAPH 1987.</li>
+<li>SHAO, W. &amp; TERZOPOULOS, D. (2005), <i>Autonomous pedestrians</i>, SCA-SIGGRAPH 2005.</li>
+<li>SUNG, M.; GLEICHER, M. &amp; CHENNEY, S. (2004), <i>Scalable behaviors for crowd</i>.</li>
+<li>SUNG, M.; KOVAR, L. &amp; GLEICHER, M. (2005), <i>Fast and accurategoal directed motion synthesis for crowds</i>, SIGGRAPH 2005.</li>
+<li>TANTISIRIWAT, W.; SUMLEEON, A. &amp; KONONGCHAIYOS, P. (2007), <i>A Crowd Simulation Using Individual-Knowledge-Merge based PathConstruction and Smoothed Particle Hydrodynamics</i>.</li>
+<li>TECCHIA, F.; LOSCOS, C.; CONROY, R. &amp; CHRYSANTHOU, Y. (2001), <i>Agent behavior simulator (ABS): A platform for urban behavior development</i>.</li>
+<li>TREUILLE, A.; COOPER, S. &amp; POPOVIC, Z. (2006), <i>Continuum Crowds</i>, SIGGRAPH 2006.</li>
+<li>TU, X. &amp; TERZOPOULOS, D. (1994), <i>Artificial fishes: Physics, locomotion,perception, behavior</i>, SIGGRAPH 1994.</li>
+<li>YERSIN, B.; MAIM, J.; CIECHOMSKI, P. D. H.; SCHERTENLEIB, S. &amp; THALMANN, D. (2007), <i>Steering a virtualcrowd based on a semantically augmented navigation graph.</i>.</li>
+<li>YUE, B. &amp; DEBYL, P. (2005), <i>The State ofthe Art in Game AI Standardisation</i>.</li>
+<li>ZHOU, B. &amp; ZHOU, S. (2004), <i>ParallelSimulation of Group Behaviors</i>.</li>
+</ul>
+<p> </p>
+

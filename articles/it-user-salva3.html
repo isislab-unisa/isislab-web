@@ -1,0 +1,32 @@
+---
+layout: article
+lang: it
+title: User:Salva3
+description: Antonio Salvati Lavoro di tesi Il nostro lavoro di tesi, svolto insieme a Luigi Bifulco, è stato
+  quello di estendere un proxy web che fornisce servizi per la modifica e […]
+permalink: /news/user-salva3/
+article_kind: news
+date: '2008-07-09'
+import_origin: wordpress
+source_url: https://www.isislab.it/2008/07/09/user-salva3/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<h2><span class="mw-headline" id="Antonio_Salvati">Antonio Salvati</span></h2>
+<h3><span class="mw-headline" id="Lavoro_di_tesi">Lavoro di tesi</span></h3>
+<p>Il nostro lavoro di tesi, svolto insieme a <a class="externallink" href="/user-muten84/" rel="nofollow" title="/wiki/index.php?title=User:Muten84">Luigi Bifulco</a>, è stato quello di estendere un proxy web che fornisce servizi per la modifica e la personalizzazione di pagine web: il proxy <a class="externallink" href="http://isis.dia.unisa.it/projects/SISI" rel="nofollow" title="http://isis.dia.unisa.it/projects/SISI">SISI</a>, rendendolo distribuito e quindi aumentandone le potenzialità. Abbiamo utilizzato un paradigma di calcolo distribuito: il <a class="externallink" href="http://it.wikipedia.org/wiki/Grid_computing" rel="nofollow" title="http://it.wikipedia.org/wiki/Grid_computing">Grid Computing</a>.</p>
+<p>I sevizi offerti dal proxy sono servizi più o meno costosi che agiscono sulle pagine web, modificano codice HTML, immagini e fogli di stile CSS. in precedenza erano presenti sul proxy stesso come moduli di Apache, quindi un solo nodo si occupava di gestire e soddisfare tutte le richieste. Esportando i servizi su Grid abbiamo alleggerito il carico del proxy, che ora si occupa solo di smistare le richieste ai vari servizi distribuiti, in base al profilo dell'utente decide quali servizi invocare, in base al carico dei nodi sui quali è presente il servizio da invocare decide dove invocarlo.</p>
+<p>Lo strumento utilizzato per creare i nostri servizi distribuiti è stato <a class="externallink" href="http://www.globus.org/" rel="nofollow" title="http://www.globus.org/">Globus Toolkit</a>, che implementa le specifiche <a class="externallink" href="http://www.globus.org/wsrf/" rel="nofollow" title="http://www.globus.org/wsrf/">WSRF</a> (specifiche che standardizzando i Grid Services), mentre il proxy è diventato in pratica un client dei servizi che abbiamo realizzato, il suo compito infatti è divenuto quello di ricevere le richieste dai web browser e applicare i servizi effettuando chiamate remote a Grid Services e non più chiamando moduli propri sullo stesso nodo.</p>
+<p>Le maggiori problematiche affrontate e risolte sono state appunto quelle di mettere in comunicazione due sistemi molto differenti tra loro: da un lato un proxy in mod_perl basato su Apache Web Server e dall'altra Globus Toolkit, un'implementazione delle specifiche riguardanti il Grid Computing in Java. Ciò è stato possibile poiché la comunicazione lato Globus Toolkit prevedeva l'uso di messaggi <a class="externallink" href="http://it.wikipedia.org/wiki/SOAP" rel="nofollow" title="http://it.wikipedia.org/wiki/SOAP">SOAP</a>, essendo i Grid Services un'estensione dei Web Services, e quindi ci è stato possibile invocare i servizi realizzati creando dei messaggi SOAP ad hoc per l'invocazione di Grid Services. Essendo i servizi ereditati scritti in mod_perl si è preferito tenere il codice Perl ed incorporarlo nei servizi Grid: in pratica i Grid Services realizzati utilizzano gli script Perl già esistenti. Ciò è stato fatto per mantenere i servizi identici nel loro comportamento ed evitare il rischio di trovare incongruenze tra i nuovi e i vecchi servizi. Inoltre l'invocazione dei suddetti script avviene per mezzo di un interprete <a class="externallink" href="http://search.cpan.org/dist/PPerl/PPerl.pm" rel="nofollow" title="http://search.cpan.org/dist/PPerl/PPerl.pm">Perl persistente</a>, emulando così il comportamento di mod_perl ed evitando di appesantire il nodo per le troppe chiamate ad un interprete perl classico (che viene avviato per ogni invocazione di ogni script).</p>
+<h3><span class="mw-headline" id="Seminari">Seminari</span></h3>
+<ul>
+<li><a class="externallink" href="/grid-services-e-architettura-di-supporto-luigi-bifulco-e-antonio-salvati/" rel="nofollow" title="/wiki/index.php/Grid_Services_e_architettura_di_supporto_%28Luigi_Bifulco_e_Antonio_Salvati%29">Grid Services e architettura di supporto</a> - 26-10-2007</li>
+<li><a class="externallink" href="/globus-toolkit-4-luigi-bifulco-e-antonio-salvati/" rel="nofollow" title="/wiki/index.php/Globus_Toolkit_4_%28Luigi_Bifulco_e_Antonio_Salvati%29">Globus Toolkit 4</a> - 16-11-2007</li>
+<li><a class="externallink" href="/integrazione-del-proxy-sisi-con-globustoolkit-4-antonio-salvati-e-luigi-bifulco/" rel="nofollow" title="/wiki/index.php/Integrazione_del_proxy_SISI_con_GlobusToolkit_4_%28Antonio_Salvati_e_Luigi_Bifulco%29">Integrazione del proxy SISI con GlobusToolkit 4</a> - 01-02-2008</li>
+<li><a class="externallink" href="/grid-services-with-sisi-performance-antonio-salvati-e-luigi-bifulco/" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/Grid_services_with_SISI:_Performance_%28Antonio_Salvati_e_Luigi_Bifulco%29">Grid services with SISI: Performance</a> - 30-04-2008</li>
+</ul>
+<p> <br/>
+</p>
+

@@ -1,0 +1,47 @@
+---
+layout: article
+lang: it
+title: User:Davrai
+description: 'Davide Rainis Contatti: drainis@alice.it Tesi: Porting of ‘Virus’ in D-Mason, analisys, issues
+  and testing My Work I modelli di simulazione basati su agente (ABM) sono uno strumento sempre più […]'
+permalink: /news/user-davrai/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-davrai/
+section: News
+---
+<p> </p>
+<h2><span class="mw-headline" id="Davide_Rainis">Davide Rainis</span></h2>
+<p>Contatti: drainis@alice.it</p>
+<h2><span class="mw-headline" id="Tesi:_Porting_of_.27Virus.27_in_D-Mason.2C_analisys.2C_issues_and_testing">Tesi: Porting of 'Virus' in D-Mason, analisys, issues and testing</span></h2>
+<h3><span class="mw-headline" id="My_Work">My Work</span></h3>
+<p>I modelli di simulazione basati su agente (ABM) sono uno strumento sempre più popolare per la ricerca in molti ambiti diversificati come la biolo gia,l'ecologia, l'economia, le scienze politiche, la sociologia, ecc. Sono stati quindi necessari nuovi strumenti e piattaforme che permettessero di aiutare e migliorare lo sviluppo e la sperimentazione, in particolare strumenti, librerie e framework che rendono più veloci le simulazioni oltre a semplificarle. Un sistema multi-agente rappresenta un sistema composto da tanti agenti, componenti autonome che rappresentano oggetti o logici all'interno del sistema in grado di agire per raggiungere i propri obiettivi ed in grado di interagire con altri agenti all'interno del sistema stesso, che interagiscono tra loro per soddisfare un certo insieme di obiettivi, allo scopo di portare a termine un certo insieme di compiti. Mason è un toolkit per simulazioni multi agente interamente scritto in Java progettato per supportare un grande numero di agenti su una singola macchina oltre che una libreria di simulazioni. Quando si parla però di simulazioni massive, ossia simulazioni in cui vivono e interagiscono milioni di agenti, è necessaria una grande capacità di calcolo e il maggior limite di un software di simulazione è la scarsa capacità hardware di una singola macchina. In questi contesti entra in gioco il calcolo distribuito: in un ambiente composto da macchine eterogenee è possibile implementare ed eseguire simulazioni massive di agenti anche molto complessi. Entra in gioco D-Mason, estensione di Mason, che in aggiunta alle sue caratteristiche sfrutta le potenzialità del calcolo distribuito. Introduce nuovi concetti come il partizionamento del campo, la sincronizzazione, e la comunicazione. In questo lavoro di tesi si è andato quindi ad analizzare come eseguire il porting della simulazione 'Virus' da Mason a D-Mason esaminando e risolvendo tutto le problematiche da esso derivanti: introdurre tutte le astrazioni dei concetti in distribuito offerte da D-Mason necessarie per eseguire e mantenere funzionante la simulazione e modificare il comportamento degli agenti e della simulazione stessa tenendo conto del fatto che il nostro campo è di tipo toroidale; e le modifiche derivanti dall'analisi dei parametri discretization e AOI e di come essiincidono sull'esecuzione della simulazione.<br/>
+Sono stati introdotti i concetti di Global Inspector e Global Viewer per poter memorizzare e visualizzare graficamente attraverso la console alcuni parametri globali della simulazione implementando la classe Inspectable.<br/>
+Sono stati infine eseguiti dei test per analizzare il comportamento della simulazione nei seguenti scenari:</p>
+<ul>
+<li>aumentando progressivamente le divisioni del field, mantenendo costanti width (6400), height (9600), N◦ di agenti (13824) e N◦ di Worker (7), modificando l'AOI e verificando la sua incidenza sul tempo che impiega la simulazione per eseguire 10000 step;</li>
+<li>sulla come la natura distribuita della simulazione permetta di suddividere il lavoro su un numero crescente di Worker (da 2 a 10), mantenendo fissati width (6400), height (9600) e N◦ di agenti (13824) verificando come varia positivamente il tempo per eseguire 10000 step;</li>
+<li>come varia il tempo di esecuzione della simulazione per eseguire 10000 step variando il parametro discretization e quindi l'overhead di informazioni necessarie per aggiornarsi sul vicinato mantenendo costanti width (6400), height (9600), N◦ agenti (13824), divisione (5x5) e Worker (7);</li>
+<li>infine un test per verificare la scalabilità della simulazione all'aumentare della grandezza del campo e del numero di agenti mantenendo costanti la divisione del field (5x5) e il N◦ di Worker (7).</li>
+</ul>
+<h2><span class="mw-headline" id="Seminari">Seminari</span></h2>
+<ul>
+<li>11/11/2013: Porting della simulazione "Virus" in DMason, analisi e problematiche.
+<ul>
+<li>Abstract: In questo seminario verrà descritto come è stato effettuato il porting della simulazione "Virus" in DMason, quali sono state le problematiche affrontate e come funziona la simulazione.</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Riferimenti">Riferimenti</span></h2>
+<ul>
+<li><a class="externallink" href="http://cs.gmu.edu/~eclab/projects/mason/" rel="nofollow" title="http://cs.gmu.edu/~eclab/projects/mason/">http://cs.gmu.edu/~eclab/projects/mason/</a></li>
+<li><a class="externallink" href="/dmason/" rel="nofollow" title="/projects/dmason">/projects/dmason</a></li>
+<li><a class="externallink" href="http://it.wikipedia.org/wiki/LaTeX" rel="nofollow" title="http://it.wikipedia.org/wiki/LaTeX">http://it.wikipedia.org/wiki/LaTeX</a></li>
+</ul>
+<ul>
+<li>Sean Luke, Claudio Cioffi-Revilla, Liviu Panait, and Keith Sullivan. MASON: A New Multi-Agent Simulation Toolkit. 2004. Proceedings of the 2004 SwarmFest Workshop.</li>
+<li>Gennaro Cordasco, Rosario De Chiara, Ada Mancuso, Dario Mazzeo, Vittorio Scarano e Carmine Spagnuolo, A Framework for distributing Agent-based simulations: D-MASON, sottomesso per lapubblicazione HeteroPar'2011.</li>
+</ul>
+<p> </p>
+

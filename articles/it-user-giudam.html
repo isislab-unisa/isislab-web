@@ -1,0 +1,41 @@
+---
+layout: article
+lang: it
+title: Giuseppe D’Ambrosio
+description: Introduzione Studente del dipartimento di Informatica a seguito della laurea triennale iscritto
+  al curriculum Cloud Computing della laura magistrale in Informatica, interessato agli argomenti di tale ambito.
+  Questo interesse mi […]
+permalink: /news/user-giudam/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-giudam/
+section: News
+---
+
+<h2 class="wp-block-heading">Introduzione</h2>
+<p>Studente del dipartimento di Informatica a seguito della laurea triennale iscritto al curriculum Cloud Computing della laura magistrale in Informatica, interessato agli argomenti di tale ambito. Questo interesse mi ha avvicinato ai corsi tenuti dai docenti di ISISLab permettendomi di avviare un nuovo tipo di percorso verso la tesi di laurea. Tale percorso prevede di proporre come progetto per gli esami caratterizzanti il curriculum Cloud Computing un unico progetto che andrà a svilupparsi a partire dal primo anno della Laurea Magistrale. </p>
+<h2 class="wp-block-heading">Tesi</h2>
+<h3 class="wp-block-heading">Sviluppo del linguaggio FLY: ambiente di debug e supporto alle sorgenti dati esterne</h3>
+<p><img alt="" decoding="async" src="/assets/media/028cd1826992b8-immagine-seminario.jpg"/></p>
+<p><strong>Abstract</strong><br/>Il Cloud Computing è un paradigma in grande sviluppo negli ultimi anni che trova sempre più largo utilizzo sia nelle piccole aziende che nelle grandi organizzazioni, grazie ai numerosi vantaggi che offre. Un mercato inizialmente composto da pochi Cloud provider si è così espanso con l'ingresso di numerosi nuovi fornitori, ognuno con la propria piattaforma e i propri servizi. Amazon con Aws, Microsoft con Azure e Google con GCP sono solo alcuni dei colossi che si contendono il mercato del Cloud Computing proponendo soluzioni diverse e ottimizzate per varie esigenze. <br/>
+L'obiettivo di voler sfruttare questa varietà di provider ha portato alla nascita del multi-cloud, ovvero l'utilizzo di più piattaforme Cloud unificate in una singola architettura. Questo approccio permette di sfruttare i vantaggi che ogni provider fornisce, ottenendo maggiore affidabilità, un miglior rapporto qualità-prezzo e riducendo fortemente la dipendenza da un singolo fornitore, aspetto particolarmente critico del Cloud Computing. L'introduzione del multi-cloud comporta, tuttavia, anche una serie di criticità date soprattutto dalla forte diversità delle varie piattaforme Cloud. Infatti, nonostante i servizi disponibili siano simili, ogni Cloud provider fornisce le proprie API (Application Programming Interface) che possono essere anche completamente diverse rispetto agli altri. <br/> <br/>
+Per venire incontro a questi problemi nasce FLY, un Domain-Specific-Language per il calcolo scientifico sul multi-cloud il cui obiettivo è quello di semplificare lo sviluppo di applicazioni che sfruttino la potenza computazionale offerta dai cloud provider e dai loro servizi. L'interazione con il cloud viene astratta all'utente finale che non necessita di conoscere le specifiche API del provider che vuole utilizzare, superando così le difficoltà intrinseche del multi-cloud. <br/> <br/>
+L'obiettivo di questo lavoro di tesi è di presentare due funzionalità aggiuntive introdotte in FLY: l'integrazione di un ambiente di debug e il supporto a sorgenti dati esterne. <br/> <br/>
+La possibilità di testare le applicazioni in un ambiente di debug indipendente dal Cloud, ma che allo stesso tempo ne simuli fedelmente il comportamento, è cruciale per uno sviluppatore. Le fasi di test, infatti, richiedono spesso numerose esecuzioni che possono causare un elevato costo sia in tempo che in denaro se effettuate su Cloud, tale costo può essere evitato lavorando in un ambiente locale. Verrà presentato l'ambiente di debug per il linguaggio FLY in cui è possibile lanciare applicazioni in un ambiente Aws simulato su macchina locale senza alcuna dipendenza dai servizi in Cloud. <br/> <br/>
+Aspetto fondamentale di un'applicazione è la gestione e l'utilizzo dei dati proveniente da sorgenti esterne come file o database. Questi ultimi, in ambito Cloud Computing, vengono implementati dai servizi di Database As a Service (DBaaS) che permettono di gestire e utilizzare database su Cloud senza doversi preoccupare dell'infrastruttura sottostante. Sarà introdotta l’implementazione del supporto alle sorgenti dati esterne all’interno di FLY, in particolare la possibilità di sfruttare database strutturati attraverso i servizi DBaaS.</p>
+<h2 class="wp-block-heading">Primo seminario</h2>
+<h3 class="wp-block-heading">Debug mode on FLY using LocalStack</h3>
+<p><strong>Abstract</strong><br/>FLY è un Domain Specific Language per il calcolo scientifico su multi-cloud che fornisce un ambiente totalmente trasparente rispetto al provider fornitore dei servizi. Sviluppare un’applicazione è un processo che richiede diversi tentativi di esecuzione per riuscire a rendere il tutto funzionante. Quando si lavora in cloud ciò può risultare particolarmente costoso, vi è quindi la necessità di poter testare le proprie funzioni in un ambiente totalmente locale, che non dipenda dei servizi del cloud, ma che allo stesso tempo ne simuli fedelmente l’esecuzione. <br/>Lo scopo di questo seminario è presentare un ambiente di test, per il linguaggio FLY, in cui è possibile eseguire funzioni simulando l’ambiente AWS su macchina locale, senza alcuna dipendenza dai servizi in cloud e senza nessun costo. </p>
+<h2 class="wp-block-heading">Secondo seminario</h2>
+<h3 class="wp-block-heading">DBaas in FLY: integrazione delle sorgenti dati esterne</h3>
+<p> <strong>Abstract</strong><br/> Il cloud computing è ampiamente riconosciuto come un paradigma per il calcolo distribuito su cui si baseranno la prossima generazione di applicazioni che necessitano un'alta scalabilità. L'introduzione del modello di servizio Function as a Service (FaaS) da parte dei vari cloud provider, permette di gestire la logica delle applicazioni con funzioni indipendenti consentendo di sfruttare a pieno la potenza computazionale offerta dall'infrastruttura cloud. </p>
+<p>La maggior parte delle applicazioni necessita di lavorare con sorgenti dati esterne, solitamente database, verrà quindi introdotto il modello di servizio su Cloud Database As a Service (DBaaS) che permette di gestire e utilizzare database eliminando la necessità di configurare e gestire l'infrastruttura necessaria ad eseguirlo. </p>
+<p>Introdurremo FLY, un Domain Specific Language (DSL) per la progettazione, lo sviluppo e l'esecuzione di applicazioni di calcolo scientifico che sfrutta il modello FaaS su diverse infrastrutture cloud, in particolare ci concentreremo sull'introduzione al suo interno della possibilità di interagire con sorgenti dati esterne sfruttando file dati o database sia locali che in esecuzione con servizi di tipo DBaaS.</p>
+<h2 class="wp-block-heading">Terzo seminario</h2>
+<h3 class="wp-block-heading">FLY: Ambiente di debug e supporto alle sorgenti dati esterne</h3>
+<p> <strong>Abstract</strong><br/> FLY, un Domain-Specific-Language per il calcolo scientifico sul multi-cloud il cui obiettivo è quello di semplificare lo sviluppo di applicazioni che sfruttino la potenza computazionale offerta dai cloud provider e dai loro servizi. L'interazione con il cloud viene astratta all'utente finale che non necessita di conoscere le specifiche API del provider che vuole utilizzare. </p>
+<p>Questo seminario ha lo scopo di presentare due funzionalità introdotte in FLY: l'integrazione di un ambiente di debug e il supporto a sorgenti dati esterne. </p>
+<p>Verrà presentato l'ambiente di debug per il linguaggio FLY in cui è possibile lanciare applicazioni in un ambiente Aws simulato su macchina locale senza alcuna dipendenza dai servizi in Cloud.<br/>
+Inoltre sarà introdotta l’implementazione del supporto alle sorgenti dati esterne, in particolare la possibilità di sfruttare database strutturati attraverso i servizi DBaaS.</p>
+

@@ -1,0 +1,54 @@
+---
+layout: article
+lang: it
+title: User:Pristella
+description: Anna Pizzuti Introduzione Il lavoro di tesi che sto svolgendo consiste nel benchmarking di quattro
+  proxy di content-filtering. I Proxy “sotto osservazione” sono Privoxy, RabbIT, WebCleaner e ovviamente SISI.
+  […]
+permalink: /news/user-pristella/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-pristella/
+section: News
+---
+<p> </p>
+<hr/>
+<h1><span class="mw-headline" id="Anna_Pizzuti"><b>Anna Pizzuti</b></span></h1>
+<h2><span class="mw-headline" id="Introduzione"><b>Introduzione</b></span></h2>
+<p>Il lavoro di tesi che sto svolgendo consiste nel benchmarking di quattro proxy di content-filtering. I Proxy "sotto osservazione" sono Privoxy, RabbIT, WebCleaner e ovviamente SISI.</p>
+<h2><span class="mw-headline" id="Benchmarking"><b>Benchmarking</b></span></h2>
+<p>"Con il termine benchmark si intende un insieme di test software volti a fornire una misura delle prestazioni di un computer per quanto riguarda diverse operazioni." <a href="http://it.wikipedia.org/wiki/Benchmark_(informatica)">http://it.wikipedia.org/wiki/Benchmark_(informatica)</a><br/>
+Nel nostro caso i computer da analizzare sono i proxy.<br/>
+Per poter eseguire i test ho bisogno delle tre/quattro macchine di cui dispongo (non ho manie di espansionismo!). La motivazione: per eseguire test che siano considerati attendibili ho bisogno di:<br/>
+una macchina per il client <a href="http://www.hpl.hp.com/research/linux/httperf/" title="http://www.hpl.hp.com/research/linux/httperf/">Httperf</a>;<br/>
+una macchina per il web server <a href="http://httpd.apache.org/" title="http://httpd.apache.org/">Apache</a>;<br/>
+una macchina per i proxy (Vedi software).<br/>
+(L'ulteriore macchina mi serve per testare SISI istallato su Apache versione worker, e non prefork)</p>
+<h2><span class="mw-headline" id="Workload"><b>Workload</b></span></h2>
+<p>Per svolgere un lavoro di questo tipo bisogna, innanzitutto scegliere gli strumenti, quindi i proxy. Successivamente bisogna selezionare un buon workload su cui condurre i test.<br/>
+I test fin ora svolti sono serviti per fare un confronto delle prestazioni in condizioni di "normale" utilizzo del proxy. Successivamente verranno svolti test per valutare il comportamento dei sistemi sotto "stress".<br/>
+Work in Progess!</p>
+<h2><span class="mw-headline" id="Software"><b>Software</b></span></h2>
+<table>
+<tbody>
+<tr>
+<td>SISI</td>
+<td><a class="externallink" href="http://isis.dia.unisa.it/projects/SISI/" rel="nofollow" title="http://isis.dia.unisa.it/projects/SISI/">http://isis.dia.unisa.it/projects/SISI/</a></td>
+</tr>
+<tr>
+<td>Privoxy</td>
+<td><a class="externallink" href="http://www.privoxy.org/" rel="nofollow" title="http://www.privoxy.org/">http://www.privoxy.org/</a></td>
+</tr>
+<tr>
+<td>RabbIT</td>
+<td><a class="externallink" href="http://rabbit-proxy.sourceforge.net/" rel="nofollow" title="http://rabbit-proxy.sourceforge.net/">http://rabbit-proxy.sourceforge.net/</a></td>
+</tr>
+<tr>
+<td>WebCleaner</td>
+<td><a class="externallink" href="http://webcleaner.sourceforge.net/" rel="nofollow" title="http://webcleaner.sourceforge.net/">http://webcleaner.sourceforge.net/</a></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+

@@ -1,0 +1,76 @@
+---
+layout: article
+lang: it
+title: User:Simrom
+description: Introduzione Il lavoro di tesi punterà a generare in maniera automatica (o semi-automatica) il
+  modello di simulazione descritto da programmi java che utilizzano la libreria MASON (http://cs.gmu.edu/~eclab/projects/mason/).
+  Per la generazione […]
+permalink: /news/user-simrom/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-simrom/
+section: News
+---
+<h1>Introduzione</h1>
+<p>Il lavoro di tesi punterà a generare in maniera automatica (o semi-automatica) il modello di simulazione descritto da programmi java che utilizzano la libreria MASON (<a class="externallink" href="http://cs.gmu.edu/~eclab/projects/mason/" rel="nofollow" title="http://cs.gmu.edu/~eclab/projects/mason/">http://cs.gmu.edu/~eclab/projects/mason/</a>). Per la generazione della documentazione verrà utilizzato DOXYGEN (<a class="externallink" href="http://www.stack.nl/~dimitri/doxygen/" rel="nofollow" title="http://www.stack.nl/~dimitri/doxygen/">http://www.stack.nl/~dimitri/doxygen/</a>).</p>
+<h1>Diario</h1>
+<ul>
+<li>Per iniziare ho dato una prima lettura al manuale MASON (<a class="externallink" href="http://cs.gmu.edu/~eclab/projects/mason/manual.pdf" rel="nofollow" title="http://cs.gmu.edu/~eclab/projects/mason/manual.pdf">http://cs.gmu.edu/~eclab/projects/mason/manual.pdf</a>) per comprendere il funzionamento della libreria. Ho quindi familiarizzato con la libreria scrivendo un semplice programma di simulazione. Successivamente ho installato e iniziato a testare "doxygen" su windows.</li>
+<li>Successivamente ho studiato il manuale di doxygen, individuando le caratteristiche che potevano essere utili per documentare il modello di simulazione riportato nel codice. Tra le potenzialità di doxygen è risultato interessante poter creare delle pagine dedicate nella documentazione riportanti le informazioni desiderate. Ciò è possibile creando dei gruppi di entità (package, classi, variabili ecc) o creando un file di markdown con la sintassi opportuna. Ho quindi approfondito il codice di uno degli esempi forniti con MASON, "AntsForage".</li>
+<li>Commentato il codice "AntsForage" per cercare di ricavare una pagina dedicata descrivente il modello di simulazione. Estratta documentazione tramite doxygen in formato pdf. Individuata libreria java ("javaparser") per navigare/modificare sorgenti java (<a class="externallink" href="https://github.com/matozoid/javaparser" rel="nofollow" title="https://github.com/matozoid/javaparser">https://github.com/matozoid/javaparser</a>).</li>
+<li>Studio di alcuni paper riguardanti modelli di simulazione e documentazione di modelli di siumlazione (<a class="externallink" href="https://peerj.com/preprints/273/" rel="nofollow" title="https://peerj.com/preprints/273/">https://peerj.com/preprints/273/</a> - <a class="externallink" href="http://www.sciencedirect.com/science/article/pii/S0304380014000611" rel="nofollow" title="http://www.sciencedirect.com/science/article/pii/S0304380014000611">http://www.sciencedirect.com/science/article/pii/S0304380014000611</a> - <a class="externallink" href="http://bio.uib.no/te/papers/Grimm_2010_The_ODD_protocol_.pdf" rel="nofollow" title="http://bio.uib.no/te/papers/Grimm_2010_The_ODD_protocol_.pdf">http://bio.uib.no/te/papers/Grimm_2010_The_ODD_protocol_.pdf</a>). Di particolare utilita' il protocollo ODD (Overview, Design concepts and Details) che fornisce delle linee guida riguardo la documentazione di ABMs (agent-based models). In particolare propone alcune domande guida che possiamo porci per documentare un ABMs. Risulta fondamentale capire quali delle domande possono essere risposte in maniera automatica e quali chiedendo input all'utente.</li>
+<li>Sono entrato nel vivo della questione iniziando a realizzare un plugin di export per eclipse. Lo scopo del plugin è quindi quello di ricavare, dato un progetto che utilizza MASON, informazioni semantiche dal codice relative al modello di simulazione descritto dall'applicazione. Iniziata la fase di implementazione è stata presto abbandonata la libreria "javaparser" ed è stato introdotto il framework AST di Eclipse(<a class="externallink" href="http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html" rel="nofollow" title="http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html">http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html</a>). Il progetto è consultabile qui: "<a class="externallink" href="https://code.google.com/p/masonhelperdocumentation/" rel="nofollow" title="https://code.google.com/p/masonhelperdocumentation/">https://code.google.com/p/masonhelperdocumentation/</a>".</li>
+</ul>
+<h2>Prima versione</h2>
+<p>E' stata realizzata una prima versione del plugin. Ciò che è emerso dalla prima versione è che le informazioni non risultavano strutturate in maniera ragionevole. Diventava quindi faticoso individuare le informazioni nella documentazione generata. L'obiettivo posto quindi è stato quello di riorganizzare il wizard in maniera tale da ottenere una documentazione strutturata secondo lo standard ODD. Ho iniziato quindi a lavorare alla seconda versione dell'applicazione.</p>
+<h2>Seconda versione</h2>
+<p>La seconda versione del plugin mira a riorganizzare la documentazione ed a correggere alcuni problemi implementativi della prima.</p>
+<h3>Parsing del codice</h3>
+<p>La prima versione presentava alcuni punti deboli per la parte di parsing del codice. Ad esempio la ricerca delle informazioni sui fields della simulazione era fatta nel seguente modo:</p>
+<ul>
+<li>Partendo dall'oggetto “FieldDeclaration” sul quale invocavo “getInitializer” che restituiva la stringa di inizializzazione (“es: new Grid(a, b,c ))</li>
+<li>Su tale stringa eseguivo uno split con parametro “;” e assumevo che il risultato fosse “a,b,c”. Si cercavano quindi a,b e c nella classe per ricavare ulteriori informazioni</li>
+</ul>
+<p>Il problema capita quando abbiamo una inizializzazione del tipo: balls = new Continuous3D(collisionDistance, gridWidth,gridHeight,gridLength); dove lo split avrebbe dato stringhe "collisionDistance", " gridWidth" (nota lo spazio iniziale " gridWidth"). La ricerca di tali stringhe tra le variabili della classe non avrebbe restituito risultato per "gridWidth". Utilizzando il visitor pattern di ast ho realizzato l'oggetto "FieldDeclarationVisitor" che visita la "compilationUnit" data come parametro implicito "visitando" gli "Assignment"; trovato il node Assignment istanza di "ClassInstanceCreation" e con nome uguale alla field che cerchiamo, si estrae la lista di parametri con "arguments()".</p>
+<h3>Iterabilità</h3>
+<p>Altro problema è legato all'iterabilità del processo di autogenerazione della documentazione. Il problema da risolvere è quello di mostrare le informazioni già inserite dall'utente in altri utilizzi del wizard. Tale operazione era fatta (nella prima versione) estraendo il commento presente su un campo come stringa. A questo punto veniva rigenerato il commento automatico e veniva confrontato con il vecchio commento; se questi coincidevano veniva lasciato solo il commento automatico altrimenti veniva mostrata la parte differente nella casella di input dell'utente e la parte autogenerata nella sezione opportuna. Questo causava alcuni problemi in quanto ci troviamo a che fare con stringhe e quindi anche un solo spazio in più/meno poteva portare a fallimenti durante il confronto. La strada intrapresa è quella di raccogliere le informazioni generate durante il wizard in un oggetto “ODD” e serializzare tale oggetto alla fine del wizard. In questo modo in utilizzi diversi del wizard le informazioni eventualmente già inserite vengono recuperate dall'oggetto serializzato. L'introduzione di un oggetto "ODD" contenente tutte le informazioni sul wizard ci slega dall'utilizzo di doxygen; avendo tale oggetto potremo decidere di scrivere le informazioni raccolte in altri formati (che non siano quindi solo i commenti in stile doxygen).</p>
+<h3>Process overview and scheduling</h3>
+<p>La fase di process overview and scheduling di ODD è legata alla fase Submodels. Ciò che lega queste due fasi è che la prima riepiloga le azioni svolte dalle entità; la seconda approfondisce tali azioni. Tale legame deve essere risolto anche in fase di implementazione. A tale scopo durante la fase di process overview and scheduling vengono "visitati" i metodi "start" e "step" della "SimState" e degli agenti. Durante la "visita" vengono appuntate le "MethodInvocations". L'idea è che laddove il programmatore crea un metodo, questo deve rappresentare un'azione separata (un submodels). Durante la fase di Submodels verranno recuperate tali invocazioni e verranno "visitate" in maniera dettagliata.</p>
+<h3>Colors feature</h3>
+<p>Aggiunta possibilità di settare diversi colori per i commenti autogenerati e quelli inseriti in input dall'utente. Per implementare questa funzionalità è stato aggiunto un tag "" intorno ai commenti. Uno dei problemi riscontrati durante questa fase è stato che “doxygen” interpretava il tag in modo da renderlo visibile:</p>
+<pre> diventava -&gt; &amp;lt.span
+</pre>
+<p>Per risolvere tale problematica "doxygen" mette a disposizione le sequenze di escape:</p>
+<pre>/htmlonly /endhtmlonly
+</pre>
+<p>Quindi ho racchiuso il tag "&lt;span&gt;" all'interno delle sequenze di escape di “doxygen”.</p>
+<h2>Terza versione</h2>
+<p>La seconda versione sviluppata prometteva un semplice riutilizzo dell’applicazione realizzando un’output svincolato da doxygen (vedi paragrafo “iterabilità”).<br/>
+Per confermare questa tesi è stata sviluppata una terza versione del plug-in che aggiunge altre 2 modalità di output:</p>
+<ul>
+<li>Pdf</li>
+<li>Txt</li>
+</ul>
+<p>Quindi in totale avremo le seguenti modalità di ouput: Doxygen, pdf e txt. Per raggiungere tale obiettivo ho realizzato un oggetto di supporto all’oggetto “ODD” già creato che si occupa solamente di estrarre il contenuto delle 7 sezioni di ODD sottoforma di Stringa.<br/>
+La libreria “itext” ha supportato la creazione del documento pdf.</p>
+<h2>Aggiornamenti 12-07-2014</h2>
+<h3>Eliminazione-backup commenti autogenerati</h3>
+<p>Alla ne della procedura guidata il plugin genera quindi una serie di commenti al codice in stile Doxygen. Tali commenti intaccano la pulizia del codice. Per risolvere tale problema, alla ne della procedura i commenti<br/>
+generati dal plugin vengono eliminati ed il codice ritorna allo stato iniziale.<br/>
+E' stata introdotta quindi una firma nei commenti in modo tale da poterli riconoscere ed eliminarli alla fine lasciando eventuali commenti inseriti dall'utente.<br/>
+La classe "JavaDocVisitor" si occupa proprio di visitare una "CompilationUnit" e, incontrato un nodo di tipo "Javadoc node", se questo contiene la firma del plugin, lo elimina.<br/>
+E' tuttavia possibile conservare una copia di backup del codice contenente i commenti generati in automatico spuntando la casella 'Save backup of commented code' nell'ultima pagina del wizard. Verrà creata una cartella nella directory contenente le copie dei files sorgenti con estensione ._MAD(MAD(Mason assisted documentation è il nome del plugin).</p>
+<h3>Rtf</h3>
+<p>Aggiunto il supporto per output di tipo rtf. Tale funzionalità è stata ottenuta utilizzando la libreria "iText".</p>
+<h1>Conclusioni</h1>
+<p>Possiamo a questo punto trarre delle conclusioni sul lavoro svolto. Riprendiamo da quello che era l'obiettivo iniziale: 'Documentare programmi di simulazione multi-agente scritti in java con libreria MASON'. Il prodotto<br/>
+realizzato e descritto in questo lavoro di tesi produce un risultato esaustivo rispetto all'obiettivo iniziale. Il plugin realizzato supporta l'utente durante la creazione della documentazione per un programma di simulazione multiagente, generando documentazione che non da la sensazione di un qualcosa di generato in maniera automatica. L'output racconta quello che e il modello di simulazione, generando in alcuni punti un discorso in linguaggio naturale che rende l'idea di quello che avviene nel modello. Inoltre la struttura dell'output segue uno standard noto(protocollo ODD) agevolando la diffusione di tale standard. Utilizzando il plugin si può uniformare la struttura delle documentazioni di ABMs scritti in java con libreria MASON. L'esperto del modello potrà così abituarsi ad uno standard che ritroverà in tutte le documentazioni; il programmatore non dovrà preoccuparsi di strutturare la documentazione, ma dovrà solo contribuire alla raccolta di informazioni effettuata dal wizard.</p>
+<h1>Seminari</h1>
+<ul>
+<li>12/05/2014 - <a href="http://isis.dia.unisa.it/wp-content/uploads/2014/05/Introduction-to-automatic-ABMs-documentation.pptx">Introduction to automatic ABMs documentation</a></li>
+<li>27/06/2014 - <a href="http://172.16.15.1/wp-content/uploads/2014/05/Documentazione-automatica-di-ABMsAgent-Based-models.pptx">Documentazione automatica di ABMs(Agent-Based models)</a></li>
+<li>Presentazione laurea</li>
+<li><a href="/assets/media/abce33e2e795d2-tesi-simoneromano.pdf">Tesi</a></li>
+</ul>
+

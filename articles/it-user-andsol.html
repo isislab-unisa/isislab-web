@@ -1,0 +1,48 @@
+---
+layout: article
+lang: it
+title: User:Andsol
+description: 'Informazioni personali Nome: Andrea Soldà E-mail: a.solda@studenti.unisa.it o a.solda92@gmail.com
+  Laurea triennale Introduzione Il mio lavoro di tesi prevede un confronto tra algoritmi per il partizionamento
+  di grafi massivi. Lo scopo […]'
+permalink: /news/user-andsol/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-andsol/
+section: News
+---
+<h2>Informazioni personali</h2>
+<p><b>Nome:</b> Andrea Soldà<br/>
+<b>E-mail:</b> <i>a.solda@studenti.unisa.it</i> o <i>a.solda92@gmail.com</i></p>
+<h2><span class="mw-headline" id="Laurea_triennale">Laurea triennale</span></h2>
+<h3><span class="mw-headline" id="Introduzione">Introduzione</span></h3>
+<p>Il mio lavoro di tesi prevede un confronto tra algoritmi per il partizionamento di grafi massivi. Lo scopo di questi algoritmi è di distribuire efficientemente il campo network di dMASON.</p>
+<h3><span class="mw-headline" id="Obiettivi">Obiettivi</span></h3>
+<p>Trovare il modo migliore per partizionare un grafo massivo durante una simulazione in ambito distribuito.<br/>
+Eventualmente proporre un nuovo approccio al problema ed una soluzione competitiva.</p>
+<h2><span class="mw-headline" id="Diario">Diario</span></h2>
+<h3><span class="mw-headline" id="Prima_settimana">Prima settimana</span></h3>
+<p>Per prima cosa ho preso familiarità con <a class="externallink" href="http://jgrapht.org/" rel="nofollow" title="http://jgrapht.org/">JgraphT</a>, una libreria Java utilizzata già in altri lavori svolti in laboratorio da altri tesisti. Ho modificato delle classi realizzate da <a class="externallink" href="/user-framil/" rel="nofollow" title="/wiki/index.php/User:Framil">Francesco Milone</a> per creare un parser che mi permettesse di importare grafi da file in formato gml o GraphML all'interno del mio codice.<br/>
+Ho poi svolto delle ricerche per trovare alternative alle soluzioni proposte da <a class="externallink" href="/user-adaman/" rel="nofollow" title="/wiki/index.php/User:Adaman">Ada Mancuso</a> nel suo lavoro di tesi, imbattendomi nel software <a class="externallink" href="http://glaros.dtc.umn.edu/gkhome/metis/metis/overview" rel="nofollow" title="http://glaros.dtc.umn.edu/gkhome/metis/metis/overview">METIS</a>, sul quale sto lavorando ora.</p>
+<h3><span class="mw-headline" id="Seconda_settimana">Seconda settimana</span></h3>
+<p>Nel corso di questa settimana ho continuato a lavorare su METIS e sono riuscito a farlo funzionare sotto Ubuntu. Ho tuttavia riscontrato numerosi problemi nel comprendere la strutturazione dei file che il software accetta in input. Dopo uno studio del codice ed alcuni tentativi pratici sono riuscito a completare un parser in Java che converte file dal formato GML al formato graph.<br/>
+Al momento mi appresto a cominciare la fase di testing degli algoritmi di METIS, che finora sembrano promettere bene.</p>
+<h3><span class="mw-headline" id="Terza_settimana">Terza settimana</span></h3>
+<p>Durante questa settimana ho continuato a fare test su METIS. Ho introdotto una mia modifica nell'algoritmo per diminuire l'indice di comunicazione nel supergrafo risultante sbilanciando leggermente la taglia delle community risultanti.</p>
+<h3><span class="mw-headline" id="Quarta_settimana">Quarta settimana</span></h3>
+<p>I test su METIS sono quasi completi. Ora che ho a disposizione tutti i dati necessari inizio la fase di confronto con gli altri algoritmi a disposizione. Finora, basandomi su alcuni test effettuati rapidamente, METIS sembra competitivo.</p>
+<h3><span class="mw-headline" id="Quinta_settimana">Quinta settimana</span></h3>
+<p>In questa settimana ho completato tutti i test ed ho preparato il mio primo seminario, che si terrà venerdì 4 Aprile alle ore 10.</p>
+<h3><span class="mw-headline" id="Sesta_settimana">Sesta settimana</span></h3>
+<p>Dopo le considerazioni fatte durante il seminario ho effettuato alcuni test modificando dei parametri nell'UKWayPart, che però non hanno influito né sulle prestazioni né sulla qualità del partizionamento</p>
+<h3><span class="mw-headline" id="Settima_settimana">Settima settimana</span></h3>
+<p>Sto lavorando per implementare METIS in DMASON, creando un tool esterno che permetta di partizionare il grafo della simulazione. Presto inizieranno i test sulle simulazioni complete utilizzando il cluster Oxygen</p>
+<h3><span class="mw-headline" id="Ottava.2Fnona.2Fdecima_settimana">Ottava/nona/decima settimana</span></h3>
+<p>Il tool per l'implementazione di METIS in DMASON è stato completato, consente di partizionare il grafo della simulazione con un algoritmo a scelta, ma anche di ottenere parti del grafo caratterizzate da un id di community ed un parametro aoi, utile per riempire le strutture utilizzate in DMASON.</p>
+<h2><span class="mw-headline" id="Seminari">Seminari</span></h2>
+<h3><span class="mw-headline" id="Seminario_venerd.C3.AC_4_Aprile_2014">Seminario venerdì 4 Aprile 2014</span></h3>
+<p>Titolo: Unbalanced KWayPart Algorithm: un algoritmo veloce ed affidabile per partizionare grafi massivi<br/>
+Abstract: n questo seminario verrà presentato l'UKWayPart, un algoritmo progettato partendo dall'algoritmo METIS KWayPart per il partizionamento di grafi massivi. Verrà posta una particolare enfasi sull'applicazione dell'algoritmo nell'ambito di dMASON per il partizionamento del campo Network. Verranno inoltre esposti i risultati dei test effettuati sui vari dataset scelti e verranno fatte considerazioni sull'eventuale implementazione in dMASON<br/>
+ </p>
+

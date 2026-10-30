@@ -1,0 +1,64 @@
+---
+layout: article
+lang: it
+title: Francesco Foglia
+description: Introduzione Sono uno studente della laurea triennale di informatica presso l’Università degli
+  Studi di Salerno, appassionato sin da piccolo nelle materie scientifiche e, in particolare, quelle relative
+  all’informatica. Al giorno […]
+permalink: /news/user-frafog/
+article_kind: news
+date: '2020-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2020/07/17/user-frafog/
+section: News
+---
+<h2>Introduzione</h2>
+<p>Sono uno studente della laurea triennale di informatica presso l'Università degli Studi di Salerno, appassionato sin da piccolo nelle materie scientifiche e, in particolare, quelle relative all'informatica. Al giorno d'oggi sono particolarmente interessato alle attività di ricerca nell'ambito delle Brain Computer Interfaces e nei problemi che ne derivano, sia dal lato biologico che da quello informatico e elettronico. Oltre a questo, i miei principali interessi sono nel mondo della realtà virtuale, aumentata e nella programmazione a basso livello con il linguaggio di programmazione Rust, che sto attualmente usando per sviluppare il mio percorso di tirocinio presso l'ISISLab.</p>
+<h1>Indice</h1>
+<ul>
+<li><a href="/#cosa-studio">Cosa studio?</a></li>
+<li><a href="/#diario">Diario</a></li>
+<li><a href="/#materiale">Materiale</a>
+<ul>
+<li><a href="/#software">Software</a></li>
+<li><a href="/#riferimenti">Riferimenti</a></li>
+</ul>
+</li>
+<li><a href="/#seminari">Seminari</a></li>
+<li><a href="/#la-mia-tesi">La mia tesi</a></li>
+</ul>
+<h1 id="cosa-studio">
+Cosa studio?<br/>
+</h1>
+<p>Sto analizzando le possibilità dell'applicazione del linguaggio di programmazione Rust nell'ambiente delle simulazioni agent-based, in particolare per la parte di visualizzazione di tali simulazioni prendendo spunto da soluzioni esistenti come MASON, attraverso framework dedicati al game dev come Amethyst.</p>
+<h1 id="diario">
+Diario<br/>
+</h1>
+<h2>(1) 13 - 20 Luglio 2020</h2>
+<p>In questa settimana ho iniziato il mio percorso di tirocinio, dopo aver valutato una serie di possibili argomenti da trattare, tutti relativi al linguaggio di programmazione Rust, come ad esempio lo sviluppo di algoritmi di generazione procedurale per simulazioni e game dev. Dopo aver scelto gli Agent Based Models come target per il mio percorso, ho iniziato a rinfrescare la mia conoscenza delle caratteristiche di Rust e del suo ecosistema, in particolare della parte game dev con framework come Amethyst, Piston e ggez e a conoscere il collega con cui condivido l'argomento, anche se con obiettivi diversi (la parte di visualizzazione per me, mentre la parte di simulazione per lui), <a href="/news/user-pascar/" title="Pasquale Caramante">Pasquale Caramante</a></p>
+<h2>(2) 18 - 25 Agosto 2020</h2>
+<p>Dopo aver deciso di tenere il seminario all'apertura del laboratorio a Settembre, ho iniziato a raccogliere dati sulle simulazioni agent based, provando alcuni esempi offerti dai framework più famosi quali MASON e NetLogo, oltre a studiare le necessità che i vari tipi di utenti di tale simulazione possono avere, utenti finali ma soprattutto sviluppatori di modelli, i quali sono il target principale per il framework di visualizzazione che dovrei implementare.</p>
+<h2>(3) 25 Agosto - 2 Settembre 2020</h2>
+<p>Avendo una idea abbastanza chiara delle simulazioni agent based e dello stato attuale dell'ecosistema Rust, ho iniziato a sviluppare le slide per il mio primo seminario, descrivendo lo stato attuale di Rust, dell'ambiente game dev di Rust e di Amethyst come framework principale generico per lo sviluppo di videogiochi, cercando di spiegare in modo conciso ma effettivo le caratteristiche fondamentali di entrambi, dopo aver scelto Amethyst come miglior candidato per un framework generico di visualizzazione 2D e 3D. Inoltre, ho iniziato a descrivere in dettaglio l'architettura e le scelte di design che gli sviluppatori di Amethyst hanno scelto, che si differenziano dalle tecniche adottate da game engine odierni quali Unity e Unreal Engine.</p>
+<h2>(4) 2 - 9 Settembre 2020</h2>
+<p>Completata la descrizione dei due soggetti principali del mio primo seminario, ho deciso di prendere dimestichezza con Amethyst in particolare scrivendo un progetto throw-away per testare tutte le varie funzionalità descritte durante una delle riunioni iniziali, suggerite dal professore Carmine Spagnuolo: azioni semplici quali creare una finestra con un determinato colore di background, caricare delle immagini (sprites) associate ad entità, disegnare semplici linee (non così semplici a quanto pare...) e reagire a vari tipi di input dell'utente. In particolare, ho testato cosa si può effettivamente fare con i moduli di default scelti da Amethyst, rimanendo leggermente deluso dalla crate UI, troppo semplice per un framework che ha come obiettivo principale la visualizzazione di dati. Grazie a questo problema, però, ho scoperto varie estensioni esistenti, in particolare Amethyst_ImGUI, per risolvere varie problematiche con le crates di default. Ho inoltre trovato alcuni progetti molto interessanti da segnarmi per uno studio futuro.</p>
+<h2>(5) 9 - 16 Settembre 2020</h2>
+<p>Con l'avvicinarsi della data del seminario (17 Settembre), ho completato lo studio dei vari progetti (A/B Street, Rust agent based models, EpiRust consigliato dal professore Carmine Spagnuolo (Grazie!! 🙂 )), notando alcuni dettagli utili per lo sviluppo del framework di visualizzazione, come ad esempio l'uso di Apache Kafka di EpiRust per la comunicazione model - view, il gamification pattern adottato da A/B Street (assieme alla notevole grafica e implementazione della simulazione del traffico, che vorrei riprodurre o almeno trarne spunto per il framework) e le attuali implementazioni di modelli e agenti già presenti nell'ecosistema Rust (Rust agent based models e EpiRust). Grazie ad un delay inaspettato del seminario causato dal fatto che dovevo affrontare l'esame di Programmazione Distribuita, ho avuto abbastanza tempo da sfruttare per scrivere una coppia di benchmark, praticamente simulazioni leggere prettamente dedicate al rendering di sprites, sia su MASON grazie al fantastico manuale ufficiale estremamente dettagliato, che su Amethyst grazie ad un modello pre-esistente ma troppo datato (2018) per poter usare i dati raccolti, quindi ho passato qualche giorno ad aggiornare il codice, notando così anche le transizioni che negli anni Amethyst ha avuto (come la libreria dedicata alle funzioni math, alla rimozione del GlobalTransform), il tutto finalizzato con una raccolta di dati che mi ha permesso di realizzare un grafico, il quale espone l'enorme potenzialità di Amethyst rispetto a MASON per renderizzare un numero decisamente più elevato di agenti (6,4K vs 150K+).</p>
+<h1 id="materiale">Materiale</h1>
+<h2 id="software">Software e librerie</h2>
+<p><b>Rust</b> (stable): <a href="https://www.rust-lang.org/">https://www.rust-lang.org/</a> (rustc 1.44.1 (c7087fe00 2020-06-17))<br/>
+<b>Amethyst</b>: <a href="https://amethyst.rs/">https://amethyst.rs/</a> (0.15.0)<br/>
+<b>MASON</b>: <a href="https://cs.gmu.edu/~eclab/projects/mason/">https://cs.gmu.edu/~eclab/projects/mason/</a> (20)<br/>
+<b>Amethyst BunnyMark</b>: <a href="https://github.com/Carbonhell/amethyst-bunnymark">https://github.com/Carbonhell/amethyst-bunnymark</a> <br/>
+<b>MASON BunnyMark</b>: <a href="https://github.com/Carbonhell/MASONBunnyMark">https://github.com/Carbonhell/MASONBunnyMark</a><br/>
+<b>VSCode</b>: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> (1.49.0)<br/>
+<b>Marp for VSCode</b>: <a href="https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode">https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode</a> (0.15.1)<br/>
+<b>Git &amp; GitHub</b>: <a href="https://git-scm.com/">https://git-scm.com/</a> (2.27.0.windows.1)</p>
+<h1 id="seminari">Seminari</h1>
+<ol>
+<li>"ABM in Rust: Parallelismo e Visualizzazione", 17 Settembre 2020<br/>
+<a href="https://github.com/Carbonhell/RustAB" title="Presentazione">Presentazione</a></li>
+</ol>
+<h1 id="la-mia-tesi">La mia tesi</h1>
+<p><strong>Bibliografia</strong></p>
+

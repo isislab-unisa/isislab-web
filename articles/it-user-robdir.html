@@ -1,0 +1,98 @@
+---
+layout: article
+lang: it
+title: User:Robdir
+description: Welcome A programmer is who solve in an incomprehensible way a problem that you didn’t know to
+  have. Contacts My e-mail address–> robertodirusso[at]yahoo[dot]it News March, 18th 2009–> Finally, I joined
+  […]
+permalink: /news/user-robdir/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-robdir/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Welcome">Welcome</span></h2>
+<p>A programmer is who solve in an incomprehensible way a problem that you didn't know to have.</p>
+<h2><span class="mw-headline" id="Contacts">Contacts</span></h2>
+<p><b>My e-mail address</b>--&gt; robertodirusso[at]yahoo[dot]it</p>
+<h2><span class="mw-headline" id="News">News</span></h2>
+<p><b>March, 18th 2009</b>--&gt; Finally, I joined ISISLab</p>
+<p><b>March, 24th 2009</b>--&gt;Work in Progress: Intermediaries on the WWW</p>
+<p><b>April, 1st 2009</b>--&gt; Starting a new specifical work: <i>Https Tunneling through SISI</i></p>
+<p><b>May, 4th 2009</b>--&gt; Starting a new specifical work: <i>Authentication and Privacy Integration on Webmails</i></p>
+<p><b>May, 27th 2009</b>--&gt; My First Seminar</p>
+<p><b>September, 14th 2009</b>--&gt; My Second Seminar</p>
+<p><b>September, 24th 2009</b>--&gt; My Graduation Day. Thesis Title: <i>Servizi Avanzati per Intermediari: Integrazione di Autenticazione e Privacy in un Webmail</i></p>
+<h2><span class="mw-headline" id="Work_1:_Https_Tunneling_through_SISI">Work 1: <b>Https Tunneling through SISI</b></span></h2>
+<p>At the moment SISI, the framework developed by ISISLab members, doesn't support the Https (Http on top of SSL).</p>
+<p>Well, I'm spending my time on trying to understand how to intercept https requests from a client and forward them to a server.</p>
+<p><b>Https</b> <i>(abstract from Wikipedia)</i></p>
+<p>Hypertext Transfer Protocol Secure (HTTPS) is a combination of the Hypertext Transfer Protocol and a network security protocol.</p>
+<p>HTTP operates at the highest layer of the TCP/IP Internet reference model, the Application layer; but the security protocol operates at a lower sublayer, encrypting an HTTP message prior to transmission and decrypting a message upon arrival.</p>
+<p>HTTPS has also been known as "Hypertext Transfer Protocol over Secure Socket Layer", but now HTTPS may be secured by the Transport Layer Security (TLS) instead of Secure Sockets Layer (SSL) protocol. To invoke HTTPS, one replaces "<a class="externallink" href="http://" rel="nofollow" title="http://">http://</a>" with "<a class="externallink" href="/" rel="nofollow" title="https://">https://</a>" in the URI, or Web address.</p>
+<p>Before data exchange, HTTPS has a handshake phase performed by the client and the server. <a class="image" href="/image-handshake-gif/"><img decoding="async" src="/assets/media/ffd73526cf3129-handshake.gif" width="220"/> </a></p>
+<p>HTTPS connections are often used for payment transactions on the Web and for sensitive transactions in corporate information systems.</p>
+<p><b>Https tunneling</b></p>
+<p>In simple terms, the proxy take the data from the client and, without read them, forward them to the server (and viceversa).</p>
+<p>This forward start with the SSL handshaking data and end with the last application data.</p>
+<h2><span class="mw-headline" id="Work_2:_Authentication_and_Privacy_integration_on_Webmails">Work 2: <b>Authentication and Privacy integration on Webmails</b></span></h2>
+<p><b>Webmail</b> is an e-mail service intended to be primarily accessed via a web browser, as opposed to through an e-mail client.</p>
+<p>The major advantage of a Webmail is that you can use it without installing and mantaining more applications than a normal web browser, so, you can use it to access your mail account even if you are far from your desktop (for example, in an Internet Cafè).</p>
+<p>But Webmails don't have an useful feature: the possibility of let the e-mail content private.</p>
+<p>So, my idea is to add to a Webmail interface the features needed to obtain privacy in the e-mail exchanging process and to allow the user to verify the identity of a message-sender.</p>
+<p>In order to do this, I'm studing how to use the standard OpenPGP and particularly the "Pure-Perl OpenPGP implementation": the <b>API Crypt::OpenPGP</b>.</p>
+<p>As case study, I chosen Microsoft Hotmail because it's one of the most used webmails and it has an user-frienldy and programmer-frienldy interfaces.</p>
+<p>Well, my work is composed by some steps: - studying and modyfing the Hotmail web page; - sending the modified page to the browser; - intercepting the page submitted from the user; - extracting relevant data and applying the crypto features, using the Crypt::OpenPGP API.</p>
+<h2><span class="mw-headline" id="Seminars">Seminars</span></h2>
+<pre>
+<b>May, 27th 2009</b>--&gt; <i>Authentication and Privacy Integration on Webmails</i>
+</pre>
+<p><b>Abstract (in Italian)</b></p>
+<p>Il seminario presenterà come integrare all'interno di un Webmail una serie di funzioni che mirano a garantire l'autenticità e la confidenzialità dei messaggi di posta elettronica. In particolare, verrà descritto come rendere privato il contenuto dei messaggi in uscita, in modo che solo il legittimo destinatario possa leggerli, e come verificare che l'identità dichiarata dal mittente di un messaggio in entrata sia autentica.</p>
+<pre>
+<b>September, 14th 2009</b>--&gt; <i>Authentication and Privacy Integration on Webmails - Part II</i>
+</pre>
+<p><b>Abstract (in Italian)</b></p>
+<p>Dopo un breve introduzione mirata a reinquadrare il problema, in modo da "agganciare" il seminario a quello precedente, verrà descritta la realizzazione del servizio, enfatizzandone gli aspetti innovativi, ma anche le limitazioni. Si proseguirà, poi, con un'esposizione motivata delle scelte progettuali adottate per poi passare ad una descrizione delle tecniche utilizzate in fase di sviluppo. Il seminario proseguirà con un'analisi descrittiva delle parti fondamentali del codice prodotto per poi terminare proponendo eventuali sviluppi futuri.</p>
+<h1><span class="mw-headline" id="References:_General">References: General</span></h1>
+<p><b><i>'Perl</i></b><i> programming language</i></p>
+<p><a class="externallink" href="http://www.perl.it" rel="nofollow" title="http://www.perl.it">Perl official Italian Website</a></p>
+<p><a class="externallink" href="http://www.cpan.org" rel="nofollow" title="http://www.cpan.org">CPAN: Comprehensive Perl Archive Network</a></p>
+<p><a class="externallink" href="http://www.perl.org/docs.html" rel="nofollow" title="http://www.perl.org/docs.html">Online Documentation</a></p>
+<p><a class="externallink" href="http://www.tutorialspoint.com/perl/perl_socket.htm" rel="nofollow" title="http://www.tutorialspoint.com/perl/perl_socket.htm">Socket Programming in Perl</a></p>
+<p><b>SISI Framework</b></p>
+<p>A scalable framework for the support of advanced edge services</p>
+<p><b>Apache</b></p>
+<p><a class="externallink" href="http://www.apache.org" rel="nofollow" title="http://www.apache.org">Official Website</a></p>
+<p><b>What To Do Once You've Downloaded A Module From The CPAN</b></p>
+<p><a class="externallink" href="http://www.cpan.org/modules/INSTALL.html" rel="nofollow" title="http://www.cpan.org/modules/INSTALL.html">Install New Modules</a></p>
+<h1><span class="mw-headline" id="References:_HTTPS_Tunneling">References: HTTPS Tunneling</span></h1>
+<p><b>Https and Https Tunneling</b></p>
+<p><a class="externallink" href="http://curl.haxx.se/rfc/draft-luotonen-web-proxy-tunneling-01.txt" rel="nofollow" title="http://curl.haxx.se/rfc/draft-luotonen-web-proxy-tunneling-01.txt">DRAFT: Tunneling TCP based protocols through Web proxy servers</a></p>
+<p><a class="externallink" href="http://www.ietf.org/rfc/rfc2818.txt" rel="nofollow" title="http://www.ietf.org/rfc/rfc2818.txt">HTTP over TLS (RFC)</a></p>
+<p><a class="externallink" href="http://docs.sun.com/source/816-6156-10/contents.htm" rel="nofollow" title="http://docs.sun.com/source/816-6156-10/contents.htm">Introduction to SSL</a></p>
+<p><b>WireShark: an useful packets sniffer</b></p>
+<p><a class="externallink" href="http://www.wireshark.org/" rel="nofollow" title="http://www.wireshark.org/">Official Website</a> </p>
+<h1><span class="mw-headline" id="References:_Authentication_and_Privacy_Integration_on_Webmails">References: Authentication and Privacy Integration on Webmails</span></h1>
+<p><b>Webmail</b></p>
+<p><a class="externallink" href="http://askbobrankin.com/is_webmail_better.html:" rel="nofollow" title="http://askbobrankin.com/is_webmail_better.html:">Webmail vs. Desktop Email, by Bob Rankin</a></p>
+<p><b>OpenPGP</b></p>
+<p><a class="externallink" href="http://www.ietf.org/rfc/rfc2440.txt:" rel="nofollow" title="http://www.ietf.org/rfc/rfc2440.txt:">RFC 2440</a></p>
+<p><a class="externallink" href="http://www.ietf.org/rfc/rfc4880.txt:" rel="nofollow" title="http://www.ietf.org/rfc/rfc4880.txt:">RFC 4880</a></p>
+<p><a class="externallink" href="http://www.openpgp.org/about_openpgp:" rel="nofollow" title="http://www.openpgp.org/about_openpgp:">About OpenPGP</a></p>
+<p><b>Crypt::OpenPGP</b></p>
+<p><a class="externallink" href="http://search.cpan.org/dist/Crypt-OpenPGP/lib/Crypt/OpenPGP.pm:" rel="nofollow" title="http://search.cpan.org/dist/Crypt-OpenPGP/lib/Crypt/OpenPGP.pm:">Crypt::OpenPGP - Pure-Perl OpenPGP implementation</a></p>
+<p><b>WWW::Hotmail</b></p>
+<p><a class="externallink" href="http://search.cpan.org/~xantus/WWW-Hotmail-0.10/Hotmail.pm:" rel="nofollow" title="http://search.cpan.org/~xantus/WWW-Hotmail-0.10/Hotmail.pm:">WWW::Hotmail - Connect to Hotmail, download, delete and send messages</a> [<i>It doesn't work!!!</i>]</p>
+<p><b>Definitions from Wikipedia</b></p>
+<p><a class="externallink" href="http://en.wikipedia.org/wiki/Webmail" rel="nofollow" title="http://en.wikipedia.org/wiki/Webmail">Webmail</a></p>
+<p><a class="externallink" href="http://en.wikipedia.org/wiki/Authentication" rel="nofollow" title="http://en.wikipedia.org/wiki/Authentication">Authentication</a></p>
+<p><a class="externallink" href="http://en.wikipedia.org/wiki/Proxy_server" rel="nofollow" title="http://en.wikipedia.org/wiki/Proxy_server">Proxy</a></p>
+<p> <br/>
+</p>
+

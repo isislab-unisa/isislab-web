@@ -1,0 +1,43 @@
+---
+layout: article
+lang: it
+title: User:Valann
+description: 'Studente: Valeria Annunziata Introduzione Ogni singola azione che compiamo sul Web è assimilabile
+  a uno scambio di messaggi HTTP, è il principale protocollo utilizzato a livello ‹Applicazioni’ sul WEB. Negli
+  […]'
+permalink: /news/user-valann/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-valann/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<p>Studente: Valeria Annunziata</p>
+<h2><span class="mw-headline" id="Introduzione">Introduzione</span></h2>
+<p>Ogni singola azione che compiamo sul Web è assimilabile a uno scambio di messaggi HTTP, è il principale protocollo utilizzato a livello ‹Applicazioni' sul WEB. Negli anni ci si è reso conto che nonostante la buona progettazione di HTTP 1.0 esso purtroppo era afflitto da molti problemi, che hanno motivato l'introduzione di HTTP 1.1 ancora quando il WEB non era diventato così popolare(parliamo degli anni 97-99). HTTP 1.1 dovrebbe quindi porre soluzione alla impossibilità di poter trasferire solo piccole porzioni di risorsa richiesta e all'utilizzo poco efficiente di TCP, per risposte poco consistenti. HTTP 1.1 dovrebbe anche dare maggiori garanzie circa la piena ricezione delle risposte dinamicamente generate e affrontare il problema dell'esaurimento progressivo degli indirizzi IP (prima si tendeva ad associare un singolo dominio). Questa nuova versione del protocollo può affrontare anche la difficoltà di HTTP 1.0 nell'acquisire le preferenze degli utenti, sui contenuti richiesti. Infine c'è il fattore sicurezza: in particolar modo, lo schema di autenticazione del protocollo HTTP 1.0 era poco scalabile e presentava una certa ambiguità nelle regole sul dialogo tra proxy e cache. Come possiamo vedere il discorso è basato su un ‹condizionale' che noi vorremmo rendere ‹presente' o meglio vogliamo provare che è realtà. Quindi ci chiediamo HTTP 1.1 viene utilizzato?Soddisfa i requisiti per cui è stato creato?</p>
+<h2><span class="mw-headline" id="Obiettivi">Obiettivi</span></h2>
+<p>L'obiettivo del mio lavoro di tesi è l'analisi di network packet al fine di individuare quali caratteristiche del protocollo HTTP 1.1 vengono utilizzate ad oggi e in che modo. I network packet di cui parliamo sono stati catturati su alcuni router dell'università, in particolare andrò ad analizzare ben 76.755 packet su 1.624.256 in quanto lo scopo della mia tesi è concentrarmi esclusivamente su http.REQUEST e http.RESPONSE. Il software utilizzato per il mio lavoro è Wireshark.</p>
+<h2><span class="mw-headline" id="Lavoro_di_Tesi">Lavoro di Tesi</span></h2>
+<p>Utilizzando uno sniffer(wireshark) e un linguaggio di scripting(lua) abbiamo analizzato i pacchetti, concentrandomi sulle seguenti features di HTTP 1.1:</p>
+<ul>
+<li><b>Range</b> Feature introdotta per ottimizzare l'uso dell'ampiezza della banda, questa feature permette all'utente di richiedere un range di byte a cui è interessato;</li>
+<li><b>Expect-Continue</b> Feature introdotta per ottimizzare l'uso dell'ampiezza della banda, questa feature permette all'utente di conoscere se il server è in grado di processare e servire una determinata richiesta;</li>
+<li><b>Transfer-Encoding</b> Feature introdotta per ottimizzare l'uso dell'ampiezza della banda, questo è un meccanismo hop by hop che permette di associare al messaggio una determinata proprietà che di solito riguarda la compressione;</li>
+<li><b>Connection</b> Header introdotto per permette al client o al server di chiudere una connessione,essendo le connessioni persistenti di default;</li>
+<li><b>Etag</b> Header introdotto per gestire in modo migliore la cache,permette a un client di effettuare richieste condizionali quindi consente di risparmiare larghezza di banda, in quanto un server web non ha bisogno di inviare una risposta completa se il contenuto non è cambiato. Inoltre l'ETag può anche essere utilizzato per il controllo della concorrenza ottimistica, come un modo per aiutare a prevenire gli aggiornamenti simultanei di una risorsa;</li>
+<li><b>Cache control</b> Header introdotto per regolare la politica di caching tra client e server, esempio, il client potrebbe inviare la direttiva per avere una risorsa che non venga prelevata dalla cache;</li>
+<li><b>Request header preferenziali</b> Header introdotti affinchè l'utente potesse esprimere preferenze sulla risposta che desidera ricevere;</li>
+<li><b>Response header:Vary</b> Header introdotto per la negoziazione server-driven, questo tipo di negoziazione viene fatta da un algoritmo localizzato sul server che si occupa della selezione della miglior rappresentazione della response.</li>
+</ul>
+<p>La selezione si basa sulle diverse rappresentazioni disponibili della response(quali ad esempio: language, content-coding), sui valori degli header contenuti nella request e su altre informazioni relative alla request(esempio: l'indirizzo di rete del client); </p>
+<ul>
+<li><b>Entity header</b> ne sono stati aggiunti 4 rispetto alla versione di HTTP 1.0, essi forniscono informazioni sulla risorsa o sull'entity body;</li>
+<li><b>Hop by hop header</b> introdotti affinchè se un proxy vuole usare una particolare funzionalità presente solo fra due elementi della catena di proxy possa farlo;</li>
+<li><b>Metodi option e trace</b>, option un modo per il client per conoscere le capacità del server senza inviare una richiesta, trace utilizzato per conoscere se il server ha ricevuto l'intera richiesta.</li>
+</ul>
+<p> <br/>
+</p>
+

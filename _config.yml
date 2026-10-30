@@ -1,0 +1,27 @@
+title: ISISLab
+description: Laboratorio ISISLab — Dipartimento di Informatica, Università degli Studi di Salerno
+url: ""
+baseurl: ""
+lang: it-IT
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - compose.yaml
+  - scripts
+  - start.sh
+  - preview.html
+  - preview-en.html
+  - reference
+  - LICENSE
+  - vendor
+  - .gitignore
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page

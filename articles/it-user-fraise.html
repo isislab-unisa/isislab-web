@@ -1,0 +1,160 @@
+---
+layout: article
+lang: it
+title: User:Fraise
+description: 'Francesco Isernia E-mail: isernia.francesco@gmail.com Attualmente: Studente CdL Magistrale in
+  Informatica A.A. 2012/2013 Tesista: A.A. 2011/2012 Introduzione L’argomento trattato nella mia tesi è lo
+  studio di meccanismi per proteggere la […]'
+permalink: /news/user-fraise/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-fraise/
+section: News
+---
+<p> </p>
+<hr/>
+<h1><span class="mw-headline" id="Francesco_Isernia"><b>Francesco Isernia</b></span></h1>
+<p>E-mail: isernia.francesco@gmail.com<br/>
+Attualmente: Studente CdL Magistrale in Informatica A.A. 2012/2013<br/>
+Tesista: A.A. 2011/2012</p>
+<h1><span class="mw-headline" id="Introduzione"><b>Introduzione</b></span></h1>
+<p>L'argomento trattato nella mia tesi è lo studio di meccanismi per proteggere la <b>"Privacy su Internet"</b> dell' utente finale.<br/>
+Inizialmente mi sono concentrato sullo studio della nuova componente messa a disposizione dall'HTML5, il <b>"LOCAL STORAGE"</b>.<br/>
+<b>L'HTML5 si propone come evoluzione dell'attuale HTML 4.01 :</b><br/>
+Le novità introdotte dall'HTML5 rispetto all'HTML 4 sono finalizzate soprattutto a migliorare il disaccoppiamento tra struttura, definita dal markup, caratteristiche di resa (tipo di carattere, colori, eccetera), definite dalle direttive di stile, e contenuti di una pagina web, definiti dal testo vero e proprio.<br/>
+Tra le altre cose HTML5 prevede:</p>
+<ul>
+<li>supporto per la memorizzazione locale di grosse quantità di dati scaricati dal browser[circa 5MB], per consentire l'utilizzo di applicazioni basate su web (come per esempio le caselle di posta di Google o altri servizi analoghi) anche in assenza di collegamento a Internet.</li>
+</ul>
+<p>Come vedremo in seguito tale strumento non verrà utilizzato solo per gli scopi sopra citati, ma potrebbe essere uno strumento pericoloso per possibili azioni malevoli.<br/>
+Nella sezione sottostante delineerò le prime fasi di ricerca su <b>"PRIVACY LEAKAGE"</b></p>
+<h1><span class="mw-headline" id="_Sviluppo_Tesi_"><b> Sviluppo Tesi </b></span></h1>
+<p>In questa sezione sono presenti le due fasi che hanno portato allo sviluppo delle <b>"Tecniche di Privacy"</b> sull' addon <b>NoTrace</b> di <b><a class="externallink" href="http://www.mozilla.org/it/firefox/new/" rel="nofollow" title="http://www.mozilla.org/it/firefox/new/">Mozilla Firefox</a> :</b></p>
+<ul>
+<li><b> Fase di Ricerca </b></li>
+<li><b> Fase di Sviluppo Tecniche su NoTrace </b></li>
+</ul>
+<p> </p>
+<h2><span class="mw-headline" id=".22Fase_di_Ricerca.22"><b>"Fase di Ricerca"</b></span></h2>
+<p><b>I miei studi di ricerca e sviluppo comprendono l'utilizzo e lo sviluppo di nuove tecniche per un tool esistente, più propriamente conosciuto come "addon" del famoso browser Mozilla Firefox, sviluppato in ISISLab sotto il nome di <a class="externallink" href="http://isis.dia.unisa.it/projects/NoTrace/" rel="nofollow" title="http://isis.dia.unisa.it/projects/NoTrace/">NoTrace</a>.</b><br/>
+Procedendo per passi cercherò di illustrare il percorso che mi ha portato allo sviluppo finale delle tecniche su <b>NoTrace</b>.<br/>
+Ho effettuato uno studio approfondito sulle tipologie di informazioni che vengono memorizzate all'interno del localStorage di Mozilla Firefox. Per visualizzare il contenuto del localStorage ho utilizzato determinati strumenti esistenti ed <b>ho anche sviluppato alcuni algoritmi in java<i> che effettuano il Matching delle Informazioni prelevate dai database .sqlite presenti in Mozilla Firefox oppure la Verifica delle informazioni passate attraverso i campi HTTP Header durante la navigazione.</i></b><br/>
+Tra gli strumenti esistenti utilizzati ci sono:</p>
+<ul>
+<li>estensione Firefox chiamata <b><a class="externallink" href="http://web.cs.wpi.edu/~cew/pagestats/" rel="nofollow" title="http://web.cs.wpi.edu/~cew/pagestats/">Pagestats</a></b></li>
+<li>estensione Firefox chiamata <b><a class="externallink" href="https://addons.mozilla.org/it/firefox/addon/foundstone-html5-local-storage/eula/139410?src=search" rel="nofollow" title="https://addons.mozilla.org/it/firefox/addon/foundstone-html5-local-storage/eula/139410?src=search">Foundstone HTML5 Local Storage Explorer</a></b></li>
+<li>estensione Firefox chiamata <b><a class="externallink" href="https://addons.mozilla.org/it/firefox/addon/sqlite-manager/?src=search" rel="nofollow" title="https://addons.mozilla.org/it/firefox/addon/sqlite-manager/?src=search">SQLite Manager</a></b></li>
+<li>estensione Firefox chiamata <b><a class="externallink" href="https://addons.mozilla.org/it/firefox/addon/live-http-headers/?src=search" rel="nofollow" title="https://addons.mozilla.org/it/firefox/addon/live-http-headers/?src=search">Live HTTP Headers</a></b></li>
+<li>software gestione database <b><a class="externallink" href="http://www.navicat.com/" rel="nofollow" title="http://www.navicat.com/">Navicat</a></b></li>
+</ul>
+<p>Tra gli strumenti sviluppati da me ci sono:</p>
+<ul>
+<li>algoritmo in java per il <b>Matching del contenuto dei database .sqlite del browser Firefox</b> - ( cookies.sqlite places.sqlite webappsstorage.sqlite )</li>
+<li>algoritmo in java per la <b>Verifica delle informazioni(contenuto) passate tramite campo HTTP Header REQUEST/RESPONSE</b></li>
+<li>...ed altri piccoli tool o classi sviluppate appositamente per la ricerca delle informazioni d'interesse!!!</li>
+</ul>
+<p>Tra le estensioni Firefox sopra citate, due sono quelle più importanti:</p>
+<ul>
+<li><b>Pagestats</b>
+<ul>
+<li>L'estensione <b>Pagestats</b> è stata utilissima perchè dato un listato di siti, i 100 siti più popolari nelle categorie health,games,finance,travel and more sites, permette di visitarli tutti automaticamente salvando tutte le informazioni di HTTP Request e Response per ogni website.<br/>
+Oltre al salvataggio di queste info,la cosa importante è stata il salvataggio di tutte le info di navigazione per ogni sito nei database di Mozilla Firefox tra cui nel localStorage(webappsstorage.sqlite).Infatti da lì nasce l'idea del <b>algoritmo di Matching in java</b> realizzato, attraverso il quale confronto i 3 db di Firefox al fine di trovare le informazioni salvate durante la navigazione in <b>[places.sqlite e cookie.sqlite]</b> anche all'interno del localStorage <b>[webappsstorage.sqlite]</b>.<br/>
+Ovviamente tutti questi confronti sono stati possibili grazie all'utilizzo di <b>Navicat</b>,dal quale ho esportato il contenuto dei db.sqlite in file db.xml, e mediante la realizzazione del Parser xml ho effettuato tutte le operazioni di match tra i tre db.xml aventi in comune il Base Domain o l'Host dal quale è partita/ricevuta l'HTTP Request/Response.
+<ul>
+<li>permette il confronto tra gli host uguali provenienti da 2 db differenti (cookies.sqlite - webappsstorage.sqlite | cookies.sqlite - places.sqlite | places.sqlite - webappsstorage.sqlite)</li>
+<li>permette il confronto tra gli host uguali provenienti da 3 db differenti (cookies.sqlite - webappsstorage.sqlite - places.sqlite)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<ul>
+<li><b>Live HTTP Headers</b>
+<ul>
+<li>L'utilizzo di quest'estensione è stato fondamentale sia in presenza/assenza dell'utilizzo di <b>Pagestats</b>.<br/>
+Tale estensione salva il contenuto dell'intera HTTP Request/Response e tante altre info che per il mio studio non sono richieste; una volta ultimato il salvataggio di tutti i campi HTTP Header all'interno di un file,quest'ultimo viene utilizzato nell<b>'Algoritmo in java di Verifica delle informazioni.</b><br/>
+Tale Algoritmo è stato molto utile perchè dato un set di HTTP REQUEST/RESPONSE in input mendiante file, verifica la perdita di informazioni personali all'interno dei <b>campi HTTP</b>.La verifica di <b>Privacy Leakage</b> è stata effettuata nell'algoritmo mediante il controllo di keywords particolari all'interno dei campi HTTP quali:
+<ul>
+<li>presenza di indirizzo mail <b>@[ gmail | facebook | email | hotmail | libero ]</b> all'interno dei campi HTTP,dato che l'utente inserisce i dati senza la consapevolezza che in alcuni casi questi ultimi vengono persi e prelevati dai vari host per statistica/generazione di <b>"user-profile"</b> attraverso i <b>campi Referer o Cookie/Set-Cookie di una HTTP REQUEST/RESPONSE</b>.</li>
+<li>presenza di keywords particolari inserite dall'utente finale durante una registrazione,ricerca o prenotazione di qualsiasi servizio online:<br/>
+<b>[ HEALTH - TRAVEL AND OTHER ]</b></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>La fase di ricerca ha portato ad una scoperta interessante, cioè il differente utilizzo del <b>LOCAL STORAGE</b> rispetto ai propositi per cui è nato. In pratica ho riscontrato la memorizzazione dello stesso <b>cookie</b> ,oltre che nel <b>db cookies.sqlite di Firefox</b>, anche all'interno del <b>[LOCAL STORAGE]</b>.<br/>
+Le prime ipotesi di spiegazione, per questa memorizzazione anomala dei cookie all'interno del <b>LOCAL STORAGE</b>, riguardano ovviamente la <b>"PRIVACY LEAKAGE"</b> nei confronti dell'utente finale, che non è a conoscenza di quali informazioni vengono <b>"perse/salvate"</b> attraverso il <b>cookie</b> presente all'interno del database.<br/>
+Infatti nonostante il cookie venga cancellato dal database <b>'cookies.sqlite</b> dall'utente finale, risiede comunque all'interno del <b>webappsstorage.sqlite [LOCAL STORAGE]</b>. Ovviamente tutto ciò lede la <b>"Privacy dell'Utente Finale"</b> in quanto viene svolto all'insaputa di quest'ultimo.<br/>
+Quindi in definitiva questa prima parte del lavoro <b>[RICERCA]</b> è servita per capire cosa viene memorizzato all'interno di questa nuova componente HTML5 denominata <b>LOCAL STORAGE</b> e quali sono <b>I DATI SENSIBILI</b> che vengono <b>PERSI INCONSAPEVOLMENTE</b> dall'utente finale durante la navigazione web.<br/>
+Ora nella sezione successiva mostrerò la <b>creazione/modifica</b> di metodi aggiunti/rivisitati all'esistente addon Mozilla Firefox <b>NoTrace</b>.</p>
+<h2><span class="mw-headline" id=".22Fase_di_Sviluppo_Tecniche_su_NoTrace.22"><b>"Fase di Sviluppo Tecniche su NoTrace"</b></span></h2>
+<p>In questa fase, prima di operare sull'esistente addon <b>NoTrace</b>, ho effettuato il download e l'installazione di quest'ultimo in modo da imparare prima di tutto come è strutturato e in che modo vengono applicate le funzionalità esistenti.<br/>
+Durante la fase di comprensione per lo <b>sviluppo/modifica</b> di un estensione Firefox, ho fatto riferimento a <a class="externallink" href="https://developer.mozilla.org/it/" rel="nofollow" title="https://developer.mozilla.org/it/"><b>Mozilla Developer Network</b></a> e alle varie sezioni di cui è composto per la comprensione del linguaggio <b>Mozilla-Platform</b> e delle sue <b>Componenti</b>.<br/>
+Il linguaggio di programmazione utilizzato per la strutturazione delle componenti di un Addon Firefox, oltre ad usufruire delle primitive di <b>Mozilla-Platform</b>,utilizza anche il linguaggio di programmazione <b>Javascript</b>.<br/>
+Una volta ultimata parte della comprensione dell'estensione Firefox <b>NoTrace</b>, ho iniziato ad apportare modifiche alle componenti esistenti.<br/>
+Data la scoperta della memorizzazione anomala dei cookie all'interno del <b>LOCAL STORAGE</b> durante la fase di ricerca, il mio primo obiettivo è stato focalizzarmi sullo sviluppo di una tecnica che effettuasse l'eliminazione in <b>"Real-Time"</b> dei cookie che venivano memorizzati all'interno del <b>[LOCAL STORAGE]</b>.<br/>
+Quindi ho modificato tecniche esistenti e create nuove che mi permettessero di controllare se il valore del campo di:</p>
+<ul>
+<li><b>HTTP REQUEST - Cookie</b></li>
+<li><b>HTTP RESPONSE - Set-Cookie</b></li>
+<li><b>HOST</b> Http Request/Response == Scope(Host - LOCAL STORAGE)</li>
+</ul>
+<p>fosse memorizzato anche all'interno del database<b>[webappsstorage.sqlite]</b> e in caso positivo effettuarne istantaneamente l'eliminazione dal LOCAL STORAGE.<br/>
+Per sviluppare questa tecnica ho dovuto modificare la <b>Componente - HttpFilter.js</b> all'interno dell'estensione <b>NoTrace</b>.<br/>
+Precisamente una volta visualizzata la struttura della Componente, ho iniziato a sviluppare la tecnica che viene invocata da funzioni esistenti:</p>
+<ul>
+<ul>
+<li><b>nocookie():</b><br/>
+Tale Tecnica esistente,se abilitata dal <b>Pannello Utente</b>, consente di rimuovere il campo <b>"Set-Cookie"</b> negli <b>header della HTTP RESPONSE</b>.</li>
+</ul>
+</ul>
+<p> </p>
+<ul>
+<li><b>no3cookie():</b><br/>
+Tale Tecnica esistente,se abilitata dal <b>Pannello Utente</b>, consente di rimuovere il campo <b>"Set-Cookie"</b> negli <b>header della HTTP RESPONSE</b> per <b>oggetti di terze parti</b> [oggetti provenienti da Domini diversi dall' HOST DOMAIN di HTTP RESPONSE].</li>
+</ul>
+<p>Le Tecniche da me sviluppate all'interno della componente <b>HttpFilter.js</b> sono:</p>
+<ul>
+<ul>
+<li><b>getCookieValue():</b><br/>
+Tale Tecnica è molto importante perchè preleva dall' HTTP[ REQUEST - RESPONSE ] il <b>"Cookie name"</b> , lo salva in un array[dato che ci possono essere più REQUEST/RESPONSE da parte dell'Host] e quest'ultimo viene restituito alla tecnica <b>checkDBLocalStorage_Cookies()</b>, all'interno della quale verranno eseguite le operazioni di verifica/presenza cookie.</li>
+</ul>
+</ul>
+<p> </p>
+<ul>
+<ul>
+<li><b>initDBLSConnection():</b><br/>
+Tale Tecnica permette l'istanziazione ed il prelievo della connessione al database webappsstorage.sqlite<b>[LOCAL STORAGE]</b> per poter effettuare le operazioni di controllo<b>[Query]</b>, all'interno del db. Tale funzione viene utilizzata dalla tecnica <b>checkDBLocalStorage_Cookies()</b>.</li>
+</ul>
+</ul>
+<p> </p>
+<ul>
+<ul>
+<li><b>checkDBLocalStorage_Cookies():</b><br/>
+Tale Tecnica permette il controllo in <b>"Real-Time"</b> per la presenza di <b>Cookie</b> all'interno del <b>LOCAL STORAGE</b>,che vengono settati mediante <b>SCRIPT INTERNO/ESTERNO all'HTML</b> prelevando il contenuto dai campi <b>HTTP [REQUEST - RESPONSE]</b>. Ovviamente il confronto è possibile mediante il <b>matching</b> tra Host Cookie e Host[Scope] LOCAL STORAGE. In caso di presenza del "cookie" all'interno del <b>LOCAL STORAGE</b>, tale <b>tecnica provvede ad eliminarlo</b>.</li>
+</ul>
+</ul>
+<p> </p>
+<ul>
+<li><b>changeURL():</b>Tale tecnica mediante l'utilizzo delle <a class="externallink" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp#Special_characters_in_regular_expressions" rel="nofollow" title="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp#Special_characters_in_regular_expressions"><b>Regular Expression</b></a> in Javascript, permette il cambiamento della URL memorizzata all'interno del <b>LOCAL STORAGE</b><br/>
+da <b>" moc.obeem.www.:https:443 "</b> a <b>" www.meebo.com "</b> in modo da facilitare il "matching" tra Host COOKIE e Host LOCAL STORAGE.</li>
+</ul>
+<p>Di seguito mostrerò degli <b>"screenshot"</b> che permetteranno la facile comprensione di ciò che viene memorizzato all'interno del LOCAL STORAGE prima di attivare la tecnica e cosa accade quando la tecnica è in azione.<br/>
+Visualizzazione contenuto database cookies.sqlite e webappsstorage.sqlite<b>[LOCAL STORAGE] - PRIMA di attivazione NoTrace</b> e relativa tecnica:<br/>
+(Clicca sul link per visualizzare risultato)<br/>
+<a class="externallink" href="http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_before.png" rel="nofollow" title="http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_before.png">http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_before.png</a><br/>
+Visualizzazione contenuto database cookies.sqlite e webappsstorage.sqlite<b>[LOCAL STORAGE] - DOPO attivazione NoTrace</b> e relativa tecnica:<br/>
+(Clicca sul link per visualizzare risultato)<br/>
+<a class="externallink" href="http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_after.png" rel="nofollow" title="http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_after.png">http://dl.dropbox.com/u/63894881/%40Tesi/image/contentLSTORAGE_after.png</a></p>
+<h1></h1>
+<h1><b>Seminari</b></h1>
+<ul>
+<li>08/06/2012</li>
+</ul>
+<p>"Privacy Awareness su NoTrace"<br/>
+Abstract: In questo seminario verrà presentata, in primo luogo, un'analisi sulle tipologie di "dati sensibili" persi durante la navigazione in internet ed alcuni esempi di rilievo di "Leakage Information". Successivamente sarà mostrata la realizzazione, all'interno dell'estensione Firefox NoTrace, dello strumento di "Privacy Awareness" ideato per la comprensione e la visualizzazione delle informazioni perse durante la navigazione sul web.<br/>
+ </p>
+

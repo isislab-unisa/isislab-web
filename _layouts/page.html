@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign locale = page.lang | default: 'it' %}{% assign t = site.data.ui[locale] %}{% if locale == 'en' %}{% assign home_url = '/en/' %}{% assign prefix = '/en' %}{% else %}{% assign home_url = '/' %}{% assign prefix = '' %}{% endif %}
+<main class="page-main lab-grid-bg" id="main-content">
+  <div class="alignwide page-hero lab-reveal is-visible"><p class="lab-pill">{{ page.section | default: t.explore }}</p>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{{ home_url | relative_url }}">Home</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></nav>
+    <h1>{{ page.title }}</h1>{% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+    <div class="page-hero-art" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+  <div class="alignwide page-columns">
+    <article class="page-content lab-card prose">{{ content }}</article>
+    <aside class="page-sidebar">
+      <div class="sidebar-card"><span class="sidebar-kicker">{{ t.section }}</span><h3>{{ t.explore_lab }}</h3>
+        <a href="{{ prefix }}/chi-siamo/">{{ t.lab }} <span>↗</span></a>
+        <a href="{{ prefix }}/tematiche/">{{ t.research }} <span>↗</span></a>
+        <a href="{{ prefix }}/progetti/">{{ t.projects }} <span>↗</span></a>
+        <a href="{{ prefix }}/informazioni-utili/">{{ t.thesis }} <span>↗</span></a>
+        <a href="{{ prefix }}/rassegna-stampa/">{{ t.press }} <span>↗</span></a>
+        <a href="{{ prefix }}/news/">News <span>↗</span></a>
+      </div>
+    </aside>
+  </div>
+</main>

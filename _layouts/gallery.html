@@ -1,0 +1,10 @@
+---
+layout: page
+---
+{{ content }}
+<section class="media-archive"><h2>{{ site.data.ui[page.lang].gallery }}</h2>
+<div class="media-cards">{% for item in site.data.media %}
+{% assign local_image = site.data.media_local[item.image] | default: '/assets/img/press-placeholder.svg' %}
+<article class="media-card"><figure class="media-card-image"><img loading="lazy" src="{{ local_image | relative_url }}" alt="{{ item.title | escape }}"></figure>
+<div class="media-card-body"><h3>{{ item.title }}</h3><details class="gallery-large"><summary>{% if page.lang == 'en' %}View full image{% else %}Mostra immagine grande{% endif %}</summary><img src="{{ local_image | relative_url }}" alt="{{ item.title | escape }}"></details></div></article>{% endfor %}</div>
+</section>

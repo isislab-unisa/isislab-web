@@ -1,0 +1,12 @@
+{% if page.archive_total_pages > 1 %}
+<nav class="archive-pagination" aria-label="{% if page.lang == 'en' %}Archive pages{% else %}Pagine dell’archivio{% endif %}">
+  {% if page.archive_previous %}<a class="archive-page-arrow" rel="prev" href="{{ page.archive_previous | relative_url }}" aria-label="{% if page.lang == 'en' %}Previous page{% else %}Pagina precedente{% endif %}">←</a>{% endif %}
+  {% for n in (1..page.archive_total_pages) %}
+    {% assign base = page.archive_root %}
+    {% if n == 1 %}{% assign dest = base %}{% else %}{% capture dest %}{{ base }}page/{{ n }}/{% endcapture %}{% endif %}
+    {% if n == page.archive_page %}<span class="archive-page-number is-current" aria-label="{% if page.lang == 'en' %}Current page{% else %}Pagina corrente{% endif %} {{ n }}" aria-current="page">{{ n }}</span>
+    {% else %}<a class="archive-page-number" href="{{ dest | relative_url }}" aria-label="{% if page.lang == 'en' %}Page{% else %}Pagina{% endif %} {{ n }}">{{ n }}</a>{% endif %}
+  {% endfor %}
+  {% if page.archive_next %}<a class="archive-page-arrow" rel="next" href="{{ page.archive_next | relative_url }}" aria-label="{% if page.lang == 'en' %}Next page{% else %}Pagina successiva{% endif %}">→</a>{% endif %}
+</nav>
+{% endif %}

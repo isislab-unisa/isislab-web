@@ -1,0 +1,30 @@
+---
+layout: article
+lang: it
+title: Vittorio Baldi
+description: Design ed implementazione di un libreria JavaScript per la visualizzazione interattiva di ipergrafi
+  Un ipergrafo si intende è una generalizzazione di un grafo; infatti mentre un arco in un grafo […]
+permalink: /news/user-vitbal/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-vitbal/
+section: News
+---
+
+<h2 class="wp-block-heading"><strong>Design ed implementazione di un libreria JavaScript per la visualizzazione interattiva di ipergrafi</strong></h2>
+<p>Un ipergrafo si intende è una generalizzazione di un grafo; infatti mentre un arco in un grafo è semplicemente una relazione tra una  <em>coppia </em>di vertici un iperarco mette in relazione un <em>insieme </em>di vertici all'interno di un ipergrafo.</p>
+<p>L'importanza che assumono i grafi ,oggi  ,è da attribuire al fatto che molti sistemi complessi possono essere rappresentati attraverso il loro utilizzo; ad esempio:  una rete stradale (dove i nodi sono gli incroci e gli archi le strade) ,una struttura dati (dove i nodi rappresentano i dati semplici e gli archi i legami tra i diversi dati, realizzabili tramite puntatori) oppure i Social Networks (dove i nodi sono gli utenti e gli archi sono gli hashtag).</p>
+<p>Oggi risulta più comodo servirci degli ipergrafi in quanto le relazioni tra gli oggetti divengono progressivamente più complesse delle coppie, e trasformare le relazioni complesse in relazioni binarie può causare la perdita di importanti informazioni. </p>
+<p>Nonostante ci sia un grande studio sugli ipergrafi, vi è una mancanza di strumenti che permettono la loro visualizzazione.</p>
+<p>L’obiettivo di questa tesi di laurea è quello di fornire una libreria JavaScript in grado di offrire una visualizzazione per gli ipergrafi. </p>
+<p>Alla base di questo lavoro, ci sono tre tipi di visualizzazioni: SetBased, Graph-Based e Radal.</p>
+<p>Nella visualizzazione SetBased, sono stati presi come riferimento i diagrammi di Eulero-Venn, in cui gli archi vengono raffigurati come insiemi. SetBased,quindi, permette di visualizzare facilmente e chiaramente i nodi che appartengono a più tra più iperarchi.</p>
+<p>Graph-Based non è altro che la rappresentazione "classica" di un grafo, i cui nodi sono comunemente collegati tra di loro attraverso un arco. Con ColorEdge si limita la possibilità di confondersi sui nodi che appartengono agli iperarchi, al contrario se ci dovessero essere numerosi iperarchi, l'ipergrafo potrebbe risultare caotico.</p>
+<p>In ultimo abbiamo Radal ,che  assume una forma simile ad un " Radar", e  al cui centro sono presenti i nodi dell'ipergrafo disposti in modo circolare. I raggi del Radal sono gli iperarchi. Tra tutte le rappresentazioni è quella che risulta più scalabile in quanto con  un nuovo iperarco viene solamente aggiunto un raggio in più, consentendo quindi  di identificare con immediatezza i nodi che appartengono ad un iperarco.<br/> </p>
+<p>
+
+Il secondo obiettivo della mia tesi è stato quello di integrare la libreria JavaScript sviluppata all’interno di una libreria per la modellazione e manipolazione di ipergrafi scritta in Julia
+
+</p>
+

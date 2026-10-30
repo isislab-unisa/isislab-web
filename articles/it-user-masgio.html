@@ -1,0 +1,35 @@
+---
+layout: article
+lang: it
+title: Massimo Giordano
+description: 'Lavoro tesi: Design ed implementazione di una libreria Javascript per la visualizzazione di ipergrafi
+  Abstract Gli ipergrafi sono uno strumento matematico, generalizzazione naturale dei grafi, dove un arco consiste
+  in […]'
+permalink: /news/user-masgio/
+article_kind: news
+date: '2019-09-04'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/09/04/user-masgio/
+section: News
+---
+
+<p class="has-medium-font-size"><em>Lavoro tesi: Design ed implementazione di una libreria Javascript per la visualizzazione di ipergrafi</em></p>
+<p class="has-medium-font-size"><strong>Abstract</strong></p>
+<p> Gli ipergrafi sono uno strumento matematico, generalizzazione naturale dei grafi, dove un arco consiste in un insieme di vertici anziché di una sola coppia di vertici. Questa caratteristica rende gli ipergrafi particolarmente utili per la modellazione di sistemi reali nei quali molti riferimenti occorrono simultaneamente. Ad esempio, inviare email a destinatari multipli, co-autori di una pubblicazione scientifica, o social networks. </p>
+<p>Molto spesso, dopo che i sistemi reali vengono modellati con gli ipergrafi, c’è bisogno di visualizzare queste strutture dati in modo da capire meglio le relazioni tra i vertici. </p>
+<p>La visualizzazione di grafi e reti è nel focus di molti ricercatori nei campi come Information Visualization e Graph Drawing. Durante gli ultimi anni, sono state sviluppate diverse tecniche per la loro visualizzazione e analisi. Di contro alla tradizionale visualizzazione dei grafi, lo sviluppo della visualizzazione di ipergrafi non ha avuto la stessa importanza, il che è strano dato il loro impiego in importanti campi di applicazione.</p>
+<p>Tuttavia, poiché gli ipergrafi sono oggetti più complessi rispetto ai grafi, la loro visualizzazione non è un problema banale, infatti è un problema ampliamente studiato in letteratura.</p>
+<p><em>Obiettivo</em></p>
+<p>L’obiettivo del mio lavoro di tesi è stato quello di progettare ed implementare una libreria JavaScript per la visualizzazione efficiente ed efficace di ipergrafi. In particolare, in questo lavoro mi sono focalizzato su tre tipologie di visualizzazione: graph-based, set-based, radar-based. E di ognuna di queste, si sono valutati gli aspetti positivi e negativi.</p>
+<p>Più in dettaglio, la visualizzazione graph-based rappresenta ogni iperarco come un insieme di archi che collegano ogni vertice all’interno di quel dato iperarco ad un nodo centrale fittizio.</p>
+<p>La visualizzazione set-based è quella che rappresenta un ipergrafo come un insieme di venn, contenenti contengono al loro interno i nodi che fanno parte di quel dato iperarco.<br/></p>
+<p>Le visualizzazioni graph-based e set-based sono di aiuto quando si ha necessità di visualizzare ipergrafi delle dimensioni medio-piccole. Poichè nella realtà gli ipergrafi possono rappresentare relazioni di cardinalità maggiore di decine di iperarchi, vi è la necessità di considerare altre forme di visualizzazione.</p>
+<p> La radar-based è un esempio di visualizzazione più scalabile all’aumentare degli iperarchi e dei nodi. In questa visualizzazione, i nodi sono ugualmente distribuiti su un cerchio virtuale al centro, gli iperarchi con cardinalità maggiore di due vengono rappresentati da cerchi attorno ai nodi centrali, con dei punti in corrispondenza dei nodi che fanno parte di quel dato iperarco, con la caratteristica di non sovrapporsi, mentre gli iperarchi con cardinalità uguale a 2 sono rappresentati con semplici archi che collegano i nodi centrali.<br/></p>
+<p>Il secondo obiettivo della mia tesi è stato quello di integrare la libreria JavaScript sviluppata all’interno di una libreria per la modellazione e manipolazione di ipergrafi scritta in Julia.</p>
+<p></p>
+<p><em>Link repository github</em>: <a href="https://github.com/isislab-unisa/hypergraphs-plot">https://github.com/isislab-unisa/hypergraphs-plot</a></p>
+<p></p>
+<p><strong>Slide seminario 4/09/2019</strong></p>
+<div class="wp-block-file">Hypergraphs-VisualizationDownload</div>
+<p></p>
+

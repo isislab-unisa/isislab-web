@@ -1,0 +1,71 @@
+---
+layout: article
+lang: it
+title: User:Maramo
+description: 'Laurea Triennale Il mio lavoro di tirocinio e tesi si è focalizzato nella integrazione del toolkit
+  di sviluppo di simulazioni agent-based MASON, all’interno della Agent Modeling Platform per Eclipse. AMP:
+  […]'
+permalink: /news/user-maramo/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-maramo/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Laurea_Triennale">Laurea Triennale</span></h2>
+<p>Il mio lavoro di tirocinio e tesi si è focalizzato nella <b>integrazione del toolkit di sviluppo di simulazioni agent-based</b> <a class="externallink" href="http://cs.gmu.edu/~eclab/projects/mason/" rel="nofollow" title="http://cs.gmu.edu/~eclab/projects/mason/"><i>MASON</i></a>, all'interno della <b><i>Agent Modeling Platform</i></b> per Eclipse.</p>
+<h3><span class="mw-headline" id="AMP:_Agent_Modeling_Platform">AMP: Agent Modeling Platform</span></h3>
+<p>La <a class="externallink" href="http://eclipse.org/amp/" rel="nofollow" title="http://eclipse.org/amp/">Agent Modeling Platform</a> è un progetto Eclipse open source, rilasciato con licenza pubblica Eclipse (EPL), il cui obiettivo è quello di fornire framework estensibili e strumenti atti alla <i>rappresentazione</i>, <i>creazione</i>, <i>modifica</i>, <i>generazione</i>, <i>esecuzione</i> e <i>visualizzazione</i> di modelli basati su agenti.</p>
+<p>AMP permette di creare simulazioni basate su agenti attraverso un editor grafico, costruendo dinamicamente un <b><i>meta-modello</i></b> (chiamato metaabm e rappresentato da un file XML). Ogniqualvolta l'utente effettua il salvataggio del meta-modello costruito graficamente, viene avviato un processo di traduzione del file metaabm in codice, nella maggior parte dei casi Java, relativo al toolkit di simulazione basata su agenti, scelto alla creazione del modello fra i vari supportati dalla piattaforma.</p>
+<h4><span class="mw-headline" id="Toolkit_Supportati">Toolkit Supportati</span></h4>
+<ul>
+<li><a class="externallink" href="http://ascape.sourceforge.net/" rel="nofollow" title="http://ascape.sourceforge.net/">Ascape</a>: framework scritto in linguaggio Java per lo sviluppo e l'esplorazione di modelli basati su agenti. Il termine <i>scape</i> deriva da Sugarscape, il modello implementato da Joshua M. Epstein e Robert L. Axtell, in cui si realizzano le idee espresse nel loro famoso libro <i>Growing Artificial Societies</i>.</li>
+<li>Escape: ambiente di modellazione agent-based open source basato su Ascape integrato nell'IDE Eclipse.</li>
+<li><a class="externallink" href="http://repast.sourceforge.net/" rel="nofollow" title="http://repast.sourceforge.net/">Repast Simphony</a>: <i>REcursive Porous Agent Simulation Toolkit</i> è stato sviluppato nel 2000 presso l'Università di Chicago ed in seguito reso, dall'Argonne National Laboratory, un'infrastruttura software in grado di supportare la <i>rapid social science discovery</i>. Versioni successive hanno introdotto nel sistema la capacità di gestire lo sviluppo di applicazioni di simulazione ad agenti su larga scala.</li>
+</ul>
+<h4><span class="mw-headline" id="Compatibilit.C3.A0">Compatibilità</span></h4>
+<p>La Agent Modeling Platform prevedeva la compatibilità con Eclipse 3.7 Indigo.</p>
+<p>Una fase preliminare del lavoro ha riguardato l'aggiornamento di AMP verso le ultime release di Eclipse 4. In particolare con le più recenti Juno 4.2, Kepler 4.3 e Luna 4.4 (Milestone 2). La guida all'installazione di AMP da git compatibile con le ultime release di Eclipse è disponibile <a class="externallink" href="https://www.dropbox.com/s/awcztr2ndr82vik/AMPBuildFromSourceGuide.pdf" rel="nofollow" title="https://www.dropbox.com/s/awcztr2ndr82vik/AMPBuildFromSourceGuide.pdf">qui</a>.</p>
+<h4><span class="mw-headline" id="Framework">Framework</span></h4>
+<ul>
+<li><b>Agent Modeling Framework</b>: offre strumenti potenti e di semplice utilizzo per la progettazione di modelli basati su agenti, compresa una rappresentazione comune, editor, generatori di codice e documentazione.</li>
+<li><b>Agent Execution Framework</b>: fornisce interfacce <i>core</i>, servizi ed interfaccia grafica per l'esecuzione del ciclo di vita del modello, l'aggregazione degli agenti, il controllo della visualizzazione e della gestione dell'esecuzione, e l'interazione con il workbench.</li>
+<li><b>Agent Graphic Framework</b>: si basa ed estende strumenti della piattaforma Eclipse come <i>GEF</i>, <i>Draw2D</i>, <i>Zest</i> ed altre tecnologie per supportare la visualizzazione in real-time e l'interazione con i modelli ad agenti.</li>
+</ul>
+<h3><span class="mw-headline" id="MASON4AMP">MASON4AMP</span></h3>
+<p>Il lavoro si è concentrato nel framework di modellazione, il quale si occupa di fornire le specifiche relative alla metamodellazione, ai toolkit supportati ed alla traduzione del metamodello in codice. </p>
+<p>L'integrazione di MASON nella Agent Modeling Platform ha seguito le seguenti fasi </p>
+<h4><span class="mw-headline" id="Mason_come_plug-in_Eclipse">Mason come plug-in Eclipse</span></h4>
+<ul>
+<li>Il primo passo per l'integrazione di MASON, come nuova target platform, è l'inserimento in AMP del codice sorgente del toolkit, in particolare tutti i concetti fondamentali per costruire simulazioni MASON, tra i quali definizione dei tipi di spazio, strumenti e risorse per l'esecuzione, ispezione e visualizzazione. </li>
+<li>Il risultato dell'operazione è incapsulato in un Eclipse plug-in, con lo scopo di rendere possibile l'utilizzo dei concetti MASON per la modellazione di simulazioni. </li>
+</ul>
+<h4><span class="mw-headline" id="File_di_generazione_di_codice_Mason">File di generazione di codice Mason</span></h4>
+<ul>
+<li>La generazione del codice, fornita dall'Agent Modeling Framework, si basa su file di template e di workflow.</li>
+<li>Dopo aver reso MASON un Eclipse plug-in, per integrarlo all'interno della piattaforma, il passo successivo è specificare i file <b>Xpand</b> di generazione di documentazione e codice, contenenti le definizioni dello 'scheletro' di una generica simulazione MASON, che verranno espansi attraverso il generatore di codice <i>Xpand</i>.</li>
+<li>Affinché tali definizioni possano essere espanse, al salvataggio del metamodello creato graficamente dall'utente, è necessario configurare il <b>Modeling Workflow Engine</b> mediante i file di <i>workflow</i>: indicano dove sono situate le definizioni Xpand ed <b>EMF</b> (<a class="externallink" href="https://www.eclipse.org/modeling/emf/" rel="nofollow" title="https://www.eclipse.org/modeling/emf/">Eclipse Modeling Framework</a>) da utilizzare per creare gli artefatti relativi a codice e documentazione della simulazione. </li>
+</ul>
+<h4><span class="mw-headline" id="Integrazione_nell.27IDE">Integrazione nell'IDE</span></h4>
+<ul>
+<li>L'integrazione di MASON, all'interno della componente di generazione del codice dell'Agent Modeling Framework, non è sufficiente a renderlo compatibile con la Agent Modeling Platform. In primo luogo è necessario predisporre l'IDE, affinché sia data la possibilità di generare un progetto Eclipse specifico per MASON, consentendo di creare una simulazione di tale toolkit.</li>
+<li>Inoltre è fondamentale porre un collegamento tra il progetto Eclipse, la generazione del codice ed i concetti indispensabili per la costruzione di simulazioni MASON. </li>
+</ul>
+<p>L'integrazione dentro la componente IDE di AMF è realizzata mediante apposite classi Java e gli strumenti offerti dal <b><a class="externallink" href="http://www.eclipse.org/pde/" rel="nofollow" title="http://www.eclipse.org/pde/">Plug-in Development Environment</a></b>.</p>
+<h3><span class="mw-headline" id="Simulazione">Simulazione</span></h3>
+<p>Per poter testare il lavoro svolto è stata realizzata una simulazione, dal nome <b>Particles</b>, presente nel toolkit MASON. </p>
+<ul>
+<li>Gli agenti di tale simulazione sono particelle, <i>Particle</i>, i quali si muovono all'interno di una griglia bidimensionale. </li>
+<li>Il modello di simulazione rappresenta lo scenario in cui delle particelle, che si muovono lungo una direzione bidimensionale, sono costrette all'interno di uno spazio specifico. </li>
+<li>Nel momento in cui tali agenti collidono con altri agenti o con le pareti dello spazio devono cambiare la loro direzione di movimento.</li>
+</ul>
+<p>Il processo di creazione del progetto MASON contenente la simulazione Particles in AMP fino all'esecuzione è disponibile <a class="externallink" href="https://drive.google.com/file/d/0B6vJiy3oRt0INnhNQkxKU0ZqNVk/edit?usp=sharing" rel="nofollow" title="https://drive.google.com/file/d/0B6vJiy3oRt0INnhNQkxKU0ZqNVk/edit?usp=sharing">qui</a> (il modello della simulazione è già stato creato precedentemente). </p>
+<h3><span class="mw-headline" id="Open_Source">Open Source</span></h3>
+<p>Il codice del progetto è disponibile su <a class="externallink" href="https://github.com/ffam/MASON4AMP.git" rel="nofollow" title="https://github.com/ffam/MASON4AMP.git"><i>GitHub</i></a>.</p>
+<p> <br/>
+</p>
+

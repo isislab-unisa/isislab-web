@@ -1,0 +1,45 @@
+---
+layout: article
+lang: it
+title: User:Gabnap
+description: 'Info personali Nome: Gabriele Napoli Email: nap.gab@gmail.com – g.napoli38@studenti.unisa.it
+  Lavoro di tesi Il mio lavoro di tesi attualmente mi vede impegnato nello studiare fattibilità e metodologie
+  per l’integrazione di sistemi […]'
+permalink: /news/user-gabnap/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-gabnap/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Info_personali">Info personali</span></h2>
+<p><b>Nome:</b> Gabriele Napoli</p>
+<p><b>Email:</b> nap.gab@gmail.com - g.napoli38@studenti.unisa.it</p>
+<h2><span class="mw-headline" id="Lavoro_di_tesi">Lavoro di tesi</span></h2>
+<p>Il mio lavoro di tesi attualmente mi vede impegnato nello studiare fattibilità e metodologie per l'integrazione di sistemi software tramite la tecnologia <a class="externallink" href="http://eclipse.org/rap/" rel="nofollow" title="http://eclipse.org/rap/">Eclipse/RAP</a>. </p>
+<p>I miei studi sono quotidianamente accompagnati dal mio amico e collega Gianluca Landi.</p>
+<h2><span class="mw-headline" id="Diario_di_bordo">Diario di bordo</span></h2>
+<h3><span class="mw-headline" id="Capitolo_1:_Inizia_l.27avventura">Capitolo 1: Inizia l'avventura</span></h3>
+<p>Ok, sono in ISISLab. Dopo aver ottenuto le mie credenziali per accedere ai pc del laboratorio, il primo passo è stato quello di scaricare il software di sviluppo per <a class="externallink" href="http://eclipse.org/rap/downloads/" rel="nofollow" title="http://eclipse.org/rap/downloads/">Eclipse/RAP</a>.</p>
+<p>Oltre a poter scaricare i "RAP Tools" seperatamente e installarli all'interno di una IDE preesistente, Eclipse consente anche il download di una versione dell'IDE completa del software aggiuntivo: "Eclipse for RCP and RAP Developers". L'installazione è banale, niente di più difficile dell'installazione di un classico plugin. </p>
+<p>L'unica operazione "straordinaria" è l'impostazione della target platform, per questo vi rimando alla pagina dedicata della <a class="externallink" href="http://eclipse.org/rap/developers-guide/devguide.php?topic=target-install.html&amp;version=2.2/" rel="nofollow" title="http://eclipse.org/rap/developers-guide/devguide.php?topic=target-install.html&amp;version=2.2/">Developer's Guide</a> di Eclipse/RAP.</p>
+<h3><span class="mw-headline" id="Capitolo_2:_Il_protocollo_di_comunicazione">Capitolo 2: Il protocollo di comunicazione</span></h3>
+<p>Dopo qualche HelloWorld e aver smanettato un pò con i widget di RWT, è giunto il momento di concentrarsi sull'obiettivo della tesi.</p>
+<p>Tra le varie caratteristiche di RAP, la prima prima che mi è saltata all'occhio come candidata tecnologia di integrazione è stato il <a class="externallink" href="http://wiki.eclipse.org/RAP/Protocol/" rel="nofollow" title="http://wiki.eclipse.org/RAP/Protocol/">protocollo di comunicazione tra client e server</a>.</p>
+<p>L'idea è quella che registrare tutti i messaggi JSON scambiati tra client e server rap equivale a loggare tutte le interazioni che l'utente ha con il sistema. Ora si tratta soltanto di capire se è possibile intercettare questi messaggi, ma soprattutto se possono essere eseguiti in un secondo momento, in un altro sistema, replicandone gli effetti, in particolar modo il look &amp; feel dei widget, dando l'effetto di una "fusione" tra i due sistemi.</p>
+<h3><span class="mw-headline" id="Capitolo_3:_I_primi_test">Capitolo 3: I primi test</span></h3>
+<p>Arrivano le prime difficoltà. Eclipse/RAP è una tecnologia giovane e ancora non affermata, fare ricerche su internet non si è rivelata un impresa semplice.</p>
+<p>Inoltre, RAP è in piena evoluzione e le interfacce pubbliche delle sue classi vengono stravolte ad ogni rilascio (oltre ad esserci delle release nightly, nel prossimo periodo sono previste circa una release stable al mese), e talvolta anche le informazioni presenti nella guida ufficiale sul sito eclipse si sono rivelate non aggiornate e fuorvianti. Codice vecchio di 6 mesi trovato su internet, non funzionerebbe sulle versioni odierne di RAP, se non apportando notevoli modifiche, basta pensare che il protocollo di comunicazione in esame è stato aggiunto a RAP da poco più di un anno e oggi tutta l'architettura è basata su esso.</p>
+<p>Alla fine, dopo aver ipotizzato e testato alcune probabili soluzioni, sono riuscito ad intercettare i messaggi del protocollo di RAP tramite una ServletFilter, che si occupa di intercettare tutto il traffico HTTP, in particolare i messaggi con <i>Content-type: application/json</i>.</p>
+<p>Nel frattempo, scavando in <i>rap-client.js</i> (il lato client di rap), abbiamo trovato la funzione che si occupa del processing dei messaggi in arrivo e del rendering dei widget.</p>
+<p>Abbiamo tutto il necessario per prendere il controllo di un applicazione RAP e replicarla in un altra.</p>
+<h3><span class="mw-headline" id="Capitolo_4:_Eclipse.2FRAP_.3C-.3E_Wikimedia">Capitolo 4: Eclipse/RAP &lt;-&gt; Wikimedia</span></h3>
+<p>Work in progress...</p>
+<p><a class="externallink" href="http://www.mediawiki.org/wiki/API:Main_page" rel="nofollow" title="http://www.mediawiki.org/wiki/API:Main_page">API di MediaWiki</a></p>
+<p> <br/>
+</p>
+

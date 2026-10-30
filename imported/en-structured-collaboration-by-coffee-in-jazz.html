@@ -1,0 +1,80 @@
+---
+layout: page
+lang: en
+title: Structured Collaboration by CoFFEE in Jazz
+description: The project Our project aims to integrate CoFFEE tools within Jazz and Rational Team Concert to
+  support structured collaboration and to enhance cooperation within the team. CoFFEE offers highly configurable
+  tools […]
+permalink: /en/structured-collaboration-by-coffee-in-jazz/
+section: Page
+article_kind: imported_page
+---
+
+<h2 class="wp-block-heading">The project</h2>
+
+<p>Our project aims to integrate <a aria-label="CoFFEE  (opens in a new tab)" href="https://sourceforge.net/projects/coffee-soft/" rel="noreferrer noopener">CoFFEE </a>tools within Jazz and Rational Team Concert to support structured collaboration and to enhance cooperation within the team. CoFFEE offers highly configurable tools that allow to tailor their behavior (at run-time) according to the needs, by choosing, e.g., the contributions types, the linking mechanisms, label, etc. CoFFEE is an open source project, based on Eclipse Communication Framework and is hosted on <a aria-label="Sourceforge (opens in a new tab)" href="https://sourceforge.net/projects/coffee-soft/" rel="noreferrer noopener">Sourceforge</a>.</p>
+
+<p>The project has been awarded with a grant of 25.000$ from IBM as <a href="http://www-304.ibm.com/jct01005c/university/scholars/innovation/jazz.html">IBM Jazz Innovation Awards 2008</a>.</p>
+
+<div class="wp-block-file"><a href="/assets/media/4afcf74e7d55bb-2008-jazz-recipients-1.pdf">See the list of the awards: </a><a class="wp-block-file__button" download="" href="/assets/media/4afcf74e7d55bb-2008-jazz-recipients-1.pdf">Download</a></div>
+
+<h2 class="wp-block-heading">The team</h2>
+
+<p>The research team is led by <a aria-label="Vittorio Scarano (opens in a new tab)" href="https://docenti.unisa.it/001717/home" rel="noreferrer noopener">Vittorio Scarano</a> and consists of:</p>
+
+<ul>
+<li>Ilaria Manno, PostDoc</li>
+<li>Furio Belgiorno</li>
+<li>Giuseppina Palmieri</li>
+</ul>
+
+<h2 class="wp-block-heading">News and progress</h2>
+
+<ul>
+<li>June/July 2009: updating to RTC 2.0 </li>
+<li>April/May 2009: CoFFEE made available as a set of plugins, that can be launched on-the-fly. </li>
+</ul>
+
+<h2 class="wp-block-heading">More details</h2>
+
+<p><strong>CoFFEE</strong> is a suite of applications designed to support cooperative learning in a face-2-face setting; it was realized during the 3 year European funded project called <a aria-label="Lead (opens in a new tab)" href="https://cordis.europa.eu/project/rcn/80598/factsheet/en" rel="noreferrer noopener">Lead</a> and is available on <a href="http://www.sourceforge.net/projects/coffee-soft">Sourceforge</a> since September 2008. The usage scenario mixes face-2-face communication and computer-mediated communication, where the latter occurs in a shared digital workspace, provided by CoFFEE, that can be accessed by all the learners simultaneously. Our project aims at integrating CoFFEE tools into Jazz so that the Jazz team is enriched with a set of structured collaboration tools.</p>
+
+<p>CoFFEE is a suite of Eclipse-based Rich Client Applications: the main applications are the CoFFEE Controller (teacher) and Discusser (learner). On top of the Controller and the Discussers an extensible set of collaborative tools can be executed. The main discussion tools are the Threaded Discussion Tool (right, top) and the Graphical Discussion Tool (right, middle). The Threaded Discussion Tool provides a space for synchronous debates structured in trees and categories (a tree for each category). The Graphical Discussion Tool provides a space for synchronous communication organized as a graph, with text box and links. They are highly versatile and can be configured at runtime so that it is possible to choose, e.g., notation types for the contributions, read/write permissions, labels on connectors. Other interesting tools include a Positionometer (voting system) and a shared-text editor (with turn-taking).</p>
+
+<p><strong>Jazz</strong> implements a platform to support collaboration over the whole software development lifecycle. In particular it enhances the team and process awareness among the members of the development team, to coordinate efforts towards results. This approach is based on a scenario where the objective is clear and defined, and each task can be defined and scheduled as a working item in the development process. Nevertheless, there are phases in the development process which require collaboration within the team to clarify and define objectives: examples are the requirements development phase, the system design and the work planning. This kind of phases requires synchronous communication channels able to support knowledge sharing, brainstorming, ideas generation, but also decision making.</p>
+
+<p><strong>An outline of the planned research.</strong> The plan is to integrate CoFFEE tools within Jazz, first, so that they offer a richer set of collaborative tools for the team. Then, we will proceed by embedding the artifacts of these tools (e.g., a threaded discussion or the graphical diagram) into Jazz. It will occur either by attaching “live” structured discussions (either threaded or graphical) to the existing types of work items, or by creating a new kind of work item.</p>
+
+<p><strong>Impact.</strong> Using collaborative structured discussions and design tools in Jazz have an immediate application in the educational context where the design choices can be discussed among students and with the tutor/teacher/team-leader. But as much interesting appear also the applications of these tools in the professional software development process, because of the evident benefits of a structured agile collaboration towards the quick prototyping, release cycle and testing.</p>
+
+<p><strong>Current Status</strong>. Desiging the integration of CoFFEE into Jazz we have defined several aims:</p>
+
+<ul>
+<li>allowing to start the CoFFEE Server and Client within the Rational Team Concert: originally the CoFFEE Server and Client were Rich Client Application designed for learning context; allowing to start them within RTC implies the creation of plug-ins embedding the CoFFEE server and Client and relaxing some constraints due to the learning context.</li>
+<li>allowing to start CoFFEE tools: originally the activation sequence of tools and their configuration were defined by the teacher before to start the colalboration, but in RTC we would like to start a tool and configure it on the fly, during the collaboration.</li>
+<li>allowing to save and reload the CoFFEE trace on Jazz repository: CoFFEE generate trace of the whole collaboration session and allows to reload it showing the sequence of events and tools contents. Currently we are at work on this functionality.</li>
+</ul>
+
+<p>In the following picture we show CoFFEE integrated within Rational Team Concert, and in particular the button to start the CoFFEE tools, the Threaded Discussion tool in front of some other CoFFEE tool and the CoFFEE discussions on the Jazz repositories.</p>
+
+<figure class="wp-block-image"><a href="http://172.16.15.98/image-coffeejazz-jpg"><img alt="" decoding="async" src="http://172.16.15.98/wp-content/uploads/2009/10/5/CoFFEEJazz-600x421.jpg"/></a></figure>
+
+<p>The slides of the demo are shared <a href="http://www.slideshare.net/ilaman/integrating-coffee-and-rational-team-concert">here</a>.</p>
+
+<p>In the demo we shown:</p>
+
+<ul>
+<li>the leader user starts up the CoFFEE server within RTC</li>
+<li>the leader user starts the Threaded Discussion Tool (and configure it)</li>
+<li>the participating user start the coffe client and choose the collaboration session to which he wants participate</li>
+<li>they collaborate in the Threaded Discussion running within RTC</li>
+<li>the leader user starts several other CoFFEE tools within RTC (positionometer, projector, graphical debate)</li>
+<li>when the leader user decides to termineate the collaborative session, he stops the server and saves the session on the Jazz repository;</li>
+<li>the session is available in the CoFFEE Discussions folder in the Repository and every user can reload the session; reloading the session allows to see the sequence of collaboration events and the final conents of the tools. Note that the reloaded session is open: the user that have reloaded the session is playing as leading user and other users can connect to the session and contribute to the tools contents.</li>
+</ul>
+
+<h2 class="wp-block-heading">CoFFEE references</h2>
+
+<p>CoFFEE is available on <a href="http://www.sourceforge.net/projects/coffee-soft">Sourceforge</a> since September 2008.</p>
+
+

@@ -1,0 +1,1269 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ISISLab · IT preview</title><style>/* ISISLab Jekyll — original reinterpretation based on the supplied HTML structure */
+:root {
+  --ink:#07111f; --slate:#233044; --muted:#647389; --mist:#f6f8fb; --surface:#fff;
+  --cyan:#00d4ff; --violet:#8b5cf6; --green:#10b981; --amber:#ffb020;
+  --border:rgba(33,57,84,.11); --shadow:0 20px 55px rgba(17,43,76,.075);
+  --wp--preset--spacing--50:1.5rem; --wp--preset--spacing--60:2.25rem;
+  --wp--preset--spacing--70:3.38rem; --wp--preset--spacing--80:5.06rem;
+  --wp--preset--font-size--xl:clamp(2rem,1.1rem + 3.6vw,4.8rem);
+  --wp--preset--color--ink:#07111f; --wp--preset--color--mist:#f6f8fb;
+  --wp--style--global--wide-size:1240px;
+}
+*,*::before,*::after { box-sizing:border-box }
+html{scroll-behavior:smooth;scroll-padding-top:102px}
+body{margin:0;background:var(--mist);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:#0a6bff;text-decoration:none} a:hover{color:#6755d9}
+button{font:inherit} img,canvas{max-width:100%} img{height:auto} a:focus-visible,button:focus-visible{outline:3px solid #00b8e8;outline-offset:4px;border-radius:5px}
+h1,h2,h3,h4{font-family:"Space Grotesk",Inter,system-ui,sans-serif;letter-spacing:-.044em;line-height:1.13;margin:0;font-weight:700}
+h1{line-height:1.045} p{margin:0} strong{font-weight:750}
+.alignwide{width:min(1240px,calc(100% - 54px));max-width:1240px;margin-inline:auto!important}
+.skip-link{position:absolute;top:-100px;left:15px;z-index:999;padding:12px 18px;background:#fff;color:#07111f}.skip-link:focus{top:12px}
+/* Header and dropdown navigation */
+.lab-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(18px)}
+.lab-header-inner{min-height:79px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.lab-brand-link{flex:none;display:inline-flex;align-items:center;line-height:1}
+.lab-brand-logo{width:190px;height:auto;max-height:63px}
+.lab-primary-nav{margin-left:auto}
+.nav-list,.nav-dropdown{list-style:none;padding:0;margin:0}
+.nav-list{display:flex;justify-content:flex-end;align-items:center;gap:2px}
+.nav-item{position:relative}
+.nav-item-head{display:flex;align-items:center;gap:0;border-radius:11px}
+.nav-item-head>a{display:block;padding:11px 7px 11px 13px;font-weight:760;white-space:nowrap;font-size:13px;letter-spacing:-.015em;color:#182538}
+.nav-item-head:hover,.nav-item:focus-within>.nav-item-head{background:#f3f6fb}
+.nav-item-head>a:hover{color:#2268c8}
+.submenu-toggle{background:transparent;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;width:20px;height:35px;padding:0 4px 0 0;color:#687891}
+.submenu-toggle svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .2s}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:236px;max-width:300px;opacity:0;visibility:hidden;transform:translateY(8px);pointer-events:none;padding:8px;background:#fff;border:1px solid var(--border);border-radius:15px;box-shadow:0 20px 55px rgba(17,39,66,.14);transition:opacity .15s,transform .15s,visibility .15s}
+.nav-item:last-child .nav-dropdown,.nav-item:nth-last-child(2) .nav-dropdown{right:0;left:auto}
+.nav-dropdown:before{content:"";position:absolute;inset:-12px 0 auto;height:12px}
+.nav-dropdown a{display:block;padding:10px 12px;border-radius:9px;color:var(--slate);font-size:13px;font-weight:600;line-height:1.35}
+.nav-dropdown a:hover,.nav-dropdown a:focus-visible{background:#f2f6fc;color:#315aca}
+@media (hover:hover){.nav-item:hover>.nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}}
+.nav-item:focus-within>.nav-dropdown,.nav-item.is-open>.nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+.nav-item.is-open .submenu-toggle svg{transform:rotate(180deg)}
+.nav-toggle{display:none;border:0;background:#eef3fa;border-radius:12px;width:45px;height:45px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
+.nav-toggle span{display:block;width:19px;height:2px;border-radius:2px;background:#162639}
+/* Background grid / hero */
+.lab-grid-bg{position:relative;isolation:isolate;padding:0 0 78px;background-color:var(--mist);background-image:linear-gradient(rgba(47,75,105,.034) 1px,transparent 1px),linear-gradient(90deg,rgba(47,75,105,.034) 1px,transparent 1px),radial-gradient(ellipse at 15% 5%,rgba(0,212,255,.105),transparent 33%),radial-gradient(ellipse at 88% 12%,rgba(139,92,246,.075),transparent 32%);background-size:40px 40px,40px 40px,auto,auto}
+.lab-hero{position:relative;min-height:550px;display:flex;justify-content:center;align-items:flex-start;flex-direction:column;overflow:hidden}
+.lab-hero>*:not(.lab-physics-hero){position:relative;z-index:2}
+.lab-pill{display:inline-block;align-self:flex-start;color:#34445d;font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;padding:9px 14px;border:1px solid rgba(88,110,141,.18);border-radius:100px;background:rgba(255,255,255,.72);box-shadow:0 4px 18px rgba(50,67,112,.035)}
+.lab-hero .lab-pill{color:#40547e;background:#f8fbffed}
+.lab-hero-copy-card{width:min(780px,100%);margin-top:23px;position:relative;z-index:2}
+.lab-hero h1{font-size:clamp(40px,5.1vw,76px);max-width:970px;line-height:1.06;letter-spacing:-.065em;background:linear-gradient(111deg,#07111f 21%,#18354f 61%,#6956b9 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.lab-hero-copy-card>p{margin-top:25px;max-width:695px;font-size:clamp(16px,1.4vw,19px);line-height:1.83;color:#55657a;font-weight:470}
+.lab-physics-hero{position:absolute!important;inset:0;pointer-events:none;z-index:1!important;overflow:hidden}
+.lab-physics-hero__canvas{width:100%;height:100%;display:block;opacity:.92}
+.lab-physics-hero__grain{position:absolute;inset:0;opacity:.28;background-image:radial-gradient(#a1adca 0.5px,transparent .5px);background-size:5px 5px;mask-image:linear-gradient(90deg,transparent 45%,#000 100%)}
+/* Scrolling keywords */
+.lab-signal-strip{margin-top:-1px!important;margin-bottom:34px!important;overflow:hidden;border-top:1px solid #d9e4ee;border-bottom:1px solid #d9e4ee;background:rgba(255,255,255,.6);border-radius:2px}
+.lab-signal-strip__track{display:flex;align-items:center;gap:36px;white-space:nowrap;width:max-content;padding:13px 0;animation:signal-track 42s linear infinite}
+.lab-signal-strip__track span{color:#65758b;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.lab-signal-strip__track span:before{content:"✦";margin-right:34px;color:#6c68cf;font-size:9px}
+@keyframes signal-track{to{transform:translateX(-50%)}}
+/* Metrics */
+.wp-container-core-group-is-layout-2a22776f{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:96px!important}
+.lab-card{background:var(--surface);border:1px solid var(--border);border-radius:23px;box-shadow:var(--shadow)}
+.lab-metric{min-height:146px;display:flex;flex-direction:column;justify-content:center;padding:23px!important;transition:transform .25s,box-shadow .25s}
+.lab-metric:hover,.lab-flow-card:hover,.lab-hub-card:hover{transform:translateY(-5px);box-shadow:0 24px 55px rgba(32,56,99,.13)}
+.lab-metric>strong{font-size:clamp(36px,3.5vw,55px);font-family:"Space Grotesk",sans-serif;letter-spacing:-.07em;line-height:1;color:var(--ink)}
+.lab-metric>span{color:#607289;font-size:13px;font-weight:650;margin-top:13px}
+.lab-metric-combo{background:linear-gradient(135deg,#0e213a 0%,#152a4a 58%,#302860 100%);border-color:transparent;color:white}
+.lab-metric-combo__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.lab-metric-combo__grid span{display:flex;flex-direction:column;gap:8px}
+.lab-metric-combo__grid strong{font-size:clamp(21px,2.1vw,31px);line-height:1;letter-spacing:-.04em;color:#fff}
+.lab-metric-combo__grid em{font-style:normal;font-size:10px;line-height:1.5;color:#c8d9ee;font-weight:600}
+/* Sections */
+.lab-pillars-shell{margin-bottom:90px!important}
+.lab-section-head{max-width:850px;margin-bottom:35px}
+.lab-section-head h2{font-size:clamp(32px,3.65vw,54px);line-height:1.11;margin-top:20px;letter-spacing:-.06em}
+.lab-section-head>p:not(.lab-pill){max-width:705px;font-size:16px;color:#607088;margin-top:15px;line-height:1.8}
+.lab-flow-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.lab-flow-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:300px;overflow:hidden;padding:30px;border-radius:26px;background:#fff;border:1px solid rgba(52,69,104,.1);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.lab-flow-card:before{content:"";position:absolute;right:-45px;top:-66px;width:185px;height:185px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,.15),transparent 70%)}
+.lab-flow-card:nth-child(2):before{background:radial-gradient(circle,rgba(139,92,246,.16),transparent 70%)}
+.lab-flow-card:nth-child(3):before{background:radial-gradient(circle,rgba(16,185,129,.15),transparent 70%)}
+.lab-flow-card__orb{display:block;width:47px;height:47px;border-radius:16px;background:linear-gradient(135deg,#00d4ff,#1c6afe);box-shadow:inset 0 0 0 10px #ffffff33,0 12px 24px #47a6e033;transform:rotate(-15deg);margin-bottom:28px}
+.lab-flow-card:nth-child(2) .lab-flow-card__orb{background:linear-gradient(135deg,#9765ff,#5741c4)}
+.lab-flow-card:nth-child(3) .lab-flow-card__orb{background:linear-gradient(135deg,#3bdac0,#0075cc)}
+.lab-flow-card>p{color:#687994;font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:.10em;margin-bottom:12px}
+.lab-flow-card h3{font-size:25px;line-height:1.21;letter-spacing:-.048em}
+.lab-flow-card small{font-size:13px;line-height:1.85;color:#6b778c;display:block;margin-top:14px;margin-bottom:25px}
+.lab-pillar-link{margin-top:auto;color:#0d5bd8;font-size:13px;font-weight:800}
+.lab-pillar-link:after{content:" ↗"}
+/* Large navigation hub */
+.lab-site-hub{position:relative;padding:58px 48px 50px;margin-bottom:54px!important;border-radius:34px;overflow:hidden;color:#f1f5ff;background:linear-gradient(119deg,#071527 0%,#0d2340 48%,#192752 100%);box-shadow:0 33px 88px rgba(7,28,52,.2)}
+.lab-site-hub .lab-section-head{position:relative;z-index:2}
+.lab-site-hub .lab-section-head h2{max-width:790px;color:#fff}
+.lab-site-hub .lab-section-head>p:not(.lab-pill){color:#b8c5da}
+.lab-site-hub .lab-pill{border-color:#42657e;color:#c2e9ff;background:#113553a8}
+.lab-site-hub__composition{position:absolute;inset:0;pointer-events:none;opacity:.75}
+.lab-geo-piece{position:absolute;display:block}
+.lab-geo-piece--block-a{width:320px;height:320px;right:-135px;top:-145px;border-radius:70px;transform:rotate(-24deg);border:50px solid #6f59cb44}
+.lab-geo-piece--block-b{width:420px;height:420px;left:-290px;bottom:-190px;border-radius:50%;background:radial-gradient(circle,#008abd33,transparent 70%)}
+.lab-geo-piece--line-a,.lab-geo-piece--line-b{height:1px;background:linear-gradient(90deg,transparent,#55a0ee66,transparent);width:100%;top:23%;transform:rotate(-20deg)}
+.lab-geo-piece--line-b{top:85%;transform:rotate(13deg)}
+.lab-geo-piece--frame{width:180px;height:180px;border:1px solid #65caff55;border-radius:20px;transform:rotate(31deg);right:70px;top:78px}
+.lab-geo-piece--bar{width:220px;height:30px;background:#28bcff0e;right:40px;bottom:25px;transform:rotate(-20deg)}
+.lab-hub-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.lab-hub-card{position:relative;display:flex;flex-direction:column;min-height:197px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.075);border-radius:21px;padding:23px;transition:transform .25s,background .25s,box-shadow .25s;color:#fff;overflow:hidden;backdrop-filter:blur(5px)}
+.lab-hub-card:hover{background:rgba(255,255,255,.13);color:#fff;box-shadow:0 15px 30px #0002}
+.lab-hub-card--wide{grid-column:span 2;background:linear-gradient(120deg,#ffffff22,#ffffff10)}
+.lab-hub-card--accent{background:linear-gradient(115deg,#0a8dc65c,#8058df63);border-color:#73aef044}
+.lab-hub-card__mark{display:block;width:29px;height:29px;border:1px solid #6bd9fc90;border-radius:9px;transform:rotate(-15deg);margin-bottom:18px;position:relative;background:linear-gradient(135deg,#00d4ff3d,#8b5cf627)}
+.lab-hub-card__mark:after{content:"";position:absolute;inset:6px;border-radius:50%;background:#24e0f6}
+.lab-hub-card:nth-child(2n) .lab-hub-card__mark:after{background:#ad91ff}
+.lab-hub-card strong{font-family:"Space Grotesk",sans-serif;font-size:21px;line-height:1.2;letter-spacing:-.035em}
+.lab-hub-card em{font-size:12px;font-style:normal;color:#c3d0e3;line-height:1.7;margin-top:11px}
+.lab-hub-card small{font-size:10px;font-weight:700;color:#8ad3f7;margin-top:auto;padding-top:17px;line-height:1.65}
+/* Latest news */
+.lab-grid-bg>.wp-block-group.alignwide.is-layout-constrained:not(.lab-hero):not(.has-ink-background-color){margin-bottom:52px!important}
+.wp-container-core-group-is-layout-a057083a{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}
+.wp-container-core-group-is-layout-a057083a h2{font-size:clamp(31px,3.4vw,47px)}
+.lab-arrow-link a{font-size:13px;font-weight:800;color:#206be0}
+.lab-arrow-link a:after{content:" ↗"}
+.wp-block-post-template{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+.lab-news-card{padding:27px;min-height:260px;display:flex;flex-direction:column}
+.wp-block-post-date{color:#6d7a93;font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-bottom:17px}
+.wp-block-post-title{font-size:22px;line-height:1.3}.wp-block-post-title a{color:var(--ink)}.wp-block-post-title a:hover{color:#0a6bff}
+.wp-block-post-excerpt__excerpt{font-size:13px;color:#66768b;margin-top:12px;line-height:1.8}
+.lab-news-more{font-size:13px;font-weight:800;margin-top:auto;padding-top:18px}
+/* Closing dark CTA */
+.lab-grid-bg>.has-ink-background-color{background:linear-gradient(125deg,#07111f,#172942);color:#fff;padding:52px!important;border-radius:34px!important;margin-bottom:0!important;box-shadow:0 22px 55px rgba(9,35,63,.13)}
+.lab-grid-bg>.has-ink-background-color>h2{font-size:clamp(32px,3.4vw,53px);max-width:780px;letter-spacing:-.055em;margin:0 0 30px}
+.wp-block-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.wp-block-columns>.wp-block-column{padding:11px 26px 4px 0;border-right:1px solid #ffffff22}
+.wp-block-columns>.wp-block-column:last-child{border:0}
+.wp-block-columns h3{font-size:24px;color:#fff;margin-bottom:14px}
+.wp-block-columns p{font-size:14px;color:#aebed1;line-height:1.8;margin-bottom:18px}
+.wp-block-columns .lab-arrow-link a{color:#6ce0ff}
+/* Interior page */
+.page-main{padding-top:0;padding-bottom:90px}
+.page-hero{position:relative;overflow:hidden;min-height:335px;padding:55px 0 48px}
+.page-hero .lab-pill{position:relative;z-index:2}
+.breadcrumbs{font-size:12px;display:flex;gap:10px;color:#63728b;margin:20px 0 9px;position:relative;z-index:2}
+.breadcrumbs a{color:#476a95}
+.page-hero h1{font-size:clamp(41px,5vw,69px);letter-spacing:-.066em;position:relative;z-index:2;max-width:850px}
+.page-lead{font-size:17px;color:#5c6c82;max-width:750px;line-height:1.9;margin-top:18px;position:relative;z-index:2}
+.page-hero-art{position:absolute;width:380px;height:320px;right:0;top:20px;z-index:0;opacity:.44}
+.page-hero-art span{position:absolute;width:180px;height:180px;border:2px solid #64c6e9;border-radius:30%;transform:rotate(26deg);right:30px;top:30px}
+.page-hero-art span:nth-child(2){right:90px;top:85px;width:140px;height:140px;border-color:#ab8deb;transform:rotate(47deg)}
+.page-hero-art span:nth-child(3){right:130px;top:30px;width:15px;height:15px;border:none;background:#00d4ff;border-radius:50%}
+.page-columns{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:26px;align-items:start}
+.page-content{padding:clamp(24px,4vw,52px)!important;border-radius:28px;min-height:380px}
+.prose{font-size:15px;color:#3c4a5d;line-height:1.85;overflow-wrap:anywhere}
+.prose h2{font-size:clamp(25px,3vw,35px);color:var(--ink);margin:38px 0 14px;padding-top:6px;letter-spacing:-.045em;scroll-margin-top:105px}
+.prose h2:first-child{margin-top:0}
+.prose h3{color:var(--ink);font-size:21px;margin:30px 0 12px;letter-spacing:-.035em}
+.prose h4{font-size:17px;margin:24px 0 8px}
+.prose p{margin:0 0 16px}
+.prose ul,.prose ol{padding-left:24px;margin:12px 0 23px}.prose li{margin:7px 0}
+.prose a{font-weight:650;text-decoration:underline;text-decoration-color:#8dbffb;text-underline-offset:3px}
+.prose blockquote{margin:22px 0;padding:15px 24px;background:#f4f8ff;border-left:4px solid #31b9ef;border-radius:0 10px 10px 0}
+.prose hr{border:0;border-top:1px solid var(--border);margin:30px 0}
+.prose .directory-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.prose .directory-grid a{display:block;background:#f4f8fd;border:1px solid #e3eaf3;border-radius:14px;padding:17px;text-decoration:none}
+.prose .directory-grid a:hover{background:#eaf3ff}
+.prose .eyebrow{font-size:11px;color:#49657d;text-transform:uppercase;font-weight:800;letter-spacing:.1em}
+.page-sidebar{position:sticky;top:103px;display:flex;flex-direction:column;gap:20px}
+.sidebar-card,.source-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:25px;box-shadow:var(--shadow)}
+.sidebar-kicker{color:#73849c;font-size:10px;font-weight:800;letter-spacing:.14em}
+.sidebar-card h3{font-size:19px;line-height:1.2;margin:9px 0 16px}
+.sidebar-card>a{display:flex;align-items:center;justify-content:space-between;color:#3e546e;border-top:1px solid #ebeff5;padding:11px 0;font-size:13px;font-weight:700}
+.sidebar-card>a span{color:#317ace}
+.source-card{background:#122742;color:#fff;border-color:#1a3353}
+.source-card p{font-size:12px;line-height:1.75;margin:12px 0 16px;color:#b8c9dd}
+.source-card>a{font-size:12px;color:#64d9ff;font-weight:750}
+/* Footer */
+.lab-footer{background:#07111f;color:#eef5ff;padding:62px 0 18px}
+.footer-inner{display:grid;grid-template-columns:minmax(245px,2.1fr) repeat(3,minmax(130px,1fr));gap:46px}
+.footer-about img{width:172px;height:auto;filter:brightness(0) invert(1)}
+.footer-about p{margin-top:16px;color:#a9bcd1;line-height:1.75;font-size:12px}
+.footer-about>a{display:inline-block;color:#79daff;margin-top:18px;font-size:12px;font-weight:800}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links h3{font-size:16px;color:#fff;margin-bottom:9px;letter-spacing:0}
+.footer-links a{font-size:12px;color:#b5c6db}.footer-links a:hover{color:#6de1ff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:21px;margin-top:50px!important;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#788eaa;font-size:11px}
+.footer-bottom a{color:#b3dffa}
+/* Reveal */
+.lab-reveal{transition:opacity .6s ease,transform .6s ease;transition-delay:var(--lab-reveal-delay,0ms)}
+.lab-reveal:not(.is-visible){opacity:0;transform:translateY(15px)}
+/* Layout breakpoints */
+@media(max-width:1100px){
+  .lab-brand-logo{width:155px}
+  .nav-item-head>a{font-size:12px;padding-inline:8px 4px}
+  .lab-hero h1{font-size:clamp(42px,5.5vw,69px)}
+  .lab-hub-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .lab-hub-card--wide{grid-column:span 2}
+}
+@media(max-width:920px){
+  .lab-header-inner{min-height:72px}
+  .nav-toggle{display:flex}
+  .lab-primary-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 80px);overflow:auto;padding:12px 23px 23px;background:#fff;box-shadow:0 24px 32px #12263d15;border-bottom:1px solid var(--border)}
+  .lab-primary-nav.is-active{display:block}
+  .nav-list{display:block}
+  .nav-item{border-bottom:1px solid #edf0f5}
+  .nav-item-head{justify-content:space-between}
+  .nav-item-head>a{padding:15px 10px;font-size:14px;flex:1}
+  .submenu-toggle{width:50px;height:48px}
+  .nav-dropdown{position:static;visibility:visible;opacity:1;transform:none;box-shadow:none;background:#f5f8fc;border:0;border-radius:10px;margin:0 0 8px;padding:3px 6px;display:none;pointer-events:auto;max-width:none}
+  .nav-item.is-open>.nav-dropdown{display:block}
+  .nav-dropdown:before{display:none}
+  .lab-hero{min-height:510px}
+  .wp-container-core-group-is-layout-2a22776f{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:65px!important}
+  .lab-flow-grid{grid-template-columns:1fr 1fr}
+  .lab-flow-grid>.lab-flow-card:last-child{grid-column:span 2;min-height:240px}
+  .page-columns{grid-template-columns:1fr}
+  .page-sidebar{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-inner{gap:28px}
+}
+@media(max-width:640px){
+  .alignwide{width:calc(100% - 34px)}
+  .lab-header-inner{min-height:67px}
+  .lab-brand-logo{width:155px}
+  .lab-grid-bg{padding-bottom:45px;background-size:32px 32px,32px 32px,auto,auto}
+  .lab-hero{min-height:510px;padding-top:45px!important;padding-bottom:50px!important;justify-content:flex-start}
+  .lab-hero h1{font-size:clamp(38px,9vw,55px)}
+  .lab-hero-copy-card>p{font-size:15px;margin-top:20px}
+  .lab-physics-hero__canvas{opacity:.35}
+  .lab-signal-strip{margin-bottom:22px!important}
+  .wp-container-core-group-is-layout-2a22776f{gap:12px;margin-bottom:63px!important}
+  .lab-metric{min-height:129px;padding:18px!important;border-radius:18px}
+  .lab-metric>strong{font-size:35px}.lab-metric>span{font-size:11px}
+  .lab-metric-combo__grid{gap:4px}.lab-metric-combo__grid strong{font-size:18px}.lab-metric-combo__grid em{font-size:8px}
+  .lab-section-head h2{font-size:clamp(33px,8vw,43px)}
+  .lab-section-head>p:not(.lab-pill){font-size:14px}
+  .lab-flow-grid{grid-template-columns:1fr;gap:14px}
+  .lab-flow-grid>.lab-flow-card:last-child{grid-column:auto}
+  .lab-flow-card{min-height:260px;padding:25px}
+  .lab-pillars-shell{margin-bottom:57px!important}
+  .lab-site-hub{padding:33px 20px!important;border-radius:27px}
+  .lab-hub-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .lab-hub-card,.lab-hub-card--wide{grid-column:span 1;min-height:193px;padding:17px;border-radius:17px}
+  .lab-hub-card strong{font-size:18px}.lab-hub-card em{font-size:11px}.lab-hub-card small{font-size:9px}
+  .lab-hub-card--wide{grid-column:span 2;min-height:170px}
+  .wp-container-core-group-is-layout-a057083a{align-items:flex-start;flex-direction:column;gap:4px}
+  .wp-block-post-template{grid-template-columns:1fr}
+  .lab-news-card{min-height:auto;padding:24px}
+  .lab-grid-bg>.has-ink-background-color{padding:34px 24px!important;border-radius:26px!important}
+  .wp-block-columns{grid-template-columns:1fr;gap:12px}
+  .wp-block-columns>.wp-block-column{border:0;border-bottom:1px solid #ffffff22;padding:13px 0}
+  .wp-block-columns>.wp-block-column:last-child{border:0}
+  .page-hero{padding:39px 0;min-height:300px}.page-hero h1{font-size:clamp(38px,9vw,53px)}
+  .page-lead{font-size:15px}.page-hero-art{right:-160px;opacity:.26}
+  .page-content{padding:23px!important}.prose{font-size:14px}
+  .page-sidebar{grid-template-columns:1fr}
+  .prose .directory-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:37px 22px}.footer-about{grid-column:span 2}
+  .footer-bottom{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.lab-reveal:not(.is-visible){opacity:1;transform:none}}
+
+/* =======================================================================
+   Fidelity pass 2: proportions and hero visuals taken from the saved HTML.
+   The saved WordPress page used a full-width 1593 x 820 canvas, not a tiny
+   dot-network. This override restores the intended large physics-ball stage.
+   ======================================================================= */
+:root { --lab-wide:1240px; --lab-frost:rgba(255,255,255,.84); }
+body { background:#f6f8fb; }
+.alignwide { width:min(var(--lab-wide),calc(100% - 60px)); }
+.lab-header { background:rgba(255,255,255,.91); border-bottom:1px solid rgba(111,139,179,.12); box-shadow:0 4px 30px rgba(26,51,83,.025); }
+.lab-header-inner { width:min(1320px,calc(100% - 58px)); min-height:83px; }
+.lab-brand-logo { width:177px; max-height:64px; object-fit:contain; }
+.lab-primary-nav .nav-item-head>a { color:#17243c; font-size:13px; }
+.lab-primary-nav .nav-item-head:hover { background:rgba(224,235,250,.62); }
+.lab-grid-bg {
+  background-color:#f6f8fb;
+  background-image:
+    linear-gradient(to right,rgba(56,95,144,.037) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(56,95,144,.037) 1px,transparent 1px),
+    radial-gradient(ellipse 47% 33% at 79% 10%,rgba(93,122,238,.15),transparent 85%),
+    radial-gradient(ellipse 35% 31% at 26% 7%,rgba(21,209,235,.12),transparent 83%);
+  background-size:45px 45px,45px 45px,auto,auto;
+}
+.lab-hero {
+  min-height:820px;
+  padding-top:81px!important;
+  padding-bottom:55px!important;
+  justify-content:center;
+  isolation:isolate;
+  overflow:visible;
+}
+.lab-hero>.lab-pill { z-index:4; margin-top:0; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:#52708f; background:rgba(255,255,255,.82); border:1px solid rgba(96,137,181,.2); }
+.lab-hero-copy-card {
+  max-width:785px;
+  width:min(785px,69%);
+  margin-top:21px;
+  padding:12px 44px 25px 0;
+  z-index:4!important;
+  background:linear-gradient(90deg,rgba(246,248,251,.94),rgba(246,248,251,.74) 72%,rgba(246,248,251,0));
+  border-radius:16px;
+}
+.lab-hero h1 {
+  font-size:clamp(47px,5.1vw,77px);
+  line-height:1.045;
+  letter-spacing:-.065em;
+  font-weight:700;
+  background:linear-gradient(108deg,#07111f 10%,#112847 59%,#5542a6 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.lab-hero-copy-card>p { font-size:clamp(16px,1.32vw,19px);line-height:1.82;max-width:690px;margin-top:29px;color:#546b85; }
+.lab-physics-hero {
+  position:absolute!important;
+  width:100vw;
+  height:100%;
+  left:50%;right:auto;top:0;bottom:0;
+  transform:translateX(-50%);
+  overflow:hidden;
+  z-index:1!important;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 93%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 93%,transparent 100%);
+}
+.lab-physics-hero::before {
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 33% 44% at 83% 47%,rgba(68,207,251,.12),transparent 76%),
+    radial-gradient(ellipse 26% 39% at 75% 60%,rgba(155,110,255,.095),transparent 81%);
+}
+.lab-physics-hero__canvas { position:absolute;inset:0;width:100%;height:100%;display:block;opacity:1; }
+.lab-physics-hero__grain { opacity:.14;background-image:radial-gradient(#7c9bcc .65px,transparent .65px);background-size:6px 6px;mask-image:linear-gradient(90deg,transparent 39%,black 100%); }
+.lab-signal-strip { background:rgba(255,255,255,.75);border-color:rgba(118,148,182,.2);border-radius:10px;margin-top:8px!important; }
+.lab-signal-strip__track {padding:14px 0;animation-duration:38s;}
+.lab-card { border:1px solid rgba(64,98,144,.13);box-shadow:0 16px 45px rgba(21,49,91,.065); }
+.lab-metric { border-radius:22px; }
+.lab-metric-combo { background:linear-gradient(127deg,#10243c 0%,#162c4b 58%,#3e2f7d 100%); }
+.lab-flow-card { border-radius:28px; }
+.lab-flow-card__orb { border-radius:50%;background:radial-gradient(circle at 30% 27%,#fff,#5cdeff 19%,#16a2ec 55%,#183a9d 100%);box-shadow:0 15px 29px rgba(21,131,216,.26),inset -6px -8px 12px rgba(9,33,92,.19),inset 3px 4px 7px rgba(255,255,255,.6);transform:none; }
+.lab-flow-card:nth-child(2) .lab-flow-card__orb { background:radial-gradient(circle at 29% 26%,#fff,#e3caff 18%,#9a6cf4 56%,#4d369c 100%); }
+.lab-flow-card:nth-child(3) .lab-flow-card__orb { background:radial-gradient(circle at 29% 26%,#fff,#b0f8df 18%,#10bdad 56%,#0b607c 100%); }
+.lab-site-hub { background:linear-gradient(115deg,#061427 0%,#0c2640 57%,#222858 100%); }
+.lab-site-hub .lab-section-head h2 {letter-spacing:-.058em;}
+.lab-footer{background:linear-gradient(140deg,#07111f,#101f33)}
+
+@media (max-width:1100px) {
+  .lab-hero { min-height:740px; }
+  .lab-hero-copy-card { width:min(740px,72%); }
+  .lab-hero h1 { font-size:clamp(45px,5.8vw,68px); }
+  .lab-brand-logo { width:157px; }
+}
+@media (max-width:920px) {
+  .lab-header-inner { width:calc(100% - 38px); }
+  .lab-hero { min-height:760px; padding-top:65px!important; }
+  .lab-hero-copy-card { width:min(650px,80%); }
+  .lab-hero h1 {font-size:clamp(45px,7vw,66px)}
+}
+@media (max-width:640px) {
+  .alignwide { width:calc(100% - 36px); }
+  .lab-brand-logo { width:153px; }
+  .lab-grid-bg { background-size:32px 32px,32px 32px,auto,auto; }
+  .lab-hero {
+    min-height:900px;
+    padding-top:58px!important;
+    padding-bottom:40px!important;
+    justify-content:flex-start;
+  }
+  .lab-hero>.lab-pill {font-size:9px;letter-spacing:.08em;line-height:1.6;}
+  .lab-hero-copy-card {width:100%;max-width:100%;padding:9px 0 15px;background:linear-gradient(to bottom,rgba(246,248,251,.9),rgba(246,248,251,.5));}
+  .lab-hero h1 { font-size:clamp(38px,10.3vw,57px);line-height:1.065;letter-spacing:-.06em; }
+  .lab-hero-copy-card>p {font-size:14px;line-height:1.7;margin-top:23px;max-width:490px;}
+  .lab-physics-hero__canvas {opacity:.92}
+  .lab-physics-hero__grain {opacity:.08}
+  .lab-signal-strip {margin-top:0!important;}
+  .lab-metric-combo__grid strong{font-size:18px}
+}
+@media (max-width:385px) {
+  .lab-hero {min-height:900px}
+  .lab-hero h1 {font-size:clamp(35px,9.7vw,42px)}
+}
+@media(prefers-reduced-motion:reduce) {
+  .lab-physics-hero__canvas {opacity:1} /* still render one static frame */
+}
+
+/* Version 3 — bilingual header, original press imagery and archives */
+.lab-header-inner{gap:12px}
+.language-selector{display:flex;align-items:center;gap:6px;flex:none;min-width:73px;font:800 12px/1 Inter,system-ui,sans-serif;letter-spacing:.045em;white-space:nowrap;border-radius:100px;background:#eff4fa;border:1px solid #dfe8f2;padding:9px 10px}
+.language-selector a{color:#65768c;padding:2px 1px}
+.language-selector a.is-current{color:#075ecc}
+.language-selector span{color:#bdc7d6}
+.lab-primary-nav{min-width:0}
+.nav-item-head>a{font-size:12px;padding-inline:8px 5px}
+@media(max-width:1100px){.nav-item-head>a{font-size:11px;padding-inline:6px 3px}.lab-brand-logo{width:152px}}
+@media(max-width:920px){.lab-primary-nav{order:3}.nav-toggle{margin-left:auto;order:2}.language-selector{order:1;margin-left:auto}.nav-toggle{margin-left:0}.lab-brand-link{margin-right:auto}}
+@media(max-width:370px){.lab-header-inner{gap:8px}.lab-brand-logo{width:135px}.language-selector{min-width:0;padding:8px}.nav-toggle{width:41px;height:41px}}
+.media-archive{margin-top:45px;border-top:1px solid #e3eaf2;padding-top:28px}
+.media-archive>h2{font-size:clamp(24px,2.5vw,32px);margin-bottom:22px;color:#13253b}
+.media-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.media-card{border:1px solid #e4eaf3;border-radius:18px;background:#fafdff;overflow:hidden;box-shadow:0 10px 30px #122b4911}
+.media-card-image{height:235px;display:block;overflow:hidden;background:linear-gradient(120deg,#eaf2fa,#f2eefe);border-bottom:1px solid #e9eff6}
+.media-card-image img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
+.media-card-image.image-unavailable{display:flex;align-items:center;justify-content:center}
+.media-card-image.image-unavailable::after{content:'Image on original site ↗';font-weight:700;color:#627b97;font-size:12px}
+.media-card-image.image-unavailable img{display:none}
+.media-card-body{padding:19px 20px 22px}
+.media-card-body h3{font-size:18px;line-height:1.35;margin:9px 0;color:#0b1a2c}
+.media-card-body p{font-size:13px;color:#61718a;line-height:1.6;margin:8px 0}
+.media-date{display:inline-flex;color:#0b70b1;font-size:11px;font-weight:850;letter-spacing:.08em;background:#e9f5fd;border-radius:100px;padding:5px 10px}
+.media-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
+.media-links a,.media-card-body>a{font-size:12px;font-weight:800;color:#1764c2}
+.news-list{display:grid;gap:14px}
+.news-list-item{padding:22px 24px;background:#f8fbff;border:1px solid #e3ecf6;border-radius:17px}
+.news-list-item time{font-size:11px;font-weight:850;letter-spacing:.1em;color:#587699}
+.news-list-item h3{font-size:21px;line-height:1.25;margin:10px 0}
+.news-list-item p{font-size:14px;line-height:1.75;margin-bottom:10px;color:#53667e}
+.news-list-item a{font-size:12px;font-weight:800}
+.home-media-teaser{padding:14px 0 68px}
+.home-media-teaser-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:26px}
+.home-media-teaser-heading h2{font-size:clamp(32px,3vw,44px);margin:15px 0 7px}
+.home-media-teaser-heading p:not(.lab-pill){color:#607189;font-size:15px}
+.home-media-teaser-heading>.lab-arrow-link{flex:none;font-weight:800;font-size:13px}
+.home-press-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-press-item{min-height:210px;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;border-radius:18px;background:#fff;border:1px solid #e1e7f0;color:#233349;box-shadow:var(--shadow)}
+.home-press-item>img{height:190px;width:100%;object-fit:contain;background:#f3f7fb}
+.home-press-item>span{font-weight:700;font-size:12px;padding:14px}
+@media(max-width:700px){.home-media-teaser-heading{align-items:flex-start;flex-direction:column}.media-cards{grid-template-columns:1fr}.media-card-image{height:260px}.home-press-grid{grid-template-columns:1fr 1fr}.home-press-item:last-child{display:none}}
+@media(max-width:420px){.home-press-grid{grid-template-columns:1fr}.home-press-item:last-child{display:flex}}
+
+/* ISISLab v4 — restrained visual system; research cyan / violet / teal only. */
+:root {
+  --research-distributed: #269bc3;
+  --research-collaborative: #8172b9;
+  --research-visualization: #329c90;
+  --border: rgba(29,53,78,.115);
+  --shadow: 0 10px 32px rgba(24,44,66,.035);
+}
+body { color:#182638;background:#fafbfc;-webkit-font-smoothing:antialiased; }
+.lab-grid-bg { background-color:#fafbfc;background-image:linear-gradient(rgba(41,69,92,.025) 1px, transparent 1px),linear-gradient(90deg,rgba(41,69,92,.025) 1px,transparent 1px);background-size:56px 56px; }
+.lab-header { background:rgba(255,255,255,.94);border-color:rgba(36,61,82,.095);box-shadow:none; }
+.lab-primary-nav .nav-item-head>a { font-weight:630; }
+.lab-hero { min-height:755px; }
+.lab-hero h1 { color:#162a3d;background:none;-webkit-text-fill-color:currentColor;letter-spacing:-.056em;font-weight:650; }
+.lab-hero-copy-card { max-width:755px;width:min(755px,64%);padding-right:18px;background:linear-gradient(90deg,rgba(250,251,252,.95) 0%,rgba(250,251,252,.78) 65%,transparent); }
+.lab-hero-copy-card>p {color:#627487;line-height:1.72;font-weight:420;max-width:615px;}
+.lab-hero>.lab-pill,.lab-pill {color:#566b7e;background:rgba(255,255,255,.66);border:1px solid rgba(56,77,102,.14);box-shadow:none;font-weight:650;letter-spacing:.11em;}
+.lab-physics-hero::before {background:none;}
+.lab-physics-hero__grain {opacity:.04;}
+.lab-physics-hero__canvas {opacity:1;}
+.lab-signal-strip {background:rgba(255,255,255,.66);border-color:rgba(30,58,84,.1);border-radius:0;}
+.lab-signal-strip__track span:before { color:#8ea2b5; }
+.lab-card,.lab-flow-card,.lab-news-card,.page-content,.sidebar-card,.source-card { border:1px solid rgba(32,57,81,.12);box-shadow:0 9px 34px rgba(30,49,68,.035); }
+.lab-metric,.lab-flow-card,.lab-hub-card,.lab-news-card { border-radius:17px; }
+.lab-metric:hover,.lab-flow-card:hover,.lab-hub-card:hover {transform:translateY(-2px);box-shadow:0 12px 34px rgba(23,45,65,.075);}
+.lab-flow-card {min-height:305px;padding:31px;}
+.lab-flow-card:before {display:none;}
+.lab-flow-card h3 {font-size:23px;font-weight:630;}
+.lab-flow-card__orb,.lab-flow-card:nth-child(2) .lab-flow-card__orb,.lab-flow-card:nth-child(3) .lab-flow-card__orb {
+  width:48px;height:48px;border-radius:50%;transform:none;
+  box-shadow:inset 0 1px 3px rgba(255,255,255,.78),0 3px 12px rgba(20,64,93,.045);
+  border:1px solid currentColor;
+}
+.lab-flow-card__orb { color:rgba(38,155,195,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(38,155,195,.16) 62%,rgba(38,155,195,.20)); }
+.lab-flow-card:nth-child(2) .lab-flow-card__orb {color:rgba(129,114,185,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(129,114,185,.16) 62%,rgba(129,114,185,.20));}
+.lab-flow-card:nth-child(3) .lab-flow-card__orb {color:rgba(50,156,144,.46);background:radial-gradient(circle at 29% 23%,rgba(255,255,255,.67),rgba(50,156,144,.16) 62%,rgba(50,156,144,.20));}
+.lab-site-hub {background:#ffffff;color:#213447;border:1px solid rgba(32,57,81,.12);box-shadow:none;border-radius:24px;}
+.lab-site-hub .lab-section-head h2 {color:#182c3d;}
+.lab-site-hub .lab-section-head>p:not(.lab-pill) {color:#66798b;}
+.lab-site-hub .lab-pill {background:#f6f8fa;color:#586d83;border-color:#e2e8ed;}
+.lab-site-hub__composition {opacity:.055;filter:grayscale(1);}
+.lab-hub-card {background:#fafbfc;border:1px solid rgba(32,57,81,.1);color:#253b4e;box-shadow:none;}
+.lab-hub-card strong {color:#1c3143;}
+.lab-hub-card em,.lab-hub-card small {color:#697e8f;}
+.lab-hub-card__mark {opacity:.4;}
+.lab-metric-combo {background:#24374a;}
+.lab-footer {background:#17293b;}
+.page-hero-art {opacity:.28;filter:saturate(.45);}
+.page-hero {min-height:285px;}
+.page-hero h1 {font-weight:650;letter-spacing:-.05em;}
+.language-selector {border-color:rgba(32,57,81,.13);}
+.research-legend {position:absolute!important;z-index:6!important;bottom:42px;right:0;display:flex;gap:16px;align-items:center;max-width:550px;}
+.research-legend a {display:inline-flex;align-items:center;gap:7px;white-space:nowrap;color:#506b7f;font-weight:600;font-size:11px;letter-spacing:.015em;padding:7px 0;border-bottom:1px solid transparent;transition:color .2s,border .2s;}
+.research-legend a:hover,.research-legend a:focus-visible {color:#233c51;border-color:currentColor;}
+.research-legend i {display:inline-block;width:10px;height:10px;border-radius:100%;border:1px solid currentColor;background:color-mix(in srgb,currentColor 12%,transparent);}
+.research-legend a:nth-child(1) i{color:var(--research-distributed)}
+.research-legend a:nth-child(2) i{color:var(--research-collaborative)}
+.research-legend a:nth-child(3) i{color:var(--research-visualization)}
+/* People — refined portrait index sourced from the original laboratory website. */
+.people-intro {color:#68798a;font-size:14px;line-height:1.7;margin:.5rem 0 2.2rem;}
+.people-section {margin-top:2.6rem;}
+.prose .people-section h2 {margin:0 0 1.25rem;font-size:clamp(22px,2.3vw,29px);font-weight:650;}
+.people-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;}
+.person-card {margin:0!important;display:block;min-width:0;border:1px solid rgba(32,57,81,.115);background:white;border-radius:14px;overflow:hidden;box-shadow:none;transition:border-color .2s,transform .2s;}
+.person-card:hover {transform:translateY(-2px);border-color:rgba(43,112,145,.24);}
+.person-photo {display:grid;place-items:center;position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#f0f4f6;}
+.person-photo img {width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;filter:saturate(.76);transition:filter .25s,transform .35s;}
+.person-card:hover .person-photo img {filter:saturate(.92);transform:scale(1.02);}
+.person-photo--empty {background:linear-gradient(145deg,#f1f5f7,#e6edef);}
+.person-photo--empty:after {content:"";position:absolute;inset:13%;border:1px solid rgba(51,77,100,.075);border-radius:50%;}
+.person-initials {font-size:clamp(26px,3vw,39px);font-family:'Space Grotesk',Inter,sans-serif;font-weight:500;letter-spacing:-.06em;color:#a2b4be;}
+.person-meta {padding:15px 16px 17px;}
+.person-meta h3,.prose .person-meta h3 {margin:0!important;font-family:Inter,system-ui,sans-serif;font-size:14px;font-weight:650;line-height:1.35;letter-spacing:-.02em;}
+.person-meta p {font-size:11px;color:#82909d;margin:6px 0 0!important;font-weight:500;}
+.people-source {margin-top:2.5rem;font-size:12px;color:#708295;}
+@media (max-width:1100px){.lab-hero-copy-card{width:min(680px,70%)}.research-legend{bottom:32px}}
+@media (max-width:760px){.people-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.person-meta{padding:13px}}
+@media (max-width:640px){.lab-hero{min-height:790px;padding-top:54px!important}.lab-hero-copy-card{width:100%;padding-right:0;background:linear-gradient(to bottom,rgba(250,251,252,.96),rgba(250,251,252,.60));}.lab-hero h1{font-size:clamp(38px,10vw,55px)}.lab-hero-copy-card>p{font-size:14px}.research-legend{position:absolute!important;right:auto;left:0;bottom:19px;flex-wrap:wrap;gap:5px 13px;max-width:100%}.research-legend a{font-size:10px}.lab-physics-hero__grain{opacity:0}.lab-physics-hero__canvas{opacity:1}}
+@media(max-width:390px){.people-grid{grid-template-columns:1fr 1fr}.person-meta h3,.prose .person-meta h3{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.person-card,.person-photo img{transform:none!important}}
+
+/* Editorial media pages */
+.media-card,.news-list-item,.home-press-item {background:#fff;border:1px solid rgba(32,57,81,.11);border-radius:14px;box-shadow:none;}
+.media-card-image {background:#f6f8fa;border-bottom:1px solid rgba(32,57,81,.09);}
+.media-date {background:#edf4f7;color:#40768d;letter-spacing:.035em;font-weight:650;}
+.news-list-item {padding:25px 27px;}
+.home-press-item>img {background:#f4f6f7;}
+
+/* V5 visual fidelity — supplied luminous glass-sphere screenshot. */
+:root{--research-distributed:#04c8ef;--research-collaborative:#9367f9;--research-visualization:#0dc08d}
+.lab-grid-bg{
+ background-color:#f5f8fc;
+ background-image:linear-gradient(rgba(91,114,144,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(91,114,144,.075) 1px,transparent 1px),radial-gradient(ellipse 42% 31% at 99% 1%,rgba(76,172,255,.16),transparent),radial-gradient(ellipse 41% 30% at 3% 40%,rgba(152,105,255,.10),transparent);
+ background-size:46px 46px,46px 46px,auto,auto
+}
+.lab-hero{
+ min-height:810px!important;padding-top:92px!important;padding-bottom:105px!important;
+ align-items:center;justify-content:center;overflow:visible;
+}
+.lab-hero>.lab-pill{
+ align-self:center;z-index:5!important;position:relative;text-align:center;
+ background:rgba(255,255,255,.77);color:#164668;
+ padding:10px 17px;box-shadow:0 4px 25px #14b3dc12;
+ border:1px solid rgba(255,255,255,.85);font-size:12px;letter-spacing:.035em
+}
+.lab-hero-copy-card{
+ width:min(910px,94%)!important;max-width:910px!important;
+ padding:33px 36px 38px!important;margin-top:22px!important;
+ background:linear-gradient(135deg,rgba(244,252,255,.72),rgba(255,255,255,.58) 58%,rgba(245,242,255,.65))!important;
+ border:1px solid rgba(222,230,239,.89);border-radius:42px;
+ box-shadow:0 21px 61px rgba(41,62,88,.12),inset 0 1px 0 rgba(255,255,255,.78);
+ -webkit-backdrop-filter:blur(22px) saturate(1.1);backdrop-filter:blur(22px) saturate(1.1);
+ z-index:5!important;
+}
+.lab-hero h1{
+ max-width:100%;color:#061424!important;background:none!important;-webkit-text-fill-color:currentColor!important;
+ font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:clamp(42px,4.55vw,76px)!important;
+ font-weight:750;letter-spacing:-.068em;line-height:1.03;
+}
+.lab-hero-copy-card>p{font-size:clamp(16px,1.43vw,22px)!important;color:#303f55!important;line-height:1.6!important;max-width:840px!important;margin-top:23px!important;font-weight:400}
+.lab-physics-hero{width:100vw;overflow:hidden;mask-image:none!important;-webkit-mask-image:none!important;z-index:1!important}
+.lab-physics-hero::before{background:radial-gradient(ellipse 28% 41% at 91% 34%,rgba(73,175,255,.12),transparent 97%),radial-gradient(ellipse 31% 36% at 14% 70%,rgba(61,212,244,.12),transparent 95%),radial-gradient(ellipse 29% 36% at 55% 28%,rgba(155,104,246,.10),transparent 95%)!important}
+.lab-physics-hero__grain{display:none}
+.lab-physics-hero__canvas{opacity:1!important}
+.research-legend{bottom:27px!important;left:50%!important;right:auto!important;transform:translateX(-50%);justify-content:center;max-width:95%;background:rgba(255,255,255,.63);padding:6px 15px;border:1px solid rgba(223,232,239,.7);border-radius:30px;z-index:5!important;backdrop-filter:blur(14px)}
+.research-legend a{font-size:11px;letter-spacing:0}
+@media(max-width:920px){.lab-hero{min-height:780px!important}.lab-hero-copy-card{width:min(745px,95%)!important;padding:27px!important;border-radius:32px}.lab-hero h1{font-size:clamp(43px,6.3vw,66px)!important}}
+@media(max-width:640px){
+ .lab-hero{min-height:865px!important;padding-top:62px!important;padding-bottom:145px!important;justify-content:flex-start;}
+ .lab-hero>.lab-pill{font-size:9px;line-height:1.45;max-width:100%}
+ .lab-hero-copy-card{width:100%!important;padding:24px 23px 27px!important;margin-top:18px!important;border-radius:27px;background:rgba(248,252,255,.77)!important;backdrop-filter:blur(17px)}
+ .lab-hero h1{font-size:clamp(35px,9.25vw,52px)!important;line-height:1.06}
+ .lab-hero-copy-card>p{font-size:14px!important;line-height:1.62!important;margin-top:19px!important}
+ .research-legend{width:calc(100% - 20px);bottom:20px!important;flex-wrap:wrap;gap:0 12px;border-radius:15px;}
+ .research-legend a{font-size:10px}
+}
+/* Editorial press thumbnails: compact on home and listing, full-size in detail. */
+.home-media-teaser{padding-top:20px;padding-bottom:75px}
+.home-media-teaser-heading{margin-bottom:22px}
+.home-press-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.home-press-item{display:flex!important;flex-direction:row;align-items:center;min-height:110px;border-radius:16px;background:#fff;padding:12px;gap:15px;box-shadow:0 2px 16px rgba(24,45,63,.035);transition:border-color .2s,transform .2s}
+.home-press-item:hover{transform:translateY(-2px);border-color:#aac6d8;color:#122f44}
+.home-press-item>img{width:94px;height:90px;flex:0 0 94px;object-fit:cover;object-position:top;background:#f1f4f7;border-radius:9px}
+.home-press-item .press-thumb-info{display:grid;gap:5px;min-width:0}
+.home-press-item .press-thumb-info time{font:600 10px/1.5 Inter,sans-serif;color:#6c8191;letter-spacing:.035em}
+.home-press-item .press-thumb-info strong{font-size:14px;line-height:1.3;color:#152d3c;letter-spacing:-.02em;overflow-wrap:break-word}
+.home-press-item .press-thumb-info small{font-size:11px;line-height:1.45;color:#657989}
+.media-cards{grid-template-columns:1fr;gap:12px}
+.media-card{display:flex;align-items:center;min-height:122px;border-radius:15px;box-shadow:none}
+.media-card-image{width:116px;height:112px;flex:0 0 116px;border:0;border-radius:10px;margin:8px;overflow:hidden}
+.media-card-image img{object-fit:cover;object-position:top}
+.media-card-body{padding:12px 17px}
+.media-card-body h3{font-size:16px;margin:5px 0}
+.media-card-body p{font-size:12px;margin:4px 0}
+.media-links{margin-top:8px}
+.press-article .press-feature{margin:30px 0 13px;padding:18px;background:#f4f7fa;border:1px solid #e0e6ed;border-radius:18px;text-align:center}
+.press-article .press-feature img{width:auto;max-width:100%;height:auto;max-height:1200px;object-fit:contain;border-radius:6px}
+.press-article .press-figure-caption{font-size:12px;color:#708090;text-align:center;margin-top:10px}
+.press-article .press-source{display:block;margin-top:18px;font-size:13px;color:#617487}
+.press-article .press-back{font-size:13px;font-weight:650;display:inline-block;margin-top:18px}
+.news-list-item a{color:#176a93}
+.news-list-item .article-small-img{width:100px;height:84px;object-fit:cover;object-position:center;border-radius:9px;float:left;margin-right:17px}
+.news-list-item:after{content:'';display:block;clear:both}
+.article-hero-img{max-width:100%;max-height:800px;height:auto;object-fit:contain;margin:15px 0 22px;border-radius:12px}
+@media(max-width:1100px){.home-press-grid{grid-template-columns:1fr 1fr}.home-press-item:last-child{display:flex}}
+@media(max-width:700px){.home-press-grid{grid-template-columns:1fr}.home-press-item{min-height:93px}.home-press-item>img{height:76px;flex-basis:81px;width:81px}.media-card-image{width:88px;height:94px;flex-basis:88px}.home-press-item:last-child{display:flex}}
+.home-news-thumb{display:block;height:115px;overflow:hidden;margin:-18px -18px 17px;border-radius:13px;background:#f1f6f8}
+.home-news-thumb img{width:100%;height:100%;object-fit:cover;object-position:center}
+.lab-news-card{padding:18px!important}
+.lab-news-more{margin-top:auto}
+.gallery-large summary{font-weight:650;font-size:12px;color:#236d94;cursor:pointer;list-style-position:inside;margin-top:12px}
+.gallery-large[open]{width:100%;margin:10px 0}
+.gallery-large img{width:100%;height:auto;max-height:720px;object-fit:contain;padding:12px;background:#f8fafb}
+
+/* V6 official ISISLab artwork, recomposed from the supplied transparent logo. */
+.lab-header .lab-brand-logo {width:205px!important;max-height:62px!important;height:auto!important;object-fit:contain}
+.lab-footer .footer-about img {width:213px!important;max-height:80px!important;height:auto!important;filter:none!important}
+@media(max-width:1120px){.lab-header .lab-brand-logo{width:169px!important}}
+@media(max-width:620px){.lab-header .lab-brand-logo{width:164px!important;max-height:55px!important}}
+@media(max-width:370px){.lab-header .lab-brand-logo{width:143px!important}}
+/* News and press archives: compact original thumbnails, full images on details. */
+.archive-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin:0 0 24px}.archive-head h2{margin:0}.archive-count{font-size:12px;color:#778494;white-space:nowrap}
+.media-archive .news-list{display:grid;gap:14px}.media-archive .news-list-item{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:center;background:#fff;border:1px solid #e7ebf0;box-shadow:none;border-radius:16px;padding:13px;min-width:0}
+.archive-thumb{width:150px;height:114px;display:block;overflow:hidden;background:#f3f6f8;border-radius:10px}.media-archive .article-small-img{width:100%;height:100%;object-fit:cover;display:block}.archive-item-copy{min-width:0}.archive-item-copy h3{font-size:19px;line-height:1.28;margin:6px 0}.archive-item-copy p{font-size:13px;line-height:1.45;margin:0 0 6px}.archive-read{font-weight:700;font-size:12px;color:#2463a7}
+.media-archive .media-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.media-archive .media-card{border-radius:15px;box-shadow:none;border-color:#e7ebf0}.media-archive .media-card-image{height:134px;padding:10px;background:#f4f6f9;border:0}.media-archive .media-card-image img{object-fit:contain;height:100%;background:transparent}.media-archive .media-card-body{padding:12px 15px 17px}.media-archive .media-card-body h3{font-size:15px;margin:9px 0 5px}.media-archive .media-card-body p{font-size:12px;margin:5px 0 12px}
+.archive-pagination{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:34px 0 10px}.archive-page-number,.archive-page-arrow{display:inline-flex;align-items:center;justify-content:center;min-width:39px;height:39px;padding:0 11px;background:#fff;border:1px solid #dfe7ee;border-radius:10px;color:#32475b;text-decoration:none!important;font-weight:650;font-size:13px}.archive-page-number.is-current{background:#102b46;color:#fff;border-color:#102b46}.archive-page-number:hover,.archive-page-arrow:hover{border-color:#9bb9d9;color:#0a66a9}
+@media(max-width:840px){.media-archive .media-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.media-archive .news-list-item{grid-template-columns:104px minmax(0,1fr);gap:12px;padding:10px}.archive-thumb{width:104px;height:104px}.archive-item-copy h3{font-size:15px}.archive-item-copy p{font-size:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.media-archive .media-cards{grid-template-columns:1fr 1fr;gap:10px}.media-archive .media-card-image{height:110px;padding:8px}.media-archive .media-card-body{padding:10px}.media-archive .media-card-body h3{font-size:13px}.media-archive .media-card-body p{font-size:11px}.archive-head{align-items:flex-start;flex-direction:column;gap:4px}}
+
+/* ISISLab v10 — typographic refinement, matching glass research orbs and hub icons.
+   Loaded after the reference styles so the three requested changes are isolated. */
+
+/* More generous but restrained type scale. */
+body {font-size:16.5px; line-height:1.68;}
+.lab-primary-nav .nav-item-head>a {font-size:13.5px;line-height:1.35;}
+.lab-pill, .lab-hero>.lab-pill {font-size:12px;}
+.lab-hero-copy-card>p {font-size:clamp(17px,1.45vw,22px)!important;line-height:1.7!important;}
+.research-legend a {font-size:12px;}
+.lab-section-head h2 {font-size:clamp(36px,3.7vw,55px);line-height:1.12;letter-spacing:-.051em;}
+.lab-section-head>p:not(.lab-pill) {font-size:17px;line-height:1.75;}
+.lab-metric>span {font-size:14px;}
+.lab-metric-combo__grid em {font-size:11px;line-height:1.55;}
+.lab-flow-card {min-height:340px;padding:32px;overflow:hidden;}
+.lab-flow-card>p {font-size:11px;line-height:1.55;letter-spacing:.075em;}
+.lab-flow-card h3 {font-size:clamp(23px,2.05vw,27px);line-height:1.22;font-weight:675;letter-spacing:-.044em;}
+.lab-flow-card small {font-size:15px;line-height:1.73;margin-top:15px;margin-bottom:23px;}
+.lab-pillar-link {font-size:14px;}
+.lab-hub-card {min-height:232px;padding:25px;}
+.lab-hub-card strong {font-size:23px;line-height:1.22;letter-spacing:-.038em;}
+.lab-hub-card em {font-size:14px;line-height:1.63;margin-top:11px;}
+.lab-hub-card small {font-size:11.5px;line-height:1.55;padding-top:17px;font-weight:600;}
+.lab-news-card .wp-block-post-title {font-size:23px;line-height:1.29;}
+.wp-block-post-excerpt__excerpt {font-size:14px;line-height:1.75;}
+.lab-news-more,.lab-arrow-link a {font-size:14px;}
+.home-press-item .press-thumb-info strong {font-size:15px;}
+.home-press-item .press-thumb-info small {font-size:12px;}
+/* Interior page readability, archive entries, and team grid. */
+.page-lead {font-size:18px;line-height:1.78;}
+.prose {font-size:16px;line-height:1.82;}
+.prose h2 {line-height:1.18;}
+.person-meta h3,.prose .person-meta h3 {font-size:15.5px;}
+.person-meta p {font-size:12px;}
+.media-archive .archive-item-copy p {font-size:14px;}
+.media-archive .archive-item-copy h3 {font-size:20px;}
+.footer-about p,.footer-links a {font-size:13px;}
+
+/* The three research symbols are the same translucent glass spheres and
+   the same cyan / violet / green colors as the large animated hero balls. */
+.lab-pillars-grid .lab-flow-card:nth-child(1) {--orb-rgb:4,200,239;}
+.lab-pillars-grid .lab-flow-card:nth-child(2) {--orb-rgb:147,103,249;}
+.lab-pillars-grid .lab-flow-card:nth-child(3) {--orb-rgb:13,192,141;}
+.research-orb-wrap {
+  width:118px;height:108px;flex:none;position:relative;
+  display:flex;align-items:center;justify-content:center;margin:-8px 0 14px -7px;
+  isolation:isolate;pointer-events:none;
+}
+.research-orb-wrap::before {
+  content:"";position:absolute;inset:-7px;
+  background:radial-gradient(circle,rgba(var(--orb-rgb),.22) 0%,rgba(var(--orb-rgb),.12) 34%,rgba(var(--orb-rgb),0) 76%);
+  filter:blur(5px);z-index:-1;
+}
+.lab-pillars-grid .lab-flow-card .lab-flow-card__orb {
+  display:block;position:relative;isolation:isolate;
+  width:74px;height:74px;flex:none;border-radius:50%;transform:none;
+  /* Bright core + tinted translucent shell reproduces the hero canvas rendering. */
+  background:
+    radial-gradient(circle at 28% 29%,rgba(255,255,255,.99) 0%,rgba(255,255,255,.81) 7%,rgba(255,255,255,.15) 19%,transparent 28%),
+    radial-gradient(circle at 33% 28%,rgba(255,255,255,.88) 0%,rgba(var(--orb-rgb),.71) 14%,rgba(var(--orb-rgb),.56) 37%,rgba(var(--orb-rgb),.31) 70%,rgba(var(--orb-rgb),.12) 91%,rgba(255,255,255,.14) 100%);
+  border:1px solid rgba(255,255,255,.84);
+  box-shadow:
+    0 0 0 1px rgba(var(--orb-rgb),.13),
+    0 7px 28px rgba(var(--orb-rgb),.20),
+    0 0 24px rgba(var(--orb-rgb),.20),
+    inset 0 1px 3px rgba(255,255,255,.84),
+    inset -4px -6px 10px rgba(var(--orb-rgb),.06);
+  animation:research-orb-float 7s ease-in-out infinite alternate;
+  margin:0;
+}
+.lab-pillars-grid .lab-flow-card:nth-child(2) .lab-flow-card__orb {animation-delay:-2.4s;}
+.lab-pillars-grid .lab-flow-card:nth-child(3) .lab-flow-card__orb {animation-delay:-4.7s;}
+.lab-pillars-grid .lab-flow-card .lab-flow-card__orb::after {
+  content:"";position:absolute;left:15%;top:14%;width:32%;height:30%;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.98),rgba(255,255,255,.58) 40%,rgba(255,255,255,0) 77%);
+  filter:blur(1px);pointer-events:none;
+}
+@keyframes research-orb-float {from{translate:0 3px;}to{translate:0 -4px;}}
+
+/* Explore ISISLab has icons rather than spheres: distinct shapes + a separate,
+   understated editorial palette (rust, amber, navy, rose and slate). */
+.lab-hub-card__icon {
+  --icon-ink:#a47c44; --icon-bg:#f9f2e9;
+  display:grid;place-items:center;width:48px;height:48px;flex:none;
+  border-radius:14px;background:var(--icon-bg);color:var(--icon-ink);
+  border:1px solid color-mix(in srgb,var(--icon-ink) 14%,transparent);
+  margin-bottom:19px;opacity:1;transform:none;
+  transition:transform .25s ease,background .25s ease;
+}
+.lab-hub-card__icon svg {width:25px;height:25px;display:block;stroke:currentColor;fill:none;}
+.lab-hub-card:hover .lab-hub-card__icon {transform:translateY(-2px);}
+.lab-hub-card__icon--lab {--icon-ink:#a87b3f;--icon-bg:#f8f0e3;}
+.lab-hub-card__icon--research {--icon-ink:#b45e52;--icon-bg:#fcf0ec;}
+.lab-hub-card__icon--projects {--icon-ink:#596f9d;--icon-bg:#edf1f9;}
+.lab-hub-card__icon--teaching {--icon-ink:#9c803d;--icon-bg:#f8f4e6;}
+.lab-hub-card__icon--thesis {--icon-ink:#ae6b53;--icon-bg:#faf0eb;}
+.lab-hub-card__icon--impact {--icon-ink:#ab5e79;--icon-bg:#f9edf2;}
+.lab-hub-card__icon--partners {--icon-ink:#597889;--icon-bg:#ecf2f5;}
+.lab-hub-card__icon--news {--icon-ink:#a5565e;--icon-bg:#faeff0;}
+.lab-hub-card--accent {background:#fafbfc;border:1px solid rgba(32,57,81,.1);}
+.lab-hub-card--accent:hover {background:#fff;}
+
+@media(max-width:1100px) {
+  .lab-primary-nav .nav-item-head>a {font-size:12.5px;}
+  .lab-flow-card {padding:27px;}
+  .lab-hub-card {padding:21px;}
+  .lab-hub-card strong {font-size:21px;}
+  .lab-hub-card em {font-size:13.5px;}
+}
+@media(max-width:920px) {
+  .lab-primary-nav .nav-item-head>a {font-size:15px;}
+  .lab-flow-card {min-height:320px;}
+}
+@media(max-width:640px) {
+  body {font-size:16px;}
+  .lab-hero-copy-card>p {font-size:15.5px!important;line-height:1.69!important;}
+  .lab-hero>.lab-pill {font-size:10px;}
+  .research-legend a {font-size:11px;}
+  .lab-section-head h2 {font-size:clamp(34px,8vw,44px);}
+  .lab-section-head>p:not(.lab-pill) {font-size:15.5px;line-height:1.73;}
+  .lab-metric>span {font-size:12px;}
+  .lab-flow-card {min-height:0;padding:28px;}
+  .lab-flow-card h3 {font-size:25px;}
+  .lab-flow-card small {font-size:14.5px;}
+  .research-orb-wrap {margin-bottom:10px;}
+  .lab-hub-card,.lab-hub-card--wide {padding:19px;min-height:224px;}
+  .lab-hub-card--wide {min-height:190px;}
+  .lab-hub-card__icon {width:43px;height:43px;border-radius:12px;margin-bottom:16px;}
+  .lab-hub-card__icon svg {width:23px;height:23px;}
+  .lab-hub-card strong {font-size:19px;line-height:1.25;}
+  .lab-hub-card em {font-size:12.5px;line-height:1.55;}
+  .lab-hub-card small {font-size:10.5px;line-height:1.48;}
+  .lab-news-card .wp-block-post-title {font-size:22px;}
+  .page-lead {font-size:16px;}
+  .prose {font-size:15px;}
+  .media-archive .archive-item-copy h3 {font-size:16px;}
+  .media-archive .archive-item-copy p {font-size:12px;}
+}
+@media(max-width:380px) {
+  .lab-hub-card,.lab-hub-card--wide {padding:15px;}
+  .lab-hub-card strong {font-size:18px;}
+  .lab-hub-card em {font-size:12px;}
+  .lab-hub-card small {font-size:10px;}
+}
+@media(prefers-reduced-motion:reduce){
+  .lab-pillars-grid .lab-flow-card .lab-flow-card__orb {animation:none;}
+  .lab-hub-card__icon {transition:none;}
+}
+
+/* Balanced four-by-two navigation grid; avoid the solitary final card. */
+.lab-hub-card--wide {grid-column:auto;background:#fafbfc;}
+@media(max-width:1100px) {
+  .lab-hub-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:640px) {
+  /* Single-column editorial cards make body text comfortably legible on phones. */
+  .lab-hub-grid {grid-template-columns:1fr;gap:11px;}
+  .lab-hub-card,.lab-hub-card--wide {
+    grid-column:auto;min-height:0;padding:19px;
+    display:grid;grid-template-columns:43px minmax(0,1fr);column-gap:15px;row-gap:3px;
+    align-items:start;
+  }
+  .lab-hub-card__icon {grid-column:1;grid-row:1 / span 3;margin:0;}
+  .lab-hub-card strong {grid-column:2;font-size:20px;}
+  .lab-hub-card em {grid-column:2;font-size:14px;margin-top:3px;}
+  .lab-hub-card small {grid-column:2;font-size:11.5px;margin-top:7px;padding:0;}
+}
+</style></head><body class="home"><a class="skip-link" href="#main-content">Vai al contenuto</a><header class="lab-header" id="top"><div class="lab-header-inner alignwide"><a class="lab-brand-link" href="#top"><img class="lab-brand-logo" src="assets/img/isislab-brand-horizontal.png" alt="ISISLab"></a><button class="nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button><nav class="lab-primary-nav" id="main-navigation"><ul class="nav-list"><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/chi-siamo/">Il laboratorio</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/chi-siamo/">Chi siamo</a></li><li><a href="/chi-siamo/#persone">Persone e gruppo</a></li><li><a href="/dicono-di-noi/">Dicono di noi</a></li><li><a href="/rassegna-stampa/">Rassegna stampa</a></li><li><a href="/premi-e-riconoscimenti/">Premi e riconoscimenti</a></li><li><a href="/come-raggiungerci/">Come raggiungerci</a></li></ul></li><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/tematiche/">Ricerca</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/tematiche/">Linee di ricerca</a></li><li><a href="/pubblicazioni-scientifiche/">Pubblicazioni</a></li><li><a href="/risorse-utili/">Risorse e SLR</a></li><li><a href="/systematic-literature-reviews/">Systematic Literature Reviews</a></li></ul></li><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/progetti/">Progetti</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/progetti/">Tutti i progetti</a></li><li><a href="/progetti-con-le-scuole/">Progetti con le scuole</a></li><li><a href="/public-engagement/">Public engagement</a></li></ul></li><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/lauree-triennale-e-magistrale/">Didattica</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/lauree-triennale-e-magistrale/">Corsi</a></li><li><a href="/indirizzo-cloud-computing/">Indirizzo Cloud Computing</a></li><li><a href="/informazioni-utili/">Tesi</a></li><li><a href="/cosa-si-fa-in-isislab-stage-o-tesi/">Tirocini e tesi</a></li><li><a href="/risorse-per-gli-studenti/">Risorse studenti</a></li><li><a href="/faq-seminari/">FAQ seminari</a></li></ul></li><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/convenzioni-e-contratti-di-ricerca/">Enti esterni</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/public-engagement/">Impatto sociale</a></li><li><a href="/progetti-con-le-scuole/">Scuole e territorio</a></li><li><a href="/convenzioni-e-contratti-di-ricerca/">Convenzioni e contratti</a></li><li><a href="/dottorato-di-ricerca-industriale/">Dottorato industriale</a></li><li><a href="/collaborazioni-con-enti-stranieri/">Collaborazioni estere</a></li></ul></li><li class="nav-item nav-item--parent"><div class="nav-item-head"><a href="/news/">News</a><button class="submenu-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 12 12"><path d="m2 4 4 4 4-4"/></svg></button></div><ul class="nav-dropdown"><li><a href="/news/">News</a></li><li><a href="/events/list/">Seminari</a></li><li><a href="/blog/">Blog</a></li><li><a href="/galleria/">Galleria</a></li></ul></li></ul></nav><div class="language-selector"><a class="is-current" href="preview.html">IT</a> / <a href="preview-en.html" data-language-choice="en">EN</a></div></div></header>
+<main class="wp-block-group lab-grid-bg is-layout-constrained wp-container-core-group-is-layout-ca01f9af wp-block-group-is-layout-constrained" id="main-content">
+<div class="wp-block-group alignwide lab-hero lab-reveal is-layout-constrained wp-block-group-is-layout-constrained is-visible" style="padding-top: var(--wp--preset--spacing--80); padding-bottom: var(--wp--preset--spacing--70); --lab-reveal-delay: 0ms;">
+<p class="lab-pill wp-block-paragraph">Dal 1995 · Computer Science · University of Salerno</p>
+<div class="lab-hero-copy-card">
+<h1>Dove il calcolo scalabile incontra la collaborazione aperta e l’interazione immersiva.</h1>
+<p>ISISLab unisce cloud/edge computing, simulazioni, sistemi complessi, open data, collaborazione, visualizzazione e XR per progettare sistemi che scalano e coinvolgono persone, studenti, comunità e l’industria.</p>
+</div>
+<nav class="research-legend" aria-label="Research directions">
+<a data-research-index="0" href="/tematiche/#distributed-and-parallel-computations"><i aria-hidden="true"></i>Calcolo distribuito</a>
+<a data-research-index="1" href="/tematiche/#collaborative-and-social-calculation"><i aria-hidden="true"></i>Calcolo collaborativo</a>
+<a data-research-index="2" href="/tematiche/#visualization-and-interaction"><i aria-hidden="true"></i>Visualizzazione</a>
+</nav>
+<div aria-hidden="true" class="lab-physics-hero" data-physics-hero="">
+<canvas aria-hidden="true" class="lab-physics-hero__canvas"></canvas>
+<div class="lab-physics-hero__grain"></div>
+</div>
+</div>
+<div aria-label="Research topics" class="lab-signal-strip alignwide">
+<div class="lab-signal-strip__track">
+<span>Complex Network</span><span>Cloud &amp; Edge Computing</span><span>Massive simulations</span><span>Open Data co-creation</span><span>Privacy-aware collaboration</span><span>Virtual Reality</span><span>Scalable visualization</span>
+<span>Complex Network</span><span>Cloud &amp; Edge Computing</span><span>Massive simulations</span><span>Open Data co-creation</span><span>Privacy-aware collaboration</span><span>Virtual Reality</span><span>Scalable visualization</span>
+</div>
+</div>
+<div class="wp-block-group alignwide is-layout-grid wp-container-core-group-is-layout-2a22776f wp-block-group-is-layout-grid">
+<div class="wp-block-group lab-card lab-metric is-layout-flow wp-block-group-is-layout-flow lab-reveal is-visible" style="padding-top: var(--wp--preset--spacing--50); padding-right: var(--wp--preset--spacing--50); padding-bottom: var(--wp--preset--spacing--50); padding-left: var(--wp--preset--spacing--50); --lab-reveal-delay: 32ms;"><strong>1995</strong><span>Anno di fondazione</span></div>
+<div class="wp-block-group lab-card lab-metric is-layout-flow wp-block-group-is-layout-flow lab-reveal is-visible" style="padding-top: var(--wp--preset--spacing--50); padding-right: var(--wp--preset--spacing--50); padding-bottom: var(--wp--preset--spacing--50); padding-left: var(--wp--preset--spacing--50); --lab-reveal-delay: 64ms;"><strong>20+</strong><span>Progetti di ricerca</span></div>
+<div class="wp-block-group lab-card lab-metric is-layout-flow wp-block-group-is-layout-flow lab-reveal is-visible" style="padding-top: var(--wp--preset--spacing--50); padding-right: var(--wp--preset--spacing--50); padding-bottom: var(--wp--preset--spacing--50); padding-left: var(--wp--preset--spacing--50); --lab-reveal-delay: 96ms;"><strong>3</strong><span>Aree scientifiche</span></div>
+<div class="wp-block-group lab-card lab-metric lab-metric-combo is-layout-flow wp-block-group-is-layout-flow lab-reveal is-visible" style="padding-top: var(--wp--preset--spacing--50); padding-right: var(--wp--preset--spacing--50); padding-bottom: var(--wp--preset--spacing--50); padding-left: var(--wp--preset--spacing--50); --lab-reveal-delay: 128ms; --mx: 50%; --my: 50%;">
+<div class="lab-metric-combo__grid">
+<span><strong>19</strong><em>Membri attuali</em></span>
+<span><strong>150+</strong><em>Studenti laureati</em></span>
+<span><strong>20+</strong><em>Dottori di ricerca</em></span>
+</div>
+</div>
+</div>
+<section aria-labelledby="lab-pillars-title" class="lab-pillars-shell alignwide lab-reveal is-visible" style="--lab-reveal-delay: 160ms;">
+<div class="lab-section-head">
+<p class="lab-pill">Direttrici di ricerca</p>
+<h2 id="lab-pillars-title">Le principali linee di ricerca</h2>
+<p>Sviluppiamo soluzioni innovative che integrano sistemi distribuiti, collaborazione aperta e tecnologie immersive per affrontare le sfide della trasformazione digitale.</p>
+</div>
+<div class="lab-flow-grid lab-pillars-grid">
+<article class="lab-flow-card lab-pillar-card lab-reveal is-visible" style="--lab-reveal-delay: 192ms;">
+<span class="research-orb-wrap" aria-hidden="true"><span class="lab-flow-card__orb"></span></span>
+<p>01 · Cloud · Edge · Simulation</p>
+<h3>Computazioni distribuite e parallele</h3>
+<small>Cloud, edge, simulazioni massive, sistemi complessi e architetture parallele per calcolo scientifico scalabile.</small>
+<a class="lab-pillar-link" href="/tematiche/#distributed-and-parallel-computations">Esplora l’area</a>
+</article>
+<article class="lab-flow-card lab-pillar-card lab-reveal is-visible" style="--lab-reveal-delay: 224ms;">
+<span class="research-orb-wrap" aria-hidden="true"><span class="lab-flow-card__orb"></span></span>
+<p>02 · Open Data · Privacy · Collaboration</p>
+<h3>Calcolo collaborativo e sociale</h3>
+<small>Open data, groupware, privacy, progettazione collaborativa e sistemi adattivi per comunità, studenti e industria.</small>
+<a class="lab-pillar-link" href="/tematiche/#collaborative-and-social-calculation">Esplora l’area</a>
+</article>
+<article class="lab-flow-card lab-pillar-card lab-reveal is-visible" style="--lab-reveal-delay: 256ms;">
+<span class="research-orb-wrap" aria-hidden="true"><span class="lab-flow-card__orb"></span></span>
+<p>03 · XR · Visualization · Interfaces</p>
+<h3>Visualizzazione e interazione</h3>
+<small>Visualizzazione scalabile, realtà virtuale, XR, serious game e interfacce innovative per dati, processi e patrimonio culturale.</small>
+<a class="lab-pillar-link" href="/tematiche/#visualization-and-interaction">Esplora l’area</a>
+</article>
+</div>
+</section>
+<section aria-labelledby="lab-site-hub-title" class="lab-site-hub alignwide lab-reveal is-visible" style="--lab-reveal-delay: 260ms;">
+<div aria-hidden="true" class="lab-site-hub__composition">
+<span class="lab-geo-piece lab-geo-piece--block-a"></span>
+<span class="lab-geo-piece lab-geo-piece--block-b"></span>
+<span class="lab-geo-piece lab-geo-piece--line-a"></span>
+<span class="lab-geo-piece lab-geo-piece--line-b"></span>
+<span class="lab-geo-piece lab-geo-piece--frame"></span>
+<span class="lab-geo-piece lab-geo-piece--bar"></span>
+</div>
+<div class="lab-section-head">
+<p class="lab-pill">Esplora ISISLab</p>
+<h2 id="lab-site-hub-title">Tutto il laboratorio, in pochi percorsi.</h2>
+<p>Scegli cosa ti serve: ricerca, progetti, tesi, persone, eventi, impatto e collaborazioni. Ogni sezione ti porta subito al contenuto giusto.</p>
+</div>
+<div class="lab-hub-grid">
+<a class="lab-hub-card lab-hub-card--wide lab-reveal is-visible" href="/chi-siamo/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--lab" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 21v-5h6v5M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01"/></svg></span>
+<strong>Il laboratorio</strong>
+<em>Dal 1995 nel Dipartimento di Informatica UNISA: storia, gruppo, seminari, premi e sede.</em>
+<small>Chi siamo · Persone · Seminari · Riconoscimenti</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/tematiche/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--research" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="9" ry="3.5"/><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(120 12 12)"/></svg></span>
+<strong>Ricerca</strong>
+<em>Tre linee: calcolo distribuito, collaborazione aperta, visualizzazione e interazione.</em>
+<small>Tematiche · Pubblicazioni · SLR · Bibliometria</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/progetti/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--projects" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></span>
+<strong>Progetti</strong>
+<em>XR, open data, cloud/edge, cybersecurity, didattica immersiva e ricerca applicata.</em>
+<small>XRTwinScape · XRTourGuide · ROUTE-TO-PA · LibreRT</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/lauree-triennale-e-magistrale/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--teaching" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v6c3 3 9 3 12 0v-6M22 9v7"/></svg></span>
+<strong>Didattica</strong>
+<em>Corsi, mobilità, seminari e risorse per orientarsi nella vita del laboratorio.</em>
+<small>Lauree · Erasmus · Seminari</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/informazioni-utili/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--thesis" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M7 17h4M7 13h2"/><path d="m13 12 7-7a2.12 2.12 0 0 0-3-3l-7 7-1 4 4-1Z"/></svg></span>
+<strong>Tesi</strong>
+<em>Stage e tesi si svolgono in laboratorio, con confronto continuo e seminari regolari.</em>
+<small>Stage · Tesi · FAQ · Modelli</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/public-engagement/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--impact" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+<strong>Impatto sociale</strong>
+<em>Attività con scuole, open science, coding, divulgazione e territorio.</em>
+<small>Public engagement · Scuole · Comunità</small>
+</a>
+<a class="lab-hub-card lab-reveal is-visible" href="/convenzioni-e-contratti-di-ricerca/" style="--lab-reveal-delay: 260ms; --mx: 50%; --my: 50%;">
+<span class="lab-hub-card__icon lab-hub-card__icon--partners" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="6" rx="1.5"/><rect x="2" y="16" width="6" height="6" rx="1.5"/><rect x="16" y="16" width="6" height="6" rx="1.5"/><path d="M12 8v4M5 16v-4h14v4"/></svg></span>
+<strong>Enti esterni</strong>
+<em>Ricerca finanziata da enti pubblici e privati, convenzioni e dottorati industriali.</em>
+<small>Convenzioni · Contratti · PhD industriale</small>
+</a>
+<a class="lab-hub-card lab-hub-card--accent lab-reveal is-visible" href="/news/" style="--lab-reveal-delay: 260ms;">
+<span class="lab-hub-card__icon lab-hub-card__icon--news" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="6" height="5" rx=".5"/><path d="M16 7h2M16 10h2M7 15h11M7 18h11"/></svg></span>
+<strong>News &amp; Blog</strong>
+<em>Seminari, news, hackathon, risultati scientifici e attività del gruppo.</em>
+<small>News · Blog · Seminari · Gallery</small>
+</a>
+</div>
+</section>
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
+<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-a057083a wp-block-group-is-layout-flex"><h2 class="wp-block-heading has-xl-font-size">Ultime dal laboratorio</h2><p class="lab-arrow-link wp-block-paragraph"><a href="/news/">Tutte le news e gli eventi</a></p></div>
+<div class="wp-block-query is-layout-flow wp-block-query-is-layout-flow"><ul class="is-flex-container columns-3 wp-block-post-template is-layout-flow lab-news-grid">
+<li class="lab-reveal is-visible"><div class="lab-card lab-news-card"><a class="home-news-thumb" href="/news/european-researchers-night-2026-in-salerno/"><img src="assets/img/news-placeholder.svg" alt=""></a><div class="wp-block-post-date">2026-10-12</div><h3 class="wp-block-post-title"><a href="/news/european-researchers-night-2026-in-salerno/">S.T.R.E.E.T.S. – Notte Europea dei Ricercatori 2026</a></h3><p class="wp-block-post-excerpt__excerpt">ISISLab ha partecipato alla Notte Europea dei Ricercatori 2026 a Salerno con dimostrazioni di avatar 3D interattivi, intelligenza artificiale e tecnologie immersive.</p><a class="lab-news-more" href="/news/european-researchers-night-2026-in-salerno/">Read →</a></div></li><li class="lab-reveal is-visible"><div class="lab-card lab-news-card"><a class="home-news-thumb" href="/news/isislab-research-accepted-at-neurips/"><img src="assets/img/news-placeholder.svg" alt=""></a><div class="wp-block-post-date">2026-09-28</div><h3 class="wp-block-post-title"><a href="/news/isislab-research-accepted-at-neurips/">Ricerca ISISLab alla NeurIPS: Hypergraph Generation with Latent Diffusion</a></h3><p class="wp-block-post-excerpt__excerpt">Il lavoro di Carmine Spagnuolo e Valerio Di Pasquale sull’apprendimento generativo di ipergrafi è stato accettato alla conferenza NeurIPS.</p><a class="lab-news-more" href="/news/isislab-research-accepted-at-neurips/">Read →</a></div></li><li class="lab-reveal is-visible"><div class="lab-card lab-news-card"><a class="home-news-thumb" href="/news/xrtourguide-at-the-morigerati-museum/"><img src="assets/img/news-placeholder.svg" alt=""></a><div class="wp-block-post-date">2026-05-19</div><h3 class="wp-block-post-title"><a href="/news/xrtourguide-at-the-morigerati-museum/">XRTourGuide al Museo di Morigerati</a></h3><p class="wp-block-post-excerpt__excerpt">Il 9 maggio il Museo Etnografico di Morigerati ha ospitato una sperimentazione con l’app XRTourGuide per la valorizzazione del territorio.</p><a class="lab-news-more" href="/news/xrtourguide-at-the-morigerati-museum/">Read →</a></div></li></ul></div>
+</div>
+<section class="alignwide home-media-teaser" aria-label="Rassegna stampa">
+  <div class="home-media-teaser-heading"><div><p class="lab-pill">MEDIA / PRESS</p><h2>ISISLab sui media</h2><p>Articoli, ritagli originali, ricerca e riconoscimenti pubblici.</p></div><a href="/rassegna-stampa/" class="lab-arrow-link">Esplora la rassegna ↗</a></div>
+  <div class="home-press-grid"><a class="home-press-item" href="/rassegna-stampa/cronache-della-campania-2023-02-06/"><img loading="lazy" src="assets/img/press-placeholder.svg" alt=""><span class="press-thumb-info"><time>2023-02-06</time><strong>Cronache della Campania</strong><small>ISA: virtual assistant for the Salerno Court of Appeal</small></span></a><a class="home-press-item" href="/rassegna-stampa/il-mattino-salerno-p-30-2019-10-02/"><img loading="lazy" src="assets/img/press-placeholder.svg" alt=""><span class="press-thumb-info"><time>2019-10-02</time><strong>Il Mattino – Salerno, p. 30</strong><small>Hetor / Avalanche</small></span></a><a class="home-press-item" href="/rassegna-stampa/il-risorgimento-nocerino-online-2019-02-01/"><img loading="lazy" src="assets/img/press-placeholder.svg" alt=""><span class="press-thumb-info"><time>2019-02-01</time><strong>Il Risorgimento Nocerino online</strong><small>ISISLab in the local press</small></span></a></div>
+</section>
+<div class="wp-block-group alignwide has-surface-color has-ink-background-color has-text-color has-background is-layout-constrained wp-container-core-group-is-layout-882f1dbd wp-block-group-is-layout-constrained" style="border-radius:34px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60)"><h2 class="wp-block-heading has-xl-font-size">Entra nell’ecosistema ISISLab.</h2><div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h3 class="wp-block-heading">Studenti</h3><p class="wp-block-paragraph">Trova tesi, stage, seminari, modelli e risorse utili per iniziare il lavoro in laboratorio.</p><p class="lab-arrow-link wp-block-paragraph"><a href="/informazioni-utili/">Inizia da qui</a></p></div><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h3 class="wp-block-heading">Ricercatori</h3><p class="wp-block-paragraph">Esplora pubblicazioni, progetti, output, dataset, software open-source e tematiche attive.</p><p class="lab-arrow-link wp-block-paragraph"><a href="/pubblicazioni-scientifiche/">Vedi gli output</a></p></div><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h3 class="wp-block-heading">Partner</h3><p class="wp-block-paragraph">Scopri opportunità di collaborazione con scuole, enti pubblici, industria e consorzi europei.</p><p class="lab-arrow-link wp-block-paragraph"><a href="/convenzioni-e-contratti-di-ricerca/">Collabora con noi</a></p></div></div></div>
+</main>
+<footer class="lab-footer"><div class="alignwide footer-inner"><div class="footer-about"><img src="assets/img/isislab-brand-horizontal.png" alt="ISISLab" width="160"><p>University of Salerno · Department of Computer Science</p><p>Edificio F, Stecca 7, Lab. 10, Fisciano (SA)</p></div><div class="footer-links"><h3>Research</h3><a href="/tematiche/">Research areas</a><a href="/progetti/">Projects</a><a href="/pubblicazioni-scientifiche/">Publications</a></div><div class="footer-links"><h3>Students</h3><a href="/informazioni-utili/">Theses</a><a href="/erasmus/">Erasmus</a></div><div class="footer-links"><h3>ISISLab</h3><a href="/rassegna-stampa/">Press</a><a href="/news/">News</a></div></div></footer><script>(() => {
+  'use strict';
+  // Only explicit user choices are stored. Browser locale is the first-visit default.
+  document.querySelectorAll('[data-language-choice]').forEach(a => {
+    a.addEventListener('click', () => {
+      try { localStorage.setItem('isislab-language', a.dataset.languageChoice); } catch (e) {}
+    });
+  });
+  const english = document.documentElement.lang === 'en';
+  const menu = document.getElementById('main-navigation');
+  const trigger = document.querySelector('.nav-toggle');
+  const parents = [...document.querySelectorAll('.nav-item--parent')];
+  if (trigger && menu) {
+    trigger.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('is-active');
+      trigger.setAttribute('aria-expanded', String(isOpen));
+      trigger.setAttribute('aria-label', isOpen ? (english ? 'Close menu' : 'Chiudi il menu') : (english ? 'Open menu' : 'Apri il menu'));
+    });
+    menu.addEventListener('click', event => {
+      if (event.target.closest('a') && innerWidth <= 920) {
+        menu.classList.remove('is-active');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+  for (const parent of parents) {
+    const button = parent.querySelector('.submenu-toggle');
+    if (!button) continue;
+    button.addEventListener('click', () => {
+      const shouldOpen = !parent.classList.contains('is-open');
+      for (const other of parents) {
+        other.classList.remove('is-open');
+        other.querySelector('.submenu-toggle')?.setAttribute('aria-expanded', 'false');
+      }
+      parent.classList.toggle('is-open', shouldOpen);
+      button.setAttribute('aria-expanded', String(shouldOpen));
+    });
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      menu?.classList.remove('is-active');
+      trigger?.setAttribute('aria-expanded', 'false');
+      for (const parent of parents) {
+        parent.classList.remove('is-open');
+        parent.querySelector('.submenu-toggle')?.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.lab-reveal').forEach(el => observer.observe(el));
+  } else {document.querySelectorAll('.lab-reveal').forEach(el => el.classList.add('is-visible'));}
+})();
+</script><script>/**
+ * ISISLab interactive research orbs.
+ *
+ * The HTML snapshot of the original WordPress theme references
+ * `isislab_files/site.js`, but that JS file wasn't included in the export.
+ * This is a self-contained replacement for Jekyll, reproducing the visible
+ * translucent orbs and implementing true, ongoing motion and impulse transfer.
+ *
+ * Research fields: cyan = distributed computing; violet = collaborative
+ * computing; green = visualization and interaction.
+ */
+(function () {
+  'use strict';
+
+  const COLORS = [[4, 200, 239], [147, 103, 249], [13, 192, 141]];
+  // Initial positions / sizes measured against the supplied WordPress screenshot.
+  const COMPOSITION = [
+    [.033,.262,47,1],[.130,.266,54,2],[.260,.092,28,2],
+    [.360,.169,56,1],[.390,.278,58,0],[.574,.254,67,0],
+    [.633,.260,27,0],[.885,.355,40,0],[.875,.460,48,2],
+    [.950,.540,22,0],[.780,.557,66,2],[.843,.689,77,0],
+    [.842,.866,20,2],[.669,.595,30,0],[.578,.534,30,0],
+    [.510,.633,25,1],[.302,.873,23,1],[.182,.874,99,1],
+    [.127,.724,105,0],[.212,.627,86,0],[.047,.640,76,1],
+    [.029,.469,35,0],[.056,.520,19,2],[.117,.524,29,0],
+    [.225,.494,26,0],[.320,.572,29,2],[.733,.389,34,1]
+  ];
+  const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+  const random = (a, b) => a + Math.random() * (b - a);
+  const rgb = (color, alpha) => `rgba(${color[0]},${color[1]},${color[2]},${alpha})`;
+
+  function init() {
+    const layer = document.querySelector('[data-physics-hero]');
+    if (!layer || layer.dataset.physicsInitialized === 'true') return;
+    const hero = layer.closest('.lab-hero');
+    const canvas = layer.querySelector('canvas');
+    const ctx = canvas && canvas.getContext('2d', { alpha: true });
+    if (!ctx || !hero) return;
+    layer.dataset.physicsInitialized = 'true';
+
+    let w = 0, h = 0, dpr = 1, balls = [], last = 0, raf = 0;
+    let chosen = -1, dragging = null, pointerId = -1;
+    let prior = { x: 0, y: 0, t: 0 };
+    let previousVelocity = { x: 0, y: 0 };
+    let frames = 0, collisions = 0;
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+
+    function makeBalls() {
+      const mobile = w < 700;
+      const scale = mobile ? clamp(w / 1350, .28, .58) : clamp(w / 1657, .53, 1.17);
+      balls = COMPOSITION.map(([relX, relY, radius, color], idx) => {
+        // Keep most spheres below the text card on narrow displays.
+        if (mobile) {
+          if (radius > 42) {
+            relX = .08 + ((relX * 2.71) % .84);
+            relY = .75 + ((idx * .074) % .22);
+          } else relY = .08 + ((relY * 2.8) % .86);
+        }
+        const r = Math.max(5, radius * scale);
+        return {
+          x: relX * w, y: relY * h, r, color,
+          // Visible from the first frame: speed ~45–105 px / second at 60 Hz.
+          vx: random(-1.60, 1.60), vy: random(-1.45, 1.45),
+          mass: r * r, phase: idx * 1.37
+        };
+      });
+      // Ensure every orb moves immediately, including occasional near-zero draws.
+      for (const b of balls) if (Math.hypot(b.vx, b.vy) < .65) {
+        const theta = random(0, Math.PI * 2);
+        b.vx = Math.cos(theta) * 1.05;
+        b.vy = Math.sin(theta) * 1.05;
+      }
+    }
+
+    function sizeCanvas() {
+      const bounds = layer.getBoundingClientRect();
+      if (bounds.width < 5 || bounds.height < 5) return;
+      const oldWidth = w, oldHeight = h;
+      w = bounds.width; h = bounds.height;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      canvas.style.width = `${w}px`;
+      canvas.style.height = `${h}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (balls.length && oldWidth > 0 && oldHeight > 0 &&
+          Math.abs(w / oldWidth - 1) < .18 && Math.abs(h / oldHeight - 1) < .18) {
+        for (const b of balls) {
+          b.x *= w / oldWidth; b.y *= h / oldHeight;
+          b.r *= w / oldWidth; b.mass = b.r * b.r;
+        }
+      } else makeBalls();
+      draw();
+    }
+
+    function bound(b) {
+      // Slight clipping at the screen edges matches the original artwork.
+      const margin = b.r * .35;
+      if (b.x < margin) { b.x = margin; b.vx = Math.abs(b.vx) * .94; }
+      if (b.x > w - margin) { b.x = w - margin; b.vx = -Math.abs(b.vx) * .94; }
+      if (b.y < margin) { b.y = margin; b.vy = Math.abs(b.vy) * .94; }
+      if (b.y > h - margin) { b.y = h - margin; b.vy = -Math.abs(b.vy) * .94; }
+    }
+
+    function impact(a, b) {
+      const deltaX = b.x - a.x, deltaY = b.y - a.y;
+      let distance = Math.hypot(deltaX, deltaY);
+      const allowed = a.r + b.r;
+      if (distance >= allowed) return;
+      if (distance < .0001) distance = .0001;
+      collisions++;
+      const nx = deltaX / distance, ny = deltaY / distance;
+      const inverseA = a === dragging ? 0 : 1 / a.mass;
+      const inverseB = b === dragging ? 0 : 1 / b.mass;
+      const total = inverseA + inverseB;
+      if (!total) return;
+
+      // Separate overlapping surfaces without excessive jitter.
+      const correction = ((allowed - distance) * .75) / total;
+      a.x -= nx * correction * inverseA;
+      a.y -= ny * correction * inverseA;
+      b.x += nx * correction * inverseB;
+      b.y += ny * correction * inverseB;
+      const relativeSpeed = (b.vx - a.vx) * nx + (b.vy - a.vy) * ny;
+      if (relativeSpeed >= 0) return;
+      const restitution = .93;
+      const impulse = -(1 + restitution) * relativeSpeed / total;
+      a.vx -= impulse * nx * inverseA;
+      a.vy -= impulse * ny * inverseA;
+      b.vx += impulse * nx * inverseB;
+      b.vy += impulse * ny * inverseB;
+    }
+
+    function advance(milliseconds, now) {
+      const dt = clamp(milliseconds / 16.6667, .25, 2.4);
+      for (const b of balls) {
+        if (b === dragging) continue;
+        // Ambient drift persists instead of settling to an imperceptible speed.
+        b.vx += Math.sin(now * .00048 + b.phase) * .007 * dt;
+        b.vy += Math.cos(now * .00043 + b.phase) * .007 * dt;
+        b.vx = clamp(b.vx * .9996, -17, 17);
+        b.vy = clamp(b.vy * .9996, -17, 17);
+        b.x += b.vx * dt; b.y += b.vy * dt;
+        bound(b);
+      }
+      // Sequential bounces propagate energy from a touched ball to its neighbours.
+      for (let iteration = 0; iteration < 3; iteration++) {
+        for (let i = 0; i < balls.length; i++)
+          for (let j = i + 1; j < balls.length; j++) impact(balls[i], balls[j]);
+      }
+      for (const b of balls) bound(b);
+    }
+
+    function paint(b) {
+      const color = COLORS[b.color], x = b.x, y = b.y, r = b.r;
+      ctx.save();
+      ctx.globalAlpha = chosen === -1 || chosen === b.color ? 1 : .18;
+      // Preserve the translucent luminous-ball appearance from the screenshot.
+      const halo = ctx.createRadialGradient(x, y, r * .13, x, y, r * 1.72);
+      halo.addColorStop(0, rgb(color, .23));
+      halo.addColorStop(.56, rgb(color, .16));
+      halo.addColorStop(1, rgb(color, 0));
+      ctx.fillStyle = halo;
+      ctx.beginPath(); ctx.arc(x, y, r * 1.72, 0, Math.PI * 2); ctx.fill();
+      const glass = ctx.createRadialGradient(x - r * .27, y - r * .31, r * .02, x + r * .11, y + r * .11, r * 1.07);
+      glass.addColorStop(0, 'rgba(255,255,255,.89)');
+      glass.addColorStop(.12, rgb(color, .72));
+      glass.addColorStop(.36, rgb(color, .57));
+      glass.addColorStop(.71, rgb(color, .30));
+      glass.addColorStop(.91, rgb(color, .13));
+      glass.addColorStop(1, 'rgba(255,255,255,.12)');
+      ctx.fillStyle = glass;
+      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,.74)';
+      ctx.lineWidth = Math.max(.7, r * .011);
+      ctx.beginPath(); ctx.arc(x, y, r - .5, 0, Math.PI * 2); ctx.stroke();
+      const hx = x - r * .26, hy = y - r * .29;
+      const light = ctx.createRadialGradient(hx, hy, 0, hx, hy, r * .23);
+      light.addColorStop(0, 'rgba(255,255,255,1)');
+      light.addColorStop(.24, 'rgba(255,255,255,.94)');
+      light.addColorStop(.56, 'rgba(255,255,255,.53)');
+      light.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = light;
+      ctx.beginPath(); ctx.arc(hx, hy, r * .23, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      for (const b of balls) paint(b);
+    }
+
+    function loop(now) {
+      raf = 0;
+      if (document.hidden) return;
+      const dt = last ? Math.min(50, now - last) : 16.667;
+      last = now;
+      if (!reduceMotion.matches) advance(dt, now);
+      draw(); frames++;
+      raf = requestAnimationFrame(loop);
+    }
+
+    function start() {
+      if (raf) cancelAnimationFrame(raf);
+      last = 0;
+      if (!document.hidden && w > 0 && h > 0) raf = requestAnimationFrame(loop);
+    }
+
+    function coords(event) {
+      const rect = layer.getBoundingClientRect();
+      return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    }
+    function underPoint(point) {
+      return [...balls].reverse().find(b => Math.hypot(b.x - point.x, b.y - point.y) < b.r * 1.17);
+    }
+    function nudge(ball) {
+      const angle = random(0, Math.PI * 2), magnitude = random(9, 15);
+      ball.vx = clamp(ball.vx + Math.cos(angle) * magnitude, -17, 17);
+      ball.vy = clamp(ball.vy + Math.sin(angle) * magnitude, -17, 17);
+      // In reduced-motion mode, user-requested movement occurs in a single small step.
+      if (reduceMotion.matches) { advance(16.667, performance.now()); draw(); }
+      else start();
+    }
+    hero.addEventListener('pointerdown', event => {
+      if (event.target.closest('a,button,input,select,textarea')) return;
+      const point = coords(event), orb = underPoint(point);
+      if (!orb) return;
+      nudge(orb);
+      if (event.pointerType === 'mouse' && event.button === 0) {
+        dragging = orb;
+        pointerId = event.pointerId;
+        prior = { ...point, t: performance.now() };
+        previousVelocity = { x: orb.vx, y: orb.vy };
+        hero.setPointerCapture?.(event.pointerId);
+      }
+    });
+    hero.addEventListener('pointermove', event => {
+      if (!dragging || event.pointerId !== pointerId) return;
+      const point = coords(event), t = performance.now();
+      const elapsed = Math.max(10, t - prior.t);
+      previousVelocity = {
+        x: clamp((point.x - prior.x) * 16.667 / elapsed, -17, 17),
+        y: clamp((point.y - prior.y) * 16.667 / elapsed, -17, 17)
+      };
+      prior = { ...point, t };
+      dragging.x = point.x; dragging.y = point.y;
+      dragging.vx = previousVelocity.x; dragging.vy = previousVelocity.y;
+      draw();
+    });
+    function release(event) {
+      if (!dragging || (event.pointerId !== undefined && event.pointerId !== pointerId)) return;
+      dragging.vx = clamp(previousVelocity.x + random(-1.1, 1.1), -17, 17);
+      dragging.vy = clamp(previousVelocity.y + random(-1.1, 1.1), -17, 17);
+      dragging = null; pointerId = -1;
+    }
+    hero.addEventListener('pointerup', release);
+    hero.addEventListener('pointercancel', release);
+    hero.addEventListener('lostpointercapture', () => release({}));
+    for (const control of document.querySelectorAll('[data-research-index]')) {
+      control.addEventListener('pointerenter', () => { chosen = Number(control.dataset.researchIndex); draw(); });
+      control.addEventListener('pointerleave', () => { chosen = -1; draw(); });
+      control.addEventListener('focus', () => { chosen = Number(control.dataset.researchIndex); draw(); });
+      control.addEventListener('blur', () => { chosen = -1; draw(); });
+    }
+
+    // Minimal read-only diagnostics make it possible to verify the motion in-browser.
+    window.ISISLabPhysics = Object.freeze({
+      snapshot: () => balls.map(b => ({x:b.x,y:b.y,r:b.r,vx:b.vx,vy:b.vy,field:b.color})),
+      stats: () => ({ frames, collisions, running: !!raf, reducedMotion: reduceMotion.matches }),
+      kickAt: (x, y) => { const b = underPoint({x,y}); if (b) nudge(b); return !!b; }
+    });
+    let resizeRequest = 0;
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(resizeRequest);
+      resizeRequest = requestAnimationFrame(() => { sizeCanvas(); start(); });
+    }, {passive:true});
+    if ('ResizeObserver' in window) new ResizeObserver(() => {
+      if (Math.abs(layer.clientWidth - w) > 2 || Math.abs(layer.clientHeight - h) > 2) {
+        sizeCanvas(); start();
+      }
+    }).observe(layer);
+    document.addEventListener('visibilitychange', start);
+    window.addEventListener('pageshow', start);
+    reduceMotion.addEventListener?.('change', start);
+    sizeCanvas(); start();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once: true});
+  else init();
+})();
+</script></body></html>

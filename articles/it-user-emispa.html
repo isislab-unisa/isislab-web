@@ -1,0 +1,103 @@
+---
+layout: article
+lang: it
+title: User:Emispa
+description: 'Emilio Spatola Contatto: emilio.spatola@tiscali.it Rendering e modelli di illuminazione Il mondo,
+  così come lo vediamo, dipende dall’interazione luce e dalla materia. Tale interazione ci consente di distinguere
+  i colori degli […]'
+permalink: /news/user-emispa/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-emispa/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h1><span class="mw-headline" id="Emilio_Spatola"><b>Emilio Spatola</b></span></h1>
+<ul>
+<li>
+<p>Contatto: <a class="external free" href="mailto:emilio.spatola@tiscali.it" rel="nofollow" title="mailto:emilio.spatola@tiscali.it">emilio.spatola@tiscali.it</a> </p>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Rendering_e_modelli_di_illuminazione"><b>Rendering e modelli di illuminazione</b></span></h2>
+<p>Il mondo, così come lo vediamo, dipende dall'interazione <b>luce</b> e dalla <b>materia</b>. Tale interazione ci consente di distinguere i colori degli oggetti e le caratteristiche di una superficie (matta, trasparente, etc..). I fenomeni che più comunemente influenzano o impediscono la trasmissione della luce attraverso la materia sono: l'assorbimento, la diffusione (scattering), la riflessione speculare o diffusa, la rifrazione e la diffrazione, tutti fenomeni comunque che si fondano sulla fisica. Di conseguenza se si vuole generare immagini fotorealistiche con l'ausilio di un computer bisogna necessariamente confrontarsi con dei modelli di illuminazione sviluppati a partire da principi fisici.</p>
+<p>Da quando è stata inventata la computer grafica, il problema di simulare la luce è diventato un aspetto fondamentale e fonte di numerosi dibattiti all'interno del campo della ricerca scientifica. L'arduo compito di generare un'immagine 2D a partire da una scena 3D spetta ai cosiddetti <b>algoritmi di rendering</b>.</p>
+<p>Nel corso degli anni, all'interno della computer grafica si sono sviluppate due aree di ricerca: rendering real-time e rendering off-line.</p>
+<p>Nel <b>rendering real-time</b> la caratteristica principale è l'interazione con l'utente, per questo motivo vengono fatte delle approssimazioni a discapito della qualità finale dell'immagine per raggiungere un compromesso tra realismo e fluidità. Le tipiche applicazioni real-time sono i videogiochi.</p>
+<p>Il <b>rendering off-line</b> ha invece come obiettivo finale la produzione di immagini quanto più fotorealistiche possibili. Poiché non c'è interazione con l'utente finale, i tempi di calcolo non sono un aspetto critico. Un film con effetti visivi speciali è un esempio di questo tipo di applicazioni.</p>
+<p>La maggior parte delle applicazioni real-time adotta un modello di illuminazione locale (<b>local illumination</b>).</p>
+<p>Con il modello locale, le superfici degli oggetti della scena non interagiscono in alcun modo tra loro (gli oggetti sono indipendenti) e nella simulazione della luce viene presa in considerazione solamente l<b>'illuminazione diretta</b>, ossia la luce che parte dalla sorgente luminosa e arriva direttamente sulla superficie dell'oggetto.</p>
+<p>Il modello di illuminazione globale (<b>global illumination</b>), invece, si discosta da quello locale perché oltre a considerare l'illuminazione diretta, tiene conto anche della luce che si riflette da una superficie e rimbalza sugli altri oggetti della scena (<b>illuminazione indiretta</b>). La complessità aumenta perché molte superfici si illuminano le une con le altre ed inoltre sorge il problema di determinare le occlusioni, in quanto una superficie può essere nascosta da un'altra. Sostanzialmente l'illuminazione di ogni punto dipende dalla geometria della scena, dalla posizione delle sorgenti luminose e dal punto di vista dell'osservatore.</p>
+<p>La global illumination consente di generare immagini fotorealistiche, ma allo stato attuale ha dei costi computazionali molto elevati per essere adoperata all'interno di videogiochi o qualunque altra applicazione real-time.</p>
+<p>Ad ogni modo, nel corso degli ultimi anni sono state fatte delle ricerche per lo sviluppo di metodi che rendano possibile l'adozione del modello di illuminazione globale in real-time. Tale modello prende il nome di <b>interactive global illumination</b> [12].</p>
+<h2><span class="mw-headline" id="Ambient_Occlusion"><b>Ambient Occlusion</b></span></h2>
+<p>L'Ambient Occlusion (AO) [10][16] è una tecnica di illuminazione globale che approssima efficientemente l'illuminazione indiretta prendendo in considerazione l'<b>occlusione</b> di un punto, cioè la <b>visibilità</b> di un punto rispetto al resto della scena. L'idea è stata introdotta da Zhukov [17] e poi implementata da Landis [6].</p>
+<p>Con l'Ambient Occlusion, l'illuminazione di un punto viene calcolata con la seguente equazione: <i>Lighting = AO * ambient + diffuse + specular</i>, dove la componente ambient, diffuse e specular sono calcolate con il famoso modello di Phong. Un qualunque algoritmo per il calcolo dell'Ambient Occlusion restituisce in output una <b>occlusion map</b>, cioè una texture che contiene i valori di occlusione per ogni pixel dell'immagine. Questi valori rappresentano il termine AO nell'equazione precedente e sono usati per il calcolo dell'illuminazione finale (colore di ogni pixel che compone l'immagine).</p>
+<p>L'Ambient Occlusion è sia un algoritmo di rendering off-line che di rendering real-time. Nacque principalmente per le produzioni cinematografiche ma con il passare degli anni mediante l'implementazione di metodi sempre più efficienti, è stata usata sempre di più per le produzioni videoludiche di alto livello.</p>
+<p>Per calcolare l'Ambient Occlusion nel real-time si usano due approcci:</p>
+<ul>
+<li> <b>Geometry-Based Ambient Occlusion</b> [1][10][11][13][14] </li>
+<li> <b>Screen-Space Ambient Occlusion</b> [3][4][7][8][9][13] </li>
+</ul>
+<p>La differenza tra i due approcci sta nel tipo di oggetto che viene considerato un'occlusore e dove viene eseguito l'algoritmo. Nei GBAO l'occlusore è una geometria 3D definita nell'Object-Space (sistema di coordinate 3D che fa riferimento alla posizione dell'oggetto), nei metodi SSAO l'occlusore è un pixel che appartiene allo Screen-Space (sistema di coordinate 2D che si usa per accedere ai pixel che compongono l'immagine) e l'algoritmo è eseguito in post-processing, direttamente sull'immagine già renderizzata.</p>
+<p>I metodi GBAO non hanno ancora dato risultati soddisfacenti a causa dell'elevato costo computazionale, non scalabile con il rendering real-time. I metodi SSAO sono più velocie rappresentano lo stato dell'arte della real-time Ambient Occlusion e per questo sono più interessanti da studiare. Offrono prestazioni elevate, sono più facili da integrare in un sistema di rendering pre-esistente ma in compenso offrono una scarsa qualità dell'occlusion map a causa dell'eccessive approssimazioni che vengono fatte sui calcoli.</p>
+<h2><span class="mw-headline" id="Obiettivo_della_tesi"><b>Obiettivo della tesi</b></span></h2>
+<p>L'obiettivo del progetto di tesi è attaccare la scarsa qualità dei risultati offerti dai metodi SSAO per apportare un effettivo miglioramento all'occlusion map, in modo che sia più simile a quella generata dall'Ambient Occlusion calcolata però in un contesto di rendering off-line. La qualità dovrà essere raggiunta senza dover rinunciare alle prestazioni da real-time, necessarie a garantire la buona riuscita dell'esperienza cercata dall'utente finale.</p>
+<h2><span class="mw-headline" id="Algoritmo"><b>Algoritmo</b></span></h2>
+<p>L'algoritmo sviluppato, la Disk-Based Screen Space Ambient Occlusion (DSSAO), offre qualità dei risultati con tempi da real-time, che gli consentono di essere integrato in un graphic engine, apportando notevoli miglioramenti alla resa grafica di un videogioco o di una qualunque altra applicazione di rendering real-time. Gli ottimi risultati sono stati raggiunti per due motivi: </p>
+<ul>
+<li> Utilizzo di un metodo geometrico per il calcolo dell'Ambient Occlusion,
+<p>che ha consentito di migliorare la precisione </p>
+</li>
+<li> Esecuzione dei calcoli necessari nel dominio 2D dell'immagine, per
+<p>mantenere le prestazioni elevate. </p>
+</li>
+</ul>
+<p>L'algoritmo proposto risulta essere adeguato per calcolare l'Ambient Occlusion in real-time su scene complesse con una qualità che si avvicina molto a quella offerta in un contesto di rendering off-line.</p>
+<h2><span class="mw-headline" id="_Video_"><b> Video </b></span></h2>
+<p>Un video che mostra le caratteristiche ed i risultati dell'algoritmo è presente qui <a class="externallink" href="http://www.youtube.com/watch?v=EaHrmCjtFAQ" rel="nofollow" title="http://www.youtube.com/watch?v=EaHrmCjtFAQ">http://www.youtube.com/watch?v=EaHrmCjtFAQ</a></p>
+<h2><span class="mw-headline" id="_Software_Utilizzato_"><b> Software Utilizzato </b></span></h2>
+<p><a class="externallink" href="http://www.microsoft.com/visualstudio/en-us/products/2010-editions/express" rel="nofollow" title="http://www.microsoft.com/visualstudio/en-us/products/2010-editions/express">Visual Studio 2010 Express Edition</a></p>
+<p><a class="externallink" href="http://www.opengl.org/" rel="nofollow" title="http://www.opengl.org/">openGL</a>, API grafica.</p>
+<p><a class="externallink" href="http://www.opengl.org/resources/libraries/glut/" rel="nofollow" title="http://www.opengl.org/resources/libraries/glut/">GLUT</a>, libreria di openGL</p>
+<p><a class="externallink" href="http://glew.sourceforge.net/" rel="nofollow" title="http://glew.sourceforge.net/">GLEW</a>, libreria di openGL</p>
+<p><a class="externallink" href="http://assimp.sourceforge.net/" rel="nofollow" title="http://assimp.sourceforge.net/">Open Asset Import Library</a>, libreria per importare modelli 3D in openGL</p>
+<p><a class="externallink" href="http://www.gremedy.com/" rel="nofollow" title="http://www.gremedy.com/">gDEBugger</a>, debugger per openGL</p>
+<p><a class="externallink" href="http://developer.nvidia.com/cg-toolkit" rel="nofollow" title="http://developer.nvidia.com/cg-toolkit">CG runtime</a>, compilatore per il linguaggio di Shading CG (Nvidia)</p>
+<h2><span class="mw-headline" id="Seminari"><b>Seminari</b></span></h2>
+<ul>
+<li>Venerdì 24 febbraio 2012: <b>"Ambient occlusion nel real-time rendering"</b>. <br/>
+<p><b>Abstract:</b> <br/> La realtà, così come lo percepiamo, dipende dall'interazione tra luce e materia. Tale interazione ci consente di distinguere i colori degli oggetti e le caratteristiche di una superficie (matta, trasparente, etc..). Da quando è stata inventata la computer grafica, il problema di simulare la luce è diventato un aspetto fondamentale e fonte di numerosi dibattiti all'interno del campo della ricerca scientifica. L'arduo compito di generare un'immagine 2D a partire da una scena 3D spetta agli algoritmi di rendering. Nel seminario verranno discusse le problematiche generali legate al rendering e quali sono i modelli di calcolo che tentano di approssimare e risolvere il problema del trasporto della luce. In particolare ci soffermeremo sull'Ambient Occlusion, una tecnica che è stata ampiamente utilizzata nelle produzioni cinematografiche (Pearl Harbor, Jurassic Park 3, Surf Up) ed è recentemente arrivata nel mondo dei videogiochi di ultima generazione (Battlefield 3, L.A. Noire, Crysis 2 e altri), grazie all'invenzione di implementazioni efficienti e all'aumento della potenza di elaborazione dei dati delle gpu. </p>
+</li>
+</ul>
+<ul>
+<li>Venerdì 29 giugno 2012: <b>"Disk-Based Screen Space Ambient Occlusion"</b>. <br/>
+<p><b>Abstract:</b> <br/> Gli algoritmi di rendering hanno il compito di generare un'immagine a partire da un modello matematico tridimensionale. Una delle problematiche del rendering è la simulazione della luce che si diffonde nella scena. L'Ambient Occlusion è una tecnica di illuminazione in grado di migliorare la percezione dei volumi ed il realismo delle immagini generate al computer. Sebbene sia nata come algoritmo per le produzioni cinematografiche, negli ultimi anni è stata affiancata alle produzioni videoludiche grazie allo sviluppo di diverse tecniche che consentono di ridurre i tempi di calcolo e che sono note complessivamente con il nome di Screen Space Ambient Occlusion. La Disk-Based Screen Space Ambient Occlusion, sviluppata in ISISLab, appartiene a questa categoria. Nel seminario presenteremo l'idea generale su cui si basa l'algoritmo, il suo funzionamento ed infine un confronto con altre tecniche note per metterne in evidenza pregi e difetti. </p>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Riferimenti"><b>Riferimenti</b></span></h2>
+<ol>
+<li>Bunnell: <b>Dynamic ambient occlusion and indirect lighting</b>. In: GPU Gems 2, pp. 223-233. Addison-Wesley Professional (2005).</li>
+<li>Christensen: <b>Point-Based Approximate Color Bleeding</b>. In: Pixar Technical Memo #08-01 (2008).</li>
+<li>Filion, McNaughton: <b>Effects &amp; techniques</b>. In: Siggraph 2008 (2008).</li>
+<li>Hoang, Low: <b>Multi-Resolution Screen-Space Ambient Occlusion</b>. In: Proceedings of the 2011 Computer Graphics International Conference (2011).</li>
+<li>Laine, Saransaari, Kontkanen, Lehtinen, Aila: <b>Incremental Instant Radiosity for Real-Time Indirect Illumination</b>. In: Proceedings of Eurographics Symposium on Rendering 2007 (2007).</li>
+<li>Landis: <b>Production-ready global illumination</b>. In: Proceedings of the conference on SIGGRAPH 2002 (2002).</li>
+<li>Mattausch, Scherzer, Wimmer: <b>High-Quality Screen-Space Ambient Occlusion using Temporal Coherence</b>. In: Computer Graphics Forum (2010).</li>
+<li>Méndez: <b>A Simple and Practical Approach to SSAO</b>. In: gamedev.net, <a class="externallink" href="http://www.gamedev.net/page/resources/_/technical/graphics-programming-and-theory/a-simple-and-practical-approach-to-ssao-r2753" rel="nofollow" title="http://www.gamedev.net/page/resources/_/technical/graphics-programming-and-theory/a-simple-and-practical-approach-to-ssao-r2753">gamedev</a> (2010).</li>
+<li>Mittring: <b>Finding next gen: Cryengine 2</b>. In: Siggraph 2007 (2007).</li>
+<li>Pharr, Green: <b>Ambient Occlusion</b>. In: GPU GEMS 2, <a class="externallink" href="http://http.developer.nvidia.com/GPUGems/gpugems_ch17.html" rel="nofollow" title="http://http.developer.nvidia.com/GPUGems/gpugems_ch17.html">nvidia</a> (2004)</li>
+<li>Reinbothe, Boubekeur, Marc Alexa: <b>Hybrid Ambient Occlusion</b>. In: EUROGRAPHICS 2009 Areas Papers (2009).</li>
+<li>Ritschel, Grosch, Dachsbacher, Kautz: <b>State of the Art in Interactive Global Illumination</b>. In: Computer Graphics Forum (2012).</li>
+<li>Sattler, Sarlette, Zachmann, Klein: <b>Hardware-accelerated ambient occlusion computation</b>. In: Proceedings of Vision, Modeling, and Visualization 2004, pages 331-338 (2004).</li>
+<li>Shanmugan, Arikan: <b>Hardware accelerated ambient occlusion techniques on gpus</b>. In: Proceedings of the 2009 Symposium on Interactive 3D Graphics and Games (2009).</li>
+<li>Tabellion, Lamorlette: <b>An Approximate Global Illumination System for Computer Generated Films</b>. In: Siggraph 2004 (2004).</li>
+<li>Wikipedia: <b>Ambient Occlusion</b>. <a class="externallink" href="http://en.wikipedia.org/wiki/Ambient_occlusion" rel="nofollow" title="http://en.wikipedia.org/wiki/Ambient_occlusion">wiki</a>.</li>
+<li>Zhukov, Iones, Kronin : <b>An ambient light illumination model</b>. In: Rendering Techniques (1998).</li>
+</ol>
+<p> <br/>
+</p>
+

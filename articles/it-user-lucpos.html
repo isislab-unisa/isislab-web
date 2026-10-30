@@ -1,0 +1,129 @@
+---
+layout: article
+lang: it
+title: Luca Postiglione
+description: 'Sono uno studente della Magistrale di Informatica che ha deciso di seguire il Tirocinio/Tesi
+  in questo laboratorio, sia per la laurea triennale che quella magistrale. Tesi laurea triennale: Syntactical
+  Errors […]'
+permalink: /news/user-lucpos/
+article_kind: news
+date: '2021-03-05'
+import_origin: wordpress
+source_url: https://www.isislab.it/2021/03/05/user-lucpos/
+section: News
+---
+
+<figure class="wp-block-image is-resized"><img alt="" class="wp-image-8530" decoding="async" height="216" src="/assets/media/bcd582eec17904-foto.jpg" width="228"/></figure>
+<p>Sono uno studente della Magistrale di Informatica che ha deciso di seguire il Tirocinio/Tesi in questo laboratorio, sia per la laurea triennale che quella magistrale.<br/></p>
+<p><br/></p>
+<h3 class="wp-block-heading"><strong>Tesi laurea triennale: Syntactical Errors Detection</strong></h3>
+<p>Docente di riferimento: Alberto Negro<br/>Dottorando di riferimento: Maria Angela Pellegrino</p>
+<p>Il lavoro si basa sulla creazione di una libreria Python/Javascript in grado di  individuare (ed eventualmente proporre una correzione) per errori sintattici in collezioni di stringhe omogenee (es: regioni, province, comuni).</p>
+<p>Per la realizzazione della libreria si è deciso di sfruttare tecniche di clustering, quindi la prima fase di studio si è basata sulla ricerca di:
+<ul>
+<li>Individuare algoritmi di clustering in grado di lavorare su stringhe</li>
+<li>Individuare le metriche per il calcolo della distanza sulle stringhe</li>
+<li>individuare metriche di valutazione di algoritmi di clustering</li>
+</ul>
+<br/>
+Lo studio e l'analisi delle tecniche individuate ha portato alla seguenti scelte per strutturare la libreria:
+<ul>
+<li>L'implementazione di un algoritmo ibrido per la pre-computazione della matrice delle distanze utilizzando due tecniche (Levenshtein e Fuzzy String Searching), più l'utilizzo di un dizionario relativo al dataset da analizzare;</li>
+<li>L'utilizzo di AgglomerativeClustering (fornito dalla libreria ScikitLearn) come tecnica di clustering, grazie alla sua alta scalabilità, sia come numero di campioni che di cluster;</li>
+<li>L'implementazione di 2 algoritmi per individuare il numero giusto di cluster per quel dataset e per correggere gli errori presenti nel dataset;
+<br/><br/>
+Link Github del progetto: <a href="https://github.com/isislab-unisa/syntactical-errors-detection"> https://github.com/isislab-unisa/syntactical-errors-detection </a>
+</li></ul></p>
+<h4 class="wp-block-heading">slide dei seminari</h4>
+<p></p>
+<div class="wp-block-file">Syntactical-errors-detectionDownload</div>
+<div class="wp-block-file">Syntactical-errors-detection-2Download</div>
+<hr class="wp-block-separator"/>
+<h3 class="wp-block-heading">Tesi laurea Magistrale: Rust-ab</h3>
+<h4>Relatore</h4>
+<p>Prof. Vittorio Scarano </p>
+<h4>Co-relatore</h4>
+<p>Prof. Carmine Spagnuolo </p>
+<h4>Tutor</h4>
+<p>Dottor Giuseppe D'Ambrosio</p>
+<h1>Indice</h1>
+<ul>
+<li><a href="/#indice">Indice</a></li>
+<li><a href="/#cosa-studio">Cosa studio?</a></li>
+<li><a href="/#diario">Diario</a></li>
+<li><a href="/#materiale">Materiale</a>
+<ul>
+<li><a href="/#software">Software</a></li>
+<li><a href="/#riferimenti">Riferimenti</a></li>
+</ul></li>
+<li><a href="/#seminari">Seminari</a></li>
+<li><a href="/#la-mia-tesi">La mia tesi</a></li>
+</ul>
+<h1>Cosa studio?</h1>
+<p>Per la magistrale ho scelto il curriculum "Cloud Computing", interessato a come fosse realizzata un tale modello di services provisioning e di tutte le potenzialità nel suo utilizzo.</p>
+<p>Nel mio percorso, oltre agli esami obbligatori, mi sono interessato ad esami legati all'ambito HPC, ed in particolare alla programmazione su GPU. Non mi son fatto mancare esami di Cybersecurity e IA.</p>
+<h1>Diario</h1>
+<table>
+<thead>
+<tr>
+<th>Settimana</th>
+<th>Argomenti</th>
+<th>Riferimenti Utili</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Introduzione al mondo della simulazione agent-based e quali sono i framework disponibili in altri linguaggi. Set up di Rust e Cargo sulla mia macchina. Cosa è una systematic review.</td>
+<td><a href="https://github.com/rust-ab">https://github.com/rust-ab</a> <a href="https://juliadynamics.github.io/Agents.jl/stable/">https://juliadynamics.github.io/Agents.jl/stable/</a> <a href="https://www.rust-lang.org">https://www.rust-lang.org</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cosa offrono i vari competitors di Rust-ab? Bozza della systematic review, analizzando <strong>Agents.jl</strong> e <strong>Repast</strong></td>
+<td><a href="https://repast.github.io">https://repast.github.io</a> <a href="https://www.sciencedirect.com/science/article/pii/S1574013716301198">https://www.sciencedirect.com/science/article/pii/S1574013716301198</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Analisi di tool "storici": <strong>Netlogo</strong> e <strong>Mason</strong>. Analisi di tool quali <strong>Flame GPU</strong> e <strong>Mesa</strong>.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Individuare tra i tool analizzati caratteristiche fondamentali che deve avere un framework per la simulazione. Selezione dei modelli noti da implementare. Ricerca su simulazione ad eventi discreti</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Analisi di tool per la DES, da tool storici fino a quelli moderni: <strong>SIMULA</strong>, <strong>SimPy</strong> e <strong>desim</strong>. Analisi di un business framework: <strong>Anylogic</strong>. Inizio la scrittura del modello <em>Predator Prey (Wolf-Sheep-Grass)</em> usando rust-ab.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Individuazione con i componenti del team su quali feature necessarie per una simulazione: Rimozione/Aggiunta di agenti dinamicamente, per simulare morte/riproduzione e impostare velocità della simulazione. Definito il modello in attesa delle nuove feature per ultimarlo.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ricerca di paper per inziare il task <strong>Parameter space exploration and optimization</strong> e vedere come usare il metaprogramming in <strong>rust</strong>. Primi test con le feature di Scheduling dinamico. Implementazione del metodo di remove dai campi di rust-ab.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Individuato bug nella implementazione di una delle grid, che impediva il corretto svolgimento della simulazione. Attualmente applicato un fix lato modello. Ultimato il testing sulle nuove funzionalità di inserimento/rimozione dinamico di agenti.</td>
+</tr>
+</tbody>
+</table>
+<h1>Materiale</h1>
+<h2>Software</h2>
+<h2>Riferimenti</h2>
+<ol>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ol>
+<h1>Seminari</h1>
+<h1>La mia tesi</h1>
+<p><strong>Titolo</strong>: Lorem Ipsum</p>
+<p><strong>Abstract</strong>:</p>
+<blockquote>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</blockquote>
+<p><strong>Bibliografia</strong></p>
+<ol>
+<li>Autori, <em>Titolo</em>. [Conferenza|Giornale]. Altro. Anno</li>
+</ol>

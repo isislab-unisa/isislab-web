@@ -1,0 +1,99 @@
+---
+layout: article
+lang: it
+title: User:Pieaur
+description: Pietro Aurilio Distributed Steer Introduzione Il mio lavoro ha lo scopo di distribuire su più
+  macchine una applicazione per la simulazione di agenti chiamati Boids.Il modello a boid è un […]
+permalink: /news/user-pieaur/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-pieaur/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<p>Pietro Aurilio </p>
+<hr/>
+<h1><span class="mw-headline" id="Distributed_Steer">Distributed Steer</span></h1>
+<h2><span class="mw-headline" id="Introduzione">Introduzione</span></h2>
+<p>Il mio lavoro ha lo scopo di distribuire su più macchine una applicazione per la simulazione di agenti chiamati Boids.Il modello a boid è un modello per coordinare il movimento di un gruppo di animali, questo modello segue il <i><a class="externallink" href="http://www.red3d.com/cwr/boids/" rel="nofollow" title="http://www.red3d.com/cwr/boids/">Modello Reynolds</a></i>, ed è soggetto a tre differenti comportamenti: </p>
+<ul>
+<li>separazione dagli altri boids. </li>
+<li>allineamento con gli altri boid per definire la direzione di volo</li>
+<li>coesione con gli altri.</li>
+</ul>
+<p>Il mio lavoro di tesi è la continuazione del lavoro di tesi di ricerca del dottor Biagio Cosenza il quale si era occupato di parallelizzare la libreria <i><a class="externallink" href="http://opensteer.sourceforge.net/doc.html" rel="nofollow" title="http://opensteer.sourceforge.net/doc.html">OpenSteer</a></i>, creando in questo modo DistributedSteer. </p>
+<h2><span class="mw-headline" id="Obiettivi">Obiettivi</span></h2>
+<p>L'obiettivo di DistributedSteer è quello di gestire un elevato numero di boids. Con la parallelizzazione di OpenSteer i problemi che sono stati affrontati sono i seguenti: </p>
+<ul>
+<li>Bilanciare il carico di lavoro di ogni worker</li>
+<li>Avere un'alta scalabilità </li>
+</ul>
+<p>Il primo problema su mensionato, quello del bilanciamento del carico, è stato affrontato dal dottor Biagio Cosenza, che ha sviluppato tre algoritmi dinamici per la gestione del carico di lavoro. Per maggiori dettagli leggere il <i>paper</i> abbinato.</p>
+<h2><span class="mw-headline" id="Lavoro_di_Tesi">Lavoro di Tesi</span></h2>
+<p>Il mio lavoro di tesi si sta focalizzando sulla scalabilità del sistema di DistributedSteer. Nello specifico mi sono occupato della creazione in parallelo dei boids.Il nostro plugin esegue la creazione degli Agent all'interno di una <i><a class="externallink" href="http://en.wikipedia.org/wiki/Minimum_bounding_rectangle" rel="nofollow" title="http://en.wikipedia.org/wiki/Minimum_bounding_rectangle">Bounding Box</a></i>, ma per come è stato pensato il <i><a class="externallink" href="http://opensteer.sourceforge.net/doc.html#SamplePlugIns" rel="nofollow" title="http://opensteer.sourceforge.net/doc.html#SamplePlugIns">plugin</a></i>, i boids non sono equamente distribuiti lungo tutta la superficie della Bounding Box, ma sono creati all'interno di una sfera il cui raggio non coincide con il bordo della Bounding Box. </p>
+<p>I problemi riscontrati sono stati i seguenti. </p>
+<ol>
+<li> Suddividere l'intera area della Bounding Box in porzioni di Bounding Box chiamate subVoxel, in maniera tale da suddividere l'intera area tra gli n worker. </li>
+<li> Una volta eseguita la suddivisione ci siamo posti il problema di capire quanti agent dovevano essere creati da ogni singolo processore. </li>
+<li> Capito il numero di boids che dovevano essere creati da ogni singolo processore ci siamo occupati della vera e propria creazione. Modificando opportunamente il codice in modo tale che questi boids fossero creati all'interno della porzione di sfera. </li>
+<li> Abbiamo dovuto gestire accuratamente la memoria per l'allocazione di questi agent.</li>
+</ol>
+<p>Nella seconda parte della tesi mi sono occupato di eseguire uno studio accurato affinché il bilanciamento del carico avvenisse fin dal primo passo di simulazione. Per poter eseguire correttamente questo bilanciamento del carico al primo step c'è stato una fase di studio per calcolare correttamente la porzione di BoundingBox da assegnare ad ogni worker in modo tale che ogni worker possa gestire un quantitativo di agenti pari ad <b>n/k</b> dove n è il numero di agenti totali presenti nella simulazione e k il numero di worker.</p>
+<h2><span class="mw-headline" id="Risultati_Raggiunti">Risultati Raggiunti</span></h2>
+<p>Da test eseguiti in laboratorio utilizzando 4 Macchine Virtuali aventi 2GB di RAM per macchina ed ogni macchina avente 2 CPU, ed ogni CPU avente le seguenti caratteristiche: </p>
+<ul>
+<li>Intel(R) Xeon (R) E5620 2.40Ghz 12MB Cache</li>
+</ul>
+<p>Siamo arrivati a simulare 4,5 Milioni di agent con 4 worker, distribuendo al primo step di simulazione un quantitativo di agenti pari a: </p>
+<ul>
+<li> worker #1 = 1.124.891 agenti </li>
+<li> worker #2 = 1.125.102 agenti </li>
+<li> worker #3 = 1.125.072 agenti </li>
+<li> worker #4 = 1.124.935 agenti </li>
+</ul>
+<h1><span class="mw-headline" id="Seminari">Seminari</span></h1>
+<h3><span class="mw-headline" id="Primo_Seminario_11.2F03.2F2011">Primo Seminario 11/03/2011</span></h3>
+<p><b>Titolo del seminario :</b></p>
+<p>Verso la Simulazione Massiva di Milioni d'agenti</p>
+<p><b>Abstract :</b></p>
+<p>In questo seminario sono stati trattati i seguenti punti: </p>
+<ul>
+<li>Panoramica di OpenSteer</li>
+<li>Architettura di DistributedSteer</li>
+<li>Inizializzazione distribuita degli agent</li>
+</ul>
+<h1><span class="mw-headline" id="Software">Software</span></h1>
+<h3><span class="mw-headline" id="Windows_XP">Windows XP</span></h3>
+<ul>
+<li>Microsoft Visual Studio 2010 Express Edition</li>
+<li>Libreria OpenGL, GLUT</li>
+<li>DeinoMPI 2.0.1</li>
+<li>OpenSteer 0.8.2 </li>
+<li>Oracle VM VirtualBox 4.0.4</li>
+<li>VMWare Workstation 6.0</li>
+</ul>
+<h3><span class="mw-headline" id="Ubuntu_10.10">Ubuntu 10.10</span></h3>
+<ul>
+<li>mpich2</li>
+<li>cmake 2.8.2</li>
+<li>OpenSteer 0.8.2</li>
+</ul>
+<h1><span class="mw-headline" id="Riferimenti">Riferimenti</span></h1>
+<ul>
+<li><i><a class="externallink" href="http://www.red3d.com/cwr/boids/" rel="nofollow" title="http://www.red3d.com/cwr/boids/">Modello Reynolds</a></i></li>
+<li><i><a class="externallink" href="http://opensteer.sourceforge.net/doc.html" rel="nofollow" title="http://opensteer.sourceforge.net/doc.html">OpenSteer</a></i></li>
+<li><i><a class="externallink" href="http://en.wikipedia.org/wiki/Minimum_bounding_rectangle" rel="nofollow" title="http://en.wikipedia.org/wiki/Minimum_bounding_rectangle">Bounding Box</a></i></li>
+<li><i><a class="externallink" href="http://opensteer.sourceforge.net/doc.html#SamplePlugIns" rel="nofollow" title="http://opensteer.sourceforge.net/doc.html#SamplePlugIns">Sample Plugins</a></i></li>
+<li><i><a class="externallink" href="http://mpi.deino.net/" rel="nofollow" title="http://mpi.deino.net/">DeinoMPI</a></i></li>
+<li><i><a class="externallink" href="http://wiki.freepascal.org/MPICH" rel="nofollow" title="http://wiki.freepascal.org/MPICH">using MPICH 2.0</a></i></li>
+<li><i><a class="externallink" href="http://www.virtualbox.org/" rel="nofollow" title="http://www.virtualbox.org/">VirtualBox 4.0.4 for Windows hosts</a></i></li>
+<li><i><a class="externallink" href="http://sourceforge.net/projects/opensteer/" rel="nofollow" title="http://sourceforge.net/projects/opensteer/">OpenSteer 0.8.2</a></i></li>
+<li><i><a class="externallink" href="http://www.cmake.org/" rel="nofollow" title="http://www.cmake.org/">cmake 2.8.2</a></i></li>
+<li><i>Distributed Load Balancing for Parallel Agent-based Simulations</i> <br/>PDP2011 - 19th Euromicro International Conference on Parallel, Distributed and Network-Based Computing <br/>Ayia Napa, Cyprus, February 9-11th, 2011</li>
+</ul>
+<p> <br/>
+</p>
+

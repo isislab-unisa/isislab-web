@@ -1,0 +1,12 @@
+{
+  "version": "v6",
+  "reviewed_date": "2026-10-30",
+  "source": "https://www.isislab.it/",
+  "news_entries_included": 12,
+  "press_entries_included": 13,
+  "news_press_original_media_references": 13,
+  "news_press_original_media_files_bundled": 0,
+  "user_provided_original_lab_logo_bundled": true,
+  "external_media_access_error": "DNS/network restriction prevents downloading original news/press images from this environment",
+  "how_to_import": "./migrate.sh --i-have-rights-to-migrate; or python scripts/import_media_directory.py /path/to/wp-content/uploads"
+}

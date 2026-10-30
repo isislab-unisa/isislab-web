@@ -1,0 +1,10 @@
+---
+layout: page
+---
+<article class="local-article">
+  <p class="press-source"><time datetime="{{ page.date }}">{{ page.date }}</time> · ISISLab</p>
+  {% assign local_image = page.local_hero_image | default: site.data.media_local[page.feature_source_image] | default: '/assets/img/news-placeholder.svg' %}
+  <figure><img class="article-hero-img" src="{{ local_image | relative_url }}" alt="{{ page.title | escape }}"></figure>
+  {{ content }}
+  <p><a href="{% if page.lang == 'en' %}{{ '/en/news/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">← {% if page.lang == 'en' %}All news{% else %}Tutte le news{% endif %}</a></p>
+</article>

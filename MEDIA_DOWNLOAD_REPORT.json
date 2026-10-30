@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-10-30T14:46:04.022352+00:00",
+  "press_total": 13,
+  "news_total": 12,
+  "downloaded_press": 13,
+  "downloaded_news": 7,
+  "existing_local": 0,
+  "unavailable": [
+    {
+      "type": "news",
+      "slug": "european-researchers-night-2026-in-salerno",
+      "reason": "featured image URL not found/verified"
+    },
+    {
+      "type": "news",
+      "slug": "xrtourguide-evaluation-day",
+      "reason": "featured image URL not found/verified"
+    },
+    {
+      "type": "news",
+      "slug": "xrtourguide-futural-author-day",
+      "reason": "featured image URL not found/verified"
+    },
+    {
+      "type": "news",
+      "slug": "checloud-wins-best-demo-audience-choice-award",
+      "reason": "featured image URL not found/verified"
+    },
+    {
+      "type": "news",
+      "slug": "cromo-at-the-sannio-museum",
+      "reason": "featured image URL not found/verified"
+    }
+  ],
+  "files": [
+    {
+      "type": "press",
+      "slug": "cronache-della-campania-2023-02-06",
+      "source": "https://www.isislab.it/wp-content/uploads/2023/06/Presentazione-840x480-1.jpg",
+      "image": "/assets/img/press/cronache-della-campania-2023-02-06.jpg",
+      "thumbnail": "/assets/img/press/cronache-della-campania-2023-02-06-thumb.webp",
+      "width": 840,
+      "height": 480
+    },
+    {
+      "type": "press",
+      "slug": "il-mattino-salerno-p-30-2019-10-02",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/11/Hetor-Avalange.jpg",
+      "image": "/assets/img/press/il-mattino-salerno-p-30-2019-10-02.jpg",
+      "thumbnail": "/assets/img/press/il-mattino-salerno-p-30-2019-10-02-thumb.webp",
+      "width": 808,
+      "height": 843
+    },
+    {
+      "type": "press",
+      "slug": "il-risorgimento-nocerino-online-2019-02-01",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/01.02.2019-1-479x1024.jpg",
+      "image": "/assets/img/press/il-risorgimento-nocerino-online-2019-02-01.jpg",
+      "thumbnail": "/assets/img/press/il-risorgimento-nocerino-online-2019-02-01-thumb.webp",
+      "width": 479,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "insieme-diocesi-nocera-inferiore-sarno-p-20-2018-04",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/11/04.2018-insieme-744x1024.jpg",
+      "image": "/assets/img/press/insieme-diocesi-nocera-inferiore-sarno-p-20-2018-04.jpg",
+      "thumbnail": "/assets/img/press/insieme-diocesi-nocera-inferiore-sarno-p-20-2018-04-thumb.webp",
+      "width": 744,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "il-risorgimento-nocerino-online-2018-02-24",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/IL-RISORGIMENTO-312x1024.jpg",
+      "image": "/assets/img/press/il-risorgimento-nocerino-online-2018-02-24.jpg",
+      "thumbnail": "/assets/img/press/il-risorgimento-nocerino-online-2018-02-24-thumb.webp",
+      "width": 312,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "il-risorgimento-nocerino-online-2017-11-01",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/01.11.2017-426x1024.jpg",
+      "image": "/assets/img/press/il-risorgimento-nocerino-online-2017-11-01.jpg",
+      "thumbnail": "/assets/img/press/il-risorgimento-nocerino-online-2017-11-01-thumb.webp",
+      "width": 426,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "la-repubblica-napoli-p-viii-2017-06-07",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/11/06.07.2017-1-1024x736.jpg",
+      "image": "/assets/img/press/la-repubblica-napoli-p-viii-2017-06-07.jpg",
+      "thumbnail": "/assets/img/press/la-repubblica-napoli-p-viii-2017-06-07-thumb.webp",
+      "width": 1024,
+      "height": 736
+    },
+    {
+      "type": "press",
+      "slug": "le-cronache-p-16-2016-09-26",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/11/Cronache-29.09.2016-1024x590.jpg",
+      "image": "/assets/img/press/le-cronache-p-16-2016-09-26.jpg",
+      "thumbnail": "/assets/img/press/le-cronache-p-16-2016-09-26-thumb.webp",
+      "width": 1024,
+      "height": 590
+    },
+    {
+      "type": "press",
+      "slug": "il-risorgimento-nocerino-online-2016-09-21",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/21.settembre-2016-515x1024.jpg",
+      "image": "/assets/img/press/il-risorgimento-nocerino-online-2016-09-21.jpg",
+      "thumbnail": "/assets/img/press/il-risorgimento-nocerino-online-2016-09-21-thumb.webp",
+      "width": 515,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "il-risorgimento-nocerino-online-2016-07-09",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/9-luglio-2016-443x1024.jpg",
+      "image": "/assets/img/press/il-risorgimento-nocerino-online-2016-07-09.jpg",
+      "thumbnail": "/assets/img/press/il-risorgimento-nocerino-online-2016-07-09-thumb.webp",
+      "width": 443,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "il-mattino-salerno-p-34-2016-06-03",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/11/03.06.2016-931x1024.jpg",
+      "image": "/assets/img/press/il-mattino-salerno-p-34-2016-06-03.jpg",
+      "thumbnail": "/assets/img/press/il-mattino-salerno-p-34-2016-06-03-thumb.webp",
+      "width": 931,
+      "height": 1024
+    },
+    {
+      "type": "press",
+      "slug": "la-citta-2015-04-16",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/16.04.2015-1024x851.jpg",
+      "image": "/assets/img/press/la-citta-2015-04-16.jpg",
+      "thumbnail": "/assets/img/press/la-citta-2015-04-16-thumb.webp",
+      "width": 1024,
+      "height": 851
+    },
+    {
+      "type": "press",
+      "slug": "la-citta-p-17-2012-03-01",
+      "source": "https://www.isislab.it/wp-content/uploads/2019/12/01.03.2012-lacitta-561x1024.jpg",
+      "image": "/assets/img/press/la-citta-p-17-2012-03-01.jpg",
+      "thumbnail": "/assets/img/press/la-citta-p-17-2012-03-01-thumb.webp",
+      "width": 561,
+      "height": 1024
+    },
+    {
+      "type": "news",
+      "slug": "isislab-research-accepted-at-neurips",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/09/paper.jpg",
+      "image": "/assets/img/news/isislab-research-accepted-at-neurips.jpg",
+      "thumbnail": "/assets/img/news/isislab-research-accepted-at-neurips-thumb.webp",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "type": "news",
+      "slug": "xrtourguide-at-the-morigerati-museum",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/05/Liceo-da-Vinci-14-05-2026-2.png",
+      "image": "/assets/img/news/xrtourguide-at-the-morigerati-museum.png",
+      "thumbnail": "/assets/img/news/xrtourguide-at-the-morigerati-museum-thumb.webp",
+      "width": 1456,
+      "height": 873
+    },
+    {
+      "type": "news",
+      "slug": "campania-data-center-open-day",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/05/12.png",
+      "image": "/assets/img/news/campania-data-center-open-day.png",
+      "thumbnail": "/assets/img/news/campania-data-center-open-day-thumb.webp",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "type": "news",
+      "slug": "geckode-hackathon-2026",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/04/02-.jpg",
+      "image": "/assets/img/news/geckode-hackathon-2026.jpg",
+      "thumbnail": "/assets/img/news/geckode-hackathon-2026-thumb.webp",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "type": "news",
+      "slug": "teaching-blockchain-without-computers-acm-chi-2026",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/09/MAP-1.jpg",
+      "image": "/assets/img/news/teaching-blockchain-without-computers-acm-chi-2026.jpg",
+      "thumbnail": "/assets/img/news/teaching-blockchain-without-computers-acm-chi-2026-thumb.webp",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "type": "news",
+      "slug": "xrtourguide-at-unisa-third-mission",
+      "source": "https://www.isislab.it/wp-content/uploads/2026/04/2025-12-12-XRTourGuide-terza-Missione.jpg",
+      "image": "/assets/img/news/xrtourguide-at-unisa-third-mission.jpg",
+      "thumbnail": "/assets/img/news/xrtourguide-at-unisa-third-mission-thumb.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "type": "news",
+      "slug": "xrtwinscape-at-researchers-night",
+      "source": "https://www.isislab.it/wp-content/uploads/2025/10/Notte-Ricercatori-1.png",
+      "image": "/assets/img/news/xrtwinscape-at-researchers-night.png",
+      "thumbnail": "/assets/img/news/xrtwinscape-at-researchers-night-thumb.webp",
+      "width": 1080,
+      "height": 1080
+    }
+  ]
+}

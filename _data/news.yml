@@ -1,0 +1,102 @@
+- date: '2026-10-12'
+  title_it: S.T.R.E.E.T.S. – Notte Europea dei Ricercatori 2026
+  title_en: European Researchers’ Night 2026 in Salerno
+  summary_it: ISISLab ha partecipato alla Notte Europea dei Ricercatori 2026 a Salerno con dimostrazioni di avatar 3D
+    interattivi, intelligenza artificiale e tecnologie immersive.
+  summary_en: ISISLab participated in European Researchers’ Night in Salerno, presenting interactive demonstrations involving
+    AI, immersive technologies and animated 3D avatars.
+  url: https://www.isislab.it/2026/10/12/s-t-r-e-e-t-s-%F0%9D%97%A1%F0%9D%97%BC%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B2-%F0%9D%97%98%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%AE-%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%B6/
+  slug: european-researchers-night-2026-in-salerno
+- date: '2026-09-28'
+  title_it: 'Ricerca ISISLab alla NeurIPS: Hypergraph Generation with Latent Diffusion'
+  title_en: ISISLab research accepted at NeurIPS
+  summary_it: Il lavoro di Carmine Spagnuolo e Valerio Di Pasquale sull’apprendimento generativo di ipergrafi è stato
+    accettato alla conferenza NeurIPS.
+  summary_en: A paper by Carmine Spagnuolo and Valerio Di Pasquale on hypergraph generation using latent diffusion was
+    accepted at NeurIPS.
+  url: https://www.isislab.it/2026/09/28/ricerca-isislab-alla-neurips-hypergraph-generation-with-latent-diffusion/
+  slug: isislab-research-accepted-at-neurips
+  image: https://www.isislab.it/wp-content/uploads/2026/09/paper.jpg
+- date: '2026-05-19'
+  title_it: XRTourGuide al Museo di Morigerati
+  title_en: XRTourGuide at the Morigerati Museum
+  summary_it: Il 9 maggio il Museo Etnografico di Morigerati ha ospitato una sperimentazione con l’app XRTourGuide per
+    la valorizzazione del territorio.
+  summary_en: The Ethnographic Museum in Morigerati hosted a May 9 demonstration of XRTourGuide for immersive cultural
+    exploration.
+  url: https://www.isislab.it/2026/05/19/xrtourguide-al-museo-di-morigerati-tecnologia-e-cultura-si-incontrano/
+  slug: xrtourguide-at-the-morigerati-museum
+  image: https://www.isislab.it/wp-content/uploads/2026/05/Liceo-da-Vinci-14-05-2026-2.png
+- date: '2026-05-07'
+  title_it: Open Day Data Center – Regione Campania
+  title_en: Campania Data Center Open Day
+  summary_it: Open Day Data Center del 5 maggio 2026, organizzato con il Dipartimento di Informatica dell’Università
+    di Salerno.
+  summary_en: A May 5 Data Center Open Day was organized in cooperation with the Department of Computer Science at the
+    University of Salerno.
+  url: https://www.isislab.it/2026/05/07/open-day-data-center-ufficio-trasformazione-digitale-regione-campania/
+  slug: campania-data-center-open-day
+  image: https://www.isislab.it/wp-content/uploads/2026/05/12.png
+- date: '2026-04-17'
+  title_it: 'Geckode Hackathon 2026: innovazione e XR'
+  title_en: Geckode Hackathon 2026
+  summary_it: Il 16 e 17 aprile la comunità UNISA, NEOLAiA e Youbiquo si è riunita per un hackathon dedicato alle tecnologie
+    XR.
+  summary_en: University of Salerno, NEOLAiA and Youbiquo held an XR-focused hackathon on April 16 and 17.
+  url: https://www.isislab.it/2026/04/17/geckode-hackathon-2026-innovazione-xr-e-sviluppo-del-metaverso-neolaia-a-unisa/
+  slug: geckode-hackathon-2026
+  image: https://www.isislab.it/wp-content/uploads/2026/04/02-.jpg
+- date: '2026-04-13'
+  title_it: 'XRTourGuide: Evaluation Day'
+  title_en: 'XRTourGuide: Evaluation Day'
+  summary_it: Giornata di valutazione del progetto XRTourGuide – FUTURAL a Futani, il 15 aprile 2026.
+  summary_en: An evaluation event for the XRTourGuide – FUTURAL initiative was scheduled for April 15 in Futani.
+  url: https://www.isislab.it/news/
+  slug: xrtourguide-evaluation-day
+- date: '2026-03-23'
+  title_it: 'Blockchain a scuola senza computer: paper alla ACM CHI 2026'
+  title_en: 'Teaching blockchain without computers: ACM CHI 2026'
+  summary_it: Uno studio sull’insegnamento della blockchain ai più giovani è stato accettato alla conferenza ACM CHI
+    2026.
+  summary_en: A hands-on approach to teaching blockchain concepts to younger learners was accepted at ACM CHI 2026.
+  url: https://www.isislab.it/news/
+  slug: teaching-blockchain-without-computers-acm-chi-2026
+  image: https://www.isislab.it/wp-content/uploads/2026/09/MAP-1.jpg
+- date: '2025-12-12'
+  title_it: XRTourGuide alla Terza Missione di UNISA
+  title_en: XRTourGuide at UNISA Third Mission
+  summary_it: XRTourGuide ha partecipato alle attività di Terza Missione del Dipartimento di Informatica.
+  summary_en: XRTourGuide was featured among initiatives connecting University of Salerno research with its wider community.
+  url: https://www.isislab.it/news/
+  slug: xrtourguide-at-unisa-third-mission
+  image: https://www.isislab.it/wp-content/uploads/2026/04/2025-12-12-XRTourGuide-terza-Missione.jpg
+- date: '2025-12-10'
+  title_it: XRTourGuide FUTURAL Author Day
+  title_en: XRTourGuide FUTURAL Author Day
+  summary_it: Una giornata di presentazioni e interviste dedicate al progetto di realtà estesa e ai suoi partner.
+  summary_en: The project held a dedicated Author Day featuring presentations and interviews with research partners.
+  url: https://www.isislab.it/news/
+  slug: xrtourguide-futural-author-day
+- date: '2025-11-30'
+  title_it: CHeCLOUD vince il Best Demo Audience Choice Award
+  title_en: CHeCLOUD wins Best Demo Audience Choice Award
+  summary_it: Il team di Gabriele Tuozzo, Maria Angela Pellegrino e Antonio Lieto ha ottenuto un premio demo all’ISWC
+    2025.
+  summary_en: Gabriele Tuozzo, Maria Angela Pellegrino and Antonio Lieto received the demo audience award at ISWC 2025.
+  url: https://www.isislab.it/news/
+  slug: checloud-wins-best-demo-audience-choice-award
+- date: '2025-11-05'
+  title_it: CROMO al Museo del Sannio
+  title_en: CROMO at the Sannio Museum
+  summary_it: Incontro pubblico dedicato a tecnologie e idee per la valorizzazione del patrimonio culturale.
+  summary_en: The CROMO project took part in an event at the Sannio Museum discussing innovative cultural heritage technologies.
+  url: https://www.isislab.it/news/
+  slug: cromo-at-the-sannio-museum
+- date: '2025-10-16'
+  title_it: XRTwinScape alla Notte dei Ricercatori
+  title_en: XRTwinScape at Researchers’ Night
+  summary_it: Il progetto XRTwinScape ha presentato dimostrazioni immersive alla Notte dei Ricercatori UNISA.
+  summary_en: The XRTwinScape project presented immersive demonstrations at the University of Salerno Researchers’ Night.
+  url: https://www.isislab.it/news/
+  slug: xrtwinscape-at-researchers-night
+  image: https://www.isislab.it/wp-content/uploads/2025/10/Notte-Ricercatori-1.png

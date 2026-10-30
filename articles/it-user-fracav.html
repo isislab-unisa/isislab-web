@@ -1,0 +1,80 @@
+---
+layout: article
+lang: it
+title: User:Fracav
+description: Francesco Cavezza L’uomo libero è come una nuvola bianca. Una nuvola bianca è un mistero; si lascia
+  trasportare dal vento, non resiste, non lotta, e si libra al di sopra […]
+permalink: /news/user-fracav/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-fracav/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<p><a class="image" href="/image-under-constuction-gif/" title="Under Construction"><img alt="Under Construction" decoding="async" src="/assets/media/d95033ec70b2a2-under-constuction.gif" width="220"/> </a></p>
+<hr/>
+<h2><span class="mw-headline" id="Francesco_Cavezza"><b>Francesco Cavezza</b></span></h2>
+<ul>
+<li><i>L'uomo libero è come una nuvola bianca. Una nuvola bianca è un mistero; si lascia trasportare dal vento, non resiste, non lotta, e si libra al di sopra di ogni cosa. Tutte le dimensioni e tutte le direzioni le appartengono. Le nuvole bianche non hanno una provenienza precisa e non hanno una meta; il loro semplice essere in questo momento è perfezione.</i> (Rajneesh Chandra Mohan Jain aka <a class="externallink" href="http://it.wikipedia.org/wiki/Osho_Rajneesh" rel="nofollow" title="http://it.wikipedia.org/wiki/Osho_Rajneesh">Osho</a>)</li>
+</ul>
+<h3><span class="mw-headline" id="Lavoro:_Un_tool_per_la_condivisione_di_documenti_in_CoFFEE">Lavoro: Un tool per la condivisione di documenti in CoFFEE</span></h3>
+<p>Il tool che sto sviluppando ha lo scopo di consentire la condivisione di documenti all'interno di <a class="externallink" href="/coffee/" rel="nofollow" title="/wiki/index.php/CoFFEE">CoFFEE</a>, realizzata utilizzando il <a class="externallink" href="http://it.wikipedia.org/wiki/File_Transfer_Protocol" rel="nofollow" title="http://it.wikipedia.org/wiki/File_Transfer_Protocol">protocollo FTP</a> per la trasmissione dei dati sulla rete.</p>
+<p>Il tool consiste di tre plugins, un server plugin, un client plugin ed un common plugin, che rappresenta la parte "in comune", ovvero contenente le librerie condivise sia dal client che dal server.</p>
+<p>Il server plugin è avviato unitamente ad un server ftp, che gestisce le richieste di upload, download, delete di files e di creazione ed eliminazione di directories. Il server ftp utilizzato è <a class="externallink" href="http://www.ryanheise.com/software/jftpd/" rel="nofollow" title="http://www.ryanheise.com/software/jftpd/">jftpd</a>. Sia server plugin che client plugin utilizzano un'implementazione della File Transfer API di ECF, la quale utilizza il client ftp <a class="externallink" href="http://finj.sourceforge.net/" rel="nofollow" title="http://finj.sourceforge.net/">finj</a> per poter comunicare con il server ftp.<br/> Il servizio di localizzazione del server ftp si basa sulla Shared Object API di ECF, che "fornisce servizi di base per la creazione di repliche di Java Objects o 'shared objects' in un container distribuito". Nello specifico, quando il client plugin viene avviato, quest'ultimo fa richiesta dell'indirizzo del server ftp al server plugin,'condividendo' un oggetto Java mediante il proprio container. Il server plugin risponde aggiungendo nel container corrispondente un oggetto rappresentante l'indirizzo del server ftp, che verrà poi recuperato dal client plugin. A questo punto il client plugin può connettersi al server ftp.</p>
+<p>Dal punto di vista grafico, il tool presenta attualmente due pulsanti, una label ed una vista ad albero.Il primo pulsante consente l'invio di un file, scelto dal file system locale, al server ftp.Il secondo pulsante consente all'utente di scegliere, dalla cartella in cui vengono salvati i file scaricati dal server ftp, un file da aprire. Tuttavia, l'utente può anche scegliere di aprire un file in una cartella differente sul proprio file system. La vista ad albero dei files presenti sull'ftp server viene visualizzata sotto i due pulsanti. Cliccando con il tasto destro del mouse sulla vista, si apre un pop-up menu che permette all'utente: </p>
+<ol>
+<li>il download multiplo di files e cartelle dal server ftp</li>
+<li>l'eliminazione multipla di files e cartelle che risiedono sul server ftp</li>
+<li>la creazione di una directory sul server ftp</li>
+<li>il refreshing della vista</li>
+</ol>
+<p>In particolare, per quanto riguarda l'eliminazione multipla di files e cartelle, sono state aggiunte delle restrizioni: al server viene consentita l'eliminazione di tutti i files che risiedono sul server ftp, mentre ai clients viene consentita la rimozione di quei files di cui ognuno di loro è proprietario, cioè ogni client può rimuovere solo quei files che egli stesso ha inserito in precedenza. Inoltre, in aggiunta alla politica precedente, attualmente possono essere eliminate solo cartelle che non contengono files.</p>
+<h3><span class="mw-headline" id="Seminari">Seminari</span></h3>
+<ul>
+<li>Un tool per la condivisione di documenti in CoFFEE 20/11/2009
+<ul>
+<li><a href="/assets/media/c9ebd727155dac-docsharetool11.pdf" title="Media:DocShareTool.pdf">DocShareTool.pdf</a></li>
+</ul>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Software_utilizzato">Software utilizzato</span></h3>
+<ul>
+<li>Java JDK 1.6 update 14</li>
+<li>Eclipse SDK 3.4.2 Ganymede</li>
+<li>Eclipse Communication Framework (ECF) 2.1</li>
+<li>CoFFEE 4.3.1</li>
+</ul>
+<h3><span class="mw-headline" id="Riferimenti">Riferimenti</span></h3>
+<ul>
+<li><b>CoFFEE</b>
+<ul>
+<li><a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf">CoFFEE Core Technical Documentation</a></li>
+<li><a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf">CoFFEE Tools Technical Documentation</a></li>
+<li><a class="externallink" href="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Developer-Guide_1_0_20081015.pdf" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/attachment/wiki/MiscWikiFiles/CoFFEE-Developer-Guide_1_0_20081015.pdf">CoFFEE Developer Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><b>ECF</b>
+<ul>
+<li><a class="externallink" href="http://www.eclipse.org/ecf/" rel="nofollow" title="http://www.eclipse.org/ecf/">ECF Project Home</a></li>
+<li><a class="externallink" href="http://www.ibm.com/developerworks/opensource/library/os-ecl-commfwk/" rel="nofollow" title="http://www.ibm.com/developerworks/opensource/library/os-ecl-commfwk/">Un piccolo esempio su come utilizzare ECF</a> </li>
+<li><a class="externallink" href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API" rel="nofollow" title="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer API</a></li>
+<li><a class="externallink" href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API" rel="nofollow" title="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object API</a></li>
+<li><a class="externallink" href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/" rel="nofollow" title="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">ECF JavaDocs</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><b>FTP</b>
+<ul>
+<li>RFC 959</li>
+</ul>
+</li>
+</ul>
+<p> <br/>
+</p>
+

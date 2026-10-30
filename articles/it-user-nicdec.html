@@ -1,0 +1,197 @@
+---
+layout: article
+lang: it
+title: user-nicdec
+description: Nicola De Cristofaro Laurea Magistrale indirizzo Cloud Computing Relatore [Professore] Vittorio
+  Scarano Co-relatore [Postdoc] Carmine Spagnuolo Tutor [PhD] Giuseppe D’Ambrosio Cosa studio? FLY Il principale
+  argomento di studio attuale e […]
+permalink: /news/user-nicdec/
+article_kind: news
+date: '2020-10-21'
+import_origin: wordpress
+source_url: https://www.isislab.it/2020/10/21/user-nicdec/
+section: News
+---
+<h1>Nicola De Cristofaro</h1>
+<h4>Laurea Magistrale indirizzo Cloud Computing</h4>
+<h4>Relatore</h4>
+<p>[Professore] Vittorio Scarano</p>
+<h4>Co-relatore</h4>
+<p>[Postdoc] Carmine Spagnuolo</p>
+<h4>Tutor</h4>
+<p>[PhD] Giuseppe D'Ambrosio</p>
+<h1>Cosa studio?</h1>
+<p><b>FLY</b><br/>
+Il principale argomento di studio attuale e argomento di tesi è FLY, un progetto ideato da Matteo D'Auria, Carmine Spagnuolo. Nel contesto della computazione Scientifica, sin dalla diffusione del Cloud è stato subito chiaro come il paradigma utilizzato dal Cloud rappresentava un'opportunità per sviluppare ed eseguire applicazioni su larga scala pur mantenendo le spese estremamente basse in confronto alle soluzioni di high-performance computing, di solito utilizzate. Questo ha portato al graduale passaggio da datacenter privati fino all’utilizzo di più cloud provider, la cosiddetta "multiple clouds strategy", per soddisfare al meglio i principali requisiti di disponibilità e riduzione dei costi. Tuttavia, una strategia multi-cloud, pur fornendo numerosi vantaggi, inevitabilmente aggiunge un layer di complessità di gestione, che richiede di conseguenza skills specifiche, skills che spesso non sono possedute da scienziati o altre figure nel campo della computazione scientifica.</p>
+<p>Eliminare questo extra layer di complessità è proprio l'obiettivo primario di FLY, un linguaggio di programmazione DSL (domain-specific-language), in particolare per lo sviluppo di applicazioni su larga scala di scientific computing, che permette di sfruttare al pieno i vantaggi offerti dai servizi serverless delle piattaforme cloud.</p>
+<ul>
+<li><b>FLY on Virtual Machine</b>
+<ul>
+<li>Supponiamo di voler lanciare una esecuzione FLY computazionalmente onerosa che impiega quindi molto tempo per essere eseguita. In questo scenario l’esecuzione FLY su un backend Serverless non è praticabile. Questo perché, per favorire la velocità e la scalabilità, la maggior parte dei cloud providers pongono un periodo di time-out per l'esecuzione di una funzione serverless, di solito 10 o 15 minuti. Quindi ogni esecuzione che impiega più tempo, del tempo concesso viene terminata. Quindi se è necessaria e inevitabile una computazione long-running, l'approccio serverless non è un'alternativa valida. L’alternativa potrebbe essere quella di eseguire FLY su un backend SMP, interamente in locale, architettura realizzata con un pool di threads in Java. In questo caso però, effettuiamo un’esecuzione locale e ovviamente a seconda dei risultati che vogliamo ottenere dal parallelismo dobbiamo impiegare un numero di core adeguato che in questo caso è limitato dal numero di cores locali.</li>
+<li>Per ovviare a questo limite, la soluzione utilizzata è stata quella di introdurre una Virtual Machine su una piattaforma Cloud, per ora AWS e Microsoft Azure, ma ovviamente il processo può essere esteso anche alle altre piattaforme cloud. Data la varietà di configurazioni disponibili, è possibile creare un'istanza di virtual machine che abbia un elevato numero di core 32 o 64, e spostare quindi l'esecuzione di FLY sulla Virtual Machine. In questo modo eseguiamo FLY sfruttando al meglio tutti i core disponibili, ovviando quindi sia al problema del time-out di esecuzione delle funzioni serverless, sia al limite hardware nell’esecuzione locale.</li>
+<li>Per incrementare ulteriormente i benefici dati    dall'utilizzo delle Virtual Machine è possibile utilizzare queste ultime in Cluster. In questo modo distribuendo uniformemente il carico tra le instanze di VM nel Cluster è possibile riuscire ad eseguire FLY function in parallelo su numero molto elevato di vCPU. </li>
+</ul>
+</li>
+</ul>
+<hr/>
+<p><b>Altri interessi</b></p>
+<ul>
+<li>Studio e utilizzo dei Cloud Provider più utilizzati attualmente: Google Cloud Platform, Amazon Web Service, Microsoft Azure.</li>
+<li>Studio di algoritmi e tecniche, in particolare per prepararmi a prossime Technical Interviews.</li>
+</ul>
+<h1>Diario</h1>
+<table>
+<thead>
+<tr>
+<th>Settimana</th>
+<th>Argomenti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1)19-23/10/2020</td>
+<td>1. Studio Java SDK per AWS (differenze tra versione 1.x e 2.x)<br/> 2. Creazione e lancio dell'istanza EC2 tramite Java SDK per AWS(v 1.x) con implementazione dei waiter che attendono fino a quando l'istanza è effettivamente "running" <br/> 3. Implementazione dei metodi per gestire istanza ec: start, stop, terminate, reboot, describe.</td>
+</tr>
+<tr>
+<td>(2)26-30/10/2020</td>
+<td>1. Creazione e lancio dell'istanza EC2 tramite Java SDK per AWS(v 1.x)  con script associato che pre-installa software <br/> 2. Upload di un file .jar sull'istanza e connessione all'istanza tramite JSch ed esecuzione dell'applicazione java, memorizzando l'output in un file.</td>
+</tr>
+<tr>
+<td>(3)02-06/11/2020</td>
+<td>Uso esclusivo di AWS SDK for Java e recupero app da eseguire da AWS S3: <br/> 1. Creazione e lancio dell'istanza EC2 con script associato che pre-installa software (JRE, AWS CLI) <br/> 2. Sincronizzazione con una cartella presente su bucket S3 (comando "aws s3 sync" al boot dell'istanza) per avere a disposizione l'app java da eseguire <br/> 3. Esecuzione dell'applicazione java (HelloWorld.java) tramite il lancio di un comando all'istanza con AWS System Manager, output in console <br/> 4. Terminazione istanza EC2.</td>
+</tr>
+<tr>
+<td>(4)09-13/11/2020</td>
+<td>1. Introduzione a xtext e FLY <br/> 2. Installazione software necessario e prime esecuzioni di applicazioni in FLY <br/> 3. Definizione obiettivi progetto</td>
+</tr>
+<tr>
+<td>(5)16-20/11/2020</td>
+<td>1. Creazione della variabile d'ambiente per FLY di tipo "vm" (Virtual Machine) <br/> 2. Modifica del generatore di codice Java per gestire tutte le dichiarazioni associate alla nuova variabile d'ambiente "vm" <br/>3. Generazione di un secondo file Java, che permette di fare upload su S3 del primo file Java generato, creare e lanciare una VM su S3 ed eseguire quell'app Java sulla VM creata. In seguito, scrivere su console l'output e teminare l'istanza su AWS.</td>
+</tr>
+<tr>
+<td>(6)23-04/11/2020</td>
+<td>Riformulazione delle sintassi FLY e aggiornamento del codice generato associato.</td>
+</tr>
+<tr>
+<td>(7)07-11/12/2020</td>
+<td>1.Cambio strategia: upload su S3 del progetto FLY come zip contenente tutti i file necessari all'esecuzione FLY, poi generazione del JAR sulla macchina virtuale, evitando un trasferimento di grosse dimensioni.<br/> 2.Implementazione della possibilità di scelta tra on-demand instance o spot instance su AWS pro e contro.</td>
+</tr>
+<tr>
+<td>(8)14-18/11/2020</td>
+<td>Preparazione presentazione per il seminario n.1 - Data 21/12/2020</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Pausa Sessione Invernale 20-21</td>
+</tr>
+<tr>
+<td>(9)15-19/02/2021</td>
+<td>Creazione di una libreria esterna per la gestione dei servizi di AWS per l'utilizzo delle VM in FLY</td>
+</tr>
+<tr>
+<td>(10)22-26/02/2021</td>
+<td>Integrazione libreria esterna  creata AWSClient nel generatore di codice FLY + reformat e "pulizia" codice</td>
+</tr>
+<tr>
+<td>(11)01-05/03/2021</td>
+<td>Aggiunta "persistence" a una VM in FLY: se il parametro persistence della VM è "true" allora la VM non è terminata a fine utilizzo, ma è possibile riutilizzarla per una successiva esecuzione; se invece persistence è "false" la VM viene usata per l'esecuzione e poi terminata.</td>
+</tr>
+<tr>
+<td>(12)08-12/03/2021</td>
+<td>Inizio dello sviluppo della libreria per Azure per la gestione delle VM in FLY.(creazione VM, persistenza VM, terminazione VM)</td>
+</tr>
+<tr>
+<td>(13)15-19/03/2021</td>
+<td>Continuo nello sviluppo della libreria Azure per eseguire FLY su Virtual Machines.</td>
+</tr>
+<tr>
+<td>(14)22-26/03/2021</td>
+<td>Implementazione Cluster di Virtual Machine invece di utilizzarne una sola (Azure per ora)</td>
+</tr>
+<tr>
+<td>(15)29-01/04/2021</td>
+<td>Continuo implementazione Cluster di VMs + integrazione nel generatore FLY + reformat sintassi in FLY</td>
+</tr>
+<tr>
+<td>(16)06-09/04/2021</td>
+<td>Lancio di comandi in modo asincrono alle VM del Cluster, attesa dei risultati dei comandi asincroni attraverso oggetti Observable</td>
+</tr>
+<tr>
+<td>(17)12-16/04/2021</td>
+<td>Ricerca bug e fix generazione codice per Matrix in FLY</td>
+</tr>
+<tr>
+<td>(18)19-23/04/2021</td>
+<td>Splitting e distribuzione dell'input alle VM nel cluster (RangeLiteral, Matrix by row - tipi di dati supportati al momento)</td>
+</tr>
+<tr>
+<td>(19)26-30/04/2021</td>
+<td>Implementazione Cluster di Virtual Machine in AWS + documentazione</td>
+</tr>
+<tr>
+<td>(20)03-07/05/2021</td>
+<td>Continuo implementazione VM Cluster sia per AWS che AZURE</td>
+</tr>
+<tr>
+<td>(21)10-14/05/2021</td>
+<td>Integrazione della nuova implementazione VM Cluster nel generatore FLY + testing</td>
+</tr>
+<tr>
+<td>(22)17-21/05/2021</td>
+<td>Implementazione funzioni di base (es. length) per la gestione di Array e Matrici in FLY.</td>
+</tr>
+<tr>
+<td>(23)24-28/05/2021</td>
+<td>Implementazione esecuzione FLY prendendo come input una variabile di tipo Array, effettuando lo splitting tra i vari thread disponibili (esecuzione in locale).</td>
+</tr>
+<tr>
+<td>(24)31-04/06/2021</td>
+<td>Esecuzione FLY con input array (serverless) pyhton e nodejs [AWS]</td>
+</tr>
+<tr>
+<td>(25)07-11/06/2021</td>
+<td>Generazione FOR per array e matrici (java, pthon, nodejs)</td>
+</tr>
+<tr>
+<td>(26)14-18/06/2021</td>
+<td>Esecuzione FLY con input array (serverless) pyhton e nodejs [Azure]</td>
+</tr>
+<tr>
+<td>(27)21-25/06/2021</td>
+<td>Esecuzione FLY con input matrice splitted "by row" AWS, Azure, local</td>
+</tr>
+<tr>
+<td>(28)28-02/07/2021</td>
+<td>Esecuzione FLY con input matrice splitted "by col" AWS, Azure, local</td>
+</tr>
+<tr>
+<td>(29)19-23/07/2021</td>
+<td>Passaggio array e matrici sul channel</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Pausa Sessione Estiva 20-21</td>
+</tr>
+<tr>
+<td>(30)01-08/09/2021</td>
+<td>Fixing bug su matrici, inizializzazione matrici, passaggio matrici di vari tipi su channel</td>
+</tr>
+</tbody>
+</table>
+<h1>Seminari</h1>
+<p><u><b>Seminario 1 (21/12/2020): </b> </u><br/>
+<b>Titolo: </b> Supporto all'esecuzione su Virtual Machine in FLY<br/>
+<b>Abstract: </b>FLY, un Domain-Specific-Language per il calcolo scientifico sul multi-cloud il cui obiettivo è quello di semplificare lo sviluppo di applicazioni che sfruttino la potenza computazionale offerta dai cloud provider e dai loro servizi. L’interazione con il cloud viene astratta all’utente finale che non necessita di conoscere le specifiche API del provider che vuole utilizzare.<br/>
+Questo seminario ha lo scopo di presentare la possibilità introdotta in FLY di poter eseguire il programma su una Virtual Machine su ambiente AWS mediante un’apposita istruzione FLY che permette di creare, lanciare comandi e gestire un’istanza di una Virtual Machine sul Cloud.</p>
+<h1>La mia tesi</h1>
+<p><b>Work in progress...</b></p>
+<p><strong>Titolo</strong>: Lorem Ipsum</p>
+<p><strong>Abstract</strong>:</p>
+<blockquote>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+</blockquote>
+<p><strong>Bibliografia</strong></p>
+<ol>
+<li>Autori, <em>Titolo</em>. [Conferenza|Giornale]. Altro. Anno</li>
+</ol>
+

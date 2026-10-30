@@ -1,0 +1,65 @@
+- id: faculty
+  it: Docenti
+  en: Faculty
+  people:
+  - Vittorio Scarano
+  - Delfina Malandrino
+  - Gennaro Cordasco
+  - Biagio Cosenza
+  - Carmine Spagnuolo
+  - Maria Angela Pellegrino
+- id: phd
+  it: Dottorandi
+  en: PhD researchers
+  people:
+  - Valerio Di Pasquale
+  - Sana Latif
+  - Babar Hussain
+  - Tiziano Citro
+  - Saleh Jamali Golzar
+  - Antonio De Caro
+  - Gabriele Tuozzo
+- id: research
+  it: Assegnisti di ricerca
+  en: Research fellows
+  people:
+  - Daniele De Vinco
+  - Daniele Monaco
+  - Lorenzo Carpentieri
+  - Giuseppina Palmieri
+- id: fellows
+  it: Borsisti
+  en: Fellows
+  people:
+  - Sarah Pellone
+  - Andrea Amorosini
+  - Marianna Ambrosino
+  - Vanja Annunziata
+  - Alberto Accardo
+  - Giusy Gonnella
+- id: alumni
+  it: Alumni
+  en: Alumni
+  people:
+  - Flavio Serrapica
+  - Roberto Andreoli
+  - Michele Carillo
+  - Matteo D'Auria
+  - Francesco Raia
+  - Carmen Luciano
+  - Renato De Donato
+  - Armando Faggiano
+  - Diletta Rizzolo
+  - Rosario De Chiara
+  - Alfonso Guarino
+  - Luca Vicidomini
+  - Alessia Antemi
+  - Giuseppe D'Ambrosio
+  - Luigi Serra
+  - Majid Salimi Beni
+  - Agnese Addone
+  - Andrea Petta
+  - Kaijie Fan
+  - Dario De Maio
+  - Luigi Crisci
+  - Mohammad Vazirpanah

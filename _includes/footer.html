@@ -1,0 +1,11 @@
+{% assign locale = page.lang | default: 'it' %}{% assign t = site.data.ui[locale] %}{% if locale == 'en' %}{% assign prefix = '/en' %}{% else %}{% assign prefix = '' %}{% endif %}
+<footer class="lab-footer"><div class="alignwide footer-inner">
+    <div class="footer-about"><img src="{{ '/assets/img/isislab-brand-horizontal.png' | relative_url }}" alt="ISISLab" width="321" height="80" loading="lazy">
+      <p>{{ t.footer_dept }}</p><p>Edificio F, Stecca 7, Lab. 10, II piano<br>Via Giovanni Paolo II, 132 · 84084 Fisciano (SA)</p>
+      <a href="{{ prefix }}/come-raggiungerci/">{{ t.location }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="footer-links"><h3>{{ t.research }}</h3><a href="{{ prefix }}/tematiche/">{{ t.research }}</a><a href="{{ prefix }}/progetti/">{{ t.projects }}</a><a href="{{ prefix }}/pubblicazioni-scientifiche/">{{ t.publications }}</a><a href="{{ prefix }}/events/list/">{% if locale == 'en' %}Seminars{% else %}Seminari{% endif %}</a></div>
+    <div class="footer-links"><h3>{{ t.students }}</h3><a href="{{ prefix }}/informazioni-utili/">{% if locale == 'en' %}Useful information{% else %}Informazioni utili{% endif %}</a><a href="{{ prefix }}/risorse-per-gli-studenti/">{{ t.resources }}</a><a href="{{ prefix }}/faq-seminari/">{{ t.faq }}</a><a href="{{ prefix }}/erasmus/">Erasmus</a></div>
+    <div class="footer-links"><h3>ISISLab</h3><a href="{{ prefix }}/archivio/">{% if locale == 'en' %}Full archive{% else %}Archivio completo{% endif %}</a><a href="{{ prefix }}/chi-siamo/">{{ t.lab }}</a><a href="{{ prefix }}/news/">News</a><a href="{{ prefix }}/rassegna-stampa/">{{ t.press }}</a><a href="{{ prefix }}/galleria/">{{ t.gallery }}</a></div>
+  </div><div class="alignwide footer-bottom"><span>© {{ 'now' | date: '%Y' }} ISISLab · University of Salerno</span><a href="#top">{{ t.back }}</a></div>
+</footer>

@@ -1,0 +1,28 @@
+---
+layout: article
+lang: it
+title: Procedural Content Generation (PCG)
+description: La mia tesi tratta la generazione di un mondo tramite PCG e una simulazione sui vari cambiamenti
+  nel tempo che possono accadere.La tesi è stata divisa in 3 parti per […]
+permalink: /news/user-germeg/
+article_kind: news
+date: '2019-09-26'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/09/26/user-germeg/
+section: News
+---
+
+<p>La mia tesi tratta la generazione di un mondo tramite PCG e una simulazione sui vari cambiamenti nel tempo che possono accadere.<br/>La tesi è stata divisa in 3 parti per definire delle milestone:</p>
+<ul><li>generazione del mondo tramite l'uso degli algoritmi di Voronoi/Lloyd e l'uso di Perlin e Octave noise  </li><li> generazione di eventi atmosferici e loro impatto nel tempo </li><li> generazione di risorse e entità (aggressive e pacifiche) e sviluppo nel tempo (pathfinding, morte, consumo di risorse) </li></ul>
+<p>La generazione di contenuti in maniera procedurale è una tecnica molto utilizzata dai gamedev, in quanto consente agli sviluppatori di avere un gran numero di contenuti, o comunque ore di gioco, da un unico set-up iniziale.</p>
+<p>Esempi di PCG e possibile trovarli in giochi come:</p>
+<ul><li> Civilization </li><li> Minecraft </li><li> The binding of isaac </li><li>etc...</li></ul>
+<h2 class="wp-block-heading">Parte 1: Generazione di un mondo</h2>
+<p>Ho iniziato la mia tesi con l'utilizzo degli algoritmi di Voronoi e Lloyd.<br/>L'algoritmo di Vonori genera tramite dei punti un poligono collegato al punto. Voronoi genera dei poligoni irregolari da dei punti dati in input. Voronoi calcola il poligono in base alla distanza dal punto preso in input.</p>
+<figure class="wp-block-gallery columns-1 is-cropped wp-block-gallery-6 is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img alt="" class="wp-image-9722" data-id="9722" data-link="https://www.isislab.it/2019/09/26/user-germeg/330px-voronoi_growth_euclidean/" decoding="async" height="330" loading="lazy" src="/assets/media/a35678b75e48f4-330px-voronoi-growth-euclidean.gif" width="330"/></figure></li></ul></figure>
+<p>Come si può vedere dall'immagine qui sopra tutti i punti nei poligoni generati saranno più vicini al punto di Voronoi presente nel poligono che a qualsiasi altro punto.</p>
+<p></p>
+<h4 class="wp-block-heading"> Software e librerie </h4>
+<ul><li>Unity</li><li> Libreria per Voronoi e Lloyd <a href="https://github.com/PouletFrit/csDelaunay">(https://github.com/PouletFrit/csDelaunay</a>)</li></ul>
+<figure class="wp-block-image is-resized"><img alt="" class="wp-image-9720" decoding="async" height="803" loading="lazy" src="/assets/media/a8d84da3f29650-image.png" width="578"/><figcaption>Esempio di Voronoi</figcaption></figure>
+

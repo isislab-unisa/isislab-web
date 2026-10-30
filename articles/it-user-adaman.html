@@ -1,0 +1,46 @@
+---
+layout: article
+lang: it
+title: User:Adaman
+description: Laurea Magistrale Obiettivi Partizionamento di grafi massivi allo scopo di distribuire efficientemente
+  il campo Network di DMason. Focus sul problema Si vuole partizionare un grafo massivo su un insieme di […]
+permalink: /news/user-adaman/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-adaman/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Laurea_Magistrale">Laurea Magistrale</span></h2>
+<h3><span class="mw-headline" id="Obiettivi">Obiettivi</span></h3>
+<p>Partizionamento di grafi massivi allo scopo di distribuire efficientemente il campo Network di DMason. </p>
+<h3><span class="mw-headline" id="Focus_sul_problema">Focus sul problema</span></h3>
+<p>Si vuole partizionare un grafo massivo su un insieme di risorse in modo tale che la comunicazione fra le risorse sia minimizzata. Se assumiamo che la risorsa A comunica con la risorsa B se e solo se in A c'è un nodo che ha un arco verso un nodo in B, allora possiamo formalizzare il problema come [Minimum Bandwidth Problem], che sappiamo essere NP-HARD. </p>
+<h3><span class="mw-headline" id="Metodologie">Metodologie</span></h3>
+<h4><span class="mw-headline" id="Algoritmi_di_approssimazione">Algoritmi di approssimazione</span></h4>
+<p>L'algoritmo di approssimazione più efficiente in termini di qualità della soluzione è PLOGBAND. </p>
+<h4><span class="mw-headline" id="Algoritmi_per_minimizzare_la_bandwidth">Algoritmi per minimizzare la bandwidth</span></h4>
+<p>Sono stati implementati e testati algoritmi presenti in letteratura che sebbene formalmente non offrono alcuna garanzia circa la qualità della soluzione, in pratica danno buoni risultati. E' stato implementato [Cuthill Mckee e GPS]: entrambi utilizzano strategie di livellazione dell'albero per espandere gli archi, tuttavia tali algoritmi esibiscono un running time poco desiderabile quando eseguiti su grafi massivi. </p>
+<h3><span class="mw-headline" id="Community_Detection_come_nuova_strada">Community Detection come nuova strada</span></h3>
+<p>Decidiamo di partizionare il grafo usando strategie di community detection che ci garantiscono la suddivisione del grafo in strutture comunitarie densamente connesse al loro interno. </p>
+<h4><span class="mw-headline" id="Algoritmo_Girvan.E2.80.93Newman">Algoritmo Girvan&amp;emdashNewman</span></h4>
+<p>E' stato implementato questo algoritmo per partizionare il grafo eliminando ad ogni iterazione l'arco con il valore di betweenness centrality; tale strategia garantisce che le community spezzate abbiamo un denso carico di comunicazione al loro interno. Sfortunatamente anche questo approccio non si presta bene ai miei scopi a causa del running time. </p>
+<h4><span class="mw-headline" id="Label_Propagation">Label Propagation</span></h4>
+<p>Semplice algoritmo di community detection: ogni nodo si accorda su un etichetta, che è quella con maggiore occorrenza all'interno del vicinato. Stabilito il criterio di stop, quando l'algoritmo termina i nodi sono clusterizzati in base all'etichetta. </p>
+<h4><span class="mw-headline" id="Why_Not_Parallel_Label_Propagation.3F">Why Not Parallel Label Propagation?</span></h4>
+<p>Implementazione dell'algoritmo di LP parallela: inizialmente si colora il grafo con un metodo di graph coloring, dopo in parallelo su ogni colorazione è eseguito l'algoritmo di LP. </p>
+<h4><span class="mw-headline" id="Parallel_Label_Propagation_con_limite">Parallel Label Propagation con limite</span></h4>
+<p>Il problema degli algoritmi di LP è che non offrono alcuna garanzia sulle dimensioni delle community rilevate; come diretta conseguenza si ha lo sbilanciamento del grafo dovuto alla formazione di community densamente connesse contenenti il 90% dei nodi e archi del grafo e community di dimensioni ridotte. E se durante il processo di LP limitassimo l'algoritmo di LP in modo tale che le dimensioni di una community siano controllate?...... </p>
+<h4><span class="mw-headline" id="Recursive_Parallel_Label_Propagation">Recursive Parallel Label Propagation</span></h4>
+<p>L'output dell'algoritmo di LP è analizzato in cerca di community di dimensioni eccessive, sulle quali è rieseguito l'algoritmo. Sfortunatamente si creano community troppo legate che rendono impossibile o lentissima la terminazione dell'algoritmo. </p>
+<h4><span class="mw-headline" id="Greedy_Strategy">Greedy Strategy</span></h4>
+<p>Strategie greedy per allocare le community (si presuppone sufficientemente bilanciate) su un insieme finito di risorse cercando di minimizzare il numero di comunicazioni tra le risorse. La soluzione non è ovviamente ottima poichè dovrebbe soddisfare due criteri di ottimizzazione: il bilanciamento sulle risorse ed il numero di iscrizioni che l'assegnamento di una community ad una determinata risorsa porta al sistema. </p>
+<h4><span class="mw-headline" id="A_Balanced_Label_Propagation_Algorithm_for_partitioning_massive_graphs">A Balanced Label Propagation Algorithm for partitioning massive graphs</span></h4>
+<p>Come da titolo, tale strategia affronta contemporaneamente il problema di partizionare il grafo in modo bilanciato e suddividerlo in strutture comunitarie. L'algoritmo utilizza la tecnica di ricerca locale a partire da una soluzione casualmente generata per massimizzare il payoff del sistema: alle basi vi è un meccanismo di label propagation utilizzato solo per scoprire i nodi che vogliono cambiare etichetta, dopodichè si provano a fare degli scambi equi fra una community ed un'altra e se questo non è possibile i nodi che cambiano etichetta sono presi in ordine decrescente rispetto alla loro utilità (utilità_ij(x) elevata significa forte propensione del nodo x a cambiare etichetta da i a j), ovviamente se il cambio di etichetta non viola i vincoli di lower bound e upper bound definiti sulla taglia delle community.</p>
+<p> <br/>
+</p>
+

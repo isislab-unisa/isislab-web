@@ -1,0 +1,95 @@
+---
+layout: article
+lang: it
+title: User:Andgua
+description: Introduzione CoFFEE CoFFEE (Cooperative Face2Face Educational Environment) è una suite di applicazioni
+  con l’obiettivo di migliorare il problema della collaborazione face-to-face in aula (quindi in un contesto
+  didattico), e supportare […]
+permalink: /news/user-andgua/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-andgua/
+section: News
+---
+<h2><span class="mw-headline" id="Introduzione"><b>Introduzione</b></span></h2>
+<h3><span class="mw-headline" id="CoFFEE"><b>CoFFEE</b></span></h3>
+<p>CoFFEE (Cooperative Face2Face Educational Environment) è una suite di applicazioni con l'obiettivo di migliorare il problema della collaborazione face-to-face in aula (quindi in un contesto didattico), e supportare il problem-solving, sulla base di scenari pedagogici o metodi di insegnamento delineati da partner nel campo pedagogico.<br/>
+La principale situazione è l'insegnamento collaborativo nel quale studenti lavorano insieme in gruppi al fine di raggiungere un comune obiettivo.</p>
+<h3><span class="mw-headline" id="CoFFEE_come_Rich_Client_Applications"><b>CoFFEE come Rich Client Applications</b></span></h3>
+<p>CoFFEE è un insieme di più applicazioni: CoFFEE Controller, CoFFEE Discusser, Session Editor, Lesson Planner, Class Editor, Replayer. Ciascuna di queste applicazioni è una RCA (Rich Client Application).<br/>
+Il CoFFEE Controller (l'insegnante) ed i CoFFEE Discussers (gli studenti) sono le applicazioni sviluppate per supportare la collaborazione face-to-face in aula.</p>
+<hr/>
+<h3><span class="mw-headline" id="Eclipse_RCP"><b>Eclipse RCP</b></span></h3>
+<p>Eclipse è una Piattaforma Open Source per la creazione di ambienti integrati di sviluppo IDE (Integrated Development Environment) e per lo sviluppo di progetti applicativi. La "piattaforma" Eclipse può essere utilizzata dallo sviluppatore per creare le proprie applicazioni in architettura Rich Client. Eclipse può essere vista come un insieme di plug-in per lo sviluppo di applicazioni Rich Client integrate con il sistema operativo grazie alla libreria nativa SWT (Standard Widget Toolkit). Il fatto di essere una architettura "plug-in oriented" si traduce nella possibilità di assemblare i singoli moduli, chiamati appunto "plug-in", in modo da poter estendere, o ridimensionare, la piattaforma a seconda delle esigenze. Maggiore sarà la facilità per arricchire l'IDE Eclispe con nuove funzionalità, semplicemente aggiungendo un nuovo plug-in.<br/>
+Il sottoinsieme di plug-in necessari per costruire una applicazione Rich Client è noto col nome di Eclipse Rich Client Platform (RCP). L'insieme minimo di plug-in per costruire un applicazione RCP con una User Interface è formato dai due plug-in org.eclipse.ui e org.eclipse.core.runtime, che sono sufficienti per realizzare un client minimale.<br/>
+Eclipse RCP è quindi un framework open source basato su un'architettura a plug-in che fornisce un insieme di strumenti progettati per la realizzazione di altri plug-in.</p>
+<h3><span class="mw-headline" id="SWT.2FJFace"><b>SWT/JFace</b></span></h3>
+<p>SWT (Standard Widget Toolkit) e JFace sono essenzialmente librerie software. Sono composte da package che contengono classi ed interfacce Java. Servono per sviluppare interfacce grafiche (GUI) per ambiente Eclipse, ed anche per sviluppare applicazioni GUI stand-alone.<br/>
+SWT è una libreria che crea una Java view di GUI control dipendenti dal sistema operativo ospitante. Quindi, la libreria SWT riflette i widget di base del sistema operativo utilizzato. In alcune situazioni, questo approccio però è troppo low-level; in queste situazioni si utilizza la libreria JFace, la quale aggiunge parecchi servizi ad applicazioni SWT. JFace non nasconde SWT, ma la estende. In SWT gli elementi fondamentali sono:</p>
+<pre>   * Widget &amp;emdash; è un elemento della GUI responsabile di interagire con l'utente.
+   * Control &amp;emdash; è un elemento dell'interfaccia utente che è contenuto in una top-level
+               window, chiamata “Shell”. “Button”, “label”, “progress bar”, e “table”
+               sono tutti “Control”.
+   * Composite &amp;emdash; è un control che può contenere altri control.
+</pre>
+<h3><span class="mw-headline" id="GEF"><b>GEF</b></span></h3>
+<p>Il Graphical Editing Framework (GEF) è un framework che serve per lo sviluppo di rappresentazioni grafiche di modelli esistenti. Permette di costruire editor grafici. Le componenti principali sono:</p>
+<ul>
+<li>Draw2D - sistema grafico lightweight per la visualizzazione</li>
+<li>GEF - il GEF vero e proprio</li>
+</ul>
+<p><b>Draw2D</b> Draw2D è una libreria autocontenuta, utilizzabile indipendentemente da GEF o Eclipse. Si appoggia su SWT: gli oggetti Draw2D sono hostati da un controllo heavyweight SWT. Le Feature principali sono:</p>
+<ul>
+<li>LightweightSystem: classe responsabile del mappaggio tra SWT e Draw2D (eventi, repaint degli oggetti…)</li>
+<li>Figure: non limitate alla forma rettangolare; predisposte per la notifica di listener Border, layout, layer: grande flessibilità nella visualizzazione per Connection, anchor, router</li>
+</ul>
+<p><b>GEF Framework</b> Il GEF Framework è basato sul pattern Model-View-Controller. Il modello in questo caso è codice Java già implementato; le viste sono realizzate da Draw2D; i controller sono le EditPart le quali definiscono il mappaggio tra modello e viste.<br/>
+In genere bisogna creare un EditPart per ciascuna classe del modello.</p>
+<hr/>
+<h3><span class="mw-headline" id="CoFFEE_CONTROLLER_e_COFFEE_DISCUSSER"><b>CoFFEE CONTROLLER e COFFEE DISCUSSER</b></span></h3>
+<p>Il CoFFEE Controller ed il CoFFEE Discusser sono applicazioni che coprono il ruolo rispettivamente di Server e Client.<br/>
+Queste applicazioni sono state progettate definendo 2 livelli: core level e tool level. Questa architettura, comune sia al server che al client, permette di implementare al core level tutte le funzionalità richieste per trattare un insieme di tool, e fornire a ciascun tool (e a quelli che verranno sviluppati in futuro) un insieme di funzionalità. In questa architettura, un tool consiste in 2 principali plug-in: il tool server (integrato nel CoFFEE Controller) ed il tool client (integrato nel CoFFEE Discusser). Un tool spesso ha anche un plug-in contenente le risorse comuni al client e al server.</p>
+<h3><span class="mw-headline" id="Tools_in_COFFEE"><b>Tools in COFFEE</b></span></h3>
+<p>CoFFEE offre un ambiente piuttosto semplice per l'estensione e l'aggiunta di nuovi tool. In generale, un nuovo tool può essere creato senza dettagliata conoscenza sul core o del framework di comunicazione, dato che il meccanismo necessario è fornito da CoFFEE nelle super-classi dalle quali un tool può ereditare.</p>
+<h2><span class="mw-headline" id="Software_e_Librerie"><b>Software e Librerie</b></span></h2>
+<table>
+<tbody>
+<tr>
+<td>Eclipse SDK <i>version 3.4.2</i></td>
+<td><a class="externallink" href="http://www.eclipse.org/" rel="nofollow" title="http://www.eclipse.org/">http://www.eclipse.org/</a></td>
+</tr>
+<tr>
+<td>Java JDK 5 <i>update 14</i></td>
+<td><a class="externallink" href="http://java.sun.com/" rel="nofollow" title="http://java.sun.com/">http://java.sun.com/</a></td>
+</tr>
+<tr>
+<td>Graphical Editing Framework (GEF)</td>
+<td><a class="externallink" href="http://www.eclipse.org/gef/" rel="nofollow" title="http://www.eclipse.org/gef/">http://www.eclipse.org/gef/</a></td>
+</tr>
+<tr>
+<td>Eclipse Communication Framework (ECF)</td>
+<td><a class="externallink" href="http://www.eclipse.org/ecf/" rel="nofollow" title="http://www.eclipse.org/ecf/">http://www.eclipse.org/ecf/</a></td>
+</tr>
+<tr>
+<td>CoFFEE 4.3</td>
+<td><a class="externallink" href="http://sourceforge.net/projects/coffee-soft/" rel="nofollow" title="http://sourceforge.net/projects/coffee-soft/">http://sourceforge.net/projects/coffee-soft/</a></td>
+</tr>
+</tbody>
+</table>
+<h2><span class="mw-headline" id="Seminari"><b>Seminari</b></span></h2>
+<ul>
+<li><a class="externallink" href="/sviluppo-di-un-coffee-tool-per-il-disegno-grafico-condiviso-andrea-guaiana/" rel="nofollow" title="Sviluppo di un CoFFEE Tool per il disegno grafico condiviso (Andrea Guaiana)">Sviluppo di un CoFFEE Tool per il disegno grafico condiviso (02-10-2009)</a></li>
+</ul>
+<h2><span class="mw-headline" id="Bibliografia"><b>Bibliografia</b></span></h2>
+<p><a class="externallink" href="http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Guide.pdf" rel="nofollow" title="http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Guide.pdf">http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Guide.pdf</a><br/>
+<a class="externallink" href="http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Manual.pdf" rel="nofollow" title="http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Manual.pdf">http://garr.dl.sourceforge.net/sourceforge/coffee-soft/User-Manual.pdf</a><br/>
+<a class="externallink" href="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf" rel="nofollow" title="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf">http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Core_Technical-Documentation_1_0_20081015.pdf</a><br/>
+<a class="externallink" href="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf" rel="nofollow" title="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf">http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Tools_Technical-documentation_1_0_20081015.pdf</a><br/>
+<a class="externallink" href="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Developer-Guide_1_0_20081015.pdf" rel="nofollow" title="http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Developer-Guide_1_0_20081015.pdf">http://coffee-soft.wiki.sourceforge.net/space/showimage/CoFFEE-Developer-Guide_1_0_20081015.pdf</a><br/>
+<a class="externallink" href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.gef.doc.isv/reference/api/overview-summary.html" rel="nofollow" title="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.gef.doc.isv/reference/api/overview-summary.html">http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.gef.doc.isv/reference/api/overview-summary.html</a><br/>
+<a class="externallink" href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.draw2d.doc.isv/reference/api/overview-summary.html" rel="nofollow" title="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.draw2d.doc.isv/reference/api/overview-summary.html">http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.draw2d.doc.isv/reference/api/overview-summary.html</a><br/>
+<a class="externallink" href="http://help.eclipse.org/stable/nftopic/org.eclipse.platform.doc.isv/reference/api/overview-summary.html" rel="nofollow" title="http://help.eclipse.org/stable/nftopic/org.eclipse.platform.doc.isv/reference/api/overview-summary.html">http://help.eclipse.org/stable/nftopic/org.eclipse.platform.doc.isv/reference/api/overview-summary.html</a></p>
+<h2><span class="mw-headline" id="Lavoro_di_Tesi"><b>Lavoro di Tesi</b></span></h2>
+<p>Sviluppo di un CoFFEE Tool per il disegno grafico condiviso. Il tool permette di utilizzare un editor grafico condiviso fornendo una semplice interfaccia la quale permette l'inserimento di figure geometriche. Su queste figure geometriche sono gestite alcune operazioni, tra le quali vi è la gestione dei colori, il resize, l'inserimento di testo con gestione dei relativi font. Inoltre è possibile l'inserimento di connessioni tra elementi grafici, tipo linee solide o tratteggiate, connessioni con o senza decorazioni (con freccia o con diamante). Oltre al disegno generico, SDT offre la possibilità di creare diagrammi per una specifica tipologia: UML class diagram e mappe concettuali.</p>
+

@@ -1,0 +1,25 @@
+{% assign lang = page.lang | default: 'it' %}
+<div class="people-directory" id="persone">
+  <p class="people-intro">{% if lang == 'en' %}Researchers and collaborators listed by the ISISLab laboratory. Portraits are imported from the original website and cached locally; where no photo has been verified, initials are displayed instead.{% else %}Ricercatori e collaboratori del laboratorio ISISLab. Le fotografie provengono dal sito ufficiale e vengono salvate localmente; dove non è disponibile una foto verificata vengono mostrate le iniziali.{% endif %}</p>
+  {% for group in site.data.people_groups %}
+  <section class="people-section" id="{{ group.id }}">
+    <h2>{% if lang == 'en' %}{{ group.en }}{% else %}{{ group.it }}{% endif %}</h2>
+    <div class="people-grid">
+      {% for name in group.people %}
+      {% assign key = name | slugify %}
+      {% assign photo = site.data.people_photos[key] %}
+      {% assign words = name | split: ' ' %}
+      <article class="person-card" aria-label="{{ name | escape }}">
+        {% if photo and photo.image %}
+        <div class="person-photo"><img src="{{ photo.image | relative_url }}" loading="lazy" decoding="async" alt="{{ name | escape }}" width="460" height="345"></div>
+        {% else %}
+        <div class="person-photo person-photo--empty" role="img" aria-label="{% if lang == 'en' %}Photo unavailable for{% else %}Foto non disponibile per{% endif %} {{ name | escape }}"><span class="person-initials" aria-hidden="true">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</span></div>
+        {% endif %}
+        <div class="person-meta"><h3>{{ name }}</h3><p>{% if lang == 'en' %}{{ group.en }}{% else %}{{ group.it }}{% endif %}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <p class="people-source">{% if lang == 'en' %}Team membership may change over time.{% else %}La composizione del gruppo può cambiare nel tempo.{% endif %}</p>
+</div>

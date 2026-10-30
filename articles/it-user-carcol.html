@@ -1,0 +1,30 @@
+---
+layout: article
+lang: it
+title: User:carcol
+description: In pioneer days they used oxen for heavy pulling, and when one ox couldn’t budge a log, they didn’t
+  try to grow a larger ox. We shouldn’t be trying for […]
+permalink: /news/user-carcol/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-carcol/
+section: News
+---
+<blockquote><p>In pioneer days they used oxen for heavy pulling, and when one ox couldn't budge a log, they didn't try to grow a larger ox. We shouldn't be trying for bigger computers, but for more systems of computers. - G. Hopper</p></blockquote>
+<h1>Introduction</h1>
+<p>Work in progress...</p>
+<h1>Diary</h1>
+<ul>
+<li>IsisLab at last! After a short introduction about technologies I will be using, I immediately began configuring my Linux computer, in order to install Apache Hadoop.<br/>
+<blockquote><p>Apache Hadoop is an open-source software framework for distributed storage and distributed processing of Big Data on clusters of commodity hardware. It's the most popular open-source implementation based upon the MapReduce programming model, first introduced by Google in 2004. MapReduce allows for easy writing of distributed programs, hiding all the aspects concerning parallelization, fault-tolerance, data distribution and load balancing.</p></blockquote>
+<p>Research material:</p>
+<ol>
+<li>Google's MapReduce paper</li>
+<li>Hadoop - The Definitive Guide</li>
+<li>Pro Apache Hadoop</li>
+<li>Installation guide for Apache Hadoop</li>
+</ol>
+<p>I installed and configured Hadoop in a pseudo-distributed mode, then I ran one of the examples provided, WordCount: reads text files and counts how often words occur. Since everything worked fine, I wrote a MapReduce application (using the Eclipse IDE) that analyzes weather sensors data to find the maximum temperature per year over the past century. Tipically, MapReduce applications are composed by three classes: the mapper class, the reducer class and a class to run the job. The Map class takes an input pair and produces a set of intermediate key/value pairs; it groups all intermediate values associated with the same intermediate key and passes them to the Reduce class. The Reduce class merges these values and emits the result of the computation.</p></li>
+</ul>
+

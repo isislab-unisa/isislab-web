@@ -1,0 +1,69 @@
+---
+layout: article
+lang: it
+title: User:marcap
+description: 'Contatti: e-mail 1: marioc_91@live.it e-mail 2: marioc910125@gmail.com e-mail 3: m.capuozzo4@studenti.unisa.it
+    TESI: D-MASON e Testing. Obiettivi Sviluppare un metodo per testare la tecnologia D-MASON [3]. Sarà fornito
+  un sistema automatico per la […]'
+permalink: /news/user-marcap/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-marcap/
+section: News
+---
+<p><code> </code></p>
+<address><span>Contatti:</span></address>
+<ul>
+<li>
+<address><span>e-mail 1: marioc_91@live.it</span></address>
+</li>
+<li>
+<address><span>e-mail 2: marioc910125@gmail.com</span></address>
+</li>
+<li>
+<address><span>e-mail 3: m.capuozzo4@studenti.unisa.it</span></address>
+</li>
+</ul>
+<hr/>
+<p> </p>
+<h1><strong>TESI: D-MASON e Testing.</strong></h1>
+<h3><strong>Obiettivi</strong></h3>
+<p>Sviluppare un metodo per testare la tecnologia D-MASON<span><span> [3]</span>. <span>Sarà fornito un sistema automatico per la convalida del software, nonché un sostanziale aiuto per le operazioni di refactoring ed un buon criterio di qualità per il software sviluppato.</span></span></p>
+<hr/>
+<h3>Descrizione</h3>
+<p>L'idea è quella di sviluppare delle test suite<span>[1]</span> che analizzino il comportamento delle classi fondamentali <span>[5]</span> del progetto D-MASON. Per far ciò utilizzerò l'approccio UnitTest<span>[1]</span> (implementato con JUnit<span>[2] <span>in java</span></span>). L'ideale sarebbe scrivere per ogni classe del progetto (che non sia un'interfaccia o una classe astratta)  almeno una classe di test, ma essendo un operazione molto onerosa dal punto di vista fisico, si è deciso di procedere analizzando le classi più utilizzate e quelle dalle quali derivano molte classi simili potendo quindi asserire che gli errori riscontrati in una saranno presenti anche nell'altra.<br/>
+I test utilizzano Stub e Driver per la loro esecuzione, in questo modo la classe testata viene estrapolata dal suo contesto e analizzata nelle sue funzionalità tramite jUnit. Altri test più complessi vertono invece sulla verifica dei meccanismi basati sul paradigma publish/subscribe, è quindi necessario utilizzare metodi che effettuino asserzioni sull'invio, la ricezione e la coerenza dei messaggi.<br/>
+Su queste strutture di base è possibile costruire unit test sempre più complessi, il sistema ideato è altamente riproducibile, offre un'ottima scalabilità e soprattutto è estremamente facile da estendere.<br/>
+Di seguito ci sono 4 importanti definizioni prese da<span> [1]</span>:</p>
+<ul>
+<li>Un <strong>bug</strong> o fault, è un errore di design o di codifica che potrebbe causare un comportamento anomalo di una componente.</li>
+<li>Un <strong>erroneous state </strong>è la manifestazione di un bug durante l’esecuzione del sistema software. Questo stato è causato da uno o più bug, e può portare ad un failure.</li>
+<li>Un <strong>failure</strong> è un'incongruenza tra il risultato ottenuto ed il risultato atteso. Un failure è causato da uno o più erroneous state (non è detto che la presenza di un erroneous state porti  necessariamente a un failure).</li>
+<li>Un <strong>test case</strong> ha lo scopo di provocare una o più failure tramite un insieme di input specifici e output attesi esercitati su una componente sotto test.</li>
+</ul>
+<p>L'obiettivo che ci si pone durante le fasi di test è quindi quello di causare quante più failure si può, rendendo così possibile l'identificazione e conseguentemente la correzione dei bug.<br/>
+ <br/>
+Risultati della test suite:<span> </span><br/>
+<span>FAILURES: </span>[164/618]<br/>
+<a href="https://dl.dropboxusercontent.com/u/50684801/linkIsisLab/Riscontri.pdf">RISCONTRI</a>       <span><a href="https://dl.dropboxusercontent.com/u/50684801/linkIsisLab/jdoc%20test%20dmason/index.html">JDOC</a></span></p>
+<hr/>
+<p> </p>
+<h3>Seminari</h3>
+<ul>
+<li>7 novembre 2014 - [<span><a href="https://dl.dropboxusercontent.com/u/50684801/linkIsisLab/seminario%207%20novembre%202014.pdf">S.O.S.  D-MASON  : una soluzione su misura per il testing.</a></span>]: in questo seminario introduco degli argomenti probabilmente già conosciuti: D-MASON, UnitTest e JUnit. Parlerò poi dei diversi approcci che ho pensato di utilizzare durante questo primo mese di ricerca elencandone pregi e difetti. Infine la discussione si focalizza sull’approccio scelto, su com’è strutturato e perché credo sia la strada migliore da seguire.</li>
+<li>6 Febbraio 2015 - [<span><a href="https://dl.dropboxusercontent.com/u/50684801/linkIsisLab/seminario%206%20febbraio%202015.pdf">Test'sgo DMASON : testing di un sistema ABM distribuito</a></span>]:In questo seminario parlo del mio lavoro di testing per D-MASON. Ci sarà una breve introduzione che riepilogherà gli argomenti del seminario scorso: cosa fare, perché farlo e come farlo. Descriverò il funzionamento degli stub e dei driver, mostrando anche la classe VirtualConnection progettata per testare il meccanismo di publish/subscribe del sistema. Parlerò poi di JMock, una libreria java per il test di classi che cooperano tra loro. Elencherò le modifiche apportate al codice sorgente per eseguire i test e darò alcuni consigli per migliorarne la semantica. Infine mostrerò i risultati della test suite elencando gli esiti e i riscontri maggiormente significativi.</li>
+</ul>
+<hr/>
+<h3>Tesi:</h3>
+<p><span><a href="https://dl.dropboxusercontent.com/u/50684801/Tesi_Mario_Capuozzo_0512100367.pdf">Unit Testing di un sistema distribuito per la simulazione di modelli basati su agenti.</a></span></p>
+<hr/>
+<p> </p>
+<h3>Riferimenti:</h3>
+<ul>
+<li><span>[1] Object-Oriented Software Engineering; Bernd Bruegge &amp; Allen H. Dutoit.</span></li>
+<li><span>[2] <a href="http://junit.org/">http://junit.org/</a></span></li>
+<li><span>[3] <a href="http://www.dmason.org/">http://www.dmason.org/</a></span></li>
+<li><span>[5] <a href="https://dl.dropboxusercontent.com/u/50684801/linkIsisLab/Classi%20da%20testare.pdf">Classi da testare</a></span></li>
+</ul>
+

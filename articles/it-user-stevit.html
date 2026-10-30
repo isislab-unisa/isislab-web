@@ -1,0 +1,381 @@
+---
+layout: article
+lang: it
+title: User:Stevit
+description: 'Argomento della Tesi Quiz Tool: un tool collaborativo sincrono per quiz in classe. introduzione
+  Gli strumenti di interrogazione telematica a disposizione degli insegnanti offrono la possibilità di preparare
+  un questionario […]'
+permalink: /news/user-stevit/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-stevit/
+section: News
+---
+<h2>Argomento della Tesi</h2>
+<p>Quiz Tool: un tool collaborativo sincrono per quiz in classe.</p>
+<ul>
+<li><b>introduzione</b></li>
+</ul>
+<p>Gli strumenti di interrogazione telematica a disposizione degli insegnanti offrono la possibilità di preparare un questionario e metterlo online a disposizione degli studenti, magari gestendone alcune proprietà come l'accesso a tempo determinato. Le risposte fornite dagli studenti vengono così fornite in modo asincrono, e salvate in database appositi da cui poi l'insegnante potrà ricavarne informazioni non sempre corrispondenti all'attuale situazione.</p>
+<hr/>
+<ul>
+<li><b>obiettivi</b></li>
+</ul>
+<p>l'obiettivo è quello di fornire agli insegnanti uno strumento con cui interrogare la classe e ricevere in tempo reale le risposte di ognuno, così da poter creare e aggiornare in tempo reale un grafico che mostri la situazione delle risposte degli alunni. Il tool è sviluppato per essere utilizzato all'interno di <a class="externallink" href="http://isis.dia.unisa.it/wiki/index.php/CoFFEEit" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/CoFFEEit">CoFFEE</a>.</p>
+<hr/>
+<ul>
+<li><b>Ricerche Preliminari e relative Conclusioni</b></li>
+</ul>
+<p><b>quale formato usiamo?</b> Il primo problema da affrontare riguarda il tipo di questionari che vengono utilizzati attualmente e il linguaggio in cui sono diffusi. Attraverso varie ricerche sugli ambienti di apprendimento virtuale più diffusi è evidenziata la predominanza della piattaforma Moodle, per quanto riguarda gli ambienti Open, che stacca di molto il secondo Front e Claroline.<br/>
+Si è deciso quindi di sviluppare un tool pensato per gestire principalmente i linguaggi Moodle-like, ossia quelli importati anche da Moodle, e il lavoro e il testing si sono concentrati sopratutto su formati open e facilmente utilizzabili dagli untenti. Dei formati in questione i primi due sono testuali, e utilizzano una propria formattazione, il terzo è crato con un software free che ne consente un editing rapido. I formati in questione sono: GIFT, sviluppato dalla comunità Moodle, Aiken, utilizzato esclusivamente per i quiz a risposta multipla, e Hot Potatoes.<br/>
+<b>Software che creano quiz</b><br/>
+Fase successiva è stata quindi ricercare software di authoring e test-makers che restituiscano quiz in uno dei tre formati precedentemente trovati. Tra i formati ufficialmente riconosciuti da Moodle, il più completo tra gli open è quello esportato da Hot Potatoes, che ha tag simili a quelli di Moodle XML Format. Successivamente sono stati trovati e testato molti altri software. Tra questi Quiz Faber -sw italiano- è uno dei pochi open che esporta con tag xml, assieme a Wondersare Quiz Creator (quello con meno limitazioni nella versione free, tra quelli a pagamento); Purtroppo però non sono completi, e creano tag non sempre simili a quelli di Moodle XML Format. Una menzione va fatta a eXeLearning, un ambiente open completo per creare Learning Object in formato XHTML, che tra i vari formati d'esportazione contiene anche IMS e SCORM 1.2.<br/>
+<i>Tag xml dei principali formati</i></p>
+<ul>
+<li>Moodle XML Format: per ogni tipo di quiz c'è l'attributi "type" in &lt;question&gt; che lo specifica.</li>
+<li>hot potatoes: il file .jqz ha più tag innestati, e il tipo di quiz è dato dal tag &lt;question-type&gt; contenuto in &lt;question-record&gt;, a sua volta contenuto in &lt;questions&gt;</li>
+<li>quiz faber: esiste il tag "question" ma non ha attributi; in base ai tag interni si interpreta il tipo di quiz.</li>
+<li>Wondershare Quiz Creator: crea un file SCORM2004, i dati del quiz sono contenuti nel file quiz.xml, nella directory "data". Domande e risposte sono due item separati e non innestati, la tipologia di test è specificata come attributo in un altro tag (&lt;template&gt;) ma ogni risposta è contenuta in un [!CData] assieme a tag HTML che specificano il formato "visivo".</li>
+</ul>
+<p><b>Importazione dei questionari</b><br/>
+Dopo un'analisi sulla metodologia di importazione da sviluppare abbiamo deciso di utilizzare direttamente le librerie di importazione usate in Moodle. Queste librerie sono costituite da file .php, e quelle utili ai nostri scopi prendono in input un file, il questionario, e ne restituiscono una versione elaborata e trasformta in oggetto php costituito da più domande, ognuna con i propri attributi.<br/>
+<b>Elaborazione dei quiz: il php</b><br/>
+Moodle utilizza degli script php per elaborare i test, quindi s'è reso necessario trovare un metodo per utilizzare gli stessi script anche in java, da qui una ricerca mi ha portato a Java Servlet SAPI e PHP/Java Bridge. PHP/Java Bridge è uno strumento molto potente che rende rapida e semplice la comunicazione tra i due linguaggi. In particolare consente di richiamare da java funzioni da file .php, utilizzandole come fossero classi java, passando oggetti o parametri e ricevendo risultati sotto forma di stringa. la stringa ricevuta è una rappresentazione serializzata dell'oggetto restituito. Tale rappresentazione va deserializzata, e per questo abbiamo utilizzato SerializedPhpParser.<br/>
+L'unico inconveniente è che tale libreria è stata sviluppata per essere utilizzata su web server che abbiano quindi la presenza di un motore PHP, mentre invece per le applicazioni stand-alone tale motore va installato a parte sulla macchina dell'utente, dato che i path in cui la libreria lo cerca sono specifici e nono possono venire aggiornati. Tale limitazione va in contrasto con le specifiche del software in cui andrà inserito il tool, ossia CoFFEE.<br/>
+<i>la posizione e l'utilizzo di php-cgi</i><br/>
+La libreria di PHP/Java Bridge utilizzata nel tool è contenuta nel file JavaBridge.jar, a sua volta contenuto nell'archivio JavaBridge.war distribuito su licenza GPL. In tale archivio è presente, nella directory WEB-INF, il processore php-cgi. Tale processore viene utilizato per valutare la stringa passata allo ScriptEngine, che di default non ha un processore php. Come detto in precedenza per le applicazioni web non ci sono problemi mentre invece per le applicazioni stand-alone si presenta il problema della collocazione del file php-cgi, che deve essere posizionato in una directory di sistema. Abbiamo aggirato il problema eliminando l'utilizzo di PHP/Java Bridge e eseguendo manualmente php-cgi sugli script, attraverso l'utilizzo di un comando java. Il risutlato questa volta non poteva essere ricevuto direttamente all'interno del tool Java, quindi lo abbiamo salvato in un file di testo che poi verrà letto da Java. Sebbene questa operazione sia più esposta ad errori di esecuzione, è molto meno invasiva di quella che prevede l'utilizzo di PHP/Java Bridge.</p>
+<ul>
+<li>ricerca di quiz colaborativi</li>
+</ul>
+<p>NULL<br/>
+<b>feedback al professore</b><br/>
+Alcuni software prevedono l'invio dei risultati del quiz completato via mail ad un indirizzo concordato, altri invece inviano le risposte del quiz ad un server. Seguono alcuni esempi:</p>
+<ul>
+<li>quiz faber: corregge offline e invia risultati già esaminati, in formato che solo lui capisce(risposta3=122455654.. ecc).</li>
+<li>hot potatoes: manda tramite mail un log(nella bibliografia) contenente tutti i dati del quiz svolto, in un formato simil-exel. Unico difetto: per inviare il modulo serve fornire l'url di un modulo CGI FormMail che non è presente di default.</li>
+<li>eXeLearning non ha feedback al professore.</li>
+<li>Exam-software: invia un file .sas (proprietario) contenente i risultati del test.</li>
+</ul>
+<p>Nb. tutti i software testati restituivano feedback asincroni, non realtime.</p>
+<h2><span class="mw-headline" id="il_php">il php</span></h2>
+<p>lo studio del codice php si è rivelato più ostico del previsto.. inizialmente riuscivamo a leggere script e funzioni contenute in file .php ma per le funzioni contenute nelle classi non potevamo a fare nulla. una soluzione è stata quella di creare un .php di supporto, pieno di funzioni "chiamanti", così che queste funzioni vengano richiamate da java, e attraverso queste vengono poi chiamate quelle "vere".<br/>
+Risolto il problema di come istanziare un oggetto in php per poi chiamarne i metodi, è sopraggiunto il problema delle estensioni delle classi e dei require_once(): alcune delle classi, ad esempio TUTTE le classi qformat_'tipo_di_domanda', estendono qformat_default, che a sua volta utilizza funzioni che si trovano in moodlelib.php, bank.php, config.php... le quali chiamano altre funzioni e variabili presenti in altri file ancora. Siamo arrivato ad includere 23 file .php prima di capire che non era il caso di continuare. Questo perchè comunque a me serve UN SOLO METODO di quella classe, ed era inutile includere tutta la restante libreria di Moodle. La soluzione è stata quella di creare variabili fittizie contenute tutte in un file incluso nel primo file chiamto, così che queste variabili siano globali e non vengano più richieste. Viene utilizzato un file esterno perchè in questo modo le librerie orignali non vengono modificate.</p>
+<h2><span class="mw-headline" id="deserializzare_in_java_un_oggetto_php">deserializzare in java un oggetto php</span></h2>
+<p>per deserializzare un oggetto crreato in PHP ho trovato e uso la classe SerializedPhpParser, scritta e distribuita con licenza MIT License (altra licenza OpenSource). Attraverso il metodo parse() di questa classe l'oggetto PHP viene convertito in un Hashmap di HashMap. Poi attraverso i vari tag è possibile facilmente cercare l'informazione desiderata.<br/>
+L'unico inconveniente è che per ogni tipo di domanda -identificato dalla chiave <i>qtype</i>- cambiano i parametri dell'oggetto php, quindi la prima cosa da leggere è il qtype, e attraverso questo bisogna poi costruire la domanda e il formato di feedback da visualizzare.</p>
+<h2><span class="mw-headline" id="codici_da_ricordare">codici da ricordare</span></h2>
+<p>Questa porzione di codice veniva utilizzata quando usavamo la PHP/Java Bridge</p>
+<pre>public static void main(String args[]) { try{
+ScriptEngine e = (new ScriptEngineManager()).getEngineByName("php-invocable"); //php-invocable != da php  ,  nb: "php" e "php-invocable" vengono elaborate da php-cgi (php-cgi in windows), che utilizza php5ts.dll
+File file = new java.io.File("myfile.php");
+FileReader filereader = new java.io.FileReader(file);
+e.eval(filereader);
+((Invocable)e).invokeFunction("myechoFirst", new Object[]{*parametro*});  // non mettere println quando c'è echo sennò caccia null
+System.out.println(((Invocable)e).invokeFunction("myecho"));	//per tutti gli altri return invece si può usare pure println
+((Invocable)e).invokeFunction("myecho");
+((Closeable)e).close();
+}catch(NoSuchMethodException e1){System.out.println("Metodo non trovato");e1.printStackTrace();}
+catch(Exception e1){e1.printStackTrace();}
+}
+</pre>
+<p>mentre questo è il codice utilizzato nella seconda versione<br/>
+<code lang="java"> p = Runtime.getRuntime().exec("php-cgi.exe -c -f import.php readFileCreateFile fileFormat fileName pathLibPhp nameTempFile"); p.waitFor(); </code><br/>
+qui è presente un esempio di come viene richiamato il formato originario all'interno del file .php creato ad hoc e chiamato da java</p>
+<pre><code lang="php">
+</code>&lt;?php
+include_once('cartella/formatoDesiderato.php');
+function readFileCreateFile(){
+$classe  = new qformat_formato();
+return $classe-&gt;readquestion($lines); //array di righe da cui estrarre domande e risposte
+}
+?&gt;
+</pre>
+<h2><span class="mw-headline" id="un_nuovo_metodo_per_utilizzare_file_php">un nuovo metodo per utilizzare file php</span></h2>
+<p>Visto che php-java-bridge richiedeva che l'eseguibile php-cgi.exe si trovasse in una cartella di sistema -c:programmiphp- è stato quasi obbligatorio cercare una strada alternativa, in un primo momento avevo pensato di sfruttare il sorgente di p/j-b per utilizzare lo stesso meccanismo, ma si è rivelato inutile perchè al momento della creazione dell'engine vengono settate molte variabili in varie classi differenti, e al momento della chiamata del metodo vengono richiamati molti metodi e variabilid'ambiente appartenenti a varie classi differenti.. un macello in cui non sono stato in grado di capire dove avvenisse il passaggio del valore di ritorno da php alla classe java, neanche una volta capito quando veniva eseguito php-cgi. L'unica strada alternativa a cui sono arrivato è stata quella di richiamare direttamente l'eseguibile, e passargli i parametri da utilizzare:</p>
+<pre>Process p = Runtime.getRuntime().exec("php-cgi -f import.php importFunction fileFormat fileName pathLibPhp");
+</pre>
+<p>in questo modo import.php è diventato uno script, e quindi è stato inserito all'inizio del file il comando</p>
+<pre>return call_user_func_array($argv[1], array($argv[2],$argv[3],$argv[4]));
+</pre>
+<p>che richiama poi la funzione richiesta, passata da riga di comanda. si è reso necessario modificare il file import.php, aggiungendo oltre a questo comando, anche il modo in cui viene passato il path assoluto in cui si trovano i file php, oltre, successivamente, ad un successivo parametro contenente il path della cartella temporanea dove salvare i file serializzati.</p>
+<h2><span class="mw-headline" id="Logica_e_Layout">Logica e Layout</span></h2>
+<p><b>Lato Server</b> Dal lato del Controller, il tool si divide in tre componenti distinte, con la loro logica indipendente.</p>
+<ul>
+<li>feedbackPanel: in questo component il professore potrà visualizzare il comportamento degli alunni rispetto ad ogni domanda, e in base al tipo di domanda cambierà il tipo di visualizzazione (grafico a barre, torta, sparso..)</li>
+<li>propinamento delle domande: questa componente si divide in due parti, una visualizza domande e risposte, magari evidenziando quella corretta, l'altra contiene i pulsanti per controllare l'esecuzione delle varie domande.</li>
+</ul>
+<p><b>Lato Client</b> L'interfaccia contiente due sezioni distinte:</p>
+<ul>
+<li>la prima visualizza la domanda e le possibili risposte, se presenti.</li>
+<li>la seconda contiente i pulsanti per selezionare e inviare la propria risposta.</li>
+</ul>
+<p>Una sezione a parte, visualizzata solo su comando del controller, visualizzerà la risposta corretta e i feedback.</p>
+<h2>Oggetti si, oggetti no. L'oggetto Question</h2>
+<p>Dopo averlo importato, tramite serializzazione di un oggetto questions di php, l'oggetto serializzato in java sarà una mappa di mappe.. che lascio stare come stà.<br/>
+Questa mappa di mappe contiene tutto ciò che ci serve, e in base al parametro qtype, che indica il tipo di domanda utilizzato, va elaborata una visualizzazione della domanda, dei parametri utilizzati, e del tipo di feedback utili.<br/>
+Per questo ho deciso di scrivere taaaanti metodi che in base al qtype elaborino la question in modo specifico rispetto al Controller e al Discusser.<br/>
+La decisione di utlizzare le domande come mappa di mappe (HashMap&lt;Object,Object&gt;), senza invece passare ogni parametro della question ad un oggetto Java creato apposta, è stata presa in seguito all'analisi dell'oggetto creato dai moduli moodle. questi oggetti avevano attributi differenti, nel nome o nella struttura, a seconda del qtype, il formato della domanda originaria. si presentavano quindi strutture e sottostrutture differenti associate ad uno stesso attributo (questo è possibile in php, dove un atributo può cambiare tipo,ma non è possibile in java).<br/>
+La decisione presa è stata quindi quella di continuare ad utilizzare la mappa autogenerata, prendendo volta per volta i campi che a seconda dell'elaborazione richiesta, servivano al momento.</p>
+<h2>Feedback</h2>
+<p>I feedback agli alunni sono già presenti delle question, andranno poi parsati quando servirà.<br/>
+Il feedback al professore indica l'andamento in tempo reale delle risposte date dagli alunni, e cambierà tipo di visualizzazione in base al tipo di domanda, in particolare:<br/>
+I tipi di domanda gestiti dal tool provendogo dai tipi specificati da Moodle,e sono: Scelta Multipla, Selezione Multipla, Vero/Falso, Risposta Aperta,Domanda Numerica, Risposta Breve, Corrispondenza-Matching, e un metatipo utilizzato in Moodle per introdurre il questionario Description.<br/>
+A seconda del tipo di domanda presa in esame verr`a visualizzato un differente grafico, elaborato in base alle specifiche della domanda.<br/>
+Scelta Multipla: un grafico a barre in cui ogni barra indica una possibile risposta, e l’altezza della barra indica il numero degli utenti che hanno selezionato tale risposta. Per la versione con più risposte corrette viene visualizzato un secondo grafico che indica il livello di correttezza raggiunto dagli utenti.<br/>
+Corrispondenze: grafico a barre per il quale ad ogni domanda viene associato un set di risposte e l’altezza di ogni barra indica il numero di utenti che hanno selezionato tale risposta.<br/>
+Domanda Numerica: grafico “sparso”. Il grafico è mostrato come un piano cartesiano, e la risposta corretta è indicata con un punto blu che ha come ascissa il valore corretto e come ordinata un terzo del del numero degli utenti connessi.<br/>
+Come negli altri grafici l’altezza della risposta indica il numero di Discusser che hanno preferito tale risposta.<br/>
+Vero/Falso: per questo tipo di domande è stato utilizzato un grafico a torta con tre sezioni: vero, falso, non risposto. La totalità della torta indica il numero completo degli utenti.<br/>
+Risposta Breve: identica visualizzazione delle domande a scelta multipla, con l’unica differenza è che le risposte non presenti nell’elenco vengono aggiunte.<br/>
+Risposta aperta: dato il tipo di risposta, che non può essere valutato se non direttamente dall’insegnate, viene visualizzato solo il numero di utenti che hanno risposte su quelli totali, il tutto mostrato attraverso un grafico a torta.<br/>
+ </p>
+<h2>La grafica dei Feedback</h2>
+<p>Online si trovano tante belle librerie per creare grafici, in inglese charts -per chi volesse fare qualche ricerca-, molte però -le più semplici- sono per awt... il nostro programma è disegnato con swt, e certi giochetti con awt sono quindi inapplicabili.<br/>
+il numero di librerie utili si riduce di molto.<br/>
+Ttra le librerie rimaste, le più papabili sono BIRT, software completo e plugin sviluppato e diffuso da eclipse -a quanto ho capito-, e SWTChart, altra libreria diffusa sotto ECL -licenza open di Eclipse- e JFreeChart.<br/>
+Tra i tipi di grafico creati da BIRT e JFreeChart ci sono vari tipi di barre, linee e aree, diagrammi a torta e a "tachimetro".<br/>
+Inizialmente avevamo deciso di utilizzare SWTChart, sebbene BIRT sia molto più completo, per il semplice fatto che SWTChart è molto più leggera e rapida nella, due caratteristiche essenziali nei grafici dinamici che servono a noi. L'unico inconveniente è che con SWTChart si possono fare solo grafici a due assi, non alberi o torte.<br/>
+Successivamente è stato deciso di testare anche BIRT. La funzionalit`a principale di BIRT `e quindi quella di elaborare report a par-<br/>
+tire da dati statici, inserendoli prima in un database e poi creando un dataset da cui astrapolarli per poi visualizzarli secondo le specifiche selezionate. Anche l’elaborazione del grafico prevede una fare di buffering e rendering, sia che il grafico venga salvato in un file, sia che venga visualizzato in un widget SWT, dato che l’immagine poi visualizzata deve essere sempre presa da una cache.<br/>
+L’obbligata creazione di un database estrapolato da un report impone l’importazione di svariate classi dal core di BIRT, per un totale di circa 20MB di librerie, quasi del tutto inutili per gli scopi del tool.<br/>
+L’elevato numero di elaborazioni da effetturare per ricavare un grafico ne hanno pregiudicato l’utilizzo all’interno del tool, dato che uno dei requisiti è quello di avere un grafico dinamico, che cambi ogni volta che si riceve un’informazione da parte degli studenti.<br/>
+Sebbene il motore di disegno dei Grafici di BIRT sia completo e professionale, presenta il difetto di essere lento rispetto a librerie meno elaborate ma specifiche per la creazione di grafici. Tra queste librerie la più completa e funzionale tra quelle open-source testate è JFreeChart. L’utilizzo di JFreeChart risulta rapido e non richiede passaggi aggiuntivi oltre alla creazione di un dataset con i dati da visualizzare.<br/>
+<a class="external text" href="http://www.jfree.org/jfreechart/samples.html" rel="nofollow" title="http://www.jfree.org/jfreechart/samples.html">qui una web-demo</a>.<br/>
+ </p>
+<h2>questionari con immagini</h2>
+<p>trovati per ora solo in Hot Potatoes. In questo formato le immagini sono salvate con path relativi -relativamente all'url del file progetto, infatti non ti fa inserire immagini se non salvi il file, e se sposti il file progetto non trovi più le immagini- nel tool ho trasformato i path in assoluti, e inserito le immagini nella grafica del tool lato server.<br/>
+Altro problema da affrontare ora è: come 'azzo inviare l'immagine ai client? La soluzione è stata serializzare l'immagine e inviarne l'array di byte.<br/>
+Per quanto riguarda la serializzazione delle immagini abbiamo usato la classe it.sauronsoftware.base64.Base64. La libreria Java Base64 permette alle applicazioni Java di scrivere e leggere stringhe e flussi codificati in Base64.<br/>
+Ponendo questa libreria come standard, l’abbiamo usata per convertire l’InputStream dell’immagine in un array di byte codificato in Base64. Una volta convertito questo array in stringa `e stato possibile inviarlo ai Discusser e ivi decodificarlo utilizzando la stessa classe Base64.<br/>
+ </p>
+<h2>A Bug's Life</h2>
+<p>raccolta di bug più o meno problematici.<br/>
+altri bug verranno aggiunti man mano che compaiono.. o che mi ricorderò dei precedenti.</p>
+<ul>
+<li>multichoice: ricordati che devi morireeeee! Nel <a class="external text" href="http://docs.moodle.org/22/en/Aiken_format" rel="nofollow" title="http://docs.moodle.org/22/en/Aiken_format">formato aiken</a> originale, quello importato da Moodle attraverso il file aiken\import.php, è possibile creare solo questionari multiscelta con una singola risposta esatta. Non con più risposte esatte. Quindi formati aiken che presentino più risposte corrette creeranno problemi di decodifica.</li>
+</ul>
+<ul>
+<li>java.io.NotSerializableException: it.unisa.quiztool.server.SerializedPhpParser$1</li>
+</ul>
+<p>testando dei questionari in <a class="external text" href="http://docs.moodle.org/22/en/Aiken_format" rel="nofollow" title="http://docs.moodle.org/22/en/Aiken_format">formato aiken</a> ho problemi ad inviare ai client UNA domanda presente nel file. La domanda originale è la seguente:<br/>
+[code]Moodle's abilities include handling user input that includes &lt;html class="cool"&gt; &amp; images:<br/>
+A) True<br/>
+B) False<br/>
+ANSWER: A[code]<br/>
+ho provato a cancellare i caratteri speciali, i tag per la formattazione html, addirittura l'apostrofo, aumentare il numero di risposte, accorciare la lunghezza della domanda.. ma niente da fare.<br/>
+Dal debug non escono notizie significative, il parsing è fatto correttamente e l'oggetto inivato è un'hashMap come le domande successive e precedenti che sono qui presenti.<br/>
+Dopo averci messo più di un'ora a controllare ogni singolo dettaglio, senza scoprire nulla, ci metto una pezza con un bel try\catch per non bloccare l'esecuzione e un relativo messaggio di avvertimento.<br/>
+Successivamente ho scoperto che il problema stà nella codifica del file di testo originario, scritto in UTF-8 e modificato poi in ANSI.</p>
+<ul>
+<li>SerializedPhpParser -&gt;IllegalStateException</li>
+</ul>
+<p>dopo aver rinunciato a php/java-Bridge ho testato il nuovo sistema di importazione.. gift funziona tranquillamente, aiken invece da problemi: l'oggetto serializzato non viene importato. In particolarel'importazione si ferma al momento del parsing della prima domanda, sul parametro textquestion. ho testato anche sul mio pc: stesso file, con p/j-b funziona tranquillamente, col metodo poco ortodosso invece non va.<br/>
+per ora stò cercando soluzioni.. forse il problema è nel salvataggio dell'oggetto serializzato . . . forse S:<br/>
+ok.. ho creato un nuovo file e copiato una domanda.. non funziona. copiando la stessa domanda in un file già funzionante -question.gift.txt- invece funziona tutto..<br/>
+il problema però non è nella serializzazione.. ho salvato la stringa creata col secondo metodo, aggiunto \ ad ogni " e utilizzata come stringa da passare a serialized-php, in questo modo funziona.. forse il problema è nella lettura da file.<br/>
+HO TROVATO IL BUG! il problema stà nel file originario contenente le domande: se il file è codificato in ANSI, viene letto normalmente e serializzato in ANSI; ma se è utf-8 viene serializzato in "ANSI as utf-8".. e così viene letto male da java!!!<br/>
+soluzione: in serialized-php-parser è presente un secondo costruttore che prende anche un booleano assieme alla stringa da parsare; questo boolean, true di default, viene utilizzato nel parsing delle stringhe per conteggiare nel modo giusto i caratteri da trasformare, e indica se utilizzare o meno la codifica utf-8. Per ora l'ho settato a false, e vengono letti tutti i file, anche quelli in utf-8, con l'unico difetto che all'inizio della prima domanda appaiono uno o due caratteri ostrogoti!</p>
+<ul>
+<li>codice morse - file non importati per problemi nel nome del file</li>
+</ul>
+<p>col nuovo metodo per php ci sono problemi anche nel nome del file.. se è presente un trattino "libero" cioè preceduto o seguito da spazio, questo invaliderà il passaggio di parametri e ogni parte del nome del file verrà vista come parametro a se stante.</p>
+<ul>
+<li>misteri del layout</li>
+</ul>
+<p>ridimensionando la finestra di coffee, dopo aver mostrato il feedback, si sballa e riempie la schermata, rendendo non più ridimensionabile nessun pannello dell'intero software.<br/>
+il problema sta qui: java.lang.ClassCastException: org.eclipse.swt.layout.GridData cannot be cast to org.eclipse.swt.layout.FillData<br/>
+ </p>
+<ul>
+<li>i thread: rompono le scatole pure se setti un checkbutton.</li>
+</ul>
+<p>c'erano problemi durante il ricaricamento sdi una traccia, un'eccezione bloccava il ricaricamento. l'eccezione era lanciata a causa di un "tree access" errato al momento della modifica di una checkbox.</p>
+<h2>la rubrica del buonumore e del sangueamaro: le bestemmie</h2>
+<p>questa rubrica conterrà tutti i problemi riscontrati e risolti durante l'elaborazione del tool, anche se alcuni li ho già risolti e dimenticati.<br/>
+La nascita di questa rubrica è dovuto allo scriptEngine:</p>
+<ul>
+<li>e.eval(filereader): dove "e" è un istanza di javax.script.ScriptEngine, e serve per valutare il codice da un file php, per poi eseguire i metodi di questo file.</li>
+</ul>
+<p>Il problema si presenta quando utilizzo st'elemento nella classe QuizComposite, quando eseguo il Controller insomma: in questo caso "e" ha valore null, mentre invece eseguendo lo stesso codice in un'altra classe dello stesso package il il problmea non c'è e "e" è un oggetto a tutti gli effetti.<br/>
+ho quindi pensato di copiare la funzione in un altra classe e richiamarla da li come funzione statica: niente da fare.. richiamando la funzione "AltraClasse.funzioneStatica()" c'è sempre il problema NULL di cui sopra.. ho notato però che richiamando nello stesso modo la stessa funzione da un'altra qualsiasi classe che non estenda componenti LEAD questa funziona.<br/>
+inutile dire che ho anche provato a utilizzare tutto il "nome" della classe per instanziare l'oggetto "e" (php.javax.script.compagniaBella...).<br/>
+l'oggetto ScriptEngine si crea a partire dallo scriptEngineManager, a cui viene passato il linguaggio da interpretare:<br/>
+javax.script.ScriptEngineManager sEng = new javax.script.ScriptEngineManager();<br/>
+javax.script.ScriptEngine e = (sEng).getEngineByName("php-invocable");<br/>
+nel nostro caso php-invocable non funziona quando ci troviamo in QuestionComposite... vi chiedete come ci sono arrivato? perchè con 'php-invocable' "e" è null, mentre invece scrivendo 'JavaScript' "e" viene instanziato.. il problema stà nel far sapere allo scriptEngine che php-invocable è un linguaggio.<br/>
+Nota bene: 'php-invocable' è presente nella libreria javaBridge.jar e php-script.jar, e lo scriptManager la cerca quando non trova altro nelle librerie di default.<br/>
+Il problema stà nel ClassLoader, che se avviato assieme al controller non trova la classe InvocablePhpScriptEngine (e tutta la libreria esterna utilizzata), cose che invece misteriosamente non succede se avvio altre classi non direttamente discendenti da CoFFEE.<br/>
+Come risolvere: dopo averci perso una giornata intera -forse due- ho scoperto che nel PackageExplorer di eclipse non figuarava la libereria, che però dal navigator era visibile . . . sorge spontaneo un dubbio: andrà mica importata diversamente rispetto al semplice "configure buildPath"? risposta scontata: YES! per le applicazioni rcp c'è un MANIFEST.MF da riempire, e nella sezione "classpath" di "runtime" vanno specificate le librerie esterne da utilizzare, non basta fare buildPath, e c'è bisogno pure di fare un refresh nel packageNavigator, sennò col piffero che eclipse vede le novità.<br/>
+e ora fatevi una bella risata alla faccia mia ^^<br/>
+ah, devo sempre ringraziare Pina Palmieri per il tempo che le faccio perdere. |:</p>
+<ul>
+<li>i path relativi che prima funzionano e poi non funonziano più:</li>
+</ul>
+<p>per testare l'importazione da file .php e l'include() negli stessi file, ho sempre utilizzato filepath relativi (<i>cartellaLocale\fileDellaStessaCartella</i>) ed è sempre andato tutto bene.<br/>
+Utilizzando però gli stessi codici all'interno del tool.. esplode tutto!!!!<br/>
+Bug risolto:<br/>
+per quanto riguarda i path assoluti utilizzati nei codici java, risolto utilizzando bundle e FileLocator, in pratica acquisendo a runtime la locazione del plugin. -ogni ringraziamento va sempre a Pina Palmieri-<br/>
+Per quanto riguarda invece i file php: risolto passando come parametro l'url acquisito nel modo precedente -da java quindi- perchè direttamente da php dirname()restituiva solo "." e non un path completo, mentre invece getcwd() -current work directory- restituiva la cartella di esecuzione di eclipse.<br/>
+C'è un però: ora gli include() sono locali, nel senso che vengono utilizzati all'interno della funzione chiamata, per ulteriori delucidazioni vedrete poi il file lib\filePhp\import.php</p>
+<ul>
+<li>messaggi mai arrivati:</li>
+</ul>
+<p>se dal server invio un messaggio, i vari client non lo ricevono "in modo sincrono", o meglio, non lo ricevono affatto. se dopo aver inviato un messaggio apro un altro client, a quest'ultimo arrivano tutti i mesaggi precedentemente inviati.<br/>
+Ma inviando una risposta dal client, sia essa con sendMessage che con forwardMessage, questa viene ricevuta istantaneamente dal server. tutto questo è Mishtero! O_o<br/>
+Mishtero risolto: i messaggi dal server vanno inviati col broadcast settato, 'mbecìll'!</p>
+<ul>
+<li>BIRT e tutte le <i>jastemme</i> che stò mandando a chi l'ha creato</li>
+</ul>
+<ul>
+<li>php-cgi</li>
+</ul>
+<p>non ha proprio intenzione di funzionare da solo. non viene trovato nell'ambiente di lavoro. però però però leggendo la libreria server/php/java/bridge/Util.java ho trovato il seguente codice<br/>
+[code]DEFAULT_CGI_LOCATIONS = new String[] {"/usr/bin/php-cgi", "c:/Program Files/PHP/php-cgi.exe"};[code] nel metodo initGlobals().<br/>
+e poi c'è una ricerca del path con relativo inserimento nel context, nel caso esista una delle due stringhe. devo vedere come aggirare questa ricerca e aggiungere un path mio. <a class="external text" href="http://www.szbooks.com/hope/php-java-bridge-6.2.1/server/php/java/bridge/Util.java" rel="nofollow" title="http://www.szbooks.com/hope/php-java-bridge-6.2.1/server/php/java/bridge/Util.java">qui il link</a><br/>
+Bug risolto: vedi sezione <a class="new" href="/index-php/" title="Un nuovo metodo per utilizzare file php">un nuovo metodo per utilizzare file php</a>;</p>
+<ul>
+<li>painty, sempre painty, fortissimamente painty!</li>
+</ul>
+<p>la torta per il truefalse esce e si aggiorna.. ma se allargo la pagina ne compare una per ogni risposta iniviata.<br/>
+multichoice.. non compare finchè non cambio le dimensioni del composite.<br/>
+se non uso "Display.getDefault().asyncExec(new Runnable() {public void run(){ "<br/>
+non si aggiorma mai. ho provato a fare qualcosa con i thread, o cambiando a annullando composite vari, ma niente da fare.. fangù!<br/>
+RISOLTO-più o meno-<br/>
+ho portato "Display.getdefault..." in QuizCoposite, facendogli richiamare un oggetto JFreeChart che poi verrà inserito in ChartComposite di jfreechart. ora compare, e compare solo una volta, però se ridimensiono la finestra principale, viene riempito tutto.. forse il problema è in chartComposite.</p>
+<ul>
+<li>java.lang.ClassCastException: org.eclipse.swt.layout.GridData cannot be cast to org.eclipse.swt.layout.FillData</li>
+</ul>
+<p>uno dei tanti errori della grafica che ti fanno perdere ore intere e buttare l'anima perchè i pannelli non si modificano o non hanno le dimensioni che dovrebbero<br/>
+ <br/>
+ <br/>
+ </p>
+<h2>Per i tesisti che lavoreranno su CoFFEE</h2>
+<p>in CoFFEE non vengono usati i jpanel e tutta la loro bella comitiva, vengono usati i widget della libreria SWT -in bibliografia-, dove al posto del Component abbiamo Composite, che è un widget container, e quindi ai widget che volete usare dovete passare il Composite, al contrario di come si fa con jpanel, a cui invece si adda il Component. <a class="external text" href="http://www.eclipse.org/swt/widgets/" rel="nofollow" title="http://www.eclipse.org/swt/widgets/">qui trovate esempi e guide e api</a>.<br/>
+Prendere la configurazione iniziale.<br/>
+Nel costruttore della classe Service c'è un parametro conf, che contiente i parametri passatigli dalla classe ConfigurationDialog. Ogni parametro va inserito e preso come se stessimo usando una mappa.. qui un esempio</p>
+<pre>conf.add("format", value);
+fileFormat = conf.get("format");
+</pre>
+<p>I messaggi. Ogni messaggio contiene un metodo toXMLString. In questo metodo vengono inserite le informazioni che poi verranno salvate nella traccia xml. state attenti ai caratteri HTML quindi.<br/>
+ </p>
+<h2>Bibliografia,Link, Software e Librerie</h2>
+<ul>
+<li><a class="external text" href="http://sourceforge.net/apps/trac/coffee-soft/wiki/Thirdpartyplug-in#QuizTool" rel="nofollow" title="http://sourceforge.net/apps/trac/coffee-soft/wiki/Thirdpartyplug-in#QuizTool">QuizTool su Sourceforge</a></li>
+</ul>
+<p> </p>
+<ul>
+<li>sperimentazione di quiz in classe</li>
+</ul>
+<p><a class="external free" href="http://www.style.it/news/le-notizie-del-giorno/2010/05/04/universita-bicocca–a-lezione-col-telecomando.aspx" rel="nofollow" title="http://www.style.it/news/le-notizie-del-giorno/2010/05/04/universita-bicocca–a-lezione-col-telecomando.aspx">http://www.style.it/news/le-notizie-del-giorno/2010/05/04/universita-bicocca–a-lezione-col-telecomando.aspx</a><br/>
+alcuni dei link per l'elenco delle piattaforme per l'e-earning più diffuse</p>
+<ul>
+<li><a class="external free" href="http://en.wikipedia.org/wiki/Virtual_learning_environment" rel="nofollow" title="http://en.wikipedia.org/wiki/Virtual_learning_environment">http://en.wikipedia.org/wiki/Virtual_learning_environment</a></li>
+<li><a class="external free" href="http://en.wikipedia.org/wiki/QTI" rel="nofollow" title="http://en.wikipedia.org/wiki/QTI">http://en.wikipedia.org/wiki/QTI</a></li>
+<li><a class="external free" href="http://en.wikipedia.org/wiki/List_of_free_and_open_source_software_packages#Educational" rel="nofollow" title="http://en.wikipedia.org/wiki/List_of_free_and_open_source_software_packages#Educational">http://en.wikipedia.org/wiki/List_of_free_and_open_source_software_packages#Educational</a></li>
+<li><a class="external free" href="http://www.webresourcesdepot.com/7-widely-used-and-open-source-e-learning-applications/" rel="nofollow" title="http://www.webresourcesdepot.com/7-widely-used-and-open-source-e-learning-applications/">http://www.webresourcesdepot.com/7-widely-used-and-open-source-e-learning-applications/</a></li>
+</ul>
+<p>-altro</p>
+<ul>
+<li><a class="external free" href="http://www.didattica.org/" rel="nofollow" title="http://www.didattica.org/">http://www.didattica.org/</a> informazioni utili su software didattici (specie per la scuola primaria)</li>
+<li><a class="external free" href="http://www.didattica.org/ccount/click.php?id=265" rel="nofollow" title="http://www.didattica.org/ccount/click.php?id=265">http://www.didattica.org/ccount/click.php?id=265</a> "I software autore come strumento per una didattica centrata sull'alunno nella scuola primaria", sezioni 2.6,2.7; purtroppo la maggior parte dei sw citati non sono stati scritti per l'uso internazionale, quindi motli tag sono in italiano.</li>
+</ul>
+<p>top 100 learning tool 2011</p>
+<ul>
+<li><a class="external free" href="http://c4lpt.co.uk/top-100-tools-for-learning-2011/" rel="nofollow" title="http://c4lpt.co.uk/top-100-tools-for-learning-2011/">http://c4lpt.co.uk/top-100-tools-for-learning-2011/</a> moodle all'8°, eFront al 58°, Blackboard 89°, tutti gli altri non arrivano nei primi 100.</li>
+</ul>
+<p>le statistiche di moodle</p>
+<ul>
+<li><a class="external free" href="http://moodle.org/stats/" rel="nofollow" title="http://moodle.org/stats/">http://moodle.org/stats/</a></li>
+</ul>
+<p>formati importabili in moodle</p>
+<ul>
+<li><a class="external free" href="http://docs.moodle.org/22/en/Import_questions" rel="nofollow" title="http://docs.moodle.org/22/en/Import_questions">http://docs.moodle.org/22/en/Import_questions</a></li>
+</ul>
+<p>alcuni dei software tests maker testati</p>
+<ul>
+<li><a class="external free" href="http://hotpot.uvic.ca/" rel="nofollow" title="http://hotpot.uvic.ca/">http://hotpot.uvic.ca/</a></li>
+<li><a class="external free" href="http://www.einstruction.com/" rel="nofollow" title="http://www.einstruction.com/">http://www.einstruction.com/</a></li>
+<li><a class="external free" href="http://exelearning.org/wiki" rel="nofollow" title="http://exelearning.org/wiki">http://exelearning.org/wiki</a></li>
+<li><a class="external free" href="http://www.qedoc.com/products.php?p=author" rel="nofollow" title="http://www.qedoc.com/products.php?p=author">http://www.qedoc.com/products.php?p=author</a> (brutto e infame per gli utenti non iscritti)</li>
+<li><a class="external free" href="http://www.wondershare.com/pro/quizcreator.html" rel="nofollow" title="http://www.wondershare.com/pro/quizcreator.html">http://www.wondershare.com/pro/quizcreator.html</a> (quello quasi buono nella versione free)</li>
+</ul>
+<p>conversioni</p>
+<ul>
+<li><a class="external free" href="http://ctl.centre.edu/learning%20resources/software/moodle/pdf/activities/quiz-convert%20questions%20from%20word%20to%20xml%20format.pdf" rel="nofollow" title="http://ctl.centre.edu/learning%20resources/software/moodle/pdf/activities/quiz-convert%20questions%20from%20word%20to%20xml%20format.pdf">http://ctl.centre.edu/learning%20resources/software/moodle/pdf/activities/quiz-convert%20questions%20from%20word%20to%20xml%20format.pdf</a> da word a Moodle XML Format. Anche se aggiornato presenta problemi per Office2007/2010</li>
+<li><a class="external free" href="http://vletools.com/questions/quiz" rel="nofollow" title="http://vletools.com/questions/quiz">http://vletools.com/questions/quiz</a> conversione online da Aiken esteso a Moodle XML Format</li>
+</ul>
+<ul>
+<li>per chiunque fosse un pò più pratico di me, in questa directory ci sono plug-in per importare/esportare vari formati di questionari Moodle, solo che tutte le pagine sono php.</li>
+</ul>
+<p><a class="external free" href="http://www.intermeetingfad.it/learning/question/format/" rel="nofollow" title="http://www.intermeetingfad.it/learning/question/format/">http://www.intermeetingfad.it/learning/question/format/</a></p>
+<ul>
+<li><i>come non detto. qui c'è il codice sorgente</i></li>
+</ul>
+<p><a class="external free" href="http://xref.moodle.org/nav.html?question/format/xml/format.php.source.html" rel="nofollow" title="http://xref.moodle.org/nav.html?question/format/xml/format.php.source.html">http://xref.moodle.org/nav.html?question/format/xml/format.php.source.html</a><br/>
+che ovviamente ha questo come home</p>
+<ul>
+<li><a class="external free" href="http://xref.moodle.org/index.html" rel="nofollow" title="http://xref.moodle.org/index.html">http://xref.moodle.org/index.html</a></li>
+</ul>
+<ul>
+<li>il log dei risultati by hot potatoes</li>
+</ul>
+<p><a class="external free" href="http://www.kanazawa-gu.ac.jp/~gordon/cgi/hot-potatoes-data/hot-potatoes.txt" rel="nofollow" title="http://www.kanazawa-gu.ac.jp/~gordon/cgi/hot-potatoes-data/hot-potatoes.txt">http://www.kanazawa-gu.ac.jp/~gordon/cgi/hot-potatoes-data/hot-potatoes.txt</a></p>
+<ul>
+<li>gente che come me si è cimentata nel parsing moodle</li>
+</ul>
+<p><a class="external free" href="http://drupal.org/node/740866" rel="nofollow" title="http://drupal.org/node/740866">http://drupal.org/node/740866</a></p>
+<ul>
+<li>parsing da hot potatoes</li>
+</ul>
+<p><a class="external free" href="http://www.kanazawa-gu.ac.jp/~gordon/research/hot-potatoes/viewsource.php?f=hot-potatoes-full.js" rel="nofollow" title="http://www.kanazawa-gu.ac.jp/~gordon/research/hot-potatoes/viewsource.php?f=hot-potatoes-full.js">http://www.kanazawa-gu.ac.jp/~gordon/research/hot-potatoes/viewsource.php?f=hot-potatoes-full.js</a></p>
+<ul>
+<li>php-cgi e il sangue che m'ha fatto buttare</li>
+</ul>
+<p><a class="external free" href="http://php-java-bridge.sourceforge.net/pjb/FAQ.html#php-extensions" rel="nofollow" title="http://php-java-bridge.sourceforge.net/pjb/FAQ.html#php-extensions">http://php-java-bridge.sourceforge.net/pjb/FAQ.html#php-extensions</a></p>
+<ul>
+<li>php, i tag di chiusura possono generare errore, qui spiega il perchè</li>
+</ul>
+<p><a class="external free" href="http://blog.casertano.name/2009/01/29/utilizzare-al-meglio-i-tag-php-solo-quelli-che-servono/" rel="nofollow" title="http://blog.casertano.name/2009/01/29/utilizzare-al-meglio-i-tag-php-solo-quelli-che-servono/">http://blog.casertano.name/2009/01/29/utilizzare-al-meglio-i-tag-php-solo-quelli-che-servono/</a></p>
+<ul>
+<li>Htmlentities - classe per convertire caratteri speciali html</li>
+</ul>
+<p><a class="external free" href="http://java.net/projects/htmlentities/sources/svn/content/trunk/src/com/tecnick/htmlutils/htmlentities/HTMLEntities.java?rev=19" rel="nofollow" title="http://java.net/projects/htmlentities/sources/svn/content/trunk/src/com/tecnick/htmlutils/htmlentities/HTMLEntities.java?rev=19">http://java.net/projects/htmlentities/sources/svn/content/trunk/src/com/tecnick/htmlutils/htmlentities/HTMLEntities.java?rev=19</a></p>
+<ul>
+<li>Java.SWT widgets</li>
+</ul>
+<p><a class="external free" href="http://www.eclipse.org/swt/widgets/" rel="nofollow" title="http://www.eclipse.org/swt/widgets/">http://www.eclipse.org/swt/widgets/</a></p>
+<ul>
+<li>BIRT (nb. al momento in cui scrivo, non c'è una guida VERA per installarlo in Indigo)</li>
+</ul>
+<p><a class="external free" href="http://www.eclipse.org/birt/phoenix/" rel="nofollow" title="http://www.eclipse.org/birt/phoenix/">http://www.eclipse.org/birt/phoenix/</a><br/>
+<a class="external free" href="http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html" rel="nofollow" title="http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html">http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html</a><br/>
+come installarlo in eclipse<br/>
+<a class="external free" href="http://download.eclipse.org/birt/downloads/build.php?build=S-R1-3_7_2-S20120214-201202141408" rel="nofollow" title="http://download.eclipse.org/birt/downloads/build.php?build=S-R1-3_7_2-S20120214-201202141408">http://download.eclipse.org/birt/downloads/build.php?build=S-R1-3_7_2-S20120214-201202141408</a><br/>
+<a class="external free" href="http://download.eclipse.org/callisto/releases/" rel="nofollow" title="http://download.eclipse.org/callisto/releases/">http://download.eclipse.org/callisto/releases/</a><br/>
+come utilizzarlo in eclipse<br/>
+<a class="external free" href="http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html" rel="nofollow" title="http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html">http://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html</a></p>
+<ul>
+<li>SWTChart</li>
+</ul>
+<p><a class="external free" href="http://sourceforge.net/projects/swt-chart/" rel="nofollow" title="http://sourceforge.net/projects/swt-chart/">http://sourceforge.net/projects/swt-chart/</a></p>
+<ul>
+<li>dove prendere alcuni esempi di chart visto che il manuale di jfreechart è a pagamento -la libreria i sorgenti invece sono free-</li>
+</ul>
+<p><a class="external free" href="http://www.java2s.com/Code/Java/Chart/CatalogChart.htm" rel="nofollow" title="http://www.java2s.com/Code/Java/Chart/CatalogChart.htm">http://www.java2s.com/Code/Java/Chart/CatalogChart.htm</a></p>
+<ul>
+<li>free icon set</li>
+</ul>
+<p><a class="external free" href="http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312" rel="nofollow" title="http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312">http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312</a></p>
+<ul>
+<li>jfreechart manual</li>
+</ul>
+<p><a class="external free" href="http://www.scribd.com/doc/7348799/jfreechartmanual" rel="nofollow" title="http://www.scribd.com/doc/7348799/jfreechartmanual">http://www.scribd.com/doc/7348799/jfreechartmanual</a></p>
+<h2>Seminari</h2>
+<ul>
+<li>"Quiz Tool per CoFFEE: idee di base, ricerche preliminari,primi sviluppi. - e primi intoppi"</li>
+</ul>
+<p>Abstract:<br/>
+"Durante il seminario verrà introdotto l'argomento di studio,<br/>
+l'idea di base con relativi obiettivi e i risultati delle prime ricerche affronate.<br/>
+Successivamente sarà mostrata l'idea progetturale e i vari meccanismi utlizzati per realizzarla. Infine saranno esposti alcuni dei problemi, bug e dubbi sorti finora."</p>
+

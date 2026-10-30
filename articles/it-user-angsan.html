@@ -1,0 +1,69 @@
+---
+layout: article
+lang: it
+title: User:Angsan
+description: Angelo Santarella Consulente informatico e laureando in Informatica. Introduzione Il mio lavoro
+  si basa sullo sviluppo di un’applicazione Android basata su accelerometro, in particolare l’obiettivo è quello
+  di creare una […]
+permalink: /news/user-angsan/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-angsan/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h1><span class="mw-headline" id="Angelo_Santarella"><b>Angelo Santarella</b></span></h1>
+<p>Consulente informatico e laureando in Informatica.</p>
+<h2><span class="mw-headline" id="Introduzione"><b>Introduzione</b></span></h2>
+<p>Il mio lavoro si basa sullo sviluppo di un'applicazione Android basata su accelerometro, in particolare l'obiettivo è quello di creare una libreria in grado di rilevare alcuni scenari in cui il dispositivo può trovarsi(es: fermo, in macchina, in tasca durante il cammino/corsa/scale).</p>
+<p>In particolare è stata progettata una libreria chiamata "Sensore virtuale di stati ambientali per Android", capace di rilevare stati di movimento, livelli di rumore, copertura fisica del dispositivo e modalità di suoneria, e altri tipi di stati potranno essere inseriti nella libreria. La metodologia indicata per l'interrogazione dei diversi scenari ambientali è stata usata per migliorare il calcolo degli stati, incrociando i gli stati forniti da ogni sensore utilizzato.</p>
+<p>Per dimostrare le funzionalità della libreria è stata implementata un'applicazione di esempio, chimata TelephonyManager, che permette la modifica delle impostazioni di telefonia in base agli stati ricevuti dal sensore virtuale di stati ambientali.</p>
+<p>Link al progetto: <a class="externallink" href="http://isis.dia.unisa.it/wiki/index.php/EnvironmentStateVirtualSensor" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/EnvironmentStateVirtualSensor">Environment State Virtual Sensor on ISISLab</a></p>
+<h2><span class="mw-headline" id="Software_e_Librerie"><b>Software e Librerie</b></span></h2>
+<table>
+<tbody>
+<tr>
+<td>Eclipse version 3.6.51</td>
+<td> <a class="externallink" href="http://www.eclipse.org/" rel="nofollow" title="http://www.eclipse.org/">http://www.eclipse.org/</a></td>
+</tr>
+<tr>
+<td>Java JDK 6 <i>update 21</i></td>
+<td> <a class="externallink" href="http://www.oracle.com/it/technologies/java/index.html" rel="nofollow" title="http://www.oracle.com/it/technologies/java/index.html">http://www.oracle.com/it/technologies/java/index.html</a></td>
+</tr>
+<tr>
+<td>Android SDK <i>r10</i></td>
+<td> <a class="externallink" href="http://developer.android.com" rel="nofollow" title="http://developer.android.com">http://developer.android.com</a></td>
+</tr>
+</tbody>
+</table>
+<h2><span class="mw-headline" id="Seminari"><b>Seminari</b></span></h2>
+<ul>
+<li>Titolo: "Libreria Android per la rilevazione di scenari di movimento" 18 Aprile 2011
+<ul>
+<li>Abstract: "La prima parte del seminario verterà su una descrizione dei sensori</li>
+</ul>
+</li>
+</ul>
+<p>utilizzabili dalla piattaforma Android, con l'illustrazione di un esempio di utilizzo dell'accelerometro, e delle graficazioni di alcuni scenari di movimento. Nella seconda parte del seminario verrà discussa la progettazione della libreria, e il suo utilizzo da parte di un applicazione di esempio. Infine verranno discussi i possibili sviluppi futuri della libreria."</p>
+<ul>
+<li>Titolo: "Sensore virtuale di stati ambientali per Android" 08 Luglio 2011
+<ul>
+<li>Abstract: "La prima parte del seminario illustrerà le caratteristiche, e gli</li>
+</ul>
+</li>
+</ul>
+<p>obiettivi, del sensore virtuale di stati ambientali per Android. Verranno mostrate le migliorie effettuate per raffinare il riconoscimento degli scenari ambientali e incrementare il numero degli stati. Nella seconda parte verrà mostrata un'applicazione di esempio che si pone l'obiettivo di modificare le impostazioni di telefonia del device in relazione allo stato ambientale fornito dal nostro sensore."</p>
+<h2><span class="mw-headline" id="Lavoro_di_Tesi"><b>Lavoro di Tesi</b></span></h2>
+<p>Progettazione e sviluppo del <a class="externallink" href="http://isis.dia.unisa.it/wiki/index.php/EnvironmentStateVirtualSensor" rel="nofollow" title="http://isis.dia.unisa.it/wiki/index.php/EnvironmentStateVirtualSensor">Sensore virtuale di stati ambientali per Android</a> </p>
+<h3><span class="mw-headline" id="Abstract">Abstract</span></h3>
+<p>Il sensore virtuale di stati ambientali per Android è la libreria che permette l'interrogazione degli scenari ambientali in cui un dispositivo Android può trovarsi. Gli scenari ambientali di base per le nostre rilevazioni sono stati ricavati tramite diversi sensori tra cui l'accelerometro, il microfono e il sensore di prossimità. Gli scenari ambientali di base sono: scenari di movimento, scenari di rumore, scenari di prossimità e scenari di modalità telefonica (ringermode). In ognuno di questi scenari di base elencati è stato possibile rilevare degli stati interni che li caratterizzano. Gli scenari di movimento sono divisi in quattro ulteriori stati: fermo, auto, cammino e corsa. Gli scenari di rumore sono identificati dallo stato ambiente silenzioso oppure ambiente rumoroso. Inoltre gli stati di prossimità e di ringermode restituiscono rispettivamente se il dispositivo è in uno stato BOXED (tasca, o foderino) od UNBOXED, oppure in modalità silenziosa o normale. In questo lavoro di tesi sono state affrontate le tematiche riguardanti la progettazione, l'implementazione e il testing della libreria, oltre allo sviluppo di alcune applicazioni di esempio basate sulla stessa. Nella fase di progettazione sono state svolte le analisi dei dati ottenuti dai vari sensori. Quindi sono state effettuate delle scelte per l'analisi dei dati per ogni sensore, e sono stati ricavati i relativi valori soglia inseriti poi nella libreria. Analisi di particolare interesse sono state svolte sui dati restituiti dall'accelerometro, infatti tramite il calcolo della varianza sui dati delle accelerazioni raccolti, è stato possibile distinguere gli stati di fermo, auto, cammino e corsa. Le analisi e le soglie trovate sono state implementate nella libreria, che restituisce gli stati ambientali trovati in un vettore di quattro posizioni, una per ogni scenario di base. Durante la fase di implementazione sono stati rispettati criteri di semplicità e scalabilità della libreria, che permettono facilità nella comprensione del funzionamento e la possibilità di estenderla con nuovi sensori. Dopo il completamento dell'implementazione è stato effettuata una fase di testing su un campione di utenti per dimostrare la validità delle funzionalità nell'eterogeneità del mondo dei dispositivi Android. Infine la libreria è stata pubblicata con modalità open source su SourceForge.net, con il nome di Environment State Virtual Sensor for Android. Sulla base della libreria sono state create delle applicazioni di esempio. La più notevole tra queste è l'applicazione TelephonyManager che, a seconda degli stati ambientali restituiti dalla libreria, modifica le impostazioni di telefonia dello smartphone in modo da renderlo adatto allo scenario ambientale rilevato.</p>
+<h3><span class="mw-headline" id="Indice">Indice</span></h3>
+<h3><span class="mw-headline" id="Tesi">Tesi</span></h3>
+<p>L'intera tesi può essere prelevata dal seguente link: <a class="externallink" href="http://dl.dropbox.com/u/16674955/tesiAngeloSantarella.pdf" rel="nofollow" title="http://dl.dropbox.com/u/16674955/tesiAngeloSantarella.pdf">http://dl.dropbox.com/u/16674955/tesiAngeloSantarella.pdf</a></p>
+<p> <br/>
+</p>
+

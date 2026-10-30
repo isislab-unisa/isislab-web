@@ -1,0 +1,61 @@
+it:
+  skip: Vai al contenuto
+  nav: Navigazione principale
+  open: Apri il menu
+  explore: Esplora ISISLab
+  section: IN QUESTA SEZIONE
+  explore_lab: Esplora il laboratorio
+  lab: Il laboratorio
+  research: Linee di ricerca
+  projects: Progetti
+  thesis: Tesi e stage
+  news: News
+  original: FONTE
+  sourcecopy: Questa pagina sintetizza informazioni verificate dal sito pubblico ISISLab.
+  readsource: Pagina originale ↗
+  location: Come raggiungerci
+  footer_dept: Dipartimento di Informatica · Università degli Studi di Salerno
+  publications: Pubblicazioni
+  students: Studenti
+  resources: Risorse studenti
+  faq: FAQ seminari
+  impact: Impatto sociale
+  back: Torna su ↑
+  press: Rassegna stampa
+  image_original: Vedi immagine originale
+  pdf_original: Apri articolo / PDF
+  more: Leggi la fonte ↗
+  gallery: Galleria
+  event: Evento
+  media_intro: Articoli e fotografie di repertorio citati nell’archivio del laboratorio.
+en:
+  skip: Skip to content
+  nav: Main navigation
+  open: Open menu
+  explore: Explore ISISLab
+  section: IN THIS SECTION
+  explore_lab: Explore the laboratory
+  lab: The laboratory
+  research: Research areas
+  projects: Projects
+  thesis: Theses & internships
+  news: News
+  original: SOURCE
+  sourcecopy: This page summarizes verifiable information from the public ISISLab
+    website.
+  readsource: View original page ↗
+  location: Directions
+  footer_dept: Department of Computer Science · University of Salerno
+  publications: Publications
+  students: Students
+  resources: Student resources
+  faq: Seminar FAQ
+  impact: Social impact
+  back: Back to top ↑
+  press: Press coverage
+  image_original: View original image
+  pdf_original: Open article / PDF
+  more: Read the source ↗
+  gallery: Gallery
+  event: Event
+  media_intro: Press cuttings and photographs referenced in the laboratory archive.

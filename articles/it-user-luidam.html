@@ -1,0 +1,36 @@
+---
+layout: article
+lang: it
+title: User:Luidam
+description: 'Luigi D’Amora Em@il: luigi.damora1[at]gmail[dot]com Thesis Java 8 GPU Computing e Mason Introduction
+  Si sta facendo sempre più strada nel calcolo di grosse dimensioni il GPU Computing. Le GPU sono componenti
+  […]'
+permalink: /news/user-luidam/
+article_kind: news
+date: '2019-07-17'
+import_origin: wordpress
+source_url: https://www.isislab.it/2019/07/17/user-luidam/
+section: News
+---
+<p><html><br/>
+<head></head><br/>
+<body></body></html></p>
+<hr/>
+<h2><span class="mw-headline" id="Luigi_D.27Amora">Luigi D'Amora</span></h2>
+<p>Em@il: luigi.damora1[at]gmail[dot]com</p>
+<h2><span class="mw-headline" id="Thesis">Thesis</span></h2>
+<h3><span class="mw-headline" id="Java_8_GPU_Computing_e_Mason">Java 8 GPU Computing e Mason</span></h3>
+<h3><span class="mw-headline" id="Introduction">Introduction</span></h3>
+<p>Si sta facendo sempre più strada nel calcolo di grosse dimensioni il GPU Computing. Le GPU sono componenti presenti in tutti i computer e molto spesso sottovalutate, nascondono infatti un grande potenziale; comprendono infatti al loro interno una grande quantità di piccoli processori (da usare per computazioni parallele) ad un costo decisamente contenuto rispetto alla creazione e gestione di un cluster. Andremo ad affrontare l'approccio sviluppato in un progetto opensource che interagisce con Java, Aparapi. Aparapi è un'API Java che trasforma il bytecode opportunamente scritto in codice OpenCL che può essere eseguito su GPU. Bisogna ovviamente tener conto del fatto che nell'utilizzo della GPU per il calcolo si va incontro ad un overhead, cioè trasportare dati dalla memoria centrale alla memoria della GPU richiede un tempo relativamente lungo, per cui bisogna ammortizzare questo costo facendo calcoli di grosse dimensioni, altrimenti non è conveniente fare calcoli sulla GPU. Mostreremo in seguito come si potrebbero sfruttare queste tecnologie per velocizzare l'operazione di ricerca del vicinato in Mason.</p>
+<h2><span class="mw-headline" id="Seminars">Seminars</span></h2>
+<h3><span class="mw-headline" id=".5B25.2F11.2F2013_16:00.5D_Java_8_.26_GPU_Computing">[25/11/2013 16:00] Java 8 &amp; GPU Computing</span></h3>
+<p>E' stata fatta una panoramica sulle potenzialità delle GPU moderne e sul perché esista il GPU Computing. Sono state presentate le novità presenti in Java 8 (rispetto alle versioni precedenti), facendo particolare attenzione alle lambda expression e alla possibilità di utilizzo con Aparapi (possibilità non ancora attuabile). Si è introdotta la Api Java, Aparapi, che trasforma uan parte del bytecode Java opportunamente scritto in codice OpenCL che sarà eseguito poi su GPU. Sono state mostrate le limitazioni di Aparapi e delle demo di esempio. <br/> <a class="externallink" href="https://mega.co.nz/#!4s8nSToA!K_8t7BCLh60kFPJpkKcTTZQabFfRgZyhbqpOBudthbg" rel="nofollow" title="https://mega.co.nz/#!4s8nSToA!K_8t7BCLh60kFPJpkKcTTZQabFfRgZyhbqpOBudthbg">seminario_1.pptx (6.8 MB)</a></p>
+<h3><span class="mw-headline" id="Note_prima_fase">Note prima fase</span></h3>
+<p>Ho avuto diverse difficoltà per trovare una versione di netbeans/eclipse che supportasse le lambda expression, si parlava di eclipse tra i possibili candidati, ma in realtà erano voci di corridoio... quindi ho abbandonato il fidato eclipse, compagno di mille avventure, per netbeans. L'obbiettivo era quello di utilizzare le lambda expression in modo da semplificare l'utilizzo di Aparapi... ho scoperto in seguito dopo vari tentativi fallimentari che questa funzionalità non è ancora prevista, in quanto ci sarebbe bisogno di HSA(Heterogeneous Architecture System)che dovrebbe permettere la comunicazione tra i vari componenti. Ovviamente tale HSA non è ancora disponibile... fortuna che ho scoperto queste notizie nel forum di Aparapi che è ottimo, va a sopperire la documentazione generale un po' scarsa. Attualmente l'HSA sta per essere implementato nelle nuove CPU di AMD della famiglia Kaveri, tramite HSA CPU e GPU potrebbero agire direttamente sulla memoria centrale senza le onerose copie di dati (da CPU a GPU e viceversa).</p>
+<h3><span class="mw-headline" id=".5B31.2F01.2F2013_15:30.5D_Aparapi_.26_Mason">[31/01/2013 15:30] Aparapi &amp; Mason</span></h3>
+<p>E' stata fatta una ripetizione circa le funzionalità di Aparapi, con particolare attenzione alla gestione esplicita/implicita del buffer di dati tra cpu e gpu. Si è mostrato l'algoritmo BitonicSort con un esempio; si è mostrata anche l'implementazione di tale algoritmo tramite Aparapi. Sono stati mostrati dei grafici per confrontare le prestazioni dei vari algoritmi, in particolare l'implementazione di BitonicSort tra CPU e GPU (usando Aparapi); poi si è mostrato un confronto tra BitonicSort su GPU e la funzione di ordinamento Arrays.parallelSort, conclusasi a vantaggio del parallelSort (molto probabilmente per la superiorità della CPU rispetto alla GPU, i7 2600 vs gtx 480). <br/> <a class="externallink" href="https://mega.co.nz/#!d4FQFahA!rw7WCAQCbYy5Q9-rb8OQneRQyjxK_KGuTFL6KKIJV3g" rel="nofollow" title="https://mega.co.nz/#!d4FQFahA!rw7WCAQCbYy5Q9-rb8OQneRQyjxK_KGuTFL6KKIJV3g">seminario_2.pptx (832 KB)</a></p>
+<h3><span class="mw-headline" id=".5B12.2F03.2F2013_12:30.5D__Mason_.26_test">[12/03/2013 12:30] Mason &amp; test</span></h3>
+<p>Sono stati mostrati ulteriori test e confronti effettuati su Mason, CUDA Thrust e Aparapi e si è deciso di utilizzare la combinazione di JNI (Java Native Interface) e CUDA nell'implementazione della ricerca del vicinato su GPU (usando forse JCUDA). <br/> <a class="externallink" href="https://mega.co.nz/#!E0c1iKgY!gNY614Xm06t80egLofwb9KsUjnC4S8t390FwycEOioo" rel="nofollow" title="https://mega.co.nz/#!E0c1iKgY!gNY614Xm06t80egLofwb9KsUjnC4S8t390FwycEOioo">seminario_3.pptx (563 KB)</a></p>
+<p> <br/>
+</p>
+
