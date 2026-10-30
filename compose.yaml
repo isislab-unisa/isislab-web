@@ -5,4 +5,4 @@ services:
       - "4000:4000"
     volumes:
       - .:/site
-    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --baseurl ""

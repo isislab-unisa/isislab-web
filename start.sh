@@ -21,4 +21,4 @@ if ! command -v bundle >/dev/null 2>&1; then
   exit 1
 fi
 bundle install
-exec bundle exec jekyll serve --livereload
+exec bundle exec jekyll serve --livereload --baseurl ""

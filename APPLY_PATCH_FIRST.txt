@@ -1,0 +1,14 @@
+ISISLab GitHub Pages URL fix (v10.2)
+Target: https://isislab-unisa.github.io/isislab-web/
+
+1. Extract this ZIP into the root of your EXISTING isislab-web Git repository.
+2. Overwrite the included paths only; do not remove or replace your news,
+   imported articles, press scans, and images.
+3. git add -A && git commit -m "Fix Jekyll project URL paths" && git push origin main
+4. GitHub -> Settings -> Pages: use the existing publishing source
+   (currently appears to be Deploy from a branch).
+5. When Pages redeploys, refresh with cache disabled.
+
+This patch does not install a new GitHub Actions workflow or change the Pages
+publishing mode. It fixes _config.yml to set url and baseurl and corrects
+footer/sidebar links. See GITHUB_PAGES.md.

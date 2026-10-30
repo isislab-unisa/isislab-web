@@ -12,12 +12,12 @@ layout: default
     <article class="page-content lab-card prose">{{ content }}</article>
     <aside class="page-sidebar">
       <div class="sidebar-card"><span class="sidebar-kicker">{{ t.section }}</span><h3>{{ t.explore_lab }}</h3>
-        <a href="{{ prefix }}/chi-siamo/">{{ t.lab }} <span>↗</span></a>
-        <a href="{{ prefix }}/tematiche/">{{ t.research }} <span>↗</span></a>
-        <a href="{{ prefix }}/progetti/">{{ t.projects }} <span>↗</span></a>
-        <a href="{{ prefix }}/informazioni-utili/">{{ t.thesis }} <span>↗</span></a>
-        <a href="{{ prefix }}/rassegna-stampa/">{{ t.press }} <span>↗</span></a>
-        <a href="{{ prefix }}/news/">News <span>↗</span></a>
+        <a href="{{ prefix | append: '/chi-siamo/' | relative_url }}">{{ t.lab }} <span>↗</span></a>
+        <a href="{{ prefix | append: '/tematiche/' | relative_url }}">{{ t.research }} <span>↗</span></a>
+        <a href="{{ prefix | append: '/progetti/' | relative_url }}">{{ t.projects }} <span>↗</span></a>
+        <a href="{{ prefix | append: '/informazioni-utili/' | relative_url }}">{{ t.thesis }} <span>↗</span></a>
+        <a href="{{ prefix | append: '/rassegna-stampa/' | relative_url }}">{{ t.press }} <span>↗</span></a>
+        <a href="{{ prefix | append: '/news/' | relative_url }}">News <span>↗</span></a>
       </div>
     </aside>
   </div>

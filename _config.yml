@@ -1,7 +1,7 @@
 title: ISISLab
 description: Laboratorio ISISLab — Dipartimento di Informatica, Università degli Studi di Salerno
-url: ""
-baseurl: "" # GitHub Actions overrides this from Pages base_path (/REPOSITORY for project sites)
+url: "https://isislab-unisa.github.io"
+baseurl: "/isislab-web" # GitHub Pages project site (https://isislab-unisa.github.io/isislab-web/)
 lang: it-IT
 markdown: kramdown
 permalink: pretty
