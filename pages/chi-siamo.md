@@ -50,7 +50,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-411" decoding="async" height="400" loading="lazy" src="/assets/media/838a597399a231-vittorioscarano.jpg" width="400"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-411" decoding="async" height="400" loading="lazy" src="{{ '/assets/media/838a597399a231-vittorioscarano.jpg' | relative_url }}" width="400"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Vittorio Scarano										</h2>
@@ -1579,4 +1579,3 @@ article_kind: imported_page
 </div>
 </section>
 </div>
-
