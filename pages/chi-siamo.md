@@ -80,7 +80,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-511" decoding="async" height="626" loading="lazy" src="/assets/media/efdb2cc243451d-dmaladrino.jpg" width="570"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-511" decoding="async" height="626" loading="lazy" src="{{ '/assets/media/efdb2cc243451d-dmaladrino.jpg' | relative_url }}" width="570"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Delfina Malandrino										</h2>
@@ -106,7 +106,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-50557" decoding="async" height="400" loading="lazy" src="/assets/media/611c53113fd184-gennaro.jpg" width="400"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-50557" decoding="async" height="400" loading="lazy" src="{{ '/assets/media/611c53113fd184-gennaro.jpg' | relative_url }}" width="400"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Gennaro Cordasco										</h2>
@@ -136,7 +136,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-12081" decoding="async" height="400" loading="lazy" src="/assets/media/78a6b3bd7f2416-biagio-cosenza.jpg" width="400"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-12081" decoding="async" height="400" loading="lazy" src="{{ '/assets/media/78a6b3bd7f2416-biagio-cosenza.jpg' | relative_url }}" width="400"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Biagio Cosenza										</h2>
@@ -170,7 +170,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-428" decoding="async" height="246" loading="lazy" src="/assets/media/10e2199c763be2-carminespagnuolo.png" width="250"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-428" decoding="async" height="246" loading="lazy" src="{{ '/assets/media/10e2199c763be2-carminespagnuolo.png' | relative_url }}" width="250"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Carmine Spagnuolo										</h2>
@@ -208,7 +208,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-506" decoding="async" height="366" loading="lazy" src="/assets/media/a5d1438e91b753-mariaangelapellegrino.jpg" width="366"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-506" decoding="async" height="366" loading="lazy" src="{{ '/assets/media/a5d1438e91b753-mariaangelapellegrino.jpg' | relative_url }}" width="366"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Maria Angela Pellegrino										</h2>
@@ -282,7 +282,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49843" decoding="async" height="600" loading="lazy" src="/assets/media/285a4d42eca2d2-valerio-di-pasquale.png" width="600"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49843" decoding="async" height="600" loading="lazy" src="{{ '/assets/media/285a4d42eca2d2-valerio-di-pasquale.png' | relative_url }}" width="600"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Valerio Di Pasquale										</h2>
@@ -308,7 +308,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49872" decoding="async" height="377" loading="lazy" src="/assets/media/d0aba9c71794a5-new-compressed-image.png" width="348"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49872" decoding="async" height="377" loading="lazy" src="{{ '/assets/media/d0aba9c71794a5-new-compressed-image.png' | relative_url }}" width="348"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Sana Latif										</h2>
@@ -334,7 +334,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-2048x2048 size-2048x2048 wp-image-49862" decoding="async" height="600" loading="lazy" src="/assets/media/10c57865989ccb-passport-size-photo-min.jpg" width="450"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-2048x2048 size-2048x2048 wp-image-49862" decoding="async" height="600" loading="lazy" src="{{ '/assets/media/10c57865989ccb-passport-size-photo-min.jpg' | relative_url }}" width="450"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Babar Hussain 										</h2>
@@ -356,7 +356,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-13920" decoding="async" height="200" loading="lazy" src="/assets/media/41c1f0866040d0-antoniodecaro.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-13920" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/41c1f0866040d0-antoniodecaro.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Antonio De Caro										</h2>
@@ -382,7 +382,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-14850" decoding="async" height="128" loading="lazy" src="/assets/media/a14f5ba583c0cb-saleh-jamali-golzar.jpg" width="128"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-14850" decoding="async" height="128" loading="lazy" src="{{ '/assets/media/a14f5ba583c0cb-saleh-jamali-golzar.jpg' | relative_url }}" width="128"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Saleh Jamali Golzar										</h2>
@@ -408,7 +408,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49371" decoding="async" height="1024" loading="lazy" src="/assets/media/0f08570633ae06-gabriele-tuozzo.jpg" width="741"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49371" decoding="async" height="1024" loading="lazy" src="{{ '/assets/media/0f08570633ae06-gabriele-tuozzo.jpg' | relative_url }}" width="741"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Gabriele Tuozzo										</h2>
@@ -450,7 +450,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-thumbnail size-thumbnail wp-image-12929" decoding="async" height="150" loading="lazy" src="/assets/media/8efa2a34cd8ebd-1559059391327.jpg" width="150"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-thumbnail size-thumbnail wp-image-12929" decoding="async" height="150" loading="lazy" src="{{ '/assets/media/8efa2a34cd8ebd-1559059391327.jpg' | relative_url }}" width="150"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Daniele De Vinco										</h2>
@@ -476,7 +476,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-821" decoding="async" height="316" loading="lazy" src="/assets/media/4984ebb430d220-danielemonaco-e1558967744456.png" width="189"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-821" decoding="async" height="316" loading="lazy" src="{{ '/assets/media/4984ebb430d220-danielemonaco-e1558967744456.png' | relative_url }}" width="189"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Daniele Monaco										</h2>
@@ -506,7 +506,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-477" decoding="async" height="100" loading="lazy" src="/assets/media/45c2922f32a8a3-pinapalmieri-2.jpg" width="100"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-477" decoding="async" height="100" loading="lazy" src="{{ '/assets/media/45c2922f32a8a3-pinapalmieri-2.jpg' | relative_url }}" width="100"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Giuseppina Palmieri										</h2>
@@ -580,7 +580,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49690" decoding="async" height="200" loading="lazy" src="/assets/media/5c07c19006586e-foto-sarah.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49690" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/5c07c19006586e-foto-sarah.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Sarah Pellone										</h2>
@@ -606,7 +606,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-443" decoding="async" height="500" loading="lazy" src="/assets/media/2f79af57d70c57-mariannaambrosino.jpg" width="500"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-443" decoding="async" height="500" loading="lazy" src="{{ '/assets/media/2f79af57d70c57-mariannaambrosino.jpg' | relative_url }}" width="500"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Marianna Ambrosino										</h2>
@@ -632,7 +632,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49891" decoding="async" height="668" loading="lazy" src="/assets/media/b7c7277df4db6f-img-vanja.jpg" width="667"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49891" decoding="async" height="668" loading="lazy" src="{{ '/assets/media/b7c7277df4db6f-img-vanja.jpg' | relative_url }}" width="667"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Vanja Annunziata										</h2>
@@ -658,7 +658,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-10385" decoding="async" height="209" loading="lazy" src="/assets/media/2fe7de959a2dc2-unnamed.jpg" width="181"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-10385" decoding="async" height="209" loading="lazy" src="{{ '/assets/media/2fe7de959a2dc2-unnamed.jpg' | relative_url }}" width="181"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Alberto Accardo										</h2>
@@ -684,7 +684,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-13159" decoding="async" height="1024" loading="lazy" src="/assets/media/943a301daf09fd-giusy.jpg" width="461"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-13159" decoding="async" height="1024" loading="lazy" src="{{ '/assets/media/943a301daf09fd-giusy.jpg' | relative_url }}" width="461"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Giusy Gonnella										</h2>
@@ -706,7 +706,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-49830" decoding="async" height="1024" loading="lazy" src="/assets/media/59a89d707bc38c-andrea-amorosini.jpg" width="768"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-49830" decoding="async" height="1024" loading="lazy" src="{{ '/assets/media/59a89d707bc38c-andrea-amorosini.jpg' | relative_url }}" width="768"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Andrea Amorosini										</h2>
@@ -761,7 +761,7 @@ article_kind: imported_page
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <a aria-label="profile" class="ekit-team-popup" data-mfp-src="#ekit_team_modal_e122342_39" href="javascript:void(0)">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block" data-target="ekit_team_modal_#e122342_39" data-toggle="modal">
-<img alt="" class="attachment-large size-large wp-image-13116" decoding="async" height="200" loading="lazy" src="/assets/media/1d4d692c89788f-marcodantonio.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-13116" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/1d4d692c89788f-marcodantonio.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 </a>
 <div class="profile-body">
 <h2 class="profile-title">
@@ -785,7 +785,7 @@ article_kind: imported_page
 
 <div class="modal-body">
 <div class="ekit-team-modal-img">
-<img alt="" class="attachment-large size-large wp-image-13116" decoding="async" height="200" loading="lazy" src="/assets/media/1d4d692c89788f-marcodantonio.jpg" width="200"/> </div>
+<img alt="" class="attachment-large size-large wp-image-13116" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/1d4d692c89788f-marcodantonio.jpg' | relative_url }}" width="200"/> </div>
 <div class="ekit-team-modal-info has-img">
 <h2 class="ekit-team-modal-title">Marco D'Antonio</h2>
 <p class="ekit-team-modal-position"></p>
@@ -817,7 +817,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-489" decoding="async" height="336" loading="lazy" src="/assets/media/d31601b27f3e5c-flavioserrapica.jpg" width="336"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-489" decoding="async" height="336" loading="lazy" src="{{ '/assets/media/d31601b27f3e5c-flavioserrapica.jpg' | relative_url }}" width="336"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Flavio Serrapica										</h2>
@@ -843,7 +843,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-492" decoding="async" height="397" loading="lazy" src="/assets/media/6aeee392e63cc1-roberto-andreoli.jpg" width="397"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-492" decoding="async" height="397" loading="lazy" src="{{ '/assets/media/6aeee392e63cc1-roberto-andreoli.jpg' | relative_url }}" width="397"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Roberto Andreoli										</h2>
@@ -861,7 +861,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-463" decoding="async" height="107" loading="lazy" src="/assets/media/78467b8a8e352c-michelecarillo.jpg" width="107"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-463" decoding="async" height="107" loading="lazy" src="{{ '/assets/media/78467b8a8e352c-michelecarillo.jpg' | relative_url }}" width="107"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Michele Carillo										</h2>
@@ -891,7 +891,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-501" decoding="async" height="450" loading="lazy" src="/assets/media/6d21aaa466c4bf-carmelaluciano-e1558967154629.jpg" width="450"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-501" decoding="async" height="450" loading="lazy" src="{{ '/assets/media/6d21aaa466c4bf-carmelaluciano-e1558967154629.jpg' | relative_url }}" width="450"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Carmen Luciano										</h2>
@@ -918,7 +918,7 @@ article_kind: imported_page
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <a aria-label="profile" class="ekit-team-popup" data-mfp-src="#ekit_team_modal_65b586b_39" href="javascript:void(0)">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block" data-target="ekit_team_modal_#65b586b_39" data-toggle="modal">
-<img alt="" class="attachment-large size-large wp-image-11135" decoding="async" height="200" loading="lazy" src="/assets/media/8e8aca29a02e99-donato-pirozzi.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-11135" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/8e8aca29a02e99-donato-pirozzi.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 </a>
 <div class="profile-body">
 <h2 class="profile-title">
@@ -942,7 +942,7 @@ article_kind: imported_page
 
 <div class="modal-body">
 <div class="ekit-team-modal-img">
-<img alt="" class="attachment-large size-large wp-image-11135" decoding="async" height="200" loading="lazy" src="/assets/media/8e8aca29a02e99-donato-pirozzi.jpg" width="200"/> </div>
+<img alt="" class="attachment-large size-large wp-image-11135" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/8e8aca29a02e99-donato-pirozzi.jpg' | relative_url }}" width="200"/> </div>
 <div class="ekit-team-modal-info has-img">
 <h2 class="ekit-team-modal-title">Donato Pirozzi</h2>
 <p class="ekit-team-modal-position"></p>
@@ -974,7 +974,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-860" decoding="async" height="800" loading="lazy" src="/assets/media/1b07fdd2cf632d-matteodauria.jpg" width="800"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-860" decoding="async" height="800" loading="lazy" src="{{ '/assets/media/1b07fdd2cf632d-matteodauria.jpg' | relative_url }}" width="800"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Matteo D'Auria										</h2>
@@ -1000,7 +1000,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-12055" decoding="async" height="361" loading="lazy" src="/assets/media/19398634714608-francesco-raia.jpg" width="361"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-12055" decoding="async" height="361" loading="lazy" src="{{ '/assets/media/19398634714608-francesco-raia.jpg' | relative_url }}" width="361"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Francesco Raia										</h2>
@@ -1030,7 +1030,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-465" decoding="async" height="500" loading="lazy" src="/assets/media/7d515425ad9ba4-renatodedonato.jpg" width="500"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-465" decoding="async" height="500" loading="lazy" src="{{ '/assets/media/7d515425ad9ba4-renatodedonato.jpg' | relative_url }}" width="500"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Renato De Donato										</h2>
@@ -1056,7 +1056,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-11137" decoding="async" height="200" loading="lazy" src="/assets/media/48a693b19ec355-armandofaggianojpg.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-11137" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/48a693b19ec355-armandofaggianojpg.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Armando Faggiano										</h2>
@@ -1082,7 +1082,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-436" decoding="async" height="500" loading="lazy" src="/assets/media/de124665618a24-dilettarizzolo.jpg" width="500"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-436" decoding="async" height="500" loading="lazy" src="{{ '/assets/media/de124665618a24-dilettarizzolo.jpg' | relative_url }}" width="500"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Diletta Rizzolo										</h2>
@@ -1108,7 +1108,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-11136" decoding="async" height="200" loading="lazy" src="/assets/media/950a36a5845207-rosariodechiara.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-11136" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/950a36a5845207-rosariodechiara.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Rosario De Chiara										</h2>
@@ -1138,7 +1138,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-504" decoding="async" height="450" loading="lazy" src="/assets/media/af55e75561514e-alfonsoguarino.jpg" width="450"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-504" decoding="async" height="450" loading="lazy" src="{{ '/assets/media/af55e75561514e-alfonsoguarino.jpg' | relative_url }}" width="450"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Alfonso Guarino										</h2>
@@ -1160,7 +1160,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-565" decoding="async" height="640" loading="lazy" src="/assets/media/dd3c5a44f9b99f-luca.jpg" width="640"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-565" decoding="async" height="640" loading="lazy" src="{{ '/assets/media/dd3c5a44f9b99f-luca.jpg' | relative_url }}" width="640"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Luca Vicidomini										</h2>
@@ -1186,7 +1186,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-434" decoding="async" height="363" loading="lazy" src="/assets/media/6ed8a48f43c9a8-alessiaantelmi.jpg" width="363"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-434" decoding="async" height="363" loading="lazy" src="{{ '/assets/media/6ed8a48f43c9a8-alessiaantelmi.jpg' | relative_url }}" width="363"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Alessia Antemi										</h2>
@@ -1212,7 +1212,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-11128" decoding="async" height="800" loading="lazy" src="/assets/media/a6441aefa62814-1544799866177.jpg" width="800"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-11128" decoding="async" height="800" loading="lazy" src="{{ '/assets/media/a6441aefa62814-1544799866177.jpg' | relative_url }}" width="800"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Giuseppe D'Ambrosio										</h2>
@@ -1242,7 +1242,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-487" decoding="async" height="90" loading="lazy" src="/assets/media/ee219addd7bdb6-luigiserra.jpg" width="90"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-487" decoding="async" height="90" loading="lazy" src="{{ '/assets/media/ee219addd7bdb6-luigiserra.jpg' | relative_url }}" width="90"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Luigi Serra										</h2>
@@ -1264,7 +1264,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-11099" decoding="async" height="892" loading="lazy" src="/assets/media/d6e138d7818c4f-picture-majid.jpg" width="800"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-11099" decoding="async" height="892" loading="lazy" src="{{ '/assets/media/d6e138d7818c4f-picture-majid.jpg' | relative_url }}" width="800"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Majid Salimi Beni										</h2>
@@ -1306,7 +1306,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-9795" decoding="async" height="200" loading="lazy" src="/assets/media/695fa7c9032cd2-agneseaddone.jpg" width="199"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-9795" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/695fa7c9032cd2-agneseaddone.jpg' | relative_url }}" width="199"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Agnese Addone										</h2>
@@ -1328,7 +1328,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-479" decoding="async" height="449" loading="lazy" src="/assets/media/8c4368eb92f56c-andreapetta.jpg" width="449"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-479" decoding="async" height="449" loading="lazy" src="{{ '/assets/media/8c4368eb92f56c-andreapetta.jpg' | relative_url }}" width="449"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Andrea Petta										</h2>
@@ -1359,7 +1359,7 @@ article_kind: imported_page
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <a aria-label="profile" class="ekit-team-popup" data-mfp-src="#ekit_team_modal_f12e8d4_39" href="javascript:void(0)">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block" data-target="ekit_team_modal_#f12e8d4_39" data-toggle="modal">
-<img alt="" class="attachment-large size-large wp-image-485" decoding="async" height="200" loading="lazy" src="/assets/media/14be64289cebe8-gianluca-santangelo.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-485" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/14be64289cebe8-gianluca-santangelo.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 </a>
 <div class="profile-body">
 <h2 class="profile-title">
@@ -1383,7 +1383,7 @@ article_kind: imported_page
 
 <div class="modal-body">
 <div class="ekit-team-modal-img">
-<img alt="" class="attachment-large size-large wp-image-485" decoding="async" height="200" loading="lazy" src="/assets/media/14be64289cebe8-gianluca-santangelo.jpg" width="200"/> </div>
+<img alt="" class="attachment-large size-large wp-image-485" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/14be64289cebe8-gianluca-santangelo.jpg' | relative_url }}" width="200"/> </div>
 <div class="ekit-team-modal-info has-img">
 <h2 class="ekit-team-modal-title">Gianluca Santangelo</h2>
 <p class="ekit-team-modal-position"></p>
@@ -1415,7 +1415,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-13060" decoding="async" height="200" loading="lazy" src="/assets/media/34ff02bdc126a2-kaijie.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-13060" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/34ff02bdc126a2-kaijie.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											kaijie Fan										</h2>
@@ -1441,7 +1441,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-50553" decoding="async" height="455" loading="lazy" src="/assets/media/e92a35bd4cb94e-dario-de-maio.png" width="455"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-50553" decoding="async" height="455" loading="lazy" src="{{ '/assets/media/e92a35bd4cb94e-dario-de-maio.png' | relative_url }}" width="455"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Dario De Maio										</h2>
@@ -1467,7 +1467,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-13924" decoding="async" height="200" loading="lazy" src="/assets/media/7d59084117c6a0-mohammad.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-13924" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/7d59084117c6a0-mohammad.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Mohammad Vazirpanah										</h2>
@@ -1497,7 +1497,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-12956" decoding="async" height="200" loading="lazy" src="/assets/media/8101699512ab7d-luigicrisci.jpg" width="200"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-12956" decoding="async" height="200" loading="lazy" src="{{ '/assets/media/8101699512ab7d-luigicrisci.jpg' | relative_url }}" width="200"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Luigi Crisci										</h2>
@@ -1523,7 +1523,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-thumbnail size-thumbnail wp-image-12923" decoding="async" height="150" loading="lazy" src="/assets/media/b8992f32ce8b4d-lorenzo-carpentieri.jpg" width="150"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-thumbnail size-thumbnail wp-image-12923" decoding="async" height="150" loading="lazy" src="{{ '/assets/media/b8992f32ce8b4d-lorenzo-carpentieri.jpg' | relative_url }}" width="150"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Lorenzo Carpentieri										</h2>
@@ -1549,7 +1549,7 @@ article_kind: imported_page
 <div class="ekit-wid-con">
 <div class="profile-card elementor-animation- text-center ekit-team-style-default">
 <div class="profile-header ekit-team-img ekit-img-overlay ekit-team-img-block">
-<img alt="" class="attachment-large size-large wp-image-14684" decoding="async" height="400" loading="lazy" src="/assets/media/b6c976e373c73d-tiziano-cotrp.jpg" width="400"/> </div><!-- .profile-header END -->
+<img alt="" class="attachment-large size-large wp-image-14684" decoding="async" height="400" loading="lazy" src="{{ '/assets/media/b6c976e373c73d-tiziano-cotrp.jpg' | relative_url }}" width="400"/> </div><!-- .profile-header END -->
 <div class="profile-body">
 <h2 class="profile-title">
 											Tiziano Citro										</h2>
