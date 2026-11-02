@@ -165,7 +165,27 @@ body {font-size:16.5px; line-height:1.68;}
   .lab-hub-card small {grid-column:2;font-size:11.5px;margin-top:7px;padding:0;}
 }
 
-/* Chi siamo: consistent square portrait frames, cropped without distortion. */
+/* Chi siamo: responsive team grid with consistent square portrait frames. */
+.page-content.prose .elementor-section:has(.profile-card) > .elementor-container {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;
+}
+.page-content.prose .elementor-section:has(.profile-card) > .elementor-container > .elementor-column {
+  width:auto;
+  min-width:0;
+}
+.page-content.prose .elementor-section:has(.profile-card) > .elementor-container > .elementor-column:not(:has(.profile-card)) {
+  display:none;
+}
+.page-content.prose .profile-card {
+  height:100%;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid rgba(32,57,81,.12);
+  border-radius:16px;
+  box-shadow:0 6px 24px rgba(30,49,68,.06);
+}
 .page-content.prose .profile-header,
 .page-content.prose .ekit-team-modal-img {
   aspect-ratio:1;
@@ -178,4 +198,16 @@ body {font-size:16.5px; line-height:1.68;}
   height:100%;
   object-fit:cover;
   object-position:center;
+}
+@media(max-width:920px) {
+  .page-content.prose .elementor-section:has(.profile-card) > .elementor-container {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+  }
+}
+@media(max-width:640px) {
+  .page-content.prose .elementor-section:has(.profile-card) > .elementor-container {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
 }
