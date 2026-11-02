@@ -164,3 +164,18 @@ body {font-size:16.5px; line-height:1.68;}
   .lab-hub-card em {grid-column:2;font-size:14px;margin-top:3px;}
   .lab-hub-card small {grid-column:2;font-size:11.5px;margin-top:7px;padding:0;}
 }
+
+/* Chi siamo: consistent square portrait frames, cropped without distortion. */
+.page-content.prose .profile-header,
+.page-content.prose .ekit-team-modal-img {
+  aspect-ratio:1;
+  overflow:hidden;
+}
+.page-content.prose .profile-header img,
+.page-content.prose .ekit-team-modal-img img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
