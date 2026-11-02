@@ -1,6 +1,6 @@
 {% assign locale = page.lang | default: 'it' %}{% assign t = site.data.ui[locale] %}{% if locale == 'en' %}{% assign prefix = '/en' %}{% else %}{% assign prefix = '' %}{% endif %}
 <footer class="lab-footer"><div class="alignwide footer-inner">
-    <div class="footer-about"><img src="{{ '/assets/img/isislab-logo-original.png' | relative_url }}" alt="ISISLab" width="321" height="80" loading="lazy">
+    <div class="footer-about"><img src="{{ '/assets/img/isislab-logo-original.png' | relative_url }}" alt="ISISLab" width="320" loading="lazy">
       <p>{{ t.footer_dept }}</p><p>Edificio F, Stecca 7, Lab. 10, II piano<br>Via Giovanni Paolo II, 132 · 84084 Fisciano (SA)</p>
       <a href="{{ prefix | append: '/come-raggiungerci/' | relative_url }}">{{ t.location }} <span aria-hidden="true">↗</span></a>
     </div>
