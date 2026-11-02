@@ -16,3 +16,4 @@ This ZIP is **repository-root ready**: its `_config.yml`, `_includes`, `_layouts
 The GitHub Pages URL is configured as `url: https://isislab-unisa.github.io`, `baseurl: /isislab-web`. The workflow builds with the same prefix.
 
 This project is the latest packaged source available in this conversation plus the missing-template repair. Previously imported content from your local/GitHub copy might not be contained in this ZIP, so preserve such files when merging. Missing original WordPress images remain placeholders until imported.
+.
