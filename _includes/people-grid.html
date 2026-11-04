@@ -9,6 +9,7 @@
       {% assign key = name | slugify %}
       {% assign photo = site.data.people_photos[key] %}
       {% assign words = name | split: ' ' %}
+      {% assign links = site.data.people_photos[key] %}
       <article class="person-card" aria-label="{{ name | escape }}">
         {% if photo and photo.image %}
         <div class="person-photo"><img src="{{ photo.image | relative_url }}" loading="lazy" decoding="async" alt="{{ name | escape }}" width="460" height="345"></div>
@@ -16,6 +17,30 @@
         <div class="person-photo person-photo--empty" role="img" aria-label="{% if lang == 'en' %}Photo unavailable for{% else %}Foto non disponibile per{% endif %} {{ name | escape }}"><span class="person-initials" aria-hidden="true">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</span></div>
         {% endif %}
         <div class="person-meta"><h3>{{ name }}</h3><p>{% if lang == 'en' %}{{ group.en }}{% else %}{{ group.it }}{% endif %}</p></div>
+        {% comment %}
+          Add url institutional and linkedin
+        {% endcomment %}
+        <div class="person-social-links">
+
+          {% if links.linkedin and links.linkedin != "" %}
+            <a href="{{ links.linkedin }}"
+              target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          {% endif %}
+
+          {% if links.unisa and links.unisa != "" %}
+            <a href="{{ links.unisa }}"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img src="{{ '/assets/media/university.svg' | relative_url }}"
+                alt=""
+                width="18"
+                height="18"
+                aria-hidden="true">
+              UNISA</a>
+          {% endif %}
+
+    </div>
       </article>
       {% endfor %}
     </div>

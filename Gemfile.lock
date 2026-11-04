@@ -18,6 +18,7 @@ GEM
     ffi (1.17.4-arm-linux-gnu)
     ffi (1.17.4-arm-linux-musl)
     ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x64-mingw-ucrt)
     ffi (1.17.4-x86-linux-gnu)
     ffi (1.17.4-x86-linux-musl)
     ffi (1.17.4-x86_64-darwin)
@@ -34,6 +35,9 @@ GEM
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.36.2-arm64-darwin)
+      bigdecimal
+      rake (~> 13.3)
+    google-protobuf (4.36.2-x64-mingw-ucrt)
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.36.2-x86-linux-gnu)
@@ -122,6 +126,8 @@ GEM
       google-protobuf (~> 4.31)
     sass-embedded (1.107.0-riscv64-linux-musl)
       google-protobuf (~> 4.31)
+    sass-embedded (1.107.0-x64-mingw-ucrt)
+      google-protobuf (~> 4.31)
     sass-embedded (1.107.0-x86_64-darwin)
       google-protobuf (~> 4.31)
     sass-embedded (1.107.0-x86_64-linux-android)
@@ -149,6 +155,7 @@ PLATFORMS
   riscv64-linux-gnu
   riscv64-linux-musl
   ruby
+  x64-mingw-ucrt
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -164,6 +171,7 @@ CHECKSUMS
   addressable (2.9.1) sha256=f1212365945455c84e8d031eea40fc6bedf0c663a78d95b3ab93591040bc5c35
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
+  bundler (4.0.23) sha256=407ba8a1d928f412847f819aa5f8b6aef7c59fb51feb517112af8a165487287b
   colorator (1.1.0) sha256=e2f85daf57af47d740db2a32191d1bdfb0f6503a0dfbc8327d0c9154d5ddfc38
   concurrent-ruby (1.3.8) sha256=b2f1be836e968ccc78ccfce277ea79c72a88633f22306782c16ff23fb415d1e1
   csv (3.3.7) sha256=15a3f16f6628da8664d455eb634e7f22031bcf53044923caf56975109e71b9f8
@@ -175,6 +183,7 @@ CHECKSUMS
   ffi (1.17.4-arm-linux-gnu) sha256=d6dbddf7cb77bf955411af5f187a65b8cd378cb003c15c05697f5feee1cb1564
   ffi (1.17.4-arm-linux-musl) sha256=9d4838ded0465bef6e2426935f6bcc93134b6616785a84ffd2a3d82bc3cf6f95
   ffi (1.17.4-arm64-darwin) sha256=19071aaf1419251b0a46852abf960e77330a3b334d13a4ab51d58b31a937001b
+  ffi (1.17.4-x64-mingw-ucrt) sha256=f6ff9618cfccc494138bddade27aa06c74c6c7bc367a1ea1103d80c2fcb9ed35
   ffi (1.17.4-x86-linux-gnu) sha256=38e150df5f4ca555e25beca4090823ae09657bceded154e3c52f8631c1ed72cf
   ffi (1.17.4-x86-linux-musl) sha256=fbeec0fc7c795bcf86f623bb18d31ea1820f7bd580e1703a3d3740d527437809
   ffi (1.17.4-x86_64-darwin) sha256=aa70390523cf3235096cf64962b709b4cfbd5c082a2cb2ae714eb0fe2ccda496
@@ -185,6 +194,7 @@ CHECKSUMS
   google-protobuf (4.36.2-aarch64-linux-gnu) sha256=c3279ec6eaa59f6ed6276eda2a33cffb4306471183ab79a332e698b8564f5169
   google-protobuf (4.36.2-aarch64-linux-musl) sha256=0772c9dde1e6dce9a6b44d1d35c28c29adee99d9bd6aff5e21840daeb22161ce
   google-protobuf (4.36.2-arm64-darwin) sha256=f70d810e6bbab9d8ad9c1d5fd685a21de4c10ad3ad32efb9455e17e5b1286917
+  google-protobuf (4.36.2-x64-mingw-ucrt) sha256=02b55d56c1c56a58a5e1cc3a7dda87e97343574ea5aa4f0e503379ba2647bbd1
   google-protobuf (4.36.2-x86-linux-gnu) sha256=ffcd06d49bffca24afff18c900dd61a51ea3028d43c47d0d9621d00bf38a5866
   google-protobuf (4.36.2-x86-linux-musl) sha256=e1afec03babd73c9117cc09d5fc2a98dfef37a414bfd8a4d0ceaac7bd66fc028
   google-protobuf (4.36.2-x86_64-darwin) sha256=8d1bd2a344f7f589703b202ad2ee4cca8ef731b4ced45782ef92d385967384ba
@@ -221,6 +231,7 @@ CHECKSUMS
   sass-embedded (1.107.0-riscv64-linux-android) sha256=2c274573c2c462e1ceac6b20decff03992cf9db6b489f5b12bfce14109c61346
   sass-embedded (1.107.0-riscv64-linux-gnu) sha256=1fbec2ad2a2a0eb90a36caab04ad99ece7803f2b8cd952079170985547453e17
   sass-embedded (1.107.0-riscv64-linux-musl) sha256=a8a4f4ae04dc61b394e3b51c59fc131a18cceeb0c7ddc2cfd566ddcf615f32f1
+  sass-embedded (1.107.0-x64-mingw-ucrt) sha256=ec9213020adea5ee95fd780404dba1c92c4631787648139c3e1e7f8ce3dc7bc9
   sass-embedded (1.107.0-x86_64-darwin) sha256=f2e58cf60168fa306adeda9ce10acf82cb025287b8c476529850990c88ce5029
   sass-embedded (1.107.0-x86_64-linux-android) sha256=62e9b63715dd8da67f9e9495f9bd5c82aa004a9c52b30d83ed3122fea42112b4
   sass-embedded (1.107.0-x86_64-linux-gnu) sha256=a5fa930b9ce1ebb67155e09884f88895601bac7646aa61ded13106ecae89e0ea
