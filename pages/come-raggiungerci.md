@@ -2,61 +2,158 @@
 layout: page
 lang: it
 title: Come raggiungerci
-description: Qui forniamo alcuni dettagli su come raggiungere l’ISISLab presso l’Università di Salerno in auto.
-  Puoi visitare Google Maps  per una mappa interattiva. Da Napoli Per arrivare in Università provenendo da
-  […]
+description: "Come raggiungere ISISLab presso l'Università di Salerno: indicazioni stradali, accesso al campus e percorso per arrivare al laboratorio."
 permalink: /come-raggiungerci/
 section: Pagina
 article_kind: imported_page
 ---
 
-<p>Qui forniamo alcuni dettagli su come raggiungere l'ISISLab presso l'Università di Salerno in auto. Puoi visitare  <a aria-label=" (opens in a new tab)" href="https://goo.gl/maps/CEZoKgS7TFH8qYiM6" rel="noreferrer noopener">Google Maps</a>  per una mappa interattiva.</p>
+<link rel="stylesheet" href="{{ '/assets/css/getting-here.css' | relative_url }}">
+<script src="{{ '/assets/js/getting-here.js' | relative_url }}" defer></script>
 
-<h3 class="wp-block-heading">Da Napoli</h3>
+## Come raggiungere ISISLab
 
-<p>Per arrivare in Università provenendo da Napoli, la scelta migliore è prendere l'autostrada A30 Casterta-Salerno, direzione Salerno.</p>
+ISISLab si trova presso il Dipartimento di Informatica dell'Università degli Studi di Salerno, nel campus di Fisciano, edificio F, Stecca 7, Laboratorio 10, secondo piano.
 
-<p>Passato il casello di Mercato San Severino, dopo circa 4 km, prendere l'uscita per Avellino (1 sulla mappa). Una volta reimmessi sull'autostrada dallo svincolo, prendere l'uscita per Fisciano (2 sulla mappa).</p>
+L'indirizzo dell'Università è:
 
-<p>Una volta sulla rampa di uscita, prendere la prima a destra in direzione "Università" (3 sulla mappa). La corsia riservata vi porterà direttamente all'interno del campus (4 sulla mappa). I parcheggi si troveranno subito a destra e a sinistra (5 sulla mappa).</p>
+**Via Giovanni Paolo II, 132 – 84084 Fisciano (SA), Italia**
 
-<p>I parcheggi del campus sono gratuiti. È consigliabile parcheggiare sul lato sinistro: ISISLab si trova nel primo edificio, contrassegnato dalla lettera "F", secondo piano (punto rosso sulla mappa).</p>
+Puoi consultare il [sito dell'Università degli Studi di Salerno](https://www.unisa.it/) oppure utilizzare [Google Maps per raggiungere il campus](https://goo.gl/maps/CEZoKgS7TFH8qYiM6).
 
-<figure class="wp-block-image"><a href="/assets/media/dbcf3e68e3b95b-mapstowardsuniversityfromnaples11.jpg" rel="noreferrer noopener"><img alt="" class="wp-image-572" decoding="async" height="735" loading="lazy" src="/assets/media/dbcf3e68e3b95b-mapstowardsuniversityfromnaples11.jpg" width="872"/></a></figure>
+## Indicazioni stradali
 
-<h3 class="wp-block-heading">Da Salerno</h3>
+### Da Napoli
 
-<p>Da Salerno, prendere l'autostrada in direzione Avellino e uscire a "Fisciano" (2 sulla mappa), quindi seguire le indicazioni riportate sopra.</p>
+Percorrendo l'autostrada A30 Caserta-Salerno in direzione Salerno, dopo aver superato Mercato San Severino, prosegui per circa 4 km e imbocca l'uscita Avellino (punto 1).
 
-<p>Nota: provenendo da Salerno, prima dell'uscita di Fisciano, ce n'è un'altra indicata con "Università". Questa uscita immette sul lato del campus opposto all'ubicazione di ISISLab: è consigliabile ignorare l'uscita "Università" e continuare invece per poche centinaia di metri, tenere la destra al bivio seguendo le indicazioni per "Avellino" e uscire subito dopo seguendo le indicazioni per "Fisciano".</p>
+Rientra in autostrada e prosegui fino all'uscita Fisciano (punto 2). All'uscita, svolta alla prima strada a destra in direzione Università (punto 3).
 
-<h3 class="wp-block-heading">Da Avellino</h3>
+La corsia riservata conduce direttamente all'ingresso del campus universitario (punto 4). È possibile parcheggiare lungo entrambi i lati della strada (punto 5).
 
-<p>Prendere l'autostrada in direzione Salerno. Prendere l'uscita di Fisciano e all'uscita svoltare a sinistra. Dopo la sopraelevata che attraversa l'autostrada, seguire le istruzioni sopra dal punto 3 della mappa.</p>
+Il parcheggio è gratuito. Ti consigliamo di utilizzare, se disponibile, quello sul lato sinistro. ISISLab si trova nell'edificio F, al secondo piano.
 
-<h3 class="wp-block-heading">Come arrivare in ISISLab</h3>
+<div class="getting-here-map">
+  <a href="{{ '/assets/media/dbcf3e68e3b95b-mapstowardsuniversityfromnaples11.jpg' | relative_url }}">
+    <img
+      src="{{ '/assets/media/dbcf3e68e3b95b-mapstowardsuniversityfromnaples11.jpg' | relative_url }}"
+      alt="Mappa del percorso da Napoli all'Università degli Studi di Salerno"
+      loading="lazy">
+  </a>
+  <p>Indicazioni stradali da Napoli al campus universitario di Fisciano.</p>
+</div>
 
-<p>Entrare nell'edificio "F" seguendo la freccia rossa delle immagini qui sotto. Attraversare il corridoio e le doppie porte fino a giungere all'atrio con scale e ascensore.</p>
+### Da Salerno
 
-<p>Raggiungere il 2° piano ed entrare nel corridoio a sinistra. ISISLab occupa le prime due porte a destra del corridoio.</p>
+Percorrendo l'autostrada in direzione Avellino, prendi l'uscita Fisciano (punto 2).
 
-<figure class="wp-block-gallery columns-3 is-cropped wp-block-gallery-182 is-layout-flex">
-<ul class="blocks-gallery-grid">
-<li class="blocks-gallery-item">
-<figure><a href="/assets/media/18aebdf22e9543-01-ingresso-2019-06-06-1-1024x662.jpeg"><img alt="" class="wp-image-1682" data-id="1682" data-link="https://www.isislab.it/come-raggiungerci/01-ingresso-2019-06-06-1/" decoding="async" height="662" loading="lazy" src="/assets/media/18aebdf22e9543-01-ingresso-2019-06-06-1-1024x662.jpeg" width="1024"/></a><figcaption class="blocks-gallery-item__caption">Svoltare a sinistra: il campus (punto 4 della mappa)</figcaption></figure>
-</li>
-<li class="blocks-gallery-item">
-<figure><a href="/assets/media/a952037f8d8829-02-ingresso-2019-06-06-1-1024x768.jpeg"><img alt="" class="wp-image-1683" data-id="1683" data-link="https://www.isislab.it/come-raggiungerci/02-ingresso-2019-06-06-1/" decoding="async" height="768" loading="lazy" src="/assets/media/a952037f8d8829-02-ingresso-2019-06-06-1-1024x768.jpeg" width="1024"/></a><figcaption class="blocks-gallery-item__caption"> Parcheggi a  destra e sinistra  (5 sulla mappa) </figcaption></figure>
-</li>
-<li class="blocks-gallery-item">
-<figure><a href="/assets/media/80da786178b0af-03-ingresso-2019-06-06-1-1024x768.png"><img alt="" class="wp-image-1684" data-id="1684" data-link="https://www.isislab.it/come-raggiungerci/03-ingresso-2019-06-06-1/" decoding="async" height="768" loading="lazy" src="/assets/media/80da786178b0af-03-ingresso-2019-06-06-1-1024x768.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">Ingresso per  ISISLab (punto rosso sulla mappa)</figcaption></figure>
-</li>
-<li class="blocks-gallery-item">
-<figure><a href="/assets/media/d26234fbede6a2-isislab-location-it-1-1024x608.png"><img alt="" class="wp-image-1686" data-id="1686" data-link="https://www.isislab.it/come-raggiungerci/isislab-location-it-1/" decoding="async" height="608" loading="lazy" src="/assets/media/d26234fbede6a2-isislab-location-it-1-1024x608.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">2° piano: Laboratorio ISISLab</figcaption></figure>
-</li>
-<li class="blocks-gallery-item">
-<figure><a href="/assets/media/d763f3927e1c28-ateneoisislab-it-2-1024x719.png"><img alt="" class="wp-image-1687" data-id="1687" data-link="https://www.isislab.it/come-raggiungerci/ateneoisislab_it-2/" decoding="async" height="719" loading="lazy" src="/assets/media/d763f3927e1c28-ateneoisislab-it-2-1024x719.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">Mappa del campus: ISISLab  in Edificio  F</figcaption></figure>
-</li>
-</ul>
-</figure>
+Attenzione: ignora la precedente uscita Università e prosegui ancora per alcune centinaia di metri. Mantieniti sulla destra al bivio seguendo le indicazioni per Avellino, quindi imbocca l'uscita Fisciano.
 
+### Da Avellino
+
+Percorrendo l'autostrada in direzione Salerno, prendi l'uscita Fisciano.
+
+All'uscita svolta a sinistra e, dopo aver attraversato il cavalcavia che supera l'autostrada, segui le indicazioni descritte a partire dal punto 3 del percorso da Napoli.
+
+## Come arrivare a ISISLab
+
+Una volta entrato nel campus, raggiungi l'edificio F seguendo la freccia rossa indicata nelle fotografie.
+
+Entra nell'edificio e percorri il corridoio fino alle doppie porte che conducono all'atrio, dove trovi le scale e l'ascensore.
+
+Raggiungi il secondo piano. Una volta arrivato, prosegui nel corridoio sulla sinistra: ISISLab si trova nelle prime due stanze sulla destra.
+
+<div class="getting-here-steps">
+
+  <!-- TAPPA 01 -->
+  <div class="getting-here-step">
+    <a href="{{ '/assets/media/18aebdf22e9543-01-ingresso-2019-06-06-1-1024x662.jpeg' | relative_url }}">
+      <img
+        src="{{ '/assets/media/18aebdf22e9543-01-ingresso-2019-06-06-1-1024x662.jpeg' | relative_url }}"
+        alt="Ingresso al campus dell'Università degli Studi di Salerno"
+        loading="lazy">
+    </a>
+
+    <div class="getting-here-step-content">
+      <span class="getting-here-number">01</span>
+      <h3>Entra nel campus</h3>
+      <p>Una volta raggiunta l'uscita Fisciano, svolta a destra e segui la strada in direzione dell'Università, fino all'ingresso del campus (punto 4).</p>
+    </div>
+  </div>
+
+  <!-- TAPPA 02 -->
+  <div class="getting-here-step">
+    <a href="{{ '/assets/media/a952037f8d8829-02-ingresso-2019-06-06-1-1024x768.jpeg' | relative_url }}">
+      <img
+        src="{{ '/assets/media/a952037f8d8829-02-ingresso-2019-06-06-1-1024x768.jpeg' | relative_url }}"
+        alt="Area di parcheggio del campus universitario"
+        loading="lazy">
+    </a>
+
+    <div class="getting-here-step-content">
+      <span class="getting-here-number">02</span>
+      <h3>Parcheggia l'auto</h3>
+      <p>Puoi parcheggiare gratuitamente lungo entrambi i lati della strada. Se possibile, ti consigliamo il lato sinistro (punto 5).</p>
+    </div>
+  </div>
+
+  <!-- TAPPA 03 -->
+  <div class="getting-here-step">
+    <a href="{{ '/assets/media/80da786178b0af-03-ingresso-2019-06-06-1-1024x768.png' | relative_url }}">
+      <img
+        src="{{ '/assets/media/80da786178b0af-03-ingresso-2019-06-06-1-1024x768.png' | relative_url }}"
+        alt="Ingresso dell'edificio F"
+        loading="lazy">
+    </a>
+
+    <div class="getting-here-step-content">
+      <span class="getting-here-number">03</span>
+      <h3>Individua l'edificio F</h3>
+      <p>Raggiungi l'edificio F e segui la freccia rossa indicata nella fotografia per individuare l'ingresso corretto.</p>
+    </div>
+  </div>
+
+  <!-- TAPPA 04 -->
+  <div class="getting-here-step">
+    <a href="{{ '/assets/media/d26234fbede6a2-isislab-location-it-1-1024x608.png' | relative_url }}">
+      <img
+        src="{{ '/assets/media/d26234fbede6a2-isislab-location-it-1-1024x608.png' | relative_url }}"
+        alt="Indicazioni per raggiungere ISISLab al secondo piano"
+        loading="lazy">
+    </a>
+
+    <div class="getting-here-step-content">
+      <span class="getting-here-number">04</span>
+      <h3>Raggiungi il secondo piano</h3>
+      <p>Entra nell'edificio, percorri il corridoio fino alle doppie porte e raggiungi l'atrio. Utilizza le scale o l'ascensore per arrivare al secondo piano. Prosegui poi lungo il corridoio sulla sinistra.</p>
+    </div>
+  </div>
+
+  <!-- TAPPA 05 -->
+  <div class="getting-here-step">
+    <a href="{{ '/assets/media/d763f3927e1c28-ateneoisislab-it-2-1024x719.png' | relative_url }}">
+      <img
+        src="{{ '/assets/media/d763f3927e1c28-ateneoisislab-it-2-1024x719.png' | relative_url }}"
+        alt="Mappa dell'Università con la posizione di ISISLab"
+        loading="lazy">
+    </a>
+
+    <div class="getting-here-step-content">
+      <span class="getting-here-number">05</span>
+      <h3>Hai raggiunto ISISLab</h3>
+      <p>ISISLab si trova nelle prime due stanze sulla destra del corridoio, al secondo piano dell'edificio F, Stecca 7, Laboratorio 10.</p>
+    </div>
+  </div>
+
+</div>
+
+## Contatti
+
+**ISISLab – Dipartimento di Informatica**  
+Università degli Studi di Salerno  
+Edificio F, Stecca 7 – Secondo piano  
+Laboratorio 10  
+Via Giovanni Paolo II, 132  
+84084 Fisciano (SA), Italia
+
+[Apri la posizione su Google Maps](https://goo.gl/maps/CEZoKgS7TFH8qYiM6).
