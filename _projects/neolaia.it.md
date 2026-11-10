@@ -18,6 +18,8 @@ end_date: 2027-12-31
 # PROGRAMMA DI FINANZIAMENTO
 # Verificare che lo slug sia presente in _data/project_programs.yml
 program: erasmus-plus
+# FUNDING
+funding: "Erasmus+ – European Universities Initiative"
 
 eu_grant: "14.398.401 €"
 unisa_share: "1.585.254 €"
@@ -45,8 +47,6 @@ partners:
   - "Stefan cel Mare University of Suceava (Romania)"
   - "Šiauliai State University of Applied Sciences (Lithuania)"
 
-# FINANZIAMENTO
-funding: "Erasmus+ – European Universities Initiative. Finanziamento complessivo: 14.398.401 €; quota UNISA: 1.585.254 €"
 
 # SITO E IMMAGINI
 website: "https://neolaiacampus.eu/"

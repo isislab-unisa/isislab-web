@@ -25,6 +25,7 @@ funding: "European Union – Leonardo da Vinci Programme"
 links:
   - label: "WHITE Project"
     url: "https://www.isislab.it/progetto-white/"
+
 published: true
 ---
 

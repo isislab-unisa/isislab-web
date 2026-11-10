@@ -15,7 +15,8 @@ end_date: "2022-02-28"
 extension: "2022-02-28"
 
 
-program: mur
+program: miur
+funding: "MIUR – Ministero dell'Istruzione, dell'Università e della Ricerca"
 
 types:
   - cultural-heritage

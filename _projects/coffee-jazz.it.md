@@ -12,6 +12,7 @@ end_date: "2010-03-31"
 
 # FUNDING PROGRAMME
 program: fp6
+funding: "25.000 $ – IBM"
 
 
 types:
@@ -22,10 +23,9 @@ logos:
   - "/assets/media/FP6-logo.jpg"
   - "/assets/media/CoFFEELogo_2010.bmp"
   
-
 role: "Coordinatore del progetto"
 
-funding: "25.000 $ – IBM"
+
 
 published: true
 ---

@@ -13,6 +13,8 @@ end_date: "2010-03-31"
 # FUNDING PROGRAMME
 program: fp6
 
+funding: "$25,000 – IBM"
+
 types:
   - collaborative-systems
 
@@ -23,7 +25,6 @@ logos:
 
 role: "Project Coordinator"
 
-funding: "$25,000 – IBM"
 published: true
 ---
 
