@@ -1,0 +1,54 @@
+- slug: horizon-europe
+  it: Horizon Europe
+  en: Horizon Europe
+  color: "#2563EB"
+
+- slug: horizon-2020
+  it: Horizon 2020
+  en: Horizon 2020
+  color: "#0891B2"
+
+- slug: erasmus-plus
+  it: Erasmus+
+  en: Erasmus+
+  color: "#DB2777"
+
+- slug: fp6
+  it: FP6 – Sesto Programma Quadro dell'Unione Europea
+  en: FP6 – Sixth Framework Programme of the European Union
+  color: "#64748B"
+
+- slug: prin-mur
+  it: PRIN (MUR)
+  en: PRIN (MUR)
+  color: "#7C3AED"
+
+- slug: miur
+  it: MIUR
+  en: MIUR
+  color: "#0E7490"
+
+- slug: firb-miur
+  it: FIRB (MIUR)
+  en: FIRB (MIUR)
+  color: "#65A30D"
+
+- slug: eu-project
+  it: Leonardo da Vinci (UE)
+  en: Leonardo da Vinci (EU)
+  color: "#A16207"
+
+- slug: fondi-regionali
+  it: Fondi regionali (Regione Campania)
+  en: Regional funds (Campania Region)
+  color: "#D97706"
+
+- slug: pnrr
+  it: PNRR
+  en: PNRR
+  color: "#0F766E"
+
+- slug: por-campania-fesr-2014-2020
+  it: POR Campania FESR 2014–2020
+  en: Campania ERDF Operational Programme 2014–2020
+  color: "#BE185D"

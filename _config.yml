@@ -5,6 +5,12 @@ baseurl: "/isislab-web" # GitHub Pages project site (https://isislab-unisa.githu
 lang: it-IT
 markdown: kramdown
 permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /progetti/:name/
+
 exclude:
   - README.md
   - Gemfile
@@ -19,9 +25,20 @@ exclude:
   - LICENSE
   - vendor
   - .gitignore
+  - desktop.ini
+  - reference/
+  - _projects/template-progetto.it.md
+  - _projects/template-progetto.en.md
+  
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
       layout: page
+
+  - scope:
+      path: ""
+      type: projects
+    values:
+        layout: project

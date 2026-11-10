@@ -1,0 +1,149 @@
+
+{% assign project = include.project %}
+{% assign lang = page.lang | default: "it" %}
+{% assign ui = site.data.project_ui[lang] %}
+
+{% assign title = project.title %}
+
+{% if lang == "en" %}
+  {% assign title = project.title_en | default: project.title %}
+{% endif %}
+
+{% assign program = site.data.project_programs | where: "slug", project.program | first %}
+{% assign project_year = project.start_date | date: "%Y" %}
+
+{% assign today_timestamp = site.time | date: "%s" | plus: 0 %}
+{% assign start_timestamp = project.start_date | date: "%s" | plus: 0 %}
+
+{% assign project_status = "ongoing" %}
+
+{% if project.start_date and start_timestamp > today_timestamp %}
+  {% assign project_status = "upcoming" %}
+{% elsif project.end_date and project.end_date != "" %}
+  {% assign end_timestamp = project.end_date | date: "%s" | plus: 0 %}
+  {% if end_timestamp < today_timestamp %}
+    {% assign project_status = "completed" %}
+  {% endif %}
+{% endif %}
+
+{% capture search_text %}
+  {{ title }}
+  {{ project.description }}
+  {{ project.description_en }}
+  {{ project.subtitle }}
+  {{ project.summary }}
+  {{ project.program }}
+  {{ program.it }}
+  {{ program.en }}
+  {{ project.coordinator }}
+  {{ project.partners | join: " " }}
+  {{ project.keywords | join: " " }}
+  {{ project.categories | join: " " }}
+  {{ project.categories_en | join: " " }}
+
+  {% for type_slug in project.types %}
+    {% assign type = site.data.project_types | where: "slug", type_slug | first %}
+    {{ type.it }}
+    {{ type.en }}
+  {% endfor %}
+{% endcapture %}
+
+<article
+  class="project-card"
+  data-program="{{ project.program | escape }}"
+  data-types="{{ project.types | join: '|' | downcase | escape }}"
+  data-year="{{ project_year }}"
+  data-status="{{ project_status }}"
+  data-search="{{ search_text | strip_html | normalize_whitespace | downcase | escape }}"
+  style="--program-color: {{ program.color | default: '#64748b' }}">
+
+  <a class="project-card-link" href="{{ project.url | relative_url }}">
+
+    <div class="project-card-logos">
+
+      {% if project.logos and project.logos.size > 0 %}
+
+        {% for logo in project.logos limit:3 %}
+          <img
+            src="{{ logo | relative_url }}"
+            alt="{{ title | escape }} - logo {{ forloop.index }}"
+            loading="lazy">
+        {% endfor %}
+
+      {% elsif project.image %}
+
+        <img
+          src="{{ project.image | relative_url }}"
+          alt="{{ title | escape }}"
+          loading="lazy">
+
+      {% endif %}
+
+    </div>
+
+    <div class="project-card-content">
+
+      <h3 class="project-card-title">{{ title }}</h3>
+
+      {% comment %}
+      DESCRIZIONE DEL PROGETTO
+      Temporaneamente nascosta nella card.
+      Rimane disponibile per la ricerca tramite search_text.
+
+      {% if project.description %}
+        <p class="project-summary">
+          {{ project.description | strip_html | truncate: 180 }}
+        </p>
+      {% endif %}
+      {% endcomment %}
+
+      <div class="project-tags">
+
+        {% if program %}
+          <span
+            class="project-tag project-program"
+            style="--program-color: {{ program.color }}">
+            {{ program[lang] | default: program.it }}
+          </span>
+        {% elsif project.program %}
+          <span class="project-tag project-program">
+            {{ project.program }}
+          </span>
+        {% endif %}
+
+        {% comment %}
+        TIPI DI PROGETTO
+        Temporaneamente nascosti nella card.
+        Restano disponibili per la ricerca e i filtri.
+
+        {% for type_slug in project.types %}
+          {% assign type = site.data.project_types | where: "slug", type_slug | first %}
+          {% if type %}
+            <span
+              class="project-tag project-type"
+              style="--type-color: {{ type.color | default: '#64748b' }}">
+              {{ type[lang] }}
+            </span>
+          {% endif %}
+        {% endfor %}
+        {% endcomment %}
+
+      </div>
+
+      <div class="project-card-footer">
+
+        {% if project_year %}
+          <span class="project-year">{{ project_year }}</span>
+        {% endif %}
+
+        <span class="project-read-more">
+          {{ ui.read_more }} →
+        </span>
+
+      </div>
+
+    </div>
+
+  </a>
+
+</article>

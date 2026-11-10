@@ -1,0 +1,115 @@
+
+- slug: education
+  it: Formazione e istruzione
+  en: Education
+  color: "#168c77"
+
+- slug: collaborative-learning
+  it: Apprendimento collaborativo
+  en: Collaborative Learning
+  color: "#8b65a5"
+
+- slug: cybersecurity
+  it: Sicurezza informatica
+  en: Cybersecurity
+  color: "#2878b5"
+
+- slug: cybersecurity-awareness
+  it: Cybersecurity e sensibilizzazione
+  en: Cybersecurity and Awareness
+  color: "#b45309"
+
+- slug: digital-learning
+  it: Apprendimento digitale
+  en: Digital Learning
+  color: "#b47b32"
+
+- slug: high-performance-computing
+  it: Calcolo ad alte prestazioni (HPC)
+  en: High-Performance Computing (HPC)
+  color: "#1d4ed8"
+
+- slug: drug-discovery
+  it: Scoperta di farmaci
+  en: Drug Discovery
+  color: "#65a30d"
+
+- slug: computational-chemistry
+  it: Chimica computazionale
+  en: Computational Chemistry
+  color: "#9333ea"
+
+- slug: parallel-computing
+  it: Calcolo parallelo
+  en: Parallel Computing
+  color: "#ca8a04"
+
+- slug: computer-aided-drug-design
+  it: Progettazione computazionale di farmaci (CADD)
+  en: Computer-Aided Drug Design (CADD)
+  color: "#548b83"
+
+- slug: cultural-heritage
+  it: Patrimonio culturale e valorizzazione intelligente
+  en: Cultural Heritage and Smart Valorisation
+  color: "#be123c"
+
+- slug: extended-reality
+  it: Realtà estesa (XR)
+  en: Extended Reality (XR)
+  color: "#0369a1"
+
+- slug: digital-twins
+  it: Gemelli digitali e ambienti virtuali
+  en: Digital Twins and Virtual Environments
+  color: "#6d28d9"
+
+- slug: cocreation
+  it: Co-creazione
+  en: Co-creation
+  color: "#15803d"
+
+- slug: open-data
+  it: Open Data
+  en: Open Data
+  color: "#2563eb"
+
+- slug: artificial-intelligence
+  it: Intelligenza artificiale
+  en: Artificial Intelligence
+  color: "#c2410c"
+
+- slug: embedded-edge-computing
+  it: Sistemi embedded ed edge computing
+  en: Embedded Systems and Edge Computing
+  color: "#475569"
+
+- slug: real-time-optimization
+  it: Calcolo in tempo reale e ottimizzazione
+  en: Real-Time Computing and Optimization
+  color: "#a21caf"
+
+- slug: e-government
+  it: E-government
+  en: E-government
+  color: "#0f766e"
+
+- slug: civic-participation
+  it: Partecipazione civica
+  en: Civic participation
+  color: "#7c3aed"
+
+- slug: collaborative-systems
+  it: Sistemi collaborativi
+  en: Collaborative Systems
+  color: "#0e7490"
+
+- slug: web-accessibility
+  it: Accessibilità del Web
+  en: Web Accessibility
+  color: "#a16207"
+
+- slug: distributed-systems
+  it: Sistemi distribuiti
+  en: Distributed Systems
+  color: "#64748b"

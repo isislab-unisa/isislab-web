@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="{{ '/assets/css/elegant.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/reference-fidelity.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/refinements-v10.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/photocustom.css' | relative_url }}">
   <script>/* Browser preference chooses EN on first Italian-language visit; manual choice wins. */
   (function(){try{var saved=localStorage.getItem('isislab-language'),lang=(navigator.languages&&navigator.languages[0]||navigator.language||'it').toLowerCase(),english=saved==='en'||(!saved&&!lang.startsWith('it'));if(document.documentElement.lang==='it'&&english){var target={{ page.alt_url | default: '/en/' | relative_url | jsonify }};location.replace(target+location.search+location.hash);}}catch(e){}})();
   </script>

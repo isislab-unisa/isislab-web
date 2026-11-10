@@ -1,0 +1,308 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">
+
+{% assign lang = page.lang | default: "it" %}
+{% assign ui = site.data.project_ui[lang] %}
+{% assign program = site.data.project_programs | where: "slug", page.program | first %}
+
+{% assign project_title = page.title %}
+{% assign project_subtitle = page.subtitle %}
+{% assign project_summary = page.summary | default: page.description %}
+{% assign project_role = page.role %}
+
+{% if lang == "en" %}
+  {% assign project_title = page.title_en | default: page.title %}
+  {% assign project_subtitle = page.subtitle_en | default: page.subtitle %}
+  {% assign project_summary = page.summary_en | default: page.description_en | default: page.summary | default: page.description %}
+  {% assign project_role = page.role_en | default: page.role %}
+{% endif %}
+
+<div class="lab-grid-bg">
+  <article class="project-detail">
+
+    <!-- RIQUADRO BIANCO UNICO -->
+    <div class="project-main-box">
+
+      <!-- INTESTAZIONE -->
+      <header class="project-detail-header">
+
+        {% if page.logos or page.image %}
+          <div class="project-detail-logos">
+            {% if page.logos %}
+              {% for logo in page.logos %}
+                <img src="{{ logo | relative_url }}"
+                     alt="{{ project_title | escape }} – logo {{ forloop.index }}"
+                     loading="lazy">
+              {% endfor %}
+            {% elsif page.image %}
+              <img src="{{ page.image | relative_url }}"
+                   alt="{{ project_title | escape }}"
+                   loading="lazy">
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <h1>{{ project_title }}</h1>
+
+        {% if project_subtitle %}
+          <p class="project-detail-subtitle">{{ project_subtitle }}</p>
+        {% endif %}
+
+        <div class="project-tags">
+
+          {% if program %}
+            <span class="project-tag project-program"
+                  style="--program-color: {{ program.color }}">
+              {{ program[lang] | default: program.it }}
+            </span>
+          {% elsif page.program %}
+            <span class="project-tag project-program">{{ page.program }}</span>
+          {% endif %}
+
+          {% assign categories = page.categories %}
+          {% if lang == "en" %}
+            {% assign categories = page.categories_en | default: page.categories %}
+          {% endif %}
+
+          {% for category in categories %}
+            <span class="project-tag project-type">{{ category }}</span>
+          {% endfor %}
+
+          {% for type_slug in page.types %}
+            {% assign type = site.data.project_types | where: "slug", type_slug | first %}
+            {% if type %}
+              <span class="project-tag project-type">{{ type[lang] }}</span>
+            {% endif %}
+          {% endfor %}
+
+        </div>
+
+      </header>
+
+      <!-- INFORMAZIONI PRINCIPALI -->
+      <section class="project-information">
+
+        <!-- PERIODO -->
+        {% if page.start_date or page.end_date %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}Period{% else %}Periodo{% endif %}
+            </span>
+            <strong>
+              {% if page.start_date %}
+                {{ page.start_date | date: "%d/%m/%Y" }}
+              {% endif %}
+              {% if page.end_date %}
+                – {{ page.end_date | date: "%d/%m/%Y" }}
+              {% endif %}
+            </strong>
+          </div>
+        {% endif %}
+
+        <!-- PROROGA - ITALIANO E INGLESE -->
+        {% if page.extension != nil and page.extension != "" %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}
+                Project extension
+              {% else %}
+                Proroga del progetto
+              {% endif %}
+            </span>
+
+            <strong>
+              {% if page.original_end_date %}
+                {% if lang == "en" %}
+                  Originally scheduled until
+                {% else %}
+                  Scadenza originaria
+                {% endif %}
+                {{ page.original_end_date | date: "%d/%m/%Y" }}
+                <br>
+              {% endif %}
+
+              {% if lang == "en" %}
+                Extended until
+              {% else %}
+                Prorogato fino al
+              {% endif %}
+              {{ page.extension | date: "%d/%m/%Y" }}
+            </strong>
+          </div>
+        {% endif %}
+
+        <!-- PROGRAMMA -->
+        {% if program or page.program %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {{ ui.program_label | default: "Programma" }}
+            </span>
+            <strong>
+              {% if program %}
+                {{ program[lang] | default: program.it }}
+              {% else %}
+                {{ page.program }}
+              {% endif %}
+            </strong>
+          </div>
+        {% endif %}
+
+        <!-- FINANZIAMENTO -->
+        {% if page.eu_grant or page.unisa_share or page.funding %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {{ ui.funding | default: "Finanziamento" }}
+            </span>
+
+            {% if page.eu_grant %}
+              <strong>
+                <span class="funding-detail-label">
+                  {{ ui.eu_grant_label | default: "Finanziamento complessivo" }}:
+                </span>
+                {{ page.eu_grant }}
+              </strong>
+            {% endif %}
+
+            {% if page.unisa_share %}
+              <strong>
+                <span class="funding-detail-label">
+                  {{ ui.unisa_share_label | default: "Quota UNISA" }}:
+                </span>
+                {{ page.unisa_share }}
+              </strong>
+            {% endif %}
+
+            {% if page.funding and page.eu_grant == nil and page.unisa_share == nil %}
+              <strong>{{ page.funding }}</strong>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <!-- RUOLO ISISLAB -->
+        {% if project_role %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}ISISLab role{% else %}Ruolo ISISLab{% endif %}
+            </span>
+            <strong>{{ project_role }}</strong>
+          </div>
+        {% endif %}
+
+        <!-- COORDINATORE -->
+        {% if page.coordinator %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}Coordinator{% else %}Coordinatore{% endif %}
+            </span>
+            <strong>{{ page.coordinator }}</strong>
+          </div>
+        {% endif %}
+
+        <!-- REFERENTE SCIENTIFICO -->
+        {% if page.responsible %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}Scientific contact{% else %}Referente scientifico{% endif %}
+            </span>
+            <strong>{{ page.responsible }}</strong>
+          </div>
+        {% endif %}
+
+        <!-- STATO -->
+        {% if page.status %}
+          <div class="project-info-tile">
+            <span class="project-info-label">
+              {% if lang == "en" %}Status{% else %}Stato{% endif %}
+            </span>
+            <strong>{{ ui[page.status] | default: page.status }}</strong>
+          </div>
+        {% endif %}
+
+      </section>
+
+      <!-- UNICO BLOCCO DESCRITTIVO -->
+      {% if project_summary or content != "" or page.partners.size > 0 or page.website or page.links.size > 0 %}
+        <section class="project-description-box">
+
+          <!-- DESCRIZIONE INIZIALE -->
+          {% if project_summary %}
+            <div class="project-description-intro">
+              <h2>
+                {% if lang == "en" %}Project overview{% else %}Descrizione del progetto{% endif %}
+              </h2>
+              {{ project_summary | markdownify }}
+            </div>
+          {% endif %}
+
+          <!-- CONTENUTO MARKDOWN -->
+          {% if content != "" %}
+            <div class="project-description-content{% if project_summary %} has-intro{% endif %}">
+              {{ content }}
+            </div>
+          {% endif %}
+
+          <!-- PARTNER -->
+          {% if page.partners and page.partners.size > 0 %}
+            <div class="project-description-section project-detail-partners">
+              <h2>{{ ui.partners }}</h2>
+              <ul>
+                {% for partner in page.partners %}
+                  <li>{{ partner }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          <!-- LINK -->
+          {% if page.website or page.links and page.links.size > 0 %}
+            <div class="project-description-section project-detail-links">
+              <h2>{{ ui.links }}</h2>
+
+              {% if page.website %}
+                <p>
+                  <a href="{{ page.website | escape }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    {% if lang == "en" %}
+                      Official project website
+                    {% else %}
+                      Sito ufficiale del progetto
+                    {% endif %} →
+                  </a>
+                </p>
+              {% endif %}
+
+              {% for link in page.links %}
+                <p>
+                  <a href="{{ link.url | escape }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    {{ link.label }} →
+                  </a>
+                </p>
+              {% endfor %}
+
+            </div>
+          {% endif %}
+
+        </section>
+      {% endif %}
+
+    </div>
+
+    <!-- NAVIGAZIONE -->
+    <nav class="project-detail-navigation">
+      <a href="{% if lang == 'en' %}{{ '/en/progetti/' | relative_url }}{% else %}{{ '/progetti/' | relative_url }}{% endif %}">
+        {% if lang == "en" %}
+          ← Back to projects
+        {% else %}
+          ← Torna ai progetti
+        {% endif %}
+      </a>
+    </nav>
+
+  </article>
+</div>

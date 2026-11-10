@@ -1,0 +1,185 @@
+
+{% assign lang = page.lang | default: "it" %}
+{% assign ui = site.data.project_ui[lang] %}
+
+{% assign language_projects = site.projects
+  | where: "lang", lang
+  | where: "published", true
+  | sort_natural: "start_date"
+  | reverse %}
+
+<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">
+
+<section class="projects-page" aria-label="{{ ui.title | default: 'Progetti' }}">
+
+  <header class="projects-header">
+    <h1>{{ ui.title }}</h1>
+    {% if ui.intro %}
+      <p>{{ ui.intro }}</p>
+    {% endif %}
+  </header>
+
+  <div class="projects-filters">
+
+    <div class="project-search-control">
+      <label for="project-search">{{ ui.search | default: "Cerca un progetto" }}</label>
+      <input
+        type="search"
+        id="project-search"
+        placeholder="{{ ui.search_placeholder | default: 'Cerca per nome o descrizione...' }}">
+    </div>
+
+    <div class="project-filter-control">
+      <label for="project-status">{{ ui.status | default: "Stato" }}</label>
+      <select id="project-status">
+        <option value="all">{{ ui.all_statuses | default: "Tutti gli stati" }}</option>
+        <option value="ongoing">{{ ui.ongoing | default: "In corso" }}</option>
+        <option value="completed">{{ ui.completed | default: "Conclusi" }}</option>
+      </select>
+    </div>
+
+    <div class="project-filter-control project-program-control">
+      <label for="project-program-button">
+        {{ ui.program_label | default: "Programma" }}
+      </label>
+
+      <select id="project-program" class="project-program-native" aria-hidden="true" tabindex="-1">
+        <option value="all">{{ ui.all_programs | default: "Tutti i programmi" }}</option>
+        {% for program in site.data.project_programs %}
+          <option value="{{ program.slug }}">{{ program[lang] }}</option>
+        {% endfor %}
+      </select>
+
+      <div class="project-program-dropdown">
+        <button
+          type="button"
+          id="project-program-button"
+          class="project-program-trigger"
+          aria-haspopup="listbox"
+          aria-expanded="false">
+          <span class="project-program-current">
+            {{ ui.all_programs | default: "Tutti i programmi" }}
+          </span>
+          <span class="project-program-chevron">▾</span>
+        </button>
+
+        <div
+          class="project-program-options"
+          id="project-program-options"
+          role="listbox"
+          hidden>
+
+          <button
+            type="button"
+            class="project-program-option selected"
+            role="option"
+            aria-selected="true"
+            data-value="all">
+            {{ ui.all_programs | default: "Tutti i programmi" }}
+          </button>
+
+          {% for program in site.data.project_programs %}
+            <button
+              type="button"
+              class="project-program-option"
+              role="option"
+              aria-selected="false"
+              data-value="{{ program.slug }}">
+              <span
+                class="project-program-color"
+                style="--program-option-color: {{ program.color | default: '#64748b' }}">
+              </span>
+              <span>{{ program[lang] }}</span>
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="project-filter-control">
+      <label for="project-type">{{ ui.type_label }}</label>
+      <select id="project-type">
+        <option value="all">{{ ui.all_topics }}</option>
+        {% for type in site.data.project_types %}
+          <option value="{{ type.slug }}">{{ type[lang] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="project-filter-control">
+      <label for="project-year">{{ ui.year_label | default: "Anno" }}</label>
+      <select id="project-year">
+        <option value="all">{{ ui.all_years | default: "Tutti gli anni" }}</option>
+
+        {% assign years = language_projects
+          | map: "start_date"
+          | compact
+          | uniq
+          | sort_natural
+          | reverse %}
+
+        {% assign displayed_years = "" | split: "" %}
+
+        {% for date in years %}
+          {% assign year = date | date: "%Y" %}
+
+          {% unless displayed_years contains year %}
+            <option value="{{ year }}">{{ year }}</option>
+            {% assign displayed_years = displayed_years | push: year %}
+          {% endunless %}
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="project-filter-control project-clear-control">
+      <label>&nbsp;</label>
+      <button type="button" id="projects-clear">
+        {{ ui.clear_filters | default: "Azzera filtri" }}
+      </button>
+    </div>
+
+  </div>
+
+  <p id="projects-count"
+     data-singular="{{ ui.project_singular | default: 'progetto trovato' }}"
+     data-plural="{{ ui.project_plural | default: 'progetti trovati' }}">
+  </p>
+
+  {% assign current_year = "" %}
+
+  {% for project in language_projects %}
+
+    {% assign project_year = project.start_date | date: "%Y" %}
+
+    {% if project_year != current_year %}
+
+      {% if current_year != "" %}
+          </div>
+        </section>
+      {% endif %}
+
+      <section class="project-year-group" data-year="{{ project_year }}">
+        <h2>{{ project_year }}</h2>
+        <div class="projects-grid">
+
+      {% assign current_year = project_year %}
+
+    {% endif %}
+
+    {% include project-card.html project=project %}
+
+  {% endfor %}
+
+  {% if current_year != "" %}
+      </div>
+    </section>
+  {% endif %}
+
+  <p id="projects-no-results" hidden>
+    {{ ui.no_results | default: "Nessun progetto corrisponde ai filtri selezionati." }}
+  </p>
+
+</section>
+
+<script src="{{ '/assets/js/projects-filter.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/program-dropdown.js' | relative_url }}" defer></script>

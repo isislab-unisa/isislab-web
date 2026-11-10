@@ -37,15 +37,18 @@
     text-decoration: underline;
 }
 
+
 .person-unisa-link {
     display: inline-flex;
     align-items: center;
     gap: 5px;
 }
 
-.person-unisa-link img {
+.profile-icon-library {
+    display: inline-block;
     width: 18px;
     height: 18px;
-    display: block;
+    min-width: 18px;
     flex-shrink: 0;
+    vertical-align: middle;
 }

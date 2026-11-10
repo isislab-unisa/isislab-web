@@ -1,0 +1,82 @@
+
+it:
+  title: "Progetti di ricerca"
+  intro: "I progetti di ricerca e innovazione di ISISLab."
+
+  search_label: "Cerca un progetto"
+  search_placeholder: "Titolo, parola chiave, descrizione o partner..."
+
+  status_label: "Stato del progetto"
+  all_statuses: "Tutti gli stati"
+  ongoing: "In corso"
+  completed: "Conclusi"
+
+  program_label: "Programma"
+  all_programs: "Tutti i programmi"
+
+  type_label: "Temi"
+  all_types: "Tutti i temi"
+
+  year_label: "Anno"
+  all_years: "Tutti gli anni"
+
+  clear_filters: "Azzera filtri"
+
+  project_singular: "progetto"
+  project_plural: "progetti"
+
+  no_results: "Nessun progetto corrisponde ai criteri selezionati."
+  read_more: "Scopri il progetto"
+
+  funding: "Finanziamento"
+  eu_grant_label: "Finanziamento complessivo"
+  unisa_share_label: "Quota UNISA"
+
+  period: "Periodo"
+  role: "Ruolo ISISLab"
+  partners: "Partner"
+  links: "Link utili"
+
+  status: "Stato"
+  planned: "In preparazione"
+
+en:
+  title: "Research projects"
+  intro: "Research and innovation projects at ISISLab."
+
+  search_label: "Search projects"
+  search_placeholder: "Title, keyword, description or partner..."
+
+  status_label: "Project status"
+  all_statuses: "All statuses"
+  ongoing: "Ongoing"
+  completed: "Completed"
+
+  program_label: "Funding programme"
+  all_programs: "All programmes"
+
+  type_label: "Topics"
+  all_types: "All topics"
+
+  year_label: "Year"
+  all_years: "All years"
+
+  clear_filters: "Clear filters"
+
+  project_singular: "project"
+  project_plural: "projects"
+
+  no_results: "No projects match the selected criteria."
+  read_more: "Discover the project"
+
+  funding: "Funding"
+  eu_grant_label: "EU Grant"
+  unisa_share_label: "UNISA share"
+
+  period: "Period"
+  role: "ISISLab role"
+  partners: "Partners"
+  links: "Useful links"
+
+  status: "Status"
+  planned: "In preparation"
