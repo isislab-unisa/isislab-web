@@ -33,7 +33,6 @@ PEOPLE = [
     {"pid": "224/0266", "name": "Maria Angela Pellegrino"},
     {"pid": "32/6668", "name": "Vittorio Scarano"},
     {"pid": "26/4019", "name": "Gennaro Cordasco"},
-    {"pid": "98/2936", "name": "Delfina Malandrino"},
     {"pid": "07/527", "name": "Biagio Cosenza"},
 ]
 
