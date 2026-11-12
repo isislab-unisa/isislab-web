@@ -22,42 +22,13 @@
       "count": 217
     },
     {
-      "pid": "98/2936",
-      "name": "Delfina Malandrino",
-      "count": 126
-    },
-    {
       "pid": "07/527",
       "name": "Biagio Cosenza",
       "count": 77
     }
   ],
-  "total": 546,
+  "total": 468,
   "publications": [
-    {
-      "key": "conf/nldb/LomastoLMMZ26",
-      "title": "Consp2VecD: A Dataset Based on Emotional Dynamics Expressed by Reddit Conspiracy Groups for Information Disorder Analysis.",
-      "year": 2027,
-      "authors": [
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino",
-        "Valerio Mosca"
-      ],
-      "venue": "NLDB",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-032-29532-3_8",
-      "url": "https://dblp.org/rec/conf/nldb/LomastoLMMZ26",
-      "edition": "https://doi.org/10.1007/978-3-032-29532-3_8",
-      "pages": "94-108",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
     {
       "key": "journals/dam/CordascoGR26",
       "title": "( t , r ) -Broadcast Domination in graphs.",
@@ -221,55 +192,6 @@
       ]
     },
     {
-      "key": "journals/tmlr/ZaccagninoBMTT26",
-      "title": "HERMES: Heterogeneous Effects Representation with Matched Embeddings using Siamese Networks.",
-      "year": 2026,
-      "authors": [
-        "Alessia Ture",
-        "Delfina Malandrino",
-        "Donatello Telesca",
-        "Gerardo Benevento",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Trans. Mach. Learn. Res.",
-      "type": "article",
-      "doi": "",
-      "url": "https://dblp.org/rec/journals/tmlr/ZaccagninoBMTT26",
-      "edition": "https://openreview.net/forum?id=G6F0fkBQEG",
-      "pages": "",
-      "volume": "2026",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/corr/abs-2604-13047",
-      "title": "Integration of Deep Reinforcement Learning and Agent-based Simulation to Explore Strategies Counteracting Information Disorder.",
-      "year": 2026,
-      "authors": [
-        "Alfonso Guarino",
-        "Andrea Camoia",
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "CoRR",
-      "type": "article",
-      "doi": "10.48550/ARXIV.2604.13047",
-      "url": "https://dblp.org/rec/journals/corr/abs-2604-13047",
-      "edition": "https://doi.org/10.48550/ARXIV.2604.13047",
-      "pages": "",
-      "volume": "abs/2604.13047",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/chi/PellegrinoG26",
       "title": "Introducing Blockchains at School Without Computers: Hands-On Sense-Making for Young Learners.",
       "year": 2026,
@@ -384,30 +306,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "journals/nca/LomastoLMMZ26",
-      "title": "Modeling emotional signatures to detect conspiratorial communities on social media.",
-      "year": 2026,
-      "authors": [
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino",
-        "Valerio Mosca"
-      ],
-      "venue": "Neural Comput. Appl.",
-      "type": "article",
-      "doi": "10.1007/S00521-026-12038-7",
-      "url": "https://dblp.org/rec/journals/nca/LomastoLMMZ26",
-      "edition": "https://doi.org/10.1007/S00521-026-12038-7",
-      "pages": "260",
-      "volume": "38",
-      "number": "8",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -570,30 +468,6 @@
       ]
     },
     {
-      "key": "conf/nldb/LomastoLMMZ25",
-      "title": "Unveiling Emotional Signature in Conspiracy Topics on Social Media Through Vector Analysis.",
-      "year": 2026,
-      "authors": [
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino",
-        "Valerio Mosca"
-      ],
-      "venue": "NLDB (2)",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-031-97144-0_8",
-      "url": "https://dblp.org/rec/conf/nldb/LomastoLMMZ25",
-      "edition": "https://doi.org/10.1007/978-3-031-97144-0_8",
-      "pages": "82-93",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/pdp/CarpentieriVC25",
       "title": "A Performance Analysis of Autovectorization on RVV RISC-V Boards.",
       "year": 2025,
@@ -688,33 +562,6 @@
       ]
     },
     {
-      "key": "journals/bmcbi/PetesciaBFMMMSZ25",
-      "title": "Cancer detection via one-shot learning: integrating gene expression and genomic mutation analysis.",
-      "year": 2025,
-      "authors": [
-        "Alberto Montefusco",
-        "Alessandro Macaro",
-        "Alessia Petescia",
-        "Anna Falanga",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Rocco Zaccagnino",
-        "Rosalinda Sorrentino"
-      ],
-      "venue": "BMC Bioinform.",
-      "type": "article",
-      "doi": "10.1186/S12859-025-06257-3",
-      "url": "https://dblp.org/rec/journals/bmcbi/PetesciaBFMMMSZ25",
-      "edition": "https://doi.org/10.1186/S12859-025-06257-3",
-      "pages": "239",
-      "volume": "26",
-      "number": "1",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/semweb/TuozzoPL25",
       "title": "CHeCLOUD - the Cultural Heritage Linked Open Data Cloud.",
       "year": 2025,
@@ -756,36 +603,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/iv/ZaccagninoBPMGMPSZLT25",
-      "title": "Designing accessible Digital Musical Interfaces for democratizing the music creativity.",
-      "year": 2025,
-      "authors": [
-        "Alberto Pizzulo",
-        "Alessia Ture",
-        "Daniele Salerno",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Gianluca Zaccagnino",
-        "Manuel Di Matteo",
-        "Martina Girolamo",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV68685.2025.00040",
-      "url": "https://dblp.org/rec/conf/iv/ZaccagninoBPMGMPSZLT25",
-      "edition": "https://doi.org/10.1109/IV68685.2025.00040",
-      "pages": "164-170",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -1178,30 +995,6 @@
       ]
     },
     {
-      "key": "conf/iv/LettieriZMLB25",
-      "title": "Nets of Fairness. Graph-Based Inference and Visualization to Delve into Gig Workers' Conditions.",
-      "year": 2025,
-      "authors": [
-        "Delfina Malandrino",
-        "Ivan Buccella",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV68685.2025.00037",
-      "url": "https://dblp.org/rec/conf/iv/LettieriZMLB25",
-      "edition": "https://doi.org/10.1109/IV68685.2025.00037",
-      "pages": "148-153",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/cscw/PellegrinoASS25",
       "title": "Open Data in Education: Fostering Data Literacy Among High-school Learners.",
       "year": 2025,
@@ -1292,59 +1085,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/bibe/ZaccagninoABFFMTZ25",
-      "title": "Scalable Multiple Sequence Alignment via Genetic Algorithms and Localized Deep Reinforcement Learning Agents.",
-      "year": 2025,
-      "authors": [
-        "Alessia Ture",
-        "Andrea Aceto",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Gerardo Frino",
-        "Gianluca Zaccagnino",
-        "Nicola Frugieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "BIBE",
-      "type": "inproceedings",
-      "doi": "10.1109/BIBE66822.2025.00067",
-      "url": "https://dblp.org/rec/conf/bibe/ZaccagninoABFFMTZ25",
-      "edition": "https://doi.org/10.1109/BIBE66822.2025.00067",
-      "pages": "363-367",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/ipmu/LomastoABGLMZ24",
-      "title": "Sentiment Impact on Fake News Detection: A Preliminary Study.",
-      "year": 2025,
-      "authors": [
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Lukasz Gajewski",
-        "Nicola Lettieri",
-        "Raffaele Aurucci",
-        "Rocco Zaccagnino",
-        "Yuri Brandi"
-      ],
-      "venue": "IPMU (3)",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-031-73997-2_11",
-      "url": "https://dblp.org/rec/conf/ipmu/LomastoABGLMZ24",
-      "edition": "https://doi.org/10.1007/978-3-031-73997-2_11",
-      "pages": "119-130",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -1596,57 +1336,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/chitaly/ZaccagninoCPRFM25",
-      "title": "Towards accessible Digital Interfaces for music creativity.",
-      "year": 2025,
-      "authors": [
-        "Daniele Salerno",
-        "Delfina Malandrino",
-        "Gennaro Costagliola",
-        "Mattia De Rosa",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino",
-        "Vittorio Fuccella"
-      ],
-      "venue": "CHItaly",
-      "type": "inproceedings",
-      "doi": "10.1145/3750069.3750438",
-      "url": "https://dblp.org/rec/conf/chitaly/ZaccagninoCPRFM25",
-      "edition": "https://doi.org/10.1145/3750069.3750438",
-      "pages": "38:1-38:10",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/nca/ZaccagninoLMLCG25",
-      "title": "Turning AI into a regulatory sandbox: exploring information disorder mitigation strategies with ABM and deep reinforcement learning.",
-      "year": 2025,
-      "authors": [
-        "Alfonso Guarino",
-        "Andrea Camoia",
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Neural Comput. Appl.",
-      "type": "article",
-      "doi": "10.1007/S00521-025-11342-Y",
-      "url": "https://dblp.org/rec/journals/nca/ZaccagninoLMLCG25",
-      "edition": "https://doi.org/10.1007/S00521-025-11342-Y",
-      "pages": "18679-18720",
-      "volume": "37",
-      "number": "22",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -2430,31 +2119,6 @@
       ]
     },
     {
-      "key": "conf/bibe/ZaccagninoBLMPZ24",
-      "title": "Navigating the Explainable Molecular Graph: Best Practices for Representation Learning in Bioinformatics.",
-      "year": 2024,
-      "authors": [
-        "Alessia Petescia",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Gianluca Zaccagnino",
-        "Gianpaolo Laurenzano",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "BIBE",
-      "type": "inproceedings",
-      "doi": "10.1109/BIBE63649.2024.10820484",
-      "url": "https://dblp.org/rec/conf/bibe/ZaccagninoBLMPZ24",
-      "edition": "https://doi.org/10.1109/BIBE63649.2024.10820484",
-      "pages": "1-8",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/tjs/AccordiGVCCBP24",
       "title": "Out of kernel tuning and optimizations for portable large-scale docking experiments on GPUs.",
       "year": 2024,
@@ -2626,29 +2290,6 @@
       ]
     },
     {
-      "key": "journals/mta/CammaranoGMZ24",
-      "title": "TV shows popularity prediction of genre-independent TV series through machine learning-based approaches.",
-      "year": 2024,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Maria Elena Cammarano",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Multim. Tools Appl.",
-      "type": "article",
-      "doi": "10.1007/S11042-024-18518-Z",
-      "url": "https://dblp.org/rec/journals/mta/CammaranoGMZ24",
-      "edition": "https://doi.org/10.1007/S11042-024-18518-Z",
-      "pages": "75757-75780",
-      "volume": "83",
-      "number": "31",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/iwocl/AccordiGPCCCB24",
       "title": "Unlocking performance portability on LUMI-G supercomputer: A virtual screening case study.",
       "year": 2024,
@@ -2672,31 +2313,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/iv/BotticelliPLLMZ24",
-      "title": "Visual Music Perception for Stochastic Music Composition.",
-      "year": 2024,
-      "authors": [
-        "Cosimo Botticelli",
-        "Delfina Malandrino",
-        "Luigi Lomasto",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV64223.2024.00060",
-      "url": "https://dblp.org/rec/conf/iv/BotticelliPLLMZ24",
-      "edition": "https://doi.org/10.1109/IV64223.2024.00060",
-      "pages": "308-313",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -2743,29 +2359,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "journals/istr/PriscoSMZ23",
-      "title": "An improved privacy attack on smartphones exploiting the accelerometer.",
-      "year": 2023,
-      "authors": [
-        "Alfredo De Santis",
-        "Delfina Malandrino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "J. Inf. Secur. Appl.",
-      "type": "article",
-      "doi": "10.1016/J.JISA.2023.103479",
-      "url": "https://dblp.org/rec/journals/istr/PriscoSMZ23",
-      "edition": "https://doi.org/10.1016/J.JISA.2023.103479",
-      "pages": "103479",
-      "volume": "75",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -2941,30 +2534,6 @@
       ]
     },
     {
-      "key": "journals/corr/abs-2302-05660",
-      "title": "Evaluation of Virtual Reality Interaction Techniques: the case of 3D Graph.",
-      "year": 2023,
-      "authors": [
-        "Delfina Malandrino",
-        "Max M. North",
-        "Monica Gruosso",
-        "Nicola Capece",
-        "Ugo Erra"
-      ],
-      "venue": "CoRR",
-      "type": "article",
-      "doi": "10.48550/ARXIV.2302.05660",
-      "url": "https://dblp.org/rec/journals/corr/abs-2302-05660",
-      "edition": "https://doi.org/10.48550/ARXIV.2302.05660",
-      "pages": "",
-      "volume": "abs/2302.05660",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/corr/abs-2311-05567",
       "title": "Exploring Emotion Expression Recognition in Older Adults Interacting with a Virtual Coach.",
       "year": 2023,
@@ -3002,30 +2571,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "conf/iv/LettieriGMZP23",
-      "title": "Giving Shape to Words: Visual Knowledge Discovery for Textual Contents in Legal Scenarios.",
-      "year": 2023,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino",
-        "Salvatore Del Piano"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV60283.2023.00041",
-      "url": "https://dblp.org/rec/conf/iv/LettieriGMZP23",
-      "edition": "https://doi.org/10.1109/IV60283.2023.00041",
-      "pages": "188-193",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -3149,52 +2694,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "journals/soco/LettieriGZM23",
-      "title": "Keeping judges in the loop: a human-machine collaboration strategy against the blind spots of AI in criminal justice.",
-      "year": 2023,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Soft Comput.",
-      "type": "article",
-      "doi": "10.1007/S00500-023-08604-Z",
-      "url": "https://dblp.org/rec/journals/soco/LettieriGZM23",
-      "edition": "https://doi.org/10.1007/S00500-023-08604-Z",
-      "pages": "11275-11293",
-      "volume": "27",
-      "number": "16",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/ail/LettieriGMZ23",
-      "title": "Knowledge mining and social dangerousness assessment in criminal justice: metaheuristic integration of machine learning and graph-based inference.",
-      "year": 2023,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Artif. Intell. Law",
-      "type": "article",
-      "doi": "10.1007/S10506-022-09334-7",
-      "url": "https://dblp.org/rec/journals/ail/LettieriGMZ23",
-      "edition": "https://doi.org/10.1007/S10506-022-09334-7",
-      "pages": "653-702",
-      "volume": "31",
-      "number": "4",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -3353,30 +2852,6 @@
       ]
     },
     {
-      "key": "conf/itasec/PriscoFIMZ23",
-      "title": "Text-Independent Voice Recognition based on Siamese Networks and Fusion Embeddings.",
-      "year": 2023,
-      "authors": [
-        "Ciro Fusco",
-        "Delfina Malandrino",
-        "Michele Iannucci",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "ITASEC",
-      "type": "inproceedings",
-      "doi": "",
-      "url": "https://dblp.org/rec/conf/itasec/PriscoFIMZ23",
-      "edition": "https://ceur-ws.org/Vol-3488/paper17.pdf",
-      "pages": "",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/www/AntelmiCVS23",
       "title": "The Age of Snippet Programming: Toward Understanding Developer Communities in Stack Overflow and Reddit.",
       "year": 2023,
@@ -3445,55 +2920,6 @@
       "publisher": "",
       "sourceIds": [
         "224/0266"
-      ]
-    },
-    {
-      "key": "journals/eswa/GuarinoMZCL23",
-      "title": "Touchscreen gestures as images. A transfer learning approach for soft biometric traits recognition.",
-      "year": 2023,
-      "authors": [
-        "Alfonso Guarino",
-        "Carmine Capo",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Expert Syst. Appl.",
-      "type": "article",
-      "doi": "10.1016/J.ESWA.2023.119614",
-      "url": "https://dblp.org/rec/journals/eswa/GuarinoMZCL23",
-      "edition": "https://doi.org/10.1016/J.ESWA.2023.119614",
-      "pages": "119614",
-      "volume": "219",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/secrypt/ZaccagninoCGLMZ23",
-      "title": "Towards a Geometric Deep Learning-Based Cyber Security: Network System Intrusion Detection Using Graph Neural Networks.",
-      "year": 2023,
-      "authors": [
-        "Alfonso Guarino",
-        "Antonio Cirillo",
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "SECRYPT",
-      "type": "inproceedings",
-      "doi": "10.5220/0012085700003555",
-      "url": "https://dblp.org/rec/conf/secrypt/ZaccagninoCGLMZ23",
-      "edition": "https://doi.org/10.5220/0012085700003555",
-      "pages": "394-401",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -3650,56 +3076,6 @@
       ]
     },
     {
-      "key": "conf/iv/2022",
-      "title": "26th International Conference Information Visualisation, IV 2022, Vienna, Austria, July 19-22, 2022",
-      "year": 2022,
-      "authors": [
-        "Adrian Rusu",
-        "Anna Ursyn",
-        "Boris Kovalerchuk",
-        "Delfina Malandrino",
-        "Ebad Banissi",
-        "Fatma Bouali",
-        "Filippo Sciarrone",
-        "Gilles Venturini",
-        "Harri Siirtola",
-        "Heimo Müller",
-        "Jian J. Zhang",
-        "João Moura Pires",
-        "Kawa Nazemi",
-        "Mabule Samuel Mabakane",
-        "Marco Temperini",
-        "Marjan Trutschl",
-        "Mark W. McK. Bannatyne",
-        "Minoru Nakayama",
-        "Nuno Datia",
-        "Quang Vinh Nguyen",
-        "Razvan Andonie",
-        "Rita Francese",
-        "Rocco Zaccagnino",
-        "Sebastian Kernbach",
-        "Tania Di Mascio",
-        "Urska Cvek",
-        "Veronica Rossano",
-        "Vladimir Geroimenko",
-        "Wai Lok Woo",
-        "Weidong Huang",
-        "Xiaosong Yang"
-      ],
-      "venue": "International Conference on Information Visualisation (IV)",
-      "type": "proceedings",
-      "doi": "10.1109/IV56949.2022",
-      "url": "https://dblp.org/rec/conf/iv/2022",
-      "edition": "https://doi.org/10.1109/IV56949.2022",
-      "pages": "",
-      "volume": "",
-      "number": "",
-      "publisher": "IEEE",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/dasc/CucinielloAGRCK22",
       "title": "A cross-cultural survey to identify Seniors' preferences towards the Empathic Virtual Coach.",
       "year": 2022,
@@ -3758,54 +3134,6 @@
       ]
     },
     {
-      "key": "journals/nca/GuarinoLMZC22",
-      "title": "Adam or Eve? Automatic users' gender classification via gestures analysis on touch devices.",
-      "year": 2022,
-      "authors": [
-        "Alfonso Guarino",
-        "Carmine Capo",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Neural Comput. Appl.",
-      "type": "article",
-      "doi": "10.1007/S00521-022-07454-4",
-      "url": "https://dblp.org/rec/journals/nca/GuarinoLMZC22",
-      "edition": "https://doi.org/10.1007/S00521-022-07454-4",
-      "pages": "18473-18495",
-      "volume": "34",
-      "number": "21",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/eswa/GuarinoMMTZ22",
-      "title": "Adaptive talent journey: Optimization of talents' growth path within a company via Deep Q-Learning.",
-      "year": 2022,
-      "authors": [
-        "Alfonso Guarino",
-        "Antonio Torre",
-        "Delfina Malandrino",
-        "Francesco Marzullo",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Expert Syst. Appl.",
-      "type": "article",
-      "doi": "10.1016/J.ESWA.2022.118302",
-      "url": "https://dblp.org/rec/journals/eswa/GuarinoMMTZ22",
-      "edition": "https://doi.org/10.1016/J.ESWA.2022.118302",
-      "pages": "118302",
-      "volume": "209",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/paa/EspositoACRC22",
       "title": "Age and gender effects on the human's ability to decode posed and naturalistic emotional faces.",
       "year": 2022,
@@ -3830,29 +3158,6 @@
       ]
     },
     {
-      "key": "journals/datamine/MalandrinoPIZ22",
-      "title": "An adaptive meta-heuristic for music plagiarism detection based on text similarity and clustering.",
-      "year": 2022,
-      "authors": [
-        "Delfina Malandrino",
-        "Mario Ianulardo",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Data Min. Knowl. Discov.",
-      "type": "article",
-      "doi": "10.1007/S10618-022-00835-2",
-      "url": "https://dblp.org/rec/journals/datamine/MalandrinoPIZ22",
-      "edition": "https://doi.org/10.1007/S10618-022-00835-2",
-      "pages": "1301-1334",
-      "volume": "36",
-      "number": "4",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/cluster/BeniC22",
       "title": "An Analysis of Performance Variability on Dragonfly+topology.",
       "year": 2022,
@@ -3871,28 +3176,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "journals/cn/GuarinoMZ22",
-      "title": "An automatic mechanism to provide privacy awareness and control over unwittingly dissemination of online private information.",
-      "year": 2022,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Comput. Networks",
-      "type": "article",
-      "doi": "10.1016/J.COMNET.2021.108614",
-      "url": "https://dblp.org/rec/journals/cn/GuarinoMZ22",
-      "edition": "https://doi.org/10.1016/J.COMNET.2021.108614",
-      "pages": "108614",
-      "volume": "202",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -4081,30 +3364,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/iv/LettieriPMZG22",
-      "title": "How originality looks like. Integrating visualization and meta-heuristics to dissect music plagiarism.",
-      "year": 2022,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV56949.2022.00052",
-      "url": "https://dblp.org/rec/conf/iv/LettieriPMZG22",
-      "edition": "https://doi.org/10.1109/IV56949.2022.00052",
-      "pages": "263-268",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -4319,29 +3578,6 @@
       ]
     },
     {
-      "key": "conf/iv/LettieriMGZ22",
-      "title": "The Eye of the Rider. Visualization and data-driven heuristics for the critical analysis of gig economy.",
-      "year": 2022,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV56949.2022.00068",
-      "url": "https://dblp.org/rec/conf/iv/LettieriMGZ22",
-      "edition": "https://doi.org/10.1109/IV56949.2022.00068",
-      "pages": "373-378",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/dasc/RaimoCACGCCGE22",
       "title": "The Role of Language in Building Automatic Models for Depression Detection.",
       "year": 2022,
@@ -4495,29 +3731,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/nca/GuarinoLMZ21",
-      "title": "A machine learning-based approach to identify unlawful practices in online terms of service: analysis, implementation and evaluation.",
-      "year": 2021,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Neural Comput. Appl.",
-      "type": "article",
-      "doi": "10.1007/S00521-021-06343-6",
-      "url": "https://dblp.org/rec/journals/nca/GuarinoLMZ21",
-      "edition": "https://doi.org/10.1007/S00521-021-06343-6",
-      "pages": "17569-17587",
-      "volume": "33",
-      "number": "24",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -4799,31 +4012,6 @@
       ]
     },
     {
-      "key": "conf/iv/ZaccagninoBPGLM21",
-      "title": "Graph embedding of music structures for machine learning approaches.",
-      "year": 2021,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV53921.2021.00054",
-      "url": "https://dblp.org/rec/conf/iv/ZaccagninoBPGLM21",
-      "edition": "https://doi.org/10.1109/IV53921.2021.00054",
-      "pages": "291-296",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/avi/EspositoCHFMC20",
       "title": "Intelligent Advanced User Interfaces for Monitoring Mental Health Wellbeing.",
       "year": 2021,
@@ -4948,30 +4136,6 @@
       ]
     },
     {
-      "key": "journals/eswa/PriscoGLMZ21",
-      "title": "Providing music service in Ambient Intelligence: experiments with gym users.",
-      "year": 2021,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Expert Syst. Appl.",
-      "type": "article",
-      "doi": "10.1016/J.ESWA.2021.114951",
-      "url": "https://dblp.org/rec/journals/eswa/PriscoGLMZ21",
-      "edition": "https://doi.org/10.1016/J.ESWA.2021.114951",
-      "pages": "114951",
-      "volume": "177",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/corr/abs-2105-00506",
       "title": "Seniors' acceptance of virtual humanoid agents.",
       "year": 2021,
@@ -5092,30 +4256,6 @@
       "sourceIds": [
         "71/11144",
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/mta/ZaccagninoCGLM21",
-      "title": "Techno-regulation and intelligent safeguards.",
-      "year": 2021,
-      "authors": [
-        "Alfonso Guarino",
-        "Carmine Capo",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Multim. Tools Appl.",
-      "type": "article",
-      "doi": "10.1007/S11042-020-10446-Y",
-      "url": "https://dblp.org/rec/journals/mta/ZaccagninoCGLM21",
-      "edition": "https://doi.org/10.1007/S11042-020-10446-Y",
-      "pages": "15803-15824",
-      "volume": "80",
-      "number": "10",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -5295,29 +4435,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/iv/LettieriGMZ21",
-      "title": "The sight of Justice. Visual knowledge mining, legal data and computational crime analysis.",
-      "year": 2021,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV53921.2021.00050",
-      "url": "https://dblp.org/rec/conf/iv/LettieriGMZ21",
-      "edition": "https://doi.org/10.1109/IV53921.2021.00050",
-      "pages": "267-272",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -5768,57 +4885,6 @@
       ]
     },
     {
-      "key": "conf/iv/BeneventoPGLMZ20",
-      "title": "Human-Machine Teaming in Music: anchored narrative-graph Visualization and Machine Learning.",
-      "year": 2020,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Gerardo Benevento",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV51561.2020.00095",
-      "url": "https://dblp.org/rec/conf/iv/BeneventoPGLMZ20",
-      "edition": "https://doi.org/10.1109/IV51561.2020.00095",
-      "pages": "559-564",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/cn/CozzaGIMRSZ20",
-      "title": "Hybrid and lightweight detection of third party tracking: Design, implementation, and evaluation.",
-      "year": 2020,
-      "authors": [
-        "Alfonso Guarino",
-        "Antonio Rapuano",
-        "Delfina Malandrino",
-        "Federico Cozza",
-        "Francesco Isernia",
-        "Raffaele Schiavone",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Comput. Networks",
-      "type": "article",
-      "doi": "10.1016/J.COMNET.2019.106993",
-      "url": "https://dblp.org/rec/journals/cn/CozzaGIMRSZ20",
-      "edition": "https://doi.org/10.1016/J.COMNET.2019.106993",
-      "pages": "",
-      "volume": "167",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/waw/AntelmiCSS20",
       "title": "Information Diffusion in Complex Networks: A Model Based on Hypergraphs and Its Analysis.",
       "year": 2020,
@@ -5887,56 +4953,6 @@
       ]
     },
     {
-      "key": "conf/icissp/GuarinoMZCR20",
-      "title": "On Analyzing Third-party Tracking via Machine Learning.",
-      "year": 2020,
-      "authors": [
-        "Alfonso Guarino",
-        "Antonio Rapuano",
-        "Delfina Malandrino",
-        "Federico Cozza",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "ICISSP",
-      "type": "inproceedings",
-      "doi": "10.5220/0008972005320539",
-      "url": "https://dblp.org/rec/conf/icissp/GuarinoMZCR20",
-      "edition": "https://doi.org/10.5220/0008972005320539",
-      "pages": "532-539",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/iv/FranceseFGMRZL20",
-      "title": "On the Limitation of Pathological Iris Recognition: Neural Network Perspectives.",
-      "year": 2020,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Maria Frasca",
-        "Michele Risi",
-        "Nicola Lettieri",
-        "Rita Francese",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV51561.2020.00021",
-      "url": "https://dblp.org/rec/conf/iv/FranceseFGMRZL20",
-      "edition": "https://doi.org/10.1109/IV51561.2020.00021",
-      "pages": "68-73",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/ictcs/2020",
       "title": "Proceedings of the 21st Italian Conference on Theoretical Computer Science, Ischia, Italy, September 14-16, 2020.",
       "year": 2020,
@@ -5981,8 +4997,7 @@
       "publisher": "",
       "sourceIds": [
         "224/0266",
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6117,29 +5132,6 @@
       ]
     },
     {
-      "key": "conf/iv/LettieriGMZ20",
-      "title": "The Affordance of Law. Sliding Treemaps browsing Hierarchically Structured Data on Touch Devices.",
-      "year": 2020,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV51561.2020.00013",
-      "url": "https://dblp.org/rec/conf/iv/LettieriGMZ20",
-      "edition": "https://doi.org/10.1109/IV51561.2020.00013",
-      "pages": "16-21",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/pe/PohlCJ20",
       "title": "Vectorization cost modeling for NEON, AVX and SVE.",
       "year": 2020,
@@ -6260,8 +5252,7 @@
       "publisher": "",
       "sourceIds": [
         "224/0266",
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6285,31 +5276,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/icsai/GuarinoMPSZL19",
-      "title": "A Social Platform designed for Music: Learning and Making Compositions Through Collaboration.",
-      "year": 2019,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Luca Pepe",
-        "Michele Spina",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "ICSAI",
-      "type": "inproceedings",
-      "doi": "10.1109/ICSAI48974.2019.9010436",
-      "url": "https://dblp.org/rec/conf/icsai/GuarinoMPSZL19",
-      "edition": "https://doi.org/10.1109/ICSAI48974.2019.9010436",
-      "pages": "1004-1009",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -6399,8 +5365,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6506,28 +5471,6 @@
       ]
     },
     {
-      "key": "journals/mta/MalandrinoPZ19",
-      "title": "Learning the harmonic analysis: is visualization an effective approach?",
-      "year": 2019,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Multim. Tools Appl.",
-      "type": "article",
-      "doi": "10.1007/S11042-019-07879-5",
-      "url": "https://dblp.org/rec/journals/mta/MalandrinoPZ19",
-      "edition": "https://doi.org/10.1007/S11042-019-07879-5",
-      "pages": "32967-32998",
-      "volume": "78",
-      "number": "23",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/cscwd/DonatoGMPPS19",
       "title": "Linked Data Queriesby a Trialogical Learning Approach.",
       "year": 2019,
@@ -6550,8 +5493,7 @@
       "publisher": "",
       "sourceIds": [
         "224/0266",
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6581,29 +5523,6 @@
       ]
     },
     {
-      "key": "conf/iv/MalandrinoGLZ19",
-      "title": "On the Visualization of Logic: A Diagrammatic Language Based on Spatial, Graphical and Symbolic Notations.",
-      "year": 2019,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV (1)",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2019.00011",
-      "url": "https://dblp.org/rec/conf/iv/MalandrinoGLZ19",
-      "edition": "https://doi.org/10.1109/IV.2019.00011",
-      "pages": "7-12",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/egov/FerrettiMPPRSS19",
       "title": "Orchestrated Co-creation of High-Quality Open Data Within Large Groups.",
       "year": 2019,
@@ -6627,31 +5546,7 @@
       "publisher": "",
       "sourceIds": [
         "224/0266",
-        "32/6668",
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/fi/LettieriGMZ19",
-      "title": "Platform Economy and Techno-Regulation - Experimenting with Reputation and Nudge.",
-      "year": 2019,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Future Internet",
-      "type": "article",
-      "doi": "10.3390/FI11070163",
-      "url": "https://dblp.org/rec/journals/fi/LettieriGMZ19",
-      "edition": "https://doi.org/10.3390/FI11070163",
-      "pages": "163",
-      "volume": "11",
-      "number": "7",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6801,8 +5696,7 @@
       "number": "1",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -6824,32 +5718,6 @@
       "publisher": "",
       "sourceIds": [
         "32/6668"
-      ]
-    },
-    {
-      "key": "journals/access/CosimatoPGMLSZ19",
-      "title": "The Conundrum of Success in Music: Playing it or Talking About it?",
-      "year": 2019,
-      "authors": [
-        "Alberto Cosimato",
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Giuseppe Sorrentino",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IEEE Access",
-      "type": "article",
-      "doi": "10.1109/ACCESS.2019.2937743",
-      "url": "https://dblp.org/rec/journals/access/CosimatoPGMLSZ19",
-      "edition": "https://doi.org/10.1109/ACCESS.2019.2937743",
-      "pages": "123289-123298",
-      "volume": "7",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -6958,95 +5826,6 @@
       ]
     },
     {
-      "key": "journals/ijhci/ErraMP19",
-      "title": "Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.",
-      "year": 2019,
-      "authors": [
-        "Delfina Malandrino",
-        "Luca Pepe",
-        "Ugo Erra"
-      ],
-      "venue": "Int. J. Hum. Comput. Interact.",
-      "type": "article",
-      "doi": "10.1080/10447318.2018.1429061",
-      "url": "https://dblp.org/rec/journals/ijhci/ErraMP19",
-      "edition": "https://doi.org/10.1080/10447318.2018.1429061",
-      "pages": "75-88",
-      "volume": "35",
-      "number": "1",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/iv/GuarinoLMRZGLMR19",
-      "title": "Visual Analytics to Make Sense of Large-Scale Administrative and Normative Data.",
-      "year": 2019,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Pietro Russo",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV (1)",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2019.00031",
-      "url": "https://dblp.org/rec/conf/iv/GuarinoLMRZGLMR19",
-      "edition": "https://doi.org/10.1109/IV.2019.00031",
-      "pages": "133-138",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/iv/2018",
-      "title": "22nd International Conference Information Visualisation, IV 2018, Fisciano, Italy, July 10-13, 2018",
-      "year": 2018,
-      "authors": [
-        "Alfredo Cuzzocrea",
-        "Anna Ursyn",
-        "Antonio Fernández",
-        "Delfina Malandrino",
-        "Ebad Banissi",
-        "Fatma Bouali",
-        "Filippo Sciarrone",
-        "Fragkiskos Papadopoulo",
-        "Gilles Venturini",
-        "Giuseppe Polese",
-        "João Moura Pires",
-        "Marco Temperini",
-        "Mark W. McK. Bannatyne",
-        "Michele Risi",
-        "Muhammad Sarfraz",
-        "Nuno Datia",
-        "Paloma Díaz",
-        "Rita Francese",
-        "Rocco Zaccagnino",
-        "Tania Di Mascio",
-        "Theodor Wyeld",
-        "Ugo Erra",
-        "Veronica Rossano",
-        "Vincenzo Deufemia"
-      ],
-      "venue": "International Conference on Information Visualisation (IV)",
-      "type": "proceedings",
-      "doi": "",
-      "url": "https://dblp.org/rec/conf/iv/2018",
-      "edition": "https://ieeexplore.ieee.org/xpl/conhome/8519645/proceeding",
-      "pages": "",
-      "volume": "",
-      "number": "",
-      "publisher": "IEEE Computer Society",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/dgo/OjoSPPPSSV18",
       "title": "A comprehensive architecture to support open data access, co-creation, and dissemination.",
       "year": 2018,
@@ -7143,8 +5922,7 @@
       "number": "1",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -7170,52 +5948,7 @@
       "sourceIds": [
         "71/11144",
         "32/6668",
-        "26/4019",
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/vlc/ErraMP18",
-      "title": "A methodological evaluation of natural user interfaces for immersive 3D Graph explorations.",
-      "year": 2018,
-      "authors": [
-        "Delfina Malandrino",
-        "Luca Pepe",
-        "Ugo Erra"
-      ],
-      "venue": "J. Vis. Lang. Comput.",
-      "type": "article",
-      "doi": "10.1016/J.JVLC.2017.11.002",
-      "url": "https://dblp.org/rec/journals/vlc/ErraMP18",
-      "edition": "https://doi.org/10.1016/J.JVLC.2017.11.002",
-      "pages": "13-27",
-      "volume": "44",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/csai/MalandrinoZZ18",
-      "title": "A Multi-objective Optimization Model for Music Styles.",
-      "year": 2018,
-      "authors": [
-        "Delfina Malandrino",
-        "Rocco Zaccagnino",
-        "Rosalba Zizza"
-      ],
-      "venue": "CSAI/ICIMT",
-      "type": "inproceedings",
-      "doi": "10.1145/3297156.3297205",
-      "url": "https://dblp.org/rec/conf/csai/MalandrinoZZ18",
-      "edition": "https://doi.org/10.1145/3297156.3297205",
-      "pages": "247-251",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
+        "26/4019"
       ]
     },
     {
@@ -7295,27 +6028,6 @@
       ]
     },
     {
-      "key": "conf/iv/LettieriM18",
-      "title": "Cartographies of the Legal World. Rise and Challenges of Visual Legal Analytics.",
-      "year": 2018,
-      "authors": [
-        "Delfina Malandrino",
-        "Nicola Lettieri"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2018.00049",
-      "url": "https://dblp.org/rec/conf/iv/LettieriM18",
-      "edition": "https://doi.org/10.1109/IV.2018.00049",
-      "pages": "241-246",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/bigdataconf/AntelmiMS18",
       "title": "Characterizing Twitter Users: : What do Samantha Cristoforetti, Barack Obama and Britney Spears Have in Common?",
       "year": 2018,
@@ -7334,8 +6046,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -7458,28 +6169,6 @@
       ]
     },
     {
-      "key": "conf/jurix/LettieriGM18",
-      "title": "E-Science and the Law. Three Experimental Platforms for Legal Analytics.",
-      "year": 2018,
-      "authors": [
-        "Alfonso Guarino",
-        "Delfina Malandrino",
-        "Nicola Lettieri"
-      ],
-      "venue": "JURIX",
-      "type": "inproceedings",
-      "doi": "10.3233/978-1-61499-935-5-71",
-      "url": "https://dblp.org/rec/conf/jurix/LettieriGM18",
-      "edition": "https://doi.org/10.3233/978-1-61499-935-5-71",
-      "pages": "71-80",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "series/sist/CapuanoCSMFE18",
       "title": "Effects of Gender and Luminance Backgrounds on the Recognition of Neutral Facial Expressions.",
       "year": 2018,
@@ -7567,30 +6256,6 @@
       ]
     },
     {
-      "key": "conf/iv/PriscoMPZZ18",
-      "title": "Evaluation Study of Visualisations for Harmonic Analysis of 4-Part Music.",
-      "year": 2018,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2018.00090",
-      "url": "https://dblp.org/rec/conf/iv/PriscoMPZZ18",
-      "edition": "https://doi.org/10.1109/IV.2018.00090",
-      "pages": "484-489",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/networks/CordascoGRV18",
       "title": "Evangelism in social networks: Algorithms and complexity.",
       "year": 2018,
@@ -7611,33 +6276,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/fi/LettieriAGGMPVZ18",
-      "title": "Ex Machina: Analytical platforms, Law and the Challenges of Computational Legal Science.",
-      "year": 2018,
-      "authors": [
-        "Alfonso Guarino",
-        "Alfredo Pulvirenti",
-        "Antonio Altamura",
-        "Delfina Malandrino",
-        "Francesco Vicidomini",
-        "Nicola Lettieri",
-        "Rocco Zaccagnino",
-        "Rosalba Giugno"
-      ],
-      "venue": "Future Internet",
-      "type": "article",
-      "doi": "10.3390/FI10050037",
-      "url": "https://dblp.org/rec/journals/fi/LettieriAGGMPVZ18",
-      "edition": "https://doi.org/10.3390/FI10050037",
-      "pages": "37",
-      "volume": "10",
-      "number": "5",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -7683,30 +6321,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/aicol/LettieriFMFV17",
-      "title": "Network, Visualization, Analytics. A Tool Allowing Legal Scholars to Experimentally Investigate EU Case Law.",
-      "year": 2018,
-      "authors": [
-        "Armando Faggiano",
-        "Delfina Malandrino",
-        "Margherita Vestoso",
-        "Nicola Lettieri",
-        "Sebastiano Faro"
-      ],
-      "venue": "AICOL",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-030-00178-0_37",
-      "url": "https://dblp.org/rec/conf/aicol/LettieriFMFV17",
-      "edition": "https://doi.org/10.1007/978-3-030-00178-0_37",
-      "pages": "543-555",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -7887,98 +6501,6 @@
       ]
     },
     {
-      "key": "conf/iv/MalandrinoPZ18",
-      "title": "Visualization and Music Harmony: Design, Implementation, and Evaluation.",
-      "year": 2018,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2018.00092",
-      "url": "https://dblp.org/rec/conf/iv/MalandrinoPZ18",
-      "edition": "https://doi.org/10.1109/IV.2018.00092",
-      "pages": "498-503",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/icsai/PriscoMZZ17",
-      "title": "A computational intelligence text-based detection system of music plagiarism.",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "ICSAI",
-      "type": "inproceedings",
-      "doi": "10.1109/ICSAI.2017.8248347",
-      "url": "https://dblp.org/rec/conf/icsai/PriscoMZZ17",
-      "edition": "https://doi.org/10.1109/ICSAI.2017.8248347",
-      "pages": "519-524",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/evoW/PriscoMZZZ17",
-      "title": "A Kind of Bio-inspired Learning of mUsic stylE.",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino",
-        "Rosalba Zizza"
-      ],
-      "venue": "EvoMUSART",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-319-55750-2_7",
-      "url": "https://dblp.org/rec/conf/evoW/PriscoMZZZ17",
-      "edition": "https://doi.org/10.1007/978-3-319-55750-2_7",
-      "pages": "97-113",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/epia/LettieriAMP17",
-      "title": "Agents Shaping Networks Shaping Agents: Integrating Social Network Analysis and Agent-Based Modeling in Computational Crime Research.",
-      "year": 2017,
-      "authors": [
-        "Antonio Altamura",
-        "Delfina Malandrino",
-        "Nicola Lettieri",
-        "Valentina Punzo"
-      ],
-      "venue": "EPIA",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-319-65340-2_2",
-      "url": "https://dblp.org/rec/conf/epia/LettieriAMP17",
-      "edition": "https://doi.org/10.1007/978-3-319-65340-2_2",
-      "pages": "15-27",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/ipps/CosenzaDEJ17",
       "title": "Autotuning Stencil Computations with Structural Ordinal Regression Learning.",
       "year": 2017,
@@ -7999,52 +6521,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/icsai/PriscoMZZ17a",
-      "title": "BAND: A mobile-based collaboration system for composing and playing music.",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "ICSAI",
-      "type": "inproceedings",
-      "doi": "10.1109/ICSAI.2017.8248544",
-      "url": "https://dblp.org/rec/conf/icsai/PriscoMZZ17a",
-      "edition": "https://doi.org/10.1109/ICSAI.2017.8248544",
-      "pages": "1625-1630",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/snam/LettieriAFM17",
-      "title": "Correction to: A computational approach for the experimental study of EU case law: analysis and implementation.",
-      "year": 2017,
-      "authors": [
-        "Antonio Altamura",
-        "Armando Faggiano",
-        "Delfina Malandrino",
-        "Nicola Lettieri"
-      ],
-      "venue": "Soc. Netw. Anal. Min.",
-      "type": "article",
-      "doi": "10.1007/S13278-017-0477-7",
-      "url": "https://dblp.org/rec/journals/snam/LettieriAFM17",
-      "edition": "https://doi.org/10.1007/S13278-017-0477-7",
-      "pages": "58:1-58:2",
-      "volume": "7",
-      "number": "1",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -8101,8 +6577,7 @@
       "sourceIds": [
         "71/11144",
         "32/6668",
-        "26/4019",
-        "98/2936"
+        "26/4019"
       ]
     },
     {
@@ -8183,8 +6658,7 @@
       "sourceIds": [
         "71/11144",
         "32/6668",
-        "26/4019",
-        "98/2936"
+        "26/4019"
       ]
     },
     {
@@ -8217,29 +6691,6 @@
       "publisher": "Springer",
       "sourceIds": [
         "32/6668"
-      ]
-    },
-    {
-      "key": "conf/fuzzIEEE/PriscoMZZ17",
-      "title": "Fuzzy vectorial-based similarity detection of music plagiarism.",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "FUZZ-IEEE",
-      "type": "inproceedings",
-      "doi": "10.1109/FUZZ-IEEE.2017.8015655",
-      "url": "https://dblp.org/rec/conf/fuzzIEEE/PriscoMZZ17",
-      "edition": "https://doi.org/10.1109/FUZZ-IEEE.2017.8015655",
-      "pages": "1-6",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -8293,32 +6744,6 @@
       ]
     },
     {
-      "key": "conf/iv/PriscoELMPZZ17",
-      "title": "Music Plagiarism at a Glance: Metrics of Similarity and Visualizations.",
-      "year": 2017,
-      "authors": [
-        "Antonio Esposito",
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Gianluca Zaccagnino",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2017.49",
-      "url": "https://dblp.org/rec/conf/iv/PriscoELMPZZ17",
-      "edition": "https://doi.org/10.1109/IV.2017.49",
-      "pages": "410-415",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "journals/vlc/CordascoCF17",
       "title": "Online region computations for Euler diagrams with relaxed drawing conventions.",
       "year": 2017,
@@ -8365,8 +6790,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -8388,55 +6812,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/isci/FelicePMZZZ17",
-      "title": "Splicing music composition.",
-      "year": 2017,
-      "authors": [
-        "Clelia de Felice",
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino",
-        "Rosalba Zizza"
-      ],
-      "venue": "Inf. Sci.",
-      "type": "article",
-      "doi": "10.1016/J.INS.2017.01.004",
-      "url": "https://dblp.org/rec/journals/isci/FelicePMZZZ17",
-      "edition": "https://doi.org/10.1016/J.INS.2017.01.004",
-      "pages": "196-212",
-      "volume": "385",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/tpnc/PriscoMZZZ17",
-      "title": "Splicing-Inspired Recognition and Composition of Musical Collectives Styles.",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino",
-        "Rosalba Zizza"
-      ],
-      "venue": "TPNC",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-319-71069-3_17",
-      "url": "https://dblp.org/rec/conf/tpnc/PriscoMZZZ17",
-      "edition": "https://doi.org/10.1007/978-3-319-71069-3_17",
-      "pages": "219-231",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -8514,52 +6889,6 @@
       ]
     },
     {
-      "key": "journals/ivs/LettieriAM17",
-      "title": "The legal macroscope: Experimenting with visual legal analytics.",
-      "year": 2017,
-      "authors": [
-        "Antonio Altamura",
-        "Delfina Malandrino",
-        "Nicola Lettieri"
-      ],
-      "venue": "Inf. Vis.",
-      "type": "article",
-      "doi": "10.1177/1473871616681374",
-      "url": "https://dblp.org/rec/journals/ivs/LettieriAM17",
-      "edition": "https://doi.org/10.1177/1473871616681374",
-      "pages": "332-345",
-      "volume": "16",
-      "number": "4",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
-      "key": "journals/ivs/PriscoMPZZ17",
-      "title": "Understanding the structure of musical compositions: Is visualization an effective approach?",
-      "year": 2017,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "Inf. Vis.",
-      "type": "article",
-      "doi": "10.1177/1473871616655468",
-      "url": "https://dblp.org/rec/journals/ivs/PriscoMPZZ17",
-      "edition": "https://doi.org/10.1177/1473871616655468",
-      "pages": "139-152",
-      "volume": "16",
-      "number": "2",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/ipps/CordascoSS17",
       "title": "Work Partitioning on Parallel and Distributed Agent-Based Simulation.",
       "year": 2017,
@@ -8581,29 +6910,6 @@
         "71/11144",
         "32/6668",
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/snam/LettieriAFM16",
-      "title": "A computational approach for the experimental study of EU case law: analysis and implementation.",
-      "year": 2016,
-      "authors": [
-        "Antonio Altamura",
-        "Armando Faggiano",
-        "Delfina Malandrino",
-        "Nicola Lettieri"
-      ],
-      "venue": "Soc. Netw. Anal. Min.",
-      "type": "article",
-      "doi": "10.1007/S13278-016-0365-6",
-      "url": "https://dblp.org/rec/journals/snam/LettieriAFM16",
-      "edition": "https://doi.org/10.1007/S13278-016-0365-6",
-      "pages": "56:1-56:17",
-      "volume": "6",
-      "number": "1",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -8656,8 +6962,7 @@
       "sourceIds": [
         "71/11144",
         "32/6668",
-        "26/4019",
-        "98/2936"
+        "26/4019"
       ]
     },
     {
@@ -8682,29 +6987,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/evoW/PriscoMZZ16",
-      "title": "An Evolutionary Composer for Real-Time Background Music.",
-      "year": 2016,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "EvoMUSART",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-319-31008-4_10",
-      "url": "https://dblp.org/rec/conf/evoW/PriscoMZZ16",
-      "edition": "https://doi.org/10.1007/978-3-319-31008-4_10",
-      "pages": "135-151",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -8778,8 +7060,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -8900,31 +7181,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/avi/PriscoMZZ16",
-      "title": "Natural User Interfaces to Support and Enhance Real-Time Music Performance.",
-      "year": 2016,
-      "authors": [
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "AVI",
-      "type": "inproceedings",
-      "doi": "10.1145/2909132.2909249",
-      "url": "https://dblp.org/rec/conf/avi/PriscoMZZ16",
-      "edition": "https://doi.org/10.1145/2909132.2909249",
-      "pages": "204-211",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -9116,33 +7373,7 @@
       "number": "2",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/iv/PriscoLMPZZ16",
-      "title": "Visualization of Music Plagiarism: Analysis and Evaluation.",
-      "year": 2016,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Gianluca Zaccagnino",
-        "Nicola Lettieri",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2016.56",
-      "url": "https://dblp.org/rec/conf/iv/PriscoLMPZZ16",
-      "edition": "https://doi.org/10.1109/IV.2016.56",
-      "pages": "177-182",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -9169,29 +7400,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "conf/iv/MalandrinoPZZ15",
-      "title": "A Color-Based Visualization Approach to Understand Harmonic Structures of Musical Compositions.",
-      "year": 2015,
-      "authors": [
-        "Delfina Malandrino",
-        "Donato Pirozzi",
-        "Gianluca Zaccagnino",
-        "Rocco Zaccagnino"
-      ],
-      "venue": "IV",
-      "type": "inproceedings",
-      "doi": "10.1109/IV.2015.21",
-      "url": "https://dblp.org/rec/conf/iv/MalandrinoPZZ15",
-      "edition": "https://doi.org/10.1109/IV.2015.21",
-      "pages": "56-61",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -9242,8 +7450,7 @@
       "number": "1",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -9308,31 +7515,6 @@
       "publisher": "",
       "sourceIds": [
         "07/527"
-      ]
-    },
-    {
-      "key": "conf/evoW/FelicePMZZZ15",
-      "title": "Chorale Music Splicing System: An Algorithmic Music Composer Inspired by Molecular Splicing.",
-      "year": 2015,
-      "authors": [
-        "Clelia de Felice",
-        "Delfina Malandrino",
-        "Gianluca Zaccagnino",
-        "Roberto De Prisco",
-        "Rocco Zaccagnino",
-        "Rosalba Zizza"
-      ],
-      "venue": "EvoMUSART",
-      "type": "inproceedings",
-      "doi": "10.1007/978-3-319-16498-4_5",
-      "url": "https://dblp.org/rec/conf/evoW/FelicePMZZZ15",
-      "edition": "https://doi.org/10.1007/978-3-319-16498-4_5",
-      "pages": "50-61",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -9573,8 +7755,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -9767,28 +7948,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "conf/icinco/ArenellaSM14",
-      "title": "BeeAdHocServiceDiscovery - A MANET Service Discovery Algorithm based on Bee Colonies.",
-      "year": 2014,
-      "authors": [
-        "Delfina Malandrino",
-        "Filomena de Santis",
-        "Gianmaria Arenella"
-      ],
-      "venue": "ICINCO (1)",
-      "type": "inproceedings",
-      "doi": "10.5220/0005045902440251",
-      "url": "https://dblp.org/rec/conf/icinco/ArenellaSM14",
-      "edition": "https://doi.org/10.5220/0005045902440251",
-      "pages": "244-251",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -9993,8 +8152,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10122,8 +8280,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10145,27 +8302,6 @@
       "publisher": "",
       "sourceIds": [
         "26/4019"
-      ]
-    },
-    {
-      "key": "journals/jcnc/SantisM14",
-      "title": "QoS-Based Web Service Discovery in Mobile Ad Hoc Networks Using Swarm Strategies.",
-      "year": 2014,
-      "authors": [
-        "Delfina Malandrino",
-        "Filomena de Santis"
-      ],
-      "venue": "J. Comput. Networks Commun.",
-      "type": "article",
-      "doi": "10.1155/2014/450194",
-      "url": "https://dblp.org/rec/journals/jcnc/SantisM14",
-      "edition": "https://doi.org/10.1155/2014/450194",
-      "pages": "450194:1-450194:13",
-      "volume": "2014",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
       ]
     },
     {
@@ -10211,8 +8347,7 @@
       "number": "4",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10448,8 +8583,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10545,8 +8679,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10567,8 +8700,7 @@
       "number": "14",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10593,8 +8725,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10669,8 +8800,7 @@
       "number": "2",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -10719,8 +8849,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11103,8 +9232,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11264,8 +9392,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11290,8 +9417,7 @@
       "number": "4",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11338,8 +9464,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11899,30 +10024,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
-      ]
-    },
-    {
-      "key": "conf/soups/KrishnamurthyMW07",
-      "title": "Measuring privacy loss and the impact of privacy protection in web browsing.",
-      "year": 2007,
-      "authors": [
-        "Balachander Krishnamurthy",
-        "Craig E. Wills",
-        "Delfina Malandrino"
-      ],
-      "venue": "SOUPS",
-      "type": "inproceedings",
-      "doi": "10.1145/1280680.1280688",
-      "url": "https://dblp.org/rec/conf/soups/KrishnamurthyMW07",
-      "edition": "https://doi.org/10.1145/1280680.1280688",
-      "pages": "52-63",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -11945,8 +10047,7 @@
       "number": "3",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12015,8 +10116,7 @@
       "number": "6",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12038,8 +10138,7 @@
       "number": "3",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12065,29 +10164,6 @@
       ]
     },
     {
-      "key": "conf/percom/GriecoMMR06",
-      "title": "Context-aware Provision of Advanced Internet Services.",
-      "year": 2006,
-      "authors": [
-        "Daniele Riboni",
-        "Delfina Malandrino",
-        "Francesca Mazzoni",
-        "Raffaella Grieco"
-      ],
-      "venue": "PerCom Workshops",
-      "type": "inproceedings",
-      "doi": "10.1109/PERCOMW.2006.34",
-      "url": "https://dblp.org/rec/conf/percom/GriecoMMR06",
-      "edition": "https://doi.org/10.1109/PERCOMW.2006.34",
-      "pages": "600-603",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/www/IaccarinoMPS06",
       "title": "Efficient edge-services for colorblind users.",
       "year": 2006,
@@ -12107,8 +10183,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12221,27 +10296,6 @@
       ]
     },
     {
-      "key": "conf/ectel/MalandrinoM06",
-      "title": "Peer-to-peer Face-to-face Collaboration.",
-      "year": 2006,
-      "authors": [
-        "Delfina Malandrino",
-        "Ilaria Manno"
-      ],
-      "venue": "EC-TEL Workshops",
-      "type": "inproceedings",
-      "doi": "",
-      "url": "https://dblp.org/rec/conf/ectel/MalandrinoM06",
-      "edition": "https://ceur-ws.org/Vol-213/paper16.pdf",
-      "pages": "",
-      "volume": "",
-      "number": "",
-      "publisher": "",
-      "sourceIds": [
-        "98/2936"
-      ]
-    },
-    {
       "key": "conf/w4a/IaccarinoMS06",
       "title": "Personalizable edge services for web accessibility.",
       "year": 2006,
@@ -12260,8 +10314,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12307,8 +10360,7 @@
       "number": "10",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12353,8 +10405,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12397,8 +10448,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12422,8 +10472,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12493,8 +10542,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12541,8 +10589,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12610,8 +10657,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12753,8 +10799,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12802,8 +10847,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -12848,8 +10892,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -13041,8 +11084,7 @@
       "number": "",
       "publisher": "",
       "sourceIds": [
-        "32/6668",
-        "98/2936"
+        "32/6668"
       ]
     },
     {
@@ -13535,5 +11577,5 @@
       ]
     }
   ],
-  "generated_at": "2026-11-10T15:04:14Z"
+  "generated_at": "2026-11-12T08:14:17Z"
 }
