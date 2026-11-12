@@ -44,12 +44,12 @@
     els.status.setAttribute('role', error ? 'alert' : 'status');
   }
 
-  for (const person of PEOPLE) {
+/* for (const person of PEOPLE) {
     els.people.appendChild(makeLink(person.name, 'https://dblp.org/pid/' + person.pid));
     const option = document.createElement('option');
     option.value = person.pid; option.textContent = person.name;
     els.author.appendChild(option);
-  }
+  }*/
 
 
   async function load(reload) {
