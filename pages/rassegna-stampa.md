@@ -18,7 +18,7 @@ archive_previous: null
 
 Questa sezione raccoglie i punti di accesso alla comunicazione e alla visibilità pubblica del laboratorio: iniziative con università, territorio, industria e partner internazionali.
 
-Le schede sottostanti aprono la versione locale di ciascun ritaglio, con un’anteprima piccola nell’elenco e l’immagine grande nella scheda. I materiali scaricati sono disponibili anche senza collegamenti al vecchio sito.
+Le schede sottostanti aprono la versione locale di ciascun ritaglio, con un’anteprima piccola nell’elenco e l’immagine grande nella scheda. 
 
 ## Percorsi correlati
 

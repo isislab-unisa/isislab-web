@@ -12,8 +12,9 @@ article_kind: imported_page
 
 <p>In questa pagina, collezioniamo informazioni che possano essere utili per chi fa ricerca, allo scopo di valutare gli indicatori bibliometrici. Principalmente link che continuiamo a scambiarci via email, via slack, o via whatsapp.. che cerchiamo di raccogliere qui! </p>
 
-
-<figure class="wp-block-image"><img alt="" class="wp-image-8553" decoding="async" height="576" loading="lazy" src="/assets/media/cf98867fce3757-business-3080799-1280-1024x576.png" width="1024"/></figure>
+<figure class="wp-block-image">
+  <img alt="" class="wp-image-8553" decoding="async" height="576" loading="lazy" src="{{ '/assets/media/cf98867fce3757-business-3080799-1280-1024x576.png' | relative_url }}" width="1024"/>
+</figure>
 
 <h2 class="wp-block-heading">Indicatori bibliometrici</h2>
 
@@ -39,7 +40,9 @@ article_kind: imported_page
 <li>Indicazioni del GRIN sulla valutazione: <a href="http://www.grin-informatica.it/opencms/opencms/grin/ricerca/valutazione">http://www.grin-informatica.it/opencms/opencms/grin/ricerca/valutazione</a> </li>
 </ul>
 
-<figure class="wp-block-image"><img alt="" class="wp-image-8558" decoding="async" height="534" loading="lazy" src="/assets/media/e7cf91c97cac8d-heart-2748340-1920-1024x534.jpg" width="1024"/></figure>
+<figure class="wp-block-image">
+  <img alt="" class="wp-image-8558" decoding="async" height="534" loading="lazy" src="{{ '/assets/media/e7cf91c97cac8d-heart-2748340-1920-1024x534.jpg' | relative_url }}" width="1024"/>
+</figure>
 
 <h2 class="wp-block-heading">Indicatori bibliometrici personali</h2>
 
@@ -74,4 +77,3 @@ article_kind: imported_page
 </ul>
 
 <div class="wp-block-file aligncenter"><a href="/assets/media/a36fc2b28cad3c-computer-science.pdf">Computer_Science</a><a class="wp-block-file__button" download="" href="/assets/media/a36fc2b28cad3c-computer-science.pdf">Download</a></div>
-

@@ -4,7 +4,7 @@ title: Directions and contacts
 section: The laboratory
 description: "How to reach ISISLab at the University of Salerno: directions to the campus, parking information and instructions to find the laboratory."
 permalink: /en/come-raggiungerci/
-alt_url: /come-raggiungerci/
+alt_url: /dove-siamo/
 lang: en
 ---
 
