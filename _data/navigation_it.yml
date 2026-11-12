@@ -1,18 +1,12 @@
-- title: Il laboratorio
-  url: /chi-siamo/
+- title: Chi siamo
+  url: /laboratorio-e-persone/
   children:
-  - title: Chi siamo
-    url: /chi-siamo/
-  - title: Persone e gruppo
-    url: /chi-siamo/#persone
-  - title: Dicono di noi
-    url: /dicono-di-noi/
-  - title: Rassegna stampa
-    url: /rassegna-stampa/
-  - title: Premi e riconoscimenti
-    url: /premi-e-riconoscimenti/
-  - title: Come raggiungerci
-    url: /come-raggiungerci/
+  - title: Laboratorio e persone
+    url: /laboratorio-e-persone/
+  - title: Media e riconoscimenti
+    url: /media-e-riconoscimenti/
+  - title: Dove siamo
+    url: /dove-siamo/
 - title: Ricerca
   url: /tematiche/
   children:
@@ -68,6 +62,8 @@
     url: /news/
   - title: Seminari
     url: /events/list/
+  - title: Seminari Test
+    url: /seminar/
   - title: Blog
     url: /blog/
   - title: Galleria

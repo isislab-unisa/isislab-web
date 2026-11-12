@@ -1,16 +1,10 @@
-- title: The Lab
+- title: About us
   url: /en/chi-siamo/
   children:
-  - title: About us
+  - title: People and team
     url: /en/chi-siamo/
-  - title: People & team
-    url: /en/chi-siamo/#persone
-  - title: Recognition
-    url: /en/dicono-di-noi/
-  - title: Press coverage
-    url: /en/rassegna-stampa/
-  - title: Awards & recognition
-    url: /en/premi-e-riconoscimenti/
+  - title: Media & awards
+    url: /en/media-and-awards/
   - title: Directions
     url: /en/come-raggiungerci/
 - title: Research
