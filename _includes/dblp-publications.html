@@ -1,0 +1,136 @@
+<!-- Jekyll include: _includes/dblp-publications.html -->
+<section id="dblp-library" data-json-url="{{ '/assets/data/dblp-publications.json' | relative_url }}" aria-labelledby="dblp-library-title">
+  <style>
+    #dblp-library {
+      --dblp-ink: #15263d; --dblp-muted: #53647b; --dblp-border: #dbe3ec;
+      --dblp-blue: #185ca5; --dblp-soft: #f5f8fc; --dblp-white: #fff;
+      color: var(--dblp-ink); font: inherit; max-width: 1020px; margin: 1.5rem auto;
+    }
+    #dblp-library *, #dblp-library *::before, #dblp-library *::after { box-sizing: border-box; }
+    #dblp-library .dblp-intro { margin-bottom: 1.25rem; }
+    #dblp-library h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.25; margin: 0 0 .3rem; }
+    #dblp-library .dblp-intro p { color: var(--dblp-muted); margin: .3rem 0 .8rem; }
+    #dblp-library .dblp-people { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1rem; }
+    #dblp-library .dblp-people a { border: 1px solid var(--dblp-border); border-radius: 999px;
+      background: var(--dblp-soft); color: var(--dblp-blue); text-decoration: none;
+      padding: .25rem .7rem; font-size: .82rem; }
+    #dblp-library .dblp-panel { border: 1px solid var(--dblp-border); background: var(--dblp-white);
+      border-radius: 14px; padding: 1.1rem; margin-bottom: 1.2rem; }
+    #dblp-library .dblp-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; }
+    #dblp-library .dblp-field { grid-column: span 2; min-width: 0; }
+    #dblp-library .dblp-field.dblp-wide { grid-column: span 3; }
+    #dblp-library label { display: block; font-size: .82rem; font-weight: 650; margin-bottom: .25rem; }
+    #dblp-library input, #dblp-library select { width: 100%; min-width: 0; padding: .62rem .7rem;
+      border: 1px solid #bdcbd9; border-radius: 8px; background: #fff;
+      color: var(--dblp-ink); font: inherit; font-size: .91rem; }
+    #dblp-library input:focus-visible, #dblp-library select:focus-visible,
+    #dblp-library button:focus-visible, #dblp-library a:focus-visible { outline: 3px solid #79b9ee; outline-offset: 2px; }
+    #dblp-library .dblp-bar { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center;
+      justify-content: space-between; margin: .95rem 0 0; }
+    #dblp-library .dblp-buttons { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+    #dblp-library button { cursor: pointer; padding: .56rem .85rem; font: inherit;
+      border-radius: 8px; border: 1px solid #b8cbdc; background: #fff; color: var(--dblp-blue); }
+    #dblp-library button:hover:not(:disabled) { background: #e8f1fa; }
+    #dblp-library button:disabled { opacity: .45; cursor: not-allowed; }
+    #dblp-library .dblp-primary { color: #fff; background: var(--dblp-blue); border-color: var(--dblp-blue); }
+    #dblp-library .dblp-primary:hover:not(:disabled) { color: #fff; background: #114779; }
+    #dblp-library .dblp-download { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+    #dblp-library .dblp-download select { width: auto; max-width: 100%; }
+    #dblp-library .dblp-status { color: var(--dblp-muted); font-size: .9rem; margin: 0; }
+    #dblp-library .dblp-status[role="alert"] { color: #9b3529; }
+    #dblp-library .dblp-results-head { display: flex; align-items: baseline; justify-content: space-between;
+      gap: .6rem; flex-wrap: wrap; margin-bottom: .5rem; }
+    #dblp-library .dblp-count { font-size: .97rem; font-weight: 600; }
+    #dblp-library .dblp-results { list-style: none; margin: 0; padding: 0; }
+    #dblp-library .dblp-paper { margin: 0; padding: 1rem 0 1rem 1rem; border-bottom: 1px solid var(--dblp-border); }
+    #dblp-library .dblp-paper:first-child { border-top: 1px solid var(--dblp-border); }
+    #dblp-library .dblp-paper-title { font-weight: 680; text-decoration: none; color: var(--dblp-blue); line-height: 1.4; }
+    #dblp-library .dblp-paper-title:hover { text-decoration: underline; }
+    #dblp-library .dblp-byline { font-size: .88rem; margin: .35rem 0 .2rem; color: var(--dblp-muted); }
+    #dblp-library .dblp-meta { font-size: .85rem; color: var(--dblp-muted); }
+    #dblp-library .dblp-meta a { color: var(--dblp-blue); }
+    #dblp-library .dblp-tag { display: inline-block; background: #eaf2fa; color: #224f79;
+      font-size: .73rem; border-radius: 5px; padding: .13rem .42rem; margin: .35rem .3rem 0 0; }
+    #dblp-library .dblp-empty { padding: 1.4rem .5rem; color: var(--dblp-muted); }
+    #dblp-library .dblp-pagination { display: flex; flex-wrap: wrap; gap: .35rem;
+      justify-content: center; align-items: center; margin: 1.2rem 0; }
+    #dblp-library .dblp-pagination button { padding: .43rem .72rem; min-width: 2.4rem; }
+    #dblp-library .dblp-pagination button[aria-current="page"] { background: var(--dblp-blue);
+      border-color: var(--dblp-blue); color: #fff; }
+    #dblp-library .dblp-note { font-size: .8rem; color: var(--dblp-muted); margin-top: 1.2rem; }
+    @media (max-width: 720px) {
+      #dblp-library .dblp-field, #dblp-library .dblp-field.dblp-wide { grid-column: span 3; }
+    }
+    @media (max-width: 460px) {
+      #dblp-library .dblp-panel { padding: .8rem; }
+      #dblp-library .dblp-field, #dblp-library .dblp-field.dblp-wide { grid-column: span 6; }
+    }
+  </style>
+
+  <div class="dblp-intro">
+    <h2 id="dblp-library-title">Research publications</h2>
+    <p>Combined, deduplicated dblp bibliography of six researchers. Newest publications appear first.</p>
+    <div class="dblp-people" id="dblp-people" aria-label="dblp researcher profiles"></div>
+  </div>
+
+  <div class="dblp-panel" role="search" aria-label="Filter publications">
+    <div class="dblp-grid">
+      <div class="dblp-field dblp-wide">
+        <label for="dblp-topic">Topic / title keywords</label>
+        <input id="dblp-topic" type="search" placeholder="e.g. graph visualization" autocomplete="off">
+      </div>
+      <div class="dblp-field dblp-wide">
+        <label for="dblp-venue">Venue / journal / conference</label>
+        <input id="dblp-venue" type="search" placeholder="e.g. IEEE, WWW, Euro-Par" autocomplete="off">
+      </div>
+      <div class="dblp-field">
+        <label for="dblp-from">From year</label>
+        <input id="dblp-from" type="number" inputmode="numeric" min="1900" max="2100" placeholder="Any">
+      </div>
+      <div class="dblp-field">
+        <label for="dblp-to">To year</label>
+        <input id="dblp-to" type="number" inputmode="numeric" min="1900" max="2100" placeholder="Any">
+      </div>
+      <div class="dblp-field">
+        <label for="dblp-author">Listed researcher</label>
+        <select id="dblp-author"><option value="">Any of the six</option></select>
+      </div>
+      <div class="dblp-field dblp-wide">
+        <label for="dblp-coauthor">Any author / co-author</label>
+        <input id="dblp-coauthor" type="search" placeholder="Enter an author name" autocomplete="off">
+      </div>
+      <div class="dblp-field dblp-wide">
+        <label for="dblp-sort">Sort</label>
+        <select id="dblp-sort">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title (A–Z)</option>
+        </select>
+      </div>
+    </div>
+    <div class="dblp-bar">
+      <div class="dblp-buttons"><button id="dblp-reset" type="button">Clear filters</button><button id="dblp-refresh" type="button">Reload local data</button></div>
+      <div class="dblp-download">
+        <label for="dblp-scope" style="margin:0">Download</label>
+        <select id="dblp-scope" aria-label="Export scope">
+          <option value="all">All merged publications</option>
+          <option value="filtered">Filtered publications</option>
+        </select>
+        <select id="dblp-format" aria-label="Export format">
+          <option value="csv">CSV</option><option value="json">JSON</option><option value="bib">BibTeX</option>
+        </select>
+        <button id="dblp-export" type="button" class="dblp-primary" disabled>Download</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dblp-results-head">
+    <div id="dblp-count" class="dblp-count" aria-live="polite">Loading publications…</div>
+    <p class="dblp-status" id="dblp-status" role="status" aria-live="polite">Loading local JSON…</p>
+  </div>
+  <ol id="dblp-results" class="dblp-results" aria-label="Publication results"></ol>
+  <nav id="dblp-pagination" class="dblp-pagination" aria-label="Publication pages"></nav>
+  <p class="dblp-note">Metadata from <a href="https://dblp.org/" target="_blank" rel="noopener noreferrer">dblp</a>, updated automatically using GitHub Actions. Topic searches publication titles, not article full text. Downloads contain bibliographic metadata, not PDFs.</p>
+</section>
+
+<script src="{{ '/assets/js/dblp-publications.js' | relative_url }}" defer></script>

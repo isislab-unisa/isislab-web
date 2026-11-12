@@ -9,7 +9,10 @@ section: Pagina
 article_kind: imported_page
 ---
 
+{% include dblp-publications.html %}
+<!--
 <p>Le pubblicazioni scientifiche del laboratorio ISISLab sono disponibili <a href="https://isislab-unisa.github.io/isis-scholar/" rel="noreferrer noopener">qui</a>.</p>
 
 <p><strong>Last update Dec, 2023 Source scopus.com</strong></p>
+-->
 
