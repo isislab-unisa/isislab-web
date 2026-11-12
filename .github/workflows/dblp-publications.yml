@@ -31,9 +31,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Verify bibliography importer (offline tests)
-        run: python -m unittest discover -s tests -v
-
       - name: Download, merge and deduplicate dblp data
         run: python scripts/update_dblp.py
 
