@@ -62,8 +62,8 @@
     url: /news/
   - title: Seminari
     url: /events/list/
-  - title: Seminari Test
-    url: /seminar/
+ # - title: Seminari Test
+    #url: /seminar/
   - title: Blog
     url: /blog/
   - title: Galleria
