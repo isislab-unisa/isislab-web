@@ -1,7 +1,9 @@
 title: ISISLab
 description: Laboratorio ISISLab — Dipartimento di Informatica, Università degli Studi di Salerno
-url: "https://isislab-unisa.github.io"
+url: "https://www.isislab.it"
+#url: "https://isislab-unisa.github.io"
 baseurl: "/isislab-web" # GitHub Pages project site (https://isislab-unisa.github.io/isislab-web/)
+#baseurl: "/isislab-web"
 lang: it-IT
 markdown: kramdown
 permalink: pretty
