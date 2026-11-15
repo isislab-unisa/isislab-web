@@ -20,4 +20,5 @@ Sede indicata: Laboratorio ISISLab, Edificio F, Stecca 7, II piano, campus di Fi
 
 ## Calendario aggiornato
 
-Questa è una pagina statica di esempio, non un calendario sincronizzato. Per programma, date e materiali aggiornati consulta l’[archivio eventi originale](/events/list/) e le [FAQ seminari]({{ '/faq-seminari/' | relative_url }}).
+
+<p>Questa è una pagina statica di esempio, non un calendario sincronizzato. Per programma, date e materiali aggiornati consulta l’<a href="{{'/events/list/' | relative_url}}">archivio eventi originale</a> e le <a href="{{ '/faq-seminari/' | relative_url }}">FAQ seminari</a>.</p>

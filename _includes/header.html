@@ -26,4 +26,10 @@
       {% endif %}
     </div>
   </div>
+
+  {% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
 </header>

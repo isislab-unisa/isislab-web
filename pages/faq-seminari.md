@@ -15,11 +15,11 @@ article_kind: imported_page
 
 <h3 class="wp-block-heading">Chi può seguire i seminari?</h3>
 
-<p class="p {text-align: justify;}">Abbiamo ovviamente dei requisiti abbastanza stringenti: sono ammessi esclusivamente esseri umani; quindi se siete Klingon o Liocorni, per cortesia, mandate email prima di partecipare ?.  Seriamente, non è necessario essere tesista ISISLab, o voler chiedere la tesi in ISISLab per seguire i seminari. Se volete, potete anche chiedere la iscrizione alla mailing list del laboratorio per essere aggiornati, settimanalmente, dei seminari.</p>
+<p style="text-align: justify;">Abbiamo ovviamente dei requisiti abbastanza stringenti: sono ammessi esclusivamente esseri umani; quindi se siete Klingon o Liocorni, per cortesia, mandate email prima di partecipare? Seriamente, non è necessario essere tesisti ISISLab, o voler chiedere la tesi in ISISLab per seguire i seminari. Se volete, potete anche chiedere la iscrizione alla mailing list del laboratorio per essere aggiornati, settimanalmente, dei seminari.</p>
 
 <h3 class="wp-block-heading">Dovrò fare anche io dei seminari?</h3>
 
-<p>La risposta (se siete tesisti ISISLab) è "Certamente!". Tenere (diversi) seminari vi aiuta a imparare a presentare il vostro lavoro nella maniera più efficace e vi permette di migliorare la comunicazione con gli altri. Inoltre, serve come preparazione ai futuri colloqui di lavoro: molto spesso una delle domande-tipo è "Cosa hai fatto nella tesi?", semplicemente perché conta come le <em>domande a piacere</em>, che sono assai pericolose, in quanto ci si aspetta il meglio che il candidato possa offrire, visto che sceglie da solo l’argomento.</p>
+<p>La risposta (se siete tesisti ISISLab) è "Certamente!". Tenere (diversi) seminari vi aiuta a imparare a presentare il vostro lavoro nella maniera più efficace e vi permette di migliorare la comunicazione con gli altri. Inoltre, serve come preparazione ai futuri colloqui di lavoro: molto spesso una delle domande-tipo è "Cosa hai fatto nella tesi?", semplicemente perché conta come le <em>domande a piacere</em>, che sono assai pericolose, in quanto ci si aspetta il meglio che il candidato possa offrire, visto che sceglie da solo l’argomento.</p>
 
 <h3 class="wp-block-heading">Quanti seminari dovrò tenere?</h3>
 
@@ -27,9 +27,8 @@ article_kind: imported_page
 
 <h3 class="wp-block-heading">Che errori devo evitare?</h3>
 
-<p>Qui c’è una lista degli <a aria-label=" (opens in a new tab)" href="/errori-tipici-ai-seminari/" rel="noreferrer noopener">errori tipici ai seminari</a> che viene raccolta semplicemente per fare in modo di farvi evitare noiose interruzioni (da parte mia!) ogni volta che li fate.</p>
+<p>Qui c’è una lista degli <a href="{{ '/errori-tipici-ai-seminari/' | relative_url }}">errori tipici ai seminari</a> che viene raccolta semplicemente per fare in modo di farvi evitare noiose interruzioni (da parte mia!) ogni volta che li fate.</p>
 
 <h3 class="wp-block-heading">Il seminario breve in seduta di laurea è diverso da quelli che tengo in ISISLab?</h3>
 
-<p>Si, certamente! Ovviamente ha un taglio molto diverso e richiede una estrema cura per poter ottenere l’obiettivo: presentare in pochissimo tempo il vostro lavoro in modo che venga apprezzato dalla intera commissione. Consultate i <a href="/consigli-per-i-seminari-brevi/">consigli sui seminari brevi</a> che sono disponibili</p>
-
+<p>Sì, certamente! Ovviamente ha un taglio molto diverso e richiede una estrema cura per poter ottenere l’obiettivo: presentare in pochissimo tempo il vostro lavoro in modo che venga apprezzato dalla intera commissione. Consultate i <a href="{{ '/consigli-per-i-seminari-brevi/' | relative_url }}">consigli sui seminari brevi</a> che sono disponibili.</p>

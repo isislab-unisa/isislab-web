@@ -16,8 +16,6 @@ article_kind: imported_page
 <ol>
 <li>richiedere un account per i PC di laboratorio (se usate Windows);</li>
 
-<li>richiedere un account sul sito di ISISLab;</li>
-
 <li>richiedere l'iscrizione alla mailing list.</li>
 </ol>
 
@@ -49,14 +47,14 @@ article_kind: imported_page
 
 <p>Circa una settimana prima del seminario, comunicate a Giuseppina Palmieri la data, l'ora e un breve abstract del seminario. </p>
 
-<p>Per progettare il seminario, vi consigliamo di leggere la <em><a href="/faq-seminari/" rel="noreferrer noopener">FAQ sui seminari</a></em>, i <a href="/consigli-per-i-seminari-brevi/" rel="noreferrer noopener">consigli sui seminari brevi</a> e quanto altro indicato nelle <a href="/informazioni-utili/" rel="noreferrer noopener">Informazioni utili</a>.  </p>
+<p>Per progettare il seminario, vi consigliamo di leggere le <em><a href="{{ '/faq-seminari/' | relative_url }}">FAQ sui seminari</a></em>, i <a href="{{ '/consigli-per-i-seminari-brevi/' | relative_url }}">consigli sui seminari brevi</a> e quanto altro indicato nelle <a href="{{ '/informazioni-utili/' | relative_url }}">Informazioni utili</a>.</p>
 
-<p>Ricordate di mettete tutte le informazioni del seminario sulla vostra pagina personale, indicando indice degli argomenti trattati, link utilizzati, materiale bibliografico, ecc...</p>
+<p>Ricordate di mettere tutte le informazioni del seminario sulla vostra pagina personale, indicando indice degli argomenti trattati, link utilizzati, materiale bibliografico, ecc...</p>
 
 <h2 class="wp-block-heading">Quando vi preparate per la seduta di laurea</h2>
 
 <p>Tipicamente vi viene chiesto un seminario conclusivo (completo) del vostro lavoro e, qualche giorno prima della tesi, la prova della presentazione della tesi che dura poco (5-6 minuti) e quindi va preparata con cura ed attenzione.</p>
 
-<p>Alcuni <a aria-label=" (opens in a new tab)" href="/consigli-per-i-seminari-brevi/" rel="noreferrer noopener">consigli sui seminari brevi</a> vi possono aiutare.</p>
+<p>Alcuni <a href="{{ '/consigli-per-i-seminari-brevi/' | relative_url }}">consigli sui seminari brevi</a> vi possono aiutare.</p>
 
 

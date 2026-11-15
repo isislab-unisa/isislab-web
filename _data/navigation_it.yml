@@ -8,63 +8,38 @@
   - title: Dove siamo
     url: /dove-siamo/
 - title: Ricerca
-  url: /tematiche/
+  url: /linee-di-ricerca/
   children:
   - title: Linee di ricerca
-    url: /tematiche/
-  - title: Pubblicazioni
-    url: /pubblicazioni-scientifiche/
-  - title: Risorse e SLR
-    url: /risorse-utili/
-  - title: Systematic Literature Reviews
-    url: /systematic-literature-reviews/
-- title: Progetti
-  url: /progetti/
-  children:
-  - title: Tutti i progetti
+    url: /linee-di-ricerca/
+  - title: Progetti
     url: /progetti/
-  - title: Progetti con le scuole
-    url: /progetti-con-le-scuole/
-  - title: Public engagement
-    url: /public-engagement/
+  - title: Pubblicazioni Scientifiche
+    url: /pubblicazioni-scientifiche/
+  - title: Risorse per la ricerca
+    url: /risorse-per-la-ricerca/
 - title: Didattica
-  url: /lauree-triennale-e-magistrale/
+  url: /corsi-e-cloud-computing/
   children:
-  - title: Corsi
-    url: /lauree-triennale-e-magistrale/
-  - title: Indirizzo Cloud Computing
-    url: /indirizzo-cloud-computing/
-  - title: Tesi
-    url: /informazioni-utili/
-  - title: Tirocini e tesi
-    url: /cosa-si-fa-in-isislab-stage-o-tesi/
-  - title: Risorse studenti
-    url: /risorse-per-gli-studenti/
-  - title: FAQ seminari
-    url: /faq-seminari/
-- title: Enti esterni
-  url: /convenzioni-e-contratti-di-ricerca/
+  - title: Corsi e Cloud Computing
+    url: /corsi-e-cloud-computing/
+  - title: Tesi e tirocini
+    url: /tesi-e-tirocini/
+  - title: Risorse e seminari
+    url: /risorse-e-seminari/ 
+- title: Valorizzazione e Diffusione
+  url: /territorio-e-scuole/
   children:
-  - title: Impatto sociale
-    url: /public-engagement/
-  - title: Scuole e territorio
-    url: /progetti-con-le-scuole/
-  - title: Convenzioni e contratti
-    url: /convenzioni-e-contratti-di-ricerca/
-  - title: Dottorato industriale
-    url: /dottorato-di-ricerca-industriale/
-  - title: Collaborazioni estere
-    url: /collaborazioni-con-enti-stranieri/
+  - title: Territorio e scuole
+    url: /territorio-e-scuole/
+  - title: Partnership e convenzioni 
+    url: /partnership-e-convenzioni/
 - title: News
-  url: /news/
-  children:
-  - title: News
-    url: /news/
-  - title: Seminari
-    url: /events/list/
- # - title: Seminari Test
-    #url: /seminar/
-  - title: Blog
-    url: /blog/
+  url: /notizie-e-approfondimenti/
+  children: 
+  - title: Notizie e approfondimenti
+    url: notizie-e-approfondimenti
+  - title: Eventi e seminari
+    url: /events/list
   - title: Galleria
     url: /galleria/

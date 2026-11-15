@@ -2,8 +2,7 @@
 layout: page
 lang: it
 title: Dottorato di ricerca industriale
-description: Dottorato di Ricerca in Informatica e Ingegneria Informatica, XXXIII Ciclo (nuova serie) (2018-2020)
-  Borsa di studio di dottorato industriale, in collaborazione con la società ACT-OR (Italia) e la George Mason
+description: Dottorato di Ricerca in Informatica e Ingegneria Informatica, XXXIII Ciclo (nuova serie) (2018-2020) Borsa di studio di dottorato industriale, in collaborazione con la società ACT-OR (Italia) e la George Mason
   […]
 permalink: /dottorato-di-ricerca-industriale/
 section: Pagina

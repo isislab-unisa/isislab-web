@@ -7,17 +7,17 @@
     url: /en/media-and-awards/
   - title: Directions
     url: /en/come-raggiungerci/
-- title: Research
+- title: Research areas
   url: /en/tematiche/
   children:
   - title: Research areas
     url: /en/tematiche/
+  - title: Projects
+    url: /en/progetti/
   - title: Publications
     url: /en/pubblicazioni-scientifiche/
-  - title: Resources & SLR
+  - title: Resources for research & SLR
     url: /en/risorse-utili/
-  - title: Systematic Literature Reviews
-    url: /en/systematic-literature-reviews/
 - title: Projects
   url: /en/progetti/
   children:

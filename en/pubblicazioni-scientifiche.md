@@ -13,3 +13,4 @@ ISISLab authors publish work across parallel and distributed computing, collabor
 
 Consult the original publications page for authoritative bibliographic records, citation details and links to papers.
 
+{% include dblp-publications.html %}

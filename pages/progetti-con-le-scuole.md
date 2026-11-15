@@ -2,9 +2,7 @@
 layout: page
 lang: it
 title: Progetti con le scuole
-description: Le attività di alternanza scuola – lavoro sono state condotte in collaborazione con il progetto
-  HETOR, pilota di Route-To- Pa (Raising Open and User-friendly Transparency-Enabling Technologies fOr Public
-  Administrations). Il […]
+description: Le attività di alternanza scuola – lavoro sono state condotte in collaborazione con il progetto HETOR, pilota di Route-To- Pa (Raising Open and User-friendly Transparency-Enabling Technologies fOr Public Administrations). Il […]
 permalink: /progetti-con-le-scuole/
 section: Pagina
 article_kind: imported_page

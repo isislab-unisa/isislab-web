@@ -9,12 +9,11 @@ section: Pagina
 article_kind: imported_page
 ---
 
-<p>In questo laboratorio, diretto da  Vittorio Scarano, si svolgono attività di ricerca e di didattica.</p>
+<p>In questo laboratorio si svolgono attività di ricerca e di didattica.</p>
 
-<p>Per quanto riguarda la ricerca, consultate gli <a href="/" rel="noreferrer noopener">Argomenti di Ricerca</a> di ISISLab ma potete trovare utile la lista delle nostre <a href="/pubblicazioni-scientifiche/" rel="noreferrer noopener">pubblicazioni</a>.</p>
+<p>Per quanto riguarda la ricerca, consultate gli <a href="{{ '/linee-di-ricerca/' | relative_url }}">Argomenti di ricerca</a> di ISISLab. Potete inoltre consultare la lista delle nostre <a href="{{ '/pubblicazioni-scientifiche/' | relative_url }}">pubblicazioni scientifiche</a>.</p>
 
 <p>Per la didattica, in ISISLab si svolgono tesi di Vecchio Ordinamento e di Laurea Magistrale, così come stage come attività di tirocinio per la laurea triennale. Gli argomenti delle nostre tesi seguono da vicino gli interessi del laboratorio quindi computazioni distribuite e parallele e grafica interattiva. Maggiori dettagli vanno ottenuti di persona… Contattaci!</p>
-
 <h2 class="wp-block-heading">Se sei uno studente che sta considerando di fare stage o tesi in ISISLab…</h2>
 
 <ul>
@@ -26,12 +25,11 @@ article_kind: imported_page
 
 <li>Insomma, si lavora insieme e in maniera produttiva. Vienici a trovare!</li>
 
-<li>Se vuoi sapere altre informazioni consulta “<a href="/" rel="noreferrer noopener">Sono un nuovo tesista: Cosa devo fare ora</a>?” ed anche la pagina delle <a href="/informazioni-utili/" rel="noreferrer noopener">Risorse per tesisti</a>.</li>
+<li>Se vuoi sapere altre informazioni consulta “<a href="{{ '/sono-un-nuovo-tesista-cosa-devo-fare/' | relative_url }}">Sono un nuovo tesista: cosa devo fare ora</a>?” ed anche la pagina delle <a href="{{ '/informazioni-utili/' | relative_url }}">Risorse per tesisti</a>.</li>
 </ul>
 
+
 <h2 class="wp-block-heading">Studenti che stanno facendo stage/tesi in ISISLab</h2>
-
-
 <ul>
 <li><strong>Nicolás Merenda</strong>
 <ul>
@@ -223,72 +221,56 @@ article_kind: imported_page
 </ul>
 </li>
 
-<li><a data-id="13263" data-type="post" href="/news/user-gablod/">Gabriele Lodato</a>
-<ul>
-<li><strong>Laurea </strong> (di indirizzo)</li>
-</ul>
-<ul>
-<li><strong>Titolo tesi</strong>: esplorazione KG via web app, un confronto con il metaverso</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+<li><strong>Gabriele Lodato</strong>
+  <ul>
+    <li><strong>Laurea</strong> (di indirizzo)</li>
+    <li><strong>Titolo tesi</strong>: esplorazione KG via web app, un confronto con il metaverso</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
 
-<li><a data-id="13266" data-type="post" href="/news/user-danfor/">Daniele Fornaro</a>
-<ul>
-<li><strong>Laurea </strong>Triennale</li>
-</ul>
-<ul>
-<li><strong>Titolo tesi</strong>: ontologia per i beni culturali (HETOR a 5 stelle)</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+<li><strong>Daniele Fornaro</strong>
+  <ul>
+    <li><strong>Laurea</strong> Triennale</li>
+    <li><strong>Titolo tesi</strong>: ontologia per i beni culturali (HETOR a 5 stelle)</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
 
-<li><a href="/news/user-davric/" rel="noreferrer noopener">Davide Cosimo Riccio</a>
-<ul>
-<li><strong>Laurea Magistrale</strong>: </li>
-
-<li><strong>Titolo tesi</strong>: Multi-cloud ontology</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+<li><strong>Davide Cosimo Riccio</strong>
+  <ul>
+    <li><strong>Laurea Magistrale</strong></li>
+    <li><strong>Titolo tesi</strong>: Multi-cloud ontology</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
 
-<li><a href="/news/user-gerbot/" rel="noreferrer noopener">Gerardo Bottiglieri</a>
-<ul>
-<li><strong>Laurea Magistrale</strong></li>
-</ul>
-<ul>
-<li><strong>Titolo tesi</strong>: ontology design for children</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+<li><strong>Gerardo Bottiglieri</strong>
+  <ul>
+    <li><strong>Laurea Magistrale</strong></li>
+    <li><strong>Titolo tesi</strong>: ontology design for children</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
 
-<li><a href="/news/user-chrgam/" rel="noreferrer noopener">Christian Gambardella</a>
-<ul>
-<li><strong>Laurea Triennale</strong></li>
-
-<li><strong>Titolo tesi</strong>: knowledge graph e smart city</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+<li><strong>Christian Gambardella</strong>
+  <ul>
+    <li><strong>Laurea Triennale</strong></li>
+    <li><strong>Titolo tesi</strong>: knowledge graph e smart city</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
 
 <li><strong>Alfredo Jeshoua Spera</strong>
-<ul>
-<li><strong>Laurea Magistrale</strong>: </li>
-
-<li><strong>Titolo tesi</strong>: Creazione di un Sistema per la gestione dei collegamenti alle Macchine Virtuali nel laboratorio</li>
-
-<li><strong>Data Laurea</strong>:</li>
-</ul>
+  <ul>
+    <li><strong>Laurea Magistrale</strong></li>
+    <li><strong>Titolo tesi</strong>: Creazione di un Sistema per la gestione dei collegamenti alle Macchine Virtuali nel laboratorio</li>
+    <li><strong>Data Laurea</strong>:</li>
+  </ul>
 </li>
-</ul>
 
 <h2 class="wp-block-heading">Sono stati in ISISLab...</h2>
 
-<p>Tutti i Tesisti/Stagisti che sono stati in ISISLab sono presenti in questa <a href="/">pagina</a>.</p>
+<p>Tutti i tesisti e stagisti che sono stati in ISISLab sono presenti in questa <a href="{{ '/tesisti-sono-stati-in-isislab/' | relative_url }}">pagina</a>.</p>
 
 

@@ -1,16 +1,17 @@
 ---
 layout: page
 lang: it
-title: Convenzioni e Contratti di Ricerca
-description: 'Ricerca finanziata da Pubbliche Amministrazioni Accordo operativo per lo sviluppo di piattaforme
-  operative e nuovi strumenti e metodologie per l’analisi delle informazioni provenienti da fonti aperte Finanziato
+title: Partnership e convenzioni 
+description: 'Ricerca finanziata da Pubbliche Amministrazioni Accordo operativo per lo sviluppo di piattaforme operative e nuovi strumenti e metodologie per l’analisi delle informazioni provenienti da fonti aperte Finanziato
   da: Consiglio Regionale […]'
 permalink: /convenzioni-e-contratti-di-ricerca/
 section: Pagina
 article_kind: imported_page
 ---
 
-<h2 class="wp-block-heading"><strong>Ricerca finanziata da Pubbliche Amministrazioni</strong></h2>
+<section >
+<h2>Ricerca finanziata da Pubbliche Amministrazioni</h2>
+
 
 <h3 class="wp-block-heading"><strong>Accordo operativo per lo sviluppo di piattaforme operative e nuovi strumenti e metodologie per l’analisi delle informazioni provenienti da fonti aperte</strong></h3>
 
@@ -112,4 +113,5 @@ article_kind: imported_page
 
 <p><strong>Fondi:</strong> 8.196,72 € </p>
 
+</section>
 
