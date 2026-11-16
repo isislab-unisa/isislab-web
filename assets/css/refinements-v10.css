@@ -256,3 +256,10 @@ body {font-size:16.5px; line-height:1.68;}
     gap:12px;
   }
 }
+/* Justify text across all pages */
+.page-content.prose p,
+.page-content.prose li,
+.page-content.prose blockquote {
+    text-align: justify !important;
+    text-justify: inter-word;
+}

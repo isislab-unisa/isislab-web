@@ -1,68 +1,45 @@
 - title: About us
-  url: /en/chi-siamo/
+  url: /en/about-us/
   children:
   - title: People and team
-    url: /en/chi-siamo/
+    url: /en/about-us/
   - title: Media & awards
     url: /en/media-and-awards/
   - title: Directions
-    url: /en/come-raggiungerci/
+    url: /en/directions/
 - title: Research areas
-  url: /en/tematiche/
+  url: /en/research-area/
   children:
   - title: Research areas
-    url: /en/tematiche/
+    url: /en/research-area/
   - title: Projects
-    url: /en/progetti/
+    url: /en/projects/
   - title: Publications
-    url: /en/pubblicazioni-scientifiche/
+    url: /en/scientific-publications/
   - title: Resources for research & SLR
-    url: /en/risorse-utili/
-- title: Projects
-  url: /en/progetti/
-  children:
-  - title: All projects
-    url: /en/progetti/
-  - title: School projects
-    url: /en/progetti-con-le-scuole/
-  - title: Public engagement
-    url: /en/public-engagement/
+    url: /en/research-resources/
 - title: Teaching
-  url: /en/lauree-triennale-e-magistrale/
+  url: /en/courses-and-cloud-computing/
   children:
-  - title: Degree programmes
-    url: /en/lauree-triennale-e-magistrale/
-  - title: Cloud Computing programme
-    url: /en/indirizzo-cloud-computing/
-  - title: Theses
-    url: /en/informazioni-utili/
-  - title: Internships & theses
-    url: /en/cosa-si-fa-in-isislab-stage-o-tesi/
-  - title: Student resources
-    url: /en/risorse-per-gli-studenti/
-  - title: Seminar FAQ
-    url: /en/faq-seminari/
-- title: External partners
-  url: /en/convenzioni-e-contratti-di-ricerca/
+  - title: Courses and Cloud computing
+    url: /en/courses-and-cloud-computing/
+  - title: Theses and Internships
+    url: /en/tesi-e-tirocini/
+  - title: Resources and Seminars
+    url: /en/resources-and-seminars/
+- title: Dissemination and Outreach
+  url: /en/dissemination-and-schools/
   children:
-  - title: Social impact
-    url: /en/public-engagement/
-  - title: Schools & community
-    url: /en/progetti-con-le-scuole/
-  - title: Agreements & contracts
-    url: /en/convenzioni-e-contratti-di-ricerca/
-  - title: Industrial PhD
-    url: /en/dottorato-di-ricerca-industriale/
-  - title: International collaborations
-    url: /en/collaborazioni-con-enti-stranieri/
+  - title: Community and Schools
+    url: /en/dissemination-and-schools/
+  - title: Partnerships and Agreements
+    url:  en/partnership-and-agreements/
 - title: News
-  url: /en/news/
+  url: /en/news-and-blog/
   children:
-  - title: News
-    url: /en/news/
-  - title: Seminars
+  - title: News and Blog
+    url: /en/news-and-blog/
+  - title: Events and Seminars
     url: /en/events/list/
-  - title: Blog
-    url: /en/blog/
   - title: Gallery
     url: /en/galleria/

@@ -9,5 +9,5 @@ lang: en
 ---
 ## Research visuals
 
-Photos and project branding are displayed from the original website where available. The images can be cached locally using `python scripts/fetch_media.py` when connected to the internet.
+Photos and project branding are displayed from the original website where available. 
 
