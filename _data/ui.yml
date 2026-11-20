@@ -2,7 +2,7 @@ it:
   skip: Vai al contenuto
   nav: Navigazione principale
   open: Apri il menu
-  explore: Esplora ISISLab
+  explore: ISISLab
   section: IN EVIDENZA
   explore_lab: Esplora il laboratorio
   lab: Il laboratorio
@@ -32,7 +32,7 @@ en:
   skip: Skip to content
   nav: Main navigation
   open: Open menu
-  explore: Explore ISISLab
+  explore: ISISLab
   section: HIGHLIGHTS
   explore_lab: Explore the laboratory
   lab: The laboratory
