@@ -3,8 +3,8 @@ it:
   nav: Navigazione principale
   open: Apri il menu
   explore: ISISLab
-  section: IN EVIDENZA
-  explore_lab: ISISLab
+  section: ISISLab
+  explore_lab: IN EVIDENZA
   lab: Il laboratorio
   research: Linee di ricerca
   projects: Progetti
@@ -33,8 +33,8 @@ en:
   nav: Main navigation
   open: Open menu
   explore: ISISLab
-  section: HIGHLIGHTS
-  explore_lab: ISISLab
+  section: ISISLab
+  explore_lab: HIGHLIGHTS
   lab: The laboratory
   research: Research areas
   projects: Projects
