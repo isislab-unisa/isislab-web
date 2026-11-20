@@ -161,7 +161,7 @@ article_kind: imported_page
 <p>All'interno del progetto ROUTE-TO-PA, una tematica particolarmente importante trattata dal laboratorio è stata quella di realizzare una piattaforma per la visualizzazione di dati aperti che risultasse essere, da un lato, estremamente semplice da usare, in modo che utenti anche senza competenze tecniche potessero usarlo, e, dall'altro, che fosse efficiente, permettendo di scalare la visualizzazione, utilizzando le risorse messe a disposizione lato client. </p>
 
 <blockquote class="wp-block-quote">
-<p>A questo scopo, la architettura <em>Datalet Ecosystem Provider</em>  (DEEP) permette la creazione di componenti Web riutilizzabili (le  <em>datalet</em>), che, una volta, caricate dal client, provvedono a caricare i dati, visualizzarli come richiesto, e guidare le interazioni degli utenti, senza caricare il server . Questo permette anche lo sviluppo di visualizzazioni agili, che cioè, seguono il contenuto in tempo reale del dataset di dati aperti, permettendo un controllo continuo nel processo di creazione. </p>
+<p>A questo scopo, l'architettura <em>Datalet Ecosystem Provider</em>  (DEEP) permette la creazione di componenti Web riutilizzabili (le  <em>datalet</em>), che, una volta, caricate dal client, provvedono a caricare i dati, visualizzarli come richiesto, e guidare le interazioni degli utenti, senza caricare il server . Questo permette anche lo sviluppo di visualizzazioni agili, che cioè, seguono il contenuto in tempo reale del dataset di dati aperti, permettendo un controllo continuo nel processo di creazione. </p>
 </blockquote>
 
 <blockquote class="wp-block-quote">
@@ -170,7 +170,7 @@ article_kind: imported_page
 
 <h4 class="wp-block-heading">Applicazioni di Realtà Virtuale</h4>
 
-<p>In particolare, sono stati esaminati e studiate le modalità di utilizzo di questi strumenti nell'ambito della fruizione (locale/remota, singola/gruppo) di ricostruzioni di siti archeologici visitabili (Cultural Heritage). Lo strumento utilizzato, spesso, insieme alle ricostruzioni di Realtà virtuale è quello dei cosiddetti "<em>Serious games</em>", cioè giochi educativi, che non hanno solo scopo ricreativo, ma che hanno l'obiettivo di intrattenere educando e fornendo informazioni sui siti o sui manufatti visitati. </p>
+<p>In particolare, sono state esaminate e studiate le modalità di utilizzo di questi strumenti nell'ambito della fruizione (locale/remota, singola/gruppo) di ricostruzioni di siti archeologici visitabili (Cultural Heritage). Lo strumento utilizzato, spesso, insieme alle ricostruzioni di Realtà virtuale è quello dei cosiddetti "<em>Serious games</em>", cioè giochi educativi, che non hanno solo scopo ricreativo, ma che hanno l'obiettivo di intrattenere educando e fornendo informazioni sui siti o sui manufatti visitati. </p>
 
 <blockquote class="wp-block-quote">
 <p>In questo contesto le esperienze maturate in giochi seri che siano immersivi (che cioè usino interfacce come visori stereoscopici e interfacce haptic (tipo Microsoft Kinect)) sembrano offrire prospettive interessanti e buoni risultati. Di recente, risultati interessati sulla produzione automatica di ambienti virtuali, basati su Open Data, sono stati realizzati nell'ambito del riuso degli Open Data. Lo studio ha anche riguardato, in passato, l'uso di periferiche mobili in contesti di visita ibrida (posizionamento reale e visualizzazione in realtà virtuale) ed il contesto di simulazioni storiche (battaglie dell'ottocento). </p>
