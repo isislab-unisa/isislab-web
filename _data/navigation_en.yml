@@ -21,19 +21,19 @@
 - title: Teaching
   url: /en/courses-and-cloud-computing/
   children:
-  - title: Courses and Cloud computing
+  - title: Courses
     url: /en/courses-and-cloud-computing/
   - title: Theses and Internships
     url: /en/tesi-e-tirocini/
   - title: Resources and Seminars
     url: /en/resources-and-seminars/
-- title: Dissemination and Outreach
-  url: /en/dissemination-and-schools/
-  children:
-  - title: Community and Schools
-    url: /en/dissemination-and-schools/
-  - title: Partnerships and Agreements
-    url:  en/partnership-and-agreements/
+#- title: Third mission
+ # url: /en/dissemination-and-schools/
+  #children:
+  #- title: Community and Schools
+   # url: /en/dissemination-and-schools/
+  #- title: Partnerships and Agreements
+   # url:  en/partnership-and-agreements/
 - title: News
   url: /en/news-and-blog/
   children:

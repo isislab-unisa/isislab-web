@@ -21,19 +21,19 @@
 - title: Didattica
   url: /corsi-e-cloud-computing/
   children:
-  - title: Corsi e Cloud Computing
+  - title: Corsi
     url: /corsi-e-cloud-computing/
   - title: Tesi e tirocini
     url: /tesi-e-tirocini/
   - title: Risorse e seminari
     url: /risorse-e-seminari/ 
-- title: Valorizzazione e Diffusione
-  url: /territorio-e-scuole/
-  children:
-  - title: Territorio e scuole
-    url: /territorio-e-scuole/
-  - title: Partnership e convenzioni 
-    url: /partnership-e-convenzioni/
+#- title: Terza missione
+ # url: /territorio-e-scuole/
+  #children:
+  #- title: Territorio e scuole
+   # url: /territorio-e-scuole/
+  #- title: Partnership e convenzioni 
+    #url: /partnership-e-convenzioni/
 - title: News
   url: /notizie-e-approfondimenti/
   children: 
