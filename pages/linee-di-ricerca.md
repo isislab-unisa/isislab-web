@@ -165,7 +165,7 @@ article_kind: imported_page
 </blockquote>
 
 <blockquote class="wp-block-quote">
-<p>La esperienza di ricerca si è anche rivolta, in questo campo, a strumenti per utilizzare la visualizzazione di processi in tempo reale, in modo da poterne monitorare in maniera facile, versatile e scalabile, l'andamento. In particolare, sono stati progettati, sviluppati ed analizzati diversi framework per la visualizzazione di processi in esecuzione, di filesystem, e di clustering.</p>
+<p>L'esperienza di ricerca si è anche rivolta, in questo campo, a strumenti per utilizzare la visualizzazione di processi in tempo reale, in modo da poterne monitorare in maniera facile, versatile e scalabile, l'andamento. In particolare, sono stati progettati, sviluppati ed analizzati diversi framework per la visualizzazione di processi in esecuzione, di filesystem, e di clustering.</p>
 </blockquote>
 
 <h4 class="wp-block-heading">Applicazioni di Realtà Virtuale</h4>
