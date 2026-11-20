@@ -4,7 +4,7 @@ it:
   open: Apri il menu
   explore: ISISLab
   section: IN EVIDENZA
-  explore_lab: Esplora il laboratorio
+  explore_lab: ISISLab
   lab: Il laboratorio
   research: Linee di ricerca
   projects: Progetti
@@ -34,7 +34,7 @@ en:
   open: Open menu
   explore: ISISLab
   section: HIGHLIGHTS
-  explore_lab: Explore the laboratory
+  explore_lab: ISISLab
   lab: The laboratory
   research: Research areas
   projects: Projects
