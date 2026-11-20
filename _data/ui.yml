@@ -3,7 +3,7 @@ it:
   nav: Navigazione principale
   open: Apri il menu
   explore: Esplora ISISLab
-  section: IN QUESTA SEZIONE
+  section: IN EVIDENZA
   explore_lab: Esplora il laboratorio
   lab: Il laboratorio
   research: Linee di ricerca
@@ -33,7 +33,7 @@ en:
   nav: Main navigation
   open: Open menu
   explore: Explore ISISLab
-  section: IN THIS SECTION
+  section: HIGHLIGHTS
   explore_lab: Explore the laboratory
   lab: The laboratory
   research: Research areas
