@@ -1,0 +1,58 @@
+---
+layout: page
+---
+<article class="local-article seminar-detail">
+
+  {% if page.speakers and page.speakers.size > 0 %}
+    {% for speaker in page.speakers %}
+      {% if speaker.name and speaker.name != '' %}
+      <p><strong>Speaker:</strong> {{ speaker.name }}</p>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  <p class="press-source">
+    <strong>Data:</strong>
+    <time datetime="{{ page.date }}">
+      {{ page.date_display | default: page.date }}
+    </time>
+  </p>
+
+  {% assign seminar_start_time = page.start_time | default: page.time %}
+  {% if seminar_start_time and seminar_start_time != '' %}
+  <p>
+    <strong>Orario:</strong>
+    {{ seminar_start_time }}{% if page.end_time and page.end_time != '' %} – {{ page.end_time }}{% endif %}
+  </p>
+  {% endif %}
+
+  {% if page.location and page.location != '' %}
+  <p>
+    <strong>Luogo:</strong>
+    {{ page.location | newline_to_br }}
+  </p>
+  {% endif %}
+
+  {% if page.seminar_image and page.seminar_image != '' %}
+  <figure class="seminar-hero">
+    <img
+      class="article-hero-img"
+      src="{{ page.seminar_image | relative_url }}"
+      alt="{{ page.title | escape }}"
+      loading="lazy"
+      style="width:100%; max-width:520px; height:auto; display:block; margin:0 auto;">
+  </figure>
+  {% endif %}
+
+  <div class="seminar-abstract">
+    <p><strong>Abstract:</strong></p>
+    {{ content }}
+  </div>
+
+  <p>
+    <a href="{{ '/seminars/' | relative_url }}">
+      ← Torna all'archivio dei seminari
+    </a>
+  </p>
+
+</article>

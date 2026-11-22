@@ -263,3 +263,48 @@ body {font-size:16.5px; line-height:1.68;}
     text-align: justify !important;
     text-justify: inter-word;
 }
+/* Seminari: descrizione introduttiva e contatore ben visibili */
+.page-content.prose:has(.media-archive) > p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #34465a;
+  text-align: left !important;
+  background: #f4f8fc;
+  border-left: 4px solid #2463a7;
+  padding: 18px 22px;
+  border-radius: 0 12px 12px 0;
+  margin: 0 0 24px;
+}
+
+.media-archive .archive-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 18px;
+}
+
+.media-archive .archive-count {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #173b5e;
+  background: #eaf2fa;
+  border: 1px solid #cbdced;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .page-content.prose:has(.media-archive) > p {
+    font-size: 15px;
+    padding: 14px 16px;
+  }
+
+  .media-archive .archive-count {
+    font-size: 13px;
+  }
+}
+<!-- End of refinements-v10.css -->

@@ -423,3 +423,20 @@ body { background:#f6f8fb; }
 .home-press-item>span{font-weight:700;font-size:12px;padding:14px}
 @media(max-width:700px){.home-media-teaser-heading{align-items:flex-start;flex-direction:column}.media-cards{grid-template-columns:1fr}.media-card-image{height:260px}.home-press-grid{grid-template-columns:1fr 1fr}.home-press-item:last-child{display:none}}
 @media(max-width:420px){.home-press-grid{grid-template-columns:1fr}.home-press-item:last-child{display:flex}}
+
+/* Titolo compatto nelle pagine di dettaglio dei seminari */
+.page-main:has(.seminar-detail) .page-hero h1 {
+  font-size: 32px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  max-width: 750px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.page-main:has(.seminar-detail) .page-hero {
+  min-height: 220px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
