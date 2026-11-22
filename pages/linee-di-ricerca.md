@@ -54,7 +54,7 @@ custom_css:
 </li>
 </ul>
 <p>Da D-MASON a krABMaga, il laboratorio sviluppa ambienti che permettono di descrivere i comportamenti individuali e osservare i fenomeni collettivi che emergono dalle loro interazioni. La ricerca affronta il problema di distribuire gli agenti tra più unità di calcolo, bilanciando il lavoro anche quando gli agenti si concentrano in alcune regioni dello spazio simulato.</p>
-<p><a href="https://github.com/krABMaga/krABMaga">Il simulatore krABMaga</a></p>
+<p><a href="https://journals.sagepub.com/doi/abs/10.1177/0037549713489594"> D-MASON </a> ·    <a href="https://github.com/krABMaga/krABMaga">Il simulatore krABMaga</a></p>
 </section>
 
 <section class="info-box" aria-labelledby="architetture-parallele"><h2 id="architetture-parallele">Architetture Parallele</h2>
