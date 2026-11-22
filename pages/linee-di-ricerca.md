@@ -136,7 +136,7 @@ custom_css:
 </li>
 </ul>
 <p>ISISLab studia metodi di machine learning che sfruttano le relazioni tra gli elementi di un insieme di dati. Negli ipergrafi, per esempio, il laboratorio analizza come ricavare rappresentazioni dalle configurazioni ricorrenti di interazioni tra gruppi e come generare nuove strutture mediante modelli di diffusione. Un secondo filone riguarda l’impiego di large language models (LLM) per descrivere e classificare i knowledge graph. Lo strumento KGSum integra questi modelli con tecniche di machine learning per caratterizzare collezioni di grafi.</p>
-<p><a href="https://doi.org/10.1145/3690624.3709274">Hypergraph Motif Representation Learning</a> · <a href="https://github.com/isislab-unisa/KGSum">KGSum</a></p>
+<p><a href="https://neurips.cc/virtual/2026/loc/sydney/poster/154651">Hypergraph Generation with Latent Diffusion</a> · <a href="https://doi.org/10.1145/3690624.3709274">Hypergraph Motif Representation Learning</a> · <a href="https://github.com/isislab-unisa/KGSum">KGSum</a></p>
 </section>
 
 <section class="info-box" aria-labelledby="sistemi-adattivi-e-personalizzati"><h2 id="sistemi-adattivi-e-personalizzati">Sistemi adattivi e personalizzati</h2>
