@@ -2,7 +2,7 @@
 layout: page
 lang: it
 title: Linee di ricerca
-description: Il laboratorio ISISLab si occupa principalmente di tre tematiche di ricerca che vengono di seguito riassunte (e poi descritte), facendo riferimento anche alle aree di Classificazione della ACM (2012 ACM […]
+description: Il laboratorio ISISLab studia come rappresentare, analizzare e simulare sistemi complessi e come consentire alle persone di esplorare dati e ambienti digitali. Il laboratorio affianca alla progettazione di algoritmi lo sviluppo di software e la sperimentazione con utenti, scuole, istituzioni culturali e imprese.
 permalink: /linee-di-ricerca/
 section: Pagina
 article_kind: imported_page
