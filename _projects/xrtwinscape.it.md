@@ -29,7 +29,7 @@ partners:
   - "CERICT"
   - "PICA"
 
-website: "https://xrtwinscape.di.unisa.it/"
+website: "https://isislab-unisa.github.io/XRTwinScape/"
 
 image: "/assets/media/2731f891b8000b-logoxrtourguide.png"
 
@@ -107,5 +107,4 @@ Il progetto coinvolge quattro realtà con competenze complementari:
 - [Pagina ufficiale del progetto XRTwinScape](https://isislab-unisa.github.io/XRTwinScape/).
 - [Codice sorgente e documentazione su GitHub](https://github.com/isislab-unisa/XRTwinScape).
 - [Open Call 2 – XR2Learn](https://xr2learn.eu/open-call-2/).
-- [Esperienze formative immersive](https://xrtwinscape.di.unisa.it/).
 

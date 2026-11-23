@@ -56,7 +56,7 @@ article_kind: imported_page
 <li>Scopus:  <a aria-label="ricerca per autore (opens in a new tab)" href="https://www.scopus.com/search/form.uri#author" rel="noreferrer noopener">ricerca per autore</a> </li>
 <li>Web of Science: <a aria-label="ricerca per autore (opens in a new tab)" href="http://wcs.webofknowledge.com/AF/AFHome.do?product=WOS&amp;editions=BSCI,BHCI,SCI,ESCI,AHCI,SSCI,ISSHP,ISTP&amp;endDate=null&amp;rurl=http%3A%2F%2Fapps.webofknowledge.com%2FWOS_GeneralSearch_input.do%3Fproduct%3DWOS%26search_mode%3DGeneralSearch%26preferencesSaved%3D%26SID%3DF1gZg5pJhDcOdxjcC9X%26PointOfEntry%3Dhome&amp;startDate=null&amp;SID=F1gZg5pJhDcOdxjcC9X" rel="noreferrer noopener">ricerca per autore</a> </li>
 <li><a aria-label="Google Scholar (opens in a new tab)" href="https://scholar.google.it/" rel="noreferrer noopener">Google Scholar</a></li>
-<li>ACM Digital Library: <a aria-label="http://dl.acm.org (opens in a new tab)" href="http://dl.acm.org" rel="noreferrer noopener">http://dl.acm.org</a> </li>
+<li>ACM Digital Library: <a aria-label="https://dl.acm.org (opens in a new tab)" href="https://dl.acm.org" rel="noreferrer noopener">https://dl.acm.org</a> </li>
 <li>Academic Microsoft: <a href="https://academic.microsoft.com/">https://academic.microsoft.com</a></li>
 </ul>
 
