@@ -59,7 +59,7 @@ links:
   - label: "Bando a cascata CHANGES – Decreto di approvazione e finanziamento"
     url: "https://isislab-unisa.github.io/assets/media/3eeda480671900-decreto-approvaz-finanz-pe5-changes.pdf"
   - label: "CeRICT"
-    url: "https://www.cerict.it/it/"
+    url: "https://www.cerict.it"
   - label: "Dipartimento di Informatica – UNISA"
     url: "http://www.di.unisa.it/"
   - label: "Dipartimento di Ingegneria Industriale – UNISA"
