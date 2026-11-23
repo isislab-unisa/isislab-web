@@ -9,13 +9,11 @@ alt_url: /en/news/
 archive_page: 1
 archive_offset: 0
 archive_per_page: 9
-archive_total_pages: 38
+archive_total_pages: 12
 archive_root: /news/
 archive_next: /news/page/2/
 archive_previous: null
 ---
 ## Notizie e aggiornamenti
 
-Qui sono raccolte le notizie disponibili in questa versione del sito. Se è stata eseguita la migrazione WordPress autorizzata, gli ulteriori articoli importati compaiono automaticamente nell’elenco sottostante, con una pagina locale dedicata.
-
-Per le iniziative correlate consulta anche i [seminari]({{ '/events/list/' | relative_url }}) e il [blog]({{ '/blog/' | relative_url }}).
+In questa sezione sono raccolte le notizie sulle attività di ISISLab: progetti di ricerca finanziati, premi e riconoscimenti accademici, iniziative scientifiche, eventi e attività di Terza Missione."
