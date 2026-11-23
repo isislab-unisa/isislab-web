@@ -4,6 +4,7 @@ lang: it
 title: Dove siamo
 description: "Come raggiungere ISISLab presso l'Università di Salerno: indicazioni stradali, accesso al campus e percorso per arrivare al laboratorio."
 permalink: /dove-siamo/
+alt_url: /en/directions/
 section: Pagina
 article_kind: imported_page
 ---

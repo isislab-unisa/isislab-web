@@ -6,6 +6,7 @@ description: 'La ricerca Il laboratorio ISISLab (www.isislab.it) del Dipartiment
   dell’Università di Salerno (Italia), dal 1995 si occupa di tre argomenti di ricerca: Calcoli distribuiti
   e paralleli (Cloud and […]'
 permalink: /chi-siamo/
+alt_url: /en/about-us/
 section: Pagina
 article_kind: imported_page
 ---

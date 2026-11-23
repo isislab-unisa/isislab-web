@@ -6,6 +6,7 @@ description: 'Il Dipartimento di Informatica, Università di Salerno, in collabo
   le seguenti Hackathon: AzureChamp Challenge 2021: L’iniziativa congiunta tra Proge-Software, l’Università
   di Salerno e Microsoft Italia ha fornito agli studenti universitari gli […]'
 permalink: /challenges-in-lab/
+alt_url: /en/challenges-in-lab/
 section: Pagina
 article_kind: imported_page
 ---

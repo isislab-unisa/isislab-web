@@ -4,6 +4,7 @@ lang: it
 title: Dicono di noi
 description: Progetto ROUTE-TO-PA I risultati del Progetto ROUTE-TO-PA sono stati selezionati dalla Unione Europea per essere inseriti nell’ Innovation Radar (il radar dell’Innovazione) nel portale www.innoradar.eu. Il Radar dell’innovazione è un’iniziativa […]
 permalink: /dicono-di-noi/
+alt_url: /en/recognitions/
 section: Pagina
 article_kind: imported_page
 ---

@@ -4,6 +4,7 @@ lang: it
 title: Premi e riconoscimenti
 description: Best Paper Awards Best awards Innovation awards
 permalink: /premi-e-riconoscimenti/
+alt_url: /en/premi-e-riconoscimenti/
 section: Pagina
 article_kind: imported_page
 ---

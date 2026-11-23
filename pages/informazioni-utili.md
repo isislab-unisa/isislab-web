@@ -5,6 +5,7 @@ title: Informazioni utili
 description: 'Inizio del lavoro Bene, siete entrati in ISISLab, vi starete chiedendo “Sono un nuovo tesista:
   Cosa devo fare ora?” La tesi Argomenti di tesi disponibili Il laboratorio dispone di svariate […]'
 permalink: /informazioni-utili/
+alt_url: /en/informazioni-utili/
 section: Pagina
 article_kind: imported_page
 ---

@@ -4,6 +4,7 @@ lang: it
 title: Corsi e Cloud computing
 description: 'I docenti ed i ricercatori di ISISLab sono direttamente coinvolti nella attività della didattica della Laurea Triennale e nei corsi corsi di Cloud Computing. Di seguito i dettagli sui corsi universitari dei docenti del laboratorio ISISLab: Laurea […]'
 permalink: /corsi-e-cloud-computing/
+alt_url: /en/courses-and-cloud-computing/
 section: Pagina
 article_kind: imported_page
 custom_css:

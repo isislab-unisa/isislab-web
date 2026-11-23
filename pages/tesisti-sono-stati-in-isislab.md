@@ -5,6 +5,7 @@ title: Tesisti…sono stati in ISISLab
 description: 'In questo laboratorio, diretto da Vittorio Scarano, si svolgono attività di ricerca e di didattica.
   Tutti gli studenti che hanno svolto la loro tesi in ISISLab: 2026 2025 2024 2023 […]'
 permalink: /tesisti-sono-stati-in-isislab/
+alt_url: /en/tesisti-sono-stati-in-isislab/
 section: Pagina
 article_kind: imported_page
 ---

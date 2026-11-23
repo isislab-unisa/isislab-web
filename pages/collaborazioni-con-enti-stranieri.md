@@ -5,6 +5,7 @@ title: Collaborazioni con enti stranieri
 description: 'New Economy Lab- Strengthhening and development of scientific and educational cooperation between SGH and its partner Finanziata da: Warsaw School of Economics (Polonia), tramite un progetto di finanziamento
   del governo […]'
 permalink: /collaborazioni-con-enti-stranieri/
+alt_url: /en/collaborazioni-con-enti-stranieri/
 section: Pagina
 article_kind: imported_page
 ---

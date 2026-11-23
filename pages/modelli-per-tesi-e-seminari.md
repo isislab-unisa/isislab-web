@@ -5,6 +5,7 @@ title: Modelli per tesi e seminari
 description: Tesi di Laurea Questa sezione è un supporto per i tesisti e fornisce indicazioni che dovrebbero
   esssere di aiuto aper la composizione della Tesi di Laurea. Lo stile della tesi […]
 permalink: /modelli-per-tesi-e-seminari/
+alt_url: /en/modelli-per-tesi-e-seminari/
 section: Pagina
 article_kind: imported_page
 ---

@@ -6,6 +6,7 @@ description: Convenzioni Erasmus (studio/tesi presso strutture formative) LEOPOL
   (Austria) UNIVERSITY OF BRIGHTON (UK) HÖGSKOLAN I SKÖVDE (University of Skovde) (Svezia) SZKOLA GLOWNA HANDLOWA
   (Warsaw School of Economics) (Polonia) Convenzioni Erasmus+ […]
 permalink: /erasmus/
+alt_url: /en/erasmus/
 section: Pagina
 article_kind: imported_page
 ---

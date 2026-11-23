@@ -5,6 +5,7 @@ title: FAQ Seminari
 description: Di cosa si parla? Di quello che si sta facendo, di qualcosa che si è letto, di qualcosa di divertente/stimolante
   che abbia a che fare con l’informatica. Chi può seguire […]
 permalink: /faq-seminari/
+alt_url: /en/faq-seminari/
 section: Pagina
 article_kind: imported_page
 ---

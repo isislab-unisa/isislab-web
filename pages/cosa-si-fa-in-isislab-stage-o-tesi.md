@@ -5,6 +5,7 @@ title: 'Cosa si fa di noi in ISISLab: stage o tesi'
 description: In questo laboratorio, diretto da Vittorio Scarano, si svolgono attività di ricerca e di didattica.
   Per quanto riguarda la ricerca, consultate gli Argomenti di Ricerca di ISISLab ma potete trovare […]
 permalink: /cosa-si-fa-in-isislab-stage-o-tesi/
+alt_url: /en/cosa-si-fa-in-isislab-stage-o-tesi/
 section: Pagina
 article_kind: imported_page
 ---

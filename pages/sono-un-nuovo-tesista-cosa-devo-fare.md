@@ -5,6 +5,7 @@ title: 'Sono un  nuovo tesista: Cosa devo fare?'
 description: 'Appena iniziate lo stage/tesi in ISISLab Le cose da fare appena iniziate a lavorare sono: L’account
   sul PC di laboratorio L’account è necessario ad utilizzare i PC messi a disposizione […]'
 permalink: /sono-un-nuovo-tesista-cosa-devo-fare/
+alt_url: /en/sono-un-nuovo-tesista-cosa-devo-fare/
 section: Pagina
 article_kind: imported_page
 ---

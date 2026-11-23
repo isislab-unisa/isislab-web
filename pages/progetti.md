@@ -3,6 +3,7 @@ layout: page
 title: Progetti
 lang: it
 permalink: /progetti/
+alt_url: /en/projects/
 ---
 
 

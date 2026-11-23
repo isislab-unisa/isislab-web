@@ -5,6 +5,7 @@ title: Risorse per la ricerca
 description: 
  Risorse utili per la ricerca accademica, con riferimenti sugli indicatori bibliometrici e materiali dei seminari sulle Systematic Literature Reviews (SLR) tenuti da Vittorio Scarano il 14 gennaio 2020 per gli studenti del Dottorato di Ricerca in Informatica. Qui sono raccolti link, riferimenti e risorse condivisi all'interno della comunità di ricerca […]
 permalink: /risorse-per-la-ricerca/
+alt_url: /en/research-resources/
 section: Pagina
 article_kind: imported_page
 ---
