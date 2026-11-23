@@ -5,7 +5,6 @@ description: Archive page 32
 section: News
 lang: it
 permalink: /news/page/32/
-alt_url: /en/news/page/32/
 archive_page: 32
 archive_offset: 279
 archive_per_page: 9

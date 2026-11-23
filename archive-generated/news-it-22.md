@@ -5,7 +5,6 @@ description: Archive page 22
 section: News
 lang: it
 permalink: /news/page/22/
-alt_url: /en/news/page/22/
 archive_page: 22
 archive_offset: 189
 archive_per_page: 9

@@ -5,7 +5,6 @@ description: Archive page 38
 section: News
 lang: it
 permalink: /news/page/38/
-alt_url: /en/news/page/38/
 archive_page: 38
 archive_offset: 333
 archive_per_page: 9
