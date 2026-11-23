@@ -169,7 +169,7 @@ Explore the dedicated systematic literature reviews page and the public resource
 <h2 class="wp-block-heading">Sources of information</h2>
 
 <ul>
-<li>ACM Digital Library: <a href="http://dl.acm.com">http://dl.acm.com</a> </li>
+<li>ACM Digital Library: <a href="https://dl.acm.com">https://dl.acm.com</a> </li>
 <li>IEEE Xplore: <a href="https://ieeexplore.ieee.org/">https://ieeexplore.ieee.org/</a></li>
 <li>ISI web of knowledge: <a href="https://apps.webofknowledge.com/">https://apps.webofknowledge.com/</a></li>
 <li>ScienceDirect: <a href="https://www.sciencedirect.com/">https://www.sciencedirect.com/</a> </li>
