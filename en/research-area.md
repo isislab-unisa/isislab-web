@@ -88,7 +88,7 @@ lang: en
 <p>Following several studies on minimizing access conflicts to in-memory data structures, a significant part of the laboratory's work focused on the analysis and design of networks and routing schemes for Peer-to-Peer networks. Within the P2P architecture known as Chord, the laboratory worked on improving the original scheme by proposing a Fibonacci-number-based approach called F-Chord. This solution provides better performance both in terms of routing (maximum and average number of hops) and memory usage (routing table size per node).</p>
 </blockquote>
 
-<h2 class="wp-block-heading">Collaborative and Social Computing</h2>
+<h2 id="collaborative-and-social-computing" class="wp-block-heading">Collaborative and Social Computing</h2>
 
 <ul>
 <li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003120&amp;lid=0.10003120">Human-centered computing</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003130&amp;lid=0.10003120.10003130">Collaborative and social computing</a></li>
@@ -147,7 +147,7 @@ lang: en
 <p>Among the main contributions, one of the first adaptive Web systems and one of the first synchronous collaborative Web navigation systems were developed in 1998, while early applications of profiling to e-commerce were also proposed and analyzed. In this context, the potential of these systems in educational settings was also investigated, with adaptivity based on the behavior of individual users within a group.</p>
 </blockquote>
 
-<h2 class="wp-block-heading">Visualization and Interaction</h2>
+<h2 id="visualization-and-interaction" class="wp-block-heading">Visualization and Interaction</h2>
 
 <p class="has-drop-cap">Part of the laboratory's research focuses on investigating how information can be better represented and how interactions with users can be managed in a variety of contexts. The research directions pursued have aimed at developing interactive visualizations that remain scalable even when used extensively by large numbers of users, while efficiently supporting the monitoring of complex processes. Several applications of Virtual Reality have also been explored in the field of Cultural Heritage and the reconstruction of archaeological sites, including the use of design methodologies borrowed from the video game industry (Serious Games). Finally, some research has also investigated and contributed to the field of innovative interfaces through the use of visual and auditory metaphors, as well as the use of graphics processors to model complex behaviors.</p>
 

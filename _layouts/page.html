@@ -12,8 +12,8 @@ layout: default
     <article class="page-content lab-card prose">{{ content }}</article>
     <aside class="page-sidebar">
       <div class="sidebar-card"><span class="sidebar-kicker">{{ t.section }}</span><h3>{{ t.explore_lab }}</h3>
-        <a href="{{ prefix | append: '/pubblicazioni-scientifiche/' | relative_url }}">{{ t.publications }} <span>↗</span></a>
-        <a href="{{ prefix | append: '/progetti/' | relative_url }}">{{ t.projects }} <span>↗</span></a>
+        <a href="{% if locale == 'en' %}{{ '/en/scientific-publications/' | relative_url }}{% else %}{{ '/pubblicazioni-scientifiche/' | relative_url }}{% endif %}">{{ t.publications }} <span>↗</span></a>
+        <a href="{% if locale == 'en' %}{{ '/en/projects/' | relative_url }}{% else %}{{ '/progetti/' | relative_url }}{% endif %}">{{ t.projects }} <span>↗</span></a>
         <a href="{{ prefix | append: '/news/' | relative_url }}">News <span>↗</span></a>
       </div>
     </aside>
