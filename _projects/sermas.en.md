@@ -53,7 +53,7 @@ links:
   - label: "Poste Italiane - SERMAS Project"
     url: "https://www.posteitaliane.it/it/progetto-sermas.html"
   - label: "CeRICT"
-    url: "https://www.cerict.it/it/"
+    url: "https://www.cerict.it"
 
 # ENGLISH DESCRIPTION
 description: >

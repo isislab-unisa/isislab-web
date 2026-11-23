@@ -61,7 +61,7 @@ links:
   - label: "CHANGES Cascade Funding Call – Approval and Funding Decree"
     url: "https://isislab-unisa.github.io/assets/media/3eeda480671900-decreto-approvaz-finanz-pe5-changes.pdf"
   - label: "CeRICT"
-    url: "https://www.cerict.it/it/"
+    url: "https://www.cerict.it"
   - label: "Department of Computer Science – UNISA"
     url: "http://www.di.unisa.it/"
   - label: "Department of Industrial Engineering – UNISA"
