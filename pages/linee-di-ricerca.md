@@ -4,6 +4,7 @@ lang: it
 title: Linee di ricerca
 description: Le tre macroaree del laboratorio ISISLab comprendono High Performance Computing, algoritmi su grafi e ipergrafi, analisi delle reti sociali, Web semantico, intelligenza artificiale e tecnologie immersive.
 permalink: /linee-di-ricerca/
+alt_url: /en/research-area/
 section: Pagina
 article_kind: imported_page
 custom_css:
