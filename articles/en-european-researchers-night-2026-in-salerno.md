@@ -7,10 +7,10 @@ alt_url: /news/european-researchers-night-2026-in-salerno/
 date: '2026-10-12'
 permalink: /en/news/european-researchers-night-2026-in-salerno/
 section: News
+local_hero_image: /assets/img/news/it-s-t-r-e-e-t-s-notte-europea-dei.png
+local_thumbnail_image: /assets/img/news/it-s-t-r-e-e-t-s-notte-europea-dei.png
 description: ISISLab participated in European Researchers’ Night in Salerno, presenting interactive demonstrations involving
   AI, immersive technologies and animated 3D avatars.
 ---
 
 ISISLab participated in European Researchers’ Night in Salerno, presenting interactive demonstrations involving AI, immersive technologies and animated 3D avatars.
-
-*News overview.*

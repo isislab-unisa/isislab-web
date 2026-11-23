@@ -15,8 +15,7 @@ archive_next: /en/news/page/2/
 archive_previous: null
 ---
 
-## Laboratory updates
 
-Browse news available in this project. After an authorized WordPress migration, additional downloaded posts appear in this local index and each has its own article page.
+## News and Updates
 
-Find more activities in [seminars]({{ '/en/events/list/' | relative_url }}) and the [blog]({{ '/en/blog/' | relative_url }}).
+This section features news about ISISLab's activities, including funded research projects, awards and academic recognitions, scientific initiatives, events, and Third Mission activities.
