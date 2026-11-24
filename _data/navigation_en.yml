@@ -35,7 +35,7 @@
   #- title: Partnerships and Agreements
    # url:  en/partnership-and-agreements/
 - title: News
-  url: /en/news-and-blog/
+  url: /en/news/
   children:
   - title: News and Insights
     url: /en/news-and-insights/
