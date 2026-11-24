@@ -109,4 +109,4 @@ The project brings together four organisations with complementary expertise:
 - [Official XRTwinScape project page](https://isislab-unisa.github.io/XRTwinScape/).
 - [Source code and documentation on GitHub](https://github.com/isislab-unisa/XRTwinScape).
 - [XR2Learn Open Call 2](https://xr2learn.eu/open-call-2/).
-- [Immersive learning experiences](https://xrtwinscape.di.unisa.it/).
+
