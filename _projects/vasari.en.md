@@ -95,4 +95,3 @@ The project is promoted and implemented by a partnership comprising companies, u
 ## Resources and Links
 
 - [VASARI official website](https://vasari.conform.it/)
-- [Project profile on the PON Research and Innovation portal](https://ponricerca.gov.it/comunicazione/esempi-di-progetto/ricerca-industriale-e-sviluppo-sperimentale/vasari-valorizzazione-smart-del-patrimonio-artistico-delle-citt%C3%A0-italiane/)

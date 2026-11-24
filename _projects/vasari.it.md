@@ -94,4 +94,3 @@ Il progetto è promosso e attuato da un partenariato composto da imprese, univer
 ## Risorse e collegamenti
 
 - [Sito ufficiale VASARI](https://vasari.conform.it/)
-- [Scheda progetto sul portale PON Ricerca e Innovazione](https://ponricerca.gov.it/comunicazione/esempi-di-progetto/ricerca-industriale-e-sviluppo-sperimentale/vasari-valorizzazione-smart-del-patrimonio-artistico-delle-citt%C3%A0-italiane/)
