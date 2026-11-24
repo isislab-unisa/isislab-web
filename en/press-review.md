@@ -11,7 +11,7 @@ archive_offset: 0
 archive_per_page: 9
 archive_total_pages: 2
 archive_root: /en/press-review/
-archive_next: /en/press-review/2/
+archive_next: /en/press-review/page/2/
 archive_previous: null
 ---
 ## Press coverage

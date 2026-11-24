@@ -5,7 +5,7 @@ description: Archive page 2
 section: Press
 lang: it
 permalink: /rassegna-stampa/page/2/
-alt_url: /en/rassegna-stampa/page/2/
+alt_url: /en/press-review/page/2/
 archive_page: 2
 archive_offset: 9
 archive_per_page: 9

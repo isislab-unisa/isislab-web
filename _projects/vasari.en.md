@@ -33,8 +33,6 @@ website: "https://vasari.conform.it/"
 links:
   - label: "VASARI official website"
     url: "https://vasari.conform.it/"
-  - label: "Project profile – PON Research and Innovation"
-    url: "https://ponricerca.gov.it/comunicazione/esempi-di-progetto/ricerca-industriale-e-sviluppo-sperimentale/vasari-valorizzazione-smart-del-patrimonio-artistico-delle-citt%C3%A0-italiane/"
 
 description: "Industrial research and experimental development project aimed at the smart enhancement of the artistic heritage of Italian cities through digital technologies, cloud platforms, and augmented and virtual reality."
 
