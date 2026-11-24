@@ -5,7 +5,6 @@ title: Tesisti…sono stati in ISISLab
 description: 'In questo laboratorio, diretto da Vittorio Scarano, si svolgono attività di ricerca e di didattica.
   Tutti gli studenti che hanno svolto la loro tesi in ISISLab: 2026 2025 2024 2023 […]'
 permalink: /tesisti-sono-stati-in-isislab/
-alt_url: /en/tesisti-sono-stati-in-isislab/
 section: Pagina
 article_kind: imported_page
 ---
@@ -346,7 +345,7 @@ article_kind: imported_page
 <h4 class="wp-block-heading">2023</h4>
 
 <ul>
-<li> <a data-id="valdip" data-type="URL" href="http://valdip">Valerio Di Pasquale</a>
+<li> Valerio Di Pasquale
 <ul>
 <li>Laurea Triennale</li>
 
@@ -598,7 +597,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/news/gerryb/" rel="noreferrer noopener">Pietro Russo</a>
+<li>Pietro Russo
 <ul>
 <li><strong>Laurea Magistrale</strong></li>
 
@@ -732,7 +731,7 @@ article_kind: imported_page
 </ul>
 </li>
 
-<li><a href="http://lucpost" rel="noreferrer noopener">Luca Postiglione</a>
+<li>Luca Postiglione
 <ul>
 <li><strong>Laurea Magistrale</strong></li>
 
@@ -742,7 +741,7 @@ article_kind: imported_page
 </ul>
 </li>
 
-<li><a href="http://andpie" rel="noreferrer noopener">Andrea di Pierno</a>
+<li>Andrea di Pierno
 <ul>
 <li><strong>Laurea Triennale</strong></li>
 
@@ -1026,7 +1025,7 @@ article_kind: imported_page
 </ul>
 </li>
 
-<li><a data-id="salsir" data-type="URL" href="http://salsir">Salvatore Sirica</a>
+<li>Salvatore Sirica
 <ul>
 <li><strong>Laurea </strong>Triennale</li>
 
@@ -1110,7 +1109,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giugrie/" rel="noreferrer noopener">Giuseppe Grieco</a></strong>
+<li><strong>Giuseppe Grieco</strong>
 <ul>
 <li><strong>Laurea Triennale</strong></li>
 
@@ -1122,7 +1121,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/news/user-salsan/" rel="noreferrer noopener">Salvatore Santelia</a></strong>
+<li><strong>Salvatore Santelia</strong>
 <ul>
 <li><strong>Laurea Triennale</strong></li>
 
@@ -1208,7 +1207,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><a href="/user-simbis/" rel="noreferrer noopener">Simone Bisogno</a>
+<li>Simone Bisogno
 <ul>
 <li>Tesi di Informatica Triennale</li>
 
@@ -1220,7 +1219,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-aleant/" rel="noreferrer noopener">Alessia Antelmi</a>
+<li>Alessia Antelmi
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1232,7 +1231,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-margar/" rel="noreferrer noopener">Martina Garofalo</a>
+<li>Martina Garofalo
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1244,7 +1243,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-marpel/">Maria Angela Pellegrino</a>
+<li>Maria Angela Pellegrino
 <ul>
 <li>T<strong>esi di Informatica Magistrale</strong></li>
 
@@ -1256,7 +1255,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-vinnun/">Vincenzo Nunziata</a>
+<li>Vincenzo Nunziata
 <ul>
 <li><strong>Tesi di Informatica Triennale</strong></li>
 
@@ -1284,7 +1283,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-dontia/"><strong>Donato Tiano</strong></a>
+<li><strong>Donato Tiano</strong>
 <ul>
 <li>Laurea<strong>Titolo Tesi</strong> : "Predire casi di Ipotensione Acuta utilizzando il modello Arima"<strong>Data di laurea</strong>: Ottobre 2017</li>
 </ul>
@@ -1304,7 +1303,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-clapip/">Claudia Pipino</a></strong>
+<li><strong>Claudia Pipino</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1316,7 +1315,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antcag/">Antonio Caggiano</a> </strong></li>
+<li><strong>Antonio Caggiano </strong></li>
 
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1326,7 +1325,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-mascar/">Massimo Caruso</a> </strong></li>
+<li><strong>Massimo Caruso </strong></li>
 
 <li><strong>Tesi di Informatica di II livello</strong></li>
 
@@ -1336,7 +1335,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-darcas/">Dario Castellano</a></strong>
+<li><strong>Dario Castellano</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -1348,7 +1347,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-mardar/">Maria D’arco</a></strong>
+<li><strong>Maria D’arco</strong>
 <ul>
 <li><strong>Tesi di Informatica di II livello</strong></li>
 
@@ -1360,7 +1359,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-nicgae/">Nicola Gaeta</a></strong>
+<li><strong>Nicola Gaeta</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1372,7 +1371,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-frarai/">Francesco Raia</a> </strong>
+<li><strong>Francesco Raia </strong>
 <ul>
 <li>T<strong>esi di Informatica di II livello</strong></li>
 
@@ -1388,7 +1387,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-vinsan/">Vincenzo Santoro</a></strong></li>
+<li><strong>Vincenzo Santoro</strong></li>
 
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1398,7 +1397,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-robgua/">Roberta Guadagni</a> </strong>
+<li><strong>Roberta Guadagni </strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1410,7 +1409,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-marfio/"><strong>Marco Fiorillo</strong></a>
+<li><strong>Marco Fiorillo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1422,7 +1421,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-paodir/">Paolo Di Rauso</a></strong>
+<li><strong>Paolo Di Rauso</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1434,7 +1433,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giuimp/">Giulio Imperato</a></strong>
+<li><strong>Giulio Imperato</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1446,7 +1445,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-simpet/">Simone Petrosino</a></strong>
+<li><strong>Simone Petrosino</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1458,7 +1457,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antrap/">Antonio Rapuano</a></strong>
+<li><strong>Antonio Rapuano</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1470,7 +1469,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giuang/">Giuseppe Angri</a></strong>
+<li><strong>Giuseppe Angri</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1486,7 +1485,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><a href="/user-antspa/">Antonio Spatuzzi</a>
+<li>Antonio Spatuzzi
 <ul>
 <li><strong>Laurea</strong></li>
 
@@ -1498,7 +1497,7 @@ article_kind: imported_page
 </ul>
 
 <ol>
-<li><strong><a href="/user-fedcoz/">Federico Cozza</a></strong>
+<li><strong>Federico Cozza</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1510,7 +1509,7 @@ article_kind: imported_page
 </ol>
 
 <ul>
-<li><a href="/user-ameesp/"><strong>Amedeo Roberto Esposito</strong></a>
+<li><strong>Amedeo Roberto Esposito</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1522,7 +1521,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-enrlor/"><strong>Enrica Loria</strong></a>
+<li><strong>Enrica Loria</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1534,7 +1533,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marpel/">Maria Angela Pellegrino</a></strong>
+<li><strong>Maria Angela Pellegrino</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1546,7 +1545,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-enrpar/"><strong>Enrico Paraggio</strong></a>
+<li><strong>Enrico Paraggio</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1558,7 +1557,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-micspi/"><strong>Michele Spina</strong></a>
+<li><strong>Michele Spina</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1570,7 +1569,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-laucam/">Laura Campajola</a></strong>
+<li><strong>Laura Campajola</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1582,7 +1581,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giocia/">Gioele Ciaparrone</a></strong>
+<li><strong>Gioele Ciaparrone</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1594,7 +1593,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-margar/"><strong>Martina Garofalo</strong></a>
+<li><strong>Martina Garofalo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1606,7 +1605,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-aleant/">Alessia Antelmi</a></strong>
+<li><strong>Alessia Antelmi</strong>
 <ul>
 <li><strong>Tesi di Informatica Triennale</strong></li>
 
@@ -1618,7 +1617,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-carcol/">Carmine Colicino</a></strong>
+<li><strong>Carmine Colicino</strong>
 <ul>
 <li><strong>Tesi di Informatica Triennale</strong></li>
 
@@ -1630,7 +1629,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marcap/">Mario Capuozzo</a></strong>
+<li><strong>Mario Capuozzo</strong>
 <ul>
 <li><strong>Tesi di Informatica Triennale</strong></li>
 
@@ -1642,7 +1641,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giucar/">Giuliana Carullo</a></strong>
+<li><strong>Giuliana Carullo</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1654,7 +1653,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antmau/">Antonio Mautone</a></strong>
+<li><strong>Antonio Mautone</strong>
 <ul>
 <li><strong>Tesi di Informatica Triennale</strong></li>
 
@@ -1670,7 +1669,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><a href="/user-miccia/">Michelangelo Cianciulli</a>
+<li>Michelangelo Cianciulli
 <ul>
 <li><strong>Titolo Tesi</strong>: “Evaluation of different feedback and representations of an ideal trajectory in a driving simulator” </li>
 
@@ -1680,7 +1679,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><a href="/user-pascos/">Pasquale Cosimato</a>
+<li>Pasquale Cosimato
 <ul>
 <li><strong>Titolo Tesi</strong>: “A comparison of visualization techniques for a bicycle simulator” </li>
 
@@ -1690,7 +1689,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-angcia/">Angelo Ciaravola</a></strong>
+<li><strong>Angelo Ciaravola</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1702,7 +1701,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-luidam/">Luigi D’Amora</a></strong>
+<li><strong>Luigi D’Amora</strong>
 <ul>
 <li><strong>Tesi di Informatica di II livello</strong></li>
 
@@ -1714,7 +1713,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-armfag/">Armando Faggiano</a></strong>
+<li><strong>Armando Faggiano</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1726,7 +1725,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giufra/">Giulio Franco</a></strong>
+<li><strong>Giulio Franco</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1738,7 +1737,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-adaman/">Ada Mancuso</a></strong>
+<li><strong>Ada Mancuso</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1750,7 +1749,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gialan/">Gianluca Landi</a></strong>
+<li><strong>Gianluca Landi</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1762,7 +1761,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-framil/">Francesco Milone</a></strong>
+<li><strong>Francesco Milone</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1774,7 +1773,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gabnap/">Gabriele Napoli</a></strong>
+<li><strong>Gabriele Napoli</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1786,7 +1785,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-lucpep/">Luca Pepe</a></strong>
+<li><strong>Luca Pepe</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -1798,7 +1797,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-simrom/">Simone Romano</a></strong>
+<li><strong>Simone Romano</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1810,7 +1809,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-andsol/">Andrea Soldà</a></strong>
+<li><strong>Andrea Soldà</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1822,7 +1821,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gabtor/">Gabriella Torelli</a></strong>
+<li><strong>Gabriella Torelli</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1838,7 +1837,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-maramo/">Marco Amoruso</a></strong>
+<li><strong>Marco Amoruso</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1850,19 +1849,19 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-danane/">Daniele Anello</a></strong>
+<li><strong>Daniele Anello</strong>
 <ul>
 <li><strong>Tesi di Informatica</strong> <strong>di I livello</strong></li>
 
 <li><strong>Titolo Tesi</strong>: Streaming on demand di simulazioni in D-Mason</li>
 
-<li><strong>Data di Laurea:</strong> 19 Dicembre 201<a href="/">3</a></li>
+<li><strong>Data di Laurea:</strong> 19 Dicembre 2013</li>
 </ul>
 </li>
 </ul>
 
 <ul>
-<li><strong><a href="/user-dancas/">Daniele Casola</a></strong>
+<li><strong>Daniele Casola</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1874,7 +1873,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-emidim/">Emiliano Di Marino</a></strong>
+<li><strong>Emiliano Di Marino</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1886,7 +1885,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fradil/">Francesco Di Lauro</a></strong>
+<li><strong>Francesco Di Lauro</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1898,7 +1897,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-frafar/">Francesco Farina</a></strong>
+<li><strong>Francesco Farina</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1910,7 +1909,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ivafer/">Ivan Ferrante</a></strong>
+<li><strong>Ivan Ferrante</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1922,7 +1921,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-sabfon/">Sabrina Fontanella</a></strong>
+<li><strong>Sabrina Fontanella</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1934,7 +1933,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-frafor/">Francesco Foresta</a></strong>
+<li><strong>Francesco Foresta</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1946,7 +1945,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fragae/">Francesco Gaetano</a></strong>
+<li><strong>Francesco Gaetano</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -1958,7 +1957,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-clagar/">Claudio Gargiulo</a></strong>
+<li><strong>Claudio Gargiulo</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -1970,7 +1969,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-conmar/">Concetta Marino</a></strong>
+<li><strong>Concetta Marino</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -1982,7 +1981,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-attmon/">Attilio Mondelli</a></strong>
+<li><strong>Attilio Mondelli</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -1994,7 +1993,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-crirai/">Cristiano Raimondi</a></strong>
+<li><strong>Cristiano Raimondi</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2006,7 +2005,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-davrai/">Davide Rainis</a></strong>
+<li><strong>Davide Rainis</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2018,7 +2017,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-iolrin/">Iolanda Rinaldi</a></strong>
+<li><strong>Iolanda Rinaldi</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2030,7 +2029,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-carspa/">Carmine Spagnuolo</a></strong>
+<li><strong>Carmine Spagnuolo</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -2042,7 +2041,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-paovis/">Paolo Viscardi</a></strong>
+<li><strong>Paolo Viscardi</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2054,7 +2053,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-domvis/" rel="noreferrer noopener">Domenico Viscito</a></strong>
+<li><strong>Domenico Viscito</strong>
 <ul>
 <li><strong>Tesi di Informatica Magistrale</strong></li>
 
@@ -2082,7 +2081,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-miccia/">Michele Ciampi</a></strong>
+<li><strong>Michele Ciampi</strong>
 <ul>
 <li><strong>Lab Tesi di Informatica di I livello</strong></li>
 
@@ -2094,7 +2093,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fracol/">Franco Colelli</a></strong>
+<li><strong>Franco Colelli</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2106,7 +2105,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fraise/">Francesco Isernia</a></strong>
+<li><strong>Francesco Isernia</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2118,7 +2117,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ferpic/">Ferdinando Picarella</a></strong>
+<li><strong>Ferdinando Picarella</strong>
 <ul>
 <li><strong>Tesi di Informatica specialistica</strong></li>
 
@@ -2130,7 +2129,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-diesor/">Diego Sorrentino</a></strong>
+<li><strong>Diego Sorrentino</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2142,7 +2141,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-emispa/">Emilio Spatola</a></strong>
+<li><strong>Emilio Spatola</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2154,7 +2153,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-mauvil/">Mauro Villani</a></strong>
+<li><strong>Mauro Villani</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2166,7 +2165,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-stevit/">Stefano Vitale</a></strong>
+<li><strong>Stefano Vitale</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2206,7 +2205,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-genann/">Gennaro Annunziata</a></strong>
+<li><strong>Gennaro Annunziata</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2218,7 +2217,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-valann/">Valeria Annunziata</a></strong>
+<li><strong>Valeria Annunziata</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2230,7 +2229,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-rafarm/">Raffaele Armini</a></strong>
+<li><strong>Raffaele Armini</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2242,7 +2241,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pieaur/">Pietro Aurilio</a></strong>
+<li><strong>Pietro Aurilio</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2254,7 +2253,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pieboc/">Pietro Boccia</a></strong>
+<li><strong>Pietro Boccia</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2266,7 +2265,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giocim/">Giovanni Cimmino</a></strong>
+<li><strong>Giovanni Cimmino</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2278,7 +2277,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-miccar/">Michele Carillo</a></strong>
+<li><strong>Michele Carillo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2290,7 +2289,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-salcas/">Salvatore Cascone</a></strong>
+<li><strong>Salvatore Cascone</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2302,7 +2301,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-alecer/">Alessandro Ceruso</a></strong>
+<li><strong>Alessandro Ceruso</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2314,7 +2313,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-eugcuo/">Eugenio Cuomo</a></strong>
+<li><strong>Eugenio Cuomo</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2326,7 +2325,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-rafdef/">Raffaele De Falco</a></strong>
+<li><strong>Raffaele De Falco</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2338,7 +2337,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-vindem/">Vincenzo De Maio</a></strong>
+<li><strong>Vincenzo De Maio</strong>
 <ul>
 <li>Tesi <strong>di Informatica specialistica</strong></li>
 
@@ -2350,7 +2349,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-micdes/">Michelangelo De Simone</a></strong>
+<li><strong>Michelangelo De Simone</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2362,7 +2361,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ivadig/">Ivan Di Giacomo</a></strong>
+<li><strong>Ivan Di Giacomo</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2374,7 +2373,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fabdiz/">Fabio Di Zazzo</a></strong>
+<li><strong>Fabio Di Zazzo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2386,7 +2385,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antgio/">Antonio Giordano</a></strong>
+<li><strong>Antonio Giordano</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2398,7 +2397,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-adaman/">Ada Mancuso</a></strong>
+<li><strong>Ada Mancuso</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2410,7 +2409,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-carmar/">Carlo Maresca</a></strong>
+<li><strong>Carlo Maresca</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2422,7 +2421,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-darmaz/">Dario Mazzeo</a></strong>
+<li><strong>Dario Mazzeo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2434,7 +2433,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-carmon/">Carmine Montano</a></strong>
+<li><strong>Carmine Montano</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2446,7 +2445,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-frarai/">Francesco Raia</a></strong>
+<li><strong>Francesco Raia</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2458,7 +2457,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pierus/">Pierluigi Russo</a></strong>
+<li><strong>Pierluigi Russo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2470,7 +2469,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-passal/">Pasquale Salza</a></strong>
+<li><strong>Pasquale Salza</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2482,7 +2481,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-angsan/">Angelo Santarella</a></strong>
+<li><strong>Angelo Santarella</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2494,7 +2493,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-darsch/">Dario Schiavone</a></strong>
+<li><strong>Dario Schiavone</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2506,7 +2505,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-flaser/">Flavio Serrapica</a></strong>
+<li><strong>Flavio Serrapica</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2518,7 +2517,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-carspa/">Carmine Spagnuolo</a></strong>
+<li><strong>Carmine Spagnuolo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2530,7 +2529,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-martra/">Marco Tranfaglia</a></strong>
+<li><strong>Marco Tranfaglia</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2542,7 +2541,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-andval/">Andrea Vallati</a></strong>
+<li><strong>Andrea Vallati</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2554,7 +2553,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-lucvis/">Luca Viscito</a></strong>
+<li><strong>Luca Viscito</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2570,7 +2569,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-tomalb/">Tommaso Albano</a></strong>
+<li><strong>Tommaso Albano</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2582,7 +2581,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-emibia/">Emidio Bianco</a></strong>
+<li><strong>Emidio Bianco</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2594,7 +2593,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-cricap/">Cristoforo Caponigri</a></strong>
+<li><strong>Cristoforo Caponigri</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2606,7 +2605,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fracav/">Francesco Cavezza</a></strong>
+<li><strong>Francesco Cavezza</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2618,7 +2617,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-diedic/">Diego Di Cianni</a></strong>
+<li><strong>Diego Di Cianni</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2630,7 +2629,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fabful/">Fabio Fulgido</a></strong>
+<li><strong>Fabio Fulgido</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2642,7 +2641,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-danmon/">Daniele Monaco</a></strong>
+<li><strong>Daniele Monaco</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2666,7 +2665,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-donpir/">Donato Pirozzi</a></strong>
+<li><strong>Donato Pirozzi</strong>
 <ul>
 <li><strong>Tesi di Informatica Specialistica</strong></li>
 
@@ -2678,7 +2677,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marvit/">Mario Fiore Vitale</a></strong>
+<li><strong>Mario Fiore Vitale</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2694,7 +2693,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-albboc/">Alberto Boccardo</a></strong>
+<li><strong>Alberto Boccardo</strong>
 <ul>
 <li><strong>Tesi di Informatica V.O.</strong></li>
 
@@ -2706,7 +2705,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-mircen/">Mirco Cennamo</a></strong>
+<li><strong>Mirco Cennamo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2718,7 +2717,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marcon/">Mario Conti</a></strong>
+<li><strong>Mario Conti</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2730,7 +2729,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giuconv/">Giulio Conversano</a></strong>
+<li><strong>Giulio Conversano</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2742,7 +2741,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giacut/">Gianpietro Cutolo</a></strong>
+<li><strong>Gianpietro Cutolo</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -2754,7 +2753,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-robdir/">Roberto Di Russo</a></strong>
+<li><strong>Roberto Di Russo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2766,7 +2765,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-annfie/">Annunziato Fierro</a></strong>
+<li><strong>Annunziato Fierro</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2778,7 +2777,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-frola/">Bernardino Frola</a></strong>
+<li><strong>Bernardino Frola</strong>
 <ul>
 <li><strong>Laurea Specialistica in Informatica</strong></li>
 
@@ -2790,7 +2789,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-andgua/">Andrea Guaiana</a></strong>
+<li><strong>Andrea Guaiana</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2802,7 +2801,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giomag/">Giovanni Maggiolini</a></strong>
+<li><strong>Giovanni Maggiolini</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -2814,7 +2813,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-m3l/">Umberto Mercogliano</a></strong>
+<li><strong>Umberto Mercogliano</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -2826,7 +2825,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ferpic/">Ferdinando Picarella</a></strong>
+<li><strong>Ferdinando Picarella</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -2838,7 +2837,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pristella/">Anna Pizzuti</a></strong>
+<li><strong>Anna Pizzuti</strong>
 <ul>
 <li><strong>Laurea Specialistica in Informatica</strong></li>
 
@@ -2850,7 +2849,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-crirao/">Cristina Rao</a></strong>
+<li><strong>Cristina Rao</strong>
 <ul>
 <li>T<strong>esi di Informatica di I livello</strong></li>
 
@@ -2862,7 +2861,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gaeroc/">Gaetano Rocco</a></strong>
+<li><strong>Gaetano Rocco</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2874,7 +2873,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-serval/">Sergio Vassallo</a></strong>
+<li><strong>Sergio Vassallo</strong>
 <ul>
 <li>Tesi di Informatica V.O.</li>
 
@@ -2886,7 +2885,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pasvit/">Pasquale Vitale</a></strong>
+<li><strong>Pasquale Vitale</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2902,7 +2901,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-armarl/">Armando Arleo</a></strong>
+<li><strong>Armando Arleo</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2914,7 +2913,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-dombra/">Domenico Braca</a></strong>
+<li><strong>Domenico Braca</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livell</strong>o</li>
 
@@ -2924,7 +2923,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-muten84/">Luigi Bifulco</a></strong>
+<li><strong>Luigi Bifulco</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -2936,7 +2935,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-albboc/">Alberto Boccardo</a></strong>
+<li><strong>Alberto Boccardo</strong>
 <ul>
 <li>Tesi di Informatica V.O.</li>
 
@@ -2948,7 +2947,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-luccap/">Luca Caputo</a></strong>
+<li><strong>Luca Caputo</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -2960,7 +2959,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giocim/">Giovanni Cimmino</a></strong>
+<li><strong>Giovanni Cimmino</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -2972,7 +2971,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-krys/">Cristiano Davino</a></strong>
+<li><strong>Cristiano Davino</strong>
 <ul>
 <li>L<strong>aurea di Informatica di I livello</strong></li>
 
@@ -2984,7 +2983,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-vindem/">Vincenzo De Maio</a></strong>
+<li><strong>Vincenzo De Maio</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -2996,7 +2995,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ivadig/">Ivan Di Giacomo</a></strong>
+<li><strong>Ivan Di Giacomo</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3008,7 +3007,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marfal/">Marco Falcione</a></strong>
+<li><strong>Marco Falcione</strong>
 <ul>
 <li>Tesi di Informatica di I livello</li>
 
@@ -3020,7 +3019,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-kenzo47/">Vincenzo Ferri</a></strong>
+<li><strong>Vincenzo Ferri</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3032,7 +3031,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antgio/">Antonio Giordano</a></strong>
+<li><strong>Antonio Giordano</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -3044,7 +3043,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giuian/">Giuseppe Iannone</a></strong>
+<li><strong>Giuseppe Iannone</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3056,7 +3055,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gerlom/">Gerardo Lombardo</a></strong>
+<li><strong>Gerardo Lombardo</strong>
 <ul>
 <li><strong>Laurea di Informatica V.O.</strong></li>
 
@@ -3068,7 +3067,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-salruo/">Salvatore Ruocco</a></strong>
+<li><strong>Salvatore Ruocco</strong>
 <ul>
 <li><strong>Laurea di Informatica V.O.</strong></li>
 
@@ -3080,7 +3079,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-salva3/">Antonio Salvati</a></strong>
+<li><strong>Antonio Salvati</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -3092,7 +3091,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pastre/">Pasquale Trezza</a></strong>
+<li><strong>Pasquale Trezza</strong>
 <ul>
 <li>L<strong>aurea di Informatica di I livello</strong></li>
 
@@ -3104,7 +3103,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-lucvic/">Luca Vicidomini</a></strong>
+<li><strong>Luca Vicidomini</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3116,7 +3115,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-danzir/">Daniele Zirpoli</a></strong>
+<li><strong>Daniele Zirpoli</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3128,7 +3127,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-dombra/">Domenico Braca</a></strong>
+<li><strong>Domenico Braca</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3140,7 +3139,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-muten84/">Luigi Bifulco</a></strong>
+<li><strong>Luigi Bifulco</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -3152,7 +3151,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-albboc/">Alberto Boccardo</a></strong>
+<li><strong>Alberto Boccardo</strong>
 <ul>
 <li>T<strong>esi di Informatica V.O.</strong></li>
 
@@ -3164,7 +3163,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-luccap/">Luca Caputo</a></strong>
+<li><strong>Luca Caputo</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3176,7 +3175,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giocim/">Giovanni Cimmino</a></strong>
+<li><strong>Giovanni Cimmino</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3188,7 +3187,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-krys/">Cristiano Davino</a></strong>
+<li><strong>Cristiano Davino</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3200,7 +3199,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-vindem/">Vincenzo De Maio</a></strong>
+<li><strong>Vincenzo De Maio</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -3212,7 +3211,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-ivadig/">Ivan Di Giacomo</a></strong>
+<li><strong>Ivan Di Giacomo</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3225,7 +3224,7 @@ article_kind: imported_page
 
 
 <ul>
-<li><strong><a href="/user-marfal/">Marco Falcione</a></strong></li>
+<li><strong>Marco Falcione</strong></li>
 
 <li>Tesi di Informatica di I livello</li>
 
@@ -3239,7 +3238,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-kenzo47/">Vincenzo Ferri</a></strong>
+<li><strong>Vincenzo Ferri</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3251,7 +3250,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-antgio/">Antonio Giordano</a></strong>
+<li><strong>Antonio Giordano</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -3263,7 +3262,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giuian/">Giuseppe Iannone</a></strong>
+<li><strong>Giuseppe Iannone</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3275,7 +3274,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-gerlom/">Gerardo Lombardo</a></strong>
+<li><strong>Gerardo Lombardo</strong>
 <ul>
 <li><strong>Laurea di Informatica V.O.</strong></li>
 
@@ -3287,7 +3286,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-salruo/">Salvatore Ruocco</a></strong>
+<li><strong>Salvatore Ruocco</strong>
 <ul>
 <li><strong>Laurea di Informatica V.O.</strong></li>
 
@@ -3299,7 +3298,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-salva3/">Antonio Salvati</a></strong>
+<li><strong>Antonio Salvati</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -3311,7 +3310,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-pastre/">Pasquale Trezza</a></strong>
+<li><strong>Pasquale Trezza</strong>
 <ul>
 <li>Laurea di Informatica di I livello</li>
 
@@ -3323,7 +3322,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-lucvic/">Luca Vicidomini</a></strong>
+<li><strong>Luca Vicidomini</strong>
 <ul>
 <li><strong>Tesi di Informatica di I livello</strong></li>
 
@@ -3335,7 +3334,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-danzir/">Daniele Zirpoli</a></strong>
+<li><strong>Daniele Zirpoli</strong>
 <ul>
 <li><strong>Laurea di Informatica di I livello</strong></li>
 
@@ -3351,7 +3350,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-vinago/">Vincenzo Agosti</a></strong>
+<li><strong>Vincenzo Agosti</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3376,7 +3375,7 @@ article_kind: imported_page
 
 
 <ul>
-<li><strong><a href="/user-andpet/">Andrea Petta</a></strong>
+<li><strong>Andrea Petta</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3388,7 +3387,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-luiser/">Luigi Serra</a></strong>
+<li><strong>Luigi Serra</strong>
 <ul>
 <li>Laurea di Informatica di I Livello</li>
 
@@ -3400,7 +3399,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-donpir/">Donato Pirozzi</a></strong>
+<li><strong>Donato Pirozzi</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3412,7 +3411,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-giasor/">Gianfranco Sorrentino</a></strong>
+<li><strong>Gianfranco Sorrentino</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3425,7 +3424,7 @@ article_kind: imported_page
 
 
 <ul>
-<li><strong><a href="/user-darsca/">Dario Scarpa</a></strong>
+<li><strong>Dario Scarpa</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3437,7 +3436,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-biacos/">Biagio Cosenza</a></strong>
+<li><strong>Biagio Cosenza</strong>
 <ul>
 <li>Laurea Specialistica in Informatica</li>
 
@@ -3449,7 +3448,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-fracar/">Francesco Carotenuto</a></strong>
+<li><strong>Francesco Carotenuto</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3461,7 +3460,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-armarl/">Armando Arleo</a></strong>
+<li><strong>Armando Arleo</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3477,7 +3476,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-palban/">Pietro Albano</a></strong>
+<li><strong>Pietro Albano</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3489,7 +3488,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-angcaf/">Angelo Cafaro</a></strong>
+<li><strong>Angelo Cafaro</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3501,7 +3500,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-spike/">Raffaele Spinelli</a></strong>
+<li><strong>Raffaele Spinelli</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 
@@ -3513,7 +3512,7 @@ article_kind: imported_page
 </ul>
 
 <ul>
-<li><strong><a href="/user-marvol/">Marco Volpe</a></strong>
+<li><strong>Marco Volpe</strong>
 <ul>
 <li>Laurea di Informatica V.O.</li>
 
@@ -3529,7 +3528,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-antaut/">Antonio Autorino</a></strong>
+<li><strong>Antonio Autorino</strong>
 <ul>
 <li><strong>Laurea di Informatica Specialistica</strong></li>
 
@@ -3545,7 +3544,7 @@ article_kind: imported_page
 <hr class="wp-block-separator has-css-opacity"/>
 
 <ul>
-<li><strong><a href="/user-antaut/">Antonio Autorino</a></strong>
+<li><strong>Antonio Autorino</strong>
 <ul>
 <li><strong>Laurea di Informatica di I Livello</strong></li>
 

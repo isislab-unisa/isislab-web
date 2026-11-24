@@ -32,7 +32,7 @@ article_kind: imported_page
 <p><strong>UNISA Bachelor's Degree in Computer Science:</strong> <a href="https://corsi.unisa.it/informatica/didattica/esame-finale">https://corsi.unisa.it/informatica/didattica/esame-finale</a>.</p>
 <p><strong>UNISA Master's Degree in Computer Science:</strong> <a href="https://corsi.unisa.it/informatica-magistrale/didattica/esame-finale">https://corsi.unisa.it/informatica-magistrale/didattica/esame-finale</a>.</p>
 <p>The duly completed documents must be emailed to Dr Giusy Gonnella so that the supervising professor can sign them.</p>
-<p><strong>Dr Giusy Gonnella's email address:</strong> <a href="/ggonnella-unisa-it/">ggonnella@unisa.it</a>.</p> </div>
+<p><strong>Dr Giusy Gonnella's email address:</strong> <a href="mailto:ggonnella@unisa.it">ggonnella@unisa.it</a>.</p> </div>
 </div>
 </div>
 </div>

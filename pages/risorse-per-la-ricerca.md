@@ -2,7 +2,7 @@
 layout: page
 lang: it
 title: Risorse per la ricerca
-description: 
+description:
  Risorse utili per la ricerca accademica, con riferimenti sugli indicatori bibliometrici e materiali dei seminari sulle Systematic Literature Reviews (SLR) tenuti da Vittorio Scarano il 14 gennaio 2020 per gli studenti del Dottorato di Ricerca in Informatica. Qui sono raccolti link, riferimenti e risorse condivisi all'interno della comunità di ricerca […]
 permalink: /risorse-per-la-ricerca/
 alt_url: /en/research-resources/
@@ -32,16 +32,16 @@ article_kind: imported_page
 </li>
 <li>SCOPUS:
 <ul>
-<li><a aria-label="valutazione dei journals (opens in a new tab)" href="https://www.scopus.com/sources?sortField=citescore&amp;sortDirection=desc&amp;isHiddenField=false&amp;field=subject&amp;subject=&amp;asjcs=17&amp;_openAccess=on&amp;_countCheck=on&amp;count=0&amp;countField=documentsMin&amp;_bestPercentile=on&amp;_quartile=on&amp;_quartile=on&amp;_quartile=on&amp;_quartile=on&amp;_type=on&amp;_type=on&amp;_type=on&amp;_type=on&amp;year=2018&amp;offset=&amp;resultsPerPage=20" rel="noreferrer noopener">valutazione dei journals</a> rispetto alla propria area e sottoarea con indicazione di CiteScore e citazioni recenti</li>
+<li><a aria-label="valutazione dei journals (opens in a new tab)" href="https://www.scopus.com/sources" rel="noreferrer noopener">valutazione dei journals</a> rispetto alla propria area e sottoarea con indicazione di CiteScore e citazioni recenti</li>
 </ul>
 </li>
-<li><a aria-label="Lista dei journals (opens in a new tab)" href="http://www3.unich.it/vqranvur/Criteri%20GEV/allegati%201/Computer_Science.pdf" rel="noreferrer noopener">Lista dei journals</a> del GEV (per VQR 2004-2010 di ANVUR) da Università di Chieti
+<li><a href="/assets/media/a36fc2b28cad3c-computer-science.pdf">Lista delle riviste di informatica del GEV per la VQR 2004–2010 (PDF)</a>
 <ul>
-<li><a aria-label="da Università di Padova con la relazione (opens in a new tab)" href="https://www.math.unipd.it/it/dipartimento/valutazione/VQR2004-2010_Area01_Appendici.pdf" rel="noreferrer noopener">da Università di Padova con la relazione</a></li>
+<li>Appendici al rapporto di Area 1, VQR 2004–2010 (riferimento storico).</li>
 </ul>
 </li>
-<li>Conference rating (Italia (GRIN-GII) e Spagna (SCIE): <a href="http://valutazione.unibas.it/gii-grin-scie-rating/">http://valutazione.unibas.it/gii-grin-scie-rating/</a></li>
-<li>Indicazioni del GRIN sulla valutazione: <a href="http://www.grin-informatica.it/opencms/opencms/grin/ricerca/valutazione">http://www.grin-informatica.it/opencms/opencms/grin/ricerca/valutazione</a> </li>
+<li>Conference rating GII-GRIN-SCIE (Italia e Spagna): <a href="https://scie.lcc.uma.es/">classificazione delle conferenze di informatica</a></li>
+<li>Indicazioni del GRIN sulla valutazione: <a href="https://www.grin-informatica.it/valutazione/">https://www.grin-informatica.it/valutazione/</a> </li>
 </ul>
 
 <figure class="wp-block-image">
@@ -53,23 +53,22 @@ article_kind: imported_page
 <p>Nella valutazione delle proprie attività di ricerca, sempre maggiore importanza assumono gli indicatori bibliometrici sulle proprie pubblicazioni. Ecco alcuni strumenti da utilizzare per valutare i propri!</p>
 
 <ul>
-<li>Scopus:  <a aria-label="ricerca per autore (opens in a new tab)" href="https://www.scopus.com/search/form.uri#author" rel="noreferrer noopener">ricerca per autore</a> </li>
-<li>Web of Science: <a aria-label="ricerca per autore (opens in a new tab)" href="http://wcs.webofknowledge.com/AF/AFHome.do?product=WOS&amp;editions=BSCI,BHCI,SCI,ESCI,AHCI,SSCI,ISSHP,ISTP&amp;endDate=null&amp;rurl=http%3A%2F%2Fapps.webofknowledge.com%2FWOS_GeneralSearch_input.do%3Fproduct%3DWOS%26search_mode%3DGeneralSearch%26preferencesSaved%3D%26SID%3DF1gZg5pJhDcOdxjcC9X%26PointOfEntry%3Dhome&amp;startDate=null&amp;SID=F1gZg5pJhDcOdxjcC9X" rel="noreferrer noopener">ricerca per autore</a> </li>
+<li>Scopus:  <a aria-label="ricerca per autore (opens in a new tab)" href="https://www.scopus.com/freelookup/form/author.uri" rel="noreferrer noopener">ricerca per autore</a> </li>
+<li>Web of Science: <a aria-label="ricerca per autore (opens in a new tab)" href="https://www.webofscience.com/wos/author/author-search" rel="noreferrer noopener">ricerca per autore</a> </li>
 <li><a aria-label="Google Scholar (opens in a new tab)" href="https://scholar.google.it/" rel="noreferrer noopener">Google Scholar</a></li>
 <li>ACM Digital Library: <a aria-label="https://dl.acm.org (opens in a new tab)" href="https://dl.acm.org" rel="noreferrer noopener">https://dl.acm.org</a> </li>
-<li>Academic Microsoft: <a href="https://academic.microsoft.com/">https://academic.microsoft.com</a></li>
 </ul>
 
 <h2 class="wp-block-heading">Approfondimenti</h2>
 
 <h3 class="wp-block-heading">Valutazione della Qualità della Ricerca (VQR)</h3>
 
-<p>Se volete sapere di più sulla Valutazione della Qualità della Ricerca (VQR), come presentato dall'ANVUR (Agenzia Nazionale della Valutazione dell'Università e della Ricerca): <a href="https://www.anvur.it/attivita/vqr/">https://www.anvur.it/attivita/vqr/</a> .</p>
+<p>Se volete sapere di più sulla Valutazione della Qualità della Ricerca (VQR), come presentato dall'ANVUR (Agenzia Nazionale della Valutazione dell'Università e della Ricerca): <a href="https://www.anvur.it/it/ricerca/qualita-della-ricerca">https://www.anvur.it/it/ricerca/qualita-della-ricerca</a> .</p>
 
 <h2 class="wp-block-heading">VQR 2011-2014: </h2>
 
 <ul>
-<li>Pagina della Area 1 - Scienze Matematiche e Informatiche <a aria-label=" (opens in a new tab)" href="https://www.anvur.it/attivita/vqr/vqr-2011-2014/gev/area-1-scienze-matematiche-e-informatiche/" rel="noreferrer noopener">https://www.anvur.it/attivita/vqr/vqr-2011-2014/gev/area-1-scienze-matematiche-e-informatiche/</a> con link a partecipanti, ai criteri ed alla lista delle riviste (quella di informatica può essere scaricata anche da qui sotto)</li>
+<li><a href="https://www.anvur.it/it/ricerca/qualita-della-ricerca/rapporti-di-valutazione/vqr-2011-2014">Rapporti ANVUR per la VQR 2011–2014</a>. La sezione Area 1 raccoglie il rapporto, le appendici e le tabelle per le Scienze matematiche e informatiche.</li>
 </ul>
 
 <div class="wp-block-file aligncenter"><a href="/assets/media/ce5fe4d6bf8138-lista-inf01.pdf">lista_inf01</a><a class="wp-block-file__button" download="" href="/assets/media/ce5fe4d6bf8138-lista-inf01.pdf">Download</a></div>
@@ -77,12 +76,13 @@ article_kind: imported_page
 <h2 class="wp-block-heading">VQR 2004-2010:</h2>
 
 <ul>
-<li>Pagina della Area 1 - Scienze Matematiche e Informatiche <a aria-label=" (opens in a new tab)" href="https://www.anvur.it/attivita/vqr/vqr-2004-2010/gev/area-1-scienze-matematiche-e-informatiche/" rel="noreferrer noopener">https://www.anvur.it/attivita/vqr/vqr-2004-2010/gev/area-1-scienze-matematiche-e-informatiche/</a> con link a partecipanti, criteri e lista di riviste (quella di informatica può essere scaricata anche da qui sotto)</li>
+<li><a href="https://www.anvur.it/sites/default/files/2025-02/bando_vqr_def_07_11.pdf">Bando ANVUR per la VQR 2004–2010 (PDF)</a>. La lista delle riviste di informatica è disponibile qui sotto.</li>
 </ul>
 
 <div class="wp-block-file aligncenter"><a href="/assets/media/a36fc2b28cad3c-computer-science.pdf">Computer_Science</a><a class="wp-block-file__button" download="" href="/assets/media/a36fc2b28cad3c-computer-science.pdf">Download</a></div>
 
 </section>
+
 <!-- BOX 2: SLR -->
 <section style="margin: 35px 0; padding: 28px; background: #f5f7fa; border: 1px solid #dce3eb; border-radius: 12px;">
 <h1 class="wp-block-heading">Systematic Literature Reviews</h1>
@@ -95,12 +95,12 @@ article_kind: imported_page
 <li>Procedures for Performing Systematic Reviews. Barbara Kitchenham. Keele University Technical Report TR/SE-0401. ISSN:1353-7776. NICTA Technical Report 0400011T.1. July 2004
 <ul>
 <li>It all started with this Technical Report 🙂</li>
-<li>Not easy to find it Here is a link <a href="http://www.inf.ufsc.br/~aldo.vw/kitchenham.pdf">http://www.inf.ufsc.br/~aldo.vw/kitchenham.pdf</a></li>
+<li>Not easy to find it Here is a link <a href="https://www.inf.ufsc.br/~aldo.vw/kitchenham.pdf">Technical report (PDF)</a></li>
 </ul>
 </li>
 <li>"Systematic Literature Review: A Methodology for Surveys" Andrea Omicini (Slides)
 <ul>
-<li><a href="http://campus.unibo.it/329983/1/S3%20%E2%80%93%20Systematic%20Literature%20Review%20_%20A%20Methodology%20for%20Surveys.pdf">http://campus.unibo.it/329983/1/S3%20%E2%80%93%20Systematic%20Literature%20Review%20_%20A%20Methodology%20for%20Surveys.pdf</a></li>
+<li><a href="https://apice.unibo.it/bin/view/Course/Sa1718/?data=data&amp;display=Slides&amp;mode=data">Course page, seminar S3</a></li>
 </ul>
 </li>
 <li>Systematic Literature Review in Computer Science - A Practical Guide (November 2016) Rodrigo L. S. Silva Frâncila Weidt Neiva
@@ -166,16 +166,15 @@ article_kind: imported_page
 <h2 class="wp-block-heading">Sources of information</h2>
 
 <ul>
-<li>ACM Digital Library: <a href="https://dl.acm.com">https://dl.acm.com</a> </li>
+<li>ACM Digital Library: <a href="https://dl.acm.org/">https://dl.acm.org/</a> </li>
 <li>IEEE Xplore: <a href="https://ieeexplore.ieee.org/">https://ieeexplore.ieee.org/</a></li>
-<li>ISI web of knowledge: <a href="https://apps.webofknowledge.com/">https://apps.webofknowledge.com/</a></li>
+<li>Web of Science: <a href="https://www.webofscience.com/">https://www.webofscience.com/</a></li>
 <li>ScienceDirect: <a href="https://www.sciencedirect.com/">https://www.sciencedirect.com/</a> </li>
 <li>CiteSeer: <a href="https://citeseerx.ist.psu.edu/">https://citeseerx.ist.psu.edu/</a></li>
 <li>SpringerLink: <a href="https://link.springer.com/">https://link.springer.com/</a></li>
 <li>DBLP: <a href="https://dblp.uni-trier.de/">https://dblp.uni-trier.de/</a></li>
 <li>Wiley Inter Science: <a href="https://onlinelibrary.wiley.com/">https://onlinelibrary.wiley.com/</a></li>
 <li>Scopus: <a href="https://www.scopus.com/">https://www.scopus.com/</a></li>
-<li>Microsoft Academic: <a href="https://academic.microsoft.com/home">https://academic.microsoft.com</a></li>
 </ul>
 
 <h2 class="wp-block-heading">Other sources of information</h2>
@@ -185,7 +184,7 @@ article_kind: imported_page
 <li>Google Scholar: <a href="https://scholar.google.com/">https://scholar.google.com/</a></li>
 <li>ResearchGate: <a href="https://www.researchgate.net/">https://www.researchgate.net/</a></li>
 <li>Academia: <a href="https://www.academia.edu/">https://www.academia.edu/</a></li>
-<li>How to configure a proxy to access bibliographies outside UNISA: <a href="https://www.biblioteche.unisa.it/portale/servizi_proxy">https://www.biblioteche.unisa.it/portale/servizi_proxy</a></li>
+<li>Remote access to UNISA electronic resources: <a href="https://www.biblioteche.unisa.it/servizi?id=247">UNISA Library instructions</a></li>
 </ul>
 
 <h2 class="wp-block-heading">Tools for Bibliographies </h2>
@@ -204,4 +203,4 @@ article_kind: imported_page
 </ul>
 </li>
 </ul>
-<section>
+</section>
