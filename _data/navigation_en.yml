@@ -37,7 +37,7 @@
 - title: News
   url: /en/news-and-blog/
   children:
-  - title: News and Blog
-    url: /en/news-and-blog/
-  - title: Events and Seminars
-    url: /en/events/list/
+  - title: News and Insights
+    url: /en/news-and-insights/
+  #- title: Events and Seminars
+    #url: /en/events/list/
