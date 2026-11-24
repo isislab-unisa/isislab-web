@@ -107,7 +107,7 @@ custom_css:
 </li>
 </ul>
 <p>Il laboratorio progetta e valuta strumenti con cui gruppi di persone possono produrre dati, discutere e prendere decisioni insieme. Nel progetto europeo ROUTE-TO-PA, cittadini e amministrazioni hanno utilizzato la Social Platform for Open Data per costruire e interpretare dati aperti. In ambito educativo, CoFFEE ha permesso ai docenti di organizzare discussioni in piccoli gruppi e studiare la partecipazione degli studenti. Queste esperienze si affiancano alle ricerche sulla didattica dell’informatica e dell’intelligenza artificiale.</p>
-<p><a href="https://cordis.europa.eu/project/id/645860/it">Il progetto ROUTE-TO-PA su CORDIS (2015–2018)</a> · <a href="/il-progetto-route-to-pa/">La Social Platform for Open Data nella scheda di ISISLab</a></p>
+<p><a href="https://cordis.europa.eu/project/id/645860/it">Il progetto ROUTE-TO-PA su CORDIS (2015–2018)</a> · <a href="/route-to-pa/">La Social Platform for Open Data nella scheda di ISISLab</a></p>
 </section>
 
 <section class="info-box" aria-labelledby="analisi-delle-reti-sociali"><h2 id="analisi-delle-reti-sociali">Analisi delle reti sociali</h2>
