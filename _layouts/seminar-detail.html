@@ -1,14 +1,25 @@
 ---
 layout: page
+title: ""
 ---
 <article class="local-article seminar-detail">
 
   {% if page.speakers and page.speakers.size > 0 %}
-    {% for speaker in page.speakers %}
-      {% if speaker.name and speaker.name != '' %}
-      <p><strong>Speaker:</strong> {{ speaker.name }}</p>
-      {% endif %}
-    {% endfor %}
+    {% capture speaker_names %}
+      {% for speaker in page.speakers %}
+        {% if speaker.name %}
+          {{ speaker.name }}
+        {% else %}
+          {{ speaker }}
+        {% endif %}
+        {% unless forloop.last %}
+          {% if forloop.length == 2 %} e {% else %}, {% endif %}
+        {% endunless %}
+      {% endfor %}
+    {% endcapture %}
+    <h1>Seminari – {{ speaker_names | strip }}</h1>
+  {% else %}
+    <h1>{{ page.title }}</h1>
   {% endif %}
 
   <p class="press-source">
@@ -45,7 +56,6 @@ layout: page
   {% endif %}
 
   <div class="seminar-abstract">
-    <p><strong>Abstract:</strong></p>
     {{ content }}
   </div>
 

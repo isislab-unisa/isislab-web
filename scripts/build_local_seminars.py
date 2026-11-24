@@ -315,6 +315,7 @@ def build_seminar_metadata(item, seminar_date):
         "end_time": item.get("end_time"),
         "location": item.get("venue") or item.get("location"),
         "speakers": item.get("speakers"),
+        "talks": item.get("talks"),
         "seminar_image": item.get("image") or item.get("seminar_image"),
     }
 
