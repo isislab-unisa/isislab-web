@@ -273,5 +273,5 @@ lang: en
 
 <h2 class="wp-block-heading">Past members of ISISLab...</h2>
 
-<p>All the thesis students and interns who have been in ISISLab are listed on this <a href="{{ 'en/tesisti-sono-stati-in-isislab/' | relative_url }}">page</a>.</p>
+<p>All the thesis students and interns who have been in ISISLab are listed on this <a href="https://www.isislab.it/en/cosa-si-fa-in-isislab-stage-o-tesi/">page</a>.</p>
 

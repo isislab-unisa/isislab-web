@@ -154,7 +154,6 @@ of cultural heritage.
 
 ## Resources and links
 
-- [CHANGES Cascade Funding Call – Approval and Funding Decree](https://isislab-unisa.github.io/assets/media/3eeda480671900-decreto-approvaz-finanz-pe5-changes.pdf)
 - [CeRICT](https://www.cerict.it/it/)
 - [Department of Computer Science – UNISA](http://www.di.unisa.it/)
 - [Department of Industrial Engineering – UNISA](https://www.diin.unisa.it/)

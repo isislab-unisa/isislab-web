@@ -30,7 +30,7 @@ partners:
   - "CERICT"
   - "PICA"
 
-website: "https://xrtwinscape.di.unisa.it/"
+website: "https://isislab-unisa.github.io/XRTwinScape/"
 
 image: "/assets/media/642712f4fceb52-twinscape-logo.png"
 
