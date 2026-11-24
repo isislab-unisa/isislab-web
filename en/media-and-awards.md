@@ -55,7 +55,7 @@ custom_css:
 
     <li><strong>Best Short Paper ICALT 2012</strong>, Delfina Malandrino, Giuseppina Palmieri, Vittorio Scarano, "<em>Face-to-face vs. Computer-mediated: Analysis of collaborative programming activities and outcomes</em>", In: Proc. of 12th IEEE International Conference on Advanced Learning Technologies ICALT 2012. Conference proceedings contribution. IEEE, pp. 329–331. ISBN: DOI: <a href="https://doi.org/10.1109/ICALT.2012.139" rel="noreferrer noopener">10.1109/ICALT.2012.139</a></li>
 
-    <li><strong>Best Poster at WWW</strong>, Best Student Demo, Eclipse IT 2008. CoFFEE Ilaria Manno (see <a href="{{ '/assets/media/cb62ff96020c81-award-manno-2008.jpg' | relative_url }}" rel="noreferrer noopener">screenshot</a>). In Proc. of <a href="http://eit08.di.uniba.it/" rel="noreferrer noopener">3rd Italian Workshop on Eclipse Technologies (Eclipse IT)</a>, November 17-18, 2008, Bari, Italy.</li>
+    <li><strong>Best Poster at WWW</strong>, Best Student Demo, Eclipse IT 2008. CoFFEE Ilaria Manno (see <a href="{{ '/assets/media/cb62ff96020c81-award-manno-2008.jpg' | relative_url }}" rel="noreferrer noopener">screenshot</a>). In Proc. of <a href="https://ceur-ws.org/Vol-436/" rel="noreferrer noopener">3rd Italian Workshop on Eclipse Technologies (Eclipse IT)</a>, November 17-18, 2008, Bari, Italy.</li>
     </ul>
     </div>
 
