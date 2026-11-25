@@ -4,7 +4,7 @@
     "lang": "it",
     "format": "YAML 1.2 (notazione JSON)",
     "schema_version": 4,
-    "version": "7.0"
+    "version": "8.0"
   },
   "theme": {
     "background": "#f3f6fa",
@@ -61,7 +61,11 @@
       "year_unit": "° anno",
       "link": "Scheda UNISA",
       "previous_year": "(riferimento 2026/27)",
-      "link_icon": "↗"
+      "link_icon": "↗",
+      "explore": "Entra nel modulo 3D ↗",
+      "back_map": "← Torna alla mappa degli esami",
+      "next_course": "Prosegui al prossimo approfondimento →",
+      "open_module": "Esplora questo insegnamento ↗"
     },
     "catalog": {
       "options": "opzioni",
@@ -216,6 +220,38 @@
         "hum_hz": 58,
         "ambience": 0.23,
         "interval_ms": 1800
+      },
+      "course_cloud": {
+        "name": "Cloud Computing",
+        "kind": "network",
+        "root": 57,
+        "hum_hz": 58,
+        "ambience": 0.23,
+        "interval_ms": 1800
+      },
+      "course_parallel": {
+        "name": "Programmazione parallela",
+        "kind": "network",
+        "root": 60,
+        "hum_hz": 58,
+        "ambience": 0.23,
+        "interval_ms": 1500
+      },
+      "course_internet": {
+        "name": "Internet Data Analysis",
+        "kind": "network",
+        "root": 62,
+        "hum_hz": 58,
+        "ambience": 0.23,
+        "interval_ms": 1650
+      },
+      "course_distributed": {
+        "name": "Architetture distribuite",
+        "kind": "network",
+        "root": 65,
+        "hum_hz": 58,
+        "ambience": 0.23,
+        "interval_ms": 1900
       }
     },
     "packet_sounds": {
@@ -1769,7 +1805,7 @@
     "courses": {
       "eyebrow": "06 / Core curriculum",
       "heading_html": "Il tuo stack<br>di competenze.",
-      "lead": "Le attività obbligatorie del percorso Cloud Computing, coorte 2026/27, e un approfondimento sulle competenze di Cloud Native Computing e High Performance Computing.",
+      "lead": "Le attività obbligatorie del percorso Cloud Computing, coorte 2026/27, e un approfondimento sulle competenze di Cloud Native Computing e High Performance Computing. Scorri per entrare nei quattro moduli tecnici oppure selezionali direttamente dalla mappa.",
       "legend": [
         {
           "color": "#547e9c",
@@ -1799,7 +1835,7 @@
         "hud": {
           "title": "Il percorso di studi",
           "mode": "DIDATTICA / MAPPA DEGLI ESAMI",
-          "description": "Sette attività obbligatorie, un modulo HPC e una biblioteca per le altre opzioni formative.",
+          "description": "Mappa degli insegnamenti: quattro moduli tecnici esplorabili con la camera, nello stesso ambiente 3D.",
           "summary": "1° anno · 2° anno · scelte"
         },
         "camera": [
@@ -1861,31 +1897,34 @@
             "name": "Cloud Computing",
             "position": [
               -3.45,
-              2.7,
+              1.85,
               -3.1
             ],
             "color": "#547e9c",
-            "course_code": "01"
+            "course_code": "01",
+            "focus_id": "course_cloud"
           },
           {
             "name": "Programmazione parallela",
             "position": [
               0,
-              2.12,
+              1.35,
               -3.1
             ],
             "color": "#547e9c",
-            "course_code": "02"
+            "course_code": "02",
+            "focus_id": "course_parallel"
           },
           {
             "name": "Internet Data Analysis",
             "position": [
               3.45,
-              2.65,
+              1.68,
               -3.1
             ],
             "color": "#547e9c",
-            "course_code": "03"
+            "course_code": "03",
+            "focus_id": "course_internet"
           },
           {
             "name": "Lingua inglese",
@@ -1901,11 +1940,12 @@
             "name": "Architetture distribuite",
             "position": [
               0,
-              2.12,
+              1.6,
               0
             ],
             "color": "#287e80",
-            "course_code": "11"
+            "course_code": "11",
+            "focus_id": "course_distributed"
           },
           {
             "name": "Orientamento al lavoro",
@@ -1951,11 +1991,1027 @@
         "packet_routes": []
       }
     },
+    "course_cloud": {
+      "eyebrow": "06.1 / Cloud Computing",
+      "heading_html": "Progetta il<br>tuo cloud.",
+      "lead": "Virtualizzazione, servizi e architetture cloud: dalla richiesta del client all’allocazione di risorse di calcolo, rete e storage.",
+      "nav_label": "Cloud Computing",
+      "scene_label": "06.1 / DENTRO IL CLOUD",
+      "course_code": "01",
+      "note": "Fondamenti, modelli di servizio, architetture e pattern indipendenti dal provider; valutazione dei costi e laboratorio Microsoft Azure.",
+      "link_text": "Scheda UNISA ↗",
+      "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524063",
+      "mini": [
+        [
+          "SERVIZI",
+          "IaaS, PaaS e SaaS: livelli diversi di gestione delle risorse."
+        ],
+        [
+          "ARCHITETTURA",
+          "Pattern cloud, elasticità e valutazione dei compromessi tra costo e prestazioni."
+        ],
+        [
+          "LABORATORIO",
+          "Sperimentazione di servizi e risorse cloud, con riferimento al laboratorio Azure."
+        ]
+      ],
+      "graphics": {
+        "module_origin": [
+          -3.45,
+          0.8,
+          -3.1
+        ],
+        "module_scale": 0.19,
+        "module_kind": "cloud",
+        "hud": {
+          "title": "Cloud di risorse virtuali",
+          "mode": "DENTRO IL CLOUD",
+          "description": "Virtualizzazione, servizi e architetture cloud: dalla richiesta del client all’allocazione di risorse di calcolo, rete e storage.",
+          "summary": "Risorse fisiche · VM · servizi"
+        },
+        "camera": [
+          [
+            [
+              5.5,
+              8.5,
+              8
+            ],
+            [
+              0,
+              1.8,
+              0
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              8.5,
+              7
+            ],
+            [
+              0,
+              1.3,
+              -0.5
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              4.2,
+              4.7
+            ],
+            [
+              0,
+              1.6,
+              -2
+            ],
+            65
+          ],
+          [
+            [
+              1.5,
+              5.5,
+              5.3
+            ],
+            [
+              0,
+              1.5,
+              -0.7
+            ],
+            59
+          ]
+        ],
+        "annotations": [
+          {
+            "name": "Client",
+            "detail": "Invia richieste a un servizio remoto.",
+            "position": [
+              0,
+              1.6,
+              3.5
+            ],
+            "color": "#ffc95f"
+          },
+          {
+            "name": "Gateway / bilanciatore",
+            "detail": "Distribuisce il traffico alle risorse disponibili.",
+            "position": [
+              0,
+              1.2,
+              1.4
+            ],
+            "color": "#ffc95f"
+          },
+          {
+            "name": "Server e VM",
+            "detail": "I server fisici ospitano macchine virtuali isolate.",
+            "position": [
+              -2.8,
+              3.2,
+              -1.3
+            ],
+            "color": "#4fe4f4"
+          },
+          {
+            "name": "Storage",
+            "detail": "Conserva i dati separatamente dal calcolo.",
+            "position": [
+              2.8,
+              2.2,
+              -1.3
+            ],
+            "color": "#c8a5ff"
+          },
+          {
+            "name": "Cloud di risorse",
+            "detail": "Risorse accessibili tramite rete e allocabili secondo il carico.",
+            "position": [
+              0,
+              5,
+              -2.5
+            ],
+            "color": "#4fe4f4"
+          }
+        ],
+        "packet_routes": [
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.6
+              ],
+              [
+                0,
+                0.48,
+                1.4
+              ],
+              [
+                -2.8,
+                0.48,
+                1.4
+              ],
+              [
+                -2.8,
+                0.48,
+                -1.3
+              ]
+            ],
+            "c": "gold",
+            "n": 5
+          },
+          {
+            "p": [
+              [
+                -2.8,
+                0.48,
+                -1.3
+              ],
+              [
+                -2.8,
+                0.48,
+                -2.7
+              ],
+              [
+                2.8,
+                0.48,
+                -2.7
+              ],
+              [
+                2.8,
+                0.48,
+                -1.3
+              ]
+            ],
+            "c": "cyan",
+            "n": 5
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                1.4
+              ],
+              [
+                2.8,
+                0.48,
+                1.4
+              ],
+              [
+                2.8,
+                0.48,
+                -1.3
+              ]
+            ],
+            "c": "purple",
+            "n": 3
+          }
+        ]
+      }
+    },
+    "course_parallel": {
+      "eyebrow": "06.2 / Programmazione concorrente, parallela e su cloud",
+      "heading_html": "Più processi.<br>Un obiettivo.",
+      "lead": "Concorrenza, parallelismo e distribuzione: dividi un problema in task, coordina l’esecuzione e misura il comportamento delle risorse.",
+      "nav_label": "Programmazione parallela",
+      "scene_label": "06.2 / DENTRO IL PROCESSORE",
+      "course_code": "02",
+      "note": "Progettare software concorrente e parallelo o distribuito; sperimentare su infrastrutture IaaS e valutarne il comportamento.",
+      "link_text": "Scheda UNISA ↗",
+      "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524064",
+      "mini": [
+        [
+          "TASK",
+          "Scomporre il lavoro in attività concorrenti e parallele."
+        ],
+        [
+          "SYNC",
+          "Coordinare accessi e comunicazioni, evitando race condition e deadlock."
+        ],
+        [
+          "MISURE",
+          "Valutare correttezza, speedup, overhead ed efficienza anche su IaaS."
+        ]
+      ],
+      "graphics": {
+        "module_origin": [
+          0,
+          0.8,
+          -3.1
+        ],
+        "module_scale": 0.19,
+        "module_kind": "parallel",
+        "hud": {
+          "title": "Processori e memoria condivisa",
+          "mode": "DENTRO IL PROCESSORE",
+          "description": "Concorrenza, parallelismo e distribuzione: dividi un problema in task, coordina l’esecuzione e misura il comportamento delle risorse.",
+          "summary": "Task · core · sincronizzazione"
+        },
+        "camera": [
+          [
+            [
+              5.5,
+              8.5,
+              8
+            ],
+            [
+              0,
+              1.8,
+              0
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              8.5,
+              7
+            ],
+            [
+              0,
+              1.3,
+              -0.5
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              4.2,
+              4.7
+            ],
+            [
+              0,
+              1.6,
+              -2
+            ],
+            65
+          ],
+          [
+            [
+              1.5,
+              5.5,
+              5.3
+            ],
+            [
+              0,
+              1.5,
+              -0.7
+            ],
+            59
+          ]
+        ],
+        "annotations": [
+          {
+            "name": "Scheduler",
+            "detail": "Distribuisce i task sui core disponibili.",
+            "position": [
+              0,
+              1.5,
+              3.5
+            ],
+            "color": "#ffc95f"
+          },
+          {
+            "name": "Core paralleli",
+            "detail": "Quattro unità illustrative elaborano task indipendenti o coordinati.",
+            "position": [
+              -2.4,
+              2.2,
+              -1.5
+            ],
+            "color": "#4fe4f4"
+          },
+          {
+            "name": "Memoria condivisa",
+            "detail": "Gli accessi concorrenti richiedono sincronizzazione.",
+            "position": [
+              0,
+              1.8,
+              -3.6
+            ],
+            "color": "#c8a5ff"
+          },
+          {
+            "name": "Sincronizzazione",
+            "detail": "Una barriera coordina il completamento di più task.",
+            "position": [
+              0,
+              1.4,
+              0
+            ],
+            "color": "#8ce6a8"
+          }
+        ],
+        "packet_routes": [
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.5
+              ],
+              [
+                0,
+                0.48,
+                0
+              ],
+              [
+                -2.4,
+                0.48,
+                0
+              ],
+              [
+                -2.4,
+                0.48,
+                -1.8
+              ]
+            ],
+            "c": "gold",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.5
+              ],
+              [
+                0,
+                0.48,
+                0
+              ],
+              [
+                -2.4,
+                0.48,
+                0
+              ],
+              [
+                -2.4,
+                0.48,
+                1.4
+              ]
+            ],
+            "c": "gold",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.5
+              ],
+              [
+                0,
+                0.48,
+                0
+              ],
+              [
+                2.4,
+                0.48,
+                0
+              ],
+              [
+                2.4,
+                0.48,
+                -1.8
+              ]
+            ],
+            "c": "gold",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.5
+              ],
+              [
+                0,
+                0.48,
+                0
+              ],
+              [
+                2.4,
+                0.48,
+                0
+              ],
+              [
+                2.4,
+                0.48,
+                1.4
+              ]
+            ],
+            "c": "gold",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                -2.4,
+                0.48,
+                -1.8
+              ],
+              [
+                -2.4,
+                0.48,
+                -3.6
+              ],
+              [
+                0,
+                0.48,
+                -3.6
+              ],
+              [
+                2.4,
+                0.48,
+                -3.6
+              ],
+              [
+                2.4,
+                0.48,
+                -1.8
+              ]
+            ],
+            "c": "purple",
+            "n": 5
+          }
+        ]
+      }
+    },
+    "course_internet": {
+      "eyebrow": "06.3 / Internet Data Analysis. Monitoring, Measurement and Performance",
+      "heading_html": "Misura Internet.<br>Comprendi la rete.",
+      "lead": "Dalle topologie Internet alle misurazioni di traffico, latenza e throughput: osserva i pacchetti e interpreta le metriche di prestazione.",
+      "nav_label": "Internet Data Analysis",
+      "scene_label": "06.3 / DENTRO LA RETE",
+      "course_code": "03",
+      "note": "Studiare l’infrastruttura Internet e misurare traffico e prestazioni: topologie, applicazioni, monitoraggio di rete e analisi dei dati.",
+      "link_text": "Scheda UNISA ↗",
+      "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524065",
+      "mini": [
+        [
+          "TOPOLOGIE",
+          "Studiare la struttura della rete e i percorsi dei dati."
+        ],
+        [
+          "MONITOR",
+          "Raccogliere misure di traffico, latenza e prestazioni delle applicazioni."
+        ],
+        [
+          "ANALISI",
+          "Interpretare i dati e identificare colli di bottiglia."
+        ]
+      ],
+      "graphics": {
+        "module_origin": [
+          3.45,
+          0.8,
+          -3.1
+        ],
+        "module_scale": 0.19,
+        "module_kind": "internet",
+        "hud": {
+          "title": "Rete e osservatorio dei dati",
+          "mode": "DENTRO LA RETE",
+          "description": "Dalle topologie Internet alle misurazioni di traffico, latenza e throughput: osserva i pacchetti e interpreta le metriche di prestazione.",
+          "summary": "Topologie · monitoraggio · metriche"
+        },
+        "camera": [
+          [
+            [
+              5.5,
+              8.5,
+              8
+            ],
+            [
+              0,
+              1.8,
+              0
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              8.5,
+              7
+            ],
+            [
+              0,
+              1.3,
+              -0.5
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              4.2,
+              4.7
+            ],
+            [
+              0,
+              1.6,
+              -2
+            ],
+            65
+          ],
+          [
+            [
+              1.5,
+              5.5,
+              5.3
+            ],
+            [
+              0,
+              1.5,
+              -0.7
+            ],
+            59
+          ]
+        ],
+        "annotations": [
+          {
+            "name": "Client e sonde",
+            "detail": "Generano o osservano traffico per misurare la rete.",
+            "position": [
+              -3.4,
+              1.8,
+              3.0
+            ],
+            "color": "#ffc95f"
+          },
+          {
+            "name": "Router",
+            "detail": "Instradano pacchetti lungo collegamenti di rete.",
+            "position": [
+              0,
+              1.5,
+              0.5
+            ],
+            "color": "#4fe4f4"
+          },
+          {
+            "name": "Percorso alternativo",
+            "detail": "Topologie differenti possono produrre latenza e capacità diverse.",
+            "position": [
+              3.4,
+              1.5,
+              -0.8
+            ],
+            "color": "#c8a5ff"
+          },
+          {
+            "name": "Dashboard",
+            "detail": "Raccoglie e visualizza metriche: throughput, latenza e traffico.",
+            "position": [
+              0,
+              4,
+              -3.6
+            ],
+            "color": "#8ce6a8"
+          }
+        ],
+        "packet_routes": [
+          {
+            "p": [
+              [
+                -3.4,
+                0.48,
+                3
+              ],
+              [
+                -3.4,
+                0.48,
+                0.5
+              ],
+              [
+                0,
+                0.48,
+                0.5
+              ],
+              [
+                3.4,
+                0.48,
+                -0.8
+              ],
+              [
+                3.4,
+                0.48,
+                -3.5
+              ],
+              [
+                0,
+                0.48,
+                -3.5
+              ]
+            ],
+            "c": "cyan",
+            "n": 6
+          },
+          {
+            "p": [
+              [
+                -3.4,
+                0.48,
+                3
+              ],
+              [
+                0,
+                0.48,
+                3
+              ],
+              [
+                3.4,
+                0.48,
+                3
+              ],
+              [
+                3.4,
+                0.48,
+                -0.8
+              ]
+            ],
+            "c": "purple",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                0.5
+              ],
+              [
+                0,
+                0.48,
+                -3.5
+              ]
+            ],
+            "c": "green",
+            "n": 3
+          }
+        ]
+      }
+    },
+    "course_distributed": {
+      "eyebrow": "06.4 / Architetture distribuite per il cloud",
+      "heading_html": "Molti nodi.<br>Un solo sistema.",
+      "lead": "Ripartire il carico tra nodi, progettando comunicazione, coordinamento e architetture che continuino a operare anche in presenza di guasti.",
+      "nav_label": "Architetture distribuite",
+      "scene_label": "06.4 / DENTRO IL SISTEMA DISTRIBUITO",
+      "course_code": "11",
+      "note": "Principi, algoritmi e architetture parallele e distribuite per ripartire il carico di lavoro fra più risorse.",
+      "link_text": "Scheda UNISA (riferimento 2026/27) ↗",
+      "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524073",
+      "mini": [
+        [
+          "NODI",
+          "Distribuire componenti e carico tra più risorse di calcolo."
+        ],
+        [
+          "COORDINAMENTO",
+          "Studiare algoritmi, comunicazione e architetture parallele e distribuite."
+        ],
+        [
+          "AFFIDABILITÀ",
+          "Valutare replica, consistenza, scalabilità e tolleranza ai guasti come problemi architetturali."
+        ]
+      ],
+      "graphics": {
+        "module_origin": [
+          0,
+          0.8,
+          0
+        ],
+        "module_scale": 0.19,
+        "module_kind": "distributed",
+        "hud": {
+          "title": "Cluster di servizi distribuiti",
+          "mode": "DENTRO IL SISTEMA DISTRIBUITO",
+          "description": "Ripartire il carico tra nodi, progettando comunicazione, coordinamento e architetture che continuino a operare anche in presenza di guasti.",
+          "summary": "Nodi · replica · bilanciamento"
+        },
+        "camera": [
+          [
+            [
+              5.5,
+              8.5,
+              8
+            ],
+            [
+              0,
+              1.8,
+              0
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              8.5,
+              7
+            ],
+            [
+              0,
+              1.3,
+              -0.5
+            ],
+            52
+          ],
+          [
+            [
+              0,
+              4.2,
+              4.7
+            ],
+            [
+              0,
+              1.6,
+              -2
+            ],
+            65
+          ],
+          [
+            [
+              1.5,
+              5.5,
+              5.3
+            ],
+            [
+              0,
+              1.5,
+              -0.7
+            ],
+            59
+          ]
+        ],
+        "annotations": [
+          {
+            "name": "Bilanciatore",
+            "detail": "Distribuisce richieste ai nodi disponibili.",
+            "position": [
+              0,
+              1.8,
+              3.4
+            ],
+            "color": "#ffc95f"
+          },
+          {
+            "name": "Nodi di servizio",
+            "detail": "Eseguono parti del lavoro su risorse distinte.",
+            "position": [
+              -3,
+              3.2,
+              0.2
+            ],
+            "color": "#4fe4f4"
+          },
+          {
+            "name": "Repliche dati",
+            "detail": "Copie distinte dei dati richiedono coordinamento e politiche di consistenza.",
+            "position": [
+              3,
+              2.4,
+              -3.1
+            ],
+            "color": "#c8a5ff"
+          },
+          {
+            "name": "Coordinamento",
+            "detail": "Scambio di messaggi per coordinare il lavoro e gestire guasti.",
+            "position": [
+              0,
+              1.5,
+              -0.9
+            ],
+            "color": "#8ce6a8"
+          }
+        ],
+        "packet_routes": [
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.4
+              ],
+              [
+                0,
+                0.48,
+                1.7
+              ],
+              [
+                -3,
+                0.48,
+                1.7
+              ],
+              [
+                -3,
+                0.48,
+                0.2
+              ]
+            ],
+            "c": "gold",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.4
+              ],
+              [
+                0,
+                0.48,
+                1.7
+              ],
+              [
+                0,
+                0.48,
+                1.7
+              ],
+              [
+                0,
+                0.48,
+                0.2
+              ]
+            ],
+            "c": "gold",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                3.4
+              ],
+              [
+                0,
+                0.48,
+                1.7
+              ],
+              [
+                3,
+                0.48,
+                1.7
+              ],
+              [
+                3,
+                0.48,
+                0.2
+              ]
+            ],
+            "c": "gold",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                -3,
+                0.48,
+                0.2
+              ],
+              [
+                -3,
+                0.48,
+                -3.1
+              ]
+            ],
+            "c": "cyan",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                0,
+                0.48,
+                0.2
+              ],
+              [
+                0,
+                0.48,
+                -3.1
+              ]
+            ],
+            "c": "cyan",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                3,
+                0.48,
+                0.2
+              ],
+              [
+                3,
+                0.48,
+                -3.1
+              ]
+            ],
+            "c": "cyan",
+            "n": 3
+          },
+          {
+            "p": [
+              [
+                -3,
+                1.5,
+                -3.1
+              ],
+              [
+                0,
+                1.5,
+                -3.1
+              ],
+              [
+                3,
+                1.5,
+                -3.1
+              ]
+            ],
+            "c": "purple",
+            "n": 6
+          },
+          {
+            "p": [
+              [
+                -3,
+                0.48,
+                -0.9
+              ],
+              [
+                0,
+                0.48,
+                -0.9
+              ],
+              [
+                3,
+                0.48,
+                -0.9
+              ]
+            ],
+            "c": "green",
+            "n": 4
+          }
+        ]
+      }
+    },
     "cloud_native": {
-      "eyebrow": "07 / Cloud Native Computing",
+      "eyebrow": "11 / Cloud Native Computing",
       "heading_html": "Dal codice<br>al cloud nativo.",
       "nav_label": "Cloud Native",
-      "scene_label": "07 / CLOUD NATIVE PLATFORM",
+      "scene_label": "11 / CLOUD NATIVE PLATFORM",
       "course_code": "65",
       "note": "Virtualizzazione, container, Kubernetes e serverless: progettare applicazioni portabili, distribuibili e scalabili su infrastrutture cloud. La scena illustra il percorso dal codice all’immagine container, fino alla distribuzione su un cluster orchestrato.",
       "link_text": "Consulta il catalogo UNISA ↗",
@@ -2288,11 +3344,11 @@
       }
     },
     "hpc": {
-      "eyebrow": "08 / High Performance Computing",
+      "eyebrow": "12 / High Performance Computing",
       "heading_html": "Oltre il limite<br>di una CPU.",
       "note": "Architetture e algoritmi paralleli, OpenMP, MPI, GPU con CUDA/OpenCL e SYCL, vettorizzazione e ottimizzazione: competenze per misurare e accelerare calcoli scientifici e carichi AI.",
       "nav_label": "Supercalcolo",
-      "scene_label": "08 / PARALLEL COMPUTE ARRAY",
+      "scene_label": "12 / PARALLEL COMPUTE ARRAY",
       "graphics": {
         "hud": {
           "title": "Dentro il supercomputer",
@@ -2442,7 +3498,7 @@
       ]
     },
     "electives": {
-      "eyebrow": "09 / Personalise your path",
+      "eyebrow": "13 / Personalise your path",
       "heading_html": "Componi il tuo<br>profilo.",
       "lead": "60 CFU dei 120 complessivi sono da comporre mediante le categorie di scelta previste dal piano di studi.",
       "note": "Per tutte le informazioni su insegnamenti, disponibilità, regole e vincoli delle scelte, consulta il catalogo ufficiale UNISA.",
@@ -2551,7 +3607,7 @@
       "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827"
     },
     "future": {
-      "eyebrow": "10 / Next horizon",
+      "eyebrow": "14 / Next horizon",
       "heading_html": "Non limitarti<br>a usare il cloud.<br><span class=\"outline\">Progettalo.</span>",
       "lead": "Impara a trasformare teoria, algoritmi e sistemi in infrastrutture scalabili, sicure ed efficienti. Un percorso per chi vuole capire cosa succede sotto ogni servizio digitale.",
       "pills": [
@@ -2564,7 +3620,7 @@
       "footer_note": "Progetto dimostrativo indipendente, non sito ufficiale UNISA. Fonti consultate il 25 novembre 2026.",
       "footer_sources_html": "<a href=\"https://corsi.unisa.it/informatica-magistrale\" target=\"_blank\" rel=\"noopener\">Informatica magistrale UNISA</a> · <a href=\"https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260203-1\" target=\"_blank\" rel=\"noopener\">Eurostat: uso del cloud</a> · <a href=\"https://ec.europa.eu/eurostat/en/web/interactive-publications/digitalisation-2026\" target=\"_blank\" rel=\"noopener\">Digitalisation in Europe 2026</a> · <a href=\"https://www.weforum.org/publications/the-future-of-jobs-report-2025/\" target=\"_blank\" rel=\"noopener\">Future of Jobs 2025</a>",
       "nav_label": "Partenza",
-      "scene_label": "10 / MISSION COMPLETE",
+      "scene_label": "14 / MISSION COMPLETE",
       "graphics": {
         "hud": {
           "title": "Verso il futuro",
@@ -2701,7 +3757,8 @@
         "description": "Fondamenti, modelli di servizio, architetture e pattern indipendenti dal provider; valutazione dei costi e laboratorio Microsoft Azure.",
         "extra": "4 CFU lezione · 2 laboratorio",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524063",
-        "reference_previous_year": false
+        "reference_previous_year": false,
+        "focus_id": "course_cloud"
       },
       {
         "code": "02",
@@ -2713,7 +3770,8 @@
         "description": "Progettare software concorrente e parallelo o distribuito; sperimentare su infrastrutture IaaS e valutarne il comportamento.",
         "extra": "4 CFU lezione · 2 laboratorio",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524064",
-        "reference_previous_year": false
+        "reference_previous_year": false,
+        "focus_id": "course_parallel"
       },
       {
         "code": "03",
@@ -2725,7 +3783,8 @@
         "description": "Studiare l’infrastruttura Internet e misurare traffico e prestazioni: topologie, applicazioni, monitoraggio di rete e analisi dei dati.",
         "extra": "6 CFU lezione · 3 laboratorio",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524065",
-        "reference_previous_year": false
+        "reference_previous_year": false,
+        "focus_id": "course_internet"
       },
       {
         "code": "04",
@@ -2749,7 +3808,8 @@
         "description": "Principi, algoritmi e architetture parallele e distribuite per ripartire il carico di lavoro fra più risorse.",
         "extra": "6 CFU lezione · 3 laboratorio",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524073",
-        "reference_previous_year": true
+        "reference_previous_year": true,
+        "focus_id": "course_distributed"
       },
       {
         "code": "61",
@@ -3130,6 +4190,10 @@
       10,
       15,
       16,
+      0,
+      0,
+      0,
+      0,
       10,
       12,
       13,
@@ -3202,6 +4266,22 @@
       "shadow_bias": 0.22,
       "ambient": 0.48,
       "diffuse": 0.52
-    }
+    },
+    "section_order": [
+      "start",
+      "cloud",
+      "science",
+      "ai",
+      "careers",
+      "courses",
+      "course_cloud",
+      "course_parallel",
+      "course_internet",
+      "course_distributed",
+      "cloud_native",
+      "hpc",
+      "electives",
+      "future"
+    ]
   }
 }
