@@ -40,7 +40,7 @@
     "hero_outline": "#1f67c4"
   },
   "branding": {
-    "brand": "CLOUD CAMPUS",
+    "brand": "INDIRIZZO CLOUD COMPUTING",
     "subbrand": "LM-18",
     "logo_mark": "ISISLab inspired palette"
   },
@@ -1302,4 +1302,19 @@ resize();updateScroll();position=target;draw(performance.now());requestAnimation
   { const current=Math.max(shownScene,0); shownScene=-1; updateHud(current); }
   if(typeof draw==='function') draw(performance.now());
 })();
+// Attivazione automatica alla prima interazione
+function autoStartAudio(event) {
+    document.removeEventListener('pointerdown', autoStartAudio);
+    document.removeEventListener('keydown', autoStartAudio);
+
+    const button = document.getElementById('sound');
+
+    if (!event.target.closest('#sound') &&
+        !audioOn && !audioBusy) {
+        button.click();
+    }
+}
+
+document.addEventListener('pointerdown', autoStartAudio);
+document.addEventListener('keydown', autoStartAudio);
 </script></body></html>
