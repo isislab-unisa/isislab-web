@@ -4,7 +4,7 @@
     "lang": "it",
     "format": "YAML 1.2 (notazione JSON)",
     "schema_version": 4,
-    "version": "6.0"
+    "version": "7.0"
   },
   "theme": {
     "background": "#f3f6fa",
@@ -55,15 +55,13 @@
     "course": {
       "code_prefix": "NF225000",
       "required_status": "OBBLIGATORIO",
-      "elective_status": "A SCELTA, NON OBBLIGATORIO",
       "credits_unit": "CFU",
       "hours_unit": "ore",
       "semester_unit": "° semestre",
       "year_unit": "° anno",
       "link": "Scheda UNISA",
       "previous_year": "(riferimento 2026/27)",
-      "link_icon": "↗",
-      "hpc_annotation_status": "Insegnamento a scelta, non obbligatorio."
+      "link_icon": "↗"
     },
     "catalog": {
       "options": "opzioni",
@@ -210,6 +208,14 @@
         "hum_hz": 55,
         "ambience": 0.18,
         "interval_ms": 2600
+      },
+      "cloud_native": {
+        "name": "Cloud Native · orchestrazione e distribuzione",
+        "kind": "network",
+        "root": 62,
+        "hum_hz": 58,
+        "ambience": 0.23,
+        "interval_ms": 1800
       }
     },
     "packet_sounds": {
@@ -1763,7 +1769,7 @@
     "courses": {
       "eyebrow": "06 / Core curriculum",
       "heading_html": "Il tuo stack<br>di competenze.",
-      "lead": "Le materie obbligatorie del percorso Cloud Computing, coorte 2026/27. HPC ha lo stesso rilievo nella visita, ma rimane una scelta.",
+      "lead": "Le attività obbligatorie del percorso Cloud Computing, coorte 2026/27, e un approfondimento sulle competenze di Cloud Native Computing e High Performance Computing.",
       "legend": [
         {
           "color": "#547e9c",
@@ -1775,7 +1781,7 @@
         },
         {
           "color": "#9385c3",
-          "label": "HPC a scelta"
+          "label": "HPC"
         },
         {
           "color": "#d5a14c",
@@ -1793,7 +1799,7 @@
         "hud": {
           "title": "Il percorso di studi",
           "mode": "DIDATTICA / MAPPA DEGLI ESAMI",
-          "description": "Sette attività obbligatorie, HPC a scelta e un’area per le altre opzioni.",
+          "description": "Sette attività obbligatorie, un modulo HPC e una biblioteca per le altre opzioni formative.",
           "summary": "1° anno · 2° anno · scelte"
         },
         "camera": [
@@ -1922,7 +1928,7 @@
             "course_code": "64"
           },
           {
-            "name": "HPC · a scelta",
+            "name": "HPC",
             "position": [
               0,
               2.12,
@@ -1933,7 +1939,7 @@
           },
           {
             "name": "Altri insegnamenti a scelta",
-            "detail": "Area collettiva per caratterizzanti, affini, libera scelta e altre opzioni previste dal piano. Le regole e gli intervalli CFU sono nel catalogo; la maggiore dimensione indica varietà, non un numero fisso di crediti. HPC è già rappresentato a parte.",
+            "detail": "Area collettiva per le altre opzioni formative previste dal piano. La maggiore dimensione rappresenta la varietà delle possibilità, non un numero fisso di crediti. Consulta il catalogo ufficiale.",
             "position": [
               3.45,
               2.9,
@@ -1945,12 +1951,348 @@
         "packet_routes": []
       }
     },
+    "cloud_native": {
+      "eyebrow": "07 / Cloud Native Computing",
+      "heading_html": "Dal codice<br>al cloud nativo.",
+      "nav_label": "Cloud Native",
+      "scene_label": "07 / CLOUD NATIVE PLATFORM",
+      "course_code": "65",
+      "note": "Virtualizzazione, container, Kubernetes e serverless: progettare applicazioni portabili, distribuibili e scalabili su infrastrutture cloud. La scena illustra il percorso dal codice all’immagine container, fino alla distribuzione su un cluster orchestrato.",
+      "link_text": "Consulta il catalogo UNISA ↗",
+      "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827",
+      "mini": [
+        [
+          "CONTAINER",
+          "Impacchettare applicazioni e dipendenze in immagini riproducibili."
+        ],
+        [
+          "K8S",
+          "Orchestrare i container, distribuire le repliche e gestire il ciclo di vita delle applicazioni."
+        ],
+        [
+          "SERVERLESS",
+          "Eseguire funzioni o servizi senza amministrare direttamente i server sottostanti."
+        ]
+      ],
+      "graphics": {
+        "hud": {
+          "title": "La piattaforma cloud nativa",
+          "mode": "CLOUD NATIVE / PIPELINE E CLUSTER",
+          "description": "Dal codice ai container: registro immagini, orchestrazione Kubernetes, repliche e servizi serverless.",
+          "summary": "Container · Kubernetes · Serverless"
+        },
+        "camera": [
+          [
+            [
+              7,
+              11,
+              14
+            ],
+            [
+              0,
+              1.2,
+              0
+            ],
+            49
+          ],
+          [
+            [
+              0,
+              13,
+              7
+            ],
+            [
+              0,
+              0.8,
+              0
+            ],
+            49
+          ],
+          [
+            [
+              0,
+              6,
+              8
+            ],
+            [
+              0,
+              1.4,
+              -1
+            ],
+            53
+          ],
+          [
+            [
+              0,
+              4.3,
+              3.4
+            ],
+            [
+              0,
+              1.3,
+              -4
+            ],
+            65
+          ],
+          [
+            [
+              4,
+              8,
+              -8
+            ],
+            [
+              0,
+              1.5,
+              -1
+            ],
+            53
+          ]
+        ],
+        "annotations": [
+          {
+            "name": "Codice e build",
+            "detail": "Il codice viene compilato e confezionato in immagini container. Una pipeline automatizzata può eseguire build, test e pubblicazione.",
+            "position": [
+              -3.6,
+              1.8,
+              3.4
+            ],
+            "color": "#6285ab"
+          },
+          {
+            "name": "Registry",
+            "detail": "Conserva e distribuisce immagini container versionate ai nodi del cluster.",
+            "position": [
+              0,
+              2.05,
+              3.4
+            ],
+            "color": "#e7b55e"
+          },
+          {
+            "name": "Control plane Kubernetes",
+            "detail": "Coordina lo stato desiderato, pianifica i Pod sui nodi e riconcilia le risorse del cluster.",
+            "position": [
+              0,
+              2.5,
+              0.65
+            ],
+            "color": "#9385c3"
+          },
+          {
+            "name": "Worker e Pod",
+            "detail": "Tre nodi di esempio ospitano Pod con container; le repliche distribuiscono il carico e favoriscono la disponibilità.",
+            "position": [
+              -3.45,
+              2.15,
+              -2.75
+            ],
+            "color": "#367f88"
+          },
+          {
+            "name": "Servizio e routing",
+            "detail": "Un servizio offre un punto di accesso stabile ai Pod; il routing distribuisce le richieste alle repliche disponibili.",
+            "position": [
+              0,
+              1.65,
+              -4.2
+            ],
+            "color": "#e7b55e"
+          },
+          {
+            "name": "Serverless",
+            "detail": "Funzioni attivate su richiesta, con gestione della capacità demandata alla piattaforma.",
+            "position": [
+              3.6,
+              1.8,
+              3.4
+            ],
+            "color": "#6285ab"
+          }
+        ],
+        "packet_routes": [
+          {
+            "p": [
+              [
+                -3.6,
+                0.66,
+                3.4
+              ],
+              [
+                0,
+                0.66,
+                3.4
+              ],
+              [
+                0,
+                0.66,
+                1.15
+              ]
+            ],
+            "c": "gold",
+            "n": 5
+          },
+          {
+            "p": [
+              [
+                0,
+                0.7,
+                0.65
+              ],
+              [
+                0,
+                0.7,
+                -1.05
+              ],
+              [
+                -3.45,
+                0.7,
+                -1.05
+              ],
+              [
+                -3.45,
+                0.7,
+                -2.75
+              ]
+            ],
+            "c": "purple",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.67,
+                -4.2
+              ],
+              [
+                -3.45,
+                0.67,
+                -4.2
+              ],
+              [
+                -3.45,
+                0.67,
+                -2.75
+              ]
+            ],
+            "c": "cyan",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.7,
+                0.65
+              ],
+              [
+                0,
+                0.7,
+                -1.05
+              ],
+              [
+                0,
+                0.7,
+                -2.75
+              ]
+            ],
+            "c": "purple",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.67,
+                -4.2
+              ],
+              [
+                0,
+                0.67,
+                -2.75
+              ]
+            ],
+            "c": "cyan",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.7,
+                0.65
+              ],
+              [
+                0,
+                0.7,
+                -1.05
+              ],
+              [
+                3.45,
+                0.7,
+                -1.05
+              ],
+              [
+                3.45,
+                0.7,
+                -2.75
+              ]
+            ],
+            "c": "purple",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                0,
+                0.67,
+                -4.2
+              ],
+              [
+                3.45,
+                0.67,
+                -4.2
+              ],
+              [
+                3.45,
+                0.67,
+                -2.75
+              ]
+            ],
+            "c": "cyan",
+            "n": 4
+          },
+          {
+            "p": [
+              [
+                3.6,
+                0.66,
+                3.4
+              ],
+              [
+                3.6,
+                0.66,
+                1.15
+              ],
+              [
+                0,
+                0.66,
+                1.15
+              ]
+            ],
+            "c": "gold",
+            "n": 4
+          }
+        ]
+      }
+    },
     "hpc": {
-      "eyebrow": "07 / High Performance Computing",
+      "eyebrow": "08 / High Performance Computing",
       "heading_html": "Oltre il limite<br>di una CPU.",
       "note": "Architetture e algoritmi paralleli, OpenMP, MPI, GPU con CUDA/OpenCL e SYCL, vettorizzazione e ottimizzazione: competenze per misurare e accelerare calcoli scientifici e carichi AI.",
       "nav_label": "Supercalcolo",
-      "scene_label": "07 / PARALLEL COMPUTE ARRAY",
+      "scene_label": "08 / PARALLEL COMPUTE ARRAY",
       "graphics": {
         "hud": {
           "title": "Dentro il supercomputer",
@@ -2082,7 +2424,6 @@
         ]
       },
       "course_code": "16",
-      "availability": "Disponibile in scelta libera al primo anno e in scelta affine o libera al secondo, secondo il piano.",
       "link_text": "Scheda HPC · riferimento disponibile ↗",
       "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&id=524078&percorso=1&tab=percorsi",
       "mini": [
@@ -2101,18 +2442,18 @@
       ]
     },
     "electives": {
-      "eyebrow": "08 / Personalise your path",
+      "eyebrow": "09 / Personalise your path",
       "heading_html": "Componi il tuo<br>profilo.",
-      "lead": "Esplora le opzioni del piano, raggruppate per tipologia. I riepiloghi tematici sono orientativi, non sostituiscono i syllabus.",
-      "note": "Gli intervalli sono quelli delle singole categorie del documento e non vanno sommati come se fossero tutti obbligatori. Le scelte devono rispettare il piano complessivo da 120 CFU e le regole di Ateneo.",
+      "lead": "60 CFU dei 120 complessivi sono da comporre mediante le categorie di scelta previste dal piano di studi.",
+      "note": "Per tutte le informazioni su insegnamenti, disponibilità, regole e vincoli delle scelte, consulta il catalogo ufficiale UNISA.",
       "nav_label": "Scelte",
       "scene_label": "",
       "graphics": {
         "hud": {
-          "title": "Il bivio delle competenze",
+          "title": "Il tuo percorso formativo",
           "mode": "SCELTE / PANORAMICA",
-          "description": "Quattro direzioni tematiche, un percorso da costruire.",
-          "summary": "AI · security · sistemi · software"
+          "description": "60 CFU da comporre secondo le categorie di scelta del piano.",
+          "summary": "Catalogo ufficiale UNISA"
         },
         "camera": [
           [
@@ -2170,44 +2511,14 @@
         ],
         "annotations": [
           {
-            "name": "Cloud & AI",
-            "detail": "Percorso tematico: integra piattaforme cloud, machine learning, intelligenza artificiale e HPC; non è una combinazione già approvata.",
+            "name": "Percorso personalizzato",
+            "detail": "60 CFU da comporre rispettando le categorie e i vincoli del piano. Tutte le informazioni sono disponibili nel catalogo ufficiale UNISA.",
             "position": [
-              -3.05,
-              2,
-              2.5
+              0,
+              1.8,
+              0
             ],
-            "color": "#9385c3"
-          },
-          {
-            "name": "Cloud & Security",
-            "detail": "Percorso tematico: unisce infrastrutture, cybersecurity, protezione dei dati e verifica del software.",
-            "position": [
-              3.05,
-              2,
-              2.5
-            ],
-            "color": "#ca765b"
-          },
-          {
-            "name": "Sistemi & teoria",
-            "detail": "Percorso tematico: algoritmi, linguaggi, teoria dell’informazione e calcolo parallelo.",
-            "position": [
-              -3.05,
-              2,
-              -2.5
-            ],
-            "color": "#547e9c"
-          },
-          {
-            "name": "Software & Platform",
-            "detail": "Percorso tematico: sviluppo, metriche, progetti software e piattaforme cloud native.",
-            "position": [
-              3.05,
-              2,
-              -2.5
-            ],
-            "color": "#287e80"
+            "color": "#6285ab"
           }
         ],
         "packet_routes": [
@@ -2234,43 +2545,13 @@
           }
         ]
       },
-      "filters": [
-        {
-          "id": "all",
-          "label": "Tutti"
-        },
-        {
-          "id": "y1",
-          "label": "1° anno"
-        },
-        {
-          "id": "y2",
-          "label": "2° anno"
-        }
-      ],
-      "filters_aria": "Filtra insegnamenti",
-      "tiles": [
-        [
-          "Cloud & AI",
-          "Cloud Native Computing, Fondamenti di Data Science e Machine Learning, HPC, Intelligenza Artificiale."
-        ],
-        [
-          "Cloud & Security",
-          "Cloud Native Computing, Cybersecurity, Sicurezza dei Dati, Tecniche automatiche per la correttezza del software."
-        ],
-        [
-          "Sistemi & teoria",
-          "Ingegneria dei linguaggi, Algoritmi avanzati, HPC, Teoria dell'informazione."
-        ],
-        [
-          "Software & Platform",
-          "Cloud Native, Gestione progetti software, Software Metrics, Enterprise Mobile."
-        ]
-      ],
-      "examples_note": "Esempi di affinità tematica, non piani completi o combinazioni già approvate."
+      "credits": "60",
+      "credits_label": "CFU da comporre secondo le categorie di scelta del piano",
+      "link_text": "Consulta il catalogo ufficiale UNISA ↗",
+      "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827"
     },
     "future": {
-      "eyebrow": "09 / Next horizon",
+      "eyebrow": "10 / Next horizon",
       "heading_html": "Non limitarti<br>a usare il cloud.<br><span class=\"outline\">Progettalo.</span>",
       "lead": "Impara a trasformare teoria, algoritmi e sistemi in infrastrutture scalabili, sicure ed efficienti. Un percorso per chi vuole capire cosa succede sotto ogni servizio digitale.",
       "pills": [
@@ -2283,7 +2564,7 @@
       "footer_note": "Progetto dimostrativo indipendente, non sito ufficiale UNISA. Fonti consultate il 25 novembre 2026.",
       "footer_sources_html": "<a href=\"https://corsi.unisa.it/informatica-magistrale\" target=\"_blank\" rel=\"noopener\">Informatica magistrale UNISA</a> · <a href=\"https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260203-1\" target=\"_blank\" rel=\"noopener\">Eurostat: uso del cloud</a> · <a href=\"https://ec.europa.eu/eurostat/en/web/interactive-publications/digitalisation-2026\" target=\"_blank\" rel=\"noopener\">Digitalisation in Europe 2026</a> · <a href=\"https://www.weforum.org/publications/the-future-of-jobs-report-2025/\" target=\"_blank\" rel=\"noopener\">Future of Jobs 2025</a>",
       "nav_label": "Partenza",
-      "scene_label": "09 / MISSION COMPLETE",
+      "scene_label": "10 / MISSION COMPLETE",
       "graphics": {
         "hud": {
           "title": "Verso il futuro",
@@ -2850,6 +3131,7 @@
       15,
       16,
       10,
+      12,
       13,
       12
     ],
