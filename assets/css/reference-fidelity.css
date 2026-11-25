@@ -97,3 +97,23 @@
 .media-archive .media-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.media-archive .media-card{border-radius:15px;box-shadow:none;border-color:#e7ebf0}.media-archive .media-card-image{height:134px;padding:10px;background:#f4f6f9;border:0}.media-archive .media-card-image img{object-fit:contain;height:100%;background:transparent}.media-archive .media-card-body{padding:12px 15px 17px}.media-archive .media-card-body h3{font-size:15px;margin:9px 0 5px}.media-archive .media-card-body p{font-size:12px;margin:5px 0 12px}
 .archive-pagination{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:34px 0 10px}.archive-page-number,.archive-page-arrow{display:inline-flex;align-items:center;justify-content:center;min-width:39px;height:39px;padding:0 11px;background:#fff;border:1px solid #dfe7ee;border-radius:10px;color:#32475b;text-decoration:none!important;font-weight:650;font-size:13px}.archive-page-number.is-current{background:#102b46;color:#fff;border-color:#102b46}.archive-page-number:hover,.archive-page-arrow:hover{border-color:#9bb9d9;color:#0a66a9}
 @media(max-width:840px){.media-archive .media-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.media-archive .news-list-item{grid-template-columns:104px minmax(0,1fr);gap:12px;padding:10px}.archive-thumb{width:104px;height:104px}.archive-item-copy h3{font-size:15px}.archive-item-copy p{font-size:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.media-archive .media-cards{grid-template-columns:1fr 1fr;gap:10px}.media-archive .media-card-image{height:110px;padding:8px}.media-archive .media-card-body{padding:10px}.media-archive .media-card-body h3{font-size:13px}.media-archive .media-card-body p{font-size:11px}.archive-head{align-items:flex-start;flex-direction:column;gap:4px}}
+
+/* Locandine seminari: mostrare l'immagine intera */
+
+/* Copertine seminari: stesse dimensioni delle immagini news */
+.seminar-thumb {
+  height: 240px;
+  margin-top: 0 !important;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.seminar-thumb img {
+  width: auto;
+  height: 240px;
+  max-width: calc(100% - 10px);
+  object-fit: contain;
+  object-position: center top;
+}
