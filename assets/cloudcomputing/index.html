@@ -17,7 +17,57 @@
 
 /* Audio mixer: independent controls, no autoplay. */
 .audio-settings{position:relative}.audio-settings summary{list-style:none;cursor:pointer;white-space:nowrap;user-select:none}.audio-settings summary::-webkit-details-marker{display:none}.audio-settings summary:focus-visible{outline:2px solid var(--accent)}.audio-mixer{position:absolute;top:calc(100% + 8px);right:0;width:min(278px,85vw);padding:15px;background:#fffdf4;color:var(--ink);border:1px solid #c1d3ea;border-radius:12px;box-shadow:0 10px 35px #173e4530}.audio-mixer strong{display:block;font-size:13px}.audio-mixer p{font-size:11px;color:var(--muted);margin:5px 0 13px}.audio-mixer label{display:grid;grid-template-columns:1fr auto;gap:4px;font-size:12px;margin:11px 0 0}.audio-mixer input{grid-column:1/-1;width:100%;accent-color:var(--accent);margin:0}.audio-mixer output{font:11px var(--mono)}.actions{align-items:center}.actions .control{white-space:nowrap}@media(max-width:540px){.actions{gap:4px}.actions .control{font-size:9px;padding:6px}.brand{font-size:10px;letter-spacing:0}.audio-mixer{right:-50px;width:min(255px,85vw)}}@media print{.audio-settings{display:none}}
-</style><style id="config-theme"></style></head><body><canvas id="world" aria-hidden="true"></canvas><div class="veil"></div><div class="world-caption" aria-hidden="true">
+</style>
+<style id="config-theme">
+:root {
+    --accent: #1d61bd;
+    --ink: #224767;
+    --muted: #5f7592;
+    --panel: #fffdf4;
+}
+
+body {
+    color: #224767;
+}
+
+.brand, .world-caption b,
+h1, h2, h3, .catalog summary {
+    color: #163f86;
+}
+
+p, .lead, .muted, .note, .source,
+.course p, .tile p, .mini p {
+    color: #5f7592;
+}
+
+a, .source a, .eyebrow, .year,
+.metric strong, .mini b,
+.course .id, .catalog li b,
+.world-caption small, .status b, .flow b {
+    color: #1d61bd;
+}
+
+.outline, h1 em {
+    -webkit-text-stroke: 0;
+    color: #1f67c4;
+}
+
+.cta, .filter button[aria-pressed=true],
+nav a.active i {
+    background: #1d61bd;
+    border-color: #1d61bd;
+    color: white;
+}
+
+.eyebrow:before, .progress, .tile:before {
+    background: #3f84c6;
+}
+
+.logo, .logo:after {
+    border-color: #1d61bd;
+}
+</style>
+</head><body><canvas id="world" aria-hidden="true"></canvas><div class="veil"></div><div class="world-caption" aria-hidden="true">
   <small id="world-mode">PORTALE / ATTRAVERSAMENTO</small><b id="world-title">Ingresso al campus</b><p id="world-description">Una porta aperta verso la rete e un nucleo centrale a tre sfere interconnesse.</p></div><div class="world-overlay" id="world-labels" aria-label="Annotazioni degli oggetti 3D"></div><div class="world-overlay" id="logo-orbs" aria-label="Sfere logo centrali">
 
   </div><script id="embedded-config" type="application/json">
@@ -1279,6 +1329,7 @@ resize();updateScroll();position=target;draw(performance.now());requestAnimation
     updateOrbPositions();
   }
   const embedded = JSON.parse(byId('embedded-config').textContent);
+  applyTheme(embedded.theme);
   let cfg = embedded;
   try{
     const res = await fetch((embedded.meta&&embedded.meta.config_path)||'cloud-campus-config-v3.yml',{cache:'no-store'});
