@@ -4,7 +4,7 @@
     "lang": "it",
     "format": "YAML 1.2 (notazione JSON)",
     "schema_version": 4,
-    "version": "8.0"
+    "version": "9.0"
   },
   "theme": {
     "background": "#f3f6fa",
@@ -1803,17 +1803,21 @@
       }
     },
     "courses": {
-      "eyebrow": "06 / Core curriculum",
-      "heading_html": "Il tuo stack<br>di competenze.",
-      "lead": "Le attività obbligatorie del percorso Cloud Computing, coorte 2026/27, e un approfondimento sulle competenze di Cloud Native Computing e High Performance Computing. Scorri per entrare nei quattro moduli tecnici oppure selezionali direttamente dalla mappa.",
+      "eyebrow": "06 / Competenze del percorso Cloud",
+      "heading_html": "Gli insegnamenti<br>del percorso Cloud.",
+      "lead": "Scopri gli insegnamenti formativi specifici dell’indirizzo Cloud Computing e gli approfondimenti Cloud Native Computing e High Performance Computing. La mappa si concentra sulle competenze tecniche del percorso: scorri per entrare nei quattro moduli, oppure selezionali direttamente.",
       "legend": [
         {
           "color": "#547e9c",
-          "label": "1° anno obbligatorio"
+          "label": "1° anno · insegnamenti del percorso"
         },
         {
           "color": "#287e80",
-          "label": "2° anno obbligatorio"
+          "label": "2° anno · insegnamenti del percorso"
+        },
+        {
+          "color": "#6489bc",
+          "label": "Cloud Native"
         },
         {
           "color": "#9385c3",
@@ -1824,19 +1828,19 @@
           "label": "Altre scelte"
         }
       ],
-      "year1": "01 / PRIMO ANNO · 2026/2027",
-      "year2": "02 / SECONDO ANNO · 2027/2028",
-      "note": "CFU, ore e semestre provengono dal piano allegato. Le descrizioni sintetizzano le schede UNISA disponibili; per le attività del secondo anno sono riferimenti all'erogazione 2026/27 della coorte precedente, non programmi definitivi del 2027/28. Le ore non sono indicate per la prova finale.",
-      "link_text": "Consulta il piano ufficiale 2026/27 ↗",
-      "link_url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi",
+      "year1": "01 / PRIMO ANNO · INSEGNAMENTI FORMATIVI",
+      "year2": "02 / SECONDO ANNO · INSEGNAMENTI FORMATIVI",
+      "note": "Presentazione orientativa del percorso, non elenco completo delle attività obbligatorie. Cloud Computing e Programmazione concorrente, parallela e su cloud sono mostrati con 9 CFU ciascuno, come proposta di aggiornamento (6 CFU nel piano 2026/27 allegato). Ore e articolazione dei due corsi da confermare. Per Architetture distribuite, la scheda è un riferimento all’erogazione 2026/27 della coorte precedente.",
+      "link_text": "Consulta il catalogo ufficiale UNISA ↗",
+      "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827",
       "nav_label": "Insegnamenti",
       "scene_label": "",
       "graphics": {
         "hud": {
-          "title": "Il percorso di studi",
+          "title": "Gli insegnamenti del percorso Cloud",
           "mode": "DIDATTICA / MAPPA DEGLI ESAMI",
-          "description": "Mappa degli insegnamenti: quattro moduli tecnici esplorabili con la camera, nello stesso ambiente 3D.",
-          "summary": "1° anno · 2° anno · scelte"
+          "description": "Quattro moduli formativi esplorabili, Cloud Native, HPC e le altre possibilità di personalizzazione.",
+          "summary": "Competenze cloud · infrastrutture · calcolo"
         },
         "camera": [
           [
@@ -1902,7 +1906,8 @@
             ],
             "color": "#547e9c",
             "course_code": "01",
-            "focus_id": "course_cloud"
+            "focus_id": "course_cloud",
+            "map_kind": "explorable"
           },
           {
             "name": "Programmazione parallela",
@@ -1913,7 +1918,8 @@
             ],
             "color": "#547e9c",
             "course_code": "02",
-            "focus_id": "course_parallel"
+            "focus_id": "course_parallel",
+            "map_kind": "explorable"
           },
           {
             "name": "Internet Data Analysis",
@@ -1924,17 +1930,8 @@
             ],
             "color": "#547e9c",
             "course_code": "03",
-            "focus_id": "course_internet"
-          },
-          {
-            "name": "Lingua inglese",
-            "position": [
-              -3.45,
-              2.12,
-              0
-            ],
-            "color": "#547e9c",
-            "course_code": "04"
+            "focus_id": "course_internet",
+            "map_kind": "explorable"
           },
           {
             "name": "Architetture distribuite",
@@ -1945,51 +1942,53 @@
             ],
             "color": "#287e80",
             "course_code": "11",
-            "focus_id": "course_distributed"
+            "focus_id": "course_distributed",
+            "map_kind": "explorable"
           },
           {
-            "name": "Orientamento al lavoro",
-            "position": [
-              3.45,
-              2.12,
-              0
-            ],
-            "color": "#287e80",
-            "course_code": "61"
-          },
-          {
-            "name": "Prova finale",
+            "name": "Cloud Native Computing",
             "position": [
               -3.45,
-              2.12,
-              3.1
+              2.05,
+              0
             ],
-            "color": "#287e80",
-            "course_code": "64"
+            "color": "#6489bc",
+            "course_code": "65",
+            "focus_id": "cloud_native",
+            "map_kind": "native"
           },
           {
             "name": "HPC",
             "position": [
-              0,
-              2.12,
-              3.1
+              3.45,
+              2.05,
+              0
             ],
             "color": "#9385c3",
-            "course_code": "16"
+            "course_code": "16",
+            "focus_id": "hpc",
+            "map_kind": "hpc"
           },
           {
             "name": "Altri insegnamenti a scelta",
-            "detail": "Area collettiva per le altre opzioni formative previste dal piano. La maggiore dimensione rappresenta la varietà delle possibilità, non un numero fisso di crediti. Consulta il catalogo ufficiale.",
+            "detail": "Area collettiva per le altre opzioni formative previste dal piano. La dimensione rappresenta la varietà delle possibilità, non il numero di CFU. Consulta il catalogo ufficiale.",
             "position": [
-              3.45,
+              0,
               2.9,
-              3.1
+              3.05
             ],
-            "color": "#d5a14c"
+            "color": "#d5a14c",
+            "focus_id": "electives",
+            "map_kind": "library"
           }
         ],
         "packet_routes": []
-      }
+      },
+      "focus_label": "APPROFONDIMENTI TECNICI",
+      "focus_codes": [
+        "65",
+        "16"
+      ]
     },
     "course_cloud": {
       "eyebrow": "06.1 / Cloud Computing",
@@ -3500,15 +3499,15 @@
     "electives": {
       "eyebrow": "13 / Personalise your path",
       "heading_html": "Componi il tuo<br>profilo.",
-      "lead": "60 CFU dei 120 complessivi sono da comporre mediante le categorie di scelta previste dal piano di studi.",
-      "note": "Per tutte le informazioni su insegnamenti, disponibilità, regole e vincoli delle scelte, consulta il catalogo ufficiale UNISA.",
+      "lead": "Personalizza la formazione attraverso le categorie di scelta previste dal piano di studi.",
+      "note": "Nell’ipotesi di Cloud Computing e PCPC a 9 CFU ciascuno, mantenendo invariati i 120 CFU totali e tutte le altre attività obbligatorie, resterebbero 54 CFU da comporre. Il piano 2026/27 allegato ne prevede 60. La ripartizione futura deve essere confermata: consulta il catalogo ufficiale UNISA per tutte le informazioni.",
       "nav_label": "Scelte",
       "scene_label": "",
       "graphics": {
         "hud": {
           "title": "Il tuo percorso formativo",
           "mode": "SCELTE / PANORAMICA",
-          "description": "60 CFU da comporre secondo le categorie di scelta del piano.",
+          "description": "54 CFU nell’ipotesi di aggiornamento; 60 CFU nel piano 2026/27 allegato.",
           "summary": "Catalogo ufficiale UNISA"
         },
         "camera": [
@@ -3568,7 +3567,7 @@
         "annotations": [
           {
             "name": "Percorso personalizzato",
-            "detail": "60 CFU da comporre rispettando le categorie e i vincoli del piano. Tutte le informazioni sono disponibili nel catalogo ufficiale UNISA.",
+            "detail": "Nella proposta illustrata, 54 CFU da comporre se le altre attività e il totale restano invariati. Il piano allegato ne prevede 60. Per regole e vincoli consulta il catalogo ufficiale.",
             "position": [
               0,
               1.8,
@@ -3601,8 +3600,8 @@
           }
         ]
       },
-      "credits": "60",
-      "credits_label": "CFU da comporre secondo le categorie di scelta del piano",
+      "credits": "54",
+      "credits_label": "CFU da comporre nell’ipotesi di aggiornamento",
       "link_text": "Consulta il catalogo ufficiale UNISA ↗",
       "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827"
     },
@@ -3750,28 +3749,30 @@
       {
         "code": "01",
         "title": "Cloud Computing",
-        "cfu": 6,
-        "hours": 48,
+        "cfu": 9,
+        "hours": null,
         "semester": 1,
         "year": 1,
         "description": "Fondamenti, modelli di servizio, architetture e pattern indipendenti dal provider; valutazione dei costi e laboratorio Microsoft Azure.",
-        "extra": "4 CFU lezione · 2 laboratorio",
+        "extra": "",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524063",
         "reference_previous_year": false,
-        "focus_id": "course_cloud"
+        "focus_id": "course_cloud",
+        "credit_note": "9 CFU previsti nella proposta di aggiornamento; il piano 2026/27 allegato ne riporta 6. Ore e articolazione da confermare."
       },
       {
         "code": "02",
         "title": "Programmazione concorrente, parallela e su cloud",
-        "cfu": 6,
-        "hours": 48,
+        "cfu": 9,
+        "hours": null,
         "semester": 2,
         "year": 1,
         "description": "Progettare software concorrente e parallelo o distribuito; sperimentare su infrastrutture IaaS e valutarne il comportamento.",
-        "extra": "4 CFU lezione · 2 laboratorio",
+        "extra": "",
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524064",
         "reference_previous_year": false,
-        "focus_id": "course_parallel"
+        "focus_id": "course_parallel",
+        "credit_note": "9 CFU previsti nella proposta di aggiornamento; il piano 2026/27 allegato ne riporta 6. Ore e articolazione da confermare."
       },
       {
         "code": "03",
@@ -3787,18 +3788,6 @@
         "focus_id": "course_internet"
       },
       {
-        "code": "04",
-        "title": "Lingua Inglese",
-        "cfu": 6,
-        "hours": 48,
-        "semester": 1,
-        "year": 1,
-        "description": "Competenze linguistiche utili per comunicazione, studio e lettura della letteratura scientifica internazionale.",
-        "extra": "",
-        "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524066",
-        "reference_previous_year": false
-      },
-      {
         "code": "11",
         "title": "Architetture distribuite per il cloud",
         "cfu": 9,
@@ -3810,30 +3799,6 @@
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524073",
         "reference_previous_year": true,
         "focus_id": "course_distributed"
-      },
-      {
-        "code": "61",
-        "title": "Altre conoscenze utili per l’inserimento nel mondo del lavoro",
-        "cfu": 1,
-        "hours": 25,
-        "semester": 2,
-        "year": 2,
-        "description": "Orientamento professionale, seminari con aziende e professionisti, preparazione di CV e candidatura.",
-        "extra": "Attività di orientamento",
-        "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&id=524123&percorso=3&tab=insegnamenti",
-        "reference_previous_year": true
-      },
-      {
-        "code": "64",
-        "title": "Prova finale",
-        "cfu": 23,
-        "hours": null,
-        "semester": 1,
-        "year": 2,
-        "description": "Approfondimento concordato con un relatore; dimostrare maturità scientifica, capacità critica e autonomia metodologica.",
-        "extra": "",
-        "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&id=524126&percorso=1&tab=insegnamenti",
-        "reference_previous_year": true
       }
     ],
     "electives": [
@@ -4045,116 +4010,7 @@
         "requires_revision": true
       }
     ],
-    "groups": [
-      {
-        "filter": "y1",
-        "label": "Caratterizzanti · 1° anno",
-        "credits": "24–27 CFU",
-        "courses": [
-          "05",
-          "06",
-          "07",
-          "09",
-          "65"
-        ],
-        "note": ""
-      },
-      {
-        "filter": "y1",
-        "label": "Affini · 1° anno",
-        "credits": "9 CFU",
-        "courses": [
-          "10"
-        ],
-        "note": ""
-      },
-      {
-        "filter": "y1",
-        "label": "Libera · 1° anno",
-        "credits": "6–18 CFU",
-        "courses": [
-          "05",
-          "06",
-          "07",
-          "09",
-          "65",
-          "10",
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20",
-          "21",
-          "22",
-          "23",
-          "58",
-          "59",
-          "60",
-          "62"
-        ],
-        "note": "Nota UNISA: quantistica, algoritmi randomizzati, musica algoritmica e tirocini 1/2 si inseriscono in revisione all’inizio del secondo anno; il piano suggerisce due insegnamenti provvisori da sostituire."
-      },
-      {
-        "filter": "y1",
-        "label": "Scelta tirocinio 2 · 1° anno",
-        "credits": "6 CFU",
-        "courses": [
-          "63"
-        ],
-        "note": ""
-      },
-      {
-        "filter": "y2",
-        "label": "Affini · 2° anno",
-        "credits": "6–27 CFU",
-        "courses": [
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20",
-          "21",
-          "22",
-          "23"
-        ],
-        "note": ""
-      },
-      {
-        "filter": "y2",
-        "label": "Libera · 2° anno",
-        "credits": "6–18 CFU",
-        "courses": [
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20",
-          "21",
-          "22",
-          "23"
-        ],
-        "note": "Nota UNISA: quantistica, algoritmi randomizzati, musica algoritmica e tirocini 1/2 si inseriscono in revisione all’inizio del secondo anno; il piano suggerisce due insegnamenti provvisori da sostituire. Le scelte del primo anno saranno rese disponibili nella libera del secondo dall’anno successivo."
-      },
-      {
-        "filter": "both",
-        "label": "Libera da Ateneo · 1° e 2° anno",
-        "credits": "6–18 CFU per categoria",
-        "courses": [],
-        "note": "Insegnamenti di lauree magistrali o LM a ciclo unico quinquennali, escluse attività E (lingua/prova finale), F (altro) e S (stage/tirocini), secondo i filtri del piano."
-      }
-    ]
+    "groups": []
   },
   "graphics": {
     "materials": {
