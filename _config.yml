@@ -8,6 +8,9 @@ lang: it-IT
 markdown: kramdown
 permalink: pretty
 
+plugins:
+  - jekyll-sitemap
+
 collections:
   projects:
     output: true
