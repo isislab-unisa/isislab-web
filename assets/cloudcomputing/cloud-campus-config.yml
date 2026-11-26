@@ -4,7 +4,7 @@
     "lang": "it",
     "format": "YAML 1.2 (notazione JSON)",
     "schema_version": 4,
-    "version": "9.0"
+    "version": "10.0"
   },
   "theme": {
     "background": "#f3f6fa",
@@ -50,7 +50,10 @@
       "transit": "IN TRANSITO",
       "station": "TAPPA",
       "software_renderer": "Rendering 3D software alternativo",
-      "no_renderer": "WebGL e rendering software non disponibili"
+      "no_renderer": "WebGL e rendering software non disponibili",
+      "mobile_model_details": "Dettagli del modello 3D",
+      "mobile_nav": "Indice delle tappe",
+      "mobile_view": "Vista 3D"
     },
     "course": {
       "code_prefix": "NF225000",
@@ -280,7 +283,7 @@
   },
   "sections": {
     "start": {
-      "eyebrow": "Università di Salerno · Fisciano · Coorte 2026/27",
+      "eyebrow": "Università di Salerno · Fisciano · A.A. 2027/2028",
       "heading_html": "Esplora<br>l'indirizzo <em>cloud.</em>",
       "lead": "Cloud Computing. Non soltanto usare il cloud: progettare l'infrastruttura su cui gira il mondo digitale.",
       "pills": [
@@ -1156,7 +1159,7 @@
     "ai": {
       "eyebrow": "04 / Intelligence engine",
       "heading_html": "L'AI ha bisogno<br>di infrastruttura.",
-      "lead": "I modelli non vivono nel vuoto: addestramento, inferenza e gestione dei dati richiedono capacità di calcolo, memoria, rete e storage. Per molti sistemi AI su larga scala il cloud è un abilitatore decisivo.",
+      "lead": "L’addestramento di modelli AI su larga scala richiede capacità di calcolo, memoria, rete e storage. Il distributed learning ripartisce il lavoro tra GPU e server, mentre il federated learning permette di collaborare anche quando i dati devono rimanere presso sedi diverse. Il cloud e l’HPC forniscono l’infrastruttura per entrambi gli approcci.",
       "flow": [
         "DATA",
         "GPU / HPC",
@@ -1165,10 +1168,10 @@
         "MONITOR"
       ],
       "fl_note_title": "Federated learning: il calcolo raggiunge i dati.",
-      "fl_note": "Quando dati riservati o vincoli organizzativi impediscono la centralizzazione, il modello viene addestrato presso più siti. Il cloud coordina i round e aggrega gli aggiornamenti, mentre i dati grezzi restano locali. Ogni sito può usare server multi-GPU: federazione e infrastruttura di calcolo sono complementari. Non è necessaria in tutti i progetti AI, né garantisce da sola la privacy.",
+      "fl_note": "Quando vincoli di riservatezza o organizzativi impediscono di centralizzare i dati, più siti addestrano localmente il modello e condividono aggiornamenti anziché dati grezzi. Un aggregatore può coordinare i round nel cloud. I siti possono a loro volta utilizzare il distributed learning su cluster multi-GPU: i due approcci sono complementari, ma la federazione non è necessaria per tutti i progetti e non garantisce da sola la privacy.",
       "split": [
         [
-          "Training distribuito",
+          "Infrastruttura per il training",
           "Parallelismo, comunicazione fra acceleratori, checkpoint e gestione dei cluster."
         ],
         [
@@ -1182,9 +1185,9 @@
       "graphics": {
         "hud": {
           "title": "Fabbrica dell’intelligenza",
-          "mode": "AI / CLUSTER E FEDERAZIONE",
-          "description": "Server multi-GPU e siti federati: il calcolo raggiunge i dati.",
-          "summary": "GPU · training · federazione"
+          "mode": "AI / DISTRIBUTED & FEDERATED LEARNING",
+          "description": "Cluster multi-GPU per l’addestramento distribuito e siti federati con dati locali.",
+          "summary": "Distributed learning · GPU · federazione"
         },
         "camera": [
           [
@@ -1275,8 +1278,8 @@
             "color": "#9385c3"
           },
           {
-            "name": "Training distribuito",
-            "detail": "I server cooperano durante l’addestramento, scambiando gradienti o attivazioni sulla rete ad alta velocità.",
+            "name": "Distributed learning",
+            "detail": "Più GPU e server collaborano all’addestramento: il parallelismo sui dati o sul modello richiede scambi di gradienti o attivazioni, sincronizzazione e reti veloci. Non presuppone che i dati restino presso organizzazioni diverse.",
             "position": [
               3.5,
               3.7,
@@ -1622,7 +1625,7 @@
       "legend": [
         {
           "color": "#e6b552",
-          "label": "Training e servizio"
+          "label": "Training distribuito e servizio"
         },
         {
           "color": "#57b9ca",
@@ -1634,7 +1637,9 @@
         }
       ],
       "legend_aria": "Colori dei flussi AI",
-      "flow_separator": "→"
+      "flow_separator": "→",
+      "dl_note_title": "Distributed learning: più GPU e server addestrano insieme.",
+      "dl_note": "Quando un modello o un dataset supera le risorse di una singola macchina, il calcolo può essere distribuito fra più acceleratori. Il data parallelism divide i dati in batch, mentre il model parallelism ripartisce parti del modello; gli aggiornamenti, i gradienti o le attivazioni vengono scambiati attraverso interconnessioni ad alta velocità. Il cloud consente di allocare cluster multi-GPU, storage e reti adeguati al carico."
     },
     "careers": {
       "eyebrow": "05 / Career outlook · 2026",
@@ -1830,7 +1835,7 @@
       ],
       "year1": "01 / PRIMO ANNO · INSEGNAMENTI FORMATIVI",
       "year2": "02 / SECONDO ANNO · INSEGNAMENTI FORMATIVI",
-      "note": "Presentazione orientativa del percorso, non elenco completo delle attività obbligatorie. Cloud Computing e Programmazione concorrente, parallela e su cloud sono mostrati con 9 CFU ciascuno, come proposta di aggiornamento (6 CFU nel piano 2026/27 allegato). Ore e articolazione dei due corsi da confermare. Per Architetture distribuite, la scheda è un riferimento all’erogazione 2026/27 della coorte precedente.",
+      "note": "Presentazione degli insegnamenti formativi dell’indirizzo Cloud per l’A.A. 2027/2028, non elenco completo delle attività obbligatorie. Cloud Computing e Programmazione concorrente, parallela e su cloud sono da 9 CFU ciascuno dal 2027/2028; ore e articolazione didattica da confermare. Le schede UNISA collegate si riferiscono all’erogazione disponibile del 2026/27.",
       "link_text": "Consulta il catalogo ufficiale UNISA ↗",
       "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827",
       "nav_label": "Insegnamenti",
@@ -3500,14 +3505,14 @@
       "eyebrow": "13 / Personalise your path",
       "heading_html": "Componi il tuo<br>profilo.",
       "lead": "Personalizza la formazione attraverso le categorie di scelta previste dal piano di studi.",
-      "note": "Nell’ipotesi di Cloud Computing e PCPC a 9 CFU ciascuno, mantenendo invariati i 120 CFU totali e tutte le altre attività obbligatorie, resterebbero 54 CFU da comporre. Il piano 2026/27 allegato ne prevede 60. La ripartizione futura deve essere confermata: consulta il catalogo ufficiale UNISA per tutte le informazioni.",
+      "note": "A partire dall’anno accademico 2027/2028, con Cloud Computing e PCPC da 9 CFU ciascuno, il percorso da 120 CFU prevede 54 CFU da comporre secondo le categorie di scelta del piano di studi. Consulta il catalogo ufficiale UNISA per tutte le informazioni e i vincoli.",
       "nav_label": "Scelte",
       "scene_label": "",
       "graphics": {
         "hud": {
           "title": "Il tuo percorso formativo",
           "mode": "SCELTE / PANORAMICA",
-          "description": "54 CFU nell’ipotesi di aggiornamento; 60 CFU nel piano 2026/27 allegato.",
+          "description": "Dal 2027/2028, 54 CFU da comporre secondo le categorie di scelta del piano.",
           "summary": "Catalogo ufficiale UNISA"
         },
         "camera": [
@@ -3567,7 +3572,7 @@
         "annotations": [
           {
             "name": "Percorso personalizzato",
-            "detail": "Nella proposta illustrata, 54 CFU da comporre se le altre attività e il totale restano invariati. Il piano allegato ne prevede 60. Per regole e vincoli consulta il catalogo ufficiale.",
+            "detail": "Dall’anno accademico 2027/2028, 54 CFU da comporre nel rispetto delle categorie e dei vincoli del piano. Consulta il catalogo ufficiale UNISA.",
             "position": [
               0,
               1.8,
@@ -3601,7 +3606,7 @@
         ]
       },
       "credits": "54",
-      "credits_label": "CFU da comporre nell’ipotesi di aggiornamento",
+      "credits_label": "CFU da comporre · A.A. 2027/2028",
       "link_text": "Consulta il catalogo ufficiale UNISA ↗",
       "link_url": "https://unisa.coursecatalogue.cineca.it/corsi/2026/500827"
     },
@@ -3737,7 +3742,6 @@
           }
         ]
       },
-      "footer_note2": "Fonte primaria per il piano: report_listaInsegnamenti.pdf, stampa 25/11/2026, pp. 1–6. Audio sintetizzato localmente. Configurazione e loghi caricati dal file YAML. Nessun tracciamento o dipendenza esterna.",
       "back_link": {
         "label": "↑ Torna all'ingresso",
         "url": "#start"
@@ -3758,7 +3762,7 @@
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524063",
         "reference_previous_year": false,
         "focus_id": "course_cloud",
-        "credit_note": "9 CFU previsti nella proposta di aggiornamento; il piano 2026/27 allegato ne riporta 6. Ore e articolazione da confermare."
+        "credit_note": "9 CFU dall’A.A. 2027/2028. Ore e articolazione didattica da confermare."
       },
       {
         "code": "02",
@@ -3772,7 +3776,7 @@
         "url": "https://corsi.unisa.it/informatica-magistrale/didattica/insegnamenti?anno=2026&cds_id=500827&percorso=1&tab=percorsi&id=524064",
         "reference_previous_year": false,
         "focus_id": "course_parallel",
-        "credit_note": "9 CFU previsti nella proposta di aggiornamento; il piano 2026/27 allegato ne riporta 6. Ore e articolazione da confermare."
+        "credit_note": "9 CFU dall’A.A. 2027/2028. Ore e articolazione didattica da confermare."
       },
       {
         "code": "03",
