@@ -4,6 +4,7 @@ lang: it
 title: Media e Riconoscimenti
 description: Media e riconoscimenti delle attività di ISISLab.
 permalink: /media-e-riconoscimenti/index.html
+alt_url: /en/media-and-awards/
 section: Pagina
 article_kind: imported_page
 custom_css:

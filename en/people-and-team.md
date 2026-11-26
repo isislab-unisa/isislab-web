@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About ISISLab
+title: People and team
 section: The laboratory
 description: A computer science research laboratory at the University of Salerno.
-permalink: /en/about-us/
-alt_url: /chi-siamo/
+permalink: /en/people-and-team/
+alt_url: /laboratorio-e-persone/
 lang: en
 ---
 ## About ISISLab
