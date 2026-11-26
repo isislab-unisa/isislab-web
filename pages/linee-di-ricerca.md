@@ -1,3 +1,4 @@
+---
 layout: page
 lang: it
 title: Linee di ricerca
@@ -7,8 +8,8 @@ alt_url: /en/research-area/
 section: Pagina
 article_kind: imported_page
 custom_css:
-
-/assets/css/info-box.css
+  - /assets/css/info-box.css
+---
 
 <div class="isis-research">
 <p>Il laboratorio ISISLab studia come rappresentare, analizzare e simulare sistemi complessi e come consentire alle persone di esplorare dati e ambienti digitali. Il laboratorio affianca alla progettazione di algoritmi lo sviluppo di software e la sperimentazione con utenti, scuole, istituzioni culturali e imprese.</p>
