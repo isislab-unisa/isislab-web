@@ -2,7 +2,7 @@
 layout: page
 title: Media and awards
 description: Awards and recognition of ISISLab’s activities.
-permalink: en/media-and-awards/index.html
+permalink: /en/media-and-awards/
 alt_url: /media-e-riconoscimenti/
 lang: en
 section: The laboratory

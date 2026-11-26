@@ -4,7 +4,7 @@ title: Awards and recognition
 section: The laboratory
 description: European Innovation Radar and awards received by ISISLab researchers
 permalink: /en/premi-e-riconoscimenti/
-alt_url: /premi-e-riconoscimenti/
+alt_url: it/premi-e-riconoscimenti/
 lang: en
 ---
 ## European Innovation Radar

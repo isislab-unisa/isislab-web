@@ -4,6 +4,7 @@ lang: en
 title: News and Insights
 description: Latest news, activities and insights from ISISLab.
 permalink: /en/news-and-insights/
+alt_url: /notizie-e-approfondimenti/
 section: Page
 article_kind: imported_page
 custom_css:

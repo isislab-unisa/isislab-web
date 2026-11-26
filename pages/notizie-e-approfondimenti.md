@@ -4,6 +4,7 @@ lang: it
 title: Notizie ed approfondimenti
 description: News in ISISLAb
 permalink: /notizie-e-approfondimenti/
+alt_url: /en/news-and-insights/
 section: Pagina
 custom_css:
   - /assets/css/info-box.css
