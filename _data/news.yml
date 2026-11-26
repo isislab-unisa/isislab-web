@@ -1,3 +1,10 @@
+- date: '2026-10-26'
+  title_it: 'CRESCENDO: accettato e finanziato il progetto PRIN 2026 coordinato dal Prof. Biagio Cosenza'
+  title_en: 'CRESCENDO: PRIN 2026 project coordinated by Prof. Biagio Cosenza accepted and funded'
+  summary_it: Il progetto CRESCENDO, coordinato dal Prof. Biagio Cosenza di UNISA, è stato finanziato dal Ministero dell’Università e della Ricerca nell’ambito del bando PRIN 2026, con un finanziamento complessivo di 1,2 milioni di euro. Il progetto punta a rendere più efficienti e sostenibili le infrastrutture di calcolo avanzato.
+  summary_en: The CRESCENDO project, coordinated by Prof. Biagio Cosenza of the University of Salerno, has been funded by the Italian Ministry of University and Research under the PRIN 2026 call, receiving a total of €1.2 million. It aims to make advanced computing infrastructures more efficient and sustainable.
+  image: https://www.isislab.it/wp-content/uploads/2026/10/PRIN-2026-1.png
+  slug: crescendo-prin-2026-project-accepted-and-funded-coordinated-by-prof-biagio-cosenza
 - date: '2026-10-12'
   title_it: S.T.R.E.E.T.S. – Notte Europea dei Ricercatori 2026
   title_en: European Researchers’ Night 2026 in Salerno
@@ -6,6 +13,7 @@
   summary_en: ISISLab participated in European Researchers’ Night in Salerno, presenting interactive demonstrations involving
     AI, immersive technologies and animated 3D avatars.
   url: https://www.isislab.it/2026/10/12/s-t-r-e-e-t-s-%F0%9D%97%A1%F0%9D%97%BC%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B2-%F0%9D%97%98%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%AE-%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%B6/
+  image: https://www.isislab.it/wp-content/uploads/2026/10/09-05-2026.png
   local_hero_image: /assets/img/news/it-s-t-r-e-e-t-s-notte-europea-dei.png
   local_thumbnail_image: /assets/img/news/it-s-t-r-e-e-t-s-notte-europea-dei.png
   slug: european-researchers-night-2026-in-salerno
