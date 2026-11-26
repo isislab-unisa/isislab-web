@@ -2,193 +2,223 @@
 layout: page
 title: Research areas
 section: Research
-description: Three complementary directions in computer science.
+description: ISISLab research on parallel and distributed computing, graphs and hypergraphs, collaborative systems, semantic data, and immersive technologies.
 permalink: /en/research-area/
 alt_url: /linee-di-ricerca/
 lang: en
+custom_css:
+- /assets/css/info-box.css
 ---
  
  
-<p>The ISISLab research laboratory focuses primarily on three research areas, which are summarized below and then described in detail. Reference is also made to the ACM Classification areas (<a aria-label="2012 ACM Computing Classification System (opens in a new tab)" href="https://www.acm.org/publications/class-2012" rel="noreferrer noopener">2012 ACM Computing Classification System</a>) for their classification.</p>
-
+<div class="isis-research">
+<p>ISISLab studies how to represent, analyze and simulate complex systems and how people explore data and digital environments. The lab designs algorithms, develops software and evaluates its work with users, schools, cultural institutions and companies.</p>
+<p>Each topic is classified using the <a href="https://www.acm.org/publications/class-2012">2012 ACM Computing Classification System</a>.</p>
 <ul>
-<li><strong>Distributed and Parallel Computing</strong>
+<li>
+<strong><a href="#distributed-and-parallel-computing">Distributed and Parallel Computing</a></strong>
 <ul>
-<li>Cloud and Edge Computing</li>
-<li>Large-scale Simulations</li>
-<li>Parallel Algorithms and Architectures</li>
+<li><a href="#large-scale-agent-based-simulation">Large-Scale Agent-Based Simulation</a></li>
+<li><a href="#parallel-architectures">Parallel Architectures</a></li>
+<li><a href="#high-performance-computing-cloud-and-edge-computing">High Performance Computing, Cloud and Edge Computing</a></li>
+<li><a href="#graph-and-hypergraph-algorithms">Graph and Hypergraph Algorithms</a></li>
 </ul>
 </li>
-<li><strong>Collaborative and Social Computing</strong>
+<li>
+<strong><a href="#collaborative-and-social-computing">Collaborative and Social Computing</a></strong>
 <ul>
-<li>Open Data Co-creation</li>
-<li>Collaborative Design</li>
-<li>Synchronous and Co-located Collaboration</li>
-<li>Privacy</li>
-<li>Adaptive and Personalized Systems</li>
+<li><a href="#collaborative-systems-open-data-and-learning">Collaborative Systems, Open Data and Learning</a></li>
+<li><a href="#social-network-analysis">Social Network Analysis</a></li>
+<li><a href="#semantic-web-and-knowledge-graphs">Semantic Web and Knowledge Graphs</a></li>
+<li><a href="#artificial-intelligence-for-networks-and-semantic-data">Artificial Intelligence for Networks and Semantic Data</a></li>
+<li><a href="#adaptive-and-personalized-systems">Adaptive and Personalized Systems</a></li>
 </ul>
 </li>
-<li><strong>Visualization and Interaction</strong>
+<li>
+<strong><a href="#visualization-and-interaction">Visualization and Interaction</a></strong>
 <ul>
-<li>Scalable Visualization</li>
-<li>Virtual Reality Applications</li>
-<li>Innovative Interfaces</li>
+<li><a href="#scalable-visualization-of-data-and-networks">Scalable Visualization of Data and Networks</a></li>
+<li><a href="#augmented-and-extended-reality">Augmented and Extended Reality</a></li>
+<li><a href="#digital-twins">Digital Twins</a></li>
+<li><a href="#immersive-interfaces">Immersive Interfaces</a></li>
 </ul>
 </li>
 </ul>
-
-<h2 id="distributed-and-parallel-computing" class="wp-block-heading">Distributed and Parallel Computing</h2>
-
-<p class="has-drop-cap">The evolution of computer science over the last three decades has been characterized by an architectural shift from the centralized computing paradigm towards distributed and parallel architectures, in which data processing and storage are carried out cooperatively across different nodes interconnected through a network.</p>
-
-<p>The laboratory has followed the evolution of this field, conducting research that has led its research topics in two main directions: on the one hand, cloud and edge computing; on the other, the execution of large-scale agent-based simulations and the efficient execution of algorithms. The challenge of making computations more efficient by employing multiple processing units is one of the major research topics in computer science. Throughout the history of computer science, this challenge has involved research across the entire spectrum, from hardware architectures to software architectures (computing infrastructures, programming languages, etc.), algorithm design, computational models, and performance evaluation.</p>
-
-<p>ISISLab's research has been conducted in this area, addressing several topics ranging from recent studies on the efficient use of Cloud and Edge computing, to execution environments for large-scale agent-based simulations, and the study of parallel and distributed architectures and algorithms.</p>
-
-<h4 class="wp-block-heading">Cloud and Edge Computing</h4>
-
-<ul>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010520&amp;lid=0.10010520">Computer systems organization</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010521&amp;lid=0.10010520.10010521">Architectures</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010537&amp;lid=0.10010520.10010521.10010537">Distributed architectures</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003100&amp;lid=0.10010520.10010521.10010537.10003100">Cloud computing</a></li>
+<section id="distributed-and-parallel-computations" aria-labelledby="distributed-and-parallel-computing" style="margin: 35px 0; padding: 28px; background: #f5f7fa; border: 1px solid #dce3eb; border-radius: 12px;"><h1 id="distributed-and-parallel-computing" class="wp-block-heading">Distributed and Parallel Computing</h1>
+<section class="info-box" aria-labelledby="large-scale-agent-based-simulation"><h2 id="large-scale-agent-based-simulation">Large-Scale Agent-Based Simulation</h2>
+<p>With D-MASON and krABMaga, researchers can model individual agents and observe how collective behaviour emerges from their interactions. The lab studies how to distribute agents across processing units and balance the workload as agents cluster in particular regions of the simulation.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Computing methodologies → Modeling and simulation → Simulation types and techniques → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010355&amp;lid=0.10010147.10010341.10010349.10010355">Agent / discrete models</a></li>
+<li>CCS → Computing methodologies → Modeling and simulation → Simulation types and techniques → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010356&amp;lid=0.10010147.10010341.10010349.10010356">Distributed simulation</a></li>
 </ul>
-
-<p>Research initially focused on the opportunities offered by so-called Edge Computing, namely infrastructures that can be positioned between clients and service providers. Since the early introduction and spread of the World Wide Web, the laboratory has conducted research on Web intermediaries, namely programmable HTTP proxies that could serve as useful tools for implementing complex services based on existing Web services.</p>
-
-<blockquote class="wp-block-quote is-style-default">
-<p>The scalability of these systems was successfully investigated and addressed. Several systems were also developed and tested to improve Web accessibility for people with visual impairments and to support browsing on the first available mobile devices.</p>
-</blockquote>
-
-<p>With the advent and widespread adoption of Cloud computing, which has proven to offer an unparalleled performance-to-price ratio for scientific computing, research interests shifted in this direction.</p>
-
-<blockquote class="wp-block-quote">
-<p>In particular, optimization systems executable on the Cloud (<em>Simulation Optimization and Exploration Framework in the Cloud</em>) were developed, designed to be extremely easy to use (<em>Zero Configuration</em>) while providing considerable effectiveness and efficiency.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Large-scale Simulations</h4>
-
+<p><strong>References</strong></p>
 <ul>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010147&amp;lid=0.10010147">Computing methodologies</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010341&amp;lid=0.10010147.10010341">Modeling and simulation</a></li>
+<li><a href="https://doi.org/10.1177/0037549713489594">Bringing together efficiency and effectiveness in distributed simulations: The experience with D-Mason</a> (2013)</li>
+<li><a href="https://dblp.org/rec/conf/bighpc/AmbrosioVFSS25">The Impact of ECS Logic on Parallel Performance in Agent-based Model Simulations</a> (2025)</li>
+<li><a href="https://journals.sagepub.com/doi/abs/10.1177/0037549713489594">D-MASON</a></li>
+<li><a href="https://github.com/krABMaga/krABMaga">krABMaga simulator</a></li>
 </ul>
+</section>
 
-<p>A particularly useful tool for scientific research is agent-based simulation, which aims to recreate complex phenomena emerging from the simulation of multiple agents exhibiting very simple behaviors. This computational scientific investigation technique is particularly useful in a wide range of contexts, from physics, chemistry, and biology to the so-called soft sciences, such as psychology, sociology, pedagogy, and law.</p>
-
-<blockquote class="wp-block-quote">
-<p>The laboratory's work has focused primarily on the challenge of large-scale simulations, involving a very high and scalable number of agents, which consequently raises significant challenges in terms of simulation efficiency and scalability. In this context, research has focused on developing a distributed and scalable cluster-based environment called D-MASON. Built on an existing simulation system designed by George Mason University (USA), it enables scalable, efficient, and effective simulations, even in the presence of irregular partitions of the agent space. More recently, research has also addressed the development of domain-specific languages for distributed agent-based simulation.</p>
-</blockquote>
-
-<h3 class="wp-block-heading">Parallel Algorithms and Architectures</h3>
-
+<section class="info-box" aria-labelledby="parallel-architectures"><h2 id="parallel-architectures">Parallel Architectures</h2>
+<p>The lab studies how parallel architectures affect application performance. The miniLB benchmark compares the same simulation across GPUs from different vendors. The SYgraph framework addresses a related question: how to run graph analytics algorithms efficiently across GPU architectures.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Computer systems organization → Architectures → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010528&amp;lid=0.10010520.10010521.10010528">Parallel architectures</a></li>
+</ul>
+<p><strong>References</strong></p>
 <ul>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010520&amp;lid=0.10010520">Computer systems organization</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010521&amp;lid=0.10010520.10010521">Architectures</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010537&amp;lid=0.10010520.10010521.10010537">Distributed architectures</a></li>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010147&amp;lid=0.10010147">Computing methodologies</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010169&amp;lid=0.10010147.10010169">Parallel computing methodologies</a></li>
+<li><a href="https://doi.org/10.1016/j.future.2025.108032">miniLB: Benchmarking Lattice Boltzmann simulations on AMD, Intel, and NVIDIA GPUs</a> (2026)</li>
+<li><a href="https://doi.org/10.1145/3754598.3754615">SYgraph: A Portable Heterogeneous Graph Analytics Framework for GPUs</a> (2025)</li>
 </ul>
+</section>
 
-<p>The laboratory also has an active research program adopting a theoretical approach, with the aim of developing algorithms and architectures that make basic operations more efficient.</p>
-
-<blockquote class="wp-block-quote">
-<p>Following several studies on minimizing access conflicts to in-memory data structures, a significant part of the laboratory's work focused on the analysis and design of networks and routing schemes for Peer-to-Peer networks. Within the P2P architecture known as Chord, the laboratory worked on improving the original scheme by proposing a Fibonacci-number-based approach called F-Chord. This solution provides better performance both in terms of routing (maximum and average number of hops) and memory usage (routing table size per node).</p>
-</blockquote>
-
-<h2 id="collaborative-and-social-computing" class="wp-block-heading">Collaborative and Social Computing</h2>
-
+<section class="info-box" aria-labelledby="high-performance-computing-cloud-and-edge-computing"><h2 id="high-performance-computing-cloud-and-edge-computing">High Performance Computing, Cloud and Edge Computing</h2>
+<p>The lab developed the SOF framework to explore model parameters by running simulations on clusters and in the cloud. Other work examined how to describe scientific workflows that run across multiple cloud infrastructures.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Computing methodologies → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010169&amp;lid=0.10010147.10010169">Parallel computing methodologies</a></li>
+<li>CCS → Computer systems organization → Architectures → Distributed architectures → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003100&amp;lid=0.10010520.10010521.10010537.10003100">Cloud computing</a></li>
+</ul>
+<p><strong>References</strong></p>
 <ul>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003120&amp;lid=0.10003120">Human-centered computing</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003130&amp;lid=0.10003120.10003130">Collaborative and social computing</a></li>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10002951&amp;lid=0.10002951">Information systems</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003227&amp;lid=0.10002951.10003227">Information systems applications</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003233&amp;lid=0.10002951.10003227.10003233">Collaborative and social computing systems and tools</a></li>
+<li><a href="https://doi.org/10.1016/j.simpat.2017.12.005">Distributed simulation optimization and parameter exploration framework for the cloud</a> (2018)</li>
+<li><a href="https://dblp.org/rec/conf/webist/MalandrinoS05">A Taxonomy of Programmable http Proxies for Advanced Edge Services</a> (2005)</li>
+<li><a href="/en/progetti/ligate/">LIGATE</a></li>
+<li><a href="https://doi.org/10.1002/cpe.5802">Scientific workflows across multiple clouds (2020)</a></li>
 </ul>
+</section>
 
-<p class="has-drop-cap">This research area aims to explore how users of all kinds, pursuing different goals, can interact effectively, efficiently, and effortlessly in order to actively share information, build networks of contacts, communicate, coordinate, and collaborate with anyone, anywhere, and at any time. The laboratory's research therefore investigates how collaborative activities and their coordination can be supported through groupware systems, and which design principles and empirical validation methods should be followed to achieve concrete results. In addition to studying these groupware systems in different contexts, both remote and co-located, and involving different types of users (citizens, professionals, and students), research has also focused on identifying privacy losses associated with these Web-based systems and investigating how access to resources and tools can be made more accessible and personalized.</p>
-
-<h4 class="wp-block-heading">Open Data Co-creation</h4>
-
-<p>Open Data are data that can be freely accessed by everyone, with the only possible restrictions being the obligation to cite the source or to redistribute any modifications in an open manner. A particularly significant recent focus concerns the so-called open government movement, which aims to make Public Administrations open to citizens, not only through transparency in their actions but also through direct participation, leveraging new digital technologies. In this context, Open Data have gained momentum through other open movements, such as open source.</p>
-
-<p>The literature has highlighted significant limitations of Open Data in terms of quality, accessibility, ease of interpretation, and reusability. These limitations threaten the ultimate goal of making Public Administration data open: improving relationships with citizens. The difficulties faced by Public Administrations in managing the production process are matched by the inadequacy of the tools provided to citizens to access, make sense of, and interpret the Open Data released by Public Administrations.</p>
-
-<p>In this context, the laboratory's research, partly carried out within the European Horizon 2020 Research Project ROUTE-TO-PA (<a href="https://cordis.europa.eu/project/id/645860/it">cordis page</a>), aimed to facilitate the creation of high-quality Open Data through collaboration among different users, allowing them to combine different skills and expertise. The process is agile: on the one hand, it gives users the freedom to structure and organize tasks as they see fit; on the other, it provides non-intrusive guidance and monitoring tools that improve the quality of the resulting product.</p>
-
-<blockquote class="wp-block-quote">
-<p>A key outcome was the development of a social platform called Social Platform for Open Data, where users (including citizens, public employees, experts, etc.) can interact naturally and in a familiar environment, using tools for the collaborative co-creation of Open Data, as well as their easy export and visualization. Integrated into a multi-platform architecture, this tool represents the state of the art in supporting citizens and Public Administrations, as the prototype has been evaluated in several real-world contexts.</p>
-<p>This approach increases the public value of the generated Open Data, since collaborative creation improves the quality of the output. This is particularly useful in production contexts within Public Administrations, especially with regard to transparency towards citizens. The use of proactive error-correction tools significantly improves data usability and their actual usefulness. Finally, the architecture is particularly efficient, portable, and scalable.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Collaborative Design</h4>
-
-<p>In research and industrial production contexts, it is essential to have efficient tools that facilitate collaboration among teams of specialists who are often geographically distributed, accessing a complex process from different locations and at different times, while performing diverse roles and carrying different responsibilities. The laboratory's research has investigated these challenges and proposed technological solutions by designing and developing prototypes aimed at facilitating these processes, which are particularly complex because they are difficult to automate. The platform must therefore foster and stimulate collaboration, providing the right tools at the right time, without being prescriptive or restrictive, for teams of highly specialized professionals with specific needs and characteristics.</p>
-
-<blockquote class="wp-block-quote">
-<p>The laboratory's research led to the development of a comprehensive collaborative system for teams of specialists. Through an innovative visual interface, it supports effective collaboration during shared information-retrieval tasks and the use of heterogeneous Computational Fluid Dynamics applications. Extensive testing led to its validation in a real-world context (the CFD laboratory of Fiat Chrysler Automobiles). The platform also provides flexible tools that enable interoperability between different proprietary software applications through the use of open intermediate formats.</p>
-</blockquote>
-
-<blockquote class="wp-block-quote">
-<p>The study of social-network primitives applied to the design context has also been part of the laboratory's research. A general technique, which makes it possible to apply collaboration functionalities orthogonally and transversally to the functionalities provided by a traditional tool, was applied and tested in a specific case (such as SVN). In other application contexts, such as biochemistry, research mainly focused on supporting working groups through advanced Web-based tools.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Synchronous and Co-located Collaboration</h4>
-
-<p>A particular type of collaboration occurs when the tool being used must support a team whose members are in the same physical location (co-located) and working at the same time (synchronous). This requires different approaches to groupware design and evaluation.</p>
-
-<blockquote class="wp-block-quote">
-<p>In this context, the laboratory's research, partly carried out within the European Sixth Framework Programme Research Project LEAD, aimed to support computer-mediated discussion and debate in a classroom environment. The goal was to investigate how a computer-based discussion tool, combined in a hybrid way with face-to-face discussions, could improve the quality of interactions and arguments during discussions and debates, as well as the educational impact it could have on the class.</p>
-<p>The architecture of the CoFFEE groupware (Cooperative Face-to-Face Educational Environment), conceived, designed, developed, and tested in several schools across Europe within the LEAD project, was designed to facilitate brainstorming, encourage participation by all students, and provide teachers with the flexibility to easily reconfigure how it is used. Its distinctive features include the possibility of contributing anonymously to discussions and structuring collaboration into steps, with subgroups and different tools available (collaborative editors, graphical mind-mapping tools, structured discussions, voting tools, quizzes, etc.). It also allows the collaboration process to be easily analyzed and enables the free-riding mechanism ("relying on the work of other students") to be accurately identified.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Privacy</h4>
-
-<p>In collaborative systems and social networks, users' privacy is seriously threatened, particularly when relying on social and Web environments specifically designed to collect user data in order to better profile advertising messages and maximize the commercial value of these profiling capabilities.</p>
-
-<blockquote class="wp-block-quote">
-<p>The laboratory's research therefore investigated how users' perception of privacy during Web browsing could be improved through customizable plugins for popular browsers, and how these tools could influence users. Subsequently, research aimed to quantify how privacy loss during mobile browsing (understood as sensitive data secretly transmitted to aggregators and third parties) results in increased energy consumption. After designing and developing a mobile plugin that tracks and blocks privacy leakage, a series of real-world experiments ("in vivo") was conducted, both using actual mobile devices that were carefully monitored and through real browsing sessions on websites (with four different workloads). The results showed that the plugin is highly efficient in terms of energy savings resulting from the prevention of private data transmission (ranging from 8% to 36%, depending on website categories). Its effectiveness was also significantly higher than that of competing solutions, while consuming less energy for filtering tasks.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Adaptive and Personalized Systems</h4>
-
-<p>From the early days of the World Wide Web, the laboratory has been active in research on adaptive systems (i.e., systems that personalize their responses based on a user profile) and Web-based group systems.</p>
-
-<blockquote class="wp-block-quote">
-<p>Among the main contributions, one of the first adaptive Web systems and one of the first synchronous collaborative Web navigation systems were developed in 1998, while early applications of profiling to e-commerce were also proposed and analyzed. In this context, the potential of these systems in educational settings was also investigated, with adaptivity based on the behavior of individual users within a group.</p>
-</blockquote>
-
-<h2 id="visualization-and-interaction" class="wp-block-heading">Visualization and Interaction</h2>
-
-<p class="has-drop-cap">Part of the laboratory's research focuses on investigating how information can be better represented and how interactions with users can be managed in a variety of contexts. The research directions pursued have aimed at developing interactive visualizations that remain scalable even when used extensively by large numbers of users, while efficiently supporting the monitoring of complex processes. Several applications of Virtual Reality have also been explored in the field of Cultural Heritage and the reconstruction of archaeological sites, including the use of design methodologies borrowed from the video game industry (Serious Games). Finally, some research has also investigated and contributed to the field of innovative interfaces through the use of visual and auditory metaphors, as well as the use of graphics processors to model complex behaviors.</p>
-
+<section class="info-box" aria-labelledby="graph-and-hypergraph-algorithms"><h2 id="graph-and-hypergraph-algorithms">Graph and Hypergraph Algorithms</h2>
+<p>Early work examined how to reduce the number of links needed to route a request through a peer-to-peer network. Later research used hypergraphs to study how to select the nodes that initiate a diffusion process when interactions involve whole groups.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Mathematics of computing → Discrete mathematics → Graph theory → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010917&amp;lid=0.10002950.10003624.10003633.10010917">Graph algorithms</a></li>
+<li>CCS → Mathematics of computing → Discrete mathematics → Graph theory → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003637&amp;lid=0.10002950.10003624.10003633.10003637">Hypergraphs</a></li>
+</ul>
+<p><strong>References</strong></p>
 <ul>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003120&amp;lid=0.10003120">Human-centered computing</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003145&amp;lid=0.10003120.10003145">Visualization</a></li>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010147&amp;lid=0.10010147">Computing methodologies</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010371&amp;lid=0.10010147.10010371">Computer graphics</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010387&amp;lid=0.10010147.10010371.10010387">Graphics systems and interfaces</a></li>
-<li><a href="https://dl.acm.org/ccs/ccs.cfm?id=0&amp;lid=0">CCS</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003120&amp;lid=0.10003120">Human-centered computing</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003121&amp;lid=0.10003120.10003121">Human computer interaction (HCI)</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003124&amp;lid=0.10003120.10003121.10003124">Interaction paradigms</a> → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010393&amp;lid=0.10010147.10010371.10010387.10010393">Virtual reality</a> / <a href="https://dl.acm.org/ccs/ccs.cfm?id=10011751&amp;lid=0.10003120.10003121.10003124.10011751">Collaborative Interaction</a></li>
+<li><a href="https://doi.org/10.1007/s00224-007-9074-x">Degree-Optimal Routing for P2P Systems</a> (2009)</li>
+<li><a href="https://doi.org/10.3390/e23070796">Social Influence Maximization in Hypergraphs</a> (2021)</li>
 </ul>
+</section>
+</section>
 
-<h4 class="wp-block-heading">Scalable Visualization</h4>
+<section aria-labelledby="collaborative-and-social-computing" style="margin: 35px 0; padding: 28px; background: #f5f7fa; border: 1px solid #dce3eb; border-radius: 12px;"><h1 id="collaborative-and-social-computing" class="wp-block-heading">Collaborative and Social Computing</h1>
+<section class="info-box" aria-labelledby="collaborative-systems-open-data-and-learning"><h2 id="collaborative-systems-open-data-and-learning">Collaborative Systems, Open Data and Learning</h2>
+<p>The lab designs and evaluates tools that help people create data, discuss findings and make decisions together. In the European ROUTE-TO-PA project, citizens and public authorities used the Social Platform for Open Data to build and interpret open datasets. In education, CoFFEE helped teachers organize small-group discussions and study student participation. These projects complement the lab’s research on teaching computer science and artificial intelligence.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Information systems → Information systems applications → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003233&amp;lid=0.10002951.10003227.10003233">Collaborative and social computing systems and tools</a></li>
+<li>CCS → Applied computing → Education → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010490&amp;lid=0.10010405.10010489.10010490">Computer-assisted instruction</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1109/COLCOM.2007.4553836">CoFFEE : Cooperative Face2Face educational environment</a> (2007)</li>
+<li>ROUTE-TO-PA (<a href="/en/progetti/route-to-pa/">ISISLab project page</a>, <a href="https://cordis.europa.eu/project/id/645860/en">CORDIS project record</a>)</li>
+<li><a href="/en/progetti/lead/">LEAD</a></li>
+</ul>
+</section>
 
-<p>Within the ROUTE-TO-PA project, one particularly important research topic addressed by the laboratory was the development of a platform for Open Data visualization that was, on the one hand, extremely easy to use, allowing even users without technical skills to work with it, and, on the other hand, efficient, enabling visualization to scale by leveraging the resources available on the client side.</p>
+<section class="info-box" aria-labelledby="social-network-analysis"><h2 id="social-network-analysis">Social Network Analysis</h2>
+<p>How does information spread when people interact in groups? ISISLab studies how the structure of social relationships shapes diffusion. One problem is to identify a small set of people who can initiate a process that reaches the entire network. Hypergraph models make it possible to examine the role of group interactions in that process.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Human-centered computing → Collaborative and social computing → Collaborative and social computing design and evaluation methods → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003293&amp;lid=0.10003120.10003130.10003134.10003293">Social network analysis</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1016/J.TCS.2018.02.024">Active influence spreading in social networks</a> (2019)</li>
+<li><a href="https://doi.org/10.1007/978-3-032-02555-5_19">Stay and Play - Modeling Social Influence of Players in the Steam Gaming Community</a> (2025)</li>
+<li><a href="https://doi.org/10.3390/e23070796">Social influence diffusion in hypergraphs</a></li>
+</ul>
+</section>
 
-<blockquote class="wp-block-quote">
-<p>To this end, the <em>Datalet Ecosystem Provider</em> (DEEP) architecture enables the creation of reusable Web components (called <em>datalets</em>). Once loaded by the client, these components retrieve the data, visualize it as required, and manage user interactions without placing additional load on the server. This also enables the development of agile visualizations that follow the real-time content of Open Data datasets, allowing continuous monitoring throughout the creation process.</p>
-</blockquote>
+<section class="info-box" aria-labelledby="semantic-web-and-knowledge-graphs"><h2 id="semantic-web-and-knowledge-graphs">Semantic Web and Knowledge Graphs</h2>
+<p>Reusing data from different organizations requires knowing what the data describe, how they are connected and how reliable they are. The lab studies knowledge representation using <em>knowledge graphs</em>, the transformation of tabular data into RDF and queries across distributed sources. Its work on <em>Linked Open Data</em> investigates how to assess the quality of collections of interlinked datasets and how to represent the results so that other systems can query and reuse them.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Information systems → World Wide Web → Web data description languages → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003315&amp;lid=0.10002951.10003260.10003309.10003315">Semantic web description languages</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1145/3786331">Lost in LOD: Analyzing the Linked Open Data Cloud Quality Maze</a> (2026)</li>
+<li><a href="https://doi.org/10.1145/3701716.3717809">From Quality Reports to Knowledge Graphs: a Case Study on CSV-to-KG Transformation</a> (2025)</li>
+</ul>
+</section>
 
-<blockquote class="wp-block-quote">
-<p>Research experience in this field has also focused on tools for visualizing real-time processes, making it possible to monitor their behavior easily, flexibly, and scalably. In particular, several frameworks have been designed, developed, and analyzed for visualizing running processes, file systems, and clustering operations.</p>
-</blockquote>
+<section class="info-box" aria-labelledby="artificial-intelligence-for-networks-and-semantic-data"><h2 id="artificial-intelligence-for-networks-and-semantic-data">Artificial Intelligence for Networks and Semantic Data</h2>
+<p>ISISLab studies machine learning methods that use relationships among data items. For hypergraphs, the lab investigates how to learn representations from recurring patterns of group interaction and how to generate new structures using diffusion models. It also studies how large language models can describe and classify knowledge graphs. KGSum combines these models with other machine learning techniques to characterize collections of graphs.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Computing methodologies → Machine learning → Machine learning approaches → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010319&amp;lid=0.10010147.10010257.10010293.10010319">Learning latent representations</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1145/3690624.3709274">Hypergraph Motif Representation Learning</a> (2025)</li>
+<li><a href="https://doi.org/10.1145/3630744.3658418">Deciphering Conversational Networks: Stance Detection via Hypergraphs and LLMs</a> (2024)</li>
+<li><a href="https://dblp.org/rec/journals/corr/abs-1808-00434">Leveraging Knowledge Graph Embedding Techniques for Industry 4.0 Use Cases</a> (2018)</li>
+<li><a href="https://neurips.cc/virtual/2026/loc/sydney/poster/154651">Hypergraph Generation with Latent Diffusion</a></li>
+<li><a href="https://github.com/isislab-unisa/KGSum">KGSum</a></li>
+</ul>
+</section>
 
-<h4 class="wp-block-heading">Virtual Reality Applications</h4>
+<section class="info-box" aria-labelledby="adaptive-and-personalized-systems"><h2 id="adaptive-and-personalized-systems">Adaptive and Personalized Systems</h2>
+<p>ISISLab developed CHEOPS to adapt web navigation to user behaviour. With MIMOSA, the lab investigated how access to web content could adapt to the context of use. A related line of work examined how to protect privacy while browsing.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Human-centered computing → Human computer interaction (HCI) → HCI design and evaluation methods → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003332&amp;lid=0.10003120.10003121.10003122.10003332">User models</a></li>
+<li>CCS → Information systems → World Wide Web → Web searching and information discovery → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003271&amp;lid=0.10002951.10003260.10003261.10003271">Personalization</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1007/BFb0000353">CHEOPS: Adaptive Hypermedia on World Wide Web</a> (1997)</li>
+<li><a href="https://doi.org/10.1007/s00779-009-0232-9">MIMOSA: context-aware adaptation for ubiquitous web access</a> (2010)</li>
+<li><a href="https://pure.tue.nl/ws/portalfiles/portal/1413144/9910387.pdf">The CHEOPS user model (1998 workshop proceedings, PDF)</a></li>
+</ul>
+</section>
+</section>
 
-<p>In particular, research has examined how these tools can be used to experience (locally or remotely, individually or in groups) virtual reconstructions of archaeological sites (Cultural Heritage). The tools often used alongside Virtual Reality reconstructions include so-called <em>Serious Games</em>, namely educational games whose purpose is not merely entertainment, but also to engage users while teaching them and providing information about the sites or artifacts being explored.</p>
+<section aria-labelledby="visualization-and-interaction" style="margin: 35px 0; padding: 28px; background: #f5f7fa; border: 1px solid #dce3eb; border-radius: 12px;"><h1 id="visualization-and-interaction" class="wp-block-heading">Visualization and Interaction</h1>
+<section class="info-box" aria-labelledby="scalable-visualization-of-data-and-networks"><h2 id="scalable-visualization-of-data-and-networks">Scalable Visualization of Data and Networks</h2>
+<p>With the Datalet Ecosystem Provider (DEEP), ISISLab developed reusable web components that load and visualize data directly in the browser. People can explore an open dataset while it is still being assembled. For complex networks, the lab contributed to SimpleHypergraphs.jl, a library for analyzing and visualizing relationships between nodes and groups.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Human-centered computing → Visualization → Visualization application domains → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010923&amp;lid=0.10003120.10003145.10003147.10010923">Information visualization</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1109/CEDEM.2017.14">Datalet-Ecosystem Provider (DEEP): Scalable Architecture for Reusable, Portable and User-Friendly Visualizations of Open Data</a> (2017)</li>
+<li><a href="https://doi.org/10.24166/im.01.2020">Analyzing, Exploring, and Visualizing Complex Networks via Hypergraphs using SimpleHypergraphs.jl</a> (2020)</li>
+</ul>
+</section>
 
-<blockquote class="wp-block-quote">
-<p>In this context, experience gained with immersive serious games, which use interfaces such as stereoscopic headsets and haptic interfaces (such as Microsoft Kinect), appears to offer interesting prospects and promising results. More recently, interesting results in the automatic generation of virtual environments based on Open Data have been achieved in the context of Open Data reuse. Previous studies have also examined the use of mobile devices in hybrid visiting environments (real-world positioning combined with virtual reality visualization) and historical simulations (nineteenth-century battles).</p>
-</blockquote>
+<section class="info-box" aria-labelledby="augmented-and-extended-reality"><h2 id="augmented-and-extended-reality">Augmented and Extended Reality</h2>
+<p>The lab studies how augmented reality (AR) and extended reality (XR) can support cultural heritage experiences and training. Examples include hybrid tours in which the visitor’s location guides exploration of a virtual reconstruction, and serious games that let players discover archaeological sites and artifacts.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Human-centered computing → Human computer interaction (HCI) → Interaction paradigms → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010392&amp;lid=0.10003120.10003121.10003124.10010392">Mixed / augmented reality</a></li>
+<li>CCS → Human-centered computing → Human computer interaction (HCI) → Interaction paradigms → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010866&amp;lid=0.10003120.10003121.10003124.10010866">Virtual reality</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1145/3750069.3750323">Exploring Cultural Heritage through Play: Insights from Two Case Studies Combining Immersive and Traditional Play</a> (2025)</li>
+<li><a href="/en/progetti/xrtourguide/">XRTourGuide</a></li>
+</ul>
+</section>
 
-<h4 class="wp-block-heading">Innovative Interfaces</h4>
+<section class="info-box" aria-labelledby="digital-twins"><h2 id="digital-twins">Digital Twins</h2>
+<p>ISISLab investigates how to build digital replicas of real places and use them for training. XRTwinScape uses <em>3D Gaussian splatting</em> to reconstruct workplaces from images, so trainees can explore a virtual version of the spaces where they will work.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Computing methodologies → Artificial intelligence → Computer vision → Computer vision problems → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10010254&amp;lid=0.10010147.10010178.10010224.10010245.10010254">Reconstruction</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://dblp.org/rec/conf/sensexr/AmorosiniMMMPSS25">XR-Enabled Immersive Training for Industry 5.0: The XRTwinScape Platform</a> (2025)</li>
+<li>XRTwinScape (<a href="/en/progetti/xrtwinscape/">ISISLab project page</a>, <a href="https://isislab-unisa.github.io/XRTwinScape/">project website</a>)</li>
+</ul>
+</section>
 
-<p>Innovative ways of interacting with computations and data have also been a subject of research at the laboratory, which began investigating the possibilities offered by the auditory representation (<em>Sonification</em>) of real-world processes, such as the behavior of an HTTP Server, with the aim of facilitating their monitoring.</p>
-
-<blockquote class="wp-block-quote">
-<p>The results, based on a prototype tested with users in a controlled environment, were positive, demonstrating that audio can effectively supplement the information conveyed to users. Other systems for audio monitoring via SNMP were also developed and tested, including a programmable multipurpose architecture.</p>
-</blockquote>
-
-<h4 class="wp-block-heading">Graphics Processing Units</h4>
-
-<p>The use of Graphics Processing Units (GPUs) as computing tools has also been a subject of study and research at the laboratory. GPUs are particularly useful for performing extremely fine-grained computations when all the data required during computation can be made available in the GPU's internal memory.</p>
-
-<blockquote class="wp-block-quote">
-<p>In particular, the work began with the use of GPUs as tools for large-scale simulation, subsequently enabling the simulation of even complex individual behaviors through a library developed to simplify the use of GPUs available at the time. Some experiments involving terrain rendering were also implemented and tested on GPUs. Today, GPUs can be easily programmed using high-level programming languages, which have effectively made their capabilities much more accessible and easier to use.</p>
-</blockquote>
+<section class="info-box" aria-labelledby="immersive-interfaces"><h2 id="immersive-interfaces">Immersive Interfaces</h2>
+<p>How do visitors find their way through a reconstructed space and interact with the objects they encounter? The lab investigates these questions with prototypes that use stereoscopic headsets and motion sensors, including serious games for cultural heritage.</p>
+<ul aria-label="ACM CCS 2012 categories">
+<li>CCS → Human-centered computing → Human computer interaction (HCI) → <a href="https://dl.acm.org/ccs/ccs.cfm?id=10003128&amp;lid=0.10003120.10003121.10003128">Interaction techniques</a></li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1145/3064644">A Framework to Design, Develop, and Evaluate Immersive and Collaborative Serious Games in Cultural Heritage</a> (2018)</li>
+<li><a href="/en/progetti/sermas/">SERMAS</a></li>
+</ul>
+</section>
+</section><p><a href="/en/scientific-publications/">Explore ISISLab’s scientific publications</a></p>
+</div>
